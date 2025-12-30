@@ -5,14 +5,14 @@ import { readFile } from 'fs/promises'
 import { join } from 'path'
 import Ajv2020 from 'ajv/dist/2020.js'
 import addFormats from 'ajv-formats'
-import stations from '../src/index.js'
+import { stations } from '../src/index.js'
 
 const ROOT = new URL('..', import.meta.url).pathname
 const SCHEMA_PATH = join(ROOT, 'schemas', 'station.schema.json')
 
 const schema = JSON.parse(await readFile(SCHEMA_PATH, 'utf-8'))
-const ajv = new Ajv2020({ allErrors: true, strict: false })
-addFormats(ajv)
+const ajv = new (Ajv2020 as any)({ allErrors: true, strict: false })
+;(addFormats as any)(ajv)
 const validate = ajv.compile(schema)
 
 describe('schema', () => {

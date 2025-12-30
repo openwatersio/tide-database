@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
-import { writeFile, mkdir } from 'fs/promises'
-import { join } from 'path'
-import { fileURLToPath } from 'url'
-import { dirname } from 'path'
-import { find as findTz } from 'geo-tz/all'
+import { writeFile } from 'fs/promises'
 import createFetch from 'make-fetch-happen'
+import { normalize, save } from './station.ts'
+import type { Station } from '../src/index.ts'
 
 const fetch = createFetch.defaults({
   cachePath: 'node_modules/.cache',
@@ -13,12 +11,7 @@ const fetch = createFetch.defaults({
   retry: 10,
 })
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const DATA_DIR = join(__dirname, '..', 'data')
 const NOAA_SOURCE_NAME = 'US National Oceanic and Atmospheric Administration'
-const NEW_STATIONS_DIR = join(DATA_DIR, 'us')
 const STATIONS_URL =
   'https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json'
 
@@ -31,8 +24,8 @@ async function main() {
     `${STATIONS_URL}?type=tidepredictions&expand=details,tidepredoffsets&units=metric`
   ).then((r) => r.json())
 
-  const referenceStations = stations.filter((s) => s.type === 'R')
-  const subordinateStations = stations.filter((s) => s.type === 'S')
+  const referenceStations = stations.filter((s: any) => s.type === 'R')
+  const subordinateStations = stations.filter((s: any) => s.type === 'S')
 
   console.log(`Fetched metadata for ${stations.length} stations.`)
 
@@ -48,7 +41,8 @@ async function main() {
 
   for (const meta of subordinateStations) {
     // This should never happen, but just in case
-    if (idMap.has(meta.id)) throw new Error("Duplicate station ID found: " + meta.id)
+    if (idMap.has(meta.id))
+      throw new Error('Duplicate station ID found: ' + meta.id)
 
     // At least one station lists itself as its own reference, but doesn't have harmonic data
     if (meta.id === meta.tidepredoffsets.refStationId) continue
@@ -60,27 +54,13 @@ async function main() {
   console.log(`\nDone. Created ${subordinateStations.length} stations.`)
 }
 
-function slugify(text) {
-  return String(text)
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-}
-
-async function saveStation(data) {
-  let dir = NEW_STATIONS_DIR
-  if (data.region) dir = join(dir, data.region.toLowerCase())
-  const filePath = join(dir, `${slugify(data.name)}.json`)
-  await mkdir(dir, { recursive: true })
-  await writeFile(filePath, JSON.stringify(data, null, 2) + '\n')
+async function saveStation(data: Station) {
+  await save(data)
   return data
 }
 
-async function buildStation(meta) {
-  const id = slugify(['us', meta.state, meta.name].filter(Boolean).join('-'))
-
+async function buildStation(meta: any): Promise<Station> {
   const station = {
-    id,
     name: meta.name,
     continent: 'North America',
     country: 'United States',
@@ -88,13 +68,12 @@ async function buildStation(meta) {
     type: meta.type == 'S' ? 'subordinate' : 'reference',
     latitude: meta.lat,
     longitude: meta.lng,
-    timezone: findTz(meta.lat, meta.lng)[0],
+    timezone: meta.timezone,
     source: {
       name: NOAA_SOURCE_NAME,
       id: meta.id,
       published_harmonics: true,
       url: `https://tidesandcurrents.noaa.gov/stationhome.html?id=${meta.id}`,
-      source_url: `https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/${meta.id}.json`,
     },
     license: {
       type: 'public domain',
@@ -115,7 +94,8 @@ async function buildStation(meta) {
       offsets: {
         reference: refId,
         height: {
-          type: meta.tidepredoffsets.heightAdjustedType === 'R' ? 'ratio' : 'fixed',
+          type:
+            meta.tidepredoffsets.heightAdjustedType === 'R' ? 'ratio' : 'fixed',
           high: meta.tidepredoffsets.heightOffsetHighTide,
           low: meta.tidepredoffsets.heightOffsetLowTide,
         },
@@ -140,7 +120,7 @@ async function buildStation(meta) {
 
     Object.assign(station, {
       harmonic_constituents: data.harmonicConstituents.HarmonicConstituents.map(
-        (h) => ({
+        (h: any) => ({
           name: h.name,
           description: h.description,
           amplitude: h.amplitude,
@@ -155,16 +135,18 @@ async function buildStation(meta) {
         ...(data.datums.HAT ? { HAT: data.datums.HAT } : {}),
         // Some stations don't have all datums
         ...(data.datums.datums
-          ? Object.fromEntries(data.datums.datums.map((d) => [d.name, d.value]))
+          ? Object.fromEntries(
+              data.datums.datums.map((d: any) => [d.name, d.value])
+            )
           : {}),
       },
       disclaimers: (data.disclaimers.disclaimers ?? [])
-        .map((d) => d.text)
+        .map((d: any) => d.text)
         .join('\n'),
     })
   }
 
-  return station
+  return normalize(station as Station)
 }
 
 main().catch(console.error)

@@ -1,4 +1,4 @@
-type HarmonicConstituent = {
+export interface HarmonicConstituent {
   name: string
   description?: string
   amplitude: number
@@ -13,7 +13,7 @@ export interface Station {
   name: string
   continent: string
   country: string
-  region: string
+  region?: string
   timezone: string
   disclaimers: string
   type: 'reference' | 'subordinate'
@@ -26,7 +26,6 @@ export interface Station {
     id: string
     published_harmonics: boolean
     url: string
-    source_url: string
   }
 
   // License information
@@ -43,15 +42,15 @@ export interface Station {
   // Subordinate station offsets (empty object for reference stations)
   offsets?: {
     reference: string
-    height: { high: number; low: number, type: 'ratio' | 'fixed' }
+    height: { high: number; low: number; type: 'ratio' | 'fixed' }
     time: { high: number; low: number }
   }
 
   datums: Record<string, number>
 }
 
-const stations: Station[] = Object.values(
+export { default as constituents } from './constituents.json' with { type: 'json' }
+
+export const stations: Station[] = Object.values(
   import.meta.glob('../data/**/*.json', { eager: true, import: 'default' })
 )
-
-export default stations

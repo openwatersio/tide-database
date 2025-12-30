@@ -5,7 +5,7 @@
 The command `update-noaa-stations` updates all NOAA station files in the data directory with the latest harmonic constituents from the NOAA API.
 
 ```shell
-tools/update-noaa-stations
+tools/update-noaa-stations.ts
 ```
 
 ### Hawaii

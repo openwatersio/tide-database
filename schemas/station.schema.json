@@ -137,8 +137,7 @@
         "name",
         "id",
         "published_harmonics",
-        "url",
-        "source_url"
+        "url"
       ],
       "additionalProperties": true,
       "properties": {
@@ -161,11 +160,6 @@
           "type": "string",
           "format": "uri",
           "description": "URL to this station's data or information in the source's website"
-        },
-        "source_url": {
-          "type": "string",
-          "format": "uri",
-          "description": "URL to the source API endpoint for this station's data"
         }
       }
     },
