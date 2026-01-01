@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-port-manatee",
+  "id": "us/fl/port-manatee",
   "name": "Port Manatee",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.638700485229492,
   "longitude": -82.56210327148438,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726384",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726384",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726384.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726384"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.27600002,
+    "HAT": 0.963,
+    "STND": 0,
+    "MHHW": 0.727,
+    "MHW": 0.645,
+    "DTL": 0.396,
+    "MTL": 0.41,
+    "MSL": 0.417,
+    "MLW": 0.175,
+    "MLLW": 0.064,
+    "GT": 0.663,
+    "MN": 0.469,
+    "DHQ": 0.083,
+    "DLQ": 0.111,
+    "HWI": 6.267,
+    "LWI": 12.227,
+    "NAVD88": 0.55
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 232.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.27600002,
-    "HAT": 0.963,
-    "STND": 0,
-    "MHHW": 0.727,
-    "MHW": 0.645,
-    "DTL": 0.396,
-    "MTL": 0.41,
-    "MSL": 0.417,
-    "MLW": 0.175,
-    "MLLW": 0.064,
-    "GT": 0.663,
-    "MN": 0.469,
-    "DHQ": 0.083,
-    "DLQ": 0.111,
-    "HWI": 6.267,
-    "LWI": 12.227,
-    "NAVD88": 0.55
-  },
-  "disclaimers": ""
+  ]
 }

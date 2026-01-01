@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-carlos-point-estero-bay",
+  "id": "us/fl/carlos-point-estero-bay",
   "name": "Carlos Point, Estero Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.405000686645508,
   "longitude": -81.88500213623047,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725325",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725325",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725325.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725325"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.93100005,
+    "HAT": 2.282,
+    "STND": 0,
+    "MHHW": 2.044,
+    "MHW": 1.963,
+    "DTL": 1.664,
+    "MTL": 1.699,
+    "MSL": 1.692,
+    "MLW": 1.435,
+    "MLLW": 1.284,
+    "GT": 0.761,
+    "MN": 0.528,
+    "DHQ": 0.082,
+    "DLQ": 0.151,
+    "HWI": 5.796,
+    "LWI": 11.956,
+    "NAVD88": 1.885
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 36.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.93100005,
-    "HAT": 2.282,
-    "STND": 0,
-    "MHHW": 2.044,
-    "MHW": 1.963,
-    "DTL": 1.664,
-    "MTL": 1.699,
-    "MSL": 1.692,
-    "MLW": 1.435,
-    "MLLW": 1.284,
-    "GT": 0.761,
-    "MN": 0.528,
-    "DHQ": 0.082,
-    "DLQ": 0.151,
-    "HWI": 5.796,
-    "LWI": 11.956,
-    "NAVD88": 1.885
-  },
-  "disclaimers": ""
+  ]
 }

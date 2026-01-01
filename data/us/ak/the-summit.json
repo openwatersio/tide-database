@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-the-summit",
+  "id": "us/ak/the-summit",
   "name": "The Summit",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.68242222222222,
   "longitude": -133.7369083333333,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451349",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451349",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451349.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451349"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.251,
+    "HAT": 4.743,
+    "STND": 0,
+    "MHHW": 3.639,
+    "MHW": 3.373,
+    "DTL": 1.323,
+    "MTL": 1.437,
+    "MSL": 1.457,
+    "MLW": -0.5,
+    "MLLW": -0.992,
+    "GT": 4.629,
+    "MN": 3.873,
+    "DHQ": 0.266,
+    "DLQ": 0.492,
+    "HWI": 9.82,
+    "LWI": 3.58
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.251,
-    "HAT": 4.743,
-    "STND": 0,
-    "MHHW": 3.639,
-    "MHW": 3.373,
-    "DTL": 1.323,
-    "MTL": 1.437,
-    "MSL": 1.457,
-    "MLW": -0.5,
-    "MLLW": -0.992,
-    "GT": 4.629,
-    "MN": 3.873,
-    "DHQ": 0.266,
-    "DLQ": 0.492,
-    "HWI": 9.82,
-    "LWI": 3.58
-  },
-  "disclaimers": ""
+  ]
 }

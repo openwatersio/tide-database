@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-east-rockaway-inlet-atlantic-beach",
+  "id": "us/ny/east-rockaway-inlet-atlantic-beach",
   "name": "East Rockaway Inlet, Atlantic Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.595,
   "longitude": -73.7433,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516881",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516881",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516881.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516881"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.5099998,
+    "HAT": 7.7489996,
+    "STND": 0,
+    "MHHW": 7.38,
+    "MHW": 7.277,
+    "DTL": 6.633,
+    "MTL": 6.611,
+    "MSL": 6.607,
+    "MLW": 5.945,
+    "MLLW": 5.887,
+    "GT": 1.493,
+    "MN": 1.332,
+    "DHQ": 0.102,
+    "DLQ": 0.058,
+    "HWI": 0.2,
+    "LWI": 6.29,
+    "NAVD88": 6.759
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.5099998,
-    "HAT": 7.7489996,
-    "STND": 0,
-    "MHHW": 7.38,
-    "MHW": 7.277,
-    "DTL": 6.633,
-    "MTL": 6.611,
-    "MSL": 6.607,
-    "MLW": 5.945,
-    "MLLW": 5.887,
-    "GT": 1.493,
-    "MN": 1.332,
-    "DHQ": 0.102,
-    "DLQ": 0.058,
-    "HWI": 0.2,
-    "LWI": 6.29,
-    "NAVD88": 6.759
-  },
-  "disclaimers": ""
+  ]
 }

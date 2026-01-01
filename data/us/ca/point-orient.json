@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-point-orient",
+  "id": "us/ca/point-orient",
   "name": "Point Orient",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.9583,
   "longitude": -122.425,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414881",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414881",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414881.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414881"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-san-francisco-golden-gate",
+    "reference": "us/ca/san-francisco-golden-gate",
     "height": {
       "type": "ratio",
       "high": 1.03,

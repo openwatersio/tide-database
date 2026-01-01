@@ -1,10 +1,9 @@
 {
-  "id": "us-or-saint-helens",
+  "id": "us/or/saint-helens",
   "name": "Saint Helens",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.8650016784668,
   "longitude": -122.7969970703125,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,35 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9439201",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9439201",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9439201.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9439201"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "<a href=\"https://tidesandcurrents.noaa.gov/crd.html\">Columbia River Datum (CRD)</a> is the adopted fixed low water reference plane for this area. CRD is a U.S. Army Corps of Engineers non-tidal datum defined at distinct river miles relative to NAVD88, and is used as chart datum above river mile 23 on the Columbia River. Datums are computed using observations from the low river stages of the year, generally August through October due to the masking of the tidal signal from strong seasonal river runoff during other portions of the year. Depending on river flow, water levels can be significantly higher than Columbia River Datum. As of 2014, the U.S. Army Corps of Engineers provided updated offsets for CRD that have been applied to this station. Station Datum (STND) is no longer set equal to CRD.",
+  "datums": {
+    "LAT": 0.329,
+    "HAT": 1.796,
+    "STND": 0,
+    "MHHW": 1.527,
+    "MHW": 1.38,
+    "DTL": 1.037,
+    "MTL": 0.999,
+    "MSL": 0.998,
+    "MLW": 0.618,
+    "MLLW": 0.548,
+    "GT": 0.979,
+    "MN": 0.762,
+    "DHQ": 0.147,
+    "DLQ": 0.071,
+    "HWI": 0.071,
+    "LWI": 7.876,
+    "NAVD88": -1.297,
+    "CRD_OFFSET": 0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,26 +337,5 @@
       "phase_local": 232.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.329,
-    "HAT": 1.796,
-    "STND": 0,
-    "MHHW": 1.527,
-    "MHW": 1.38,
-    "DTL": 1.037,
-    "MTL": 0.999,
-    "MSL": 0.998,
-    "MLW": 0.618,
-    "MLLW": 0.548,
-    "GT": 0.979,
-    "MN": 0.762,
-    "DHQ": 0.147,
-    "DLQ": 0.071,
-    "HWI": 0.071,
-    "LWI": 7.876,
-    "NAVD88": -1.297,
-    "CRD_OFFSET": 0.006
-  },
-  "disclaimers": "<a href=\"https://tidesandcurrents.noaa.gov/crd.html\">Columbia River Datum (CRD)</a> is the adopted fixed low water reference plane for this area. CRD is a U.S. Army Corps of Engineers non-tidal datum defined at distinct river miles relative to NAVD88, and is used as chart datum above river mile 23 on the Columbia River. Datums are computed using observations from the low river stages of the year, generally August through October due to the masking of the tidal signal from strong seasonal river runoff during other portions of the year. Depending on river flow, water levels can be significantly higher than Columbia River Datum. As of 2014, the U.S. Army Corps of Engineers provided updated offsets for CRD that have been applied to this station. Station Datum (STND) is no longer set equal to CRD."
+  ]
 }

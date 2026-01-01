@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-cape-cod-canal-rr-bridge",
+  "id": "us/ma/cape-cod-canal-rr-bridge",
   "name": "Cape Cod Canal, RR. bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.7417,
   "longitude": -70.6167,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447270",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447270",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447270.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447270"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.12599999,
+    "HAT": 1.8729999,
+    "STND": 0,
+    "MHHW": 1.42,
+    "MHW": 1.314,
+    "DTL": 0.812,
+    "MTL": 0.792,
+    "MSL": 0.751,
+    "MLW": 0.27,
+    "MLLW": 0.203,
+    "GT": 1.216,
+    "MN": 1.044,
+    "DHQ": 0.106,
+    "DLQ": 0.067,
+    "HWI": 1.549,
+    "LWI": 8.754
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 208.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.12599999,
-    "HAT": 1.8729999,
-    "STND": 0,
-    "MHHW": 1.42,
-    "MHW": 1.314,
-    "DTL": 0.812,
-    "MTL": 0.792,
-    "MSL": 0.751,
-    "MLW": 0.27,
-    "MLLW": 0.203,
-    "GT": 1.216,
-    "MN": 1.044,
-    "DHQ": 0.106,
-    "DLQ": 0.067,
-    "HWI": 1.549,
-    "LWI": 8.754
-  },
-  "disclaimers": ""
+  ]
 }

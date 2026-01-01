@@ -1,10 +1,9 @@
 {
-  "id": "us-djakarta-java",
+  "id": "us/djakarta-java",
   "name": "Djakarta, Java",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -2.201666666666667,
   "longitude": 106.8666666666667,
   "timezone": "Asia/Jakarta",
@@ -12,14 +11,20 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "6835001",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=6835001",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/6835001.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=6835001"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MSL": 0,
+    "MLLW": -0.6
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,11 +322,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MSL": 0,
-    "MLLW": -0.6
-  },
-  "disclaimers": ""
+  ]
 }

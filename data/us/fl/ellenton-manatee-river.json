@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-ellenton-manatee-river",
+  "id": "us/fl/ellenton-manatee-river",
   "name": "Ellenton, Manatee River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.51490020751953,
   "longitude": -82.53379821777344,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726265",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726265",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726265.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726265"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.431,
+    "HAT": 9.672,
+    "STND": 0,
+    "MHHW": 9.38,
+    "MHW": 9.29,
+    "DTL": 9.064,
+    "MTL": 9.067,
+    "MSL": 9.08,
+    "MLW": 8.845,
+    "MLLW": 8.748,
+    "GT": 0.632,
+    "MN": 0.444,
+    "DHQ": 0.091,
+    "DLQ": 0.097,
+    "NAVD88": 9.16
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 316.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.431,
-    "HAT": 9.672,
-    "STND": 0,
-    "MHHW": 9.38,
-    "MHW": 9.29,
-    "DTL": 9.064,
-    "MTL": 9.067,
-    "MSL": 9.08,
-    "MLW": 8.845,
-    "MLLW": 8.748,
-    "GT": 0.632,
-    "MN": 0.444,
-    "DHQ": 0.091,
-    "DLQ": 0.097,
-    "NAVD88": 9.16
-  },
-  "disclaimers": ""
+  ]
 }

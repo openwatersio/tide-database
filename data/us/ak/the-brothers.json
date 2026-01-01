@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-the-brothers",
+  "id": "us/ak/the-brothers",
   "name": "The Brothers",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.295,
   "longitude": -133.797,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451785",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451785",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451785.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451785"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.29,
+    "HAT": 4.837,
+    "STND": 0,
+    "MHHW": 3.607,
+    "MHW": 3.323,
+    "DTL": 1.346,
+    "MTL": 1.442,
+    "MSL": 1.459,
+    "MLW": -0.44,
+    "MLLW": -0.915,
+    "GT": 4.522,
+    "MN": 3.763,
+    "DHQ": 0.284,
+    "DLQ": 0.475,
+    "HWI": 9.72,
+    "LWI": 3.48
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.29,
-    "HAT": 4.837,
-    "STND": 0,
-    "MHHW": 3.607,
-    "MHW": 3.323,
-    "DTL": 1.346,
-    "MTL": 1.442,
-    "MSL": 1.459,
-    "MLW": -0.44,
-    "MLLW": -0.915,
-    "GT": 4.522,
-    "MN": 3.763,
-    "DHQ": 0.284,
-    "DLQ": 0.475,
-    "HWI": 9.72,
-    "LWI": 3.48
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-pineland-pine-island",
+  "id": "us/fl/pineland-pine-island",
   "name": "Pineland, Pine Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.6602783203125,
   "longitude": -82.1544418334961,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725528",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725528",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725528.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725528"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-st-petersburg",
+    "reference": "us/fl/st-petersburg",
     "height": {
       "type": "ratio",
       "high": 0.83,

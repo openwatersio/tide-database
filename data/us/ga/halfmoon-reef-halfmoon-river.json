@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-halfmoon-reef-halfmoon-river",
+  "id": "us/ga/halfmoon-reef-halfmoon-river",
   "name": "Halfmoon Reef, Halfmoon River",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.963300704956055,
   "longitude": -80.94329833984375,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8671314",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671314",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8671314.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671314"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.644272,
+    "HAT": 5.083272,
+    "STND": 0,
+    "MHHW": 4.491,
+    "MHW": 4.369,
+    "DTL": 3.332,
+    "MTL": 3.305,
+    "MSL": 3.33,
+    "MLW": 2.24,
+    "MLLW": 2.172,
+    "GT": 2.319,
+    "MN": 2.129,
+    "DHQ": 0.122,
+    "DLQ": 0.068,
+    "HWI": 0.74,
+    "LWI": 6.87
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.644272,
-    "HAT": 5.083272,
-    "STND": 0,
-    "MHHW": 4.491,
-    "MHW": 4.369,
-    "DTL": 3.332,
-    "MTL": 3.305,
-    "MSL": 3.33,
-    "MLW": 2.24,
-    "MLLW": 2.172,
-    "GT": 2.319,
-    "MN": 2.129,
-    "DHQ": 0.122,
-    "DLQ": 0.068,
-    "HWI": 0.74,
-    "LWI": 6.87
-  },
-  "disclaimers": ""
+  ]
 }

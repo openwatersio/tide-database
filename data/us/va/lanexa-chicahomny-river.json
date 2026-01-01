@@ -1,10 +1,9 @@
 {
-  "id": "us-va-lanexa-chicahomny-river",
+  "id": "us/va/lanexa-chicahomny-river",
   "name": "Lanexa, Chicahomny River",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.4033,
   "longitude": -76.9117,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638445",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638445",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638445.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638445"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.61999995,
+    "HAT": 1.818,
+    "STND": 0,
+    "MHHW": 1.653,
+    "MHW": 1.603,
+    "DTL": 1.219,
+    "MTL": 1.213,
+    "MSL": 1.236,
+    "MLW": 0.824,
+    "MLLW": 0.785,
+    "GT": 0.867,
+    "MN": 0.779,
+    "DHQ": 0.05,
+    "DLQ": 0.038,
+    "HWI": 6.554,
+    "LWI": 0.264
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 288.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.61999995,
-    "HAT": 1.818,
-    "STND": 0,
-    "MHHW": 1.653,
-    "MHW": 1.603,
-    "DTL": 1.219,
-    "MTL": 1.213,
-    "MSL": 1.236,
-    "MLW": 0.824,
-    "MLLW": 0.785,
-    "GT": 0.867,
-    "MN": 0.779,
-    "DHQ": 0.05,
-    "DLQ": 0.038,
-    "HWI": 6.554,
-    "LWI": 0.264
-  },
-  "disclaimers": ""
+  ]
 }

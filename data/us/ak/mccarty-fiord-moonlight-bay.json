@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-mccarty-fiord-moonlight-bay",
+  "id": "us/ak/mccarty-fiord-moonlight-bay",
   "name": "McCarty Fiord, Moonlight Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.511600494384766,
   "longitude": -150.35519409179688,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455258",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455258",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455258.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455258"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.8330002,
+    "HAT": 9.533,
+    "STND": 0,
+    "MHHW": 8.465,
+    "MHW": 8.19,
+    "DTL": 6.728,
+    "MTL": 6.798,
+    "MSL": 6.8,
+    "MLW": 5.406,
+    "MLLW": 4.992,
+    "GT": 3.474,
+    "MN": 2.784,
+    "DHQ": 0.275,
+    "DLQ": 0.415,
+    "HWI": 10.107,
+    "LWI": 3.847,
+    "NAVD88": 5.434
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.8330002,
-    "HAT": 9.533,
-    "STND": 0,
-    "MHHW": 8.465,
-    "MHW": 8.19,
-    "DTL": 6.728,
-    "MTL": 6.798,
-    "MSL": 6.8,
-    "MLW": 5.406,
-    "MLLW": 4.992,
-    "GT": 3.474,
-    "MN": 2.784,
-    "DHQ": 0.275,
-    "DLQ": 0.415,
-    "HWI": 10.107,
-    "LWI": 3.847,
-    "NAVD88": 5.434
-  },
-  "disclaimers": ""
+  ]
 }

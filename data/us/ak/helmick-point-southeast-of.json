@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-helmick-point-southeast-of",
+  "id": "us/ak/helmick-point-southeast-of",
   "name": "Helmick Point, southeast of",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.270301818847656,
   "longitude": -162.4102020263672,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9466153",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466153",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9466153.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466153"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.906,
+    "HAT": 10.301,
+    "STND": 0,
+    "MHHW": 9.266,
+    "MHW": 8.68,
+    "DTL": 7.714,
+    "MTL": 7.519,
+    "MSL": 7.613,
+    "MLW": 6.358,
+    "MLLW": 6.162,
+    "GT": 3.104,
+    "MN": 2.321,
+    "DHQ": 0.587,
+    "DLQ": 0.197,
+    "HWI": 9.73,
+    "LWI": 4.54
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.906,
-    "HAT": 10.301,
-    "STND": 0,
-    "MHHW": 9.266,
-    "MHW": 8.68,
-    "DTL": 7.714,
-    "MTL": 7.519,
-    "MSL": 7.613,
-    "MLW": 6.358,
-    "MLLW": 6.162,
-    "GT": 3.104,
-    "MN": 2.321,
-    "DHQ": 0.587,
-    "DLQ": 0.197,
-    "HWI": 9.73,
-    "LWI": 4.54
-  },
-  "disclaimers": ""
+  ]
 }

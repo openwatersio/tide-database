@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-seward-resurrection-bay",
+  "id": "us/ak/seward-resurrection-bay",
   "name": "Seward, Resurrection Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.1193,
   "longitude": -149.4281083333333,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455090",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455090",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455090.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455090"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.7950001,
+    "HAT": 6.123,
+    "STND": 0,
+    "MHHW": 5.111,
+    "MHW": 4.832,
+    "DTL": 3.492,
+    "MTL": 3.563,
+    "MSL": 3.566,
+    "MLW": 2.293,
+    "MLLW": 1.872,
+    "GT": 3.238,
+    "MN": 2.54,
+    "DHQ": 0.278,
+    "DLQ": 0.42,
+    "HWI": 9.96,
+    "LWI": 3.7
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 284.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.7950001,
-    "HAT": 6.123,
-    "STND": 0,
-    "MHHW": 5.111,
-    "MHW": 4.832,
-    "DTL": 3.492,
-    "MTL": 3.563,
-    "MSL": 3.566,
-    "MLW": 2.293,
-    "MLLW": 1.872,
-    "GT": 3.238,
-    "MN": 2.54,
-    "DHQ": 0.278,
-    "DLQ": 0.42,
-    "HWI": 9.96,
-    "LWI": 3.7
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-barnegat-inlet-uscg-station",
+  "id": "us/nj/barnegat-inlet-uscg-station",
   "name": "Barnegat Inlet, USCG Station",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.7617,
   "longitude": -74.1117,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8533615",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533615",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8533615.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533615"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.805,
+    "HAT": 2.084,
+    "STND": 0,
+    "MHHW": 1.831,
+    "MHW": 1.76,
+    "DTL": 1.448,
+    "MTL": 1.432,
+    "MSL": 1.421,
+    "MLW": 1.103,
+    "MLLW": 1.066,
+    "GT": 0.765,
+    "MN": 0.657,
+    "DHQ": 0.07,
+    "DLQ": 0.037,
+    "HWI": 0.086,
+    "LWI": 6.669,
+    "NAVD88": 1.426
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 31.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.805,
-    "HAT": 2.084,
-    "STND": 0,
-    "MHHW": 1.831,
-    "MHW": 1.76,
-    "DTL": 1.448,
-    "MTL": 1.432,
-    "MSL": 1.421,
-    "MLW": 1.103,
-    "MLLW": 1.066,
-    "GT": 0.765,
-    "MN": 0.657,
-    "DHQ": 0.07,
-    "DLQ": 0.037,
-    "HWI": 0.086,
-    "LWI": 6.669,
-    "NAVD88": 1.426
-  },
-  "disclaimers": ""
+  ]
 }

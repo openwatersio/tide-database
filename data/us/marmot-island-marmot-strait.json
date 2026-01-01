@@ -1,10 +1,9 @@
 {
-  "id": "us-marmot-island-marmot-strait",
+  "id": "us/marmot-island-marmot-strait",
   "name": "Marmot Island, Marmot Strait",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.23333333333299,
   "longitude": -151.86666666667008,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2021",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2021",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2021.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2021"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-kodiak-womens-bay",
+    "reference": "us/ak/kodiak-womens-bay",
     "height": {
       "type": "fixed",
       "high": 0.27,

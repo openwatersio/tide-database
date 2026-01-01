@@ -1,10 +1,9 @@
 {
-  "id": "us-me-pettegrove-point-dochet-island",
+  "id": "us/me/pettegrove-point-dochet-island",
   "name": "Pettegrove Point, Dochet Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.12844444444445,
   "longitude": -67.14466666666667,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8410834",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410834",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8410834.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410834"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.3509998,
+    "HAT": 9.7630005,
+    "STND": 0,
+    "MHHW": 8.658,
+    "MHW": 8.51,
+    "DTL": 5.532,
+    "MTL": 5.527,
+    "MSL": 5.535,
+    "MLW": 2.544,
+    "MLLW": 2.406,
+    "GT": 6.252,
+    "MN": 5.966,
+    "DHQ": 0.147,
+    "DLQ": 0.138,
+    "HWI": 3.444,
+    "LWI": 9.892
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 227.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.3509998,
-    "HAT": 9.7630005,
-    "STND": 0,
-    "MHHW": 8.658,
-    "MHW": 8.51,
-    "DTL": 5.532,
-    "MTL": 5.527,
-    "MSL": 5.535,
-    "MLW": 2.544,
-    "MLLW": 2.406,
-    "GT": 6.252,
-    "MN": 5.966,
-    "DHQ": 0.147,
-    "DLQ": 0.138,
-    "HWI": 3.444,
-    "LWI": 9.892
-  },
-  "disclaimers": ""
+  ]
 }

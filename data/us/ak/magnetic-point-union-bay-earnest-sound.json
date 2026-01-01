@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-magnetic-point-union-bay-earnest-sound",
+  "id": "us/ak/magnetic-point-union-bay-earnest-sound",
   "name": "Magnetic Point, Union Bay, Earnest Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.78828333333333,
   "longitude": -132.1908833333334,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450753",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450753",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450753.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450753"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -3.7289999,
+    "HAT": 3.746,
+    "STND": 0,
+    "MHHW": 2.539,
+    "MHW": 2.268,
+    "DTL": 0.094,
+    "MTL": 0.197,
+    "MSL": 0.19,
+    "MLW": -1.873,
+    "MLLW": -2.349,
+    "GT": 4.889,
+    "MN": 4.143,
+    "DHQ": 0.27,
+    "DLQ": 0.476,
+    "HWI": 9.499,
+    "LWI": 3.075
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -3.7289999,
-    "HAT": 3.746,
-    "STND": 0,
-    "MHHW": 2.539,
-    "MHW": 2.268,
-    "DTL": 0.094,
-    "MTL": 0.197,
-    "MSL": 0.19,
-    "MLW": -1.873,
-    "MLLW": -2.349,
-    "GT": 4.889,
-    "MN": 4.143,
-    "DHQ": 0.27,
-    "DLQ": 0.476,
-    "HWI": 9.499,
-    "LWI": 3.075
-  },
-  "disclaimers": ""
+  ]
 }

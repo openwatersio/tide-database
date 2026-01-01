@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-white-mountain-niukluk",
+  "id": "us/ak/white-mountain-niukluk",
   "name": "White Mountain, Niukluk",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 64.68113708496094,
   "longitude": -163.4119110107422,
   "timezone": "America/Nome",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9468877",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468877",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9468877.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468877"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.324,
+    "HAT": 5.962,
+    "STND": 0,
+    "MHHW": 5.754,
+    "MHW": 5.754,
+    "DTL": 5.611,
+    "MTL": 5.611,
+    "MSL": 5.592,
+    "MLW": 5.468,
+    "MLLW": 5.468,
+    "GT": 0.286,
+    "MN": 0.286,
+    "DHQ": 0,
+    "DLQ": 0,
+    "NAVD88": 3.798
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.324,
-    "HAT": 5.962,
-    "STND": 0,
-    "MHHW": 5.754,
-    "MHW": 5.754,
-    "DTL": 5.611,
-    "MTL": 5.611,
-    "MSL": 5.592,
-    "MLW": 5.468,
-    "MLLW": 5.468,
-    "GT": 0.286,
-    "MN": 0.286,
-    "DHQ": 0,
-    "DLQ": 0,
-    "NAVD88": 3.798
-  },
-  "disclaimers": ""
+  ]
 }

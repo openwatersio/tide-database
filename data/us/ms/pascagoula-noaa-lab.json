@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-pascagoula-noaa-lab",
+  "id": "us/ms/pascagoula-noaa-lab",
   "name": "Pascagoula NOAA Lab",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.36777777777778,
   "longitude": -88.56305555555555,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8741533",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8741533",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8741533.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8741533"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.295,
+    "HAT": 7.3900003,
+    "STND": 0,
+    "MHHW": 7.136,
+    "MHW": 7.108,
+    "DTL": 6.903,
+    "MTL": 6.902,
+    "MSL": 6.9,
+    "MLW": 6.695,
+    "MLLW": 6.669,
+    "GT": 0.467,
+    "MN": 0.413,
+    "DHQ": 0.028,
+    "DLQ": 0.026,
+    "NAVD88": 6.869
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 120.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.295,
-    "HAT": 7.3900003,
-    "STND": 0,
-    "MHHW": 7.136,
-    "MHW": 7.108,
-    "DTL": 6.903,
-    "MTL": 6.902,
-    "MSL": 6.9,
-    "MLW": 6.695,
-    "MLLW": 6.669,
-    "GT": 0.467,
-    "MN": 0.413,
-    "DHQ": 0.028,
-    "DLQ": 0.026,
-    "NAVD88": 6.869
-  },
-  "disclaimers": ""
+  ]
 }

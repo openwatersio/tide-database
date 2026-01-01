@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-east-greenwich",
+  "id": "us/ri/east-greenwich",
   "name": "East Greenwich",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.665000915527344,
   "longitude": -71.44499969482422,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8454578",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454578",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8454578.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454578"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.059,
+    "HAT": 3.149,
+    "STND": 0,
+    "MHHW": 2.75,
+    "MHW": 2.675,
+    "DTL": 2.068,
+    "MTL": 2.056,
+    "MSL": 2.014,
+    "MLW": 1.438,
+    "MLLW": 1.386,
+    "GT": 1.364,
+    "MN": 1.237,
+    "DHQ": 0.075,
+    "DLQ": 0.052,
+    "HWI": 0.46,
+    "LWI": 5.87,
+    "NAVD88": 2.111
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 201.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.059,
-    "HAT": 3.149,
-    "STND": 0,
-    "MHHW": 2.75,
-    "MHW": 2.675,
-    "DTL": 2.068,
-    "MTL": 2.056,
-    "MSL": 2.014,
-    "MLW": 1.438,
-    "MLLW": 1.386,
-    "GT": 1.364,
-    "MN": 1.237,
-    "DHQ": 0.075,
-    "DLQ": 0.052,
-    "HWI": 0.46,
-    "LWI": 5.87,
-    "NAVD88": 2.111
-  },
-  "disclaimers": ""
+  ]
 }

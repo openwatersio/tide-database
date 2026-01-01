@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-red-dog-dock",
+  "id": "us/ak/red-dog-dock",
   "name": "Red Dog Dock",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 67.57580555555556,
   "longitude": -164.0643888888889,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9491094",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9491094",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9491094.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9491094"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.45,
+    "HAT": 2.1230001,
+    "STND": 0,
+    "MHHW": 1.903,
+    "MHW": 1.859,
+    "DTL": 1.749,
+    "MTL": 1.751,
+    "MSL": 1.746,
+    "MLW": 1.642,
+    "MLLW": 1.596,
+    "GT": 0.306,
+    "MN": 0.217,
+    "DHQ": 0.044,
+    "DLQ": 0.046,
+    "HWI": 9.48,
+    "LWI": 3.3
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.45,
-    "HAT": 2.1230001,
-    "STND": 0,
-    "MHHW": 1.903,
-    "MHW": 1.859,
-    "DTL": 1.749,
-    "MTL": 1.751,
-    "MSL": 1.746,
-    "MLW": 1.642,
-    "MLLW": 1.596,
-    "GT": 0.306,
-    "MN": 0.217,
-    "DHQ": 0.044,
-    "DLQ": 0.046,
-    "HWI": 9.48,
-    "LWI": 3.3
-  },
-  "disclaimers": ""
+  ]
 }

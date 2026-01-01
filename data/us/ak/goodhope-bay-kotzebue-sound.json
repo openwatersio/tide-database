@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-goodhope-bay-kotzebue-sound",
+  "id": "us/ak/goodhope-bay-kotzebue-sound",
   "name": "GOODHOPE BAY, KOTZEBUE SOUND",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 66.23030090332031,
   "longitude": -163.9040985107422,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9469833",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469833",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9469833.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469833"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 11.165,
+    "HAT": 11.967,
+    "STND": 0,
+    "MHHW": 11.813,
+    "MHW": 11.776,
+    "DTL": 11.556,
+    "MTL": 11.569,
+    "MSL": 11.567,
+    "MLW": 11.361,
+    "MLLW": 11.299,
+    "GT": 0.514,
+    "MN": 0.415,
+    "DHQ": 0.037,
+    "DLQ": 0.062,
+    "HWI": 2.28,
+    "LWI": 8.8
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 11.165,
-    "HAT": 11.967,
-    "STND": 0,
-    "MHHW": 11.813,
-    "MHW": 11.776,
-    "DTL": 11.556,
-    "MTL": 11.569,
-    "MSL": 11.567,
-    "MLW": 11.361,
-    "MLLW": 11.299,
-    "GT": 0.514,
-    "MN": 0.415,
-    "DHQ": 0.037,
-    "DLQ": 0.062,
-    "HWI": 2.28,
-    "LWI": 8.8
-  },
-  "disclaimers": ""
+  ]
 }

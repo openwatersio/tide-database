@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-great-hill",
+  "id": "us/ma/great-hill",
   "name": "Great Hill",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.711700439453125,
   "longitude": -70.71499633789062,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447368",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447368",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447368.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447368"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.94600004,
+    "HAT": 3.0300002,
+    "STND": 0,
+    "MHHW": 2.58,
+    "MHW": 2.499,
+    "DTL": 1.908,
+    "MTL": 1.895,
+    "MSL": 1.825,
+    "MLW": 1.29,
+    "MLLW": 1.235,
+    "GT": 1.345,
+    "MN": 1.209,
+    "DHQ": 0.081,
+    "DLQ": 0.055,
+    "HWI": 0.526,
+    "LWI": 6.302
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 183,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.94600004,
-    "HAT": 3.0300002,
-    "STND": 0,
-    "MHHW": 2.58,
-    "MHW": 2.499,
-    "DTL": 1.908,
-    "MTL": 1.895,
-    "MSL": 1.825,
-    "MLW": 1.29,
-    "MLLW": 1.235,
-    "GT": 1.345,
-    "MN": 1.209,
-    "DHQ": 0.081,
-    "DLQ": 0.055,
-    "HWI": 0.526,
-    "LWI": 6.302
-  },
-  "disclaimers": ""
+  ]
 }

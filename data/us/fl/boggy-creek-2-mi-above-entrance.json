@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-boggy-creek-2-mi-above-entrance",
+  "id": "us/fl/boggy-creek-2-mi-above-entrance",
   "name": "Boggy Creek, 2 mi. above entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.5883,
   "longitude": -81.6633,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720084",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720084",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720084.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720084"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-fernandina-beach-amelia-river",
+    "reference": "us/fl/fernandina-beach-amelia-river",
     "height": {
       "type": "ratio",
       "high": 0.49,

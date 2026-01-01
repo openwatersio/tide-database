@@ -1,10 +1,9 @@
 {
-  "id": "us-la-bayou-chene",
+  "id": "us/la/bayou-chene",
   "name": "Bayou Chene",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.512699127197266,
   "longitude": -89.7645034790039,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8761432",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761432",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8761432.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761432"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.871,
+    "HAT": 9.64,
+    "STND": 0,
+    "MHHW": 9.381,
+    "MHW": 9.374,
+    "DTL": 9.237,
+    "MTL": 9.241,
+    "MSL": 9.243,
+    "MLW": 9.108,
+    "MLLW": 9.094,
+    "GT": 0.287,
+    "MN": 0.266,
+    "DHQ": 0.007,
+    "DLQ": 0.014,
+    "NAVD88": 9.249
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.871,
-    "HAT": 9.64,
-    "STND": 0,
-    "MHHW": 9.381,
-    "MHW": 9.374,
-    "DTL": 9.237,
-    "MTL": 9.241,
-    "MSL": 9.243,
-    "MLW": 9.108,
-    "MLLW": 9.094,
-    "GT": 0.287,
-    "MN": 0.266,
-    "DHQ": 0.007,
-    "DLQ": 0.014,
-    "NAVD88": 9.249
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-boca-chita-key-biscayne-bay",
+  "id": "us/fl/boca-chita-key-biscayne-bay",
   "name": "Boca Chita Key, Biscayne Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.5233,
   "longitude": -80.175,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723355",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723355",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723355.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723355"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.813,
+    "HAT": 1.747,
+    "STND": 0,
+    "MHHW": 1.505,
+    "MHW": 1.504,
+    "DTL": 1.25,
+    "MTL": 1.271,
+    "MSL": 1.266,
+    "MLW": 1.038,
+    "MLLW": 0.994,
+    "GT": 0.511,
+    "MN": 0.467,
+    "DHQ": 0,
+    "DLQ": 0.043,
+    "HWI": 2.109,
+    "LWI": 8.624
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.813,
-    "HAT": 1.747,
-    "STND": 0,
-    "MHHW": 1.505,
-    "MHW": 1.504,
-    "DTL": 1.25,
-    "MTL": 1.271,
-    "MSL": 1.266,
-    "MLW": 1.038,
-    "MLLW": 0.994,
-    "GT": 0.511,
-    "MN": 0.467,
-    "DHQ": 0,
-    "DLQ": 0.043,
-    "HWI": 2.109,
-    "LWI": 8.624
-  },
-  "disclaimers": ""
+  ]
 }

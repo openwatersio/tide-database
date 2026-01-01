@@ -1,10 +1,9 @@
 {
-  "id": "us-clarence-harbor-long-island",
+  "id": "us/clarence-harbor-long-island",
   "name": "Clarence Harbor, Long Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 23.1,
   "longitude": -74.983333333333,
   "timezone": "America/Nassau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4633",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4633",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4633.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4633"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-settlement-point-grand-bahamas-island",
+    "reference": "us/settlement-point-grand-bahamas-island",
     "height": {
       "type": "ratio",
       "high": 0.97,

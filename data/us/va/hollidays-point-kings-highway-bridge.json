@@ -1,10 +1,9 @@
 {
-  "id": "us-va-hollidays-point-kings-highway-bridge",
+  "id": "us/va/hollidays-point-kings-highway-bridge",
   "name": "Hollidays Point (Kings Highway bridge)",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.8383,
   "longitude": -76.55,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638409",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638409",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638409.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638409"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-hampton-roads-sewells-point",
+    "reference": "us/va/hampton-roads-sewells-point",
     "height": {
       "type": "ratio",
       "high": 1.25,

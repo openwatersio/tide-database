@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-wakulla-airport-ochlockonee-bay",
+  "id": "us/fl/wakulla-airport-ochlockonee-bay",
   "name": "Wakulla Airport, Ochlockonee Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.980199813842773,
   "longitude": -84.3958969116211,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728262",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728262",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728262.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728262"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.18,
+    "HAT": 1.6700001,
+    "STND": 0,
+    "MHHW": 1.489,
+    "MHW": 1.422,
+    "DTL": 0.998,
+    "MTL": 1.053,
+    "MSL": 1.041,
+    "MLW": 0.684,
+    "MLLW": 0.506,
+    "GT": 0.983,
+    "MN": 0.738,
+    "DHQ": 0.067,
+    "DLQ": 0.178,
+    "HWI": 7.458,
+    "LWI": 1.477,
+    "NAVD88": 1.022
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.18,
-    "HAT": 1.6700001,
-    "STND": 0,
-    "MHHW": 1.489,
-    "MHW": 1.422,
-    "DTL": 0.998,
-    "MTL": 1.053,
-    "MSL": 1.041,
-    "MLW": 0.684,
-    "MLLW": 0.506,
-    "GT": 0.983,
-    "MN": 0.738,
-    "DHQ": 0.067,
-    "DLQ": 0.178,
-    "HWI": 7.458,
-    "LWI": 1.477,
-    "NAVD88": 1.022
-  },
-  "disclaimers": ""
+  ]
 }

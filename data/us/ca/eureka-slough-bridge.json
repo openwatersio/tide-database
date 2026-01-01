@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-eureka-slough-bridge",
+  "id": "us/ca/eureka-slough-bridge",
   "name": "Eureka Slough Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8067,
   "longitude": -124.142,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9418802",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418802",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9418802.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418802"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-humboldt-bay-north-spit",
+    "reference": "us/ca/humboldt-bay-north-spit",
     "height": {
       "type": "ratio",
       "high": 1.08,

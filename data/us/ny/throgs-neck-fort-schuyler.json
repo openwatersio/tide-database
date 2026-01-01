@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-throgs-neck-fort-schuyler",
+  "id": "us/ny/throgs-neck-fort-schuyler",
   "name": "Throgs Neck, Fort Schuyler",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.805,
   "longitude": -73.795,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518526",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518526",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518526.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518526"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.09200001,
+    "HAT": 3.4520001,
+    "STND": 0,
+    "MHHW": 2.83,
+    "MHW": 2.72,
+    "DTL": 1.647,
+    "MTL": 1.633,
+    "MSL": 1.651,
+    "MLW": 0.547,
+    "MLLW": 0.463,
+    "GT": 2.367,
+    "MN": 2.173,
+    "DHQ": 0.11,
+    "DLQ": 0.084,
+    "HWI": 4.09,
+    "LWI": 10.83,
+    "NAVD88": 1.707
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.09200001,
-    "HAT": 3.4520001,
-    "STND": 0,
-    "MHHW": 2.83,
-    "MHW": 2.72,
-    "DTL": 1.647,
-    "MTL": 1.633,
-    "MSL": 1.651,
-    "MLW": 0.547,
-    "MLLW": 0.463,
-    "GT": 2.367,
-    "MN": 2.173,
-    "DHQ": 0.11,
-    "DLQ": 0.084,
-    "HWI": 4.09,
-    "LWI": 10.83,
-    "NAVD88": 1.707
-  },
-  "disclaimers": ""
+  ]
 }

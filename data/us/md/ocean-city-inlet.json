@@ -1,10 +1,9 @@
 {
-  "id": "us-md-ocean-city-inlet",
+  "id": "us/md/ocean-city-inlet",
   "name": "Ocean City Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.32833,
   "longitude": -75.09166666666667,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8570283",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570283",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8570283.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570283"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.182,
+    "HAT": 3.447,
+    "STND": 0,
+    "MHHW": 3.205,
+    "MHW": 3.143,
+    "DTL": 2.831,
+    "MTL": 2.823,
+    "MSL": 2.843,
+    "MLW": 2.503,
+    "MLLW": 2.456,
+    "GT": 0.749,
+    "MN": 0.64,
+    "DHQ": 0.062,
+    "DLQ": 0.047,
+    "HWI": 0.379,
+    "LWI": 6.418,
+    "NAVD88": 2.984
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 252.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.182,
-    "HAT": 3.447,
-    "STND": 0,
-    "MHHW": 3.205,
-    "MHW": 3.143,
-    "DTL": 2.831,
-    "MTL": 2.823,
-    "MSL": 2.843,
-    "MLW": 2.503,
-    "MLLW": 2.456,
-    "GT": 0.749,
-    "MN": 0.64,
-    "DHQ": 0.062,
-    "DLQ": 0.047,
-    "HWI": 0.379,
-    "LWI": 6.418,
-    "NAVD88": 2.984
-  },
-  "disclaimers": ""
+  ]
 }

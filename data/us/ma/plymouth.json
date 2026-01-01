@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-plymouth",
+  "id": "us/ma/plymouth",
   "name": "Plymouth",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.96,
   "longitude": -70.6617,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8446493",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8446493",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8446493.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8446493"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.34599996,
+    "HAT": 4.789,
+    "STND": 0,
+    "MHHW": 4.14,
+    "MHW": 4.006,
+    "DTL": 2.534,
+    "MTL": 2.519,
+    "MSL": 2.569,
+    "MLW": 1.032,
+    "MLLW": 0.929,
+    "GT": 3.211,
+    "MN": 2.974,
+    "DHQ": 0.134,
+    "DLQ": 0.104,
+    "HWI": 3.801,
+    "LWI": 10.232,
+    "NAVD88": 2.687
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.34599996,
-    "HAT": 4.789,
-    "STND": 0,
-    "MHHW": 4.14,
-    "MHW": 4.006,
-    "DTL": 2.534,
-    "MTL": 2.519,
-    "MSL": 2.569,
-    "MLW": 1.032,
-    "MLLW": 0.929,
-    "GT": 3.211,
-    "MN": 2.974,
-    "DHQ": 0.134,
-    "DLQ": 0.104,
-    "HWI": 3.801,
-    "LWI": 10.232,
-    "NAVD88": 2.687
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-va-park-turn",
+  "id": "us/va/park-turn",
   "name": "Park Turn",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.2133,
   "longitude": -77.2433,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8635257",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635257",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8635257.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635257"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.947,
+    "HAT": 6.947,
+    "STND": 0,
+    "MHHW": 6.824,
+    "MHW": 6.775,
+    "DTL": 6.454,
+    "MTL": 6.451,
+    "MSL": 6.478,
+    "MLW": 6.128,
+    "MLLW": 6.084,
+    "GT": 0.739,
+    "MN": 0.647,
+    "DHQ": 0.049,
+    "DLQ": 0.043,
+    "HWI": 10.989,
+    "LWI": 5.161
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 242.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.947,
-    "HAT": 6.947,
-    "STND": 0,
-    "MHHW": 6.824,
-    "MHW": 6.775,
-    "DTL": 6.454,
-    "MTL": 6.451,
-    "MSL": 6.478,
-    "MLW": 6.128,
-    "MLLW": 6.084,
-    "GT": 0.739,
-    "MN": 0.647,
-    "DHQ": 0.049,
-    "DLQ": 0.043,
-    "HWI": 10.989,
-    "LWI": 5.161
-  },
-  "disclaimers": ""
+  ]
 }

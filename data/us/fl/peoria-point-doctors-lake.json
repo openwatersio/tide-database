@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-peoria-point-doctors-lake",
+  "id": "us/fl/peoria-point-doctors-lake",
   "name": "Peoria Point, Doctors Lake",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.12,
   "longitude": -81.7583,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720406",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720406",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720406.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720406"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.697,
+    "HAT": 2.068,
+    "STND": 0,
+    "MHHW": 2.021,
+    "MHW": 2,
+    "DTL": 1.882,
+    "MTL": 1.879,
+    "MSL": 1.873,
+    "MLW": 1.757,
+    "MLLW": 1.743,
+    "GT": 0.278,
+    "MN": 0.243,
+    "DHQ": 0.021,
+    "DLQ": 0.014,
+    "HWI": 4.74,
+    "LWI": 11.905,
+    "NAVD88": 1.86
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.697,
-    "HAT": 2.068,
-    "STND": 0,
-    "MHHW": 2.021,
-    "MHW": 2,
-    "DTL": 1.882,
-    "MTL": 1.879,
-    "MSL": 1.873,
-    "MLW": 1.757,
-    "MLLW": 1.743,
-    "GT": 0.278,
-    "MN": 0.243,
-    "DHQ": 0.021,
-    "DLQ": 0.014,
-    "HWI": 4.74,
-    "LWI": 11.905,
-    "NAVD88": 1.86
-  },
-  "disclaimers": ""
+  ]
 }

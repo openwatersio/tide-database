@@ -1,10 +1,9 @@
 {
-  "id": "us-or-hammond-oregon",
+  "id": "us/or/hammond-oregon",
   "name": "Hammond, Oregon",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.2017,
   "longitude": -123.945,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9439011",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9439011",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9439011.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9439011"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.062000036,
+    "HAT": 4.006,
+    "STND": 0,
+    "MHHW": 3.309,
+    "MHW": 3.093,
+    "DTL": 2.036,
+    "MTL": 2.12,
+    "MSL": 2.098,
+    "MLW": 1.146,
+    "MLLW": 0.763,
+    "GT": 2.546,
+    "MN": 1.947,
+    "DHQ": 0.216,
+    "DLQ": 0.383,
+    "HWI": 8.846,
+    "LWI": 2.307,
+    "NAVD88": 0.78
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 142.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.062000036,
-    "HAT": 4.006,
-    "STND": 0,
-    "MHHW": 3.309,
-    "MHW": 3.093,
-    "DTL": 2.036,
-    "MTL": 2.12,
-    "MSL": 2.098,
-    "MLW": 1.146,
-    "MLLW": 0.763,
-    "GT": 2.546,
-    "MN": 1.947,
-    "DHQ": 0.216,
-    "DLQ": 0.383,
-    "HWI": 8.846,
-    "LWI": 2.307,
-    "NAVD88": 0.78
-  },
-  "disclaimers": ""
+  ]
 }

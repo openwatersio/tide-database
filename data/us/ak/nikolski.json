@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-nikolski",
+  "id": "us/ak/nikolski",
   "name": "Nikolski",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 52.94061,
   "longitude": -168.8713055557675,
   "timezone": "America/Nome",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462450",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462450",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462450.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462450"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.63199997,
+    "HAT": 3,
+    "STND": 0,
+    "MHHW": 2.461,
+    "MHW": 2.359,
+    "DTL": 1.852,
+    "MTL": 1.954,
+    "MSL": 1.941,
+    "MLW": 1.549,
+    "MLLW": 1.242,
+    "GT": 1.219,
+    "MN": 0.81,
+    "DHQ": 0.102,
+    "DLQ": 0.307,
+    "HWI": 2.549,
+    "LWI": 8.555,
+    "NAVD88": 1.421
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.63199997,
-    "HAT": 3,
-    "STND": 0,
-    "MHHW": 2.461,
-    "MHW": 2.359,
-    "DTL": 1.852,
-    "MTL": 1.954,
-    "MSL": 1.941,
-    "MLW": 1.549,
-    "MLLW": 1.242,
-    "GT": 1.219,
-    "MN": 0.81,
-    "DHQ": 0.102,
-    "DLQ": 0.307,
-    "HWI": 2.549,
-    "LWI": 8.555,
-    "NAVD88": 1.421
-  },
-  "disclaimers": ""
+  ]
 }

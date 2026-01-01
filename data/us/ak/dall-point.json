@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-dall-point",
+  "id": "us/ak/dall-point",
   "name": "Dall Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 61.5317,
   "longitude": -166.148,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9466931",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466931",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9466931.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466931"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 12.197,
+    "HAT": 14.426,
+    "STND": 0,
+    "MHHW": 14.079,
+    "MHW": 13.864,
+    "DTL": 13.401,
+    "MTL": 13.349,
+    "MSL": 13.282,
+    "MLW": 12.834,
+    "MLLW": 12.721,
+    "GT": 1.357,
+    "MN": 1.03,
+    "DHQ": 0.215,
+    "DLQ": 0.112,
+    "HWI": 9.66,
+    "LWI": 4.89
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 12.197,
-    "HAT": 14.426,
-    "STND": 0,
-    "MHHW": 14.079,
-    "MHW": 13.864,
-    "DTL": 13.401,
-    "MTL": 13.349,
-    "MSL": 13.282,
-    "MLW": 12.834,
-    "MLLW": 12.721,
-    "GT": 1.357,
-    "MN": 1.03,
-    "DHQ": 0.215,
-    "DLQ": 0.112,
-    "HWI": 9.66,
-    "LWI": 4.89
-  },
-  "disclaimers": ""
+  ]
 }

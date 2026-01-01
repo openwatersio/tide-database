@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-papke-s-landing",
+  "id": "us/ak/papke-s-landing",
   "name": "Papke's Landing",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.6767,
   "longitude": -132.933,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451346",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451346",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451346.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451346"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.0172513,
+    "HAT": 9.768251,
+    "STND": 0,
+    "MHHW": 8.401,
+    "MHW": 8.13,
+    "DTL": 5.903,
+    "MTL": 6.009,
+    "MSL": 6.008,
+    "MLW": 3.888,
+    "MLLW": 3.405,
+    "GT": 4.997,
+    "MN": 4.242,
+    "DHQ": 0.272,
+    "DLQ": 0.483,
+    "HWI": 9.96,
+    "LWI": 3.93
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.0172513,
-    "HAT": 9.768251,
-    "STND": 0,
-    "MHHW": 8.401,
-    "MHW": 8.13,
-    "DTL": 5.903,
-    "MTL": 6.009,
-    "MSL": 6.008,
-    "MLW": 3.888,
-    "MLLW": 3.405,
-    "GT": 4.997,
-    "MN": 4.242,
-    "DHQ": 0.272,
-    "DLQ": 0.483,
-    "HWI": 9.96,
-    "LWI": 3.93
-  },
-  "disclaimers": ""
+  ]
 }

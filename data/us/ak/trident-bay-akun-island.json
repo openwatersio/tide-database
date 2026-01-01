@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-trident-bay-akun-island",
+  "id": "us/ak/trident-bay-akun-island",
   "name": "Trident Bay, Akun Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.14,
   "longitude": -165.527,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462721",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462721",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462721.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462721"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.46,
+    "HAT": 9.862,
+    "STND": 0,
+    "MHHW": 9.26,
+    "MHW": 9.137,
+    "DTL": 8.63,
+    "MTL": 8.654,
+    "MSL": 8.675,
+    "MLW": 8.171,
+    "MLLW": 8.001,
+    "GT": 1.259,
+    "MN": 0.967,
+    "DHQ": 0.122,
+    "DLQ": 0.17
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.46,
-    "HAT": 9.862,
-    "STND": 0,
-    "MHHW": 9.26,
-    "MHW": 9.137,
-    "DTL": 8.63,
-    "MTL": 8.654,
-    "MSL": 8.675,
-    "MLW": 8.171,
-    "MLLW": 8.001,
-    "GT": 1.259,
-    "MN": 0.967,
-    "DHQ": 0.122,
-    "DLQ": 0.17
-  },
-  "disclaimers": ""
+  ]
 }

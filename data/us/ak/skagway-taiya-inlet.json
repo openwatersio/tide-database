@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-skagway-taiya-inlet",
+  "id": "us/ak/skagway-taiya-inlet",
   "name": "Skagway, Taiya Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.4508,
   "longitude": -135.328,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452400",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452400",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452400.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452400"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.9299998,
+    "HAT": 7.013,
+    "STND": 0,
+    "MHHW": 5.704,
+    "MHW": 5.398,
+    "DTL": 3.171,
+    "MTL": 3.248,
+    "MSL": 3.296,
+    "MLW": 1.098,
+    "MLLW": 0.603,
+    "GT": 5.1,
+    "MN": 4.3,
+    "DHQ": 0.306,
+    "DLQ": 0.495,
+    "HWI": 9.75,
+    "LWI": 3.52
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 253.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.9299998,
-    "HAT": 7.013,
-    "STND": 0,
-    "MHHW": 5.704,
-    "MHW": 5.398,
-    "DTL": 3.171,
-    "MTL": 3.248,
-    "MSL": 3.296,
-    "MLW": 1.098,
-    "MLLW": 0.603,
-    "GT": 5.1,
-    "MN": 4.3,
-    "DHQ": 0.306,
-    "DLQ": 0.495,
-    "HWI": 9.75,
-    "LWI": 3.52
-  },
-  "disclaimers": ""
+  ]
 }

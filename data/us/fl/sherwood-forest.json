@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-sherwood-forest",
+  "id": "us/fl/sherwood-forest",
   "name": "Sherwood Forest",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.42,
   "longitude": -81.7283,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720213",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720213",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720213.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720213"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.96799994,
+    "HAT": 2.4359999,
+    "STND": 0,
+    "MHHW": 2.105,
+    "MHW": 2.062,
+    "DTL": 1.671,
+    "MTL": 1.664,
+    "MSL": 1.657,
+    "MLW": 1.265,
+    "MLLW": 1.237,
+    "GT": 0.869,
+    "MN": 0.797,
+    "DHQ": 0.043,
+    "DLQ": 0.028,
+    "HWI": 2.852,
+    "LWI": 9.211,
+    "NAVD88": 1.725
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.96799994,
-    "HAT": 2.4359999,
-    "STND": 0,
-    "MHHW": 2.105,
-    "MHW": 2.062,
-    "DTL": 1.671,
-    "MTL": 1.664,
-    "MSL": 1.657,
-    "MLW": 1.265,
-    "MLLW": 1.237,
-    "GT": 0.869,
-    "MN": 0.797,
-    "DHQ": 0.043,
-    "DLQ": 0.028,
-    "HWI": 2.852,
-    "LWI": 9.211,
-    "NAVD88": 1.725
-  },
-  "disclaimers": ""
+  ]
 }

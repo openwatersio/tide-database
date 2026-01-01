@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-trenton-n-j",
+  "id": "us/nj/trenton-n-j",
   "name": "Trenton, N.J.",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.1883,
   "longitude": -74.755,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8539993",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8539993",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8539993.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8539993"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.15399992,
+    "HAT": 3.609,
+    "STND": 0,
+    "MHHW": 3.187,
+    "MHW": 3.077,
+    "DTL": 1.855,
+    "MTL": 1.831,
+    "MSL": 1.887,
+    "MLW": 0.585,
+    "MLLW": 0.524,
+    "GT": 2.664,
+    "MN": 2.492,
+    "DHQ": 0.111,
+    "DLQ": 0.061,
+    "HWI": 7.572,
+    "LWI": 2.859,
+    "NAVD88": 1.699
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 112.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.15399992,
-    "HAT": 3.609,
-    "STND": 0,
-    "MHHW": 3.187,
-    "MHW": 3.077,
-    "DTL": 1.855,
-    "MTL": 1.831,
-    "MSL": 1.887,
-    "MLW": 0.585,
-    "MLLW": 0.524,
-    "GT": 2.664,
-    "MN": 2.492,
-    "DHQ": 0.111,
-    "DLQ": 0.061,
-    "HWI": 7.572,
-    "LWI": 2.859,
-    "NAVD88": 1.699
-  },
-  "disclaimers": ""
+  ]
 }

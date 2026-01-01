@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-new-london-state-pier",
+  "id": "us/ct/new-london-state-pier",
   "name": "NEW LONDON, State Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.371667,
   "longitude": -72.095556,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8461490",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8461490",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8461490.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8461490"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.82863396,
+    "HAT": 2.2556338,
+    "STND": 0,
+    "MHHW": 2.003,
+    "MHW": 1.913,
+    "DTL": 1.538,
+    "MTL": 1.523,
+    "MSL": 1.542,
+    "MLW": 1.132,
+    "MLLW": 1.074,
+    "GT": 0.93,
+    "MN": 0.781,
+    "DHQ": 0.09,
+    "DLQ": 0.059,
+    "HWI": 2.02,
+    "LWI": 8.489,
+    "NAVD88": 1.634
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 73.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.82863396,
-    "HAT": 2.2556338,
-    "STND": 0,
-    "MHHW": 2.003,
-    "MHW": 1.913,
-    "DTL": 1.538,
-    "MTL": 1.523,
-    "MSL": 1.542,
-    "MLW": 1.132,
-    "MLLW": 1.074,
-    "GT": 0.93,
-    "MN": 0.781,
-    "DHQ": 0.09,
-    "DLQ": 0.059,
-    "HWI": 2.02,
-    "LWI": 8.489,
-    "NAVD88": 1.634
-  },
-  "disclaimers": ""
+  ]
 }

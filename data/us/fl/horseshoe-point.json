@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-horseshoe-point",
+  "id": "us/fl/horseshoe-point",
   "name": "HORSESHOE POINT",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.4367,
   "longitude": -83.2933,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727648",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727648",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727648.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727648"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.16899997,
+    "HAT": 1.646,
+    "STND": 0,
+    "MHHW": 1.338,
+    "MHW": 1.248,
+    "DTL": 0.793,
+    "MTL": 0.838,
+    "MSL": 0.824,
+    "MLW": 0.427,
+    "MLLW": 0.247,
+    "GT": 1.09,
+    "MN": 0.821,
+    "DHQ": 0.089,
+    "DLQ": 0.18,
+    "HWI": 6.135,
+    "LWI": 0.469,
+    "NAVD88": 0.87
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.16899997,
-    "HAT": 1.646,
-    "STND": 0,
-    "MHHW": 1.338,
-    "MHW": 1.248,
-    "DTL": 0.793,
-    "MTL": 0.838,
-    "MSL": 0.824,
-    "MLW": 0.427,
-    "MLLW": 0.247,
-    "GT": 1.09,
-    "MN": 0.821,
-    "DHQ": 0.089,
-    "DLQ": 0.18,
-    "HWI": 6.135,
-    "LWI": 0.469,
-    "NAVD88": 0.87
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-cherry-point",
+  "id": "us/wa/cherry-point",
   "name": "CHERRY POINT",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.86271666666666,
   "longitude": -122.7585833333333,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449424",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449424",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449424.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449424"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.74099994,
+    "HAT": 5.273,
+    "STND": 0,
+    "MHHW": 4.721,
+    "MHW": 4.468,
+    "DTL": 3.327,
+    "MTL": 3.599,
+    "MSL": 3.543,
+    "MLW": 2.729,
+    "MLLW": 1.933,
+    "GT": 2.788,
+    "MN": 1.739,
+    "DHQ": 0.253,
+    "DLQ": 0.796,
+    "HWI": 0.79,
+    "LWI": 7.08
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 52.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.74099994,
-    "HAT": 5.273,
-    "STND": 0,
-    "MHHW": 4.721,
-    "MHW": 4.468,
-    "DTL": 3.327,
-    "MTL": 3.599,
-    "MSL": 3.543,
-    "MLW": 2.729,
-    "MLLW": 1.933,
-    "GT": 2.788,
-    "MN": 1.739,
-    "DHQ": 0.253,
-    "DLQ": 0.796,
-    "HWI": 0.79,
-    "LWI": 7.08
-  },
-  "disclaimers": ""
+  ]
 }

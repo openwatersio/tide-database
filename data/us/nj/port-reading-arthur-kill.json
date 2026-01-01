@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-port-reading-arthur-kill",
+  "id": "us/nj/port-reading-arthur-kill",
   "name": "Port Reading, Arthur Kill",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.55500030517578,
   "longitude": -74.24500274658203,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8531142",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531142",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8531142.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531142"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.9029999,
+    "HAT": 3.547,
+    "STND": 0,
+    "MHHW": 3.129,
+    "MHW": 3.023,
+    "DTL": 2.232,
+    "MTL": 2.217,
+    "MSL": 2.241,
+    "MLW": 1.41,
+    "MLLW": 1.335,
+    "GT": 1.794,
+    "MN": 1.612,
+    "DHQ": 0.106,
+    "DLQ": 0.076,
+    "HWI": 0.506,
+    "LWI": 7.031
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 320.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.9029999,
-    "HAT": 3.547,
-    "STND": 0,
-    "MHHW": 3.129,
-    "MHW": 3.023,
-    "DTL": 2.232,
-    "MTL": 2.217,
-    "MSL": 2.241,
-    "MLW": 1.41,
-    "MLLW": 1.335,
-    "GT": 1.794,
-    "MN": 1.612,
-    "DHQ": 0.106,
-    "DLQ": 0.076,
-    "HWI": 0.506,
-    "LWI": 7.031
-  },
-  "disclaimers": ""
+  ]
 }

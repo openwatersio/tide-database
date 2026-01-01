@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-little-hickory-island",
+  "id": "us/fl/little-hickory-island",
   "name": "Little Hickory Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.353300094604492,
   "longitude": -81.8550033569336,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725283",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725283",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725283.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725283"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.9,
+    "HAT": 0.42700002,
+    "STND": 0,
+    "MHHW": 0.184,
+    "MHW": 0.099,
+    "DTL": -0.185,
+    "MTL": -0.16,
+    "MSL": -0.155,
+    "MLW": -0.421,
+    "MLLW": -0.555,
+    "GT": 0.74,
+    "MN": 0.521,
+    "DHQ": 0.085,
+    "DLQ": 0.134,
+    "HWI": 5.828,
+    "LWI": 12.21,
+    "NAVD88": -0.003
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.9,
-    "HAT": 0.42700002,
-    "STND": 0,
-    "MHHW": 0.184,
-    "MHW": 0.099,
-    "DTL": -0.185,
-    "MTL": -0.16,
-    "MSL": -0.155,
-    "MLW": -0.421,
-    "MLLW": -0.555,
-    "GT": 0.74,
-    "MN": 0.521,
-    "DHQ": 0.085,
-    "DLQ": 0.134,
-    "HWI": 5.828,
-    "LWI": 12.21,
-    "NAVD88": -0.003
-  },
-  "disclaimers": ""
+  ]
 }

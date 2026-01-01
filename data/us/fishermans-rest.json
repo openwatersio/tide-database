@@ -1,10 +1,9 @@
 {
-  "id": "us-fishermans-rest",
+  "id": "us/fishermans-rest",
   "name": "Fishermans Rest",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.733333333332993,
   "longitude": -83.53333333333299,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4305",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4305",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4305.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4305"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-st-marks-river-entrance",
+    "reference": "us/fl/st-marks-river-entrance",
     "height": {
       "type": "ratio",
       "high": 0.93,

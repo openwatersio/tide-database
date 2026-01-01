@@ -1,10 +1,9 @@
 {
-  "id": "us-vi-dorothea-bay-saint-thomas-island",
+  "id": "us/vi/dorothea-bay-saint-thomas-island",
   "name": "Dorothea Bay, Saint Thomas Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "VI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.37125,
   "longitude": -64.96347222222222,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751768",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751768",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751768.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751768"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.0740004,
+    "HAT": 5.7650003,
+    "STND": 0,
+    "MHHW": 5.589,
+    "MHW": 5.514,
+    "DTL": 5.393,
+    "MTL": 5.372,
+    "MSL": 5.373,
+    "MLW": 5.23,
+    "MLLW": 5.196,
+    "GT": 0.393,
+    "MN": 0.284,
+    "DHQ": 0.075,
+    "DLQ": 0.034,
+    "HWI": 0.573,
+    "LWI": 6.873
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.0740004,
-    "HAT": 5.7650003,
-    "STND": 0,
-    "MHHW": 5.589,
-    "MHW": 5.514,
-    "DTL": 5.393,
-    "MTL": 5.372,
-    "MSL": 5.373,
-    "MLW": 5.23,
-    "MLLW": 5.196,
-    "GT": 0.393,
-    "MN": 0.284,
-    "DHQ": 0.075,
-    "DLQ": 0.034,
-    "HWI": 0.573,
-    "LWI": 6.873
-  },
-  "disclaimers": ""
+  ]
 }

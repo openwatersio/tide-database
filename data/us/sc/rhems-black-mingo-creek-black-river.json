@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-rhems-black-mingo-creek-black-river",
+  "id": "us/sc/rhems-black-mingo-creek-black-river",
   "name": "Rhems, Black Mingo Creek, Black River",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.6033,
   "longitude": -79.4267,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8661367",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661367",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8661367.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661367"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-sc-charleston-customhouse-wharf",
+    "reference": "us/sc/charleston-customhouse-wharf",
     "height": {
       "type": "ratio",
       "high": 0.36,

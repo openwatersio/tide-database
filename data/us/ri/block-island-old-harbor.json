@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-block-island-old-harbor",
+  "id": "us/ri/block-island-old-harbor",
   "name": "Block Island (Old Harbor)",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.1733,
   "longitude": -71.5567,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8459338",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8459338",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8459338.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8459338"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.011000037,
+    "HAT": 1.638,
+    "STND": 0,
+    "MHHW": 1.292,
+    "MHW": 1.216,
+    "DTL": 0.802,
+    "MTL": 0.781,
+    "MSL": 0.757,
+    "MLW": 0.346,
+    "MLLW": 0.311,
+    "GT": 0.981,
+    "MN": 0.87,
+    "DHQ": 0.076,
+    "DLQ": 0.035,
+    "HWI": 0.053,
+    "LWI": 6.161
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 146.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.011000037,
-    "HAT": 1.638,
-    "STND": 0,
-    "MHHW": 1.292,
-    "MHW": 1.216,
-    "DTL": 0.802,
-    "MTL": 0.781,
-    "MSL": 0.757,
-    "MLW": 0.346,
-    "MLLW": 0.311,
-    "GT": 0.981,
-    "MN": 0.87,
-    "DHQ": 0.076,
-    "DLQ": 0.035,
-    "HWI": 0.053,
-    "LWI": 6.161
-  },
-  "disclaimers": ""
+  ]
 }

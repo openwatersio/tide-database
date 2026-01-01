@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-lauderdale-by-the-sea-anglin-fishing-pier",
+  "id": "us/fl/lauderdale-by-the-sea-anglin-fishing-pier",
   "name": "Lauderdale-by-the-Sea, Anglin Fishing Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.18829917907715,
   "longitude": -80.09329986572266,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722899",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722899",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722899.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722899"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.68,
+    "HAT": 2.22,
+    "STND": 0,
+    "MHHW": 1.83,
+    "MHW": 1.793,
+    "DTL": 1.394,
+    "MTL": 1.4,
+    "MSL": 1.403,
+    "MLW": 1.008,
+    "MLLW": 0.957,
+    "GT": 0.873,
+    "MN": 0.785,
+    "DHQ": 0.037,
+    "DLQ": 0.051,
+    "HWI": 0.597,
+    "LWI": 6.781,
+    "NAVD88": 1.658
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 232.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.68,
-    "HAT": 2.22,
-    "STND": 0,
-    "MHHW": 1.83,
-    "MHW": 1.793,
-    "DTL": 1.394,
-    "MTL": 1.4,
-    "MSL": 1.403,
-    "MLW": 1.008,
-    "MLLW": 0.957,
-    "GT": 0.873,
-    "MN": 0.785,
-    "DHQ": 0.037,
-    "DLQ": 0.051,
-    "HWI": 0.597,
-    "LWI": 6.781,
-    "NAVD88": 1.658
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-cape-horn",
+  "id": "us/wa/cape-horn",
   "name": "Cape Horn",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.15169906616211,
   "longitude": -123.29000091552734,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440482",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440482",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440482.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440482"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.422,
+    "HAT": 8.41,
+    "STND": 0,
+    "MHHW": 7.952,
+    "MHW": 7.776,
+    "DTL": 6.984,
+    "MTL": 6.985,
+    "MSL": 6.926,
+    "MLW": 6.193,
+    "MLLW": 6.015,
+    "GT": 1.937,
+    "MN": 1.583,
+    "DHQ": 0.176,
+    "DLQ": 0.178,
+    "HWI": 10.499,
+    "LWI": 5.266
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.422,
-    "HAT": 8.41,
-    "STND": 0,
-    "MHHW": 7.952,
-    "MHW": 7.776,
-    "DTL": 6.984,
-    "MTL": 6.985,
-    "MSL": 6.926,
-    "MLW": 6.193,
-    "MLLW": 6.015,
-    "GT": 1.937,
-    "MN": 1.583,
-    "DHQ": 0.176,
-    "DLQ": 0.178,
-    "HWI": 10.499,
-    "LWI": 5.266
-  },
-  "disclaimers": ""
+  ]
 }

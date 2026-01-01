@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-wrangell-wrangell-island",
+  "id": "us/ak/wrangell-wrangell-island",
   "name": "Wrangell, Wrangell Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.47,
   "longitude": -132.387,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451204",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451204",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451204.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451204"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -4.034749,
+    "HAT": 3.5292509,
+    "STND": 0,
+    "MHHW": 2.271,
+    "MHW": 2.002,
+    "DTL": -0.161,
+    "MTL": -0.065,
+    "MSL": -0.074,
+    "MLW": -2.133,
+    "MLLW": -2.593,
+    "GT": 4.864,
+    "MN": 4.135,
+    "DHQ": 0.269,
+    "DLQ": 0.46,
+    "HWI": 9.58,
+    "LWI": 3.11
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -4.034749,
-    "HAT": 3.5292509,
-    "STND": 0,
-    "MHHW": 2.271,
-    "MHW": 2.002,
-    "DTL": -0.161,
-    "MTL": -0.065,
-    "MSL": -0.074,
-    "MLW": -2.133,
-    "MLLW": -2.593,
-    "GT": 4.864,
-    "MN": 4.135,
-    "DHQ": 0.269,
-    "DLQ": 0.46,
-    "HWI": 9.58,
-    "LWI": 3.11
-  },
-  "disclaimers": ""
+  ]
 }

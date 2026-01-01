@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-south-santee-river-icww-4-mi-canal-creek",
+  "id": "us/sc/south-santee-river-icww-4-mi-canal-creek",
   "name": "South Santee River, ICWW, 4 Mi Canal Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.15420150756836,
   "longitude": -79.35440063476562,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8663219",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8663219",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8663219.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8663219"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.9240003,
+    "HAT": 9.957,
+    "STND": 0,
+    "MHHW": 9.526,
+    "MHW": 9.444,
+    "DTL": 8.875,
+    "MTL": 8.862,
+    "MSL": 8.88,
+    "MLW": 8.279,
+    "MLLW": 8.224,
+    "GT": 1.302,
+    "MN": 1.166,
+    "DHQ": 0.081,
+    "DLQ": 0.055,
+    "HWI": 0.781,
+    "LWI": 7.901,
+    "NAVD88": 8.871
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.9240003,
-    "HAT": 9.957,
-    "STND": 0,
-    "MHHW": 9.526,
-    "MHW": 9.444,
-    "DTL": 8.875,
-    "MTL": 8.862,
-    "MSL": 8.88,
-    "MLW": 8.279,
-    "MLLW": 8.224,
-    "GT": 1.302,
-    "MN": 1.166,
-    "DHQ": 0.081,
-    "DLQ": 0.055,
-    "HWI": 0.781,
-    "LWI": 7.901,
-    "NAVD88": 8.871
-  },
-  "disclaimers": ""
+  ]
 }

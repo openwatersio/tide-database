@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-deer-point-lake-hwy-2321-bridge-north-bay",
+  "id": "us/fl/deer-point-lake-hwy-2321-bridge-north-bay",
   "name": "Deer Point Lake, Hwy 2321 bridge, North Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.26959991455078,
   "longitude": -85.60790252685547,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729082",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729082",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729082.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729082"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.012,
+    "HAT": 7.1229997,
+    "STND": 0,
+    "MHHW": 6.854,
+    "MHW": 6.824,
+    "DTL": 6.611,
+    "MTL": 6.613,
+    "MSL": 6.607,
+    "MLW": 6.403,
+    "MLLW": 6.368,
+    "GT": 0.486,
+    "MN": 0.421,
+    "DHQ": 0.03,
+    "DLQ": 0.034,
+    "NAVD88": 6.542
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.012,
-    "HAT": 7.1229997,
-    "STND": 0,
-    "MHHW": 6.854,
-    "MHW": 6.824,
-    "DTL": 6.611,
-    "MTL": 6.613,
-    "MSL": 6.607,
-    "MLW": 6.403,
-    "MLLW": 6.368,
-    "GT": 0.486,
-    "MN": 0.421,
-    "DHQ": 0.03,
-    "DLQ": 0.034,
-    "NAVD88": 6.542
-  },
-  "disclaimers": ""
+  ]
 }

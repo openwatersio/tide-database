@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-middle-bluff-kvichak-bay",
+  "id": "us/ak/middle-bluff-kvichak-bay",
   "name": "Middle Bluff, Kvichak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.4533,
   "longitude": -157.5,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465022",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465022",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465022.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465022"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-port-moller",
+    "reference": "us/ak/port-moller",
     "height": {
       "type": "ratio",
       "high": 1.84,

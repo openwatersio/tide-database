@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-matlacha-pass-bascule-bridge",
+  "id": "us/fl/matlacha-pass-bascule-bridge",
   "name": "Matlacha Pass (bascule bridge)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.63170051574707,
   "longitude": -82.06829833984375,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725506",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725506",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725506.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725506"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.74799997,
+    "HAT": 0.35799998,
+    "STND": 0,
+    "MHHW": 0.088,
+    "MHW": 0.016,
+    "DTL": -0.19,
+    "MTL": -0.173,
+    "MSL": -0.167,
+    "MLW": -0.363,
+    "MLLW": -0.468,
+    "GT": 0.556,
+    "MN": 0.381,
+    "DHQ": 0.071,
+    "DLQ": 0.104,
+    "NAVD88": -0.01
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 56.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.74799997,
-    "HAT": 0.35799998,
-    "STND": 0,
-    "MHHW": 0.088,
-    "MHW": 0.016,
-    "DTL": -0.19,
-    "MTL": -0.173,
-    "MSL": -0.167,
-    "MLW": -0.363,
-    "MLLW": -0.468,
-    "GT": 0.556,
-    "MN": 0.381,
-    "DHQ": 0.071,
-    "DLQ": 0.104,
-    "NAVD88": -0.01
-  },
-  "disclaimers": ""
+  ]
 }

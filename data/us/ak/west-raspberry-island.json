@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-west-raspberry-island",
+  "id": "us/ak/west-raspberry-island",
   "name": "West Raspberry Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.10716666666666,
   "longitude": -153.3401111111111,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457535",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457535",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457535.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457535"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.313,
+    "HAT": 5.667,
+    "STND": 0,
+    "MHHW": 4.382,
+    "MHW": 4.124,
+    "DTL": 2.242,
+    "MTL": 2.364,
+    "MSL": 2.344,
+    "MLW": 0.603,
+    "MLLW": 0.103,
+    "GT": 4.279,
+    "MN": 3.522,
+    "DHQ": 0.257,
+    "DLQ": 0.5,
+    "HWI": 11.154,
+    "LWI": 5.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.313,
-    "HAT": 5.667,
-    "STND": 0,
-    "MHHW": 4.382,
-    "MHW": 4.124,
-    "DTL": 2.242,
-    "MTL": 2.364,
-    "MSL": 2.344,
-    "MLW": 0.603,
-    "MLLW": 0.103,
-    "GT": 4.279,
-    "MN": 3.522,
-    "DHQ": 0.257,
-    "DLQ": 0.5,
-    "HWI": 11.154,
-    "LWI": 5.006
-  },
-  "disclaimers": ""
+  ]
 }

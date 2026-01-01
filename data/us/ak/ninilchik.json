@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-ninilchik",
+  "id": "us/ak/ninilchik",
   "name": "Ninilchik",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.055,
   "longitude": -151.682,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455653",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455653",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455653.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455653"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -5.574,
+    "HAT": 3.8199997,
+    "STND": 0,
+    "MHHW": 2.125,
+    "MHW": 1.909,
+    "DTL": -0.794,
+    "MTL": -0.604,
+    "MSL": -0.578,
+    "MLW": -3.118,
+    "MLLW": -3.713,
+    "GT": 5.839,
+    "MN": 5.029,
+    "DHQ": 0.215,
+    "DLQ": 0.595,
+    "HWI": 12.28,
+    "LWI": 6.08,
+    "NAVD88": -1.823
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -5.574,
-    "HAT": 3.8199997,
-    "STND": 0,
-    "MHHW": 2.125,
-    "MHW": 1.909,
-    "DTL": -0.794,
-    "MTL": -0.604,
-    "MSL": -0.578,
-    "MLW": -3.118,
-    "MLLW": -3.713,
-    "GT": 5.839,
-    "MN": 5.029,
-    "DHQ": 0.215,
-    "DLQ": 0.595,
-    "HWI": 12.28,
-    "LWI": 6.08,
-    "NAVD88": -1.823
-  },
-  "disclaimers": ""
+  ]
 }

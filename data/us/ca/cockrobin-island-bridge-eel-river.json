@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-cockrobin-island-bridge-eel-river",
+  "id": "us/ca/cockrobin-island-bridge-eel-river",
   "name": "Cockrobin Island Bridge, Eel River",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.63719940185547,
   "longitude": -124.2822036743164,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9418637",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418637",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9418637.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418637"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.595,
+    "HAT": 8.65,
+    "STND": 0,
+    "MHHW": 7.996,
+    "MHW": 7.785,
+    "DTL": 7.047,
+    "MTL": 7.115,
+    "MSL": 7.127,
+    "MLW": 6.445,
+    "MLLW": 6.099,
+    "GT": 1.897,
+    "MN": 1.34,
+    "DHQ": 0.211,
+    "DLQ": 0.346,
+    "HWI": 7.622,
+    "LWI": 1.502
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 222.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.595,
-    "HAT": 8.65,
-    "STND": 0,
-    "MHHW": 7.996,
-    "MHW": 7.785,
-    "DTL": 7.047,
-    "MTL": 7.115,
-    "MSL": 7.127,
-    "MLW": 6.445,
-    "MLLW": 6.099,
-    "GT": 1.897,
-    "MN": 1.34,
-    "DHQ": 0.211,
-    "DLQ": 0.346,
-    "HWI": 7.622,
-    "LWI": 1.502
-  },
-  "disclaimers": ""
+  ]
 }

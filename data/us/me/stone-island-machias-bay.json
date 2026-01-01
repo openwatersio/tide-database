@@ -1,10 +1,9 @@
 {
-  "id": "us-me-stone-island-machias-bay",
+  "id": "us/me/stone-island-machias-bay",
   "name": "Stone Island, Machias Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.6033,
   "longitude": -67.3683,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8411411",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8411411",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8411411.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8411411"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-me-eastport",
+    "reference": "us/me/eastport",
     "height": {
       "type": "ratio",
       "high": 0.68,

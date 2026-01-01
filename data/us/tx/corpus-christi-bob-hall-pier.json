@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-corpus-christi-bob-hall-pier",
+  "id": "us/tx/corpus-christi-bob-hall-pier",
   "name": "Corpus Christi, Bob Hall Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.579999923706055,
   "longitude": -97.2166976928711,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8775870",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775870",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8775870.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775870"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.957,
+    "HAT": 7.1419997,
+    "STND": 0,
+    "MHHW": 6.841,
+    "MHW": 6.812,
+    "DTL": 6.592,
+    "MTL": 6.611,
+    "MSL": 6.626,
+    "MLW": 6.411,
+    "MLLW": 6.342,
+    "GT": 0.499,
+    "MN": 0.401,
+    "DHQ": 0.029,
+    "DLQ": 0.068,
+    "NAVD88": 6.495
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 124.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.957,
-    "HAT": 7.1419997,
-    "STND": 0,
-    "MHHW": 6.841,
-    "MHW": 6.812,
-    "DTL": 6.592,
-    "MTL": 6.611,
-    "MSL": 6.626,
-    "MLW": 6.411,
-    "MLLW": 6.342,
-    "GT": 0.499,
-    "MN": 0.401,
-    "DHQ": 0.029,
-    "DLQ": 0.068,
-    "NAVD88": 6.495
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-montezuma-slough",
+  "id": "us/ca/montezuma-slough",
   "name": "Montezuma Slough",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.0767,
   "longitude": -121.885,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415205",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415205",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415205.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415205"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-port-chicago-suisun-bay",
+    "reference": "us/ca/port-chicago-suisun-bay",
     "height": {
       "type": "ratio",
       "high": 0.84,

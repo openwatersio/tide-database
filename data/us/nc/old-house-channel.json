@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-old-house-channel",
+  "id": "us/nc/old-house-channel",
   "name": "Old House Channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.77669906616211,
   "longitude": -75.58499908447266,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8652648",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8652648",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8652648.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8652648"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.67300004,
+    "HAT": 1.143,
+    "STND": 0,
+    "MHHW": 1.031,
+    "MHW": 0.991,
+    "DTL": 0.894,
+    "MTL": 0.892,
+    "MSL": 0.896,
+    "MLW": 0.794,
+    "MLLW": 0.756,
+    "GT": 0.274,
+    "MN": 0.197,
+    "DHQ": 0.04,
+    "DLQ": 0.037,
+    "HWI": 0.948,
+    "LWI": 7.499
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.67300004,
-    "HAT": 1.143,
-    "STND": 0,
-    "MHHW": 1.031,
-    "MHW": 0.991,
-    "DTL": 0.894,
-    "MTL": 0.892,
-    "MSL": 0.896,
-    "MLW": 0.794,
-    "MLLW": 0.756,
-    "GT": 0.274,
-    "MN": 0.197,
-    "DHQ": 0.04,
-    "DLQ": 0.037,
-    "HWI": 0.948,
-    "LWI": 7.499
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-abraham-bay-mayaguana-island",
+  "id": "us/abraham-bay-mayaguana-island",
   "name": "Abraham Bay, Mayaguana Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 22.366666666667008,
   "longitude": -73,
   "timezone": "America/Nassau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4641",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4641",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4641.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4641"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-settlement-point-grand-bahamas-island",
+    "reference": "us/settlement-point-grand-bahamas-island",
     "height": {
       "type": "ratio",
       "high": 0.79,

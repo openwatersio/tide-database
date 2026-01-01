@@ -1,10 +1,9 @@
 {
-  "id": "us-grand-cayman",
+  "id": "us/grand-cayman",
   "name": "Grand Cayman",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 19.33333333333299,
   "longitude": -81.33333333333299,
   "timezone": "America/Cayman",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4707",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4707",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4707.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4707"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-tx-galveston-galveston-channel",
+    "reference": "us/tx/galveston-galveston-channel",
     "height": {
       "type": "ratio",
       "high": 0.93,

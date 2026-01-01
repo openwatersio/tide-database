@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-holley-east-bay",
+  "id": "us/fl/holley-east-bay",
   "name": "Holley, East Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.450000762939453,
   "longitude": -86.91829681396484,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729702",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729702",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729702.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729702"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.26,
+    "HAT": 1.296,
+    "STND": 0,
+    "MHHW": 1.052,
+    "MHW": 1.028,
+    "DTL": 0.823,
+    "MTL": 0.82,
+    "MSL": 0.821,
+    "MLW": 0.612,
+    "MLLW": 0.595,
+    "GT": 0.457,
+    "MN": 0.416,
+    "DHQ": 0.024,
+    "DLQ": 0.017
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 107.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.26,
-    "HAT": 1.296,
-    "STND": 0,
-    "MHHW": 1.052,
-    "MHW": 1.028,
-    "DTL": 0.823,
-    "MTL": 0.82,
-    "MSL": 0.821,
-    "MLW": 0.612,
-    "MLLW": 0.595,
-    "GT": 0.457,
-    "MN": 0.416,
-    "DHQ": 0.024,
-    "DLQ": 0.017
-  },
-  "disclaimers": ""
+  ]
 }

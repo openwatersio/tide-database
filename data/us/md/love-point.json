@@ -1,10 +1,9 @@
 {
-  "id": "us-md-love-point",
+  "id": "us/md/love-point",
   "name": "Love Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.0317,
   "longitude": -76.3017,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8572955",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572955",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8572955.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572955"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.184,
+    "HAT": 2.025,
+    "STND": 0,
+    "MHHW": 1.874,
+    "MHW": 1.787,
+    "DTL": 1.617,
+    "MTL": 1.606,
+    "MSL": 1.608,
+    "MLW": 1.425,
+    "MLLW": 1.36,
+    "GT": 0.513,
+    "MN": 0.362,
+    "DHQ": 0.087,
+    "DLQ": 0.064,
+    "HWI": 11.123,
+    "LWI": 5.021
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 23,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.184,
-    "HAT": 2.025,
-    "STND": 0,
-    "MHHW": 1.874,
-    "MHW": 1.787,
-    "DTL": 1.617,
-    "MTL": 1.606,
-    "MSL": 1.608,
-    "MLW": 1.425,
-    "MLLW": 1.36,
-    "GT": 0.513,
-    "MN": 0.362,
-    "DHQ": 0.087,
-    "DLQ": 0.064,
-    "HWI": 11.123,
-    "LWI": 5.021
-  },
-  "disclaimers": ""
+  ]
 }

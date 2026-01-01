@@ -1,10 +1,9 @@
 {
-  "id": "us-la-chef-menteur-chef-menteur-pass",
+  "id": "us/la/chef-menteur-chef-menteur-pass",
   "name": "Chef Menteur, Chef Menteur Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.065,
   "longitude": -89.8,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8761487",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761487",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8761487.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761487"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-la-south-pass",
+    "reference": "us/la/south-pass",
     "height": {
       "type": "ratio",
       "high": 0.88,

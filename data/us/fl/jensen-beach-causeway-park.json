@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-jensen-beach-causeway-park",
+  "id": "us/fl/jensen-beach-causeway-park",
   "name": "Jensen Beach Causeway Park",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.251699447631836,
   "longitude": -80.21829986572266,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722329",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722329",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722329.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722329"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.655,
+    "HAT": -0.0019999743,
+    "STND": 0,
+    "MHHW": -0.088,
+    "MHW": -0.135,
+    "DTL": -0.331,
+    "MTL": -0.335,
+    "MSL": -0.339,
+    "MLW": -0.534,
+    "MLLW": -0.574,
+    "GT": 0.486,
+    "MN": 0.399,
+    "DHQ": 0.047,
+    "DLQ": 0.04,
+    "HWI": 3.025,
+    "LWI": 9.688,
+    "NAVD88": -0.008
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 214.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.655,
-    "HAT": -0.0019999743,
-    "STND": 0,
-    "MHHW": -0.088,
-    "MHW": -0.135,
-    "DTL": -0.331,
-    "MTL": -0.335,
-    "MSL": -0.339,
-    "MLW": -0.534,
-    "MLLW": -0.574,
-    "GT": 0.486,
-    "MN": 0.399,
-    "DHQ": 0.047,
-    "DLQ": 0.04,
-    "HWI": 3.025,
-    "LWI": 9.688,
-    "NAVD88": -0.008
-  },
-  "disclaimers": ""
+  ]
 }

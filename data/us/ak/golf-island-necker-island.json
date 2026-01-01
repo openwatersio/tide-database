@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-golf-island-necker-island",
+  "id": "us/ak/golf-island-necker-island",
   "name": "Golf Island, Necker Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.7867,
   "longitude": -135.393,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451421",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451421",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451421.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451421"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.6992589,
+    "HAT": 3.8447409,
+    "STND": 0,
+    "MHHW": 3.165,
+    "MHW": 2.933,
+    "DTL": 1.686,
+    "MTL": 1.785,
+    "MSL": 1.779,
+    "MLW": 0.638,
+    "MLLW": 0.207,
+    "GT": 2.958,
+    "MN": 2.295,
+    "DHQ": 0.232,
+    "DLQ": 0.431,
+    "HWI": 9.49,
+    "LWI": 3.24
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.6992589,
-    "HAT": 3.8447409,
-    "STND": 0,
-    "MHHW": 3.165,
-    "MHW": 2.933,
-    "DTL": 1.686,
-    "MTL": 1.785,
-    "MSL": 1.779,
-    "MLW": 0.638,
-    "MLLW": 0.207,
-    "GT": 2.958,
-    "MN": 2.295,
-    "DHQ": 0.232,
-    "DLQ": 0.431,
-    "HWI": 9.49,
-    "LWI": 3.24
-  },
-  "disclaimers": ""
+  ]
 }

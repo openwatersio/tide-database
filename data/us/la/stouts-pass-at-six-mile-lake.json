@@ -1,10 +1,9 @@
 {
-  "id": "us-la-stouts-pass-at-six-mile-lake",
+  "id": "us/la/stouts-pass-at-six-mile-lake",
   "name": "Stouts Pass at Six Mile Lake",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.7433,
   "longitude": -91.23,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8764025",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764025",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8764025.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764025"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.402,
+    "HAT": 6.757,
+    "STND": 0,
+    "MHHW": 6.74,
+    "MHW": 6.716,
+    "DTL": 6.604,
+    "MTL": 6.603,
+    "MSL": 6.595,
+    "MLW": 6.49,
+    "MLLW": 6.469,
+    "GT": 0.271,
+    "MN": 0.226,
+    "DHQ": 0.024,
+    "DLQ": 0.021
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 14.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.402,
-    "HAT": 6.757,
-    "STND": 0,
-    "MHHW": 6.74,
-    "MHW": 6.716,
-    "DTL": 6.604,
-    "MTL": 6.603,
-    "MSL": 6.595,
-    "MLW": 6.49,
-    "MLLW": 6.469,
-    "GT": 0.271,
-    "MN": 0.226,
-    "DHQ": 0.024,
-    "DLQ": 0.021
-  },
-  "disclaimers": ""
+  ]
 }

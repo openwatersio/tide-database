@@ -1,10 +1,9 @@
 {
-  "id": "us-vi-dog-island-st-thomas",
+  "id": "us/vi/dog-island-st-thomas",
   "name": "Dog Island, St. Thomas",
-  "continent": "North America",
-  "country": "United States",
   "region": "VI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.29713888888889,
   "longitude": -64.81775,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751494",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751494",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751494.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751494"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.8180003,
+    "HAT": 6.327,
+    "STND": 0,
+    "MHHW": 6.182,
+    "MHW": 6.156,
+    "DTL": 6.059,
+    "MTL": 6.06,
+    "MSL": 6.051,
+    "MLW": 5.964,
+    "MLLW": 5.937,
+    "GT": 0.245,
+    "MN": 0.192,
+    "DHQ": 0.026,
+    "DLQ": 0.027
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 87.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.8180003,
-    "HAT": 6.327,
-    "STND": 0,
-    "MHHW": 6.182,
-    "MHW": 6.156,
-    "DTL": 6.059,
-    "MTL": 6.06,
-    "MSL": 6.051,
-    "MLW": 5.964,
-    "MLLW": 5.937,
-    "GT": 0.245,
-    "MN": 0.192,
-    "DHQ": 0.026,
-    "DLQ": 0.027
-  },
-  "disclaimers": ""
+  ]
 }

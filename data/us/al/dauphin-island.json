@@ -1,10 +1,9 @@
 {
-  "id": "us-al-dauphin-island",
+  "id": "us/al/dauphin-island",
   "name": "DAUPHIN ISLAND",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.25,
   "longitude": -88.07499694824219,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8735180",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8735180",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8735180.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8735180"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.5519999,
+    "HAT": 1.4879999,
+    "STND": 0,
+    "MHHW": 1.247,
+    "MHW": 1.241,
+    "DTL": 1.061,
+    "MTL": 1.06,
+    "MSL": 1.05,
+    "MLW": 0.88,
+    "MLLW": 0.876,
+    "GT": 0.372,
+    "MN": 0.361,
+    "DHQ": 0.007,
+    "DLQ": 0.004,
+    "NAVD88": 1.034
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 349.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.5519999,
-    "HAT": 1.4879999,
-    "STND": 0,
-    "MHHW": 1.247,
-    "MHW": 1.241,
-    "DTL": 1.061,
-    "MTL": 1.06,
-    "MSL": 1.05,
-    "MLW": 0.88,
-    "MLLW": 0.876,
-    "GT": 0.372,
-    "MN": 0.361,
-    "DHQ": 0.007,
-    "DLQ": 0.004,
-    "NAVD88": 1.034
-  },
-  "disclaimers": ""
+  ]
 }

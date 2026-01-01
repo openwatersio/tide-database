@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-deception-pass-st-park-bowman-bay-fidalgo-i",
+  "id": "us/wa/deception-pass-st-park-bowman-bay-fidalgo-i",
   "name": "Deception Pass St. Park, Bowman Bay, Fidalgo I.",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.415000915527344,
   "longitude": -122.6520004272461,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9448614",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9448614",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9448614.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9448614"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.049000025,
+    "HAT": 4.037,
+    "STND": 0,
+    "MHHW": 3.602,
+    "MHW": 3.404,
+    "DTL": 2.426,
+    "MTL": 2.7,
+    "MSL": 2.66,
+    "MLW": 1.996,
+    "MLLW": 1.25,
+    "GT": 2.352,
+    "MN": 1.408,
+    "DHQ": 0.198,
+    "DLQ": 0.746,
+    "HWI": 12.035,
+    "LWI": 5.663
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 18.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.049000025,
-    "HAT": 4.037,
-    "STND": 0,
-    "MHHW": 3.602,
-    "MHW": 3.404,
-    "DTL": 2.426,
-    "MTL": 2.7,
-    "MSL": 2.66,
-    "MLW": 1.996,
-    "MLLW": 1.25,
-    "GT": 2.352,
-    "MN": 1.408,
-    "DHQ": 0.198,
-    "DLQ": 0.746,
-    "HWI": 12.035,
-    "LWI": 5.663
-  },
-  "disclaimers": ""
+  ]
 }

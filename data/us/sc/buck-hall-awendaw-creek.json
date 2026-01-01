@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-buck-hall-awendaw-creek",
+  "id": "us/sc/buck-hall-awendaw-creek",
   "name": "Buck Hall, Awendaw Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.040000915527344,
   "longitude": -79.55999755859375,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8663858",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8663858",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8663858.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8663858"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 2.227,
+    "MHW": 2.113,
+    "DTL": 1.4,
+    "MTL": 1.372,
+    "MSL": 1.378,
+    "MLW": 0.63,
+    "MLLW": 0.573,
+    "GT": 1.654,
+    "MN": 1.483,
+    "DHQ": 0.114,
+    "DLQ": 0.057,
+    "HWI": 0.416,
+    "LWI": 6.788,
+    "NAVD88": 1.49
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 2.227,
-    "MHW": 2.113,
-    "DTL": 1.4,
-    "MTL": 1.372,
-    "MSL": 1.378,
-    "MLW": 0.63,
-    "MLLW": 0.573,
-    "GT": 1.654,
-    "MN": 1.483,
-    "DHQ": 0.114,
-    "DLQ": 0.057,
-    "HWI": 0.416,
-    "LWI": 6.788,
-    "NAVD88": 1.49
-  },
-  "disclaimers": ""
+  ]
 }

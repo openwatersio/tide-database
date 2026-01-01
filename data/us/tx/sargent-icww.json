@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-sargent-icww",
+  "id": "us/tx/sargent-icww",
   "name": "Sargent, ICWW",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.77163888888889,
   "longitude": -95.61683333333333,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8772985",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8772985",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8772985.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8772985"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 9.188001,
+    "HAT": 9.91,
+    "STND": 0,
+    "MHHW": 9.692,
+    "MHW": 9.681,
+    "DTL": 9.587,
+    "MTL": 9.589,
+    "MSL": 9.602,
+    "MLW": 9.496,
+    "MLLW": 9.483,
+    "GT": 0.209,
+    "MN": 0.185,
+    "DHQ": 0.011,
+    "DLQ": 0.013,
+    "NAVD88": 9.372
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 142.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.188001,
-    "HAT": 9.91,
-    "STND": 0,
-    "MHHW": 9.692,
-    "MHW": 9.681,
-    "DTL": 9.587,
-    "MTL": 9.589,
-    "MSL": 9.602,
-    "MLW": 9.496,
-    "MLLW": 9.483,
-    "GT": 0.209,
-    "MN": 0.185,
-    "DHQ": 0.011,
-    "DLQ": 0.013,
-    "NAVD88": 9.372
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

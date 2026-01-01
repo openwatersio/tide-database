@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-point-brown",
+  "id": "us/wa/point-brown",
   "name": "Point Brown",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.95,
   "longitude": -124.128,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9441156",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441156",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9441156.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441156"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-toke-point",
+    "reference": "us/wa/toke-point",
     "height": {
       "type": "ratio",
       "high": 1.06,

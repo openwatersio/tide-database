@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-clapboard-creek-pelotes-island",
+  "id": "us/fl/clapboard-creek-pelotes-island",
   "name": "Clapboard Creek, Pelotes Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.4067,
   "longitude": -81.51,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720198",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720198",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720198.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720198"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.725,
+    "HAT": 2.674,
+    "STND": 0,
+    "MHHW": 2.313,
+    "MHW": 2.252,
+    "DTL": 1.719,
+    "MTL": 1.704,
+    "MSL": 1.704,
+    "MLW": 1.157,
+    "MLLW": 1.125,
+    "GT": 1.188,
+    "MN": 1.095,
+    "DHQ": 0.061,
+    "DLQ": 0.031,
+    "HWI": 1.687,
+    "LWI": 7.923
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.725,
-    "HAT": 2.674,
-    "STND": 0,
-    "MHHW": 2.313,
-    "MHW": 2.252,
-    "DTL": 1.719,
-    "MTL": 1.704,
-    "MSL": 1.704,
-    "MLW": 1.157,
-    "MLLW": 1.125,
-    "GT": 1.188,
-    "MN": 1.095,
-    "DHQ": 0.061,
-    "DLQ": 0.031,
-    "HWI": 1.687,
-    "LWI": 7.923
-  },
-  "disclaimers": ""
+  ]
 }

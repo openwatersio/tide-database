@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-snipe-keys-southeast-end-inner-narrows",
+  "id": "us/fl/snipe-keys-southeast-end-inner-narrows",
   "name": "Snipe Keys, southeast end, Inner Narrows",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.6583,
   "longitude": -81.6083,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724409",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724409",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724409.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724409"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 1.28,

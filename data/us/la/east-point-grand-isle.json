@@ -1,10 +1,9 @@
 {
-  "id": "us-la-east-point-grand-isle",
+  "id": "us/la/east-point-grand-isle",
   "name": "EAST POINT, GRAND ISLE",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.26333333333333,
   "longitude": -89.95666666666666,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8761724",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761724",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8761724.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761724"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.641,
+    "HAT": 2.486,
+    "STND": 0,
+    "MHHW": 2.259,
+    "MHW": 2.257,
+    "DTL": 2.097,
+    "MTL": 2.098,
+    "MSL": 2.099,
+    "MLW": 1.939,
+    "MLLW": 1.936,
+    "GT": 0.323,
+    "MN": 0.318,
+    "DHQ": 0.002,
+    "DLQ": 0.003
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.641,
-    "HAT": 2.486,
-    "STND": 0,
-    "MHHW": 2.259,
-    "MHW": 2.257,
-    "DTL": 2.097,
-    "MTL": 2.098,
-    "MSL": 2.099,
-    "MLW": 1.939,
-    "MLLW": 1.936,
-    "GT": 0.323,
-    "MN": 0.318,
-    "DHQ": 0.002,
-    "DLQ": 0.003
-  },
-  "disclaimers": ""
+  ]
 }

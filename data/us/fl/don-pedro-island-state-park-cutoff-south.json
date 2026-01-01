@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-don-pedro-island-state-park-cutoff-south",
+  "id": "us/fl/don-pedro-island-state-park-cutoff-south",
   "name": "Don Pedro Island State Park, Cutoff (south)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.855,
   "longitude": -82.3033,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725685",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725685",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725685.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725685"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.512,
+    "HAT": 1.494,
+    "STND": 0,
+    "MHHW": 1.236,
+    "MHW": 1.159,
+    "DTL": 1.009,
+    "MTL": 1.02,
+    "MSL": 1.023,
+    "MLW": 0.881,
+    "MLLW": 0.782,
+    "GT": 0.454,
+    "MN": 0.277,
+    "DHQ": 0.077,
+    "DLQ": 0.1,
+    "HWI": 6.123,
+    "LWI": 12.11,
+    "NAVD88": 1.167
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.512,
-    "HAT": 1.494,
-    "STND": 0,
-    "MHHW": 1.236,
-    "MHW": 1.159,
-    "DTL": 1.009,
-    "MTL": 1.02,
-    "MSL": 1.023,
-    "MLW": 0.881,
-    "MLLW": 0.782,
-    "GT": 0.454,
-    "MN": 0.277,
-    "DHQ": 0.077,
-    "DLQ": 0.1,
-    "HWI": 6.123,
-    "LWI": 12.11,
-    "NAVD88": 1.167
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-craig-klawock-inlet",
+  "id": "us/ak/craig-klawock-inlet",
   "name": "Craig, Klawock Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.4883,
   "longitude": -133.142,
   "timezone": "America/Sitka",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450551",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450551",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450551.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450551"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.69499993,
+    "HAT": 5.45,
+    "STND": 0,
+    "MHHW": 4.707,
+    "MHW": 4.448,
+    "DTL": 3.162,
+    "MTL": 3.236,
+    "MSL": 3.233,
+    "MLW": 2.024,
+    "MLLW": 1.606,
+    "GT": 3.093,
+    "MN": 2.424,
+    "DHQ": 0.259,
+    "DLQ": 0.418
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.69499993,
-    "HAT": 5.45,
-    "STND": 0,
-    "MHHW": 4.707,
-    "MHW": 4.448,
-    "DTL": 3.162,
-    "MTL": 3.236,
-    "MSL": 3.233,
-    "MLW": 2.024,
-    "MLLW": 1.606,
-    "GT": 3.093,
-    "MN": 2.424,
-    "DHQ": 0.259,
-    "DLQ": 0.418
-  },
-  "disclaimers": ""
+  ]
 }

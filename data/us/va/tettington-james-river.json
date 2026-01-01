@@ -1,10 +1,9 @@
 {
-  "id": "us-va-tettington-james-river",
+  "id": "us/va/tettington-james-river",
   "name": "Tettington, James River",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.24,
   "longitude": -76.9433,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638450",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638450",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638450.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638450"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.6720004,
+    "HAT": 6.609,
+    "STND": 0,
+    "MHHW": 6.47,
+    "MHW": 6.41,
+    "DTL": 6.134,
+    "MTL": 6.125,
+    "MSL": 6.142,
+    "MLW": 5.84,
+    "MLLW": 5.799,
+    "GT": 0.672,
+    "MN": 0.57,
+    "DHQ": 0.06,
+    "DLQ": 0.041,
+    "HWI": 5.427,
+    "LWI": 12.127
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 311.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.6720004,
-    "HAT": 6.609,
-    "STND": 0,
-    "MHHW": 6.47,
-    "MHW": 6.41,
-    "DTL": 6.134,
-    "MTL": 6.125,
-    "MSL": 6.142,
-    "MLW": 5.84,
-    "MLLW": 5.799,
-    "GT": 0.672,
-    "MN": 0.57,
-    "DHQ": 0.06,
-    "DLQ": 0.041,
-    "HWI": 5.427,
-    "LWI": 12.127
-  },
-  "disclaimers": ""
+  ]
 }

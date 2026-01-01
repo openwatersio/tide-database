@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-ohio-key-bahia-honda-key-channel-west-side",
+  "id": "us/fl/ohio-key-bahia-honda-key-channel-west-side",
   "name": "Ohio Key-Bahia Honda Key Channel, west side",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.67,
   "longitude": -81.2517,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724112",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724112",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724112.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724112"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 0.81,

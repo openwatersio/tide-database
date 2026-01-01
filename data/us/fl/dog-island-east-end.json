@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-dog-island-east-end",
+  "id": "us/fl/dog-island-east-end",
   "name": "Dog Island, East End",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.81,
   "longitude": -84.585,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728408",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728408",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728408.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728408"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.323,
+    "HAT": 1.1240001,
+    "STND": 0,
+    "MHHW": 0.905,
+    "MHW": 0.849,
+    "DTL": 0.532,
+    "MTL": 0.589,
+    "MSL": 0.578,
+    "MLW": 0.329,
+    "MLLW": 0.159,
+    "GT": 0.746,
+    "MN": 0.519,
+    "DHQ": 0.056,
+    "DLQ": 0.17,
+    "HWI": 7.053,
+    "LWI": 0.81,
+    "NAVD88": 0.635
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.323,
-    "HAT": 1.1240001,
-    "STND": 0,
-    "MHHW": 0.905,
-    "MHW": 0.849,
-    "DTL": 0.532,
-    "MTL": 0.589,
-    "MSL": 0.578,
-    "MLW": 0.329,
-    "MLLW": 0.159,
-    "GT": 0.746,
-    "MN": 0.519,
-    "DHQ": 0.056,
-    "DLQ": 0.17,
-    "HWI": 7.053,
-    "LWI": 0.81,
-    "NAVD88": 0.635
-  },
-  "disclaimers": ""
+  ]
 }

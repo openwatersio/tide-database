@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-conway-rr-bridge",
+  "id": "us/sc/conway-rr-bridge",
   "name": "Conway, RR. bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.835,
   "longitude": -79.0417,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8660275",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8660275",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8660275.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8660275"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-sc-charleston-customhouse-wharf",
+    "reference": "us/sc/charleston-customhouse-wharf",
     "height": {
       "type": "ratio",
       "high": 0.25,

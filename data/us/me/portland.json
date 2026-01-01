@@ -1,10 +1,9 @@
 {
-  "id": "us-me-portland",
+  "id": "us/me/portland",
   "name": "PORTLAND",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.65805555555556,
   "longitude": -70.24416666666667,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8418150",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418150",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8418150.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418150"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.9585259,
+    "HAT": 6.2555256,
+    "STND": 0,
+    "MHHW": 5.626,
+    "MHW": 5.493,
+    "DTL": 4.117,
+    "MTL": 4.103,
+    "MSL": 4.113,
+    "MLW": 2.712,
+    "MLLW": 2.607,
+    "GT": 3.019,
+    "MN": 2.781,
+    "DHQ": 0.133,
+    "DLQ": 0.105,
+    "HWI": 3.593,
+    "LWI": 9.751,
+    "NAVD88": 4.208
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 117.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.9585259,
-    "HAT": 6.2555256,
-    "STND": 0,
-    "MHHW": 5.626,
-    "MHW": 5.493,
-    "DTL": 4.117,
-    "MTL": 4.103,
-    "MSL": 4.113,
-    "MLW": 2.712,
-    "MLLW": 2.607,
-    "GT": 3.019,
-    "MN": 2.781,
-    "DHQ": 0.133,
-    "DLQ": 0.105,
-    "HWI": 3.593,
-    "LWI": 9.751,
-    "NAVD88": 4.208
-  },
-  "disclaimers": ""
+  ]
 }

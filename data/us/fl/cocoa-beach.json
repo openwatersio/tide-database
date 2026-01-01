@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cocoa-beach",
+  "id": "us/fl/cocoa-beach",
   "name": "Cocoa Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.3683,
   "longitude": -80.6,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8721649",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721649",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8721649.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721649"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.6280003,
+    "HAT": 5.617,
+    "STND": 0,
+    "MHHW": 5.186,
+    "MHW": 5.078,
+    "DTL": 4.58,
+    "MTL": 4.55,
+    "MSL": 4.55,
+    "MLW": 4.023,
+    "MLLW": 3.975,
+    "GT": 1.211,
+    "MN": 1.055,
+    "DHQ": 0.107,
+    "DLQ": 0.048,
+    "HWI": 0.134,
+    "LWI": 6.333,
+    "NAVD88": 4.831
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 159.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.6280003,
-    "HAT": 5.617,
-    "STND": 0,
-    "MHHW": 5.186,
-    "MHW": 5.078,
-    "DTL": 4.58,
-    "MTL": 4.55,
-    "MSL": 4.55,
-    "MLW": 4.023,
-    "MLLW": 3.975,
-    "GT": 1.211,
-    "MN": 1.055,
-    "DHQ": 0.107,
-    "DLQ": 0.048,
-    "HWI": 0.134,
-    "LWI": 6.333,
-    "NAVD88": 4.831
-  },
-  "disclaimers": ""
+  ]
 }

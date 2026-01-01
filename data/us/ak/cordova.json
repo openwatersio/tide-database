@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-cordova",
+  "id": "us/ak/cordova",
   "name": "CORDOVA",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.5575,
   "longitude": -145.7554083333333,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454050",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454050",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454050.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454050"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.7072408,
+    "HAT": 6.847241,
+    "STND": 0,
+    "MHHW": 5.754,
+    "MHW": 5.475,
+    "DTL": 3.835,
+    "MTL": 3.925,
+    "MSL": 3.972,
+    "MLW": 2.376,
+    "MLLW": 1.916,
+    "GT": 3.838,
+    "MN": 3.099,
+    "DHQ": 0.279,
+    "DLQ": 0.459,
+    "HWI": 10.073,
+    "LWI": 3.708
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 288.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.7072408,
-    "HAT": 6.847241,
-    "STND": 0,
-    "MHHW": 5.754,
-    "MHW": 5.475,
-    "DTL": 3.835,
-    "MTL": 3.925,
-    "MSL": 3.972,
-    "MLW": 2.376,
-    "MLLW": 1.916,
-    "GT": 3.838,
-    "MN": 3.099,
-    "DHQ": 0.279,
-    "DLQ": 0.459,
-    "HWI": 10.073,
-    "LWI": 3.708
-  },
-  "disclaimers": ""
+  ]
 }

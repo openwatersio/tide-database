@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-edgartown",
+  "id": "us/ma/edgartown",
   "name": "Edgartown",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.3883,
   "longitude": -70.5117,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8448558",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448558",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8448558.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448558"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.297149,
+    "HAT": 2.398149,
+    "STND": 0,
+    "MHHW": 2.251,
+    "MHW": 2.154,
+    "DTL": 1.843,
+    "MTL": 1.829,
+    "MSL": 1.87,
+    "MLW": 1.504,
+    "MLLW": 1.435,
+    "GT": 0.816,
+    "MN": 0.65,
+    "DHQ": 0.097,
+    "DLQ": 0.069,
+    "HWI": 4.7,
+    "LWI": 10.19
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.297149,
-    "HAT": 2.398149,
-    "STND": 0,
-    "MHHW": 2.251,
-    "MHW": 2.154,
-    "DTL": 1.843,
-    "MTL": 1.829,
-    "MSL": 1.87,
-    "MLW": 1.504,
-    "MLLW": 1.435,
-    "GT": 0.816,
-    "MN": 0.65,
-    "DHQ": 0.097,
-    "DLQ": 0.069,
-    "HWI": 4.7,
-    "LWI": 10.19
-  },
-  "disclaimers": ""
+  ]
 }

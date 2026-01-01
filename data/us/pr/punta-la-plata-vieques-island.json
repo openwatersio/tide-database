@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-punta-la-plata-vieques-island",
+  "id": "us/pr/punta-la-plata-vieques-island",
   "name": "Punta la Plata, Vieques Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.116600036621094,
   "longitude": -65.3729019165039,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9752426",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9752426",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9752426.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9752426"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.243,
+    "HAT": 6.7860003,
+    "STND": 0,
+    "MHHW": 6.627,
+    "MHW": 6.627,
+    "DTL": 6.519,
+    "MTL": 6.521,
+    "MSL": 6.525,
+    "MLW": 6.415,
+    "MLLW": 6.411,
+    "GT": 0.217,
+    "MN": 0.212,
+    "DHQ": 0.001,
+    "DLQ": 0.004,
+    "PRVD02": 6.464
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.243,
-    "HAT": 6.7860003,
-    "STND": 0,
-    "MHHW": 6.627,
-    "MHW": 6.627,
-    "DTL": 6.519,
-    "MTL": 6.521,
-    "MSL": 6.525,
-    "MLW": 6.415,
-    "MLLW": 6.411,
-    "GT": 0.217,
-    "MN": 0.212,
-    "DHQ": 0.001,
-    "DLQ": 0.004,
-    "PRVD02": 6.464
-  },
-  "disclaimers": ""
+  ]
 }

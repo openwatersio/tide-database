@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-huckleberry-landing-jackson-river",
+  "id": "us/fl/huckleberry-landing-jackson-river",
   "name": "Huckleberry Landing, Jackson River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.770000457763672,
   "longitude": -85.08499908447266,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728757",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728757",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728757.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728757"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.11199999,
+    "HAT": 0.697,
+    "STND": 0,
+    "MHHW": 0.542,
+    "MHW": 0.508,
+    "DTL": 0.357,
+    "MTL": 0.399,
+    "MSL": 0.386,
+    "MLW": 0.29,
+    "MLLW": 0.173,
+    "GT": 0.369,
+    "MN": 0.218,
+    "DHQ": 0.034,
+    "DLQ": 0.118,
+    "HWI": 10.893,
+    "LWI": 4.675,
+    "NAVD88": 0.331
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.11199999,
-    "HAT": 0.697,
-    "STND": 0,
-    "MHHW": 0.542,
-    "MHW": 0.508,
-    "DTL": 0.357,
-    "MTL": 0.399,
-    "MSL": 0.386,
-    "MLW": 0.29,
-    "MLLW": 0.173,
-    "GT": 0.369,
-    "MN": 0.218,
-    "DHQ": 0.034,
-    "DLQ": 0.118,
-    "HWI": 10.893,
-    "LWI": 4.675,
-    "NAVD88": 0.331
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-ushagat-island-barren-islands",
+  "id": "us/ak/ushagat-island-barren-islands",
   "name": "Ushagat Island, Barren Islands",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.9467,
   "longitude": -152.268,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455478",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455478",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455478.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455478"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-seldovia-kachemak-bay",
+    "reference": "us/ak/seldovia-kachemak-bay",
     "height": {
       "type": "ratio",
       "high": 0.76,

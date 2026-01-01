@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-little-river-neck-north-end",
+  "id": "us/sc/little-river-neck-north-end",
   "name": "Little River Neck, north end",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.87,
   "longitude": -78.5733,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8660098",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8660098",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8660098.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8660098"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-sc-springmaid-pier-myrtle-beach",
+    "reference": "us/sc/springmaid-pier-myrtle-beach",
     "height": {
       "type": "ratio",
       "high": 0.92,

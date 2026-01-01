@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-protection-point",
+  "id": "us/ak/protection-point",
   "name": "Protection Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.5,
   "longitude": -158.712,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465056",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465056",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465056.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465056"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.46299982,
+    "HAT": 8.408,
+    "STND": 0,
+    "MHHW": 7.159,
+    "MHW": 6.612,
+    "DTL": 4.457,
+    "MTL": 4.609,
+    "MSL": 4.62,
+    "MLW": 2.605,
+    "MLLW": 1.755,
+    "GT": 5.404,
+    "MN": 4.008,
+    "DHQ": 0.546,
+    "DLQ": 0.851,
+    "HWI": 11.56,
+    "LWI": 5.52
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.46299982,
-    "HAT": 8.408,
-    "STND": 0,
-    "MHHW": 7.159,
-    "MHW": 6.612,
-    "DTL": 4.457,
-    "MTL": 4.609,
-    "MSL": 4.62,
-    "MLW": 2.605,
-    "MLLW": 1.755,
-    "GT": 5.404,
-    "MN": 4.008,
-    "DHQ": 0.546,
-    "DLQ": 0.851,
-    "HWI": 11.56,
-    "LWI": 5.52
-  },
-  "disclaimers": ""
+  ]
 }

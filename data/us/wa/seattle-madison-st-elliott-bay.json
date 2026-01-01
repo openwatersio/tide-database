@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-seattle-madison-st-elliott-bay",
+  "id": "us/wa/seattle-madison-st-elliott-bay",
   "name": "SEATTLE (Madison St.), Elliott Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.60263888888889,
   "longitude": -122.3393055555556,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9447130",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447130",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9447130.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447130"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.1089039,
+    "HAT": 6.453904,
+    "STND": 0,
+    "MHHW": 5.882,
+    "MHW": 5.618,
+    "DTL": 4.151,
+    "MTL": 4.451,
+    "MSL": 4.443,
+    "MLW": 3.284,
+    "MLLW": 2.419,
+    "GT": 3.462,
+    "MN": 2.334,
+    "DHQ": 0.264,
+    "DLQ": 0.864,
+    "HWI": 0.401,
+    "LWI": 6.638,
+    "NAVD88": 3.134
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 117.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.1089039,
-    "HAT": 6.453904,
-    "STND": 0,
-    "MHHW": 5.882,
-    "MHW": 5.618,
-    "DTL": 4.151,
-    "MTL": 4.451,
-    "MSL": 4.443,
-    "MLW": 3.284,
-    "MLLW": 2.419,
-    "GT": 3.462,
-    "MN": 2.334,
-    "DHQ": 0.264,
-    "DLQ": 0.864,
-    "HWI": 0.401,
-    "LWI": 6.638,
-    "NAVD88": 3.134
-  },
-  "disclaimers": ""
+  ]
 }

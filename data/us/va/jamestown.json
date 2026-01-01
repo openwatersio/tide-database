@@ -1,10 +1,9 @@
 {
-  "id": "us-va-jamestown",
+  "id": "us/va/jamestown",
   "name": "Jamestown",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.22010040283203,
   "longitude": -76.79139709472656,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8637712",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8637712",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8637712.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8637712"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.517,
+    "HAT": 0.548,
+    "STND": 0,
+    "MHHW": 0.36,
+    "MHW": 0.306,
+    "DTL": 0.019,
+    "MTL": 0.012,
+    "MSL": 0.015,
+    "MLW": -0.281,
+    "MLLW": -0.321,
+    "GT": 0.682,
+    "MN": 0.588,
+    "DHQ": 0.055,
+    "DLQ": 0.039,
+    "HWI": 4.441,
+    "LWI": 11.118,
+    "NAVD88": 0.054
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 290.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.517,
-    "HAT": 0.548,
-    "STND": 0,
-    "MHHW": 0.36,
-    "MHW": 0.306,
-    "DTL": 0.019,
-    "MTL": 0.012,
-    "MSL": 0.015,
-    "MLW": -0.281,
-    "MLLW": -0.321,
-    "GT": 0.682,
-    "MN": 0.588,
-    "DHQ": 0.055,
-    "DLQ": 0.039,
-    "HWI": 4.441,
-    "LWI": 11.118,
-    "NAVD88": 0.054
-  },
-  "disclaimers": ""
+  ]
 }

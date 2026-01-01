@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-carmel-cove-carmel-bay",
+  "id": "us/ca/carmel-cove-carmel-bay",
   "name": "Carmel Cove, Carmel Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.52,
   "longitude": -121.94,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9413375",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9413375",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9413375.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9413375"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-monterey-monterey-bay",
+    "reference": "us/ca/monterey-monterey-bay",
     "height": {
       "type": "ratio",
       "high": 0.97,

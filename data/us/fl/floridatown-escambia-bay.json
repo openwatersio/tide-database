@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-floridatown-escambia-bay",
+  "id": "us/fl/floridatown-escambia-bay",
   "name": "Floridatown, Escambia Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.58169937133789,
   "longitude": -87.18000030517578,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729824",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729824",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729824.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729824"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.44499993,
+    "HAT": 1.4929999,
+    "STND": 0,
+    "MHHW": 1.229,
+    "MHW": 1.21,
+    "DTL": 1.008,
+    "MTL": 1.014,
+    "MSL": 1.004,
+    "MLW": 0.817,
+    "MLLW": 0.787,
+    "GT": 0.443,
+    "MN": 0.393,
+    "DHQ": 0.019,
+    "DLQ": 0.03,
+    "NAVD88": 0.903
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.44499993,
-    "HAT": 1.4929999,
-    "STND": 0,
-    "MHHW": 1.229,
-    "MHW": 1.21,
-    "DTL": 1.008,
-    "MTL": 1.014,
-    "MSL": 1.004,
-    "MLW": 0.817,
-    "MLLW": 0.787,
-    "GT": 0.443,
-    "MN": 0.393,
-    "DHQ": 0.019,
-    "DLQ": 0.03,
-    "NAVD88": 0.903
-  },
-  "disclaimers": ""
+  ]
 }

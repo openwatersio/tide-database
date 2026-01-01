@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-terror-bay",
+  "id": "us/ak/terror-bay",
   "name": "Terror Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.74402777777778,
   "longitude": -153.1954722222222,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457493",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457493",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457493.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457493"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.9369999,
+    "HAT": 5.078,
+    "STND": 0,
+    "MHHW": 3.789,
+    "MHW": 3.514,
+    "DTL": 1.632,
+    "MTL": 1.746,
+    "MSL": 1.729,
+    "MLW": -0.021,
+    "MLLW": -0.524,
+    "GT": 4.314,
+    "MN": 3.536,
+    "DHQ": 0.275,
+    "DLQ": 0.503,
+    "HWI": 11.184,
+    "LWI": 5.031
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.9369999,
-    "HAT": 5.078,
-    "STND": 0,
-    "MHHW": 3.789,
-    "MHW": 3.514,
-    "DTL": 1.632,
-    "MTL": 1.746,
-    "MSL": 1.729,
-    "MLW": -0.021,
-    "MLLW": -0.524,
-    "GT": 4.314,
-    "MN": 3.536,
-    "DHQ": 0.275,
-    "DLQ": 0.503,
-    "HWI": 11.184,
-    "LWI": 5.031
-  },
-  "disclaimers": ""
+  ]
 }

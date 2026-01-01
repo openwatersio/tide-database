@@ -1,10 +1,9 @@
 {
-  "id": "us-la-lake-charles",
+  "id": "us/la/lake-charles",
   "name": "Lake Charles",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.2236111,
   "longitude": -93.2216667,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8767816",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8767816",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8767816.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8767816"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.75,
+    "HAT": 8.583,
+    "STND": 0,
+    "MHHW": 8.471,
+    "MHW": 8.44,
+    "DTL": 8.257,
+    "MTL": 8.28,
+    "MSL": 8.283,
+    "MLW": 8.121,
+    "MLLW": 8.043,
+    "GT": 0.428,
+    "MN": 0.319,
+    "DHQ": 0.031,
+    "DLQ": 0.077,
+    "NAVD88": 8.247
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 11.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.75,
-    "HAT": 8.583,
-    "STND": 0,
-    "MHHW": 8.471,
-    "MHW": 8.44,
-    "DTL": 8.257,
-    "MTL": 8.28,
-    "MSL": 8.283,
-    "MLW": 8.121,
-    "MLLW": 8.043,
-    "GT": 0.428,
-    "MN": 0.319,
-    "DHQ": 0.031,
-    "DLQ": 0.077,
-    "NAVD88": 8.247
-  },
-  "disclaimers": ""
+  ]
 }

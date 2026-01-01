@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-japanese-bay",
+  "id": "us/ak/japanese-bay",
   "name": "Japanese Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.96,
   "longitude": -153.687,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457634",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457634",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457634.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457634"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.926,
+    "HAT": 3.099,
+    "STND": 0,
+    "MHHW": 2.402,
+    "MHW": 2.216,
+    "DTL": 1.146,
+    "MTL": 1.231,
+    "MSL": 1.226,
+    "MLW": 0.245,
+    "MLLW": -0.109,
+    "GT": 2.511,
+    "MN": 1.97,
+    "DHQ": 0.186,
+    "DLQ": 0.355,
+    "HWI": 10.32,
+    "LWI": 4.105
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.926,
-    "HAT": 3.099,
-    "STND": 0,
-    "MHHW": 2.402,
-    "MHW": 2.216,
-    "DTL": 1.146,
-    "MTL": 1.231,
-    "MSL": 1.226,
-    "MLW": 0.245,
-    "MLLW": -0.109,
-    "GT": 2.511,
-    "MN": 1.97,
-    "DHQ": 0.186,
-    "DLQ": 0.355,
-    "HWI": 10.32,
-    "LWI": 4.105
-  },
-  "disclaimers": ""
+  ]
 }

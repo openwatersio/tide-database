@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-oregon-inlet-marina",
+  "id": "us/nc/oregon-inlet-marina",
   "name": "OREGON INLET MARINA",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.79569444444444,
   "longitude": -75.54819444444445,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8652587",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8652587",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8652587.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8652587"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.707,
+    "HAT": 1.288,
+    "STND": 0,
+    "MHHW": 1.148,
+    "MHW": 1.105,
+    "DTL": 0.968,
+    "MTL": 0.966,
+    "MSL": 0.965,
+    "MLW": 0.828,
+    "MLLW": 0.788,
+    "GT": 0.36,
+    "MN": 0.276,
+    "DHQ": 0.043,
+    "DLQ": 0.04,
+    "HWI": 0.45,
+    "LWI": 7.15,
+    "NAVD88": 1.003
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 93.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.707,
-    "HAT": 1.288,
-    "STND": 0,
-    "MHHW": 1.148,
-    "MHW": 1.105,
-    "DTL": 0.968,
-    "MTL": 0.966,
-    "MSL": 0.965,
-    "MLW": 0.828,
-    "MLLW": 0.788,
-    "GT": 0.36,
-    "MN": 0.276,
-    "DHQ": 0.043,
-    "DLQ": 0.04,
-    "HWI": 0.45,
-    "LWI": 7.15,
-    "NAVD88": 1.003
-  },
-  "disclaimers": ""
+  ]
 }

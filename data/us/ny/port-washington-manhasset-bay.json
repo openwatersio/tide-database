@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-port-washington-manhasset-bay",
+  "id": "us/ny/port-washington-manhasset-bay",
   "name": "Port Washington, Manhasset Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8317,
   "longitude": -73.7033,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516761",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516761",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516761.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516761"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.8039999,
+    "HAT": 4.392,
+    "STND": 0,
+    "MHHW": 3.782,
+    "MHW": 3.673,
+    "DTL": 2.575,
+    "MTL": 2.561,
+    "MSL": 2.57,
+    "MLW": 1.449,
+    "MLLW": 1.367,
+    "GT": 2.415,
+    "MN": 2.223,
+    "DHQ": 0.109,
+    "DLQ": 0.082,
+    "HWI": 3.871,
+    "LWI": 10.568
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.8039999,
-    "HAT": 4.392,
-    "STND": 0,
-    "MHHW": 3.782,
-    "MHW": 3.673,
-    "DTL": 2.575,
-    "MTL": 2.561,
-    "MSL": 2.57,
-    "MLW": 1.449,
-    "MLLW": 1.367,
-    "GT": 2.415,
-    "MN": 2.223,
-    "DHQ": 0.109,
-    "DLQ": 0.082,
-    "HWI": 3.871,
-    "LWI": 10.568
-  },
-  "disclaimers": ""
+  ]
 }

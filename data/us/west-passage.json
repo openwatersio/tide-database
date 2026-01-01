@@ -1,10 +1,9 @@
 {
-  "id": "us-west-passage",
+  "id": "us/west-passage",
   "name": "West Passage",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 7.5,
   "longitude": 134.51669311523438,
   "timezone": "Pacific/Palau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2637",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2637",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2637.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2637"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fm-malakal-harbor-palau-island",
+    "reference": "us/fm/malakal-harbor-palau-island",
     "height": {
       "type": "fixed",
       "high": -0.03,

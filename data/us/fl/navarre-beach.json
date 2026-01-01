@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-navarre-beach",
+  "id": "us/fl/navarre-beach",
   "name": "Navarre Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.3767,
   "longitude": -86.865,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729678",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729678",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729678.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729678"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.54,
+    "HAT": 8.534,
+    "STND": 0,
+    "MHHW": 8.277,
+    "MHW": 8.257,
+    "DTL": 8.067,
+    "MTL": 8.065,
+    "MSL": 8.057,
+    "MLW": 7.872,
+    "MLLW": 7.856,
+    "GT": 0.421,
+    "MN": 0.385,
+    "DHQ": 0.02,
+    "DLQ": 0.016,
+    "NAVD88": 8
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 335.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.54,
-    "HAT": 8.534,
-    "STND": 0,
-    "MHHW": 8.277,
-    "MHW": 8.257,
-    "DTL": 8.067,
-    "MTL": 8.065,
-    "MSL": 8.057,
-    "MLW": 7.872,
-    "MLLW": 7.856,
-    "GT": 0.421,
-    "MN": 0.385,
-    "DHQ": 0.02,
-    "DLQ": 0.016,
-    "NAVD88": 8
-  },
-  "disclaimers": ""
+  ]
 }

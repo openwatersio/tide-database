@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-deering",
+  "id": "us/ak/deering",
   "name": "Deering",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 66.09716666666667,
   "longitude": -162.7404722222222,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9469751",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469751",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9469751.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469751"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.819,
+    "HAT": 5.6419997,
+    "STND": 0,
+    "MHHW": 5.518,
+    "MHW": 5.458,
+    "DTL": 5.239,
+    "MTL": 5.252,
+    "MSL": 5.253,
+    "MLW": 5.046,
+    "MLLW": 4.961,
+    "GT": 0.557,
+    "MN": 0.413,
+    "DHQ": 0.06,
+    "DLQ": 0.085
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.819,
-    "HAT": 5.6419997,
-    "STND": 0,
-    "MHHW": 5.518,
-    "MHW": 5.458,
-    "DTL": 5.239,
-    "MTL": 5.252,
-    "MSL": 5.253,
-    "MLW": 5.046,
-    "MLLW": 4.961,
-    "GT": 0.557,
-    "MN": 0.413,
-    "DHQ": 0.06,
-    "DLQ": 0.085
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-or-reedsport",
+  "id": "us/or/reedsport",
   "name": "Reedsport",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.70830154418945,
   "longitude": -124.0979995727539,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9433501",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9433501",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9433501.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9433501"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.6360002,
+    "HAT": 7.037,
+    "STND": 0,
+    "MHHW": 6.538,
+    "MHW": 6.338,
+    "DTL": 5.407,
+    "MTL": 5.477,
+    "MSL": 5.48,
+    "MLW": 4.616,
+    "MLLW": 4.276,
+    "GT": 2.262,
+    "MN": 1.722,
+    "DHQ": 0.2,
+    "DLQ": 0.34,
+    "HWI": 8.914,
+    "LWI": 2.682,
+    "NAVD88": 4.254
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.6360002,
-    "HAT": 7.037,
-    "STND": 0,
-    "MHHW": 6.538,
-    "MHW": 6.338,
-    "DTL": 5.407,
-    "MTL": 5.477,
-    "MSL": 5.48,
-    "MLW": 4.616,
-    "MLLW": 4.276,
-    "GT": 2.262,
-    "MN": 1.722,
-    "DHQ": 0.2,
-    "DLQ": 0.34,
-    "HWI": 8.914,
-    "LWI": 2.682,
-    "NAVD88": 4.254
-  },
-  "disclaimers": ""
+  ]
 }

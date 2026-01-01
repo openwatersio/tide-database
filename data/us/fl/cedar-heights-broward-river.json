@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cedar-heights-broward-river",
+  "id": "us/fl/cedar-heights-broward-river",
   "name": "Cedar Heights, Broward River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.4367,
   "longitude": -81.6417,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720189",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720189",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720189.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720189"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.593,
+    "HAT": 2.245,
+    "STND": 0,
+    "MHHW": 1.928,
+    "MHW": 1.883,
+    "DTL": 1.438,
+    "MTL": 1.428,
+    "MSL": 1.441,
+    "MLW": 0.973,
+    "MLLW": 0.948,
+    "GT": 0.98,
+    "MN": 0.91,
+    "DHQ": 0.045,
+    "DLQ": 0.025,
+    "HWI": 2.259,
+    "LWI": 8.861,
+    "NAVD88": 1.53
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.593,
-    "HAT": 2.245,
-    "STND": 0,
-    "MHHW": 1.928,
-    "MHW": 1.883,
-    "DTL": 1.438,
-    "MTL": 1.428,
-    "MSL": 1.441,
-    "MLW": 0.973,
-    "MLLW": 0.948,
-    "GT": 0.98,
-    "MN": 0.91,
-    "DHQ": 0.045,
-    "DLQ": 0.025,
-    "HWI": 2.259,
-    "LWI": 8.861,
-    "NAVD88": 1.53
-  },
-  "disclaimers": ""
+  ]
 }

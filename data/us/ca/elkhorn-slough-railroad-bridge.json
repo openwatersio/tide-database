@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-elkhorn-slough-railroad-bridge",
+  "id": "us/ca/elkhorn-slough-railroad-bridge",
   "name": "Elkhorn Slough railroad bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.85667,
   "longitude": -121.755,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9413663",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9413663",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9413663.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9413663"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.9540005,
+    "HAT": 7.7200003,
+    "STND": 0,
+    "MHHW": 7.192,
+    "MHW": 6.972,
+    "DTL": 6.352,
+    "MTL": 6.403,
+    "MSL": 6.405,
+    "MLW": 5.835,
+    "MLLW": 5.512,
+    "GT": 1.681,
+    "MN": 1.137,
+    "DHQ": 0.221,
+    "DLQ": 0.323,
+    "HWI": 6.823,
+    "LWI": 0.07,
+    "NAVD88": 5.49
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.9540005,
-    "HAT": 7.7200003,
-    "STND": 0,
-    "MHHW": 7.192,
-    "MHW": 6.972,
-    "DTL": 6.352,
-    "MTL": 6.403,
-    "MSL": 6.405,
-    "MLW": 5.835,
-    "MLLW": 5.512,
-    "GT": 1.681,
-    "MN": 1.137,
-    "DHQ": 0.221,
-    "DLQ": 0.323,
-    "HWI": 6.823,
-    "LWI": 0.07,
-    "NAVD88": 5.49
-  },
-  "disclaimers": ""
+  ]
 }

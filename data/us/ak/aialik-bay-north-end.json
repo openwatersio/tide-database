@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-aialik-bay-north-end",
+  "id": "us/ak/aialik-bay-north-end",
   "name": "Aialik Bay, North end",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.9533,
   "longitude": -149.715,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455145",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455145",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455145.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455145"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 11.543,
+    "HAT": 16.841,
+    "STND": 0,
+    "MHHW": 15.852,
+    "MHW": 15.577,
+    "DTL": 14.233,
+    "MTL": 14.301,
+    "MSL": 14.3,
+    "MLW": 13.025,
+    "MLLW": 12.615,
+    "GT": 3.237,
+    "MN": 2.553,
+    "DHQ": 0.275,
+    "DLQ": 0.41,
+    "HWI": 9.96,
+    "LWI": 3.74
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 11.543,
-    "HAT": 16.841,
-    "STND": 0,
-    "MHHW": 15.852,
-    "MHW": 15.577,
-    "DTL": 14.233,
-    "MTL": 14.301,
-    "MSL": 14.3,
-    "MLW": 13.025,
-    "MLLW": 12.615,
-    "GT": 3.237,
-    "MN": 2.553,
-    "DHQ": 0.275,
-    "DLQ": 0.41,
-    "HWI": 9.96,
-    "LWI": 3.74
-  },
-  "disclaimers": ""
+  ]
 }

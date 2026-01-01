@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-chowiet-island-semidi-island",
+  "id": "us/ak/chowiet-island-semidi-island",
   "name": "Chowiet Island, Semidi Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.0517,
   "longitude": -156.698,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9458519",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9458519",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9458519.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9458519"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.9619999,
+    "HAT": 5.399,
+    "STND": 0,
+    "MHHW": 4.657,
+    "MHW": 4.416,
+    "DTL": 3.292,
+    "MTL": 3.388,
+    "MSL": 3.36,
+    "MLW": 2.36,
+    "MLLW": 1.928,
+    "GT": 2.729,
+    "MN": 2.057,
+    "DHQ": 0.241,
+    "DLQ": 0.432,
+    "HWI": 10.944,
+    "LWI": 4.739
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.9619999,
-    "HAT": 5.399,
-    "STND": 0,
-    "MHHW": 4.657,
-    "MHW": 4.416,
-    "DTL": 3.292,
-    "MTL": 3.388,
-    "MSL": 3.36,
-    "MLW": 2.36,
-    "MLLW": 1.928,
-    "GT": 2.729,
-    "MN": 2.057,
-    "DHQ": 0.241,
-    "DLQ": 0.432,
-    "HWI": 10.944,
-    "LWI": 4.739
-  },
-  "disclaimers": ""
+  ]
 }

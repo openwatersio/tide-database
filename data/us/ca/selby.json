@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-selby",
+  "id": "us/ca/selby",
   "name": "Selby",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.0583,
   "longitude": -122.243,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415142",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415142",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415142.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415142"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-san-francisco-golden-gate",
+    "reference": "us/ca/san-francisco-golden-gate",
     "height": {
       "type": "fixed",
       "high": 0.18,

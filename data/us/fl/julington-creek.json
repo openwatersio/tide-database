@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-julington-creek",
+  "id": "us/fl/julington-creek",
   "name": "Julington Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.135000228881836,
   "longitude": -81.62999725341797,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720409",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720409",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720409.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720409"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-mayport-bar-pilot-dock",
+    "reference": "us/fl/mayport-bar-pilot-dock",
     "height": {
       "type": "ratio",
       "high": 0.2,

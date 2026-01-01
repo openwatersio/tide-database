@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-threemile-slough-entrance",
+  "id": "us/ca/threemile-slough-entrance",
   "name": "Threemile Slough entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.086700439453125,
   "longitude": -121.68499755859375,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415193",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415193",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415193.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415193"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.168056,
+    "HAT": 4.785056,
+    "STND": 0,
+    "MHHW": 4.504,
+    "MHW": 4.36,
+    "DTL": 3.983,
+    "MTL": 3.991,
+    "MSL": 3.998,
+    "MLW": 3.621,
+    "MLLW": 3.462,
+    "GT": 1.042,
+    "MN": 0.739,
+    "DHQ": 0.144,
+    "DLQ": 0.159,
+    "HWI": 0.03,
+    "LWI": 6.35
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.168056,
-    "HAT": 4.785056,
-    "STND": 0,
-    "MHHW": 4.504,
-    "MHW": 4.36,
-    "DTL": 3.983,
-    "MTL": 3.991,
-    "MSL": 3.998,
-    "MLW": 3.621,
-    "MLLW": 3.462,
-    "GT": 1.042,
-    "MN": 0.739,
-    "DHQ": 0.144,
-    "DLQ": 0.159,
-    "HWI": 0.03,
-    "LWI": 6.35
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-courtney-point",
+  "id": "us/fl/courtney-point",
   "name": "Courtney Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.15169906616211,
   "longitude": -85.66670227050781,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729132",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729132",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729132.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729132"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.588,
+    "HAT": 8.559999,
+    "STND": 0,
+    "MHHW": 8.323,
+    "MHW": 8.308,
+    "DTL": 8.116,
+    "MTL": 8.115,
+    "MSL": 8.113,
+    "MLW": 7.922,
+    "MLLW": 7.909,
+    "GT": 0.414,
+    "MN": 0.386,
+    "DHQ": 0.014,
+    "DLQ": 0.014,
+    "NAVD88": 8.075
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.588,
-    "HAT": 8.559999,
-    "STND": 0,
-    "MHHW": 8.323,
-    "MHW": 8.308,
-    "DTL": 8.116,
-    "MTL": 8.115,
-    "MSL": 8.113,
-    "MLW": 7.922,
-    "MLLW": 7.909,
-    "GT": 0.414,
-    "MN": 0.386,
-    "DHQ": 0.014,
-    "DLQ": 0.014,
-    "NAVD88": 8.075
-  },
-  "disclaimers": ""
+  ]
 }

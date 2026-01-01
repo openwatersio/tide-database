@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kun-river-scammon-bay",
+  "id": "us/ak/kun-river-scammon-bay",
   "name": "Kun River, Scammon Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 61.84170150756836,
   "longitude": -165.56700134277344,
   "timezone": "America/Nome",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9467124",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9467124",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9467124.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9467124"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.1899996,
+    "HAT": 9.3029995,
+    "STND": 0,
+    "MHHW": 8.762,
+    "MHW": 8.527,
+    "DTL": 7.777,
+    "MTL": 7.793,
+    "MSL": 7.766,
+    "MLW": 7.059,
+    "MLLW": 6.792,
+    "GT": 1.97,
+    "MN": 1.467,
+    "DHQ": 0.236,
+    "DLQ": 0.267,
+    "HWI": 7.523,
+    "LWI": 2.522,
+    "NAVD88": 6.698
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.1899996,
-    "HAT": 9.3029995,
-    "STND": 0,
-    "MHHW": 8.762,
-    "MHW": 8.527,
-    "DTL": 7.777,
-    "MTL": 7.793,
-    "MSL": 7.766,
-    "MLW": 7.059,
-    "MLLW": 6.792,
-    "GT": 1.97,
-    "MN": 1.467,
-    "DHQ": 0.236,
-    "DLQ": 0.267,
-    "HWI": 7.523,
-    "LWI": 2.522,
-    "NAVD88": 6.698
-  },
-  "disclaimers": ""
+  ]
 }

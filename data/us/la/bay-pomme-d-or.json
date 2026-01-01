@@ -1,10 +1,9 @@
 {
-  "id": "us-la-bay-pomme-d-or",
+  "id": "us/la/bay-pomme-d-or",
   "name": "Bay Pomme D'or",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.35059928894043,
   "longitude": -89.53990173339844,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8761115",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761115",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8761115.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761115"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.891,
+    "HAT": 9.956,
+    "STND": 0,
+    "MHHW": 9.613,
+    "MHW": 9.608,
+    "DTL": 9.412,
+    "MTL": 9.419,
+    "MSL": 9.418,
+    "MLW": 9.23,
+    "MLLW": 9.21,
+    "GT": 0.403,
+    "MN": 0.378,
+    "DHQ": 0.005,
+    "DLQ": 0.02,
+    "NAVD88": 9.438
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.891,
-    "HAT": 9.956,
-    "STND": 0,
-    "MHHW": 9.613,
-    "MHW": 9.608,
-    "DTL": 9.412,
-    "MTL": 9.419,
-    "MSL": 9.418,
-    "MLW": 9.23,
-    "MLLW": 9.21,
-    "GT": 0.403,
-    "MN": 0.378,
-    "DHQ": 0.005,
-    "DLQ": 0.02,
-    "NAVD88": 9.438
-  },
-  "disclaimers": ""
+  ]
 }

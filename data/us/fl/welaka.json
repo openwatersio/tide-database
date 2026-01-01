@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-welaka",
+  "id": "us/fl/welaka",
   "name": "Welaka",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.4767,
   "longitude": -81.675,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720832",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720832",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720832.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720832"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These raw data are derived from the water level network operated by the Florida Department of Environmental Protection (FDEP), Bureau of Surveying and Mapping (BSM), a coastal observing system that uses National Ocean Service (NOS) data collection procedures. These stations transmit data via GOES once every three hours. Tidal datums and predictions are produced by CO-OPS, derived from the raw data collected by BSM. NOTE: most of these stations have a station zero of NAVD88, resulting in a negative value for MLLW. For information on the BSM, go to <A HREF=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=47\">BSM</A>.",
+  "datums": {
+    "LAT": 0.0050000027,
+    "HAT": 0.169,
+    "STND": 0,
+    "MHHW": 0.151,
+    "MHW": 0.146,
+    "DTL": 0.077,
+    "MTL": 0.081,
+    "MSL": 0.079,
+    "MLW": 0.016,
+    "MLLW": 0.003,
+    "GT": 0.148,
+    "MN": 0.129,
+    "DHQ": 0.005,
+    "DLQ": 0.013,
+    "HWI": 8.426,
+    "LWI": 2.8,
+    "NAVD88": -0.003
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.0050000027,
-    "HAT": 0.169,
-    "STND": 0,
-    "MHHW": 0.151,
-    "MHW": 0.146,
-    "DTL": 0.077,
-    "MTL": 0.081,
-    "MSL": 0.079,
-    "MLW": 0.016,
-    "MLLW": 0.003,
-    "GT": 0.148,
-    "MN": 0.129,
-    "DHQ": 0.005,
-    "DLQ": 0.013,
-    "HWI": 8.426,
-    "LWI": 2.8,
-    "NAVD88": -0.003
-  },
-  "disclaimers": "These raw data are derived from the water level network operated by the Florida Department of Environmental Protection (FDEP), Bureau of Surveying and Mapping (BSM), a coastal observing system that uses National Ocean Service (NOS) data collection procedures. These stations transmit data via GOES once every three hours. Tidal datums and predictions are produced by CO-OPS, derived from the raw data collected by BSM. NOTE: most of these stations have a station zero of NAVD88, resulting in a negative value for MLLW. For information on the BSM, go to <A HREF=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=47\">BSM</A>."
+  ]
 }

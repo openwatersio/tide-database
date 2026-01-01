@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-econfina-river",
+  "id": "us/fl/econfina-river",
   "name": "Econfina River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.0533,
   "longitude": -83.91,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727956",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727956",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727956.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727956"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.015,
+    "HAT": 0.838,
+    "STND": 0,
+    "MHHW": 0.481,
+    "MHW": 0.407,
+    "DTL": -0.055,
+    "MTL": 0,
+    "MSL": -0.005,
+    "MLW": -0.408,
+    "MLLW": -0.593,
+    "GT": 1.075,
+    "MN": 0.816,
+    "DHQ": 0.075,
+    "DLQ": 0.185,
+    "HWI": 7.373,
+    "LWI": 1.266,
+    "NAVD88": 0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 140.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.015,
-    "HAT": 0.838,
-    "STND": 0,
-    "MHHW": 0.481,
-    "MHW": 0.407,
-    "DTL": -0.055,
-    "MTL": 0,
-    "MSL": -0.005,
-    "MLW": -0.408,
-    "MLLW": -0.593,
-    "GT": 1.075,
-    "MN": 0.816,
-    "DHQ": 0.075,
-    "DLQ": 0.185,
-    "HWI": 7.373,
-    "LWI": 1.266,
-    "NAVD88": 0.006
-  },
-  "disclaimers": ""
+  ]
 }

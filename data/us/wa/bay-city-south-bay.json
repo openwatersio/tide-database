@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-bay-city-south-bay",
+  "id": "us/wa/bay-city-south-bay",
   "name": "Bay City, South Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.8617,
   "longitude": -124.06,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9441038",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441038",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9441038.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441038"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-toke-point",
+    "reference": "us/wa/toke-point",
     "height": {
       "type": "ratio",
       "high": 1.1,

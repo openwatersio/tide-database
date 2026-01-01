@@ -1,10 +1,9 @@
 {
-  "id": "us-la-freshwater-canal-locks",
+  "id": "us/la/freshwater-canal-locks",
   "name": "Freshwater Canal Locks",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.55169444444444,
   "longitude": -92.30519444444444,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8766072",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8766072",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8766072.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8766072"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.946,
+    "HAT": 7.241,
+    "STND": 0,
+    "MHHW": 7.039,
+    "MHW": 6.993,
+    "DTL": 6.721,
+    "MTL": 6.775,
+    "MSL": 6.768,
+    "MLW": 6.557,
+    "MLLW": 6.403,
+    "GT": 0.636,
+    "MN": 0.436,
+    "DHQ": 0.046,
+    "DLQ": 0.153,
+    "NAVD88": 6.775
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 17.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.946,
-    "HAT": 7.241,
-    "STND": 0,
-    "MHHW": 7.039,
-    "MHW": 6.993,
-    "DTL": 6.721,
-    "MTL": 6.775,
-    "MSL": 6.768,
-    "MLW": 6.557,
-    "MLLW": 6.403,
-    "GT": 0.636,
-    "MN": 0.436,
-    "DHQ": 0.046,
-    "DLQ": 0.153,
-    "NAVD88": 6.775
-  },
-  "disclaimers": ""
+  ]
 }

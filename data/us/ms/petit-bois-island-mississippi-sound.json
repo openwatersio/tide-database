@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-petit-bois-island-mississippi-sound",
+  "id": "us/ms/petit-bois-island-mississippi-sound",
   "name": "Petit Bois Island, Mississippi Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.2033,
   "longitude": -88.4417,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8740405",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8740405",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8740405.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8740405"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.39800003,
+    "HAT": 1.301,
+    "STND": 0,
+    "MHHW": 1.072,
+    "MHW": 1.055,
+    "DTL": 0.848,
+    "MTL": 0.847,
+    "MSL": 0.841,
+    "MLW": 0.64,
+    "MLLW": 0.625,
+    "GT": 0.448,
+    "MN": 0.416,
+    "DHQ": 0.017,
+    "DLQ": 0.015
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.39800003,
-    "HAT": 1.301,
-    "STND": 0,
-    "MHHW": 1.072,
-    "MHW": 1.055,
-    "DTL": 0.848,
-    "MTL": 0.847,
-    "MSL": 0.841,
-    "MLW": 0.64,
-    "MLLW": 0.625,
-    "GT": 0.448,
-    "MN": 0.416,
-    "DHQ": 0.017,
-    "DLQ": 0.015
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-cape-utalug-4-miles-west-of",
+  "id": "us/ak/cape-utalug-4-miles-west-of",
   "name": "Cape Utalug (4 miles west of)",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 52.1183,
   "longitude": -174.207,
   "timezone": "America/Adak",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9461704",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461704",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9461704.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461704"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sweeper-cove-kuluk-bay-adak-island",
+    "reference": "us/ak/sweeper-cove-kuluk-bay-adak-island",
     "height": {
       "type": "ratio",
       "high": 1.19,

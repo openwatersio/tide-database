@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-windsor-plantation-black-river",
+  "id": "us/sc/windsor-plantation-black-river",
   "name": "Windsor Plantation, Black River",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.415,
   "longitude": -79.25,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8662953",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662953",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8662953.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662953"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.897,
+    "HAT": 2.572,
+    "STND": 0,
+    "MHHW": 2.293,
+    "MHW": 2.226,
+    "DTL": 1.713,
+    "MTL": 1.702,
+    "MSL": 1.73,
+    "MLW": 1.177,
+    "MLLW": 1.134,
+    "GT": 1.159,
+    "MN": 1.05,
+    "DHQ": 0.067,
+    "DLQ": 0.043,
+    "HWI": 2.424,
+    "LWI": 9.38,
+    "NAVD88": 1.73
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 137.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.897,
-    "HAT": 2.572,
-    "STND": 0,
-    "MHHW": 2.293,
-    "MHW": 2.226,
-    "DTL": 1.713,
-    "MTL": 1.702,
-    "MSL": 1.73,
-    "MLW": 1.177,
-    "MLLW": 1.134,
-    "GT": 1.159,
-    "MN": 1.05,
-    "DHQ": 0.067,
-    "DLQ": 0.043,
-    "HWI": 2.424,
-    "LWI": 9.38,
-    "NAVD88": 1.73
-  },
-  "disclaimers": ""
+  ]
 }

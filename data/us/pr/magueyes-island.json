@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-magueyes-island",
+  "id": "us/pr/magueyes-island",
   "name": "MAGUEYES ISLAND",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.97011111111111,
   "longitude": -67.04638888888888,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9759110",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759110",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9759110.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759110"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.959162,
+    "HAT": 1.405162,
+    "STND": 0,
+    "MHHW": 1.294,
+    "MHW": 1.292,
+    "DTL": 1.192,
+    "MTL": 1.193,
+    "MSL": 1.191,
+    "MLW": 1.094,
+    "MLLW": 1.091,
+    "GT": 0.204,
+    "MN": 0.198,
+    "DHQ": 0.003,
+    "DLQ": 0.003,
+    "PRVD02": 1.176
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 137.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.959162,
-    "HAT": 1.405162,
-    "STND": 0,
-    "MHHW": 1.294,
-    "MHW": 1.292,
-    "DTL": 1.192,
-    "MTL": 1.193,
-    "MSL": 1.191,
-    "MLW": 1.094,
-    "MLLW": 1.091,
-    "GT": 0.204,
-    "MN": 0.198,
-    "DHQ": 0.003,
-    "DLQ": 0.003,
-    "PRVD02": 1.176
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-kings-point",
+  "id": "us/ny/kings-point",
   "name": "Kings Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.810298919677734,
   "longitude": -73.76490020751953,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516945",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516945",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516945.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516945"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.362,
+    "HAT": 6.8999996,
+    "STND": 0,
+    "MHHW": 6.304,
+    "MHW": 6.195,
+    "DTL": 5.116,
+    "MTL": 5.103,
+    "MSL": 5.113,
+    "MLW": 4.012,
+    "MLLW": 3.927,
+    "GT": 2.377,
+    "MN": 2.183,
+    "DHQ": 0.109,
+    "DLQ": 0.085,
+    "HWI": 4.03,
+    "LWI": 10.73,
+    "NAVD88": 5.209
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 228.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.362,
-    "HAT": 6.8999996,
-    "STND": 0,
-    "MHHW": 6.304,
-    "MHW": 6.195,
-    "DTL": 5.116,
-    "MTL": 5.103,
-    "MSL": 5.113,
-    "MLW": 4.012,
-    "MLLW": 3.927,
-    "GT": 2.377,
-    "MN": 2.183,
-    "DHQ": 0.109,
-    "DLQ": 0.085,
-    "HWI": 4.03,
-    "LWI": 10.73,
-    "NAVD88": 5.209
-  },
-  "disclaimers": ""
+  ]
 }

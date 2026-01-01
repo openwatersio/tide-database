@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-egegik-egegik-river",
+  "id": "us/ak/egegik-egegik-river",
   "name": "Egegik, Egegik River",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.21670150756836,
   "longitude": -157.375,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9464874",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464874",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9464874.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464874"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.691,
+    "HAT": 13.994,
+    "STND": 0,
+    "MHHW": 13.151,
+    "MHW": 12.659,
+    "DTL": 10.831,
+    "MTL": 10.819,
+    "MSL": 10.762,
+    "MLW": 8.978,
+    "MLLW": 8.511,
+    "GT": 4.64,
+    "MN": 3.681,
+    "DHQ": 0.492,
+    "DLQ": 0.467,
+    "HWI": 10.777,
+    "LWI": 6.025,
+    "NAVD88": 9.509
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.691,
-    "HAT": 13.994,
-    "STND": 0,
-    "MHHW": 13.151,
-    "MHW": 12.659,
-    "DTL": 10.831,
-    "MTL": 10.819,
-    "MSL": 10.762,
-    "MLW": 8.978,
-    "MLLW": 8.511,
-    "GT": 4.64,
-    "MN": 3.681,
-    "DHQ": 0.492,
-    "DLQ": 0.467,
-    "HWI": 10.777,
-    "LWI": 6.025,
-    "NAVD88": 9.509
-  },
-  "disclaimers": ""
+  ]
 }

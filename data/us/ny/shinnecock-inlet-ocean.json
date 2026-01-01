@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-shinnecock-inlet-ocean",
+  "id": "us/ny/shinnecock-inlet-ocean",
   "name": "Shinnecock Inlet (ocean)",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8367,
   "longitude": -72.48,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8512354",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512354",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8512354.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512354"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.2590003,
+    "HAT": 6.863,
+    "STND": 0,
+    "MHHW": 6.588,
+    "MHW": 6.509,
+    "DTL": 6.06,
+    "MTL": 6.04,
+    "MSL": 6.024,
+    "MLW": 5.571,
+    "MLLW": 5.532,
+    "GT": 1.057,
+    "MN": 0.939,
+    "DHQ": 0.079,
+    "DLQ": 0.039,
+    "HWI": 0.013,
+    "LWI": 5.45
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.2590003,
-    "HAT": 6.863,
-    "STND": 0,
-    "MHHW": 6.588,
-    "MHW": 6.509,
-    "DTL": 6.06,
-    "MTL": 6.04,
-    "MSL": 6.024,
-    "MLW": 5.571,
-    "MLLW": 5.532,
-    "GT": 1.057,
-    "MN": 0.939,
-    "DHQ": 0.079,
-    "DLQ": 0.039,
-    "HWI": 0.013,
-    "LWI": 5.45
-  },
-  "disclaimers": ""
+  ]
 }

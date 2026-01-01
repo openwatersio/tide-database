@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-vineyard-haven-vineyard-hvn-hbr",
+  "id": "us/ma/vineyard-haven-vineyard-hvn-hbr",
   "name": "VINEYARD HAVEN, VINEYARD HVN HBR",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.4583,
   "longitude": -70.6,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8448157",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448157",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8448157.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448157"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.203,
+    "HAT": 2.155,
+    "STND": 0,
+    "MHHW": 2,
+    "MHW": 1.886,
+    "DTL": 1.676,
+    "MTL": 1.643,
+    "MSL": 1.675,
+    "MLW": 1.4,
+    "MLLW": 1.352,
+    "GT": 0.649,
+    "MN": 0.486,
+    "DHQ": 0.114,
+    "DLQ": 0.048,
+    "HWI": 3.91,
+    "LWI": 9.371
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.203,
-    "HAT": 2.155,
-    "STND": 0,
-    "MHHW": 2,
-    "MHW": 1.886,
-    "DTL": 1.676,
-    "MTL": 1.643,
-    "MSL": 1.675,
-    "MLW": 1.4,
-    "MLLW": 1.352,
-    "GT": 0.649,
-    "MN": 0.486,
-    "DHQ": 0.114,
-    "DLQ": 0.048,
-    "HWI": 3.91,
-    "LWI": 9.371
-  },
-  "disclaimers": ""
+  ]
 }

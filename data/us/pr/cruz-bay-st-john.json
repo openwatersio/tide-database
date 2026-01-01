@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-cruz-bay-st-john",
+  "id": "us/pr/cruz-bay-st-john",
   "name": "Cruz Bay, St. John",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.33289909362793,
   "longitude": -64.79409790039062,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751472",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751472",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751472.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751472"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.46599996,
+    "HAT": 1.053,
+    "STND": 0,
+    "MHHW": 0.897,
+    "MHW": 0.856,
+    "DTL": 0.75,
+    "MTL": 0.746,
+    "MSL": 0.743,
+    "MLW": 0.636,
+    "MLLW": 0.602,
+    "GT": 0.295,
+    "MN": 0.22,
+    "DHQ": 0.041,
+    "DLQ": 0.034,
+    "VIVD09": 0.747
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.46599996,
-    "HAT": 1.053,
-    "STND": 0,
-    "MHHW": 0.897,
-    "MHW": 0.856,
-    "DTL": 0.75,
-    "MTL": 0.746,
-    "MSL": 0.743,
-    "MLW": 0.636,
-    "MLLW": 0.602,
-    "GT": 0.295,
-    "MN": 0.22,
-    "DHQ": 0.041,
-    "DLQ": 0.034,
-    "VIVD09": 0.747
-  },
-  "disclaimers": ""
+  ]
 }

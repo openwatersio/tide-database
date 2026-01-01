@@ -1,10 +1,9 @@
 {
-  "id": "us-va-lester-manor",
+  "id": "us/va/lester-manor",
   "name": "Lester Manor",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.5833,
   "longitude": -76.99,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8636653",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636653",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8636653.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636653"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.715,
+    "HAT": 0.578,
+    "STND": 0,
+    "MHHW": 0.428,
+    "MHW": 0.375,
+    "DTL": -0.075,
+    "MTL": -0.086,
+    "MSL": -0.051,
+    "MLW": -0.547,
+    "MLLW": -0.578,
+    "GT": 1.006,
+    "MN": 0.922,
+    "DHQ": 0.053,
+    "DLQ": 0.031,
+    "HWI": 6.48,
+    "LWI": 0.6
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.715,
-    "HAT": 0.578,
-    "STND": 0,
-    "MHHW": 0.428,
-    "MHW": 0.375,
-    "DTL": -0.075,
-    "MTL": -0.086,
-    "MSL": -0.051,
-    "MLW": -0.547,
-    "MLLW": -0.578,
-    "GT": 1.006,
-    "MN": 0.922,
-    "DHQ": 0.053,
-    "DLQ": 0.031,
-    "HWI": 6.48,
-    "LWI": 0.6
-  },
-  "disclaimers": ""
+  ]
 }

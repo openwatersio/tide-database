@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-greenport",
+  "id": "us/ny/greenport",
   "name": "Greenport",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.101,
   "longitude": -72.36116666666666,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8511907",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511907",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8511907.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511907"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.4960003,
+    "HAT": 8.848001,
+    "STND": 0,
+    "MHHW": 8.612,
+    "MHW": 8.526,
+    "DTL": 8.17,
+    "MTL": 8.153,
+    "MSL": 8.168,
+    "MLW": 7.781,
+    "MLLW": 7.727,
+    "GT": 0.885,
+    "MN": 0.745,
+    "DHQ": 0.086,
+    "DLQ": 0.054,
+    "HWI": 3.21,
+    "LWI": 9.282
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.4960003,
-    "HAT": 8.848001,
-    "STND": 0,
-    "MHHW": 8.612,
-    "MHW": 8.526,
-    "DTL": 8.17,
-    "MTL": 8.153,
-    "MSL": 8.168,
-    "MLW": 7.781,
-    "MLLW": 7.727,
-    "GT": 0.885,
-    "MN": 0.745,
-    "DHQ": 0.086,
-    "DLQ": 0.054,
-    "HWI": 3.21,
-    "LWI": 9.282
-  },
-  "disclaimers": ""
+  ]
 }

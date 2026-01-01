@@ -1,10 +1,9 @@
 {
-  "id": "us-va-dixie",
+  "id": "us/va/dixie",
   "name": "Dixie",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.5067,
   "longitude": -76.4167,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8636831",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636831",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8636831.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636831"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-hampton-roads-sewells-point",
+    "reference": "us/va/hampton-roads-sewells-point",
     "height": {
       "type": "ratio",
       "high": 0.55,

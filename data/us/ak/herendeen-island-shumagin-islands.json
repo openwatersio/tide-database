@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-herendeen-island-shumagin-islands",
+  "id": "us/ak/herendeen-island-shumagin-islands",
   "name": "Herendeen Island, Shumagin Islands",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.06555555555556,
   "longitude": -159.4186666666667,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459163",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459163",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459163.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459163"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.4779999,
+    "HAT": 2.373,
+    "STND": 0,
+    "MHHW": 1.664,
+    "MHW": 1.432,
+    "DTL": 0.538,
+    "MTL": 0.628,
+    "MSL": 0.611,
+    "MLW": -0.175,
+    "MLLW": -0.588,
+    "GT": 2.253,
+    "MN": 1.607,
+    "DHQ": 0.232,
+    "DLQ": 0.413,
+    "HWI": 11.204,
+    "LWI": 4.899
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.4779999,
-    "HAT": 2.373,
-    "STND": 0,
-    "MHHW": 1.664,
-    "MHW": 1.432,
-    "DTL": 0.538,
-    "MTL": 0.628,
-    "MSL": 0.611,
-    "MLW": -0.175,
-    "MLLW": -0.588,
-    "GT": 2.253,
-    "MN": 1.607,
-    "DHQ": 0.232,
-    "DLQ": 0.413,
-    "HWI": 11.204,
-    "LWI": 4.899
-  },
-  "disclaimers": ""
+  ]
 }

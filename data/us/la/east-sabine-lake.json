@@ -1,10 +1,9 @@
 {
-  "id": "us-la-east-sabine-lake",
+  "id": "us/la/east-sabine-lake",
   "name": "East Sabine Lake",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.812700271606445,
   "longitude": -93.86209869384766,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8769858",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8769858",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8769858.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8769858"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.891,
+    "HAT": 9.578,
+    "STND": 0,
+    "MHHW": 9.437,
+    "MHW": 9.43,
+    "DTL": 9.303,
+    "MTL": 9.315,
+    "MSL": 9.316,
+    "MLW": 9.201,
+    "MLLW": 9.169,
+    "GT": 0.268,
+    "MN": 0.229,
+    "DHQ": 0.007,
+    "DLQ": 0.032,
+    "NAVD88": 9.297
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 237.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.891,
-    "HAT": 9.578,
-    "STND": 0,
-    "MHHW": 9.437,
-    "MHW": 9.43,
-    "DTL": 9.303,
-    "MTL": 9.315,
-    "MSL": 9.316,
-    "MLW": 9.201,
-    "MLLW": 9.169,
-    "GT": 0.268,
-    "MN": 0.229,
-    "DHQ": 0.007,
-    "DLQ": 0.032,
-    "NAVD88": 9.297
-  },
-  "disclaimers": ""
+  ]
 }

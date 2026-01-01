@@ -1,10 +1,9 @@
 {
-  "id": "us-me-muscongus-harbor-muscongus-sound",
+  "id": "us/me/muscongus-harbor-muscongus-sound",
   "name": "Muscongus Harbor, Muscongus Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.9667,
   "longitude": -69.4417,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8416381",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8416381",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8416381.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8416381"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-me-portland",
+    "reference": "us/me/portland",
     "height": {
       "type": "ratio",
       "high": 0.99,

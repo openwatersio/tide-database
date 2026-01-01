@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-tigalda-bay-tigalda-island",
+  "id": "us/ak/tigalda-bay-tigalda-island",
   "name": "Tigalda Bay, Tigalda Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.12,
   "longitude": -164.977,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462782",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462782",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462782.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462782"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.344,
+    "HAT": 7.357,
+    "STND": 0,
+    "MHHW": 6.832,
+    "MHW": 6.796,
+    "DTL": 6.355,
+    "MTL": 6.358,
+    "MSL": 6.37,
+    "MLW": 5.92,
+    "MLLW": 5.878,
+    "GT": 0.954,
+    "MN": 0.876,
+    "DHQ": 0.037,
+    "DLQ": 0.042
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.344,
-    "HAT": 7.357,
-    "STND": 0,
-    "MHHW": 6.832,
-    "MHW": 6.796,
-    "DTL": 6.355,
-    "MTL": 6.358,
-    "MSL": 6.37,
-    "MLW": 5.92,
-    "MLLW": 5.878,
-    "GT": 0.954,
-    "MN": 0.876,
-    "DHQ": 0.037,
-    "DLQ": 0.042
-  },
-  "disclaimers": ""
+  ]
 }

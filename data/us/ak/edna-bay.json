@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-edna-bay",
+  "id": "us/ak/edna-bay",
   "name": "Edna Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.95,
   "longitude": -133.662,
   "timezone": "America/Sitka",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450859",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450859",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450859.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450859"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sitka",
+    "reference": "us/ak/sitka",
     "height": {
       "type": "fixed",
       "high": 0.27,

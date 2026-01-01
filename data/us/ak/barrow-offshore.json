@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-barrow-offshore",
+  "id": "us/ak/barrow-offshore",
   "name": "Barrow Offshore",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 71.36011111111111,
   "longitude": -156.7298611111111,
   "timezone": "America/Anchorage",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9494935",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9494935",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9494935.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9494935"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 44.809998,
+    "HAT": 45.351997,
+    "STND": 0,
+    "MHHW": 45.158,
+    "MHW": 45.122,
+    "DTL": 45.057,
+    "MTL": 45.048,
+    "MSL": 45.05,
+    "MLW": 44.974,
+    "MLLW": 44.956,
+    "GT": 0.202,
+    "MN": 0.148,
+    "DHQ": 0.036,
+    "DLQ": 0.018
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 44.809998,
-    "HAT": 45.351997,
-    "STND": 0,
-    "MHHW": 45.158,
-    "MHW": 45.122,
-    "DTL": 45.057,
-    "MTL": 45.048,
-    "MSL": 45.05,
-    "MLW": 44.974,
-    "MLLW": 44.956,
-    "GT": 0.202,
-    "MN": 0.148,
-    "DHQ": 0.036,
-    "DLQ": 0.018
-  },
-  "disclaimers": ""
+  ]
 }

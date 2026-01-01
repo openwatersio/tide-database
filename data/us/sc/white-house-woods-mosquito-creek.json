@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-white-house-woods-mosquito-creek",
+  "id": "us/sc/white-house-woods-mosquito-creek",
   "name": "White House Woods, Mosquito Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.55870056152344,
   "longitude": -80.45439910888672,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8667295",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667295",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8667295.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667295"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 8.491,
+    "MHW": 8.406,
+    "DTL": 7.518,
+    "MTL": 7.507,
+    "MSL": 7.597,
+    "MLW": 6.608,
+    "MLLW": 6.545,
+    "GT": 1.946,
+    "MN": 1.798,
+    "DHQ": 0.085,
+    "DLQ": 0.063,
+    "HWI": 1.136,
+    "LWI": 7.533,
+    "NAVD88": 7.638
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 8.491,
-    "MHW": 8.406,
-    "DTL": 7.518,
-    "MTL": 7.507,
-    "MSL": 7.597,
-    "MLW": 6.608,
-    "MLLW": 6.545,
-    "GT": 1.946,
-    "MN": 1.798,
-    "DHQ": 0.085,
-    "DLQ": 0.063,
-    "HWI": 1.136,
-    "LWI": 7.533,
-    "NAVD88": 7.638
-  },
-  "disclaimers": ""
+  ]
 }

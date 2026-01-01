@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-skan-bay",
+  "id": "us/ak/skan-bay",
   "name": "Skan Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 53.61,
   "longitude": -167.045,
   "timezone": "America/Nome",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462554",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462554",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462554.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462554"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-unalaska",
+    "reference": "us/ak/unalaska",
     "height": {
       "type": "ratio",
       "high": 1.05,

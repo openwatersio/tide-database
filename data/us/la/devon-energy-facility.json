@@ -1,10 +1,9 @@
 {
-  "id": "us-la-devon-energy-facility",
+  "id": "us/la/devon-energy-facility",
   "name": "Devon Energy Facility",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.20075,
   "longitude": -89.04446666666666,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8760417",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760417",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8760417.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760417"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 11.8,
+    "HAT": 12.811001,
+    "STND": 0,
+    "MHHW": 12.533,
+    "MHW": 12.531,
+    "DTL": 12.352,
+    "MTL": 12.353,
+    "MSL": 12.35,
+    "MLW": 12.175,
+    "MLLW": 12.171,
+    "GT": 0.362,
+    "MN": 0.356,
+    "DHQ": 0.001,
+    "DLQ": 0.004
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 348.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 11.8,
-    "HAT": 12.811001,
-    "STND": 0,
-    "MHHW": 12.533,
-    "MHW": 12.531,
-    "DTL": 12.352,
-    "MTL": 12.353,
-    "MSL": 12.35,
-    "MLW": 12.175,
-    "MLLW": 12.171,
-    "GT": 0.362,
-    "MN": 0.356,
-    "DHQ": 0.001,
-    "DLQ": 0.004
-  },
-  "disclaimers": ""
+  ]
 }

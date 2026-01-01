@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-turkey-point-biscayne-bay",
+  "id": "us/fl/turkey-point-biscayne-bay",
   "name": "Turkey Point, Biscayne Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.4367,
   "longitude": -80.33,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723423",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723423",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723423.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723423"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.37600002,
+    "HAT": 1.287,
+    "STND": 0,
+    "MHHW": 1.081,
+    "MHW": 1.063,
+    "DTL": 0.809,
+    "MTL": 0.817,
+    "MSL": 0.809,
+    "MLW": 0.571,
+    "MLLW": 0.538,
+    "GT": 0.543,
+    "MN": 0.492,
+    "DHQ": 0.017,
+    "DLQ": 0.033,
+    "HWI": 3.338,
+    "LWI": 10.313,
+    "NAVD88": 1.074
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.37600002,
-    "HAT": 1.287,
-    "STND": 0,
-    "MHHW": 1.081,
-    "MHW": 1.063,
-    "DTL": 0.809,
-    "MTL": 0.817,
-    "MSL": 0.809,
-    "MLW": 0.571,
-    "MLLW": 0.538,
-    "GT": 0.543,
-    "MN": 0.492,
-    "DHQ": 0.017,
-    "DLQ": 0.033,
-    "HWI": 3.338,
-    "LWI": 10.313,
-    "NAVD88": 1.074
-  },
-  "disclaimers": ""
+  ]
 }

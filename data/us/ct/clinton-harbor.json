@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-clinton-harbor",
+  "id": "us/ct/clinton-harbor",
   "name": "Clinton Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.2683,
   "longitude": -72.5317,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8463701",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8463701",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8463701.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8463701"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.342,
+    "HAT": 9.602,
+    "STND": 0,
+    "MHHW": 9.249,
+    "MHW": 9.157,
+    "DTL": 8.473,
+    "MTL": 8.463,
+    "MSL": 8.448,
+    "MLW": 7.769,
+    "MLLW": 7.697,
+    "GT": 1.553,
+    "MN": 1.388,
+    "DHQ": 0.092,
+    "DLQ": 0.072,
+    "HWI": 3.625,
+    "LWI": 9.859,
+    "NAVD88": 8.551
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.342,
-    "HAT": 9.602,
-    "STND": 0,
-    "MHHW": 9.249,
-    "MHW": 9.157,
-    "DTL": 8.473,
-    "MTL": 8.463,
-    "MSL": 8.448,
-    "MLW": 7.769,
-    "MLLW": 7.697,
-    "GT": 1.553,
-    "MN": 1.388,
-    "DHQ": 0.092,
-    "DLQ": 0.072,
-    "HWI": 3.625,
-    "LWI": 9.859,
-    "NAVD88": 8.551
-  },
-  "disclaimers": ""
+  ]
 }

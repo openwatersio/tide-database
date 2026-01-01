@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-cape-disappointment",
+  "id": "us/wa/cape-disappointment",
   "name": "Cape Disappointment",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.28102777777778,
   "longitude": -124.0462777777778,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440581",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440581",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440581.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440581"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 15.094,
+    "HAT": 19.092,
+    "STND": 0,
+    "MHHW": 18.391,
+    "MHW": 18.178,
+    "DTL": 17.161,
+    "MTL": 17.26,
+    "MSL": 17.244,
+    "MLW": 16.342,
+    "MLLW": 15.932,
+    "GT": 2.46,
+    "MN": 1.836,
+    "DHQ": 0.214,
+    "DLQ": 0.41,
+    "HWI": 8.623,
+    "LWI": 2.047,
+    "NAVD88": 16.073
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 129.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 15.094,
-    "HAT": 19.092,
-    "STND": 0,
-    "MHHW": 18.391,
-    "MHW": 18.178,
-    "DTL": 17.161,
-    "MTL": 17.26,
-    "MSL": 17.244,
-    "MLW": 16.342,
-    "MLLW": 15.932,
-    "GT": 2.46,
-    "MN": 1.836,
-    "DHQ": 0.214,
-    "DLQ": 0.41,
-    "HWI": 8.623,
-    "LWI": 2.047,
-    "NAVD88": 16.073
-  },
-  "disclaimers": ""
+  ]
 }

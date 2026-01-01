@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-halls-river-bridge-homosassa-river",
+  "id": "us/fl/halls-river-bridge-homosassa-river",
   "name": "Halls River bridge, Homosassa River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.8,
   "longitude": -82.6033,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727293",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727293",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727293.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727293"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.427,
+    "HAT": 0.774,
+    "STND": 0,
+    "MHHW": 0.681,
+    "MHW": 0.634,
+    "DTL": 0.577,
+    "MTL": 0.566,
+    "MSL": 0.574,
+    "MLW": 0.497,
+    "MLLW": 0.473,
+    "GT": 0.208,
+    "MN": 0.137,
+    "DHQ": 0.047,
+    "DLQ": 0.025,
+    "HWI": 10.94,
+    "LWI": 5.93,
+    "NAVD88": 0.616
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 328,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.427,
-    "HAT": 0.774,
-    "STND": 0,
-    "MHHW": 0.681,
-    "MHW": 0.634,
-    "DTL": 0.577,
-    "MTL": 0.566,
-    "MSL": 0.574,
-    "MLW": 0.497,
-    "MLLW": 0.473,
-    "GT": 0.208,
-    "MN": 0.137,
-    "DHQ": 0.047,
-    "DLQ": 0.025,
-    "HWI": 10.94,
-    "LWI": 5.93,
-    "NAVD88": 0.616
-  },
-  "disclaimers": ""
+  ]
 }

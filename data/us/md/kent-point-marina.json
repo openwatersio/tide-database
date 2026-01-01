@@ -1,10 +1,9 @@
 {
-  "id": "us-md-kent-point-marina",
+  "id": "us/md/kent-point-marina",
   "name": "Kent Point Marina",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.8367,
   "longitude": -76.3733,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8572467",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572467",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8572467.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572467"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.4320002,
+    "HAT": 3.154,
+    "STND": 0,
+    "MHHW": 3.031,
+    "MHW": 2.959,
+    "DTL": 2.794,
+    "MTL": 2.79,
+    "MSL": 2.792,
+    "MLW": 2.622,
+    "MLLW": 2.558,
+    "GT": 0.473,
+    "MN": 0.337,
+    "DHQ": 0.072,
+    "DLQ": 0.064,
+    "HWI": 9.188,
+    "LWI": 3.22
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 181.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.4320002,
-    "HAT": 3.154,
-    "STND": 0,
-    "MHHW": 3.031,
-    "MHW": 2.959,
-    "DTL": 2.794,
-    "MTL": 2.79,
-    "MSL": 2.792,
-    "MLW": 2.622,
-    "MLLW": 2.558,
-    "GT": 0.473,
-    "MN": 0.337,
-    "DHQ": 0.072,
-    "DLQ": 0.064,
-    "HWI": 9.188,
-    "LWI": 3.22
-  },
-  "disclaimers": ""
+  ]
 }

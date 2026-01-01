@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-moss-landing-ocean-pier",
+  "id": "us/ca/moss-landing-ocean-pier",
   "name": "Moss Landing, Ocean Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.8017,
   "longitude": -121.79,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9413616",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9413616",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9413616.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9413616"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-monterey-monterey-bay",
+    "reference": "us/ca/monterey-monterey-bay",
     "height": {
       "type": "ratio",
       "high": 0.95,

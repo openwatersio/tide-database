@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-cold-spring-harbor",
+  "id": "us/ny/cold-spring-harbor",
   "name": "Cold Spring Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.87329864501953,
   "longitude": -73.47000122070312,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516061",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516061",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516061.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516061"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.1980001,
+    "HAT": 4.718,
+    "STND": 0,
+    "MHHW": 4.153,
+    "MHW": 4.042,
+    "DTL": 2.952,
+    "MTL": 2.931,
+    "MSL": 2.933,
+    "MLW": 1.819,
+    "MLLW": 1.751,
+    "GT": 2.402,
+    "MN": 2.224,
+    "DHQ": 0.111,
+    "DLQ": 0.068,
+    "HWI": 3.663,
+    "LWI": 10.185
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.1980001,
-    "HAT": 4.718,
-    "STND": 0,
-    "MHHW": 4.153,
-    "MHW": 4.042,
-    "DTL": 2.952,
-    "MTL": 2.931,
-    "MSL": 2.933,
-    "MLW": 1.819,
-    "MLLW": 1.751,
-    "GT": 2.402,
-    "MN": 2.224,
-    "DHQ": 0.111,
-    "DLQ": 0.068,
-    "HWI": 3.663,
-    "LWI": 10.185
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-viekoda-bay",
+  "id": "us/viekoda-bay",
   "name": "Viekoda Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.9,
   "longitude": -153.16666666667007,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2073",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2073",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2073.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2073"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-seldovia-kachemak-bay",
+    "reference": "us/ak/seldovia-kachemak-bay",
     "height": {
       "type": "ratio",
       "high": 0.8,

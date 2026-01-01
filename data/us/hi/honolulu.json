@@ -1,10 +1,9 @@
 {
-  "id": "us-hi-honolulu",
+  "id": "us/hi/honolulu",
   "name": "HONOLULU",
-  "continent": "North America",
-  "country": "United States",
   "region": "HI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 21.30333333333334,
   "longitude": -157.8645277777778,
   "timezone": "Pacific/Honolulu",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1612340",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1612340",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1612340.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1612340"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.029125,
+    "HAT": 1.989125,
+    "STND": 0,
+    "MHHW": 1.741,
+    "MHW": 1.6,
+    "DTL": 1.451,
+    "MTL": 1.406,
+    "MSL": 1.412,
+    "MLW": 1.211,
+    "MLLW": 1.161,
+    "GT": 0.58,
+    "MN": 0.389,
+    "DHQ": 0.141,
+    "DLQ": 0.05,
+    "HWI": 2.09,
+    "LWI": 8.34
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 234.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.029125,
-    "HAT": 1.989125,
-    "STND": 0,
-    "MHHW": 1.741,
-    "MHW": 1.6,
-    "DTL": 1.451,
-    "MTL": 1.406,
-    "MSL": 1.412,
-    "MLW": 1.211,
-    "MLLW": 1.161,
-    "GT": 0.58,
-    "MN": 0.389,
-    "DHQ": 0.141,
-    "DLQ": 0.05,
-    "HWI": 2.09,
-    "LWI": 8.34
-  },
-  "disclaimers": ""
+  ]
 }

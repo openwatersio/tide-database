@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-reef-bight-akutan-island",
+  "id": "us/ak/reef-bight-akutan-island",
   "name": "Reef Bight, Akutan Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.13072222222223,
   "longitude": -166.0993333333333,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462662",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462662",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462662.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462662"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 44.694,
+    "HAT": 46.617,
+    "STND": 0,
+    "MHHW": 46.37,
+    "MHW": 46.28,
+    "DTL": 45.821,
+    "MTL": 45.924,
+    "MSL": 45.886,
+    "MLW": 45.568,
+    "MLLW": 45.272,
+    "GT": 1.097,
+    "MN": 0.712,
+    "DHQ": 0.09,
+    "DLQ": 0.296
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 44.694,
-    "HAT": 46.617,
-    "STND": 0,
-    "MHHW": 46.37,
-    "MHW": 46.28,
-    "DTL": 45.821,
-    "MTL": 45.924,
-    "MSL": 45.886,
-    "MLW": 45.568,
-    "MLLW": 45.272,
-    "GT": 1.097,
-    "MN": 0.712,
-    "DHQ": 0.09,
-    "DLQ": 0.296
-  },
-  "disclaimers": ""
+  ]
 }

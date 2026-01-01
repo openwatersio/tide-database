@@ -1,10 +1,9 @@
 {
-  "id": "us-me-little-deer-isle",
+  "id": "us/me/little-deer-isle",
   "name": "Little Deer Isle",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.2917,
   "longitude": -68.6933,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8414424",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414424",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8414424.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414424"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-me-bar-harbor",
+    "reference": "us/me/bar-harbor",
     "height": {
       "type": "ratio",
       "high": 0.94,

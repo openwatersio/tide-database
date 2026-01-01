@@ -1,10 +1,9 @@
 {
-  "id": "us-la-cypremort-point",
+  "id": "us/la/cypremort-point",
   "name": "Cypremort Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.71336111111111,
   "longitude": -91.88,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8765251",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765251",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8765251.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765251"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.99,
+    "HAT": 8.024,
+    "STND": 0,
+    "MHHW": 7.864,
+    "MHW": 7.822,
+    "DTL": 7.605,
+    "MTL": 7.62,
+    "MSL": 7.62,
+    "MLW": 7.418,
+    "MLLW": 7.346,
+    "GT": 0.518,
+    "MN": 0.403,
+    "DHQ": 0.042,
+    "DLQ": 0.072
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 173.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.99,
-    "HAT": 8.024,
-    "STND": 0,
-    "MHHW": 7.864,
-    "MHW": 7.822,
-    "DTL": 7.605,
-    "MTL": 7.62,
-    "MSL": 7.62,
-    "MLW": 7.418,
-    "MLLW": 7.346,
-    "GT": 0.518,
-    "MN": 0.403,
-    "DHQ": 0.042,
-    "DLQ": 0.072
-  },
-  "disclaimers": ""
+  ]
 }

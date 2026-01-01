@@ -1,10 +1,9 @@
 {
-  "id": "us-wales-island-cannery-pearse-canal",
+  "id": "us/wales-island-cannery-pearse-canal",
   "name": "Wales Island (Cannery), Pearse Canal",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.76666666666667,
   "longitude": -130.55,
   "timezone": "America/Vancouver",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8218447",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8218447",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8218447.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8218447"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-ketchikan",
+    "reference": "us/ak/ketchikan",
     "height": {
       "type": "fixed",
       "high": -0.03,

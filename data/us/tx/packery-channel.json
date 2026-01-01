@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-packery-channel",
+  "id": "us/tx/packery-channel",
   "name": "Packery Channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.63330078125,
   "longitude": -97.23670196533203,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8775792",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775792",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8775792.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775792"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 0.689,
+    "HAT": 1.2049999,
+    "STND": 0,
+    "MHHW": 0.994,
+    "MHW": 0.995,
+    "DTL": 0.929,
+    "MTL": 0.929,
+    "MSL": 0.932,
+    "MLW": 0.863,
+    "MLLW": 0.864,
+    "GT": 0.13,
+    "MN": 0.132,
+    "DHQ": -0.001,
+    "DLQ": 0,
+    "NAVD88": 0.753
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.689,
-    "HAT": 1.2049999,
-    "STND": 0,
-    "MHHW": 0.994,
-    "MHW": 0.995,
-    "DTL": 0.929,
-    "MTL": 0.929,
-    "MSL": 0.932,
-    "MLW": 0.863,
-    "MLLW": 0.864,
-    "GT": 0.13,
-    "MN": 0.132,
-    "DHQ": -0.001,
-    "DLQ": 0,
-    "NAVD88": 0.753
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

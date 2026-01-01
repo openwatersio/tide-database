@@ -1,10 +1,9 @@
 {
-  "id": "us-va-travis-point-coan-river-va",
+  "id": "us/va/travis-point-coan-river-va",
   "name": "Travis Point, Coan River, Va.",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.9967,
   "longitude": -76.4667,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8635762",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635762",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8635762.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635762"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-dc-washington-washington-channel-d-c",
+    "reference": "us/dc/washington-washington-channel-d-c",
     "height": {
       "type": "ratio",
       "high": 0.44,

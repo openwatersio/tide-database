@@ -1,10 +1,9 @@
 {
-  "id": "us-dc-washington-washington-channel-d-c",
+  "id": "us/dc/washington-washington-channel-d-c",
   "name": "WASHINGTON, Washington Channel, D.C.",
-  "continent": "North America",
-  "country": "United States",
   "region": "DC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.87333333333334,
   "longitude": -77.02166666666666,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8594900",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8594900",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8594900.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8594900"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.2004011,
+    "HAT": 2.549401,
+    "STND": 0,
+    "MHHW": 2.353,
+    "MHW": 2.284,
+    "DTL": 1.87,
+    "MTL": 1.859,
+    "MSL": 1.859,
+    "MLW": 1.434,
+    "MLLW": 1.387,
+    "GT": 0.965,
+    "MN": 0.849,
+    "DHQ": 0.069,
+    "DLQ": 0.047,
+    "HWI": 0.48,
+    "LWI": 7.614,
+    "NAVD88": 1.812
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 69.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.2004011,
-    "HAT": 2.549401,
-    "STND": 0,
-    "MHHW": 2.353,
-    "MHW": 2.284,
-    "DTL": 1.87,
-    "MTL": 1.859,
-    "MSL": 1.859,
-    "MLW": 1.434,
-    "MLLW": 1.387,
-    "GT": 0.965,
-    "MN": 0.849,
-    "DHQ": 0.069,
-    "DLQ": 0.047,
-    "HWI": 0.48,
-    "LWI": 7.614,
-    "NAVD88": 1.812
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-taio-hae-bay-nuku-hiva-island",
+  "id": "us/taio-hae-bay-nuku-hiva-island",
   "name": "Taio Hae Bay, Nuku Hiva Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -8.933333333333334,
   "longitude": -140.1,
   "timezone": "Pacific/Marquesas",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2831",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2831",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2831.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2831"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pago-pago-harbor-tutuila-island",
+    "reference": "us/pago-pago-harbor-tutuila-island",
     "height": {
       "type": "ratio",
       "high": 1.56,

@@ -1,10 +1,9 @@
 {
-  "id": "us-me-cutler-naval-radio-station",
+  "id": "us/me/cutler-naval-radio-station",
   "name": "Cutler, Naval Radio Station",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.6417,
   "longitude": -67.2967,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8411250",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8411250",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8411250.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8411250"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.1030006,
+    "HAT": 11.782001,
+    "STND": 0,
+    "MHHW": 11.003,
+    "MHW": 10.875,
+    "DTL": 8.937,
+    "MTL": 8.93,
+    "MSL": 8.928,
+    "MLW": 6.986,
+    "MLLW": 6.871,
+    "GT": 4.133,
+    "MN": 3.89,
+    "DHQ": 0.128,
+    "DLQ": 0.115,
+    "HWI": 3.182,
+    "LWI": 9.449
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 251.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.1030006,
-    "HAT": 11.782001,
-    "STND": 0,
-    "MHHW": 11.003,
-    "MHW": 10.875,
-    "DTL": 8.937,
-    "MTL": 8.93,
-    "MSL": 8.928,
-    "MLW": 6.986,
-    "MLLW": 6.871,
-    "GT": 4.133,
-    "MN": 3.89,
-    "DHQ": 0.128,
-    "DLQ": 0.115,
-    "HWI": 3.182,
-    "LWI": 9.449
-  },
-  "disclaimers": ""
+  ]
 }

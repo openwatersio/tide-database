@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-beauty-bay-nuka-bay",
+  "id": "us/ak/beauty-bay-nuka-bay",
   "name": "Beauty Bay, Nuka Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.5267,
   "longitude": -150.628,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455304",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455304",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455304.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455304"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-seward-resurrection-bay",
+    "reference": "us/ak/seward-resurrection-bay",
     "height": {
       "type": "ratio",
       "high": 1.08,

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-fort-lauderdale-andrews-ave-bridge",
+  "id": "us/fl/fort-lauderdale-andrews-ave-bridge",
   "name": "Fort Lauderdale, Andrews Ave. Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.11829948425293,
   "longitude": -80.1449966430664,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722937",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722937",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722937.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722937"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.773,
+    "HAT": 0.444,
+    "STND": 0,
+    "MHHW": 0.138,
+    "MHW": 0.107,
+    "DTL": -0.208,
+    "MTL": -0.204,
+    "MSL": -0.207,
+    "MLW": -0.516,
+    "MLLW": -0.556,
+    "GT": 0.696,
+    "MN": 0.624,
+    "DHQ": 0.031,
+    "DLQ": 0.04,
+    "HWI": 1.469,
+    "LWI": 7.795,
+    "NAVD88": 0
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.773,
-    "HAT": 0.444,
-    "STND": 0,
-    "MHHW": 0.138,
-    "MHW": 0.107,
-    "DTL": -0.208,
-    "MTL": -0.204,
-    "MSL": -0.207,
-    "MLW": -0.516,
-    "MLLW": -0.556,
-    "GT": 0.696,
-    "MN": 0.624,
-    "DHQ": 0.031,
-    "DLQ": 0.04,
-    "HWI": 1.469,
-    "LWI": 7.795,
-    "NAVD88": 0
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-st-george-staten-island",
+  "id": "us/ny/st-george-staten-island",
   "name": "St. George, Staten Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.6433,
   "longitude": -74.0733,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8519112",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519112",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8519112.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519112"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ny-new-york-the-battery",
+    "reference": "us/ny/new-york-the-battery",
     "height": {
       "type": "ratio",
       "high": 0.99,

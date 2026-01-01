@@ -1,10 +1,9 @@
 {
-  "id": "us-va-lafayette-river",
+  "id": "us/va/lafayette-river",
   "name": "Lafayette River",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.88422222222222,
   "longitude": -76.27585833333333,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638671",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638671",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638671.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638671"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.022,
+    "HAT": 9.418,
+    "STND": 0,
+    "MHHW": 9.157,
+    "MHW": 9.094,
+    "DTL": 8.699,
+    "MTL": 8.688,
+    "MSL": 8.692,
+    "MLW": 8.282,
+    "MLLW": 8.241,
+    "GT": 0.916,
+    "MN": 0.813,
+    "DHQ": 0.063,
+    "DLQ": 0.041,
+    "HWI": 1.651,
+    "LWI": 8.004
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 292,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.022,
-    "HAT": 9.418,
-    "STND": 0,
-    "MHHW": 9.157,
-    "MHW": 9.094,
-    "DTL": 8.699,
-    "MTL": 8.688,
-    "MSL": 8.692,
-    "MLW": 8.282,
-    "MLLW": 8.241,
-    "GT": 0.916,
-    "MN": 0.813,
-    "DHQ": 0.063,
-    "DLQ": 0.041,
-    "HWI": 1.651,
-    "LWI": 8.004
-  },
-  "disclaimers": ""
+  ]
 }

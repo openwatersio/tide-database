@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-mullet-key-channel-skyway",
+  "id": "us/fl/mullet-key-channel-skyway",
   "name": "Mullet Key Channel (Skyway)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.615,
   "longitude": -82.7267,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726364",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726364",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726364.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726364"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.08899999,
+    "HAT": 1.231,
+    "STND": 0,
+    "MHHW": 1.01,
+    "MHW": 0.932,
+    "DTL": 0.693,
+    "MTL": 0.707,
+    "MSL": 0.714,
+    "MLW": 0.482,
+    "MLLW": 0.376,
+    "GT": 0.635,
+    "MN": 0.451,
+    "DHQ": 0.078,
+    "DLQ": 0.106,
+    "NAVD88": 0.84
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -229,23 +246,5 @@
       "phase_local": 133.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.08899999,
-    "HAT": 1.231,
-    "STND": 0,
-    "MHHW": 1.01,
-    "MHW": 0.932,
-    "DTL": 0.693,
-    "MTL": 0.707,
-    "MSL": 0.714,
-    "MLW": 0.482,
-    "MLLW": 0.376,
-    "GT": 0.635,
-    "MN": 0.451,
-    "DHQ": 0.078,
-    "DLQ": 0.106,
-    "NAVD88": 0.84
-  },
-  "disclaimers": ""
+  ]
 }

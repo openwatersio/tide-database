@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-luquillo",
+  "id": "us/pr/luquillo",
   "name": "Luquillo",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.38170051574707,
   "longitude": -65.73650360107422,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9753766",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9753766",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9753766.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9753766"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.795,
+    "HAT": 9.606,
+    "STND": 0,
+    "MHHW": 9.417,
+    "MHW": 9.355,
+    "DTL": 9.187,
+    "MTL": 9.185,
+    "MSL": 9.183,
+    "MLW": 9.014,
+    "MLLW": 8.958,
+    "GT": 0.459,
+    "MN": 0.341,
+    "DHQ": 0.062,
+    "DLQ": 0.057,
+    "HWI": 12.36,
+    "LWI": 6.33,
+    "PRVD02": 9.198
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.795,
-    "HAT": 9.606,
-    "STND": 0,
-    "MHHW": 9.417,
-    "MHW": 9.355,
-    "DTL": 9.187,
-    "MTL": 9.185,
-    "MSL": 9.183,
-    "MLW": 9.014,
-    "MLLW": 8.958,
-    "GT": 0.459,
-    "MN": 0.341,
-    "DHQ": 0.062,
-    "DLQ": 0.057,
-    "HWI": 12.36,
-    "LWI": 6.33,
-    "PRVD02": 9.198
-  },
-  "disclaimers": ""
+  ]
 }

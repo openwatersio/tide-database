@@ -1,10 +1,9 @@
 {
-  "id": "us-md-crisfield-little-annemessex-river",
+  "id": "us/md/crisfield-little-annemessex-river",
   "name": "Crisfield, Little Annemessex River",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.9767,
   "longitude": -75.8633,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8571091",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571091",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8571091.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571091"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.4259999,
+    "HAT": 2.317,
+    "STND": 0,
+    "MHHW": 2.179,
+    "MHW": 2.128,
+    "DTL": 1.851,
+    "MTL": 1.844,
+    "MSL": 1.828,
+    "MLW": 1.56,
+    "MLLW": 1.523,
+    "GT": 0.657,
+    "MN": 0.567,
+    "DHQ": 0.052,
+    "DLQ": 0.038,
+    "HWI": 5.22,
+    "LWI": 11.69,
+    "NAVD88": 1.876
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.4259999,
-    "HAT": 2.317,
-    "STND": 0,
-    "MHHW": 2.179,
-    "MHW": 2.128,
-    "DTL": 1.851,
-    "MTL": 1.844,
-    "MSL": 1.828,
-    "MLW": 1.56,
-    "MLLW": 1.523,
-    "GT": 0.657,
-    "MN": 0.567,
-    "DHQ": 0.052,
-    "DLQ": 0.038,
-    "HWI": 5.22,
-    "LWI": 11.69,
-    "NAVD88": 1.876
-  },
-  "disclaimers": ""
+  ]
 }

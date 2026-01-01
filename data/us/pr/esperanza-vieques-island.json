@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-esperanza-vieques-island",
+  "id": "us/pr/esperanza-vieques-island",
   "name": "Esperanza, Vieques Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.09386111111111,
   "longitude": -65.47136111111111,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9752695",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9752695",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9752695.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9752695"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.785,
+    "HAT": 8.274,
+    "STND": 0,
+    "MHHW": 8.16,
+    "MHW": 8.155,
+    "DTL": 8.048,
+    "MTL": 8.05,
+    "MSL": 8.054,
+    "MLW": 7.945,
+    "MLLW": 7.935,
+    "GT": 0.225,
+    "MN": 0.21,
+    "DHQ": 0.005,
+    "DLQ": 0.01,
+    "PRVD02": 8.033
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 113.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.785,
-    "HAT": 8.274,
-    "STND": 0,
-    "MHHW": 8.16,
-    "MHW": 8.155,
-    "DTL": 8.048,
-    "MTL": 8.05,
-    "MSL": 8.054,
-    "MLW": 7.945,
-    "MLLW": 7.935,
-    "GT": 0.225,
-    "MN": 0.21,
-    "DHQ": 0.005,
-    "DLQ": 0.01,
-    "PRVD02": 8.033
-  },
-  "disclaimers": ""
+  ]
 }

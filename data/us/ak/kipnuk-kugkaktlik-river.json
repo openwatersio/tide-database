@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kipnuk-kugkaktlik-river",
+  "id": "us/ak/kipnuk-kugkaktlik-river",
   "name": "Kipnuk, Kugkaktlik River",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.943199157714844,
   "longitude": -164.04339599609375,
   "timezone": "America/Nome",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465951",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465951",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465951.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465951"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.5220003,
+    "HAT": 10.112,
+    "STND": 0,
+    "MHHW": 9.416,
+    "MHW": 8.989,
+    "DTL": 8.154,
+    "MTL": 8.069,
+    "MSL": 8.133,
+    "MLW": 7.149,
+    "MLLW": 6.891,
+    "GT": 2.525,
+    "MN": 1.841,
+    "DHQ": 0.427,
+    "DLQ": 0.257,
+    "HWI": 8.527,
+    "LWI": 3.255,
+    "NAVD88": 7.054
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.5220003,
-    "HAT": 10.112,
-    "STND": 0,
-    "MHHW": 9.416,
-    "MHW": 8.989,
-    "DTL": 8.154,
-    "MTL": 8.069,
-    "MSL": 8.133,
-    "MLW": 7.149,
-    "MLLW": 6.891,
-    "GT": 2.525,
-    "MN": 1.841,
-    "DHQ": 0.427,
-    "DLQ": 0.257,
-    "HWI": 8.527,
-    "LWI": 3.255,
-    "NAVD88": 7.054
-  },
-  "disclaimers": ""
+  ]
 }

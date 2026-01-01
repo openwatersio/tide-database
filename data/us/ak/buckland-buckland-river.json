@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-buckland-buckland-river",
+  "id": "us/ak/buckland-buckland-river",
   "name": "Buckland, Buckland river",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 65.97550201416016,
   "longitude": -161.125,
   "timezone": "America/Anchorage",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9469677",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469677",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9469677.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469677"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.4059997,
+    "HAT": 6.357,
+    "STND": 0,
+    "MHHW": 6.061,
+    "MHW": 6.01,
+    "DTL": 5.796,
+    "MTL": 5.798,
+    "MSL": 5.877,
+    "MLW": 5.586,
+    "MLLW": 5.53,
+    "GT": 0.532,
+    "MN": 0.424,
+    "DHQ": 0.052,
+    "DLQ": 0.056,
+    "NAVD88": 4.305
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.4059997,
-    "HAT": 6.357,
-    "STND": 0,
-    "MHHW": 6.061,
-    "MHW": 6.01,
-    "DTL": 5.796,
-    "MTL": 5.798,
-    "MSL": 5.877,
-    "MLW": 5.586,
-    "MLLW": 5.53,
-    "GT": 0.532,
-    "MN": 0.424,
-    "DHQ": 0.052,
-    "DLQ": 0.056,
-    "NAVD88": 4.305
-  },
-  "disclaimers": ""
+  ]
 }

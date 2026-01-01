@@ -1,10 +1,9 @@
 {
-  "id": "us-la-pilottown",
+  "id": "us/la/pilottown",
   "name": "Pilottown",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.17930555555556,
   "longitude": -89.25883333333333,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8760721",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760721",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8760721.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760721"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.516,
+    "HAT": 2.299,
+    "STND": 0,
+    "MHHW": 2.028,
+    "MHW": 2.027,
+    "DTL": 1.905,
+    "MTL": 1.906,
+    "MSL": 1.903,
+    "MLW": 1.784,
+    "MLLW": 1.782,
+    "GT": 0.246,
+    "MN": 0.243,
+    "DHQ": 0.001,
+    "DLQ": 0.003
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 65.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.516,
-    "HAT": 2.299,
-    "STND": 0,
-    "MHHW": 2.028,
-    "MHW": 2.027,
-    "DTL": 1.905,
-    "MTL": 1.906,
-    "MSL": 1.903,
-    "MLW": 1.784,
-    "MLLW": 1.782,
-    "GT": 0.246,
-    "MN": 0.243,
-    "DHQ": 0.001,
-    "DLQ": 0.003
-  },
-  "disclaimers": ""
+  ]
 }

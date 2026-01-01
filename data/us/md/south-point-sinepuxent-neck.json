@@ -1,10 +1,9 @@
 {
-  "id": "us-md-south-point-sinepuxent-neck",
+  "id": "us/md/south-point-sinepuxent-neck",
   "name": "South Point, Sinepuxent Neck",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.215,
   "longitude": -75.1917,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8570536",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570536",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8570536.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570536"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.924,
+    "HAT": 1.327,
+    "STND": 0,
+    "MHHW": 1.219,
+    "MHW": 1.194,
+    "DTL": 1.12,
+    "MTL": 1.123,
+    "MSL": 1.126,
+    "MLW": 1.053,
+    "MLLW": 1.021,
+    "GT": 0.197,
+    "MN": 0.141,
+    "DHQ": 0.025,
+    "DLQ": 0.031,
+    "HWI": 5.161,
+    "LWI": 11.222
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.924,
-    "HAT": 1.327,
-    "STND": 0,
-    "MHHW": 1.219,
-    "MHW": 1.194,
-    "DTL": 1.12,
-    "MTL": 1.123,
-    "MSL": 1.126,
-    "MLW": 1.053,
-    "MLLW": 1.021,
-    "GT": 0.197,
-    "MN": 0.141,
-    "DHQ": 0.025,
-    "DLQ": 0.031,
-    "HWI": 5.161,
-    "LWI": 11.222
-  },
-  "disclaimers": ""
+  ]
 }

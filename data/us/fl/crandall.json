@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-crandall",
+  "id": "us/fl/crandall",
   "name": "Crandall",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.7217,
   "longitude": -81.6217,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720004",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720004",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720004.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720004"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.23699999,
+    "HAT": 2.679,
+    "STND": 0,
+    "MHHW": 2.181,
+    "MHW": 2.101,
+    "DTL": 1.375,
+    "MTL": 1.364,
+    "MSL": 1.426,
+    "MLW": 0.626,
+    "MLLW": 0.568,
+    "GT": 1.613,
+    "MN": 1.475,
+    "DHQ": 0.08,
+    "DLQ": 0.058,
+    "HWI": 2.463,
+    "LWI": 8.683,
+    "NAVD88": 1.43
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.23699999,
-    "HAT": 2.679,
-    "STND": 0,
-    "MHHW": 2.181,
-    "MHW": 2.101,
-    "DTL": 1.375,
-    "MTL": 1.364,
-    "MSL": 1.426,
-    "MLW": 0.626,
-    "MLLW": 0.568,
-    "GT": 1.613,
-    "MN": 1.475,
-    "DHQ": 0.08,
-    "DLQ": 0.058,
-    "HWI": 2.463,
-    "LWI": 8.683,
-    "NAVD88": 1.43
-  },
-  "disclaimers": ""
+  ]
 }

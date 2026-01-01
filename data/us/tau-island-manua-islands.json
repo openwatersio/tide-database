@@ -1,10 +1,9 @@
 {
-  "id": "us-tau-island-manua-islands",
+  "id": "us/tau-island-manua-islands",
   "name": "Tau Island, Manua Islands",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -14.21666666666667,
   "longitude": -169.5333333333333,
   "timezone": "Pacific/Pago_Pago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2865",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2865",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2865.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2865"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pago-pago-harbor-tutuila-island",
+    "reference": "us/pago-pago-harbor-tutuila-island",
     "height": {
       "type": "ratio",
       "high": 1.43,

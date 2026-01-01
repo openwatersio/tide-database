@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-lostmans-river-entrance",
+  "id": "us/fl/lostmans-river-entrance",
   "name": "Lostmans River entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.5533,
   "longitude": -81.2133,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724842",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724842",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724842.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724842"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-naples-outer-coast",
+    "reference": "us/fl/naples-outer-coast",
     "height": {
       "type": "ratio",
       "high": 1.33,

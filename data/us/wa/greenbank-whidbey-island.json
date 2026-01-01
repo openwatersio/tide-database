@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-greenbank-whidbey-island",
+  "id": "us/wa/greenbank-whidbey-island",
   "name": "Greenbank, Whidbey Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.105,
   "longitude": -122.57,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9447883",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447883",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9447883.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447883"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.37,
+    "HAT": 7.953,
+    "STND": 0,
+    "MHHW": 7.222,
+    "MHW": 6.957,
+    "DTL": 5.492,
+    "MTL": 5.783,
+    "MSL": 5.777,
+    "MLW": 4.609,
+    "MLLW": 3.761,
+    "GT": 3.461,
+    "MN": 2.348,
+    "DHQ": 0.265,
+    "DLQ": 0.848,
+    "HWI": 0.434,
+    "LWI": 6.571
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.37,
-    "HAT": 7.953,
-    "STND": 0,
-    "MHHW": 7.222,
-    "MHW": 6.957,
-    "DTL": 5.492,
-    "MTL": 5.783,
-    "MSL": 5.777,
-    "MLW": 4.609,
-    "MLLW": 3.761,
-    "GT": 3.461,
-    "MN": 2.348,
-    "DHQ": 0.265,
-    "DLQ": 0.848,
-    "HWI": 0.434,
-    "LWI": 6.571
-  },
-  "disclaimers": ""
+  ]
 }

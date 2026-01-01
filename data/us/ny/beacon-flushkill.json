@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-beacon-flushkill",
+  "id": "us/ny/beacon-flushkill",
   "name": "Beacon, Flushkill",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.5,
   "longitude": -73.9833,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518934",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518934",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518934.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518934"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.518,
+    "HAT": 7.103,
+    "STND": 0,
+    "MHHW": 6.807,
+    "MHW": 6.7,
+    "DTL": 6.248,
+    "MTL": 6.223,
+    "MSL": 6.242,
+    "MLW": 5.746,
+    "MLLW": 5.689,
+    "GT": 1.118,
+    "MN": 0.954,
+    "DHQ": 0.107,
+    "DLQ": 0.057,
+    "HWI": 4.453,
+    "LWI": 11.027
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.518,
-    "HAT": 7.103,
-    "STND": 0,
-    "MHHW": 6.807,
-    "MHW": 6.7,
-    "DTL": 6.248,
-    "MTL": 6.223,
-    "MSL": 6.242,
-    "MLW": 5.746,
-    "MLLW": 5.689,
-    "GT": 1.118,
-    "MN": 0.954,
-    "DHQ": 0.107,
-    "DLQ": 0.057,
-    "HWI": 4.453,
-    "LWI": 11.027
-  },
-  "disclaimers": ""
+  ]
 }

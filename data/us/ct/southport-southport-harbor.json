@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-southport-southport-harbor",
+  "id": "us/ct/southport-southport-harbor",
   "name": "Southport, Southport Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.1333,
   "longitude": -73.2833,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8467726",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8467726",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8467726.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8467726"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.015,
+    "HAT": 9.337,
+    "STND": 0,
+    "MHHW": 8.808,
+    "MHW": 8.706,
+    "DTL": 7.678,
+    "MTL": 7.664,
+    "MSL": 7.665,
+    "MLW": 6.622,
+    "MLLW": 6.548,
+    "GT": 2.26,
+    "MN": 2.084,
+    "DHQ": 0.102,
+    "DLQ": 0.074,
+    "HWI": 3.785,
+    "LWI": 10.164,
+    "NAVD88": 7.716
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.015,
-    "HAT": 9.337,
-    "STND": 0,
-    "MHHW": 8.808,
-    "MHW": 8.706,
-    "DTL": 7.678,
-    "MTL": 7.664,
-    "MSL": 7.665,
-    "MLW": 6.622,
-    "MLLW": 6.548,
-    "GT": 2.26,
-    "MN": 2.084,
-    "DHQ": 0.102,
-    "DLQ": 0.074,
-    "HWI": 3.785,
-    "LWI": 10.164,
-    "NAVD88": 7.716
-  },
-  "disclaimers": ""
+  ]
 }

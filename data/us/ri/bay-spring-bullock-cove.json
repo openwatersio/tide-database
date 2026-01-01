@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-bay-spring-bullock-cove",
+  "id": "us/ri/bay-spring-bullock-cove",
   "name": "Bay Spring, Bullock Cove",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.75170135498047,
   "longitude": -71.35169982910156,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8453033",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8453033",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8453033.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8453033"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.14399993,
+    "HAT": 2.2719998,
+    "STND": 0,
+    "MHHW": 1.906,
+    "MHW": 1.831,
+    "DTL": 1.195,
+    "MTL": 1.184,
+    "MSL": 1.147,
+    "MLW": 0.537,
+    "MLLW": 0.484,
+    "GT": 1.423,
+    "MN": 1.294,
+    "DHQ": 0.076,
+    "DLQ": 0.054,
+    "HWI": 0.457,
+    "LWI": 5.941
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.14399993,
-    "HAT": 2.2719998,
-    "STND": 0,
-    "MHHW": 1.906,
-    "MHW": 1.831,
-    "DTL": 1.195,
-    "MTL": 1.184,
-    "MSL": 1.147,
-    "MLW": 0.537,
-    "MLLW": 0.484,
-    "GT": 1.423,
-    "MN": 1.294,
-    "DHQ": 0.076,
-    "DLQ": 0.054,
-    "HWI": 0.457,
-    "LWI": 5.941
-  },
-  "disclaimers": ""
+  ]
 }

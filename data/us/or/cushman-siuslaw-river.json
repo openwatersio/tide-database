@@ -1,10 +1,9 @@
 {
-  "id": "us-or-cushman-siuslaw-river",
+  "id": "us/or/cushman-siuslaw-river",
   "name": "Cushman, Siuslaw River",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.98500061035156,
   "longitude": -124.04499816894531,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9434068",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9434068",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9434068.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9434068"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.9449997,
+    "HAT": 10.446,
+    "STND": 0,
+    "MHHW": 9.843,
+    "MHW": 9.643,
+    "DTL": 8.715,
+    "MTL": 8.779,
+    "MSL": 8.787,
+    "MLW": 7.916,
+    "MLLW": 7.586,
+    "GT": 2.257,
+    "MN": 1.727,
+    "DHQ": 0.2,
+    "DLQ": 0.33,
+    "HWI": 8.743,
+    "LWI": 2.533,
+    "NAVD88": 7.483
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.9449997,
-    "HAT": 10.446,
-    "STND": 0,
-    "MHHW": 9.843,
-    "MHW": 9.643,
-    "DTL": 8.715,
-    "MTL": 8.779,
-    "MSL": 8.787,
-    "MLW": 7.916,
-    "MLLW": 7.586,
-    "GT": 2.257,
-    "MN": 1.727,
-    "DHQ": 0.2,
-    "DLQ": 0.33,
-    "HWI": 8.743,
-    "LWI": 2.533,
-    "NAVD88": 7.483
-  },
-  "disclaimers": ""
+  ]
 }

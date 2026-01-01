@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-chatham-stage-harbor",
+  "id": "us/ma/chatham-stage-harbor",
   "name": "Chatham, Stage Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.6667,
   "longitude": -69.9667,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447505",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447505",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447505.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447505"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.694,
+    "HAT": 2.651,
+    "STND": 0,
+    "MHHW": 2.344,
+    "MHW": 2.232,
+    "DTL": 1.647,
+    "MTL": 1.63,
+    "MSL": 1.661,
+    "MLW": 1.028,
+    "MLLW": 0.949,
+    "GT": 1.396,
+    "MN": 1.203,
+    "DHQ": 0.113,
+    "DLQ": 0.08,
+    "HWI": 4.504,
+    "LWI": 10.25,
+    "NAVD88": 1.767
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.694,
-    "HAT": 2.651,
-    "STND": 0,
-    "MHHW": 2.344,
-    "MHW": 2.232,
-    "DTL": 1.647,
-    "MTL": 1.63,
-    "MSL": 1.661,
-    "MLW": 1.028,
-    "MLLW": 0.949,
-    "GT": 1.396,
-    "MN": 1.203,
-    "DHQ": 0.113,
-    "DLQ": 0.08,
-    "HWI": 4.504,
-    "LWI": 10.25,
-    "NAVD88": 1.767
-  },
-  "disclaimers": ""
+  ]
 }

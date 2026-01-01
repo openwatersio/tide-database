@@ -1,10 +1,9 @@
 {
-  "id": "us-or-netarts-netarts-bay",
+  "id": "us/or/netarts-netarts-bay",
   "name": "Netarts, Netarts Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.43,
   "longitude": -123.945,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9437262",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9437262",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9437262.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9437262"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-crescent-city",
+    "reference": "us/ca/crescent-city",
     "height": {
       "type": "ratio",
       "high": 0.98,

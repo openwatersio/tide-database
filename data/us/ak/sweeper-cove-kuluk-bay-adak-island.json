@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-sweeper-cove-kuluk-bay-adak-island",
+  "id": "us/ak/sweeper-cove-kuluk-bay-adak-island",
   "name": "Sweeper Cove, Kuluk Bay, Adak Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 51.86063888888889,
   "longitude": -176.6375833333333,
   "timezone": "America/Adak",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9461380",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461380",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9461380.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461380"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.298671,
+    "HAT": 2.611671,
+    "STND": 0,
+    "MHHW": 2.034,
+    "MHW": 1.958,
+    "DTL": 1.468,
+    "MTL": 1.516,
+    "MSL": 1.553,
+    "MLW": 1.075,
+    "MLLW": 0.903,
+    "GT": 1.131,
+    "MN": 0.883,
+    "DHQ": 0.076,
+    "DLQ": 0.172,
+    "NAVD88": 1.181
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 302.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.298671,
-    "HAT": 2.611671,
-    "STND": 0,
-    "MHHW": 2.034,
-    "MHW": 1.958,
-    "DTL": 1.468,
-    "MTL": 1.516,
-    "MSL": 1.553,
-    "MLW": 1.075,
-    "MLLW": 0.903,
-    "GT": 1.131,
-    "MN": 0.883,
-    "DHQ": 0.076,
-    "DLQ": 0.172,
-    "NAVD88": 1.181
-  },
-  "disclaimers": ""
+  ]
 }

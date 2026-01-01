@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-sievers-cove-goat-island",
+  "id": "us/tx/sievers-cove-goat-island",
   "name": "Sievers Cove, Goat Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.431100845336914,
   "longitude": -94.71040344238281,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8771165",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771165",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8771165.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771165"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.217999,
+    "HAT": 9.172,
+    "STND": 0,
+    "MHHW": 8.94,
+    "MHW": 8.917,
+    "DTL": 8.764,
+    "MTL": 8.763,
+    "MSL": 8.787,
+    "MLW": 8.609,
+    "MLLW": 8.587,
+    "GT": 0.353,
+    "MN": 0.308,
+    "DHQ": 0.023,
+    "DLQ": 0.022,
+    "NAVD88": 8.716
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.217999,
-    "HAT": 9.172,
-    "STND": 0,
-    "MHHW": 8.94,
-    "MHW": 8.917,
-    "DTL": 8.764,
-    "MTL": 8.763,
-    "MSL": 8.787,
-    "MLW": 8.609,
-    "MLLW": 8.587,
-    "GT": 0.353,
-    "MN": 0.308,
-    "DHQ": 0.023,
-    "DLQ": 0.022,
-    "NAVD88": 8.716
-  },
-  "disclaimers": ""
+  ]
 }

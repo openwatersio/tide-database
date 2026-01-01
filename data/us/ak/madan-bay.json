@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-madan-bay",
+  "id": "us/ak/madan-bay",
   "name": "Madan Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.3922,
   "longitude": -132.169,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451152",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451152",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451152.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451152"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.6487489,
+    "HAT": 5.0212507,
+    "STND": 0,
+    "MHHW": 3.757,
+    "MHW": 3.48,
+    "DTL": 1.283,
+    "MTL": 1.376,
+    "MSL": 1.372,
+    "MLW": -0.729,
+    "MLLW": -1.19,
+    "GT": 4.947,
+    "MN": 4.209,
+    "DHQ": 0.277,
+    "DLQ": 0.462,
+    "HWI": 9.61,
+    "LWI": 3.17
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.6487489,
-    "HAT": 5.0212507,
-    "STND": 0,
-    "MHHW": 3.757,
-    "MHW": 3.48,
-    "DTL": 1.283,
-    "MTL": 1.376,
-    "MSL": 1.372,
-    "MLW": -0.729,
-    "MLLW": -1.19,
-    "GT": 4.947,
-    "MN": 4.209,
-    "DHQ": 0.277,
-    "DLQ": 0.462,
-    "HWI": 9.61,
-    "LWI": 3.17
-  },
-  "disclaimers": ""
+  ]
 }

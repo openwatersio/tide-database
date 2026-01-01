@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-long-neck-point",
+  "id": "us/ct/long-neck-point",
   "name": "Long Neck Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.0383,
   "longitude": -73.48,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8468799",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8468799",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8468799.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8468799"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.28200006,
+    "HAT": 3.714,
+    "STND": 0,
+    "MHHW": 3.18,
+    "MHW": 3.072,
+    "DTL": 1.999,
+    "MTL": 1.981,
+    "MSL": 1.98,
+    "MLW": 0.889,
+    "MLLW": 0.818,
+    "GT": 2.362,
+    "MN": 2.184,
+    "DHQ": 0.107,
+    "DLQ": 0.071,
+    "HWI": 3.669,
+    "LWI": 10.148
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.28200006,
-    "HAT": 3.714,
-    "STND": 0,
-    "MHHW": 3.18,
-    "MHW": 3.072,
-    "DTL": 1.999,
-    "MTL": 1.981,
-    "MSL": 1.98,
-    "MLW": 0.889,
-    "MLLW": 0.818,
-    "GT": 2.362,
-    "MN": 2.184,
-    "DHQ": 0.107,
-    "DLQ": 0.071,
-    "HWI": 3.669,
-    "LWI": 10.148
-  },
-  "disclaimers": ""
+  ]
 }

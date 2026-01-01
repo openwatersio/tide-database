@@ -1,10 +1,9 @@
 {
-  "id": "us-de-reedy-point",
+  "id": "us/de/reedy-point",
   "name": "REEDY POINT",
-  "continent": "North America",
-  "country": "United States",
   "region": "DE",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.5583333,
   "longitude": -75.5719444,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8551910",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8551910",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8551910.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8551910"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.11399996,
+    "HAT": 2.492,
+    "STND": 0,
+    "MHHW": 2.191,
+    "MHW": 2.094,
+    "DTL": 1.301,
+    "MTL": 1.28,
+    "MSL": 1.301,
+    "MLW": 0.466,
+    "MLLW": 0.411,
+    "GT": 1.779,
+    "MN": 1.628,
+    "DHQ": 0.097,
+    "DLQ": 0.055,
+    "HWI": 3.73,
+    "LWI": 10.68,
+    "NAVD88": 1.316
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 239.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.11399996,
-    "HAT": 2.492,
-    "STND": 0,
-    "MHHW": 2.191,
-    "MHW": 2.094,
-    "DTL": 1.301,
-    "MTL": 1.28,
-    "MSL": 1.301,
-    "MLW": 0.466,
-    "MLLW": 0.411,
-    "GT": 1.779,
-    "MN": 1.628,
-    "DHQ": 0.097,
-    "DLQ": 0.055,
-    "HWI": 3.73,
-    "LWI": 10.68,
-    "NAVD88": 1.316
-  },
-  "disclaimers": ""
+  ]
 }

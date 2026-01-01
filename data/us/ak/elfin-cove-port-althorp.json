@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-elfin-cove-port-althorp",
+  "id": "us/ak/elfin-cove-port-althorp",
   "name": "Elfin Cove, Port Althorp",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.19472222222223,
   "longitude": -136.3469444444444,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452634",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452634",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452634.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452634"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.8310003,
+    "HAT": 7.188,
+    "STND": 0,
+    "MHHW": 6.209,
+    "MHW": 5.939,
+    "DTL": 4.532,
+    "MTL": 4.62,
+    "MSL": 4.602,
+    "MLW": 3.3,
+    "MLLW": 2.855,
+    "GT": 3.354,
+    "MN": 2.639,
+    "DHQ": 0.27,
+    "DLQ": 0.445,
+    "HWI": 9.59,
+    "LWI": 3.342
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 57.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.8310003,
-    "HAT": 7.188,
-    "STND": 0,
-    "MHHW": 6.209,
-    "MHW": 5.939,
-    "DTL": 4.532,
-    "MTL": 4.62,
-    "MSL": 4.602,
-    "MLW": 3.3,
-    "MLLW": 2.855,
-    "GT": 3.354,
-    "MN": 2.639,
-    "DHQ": 0.27,
-    "DLQ": 0.445,
-    "HWI": 9.59,
-    "LWI": 3.342
-  },
-  "disclaimers": ""
+  ]
 }

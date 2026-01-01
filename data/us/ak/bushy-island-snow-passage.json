@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-bushy-island-snow-passage",
+  "id": "us/ak/bushy-island-snow-passage",
   "name": "Bushy Island, Snow Passage",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.2767,
   "longitude": -132.985,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451074",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451074",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451074.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451074"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.955,
+    "HAT": 4.016,
+    "STND": 0,
+    "MHHW": 2.877,
+    "MHW": 2.613,
+    "DTL": 0.631,
+    "MTL": 0.721,
+    "MSL": 0.69,
+    "MLW": -1.17,
+    "MLLW": -1.615,
+    "GT": 4.493,
+    "MN": 3.783,
+    "DHQ": 0.265,
+    "DLQ": 0.445,
+    "HWI": 9.459,
+    "LWI": 3.105
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.955,
-    "HAT": 4.016,
-    "STND": 0,
-    "MHHW": 2.877,
-    "MHW": 2.613,
-    "DTL": 0.631,
-    "MTL": 0.721,
-    "MSL": 0.69,
-    "MLW": -1.17,
-    "MLLW": -1.615,
-    "GT": 4.493,
-    "MN": 3.783,
-    "DHQ": 0.265,
-    "DLQ": 0.445,
-    "HWI": 9.459,
-    "LWI": 3.105
-  },
-  "disclaimers": ""
+  ]
 }

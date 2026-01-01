@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-johnson-keys-north-end",
+  "id": "us/fl/johnson-keys-north-end",
   "name": "Johnson Keys, north end",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.7667,
   "longitude": -81.3233,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724172",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724172",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724172.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724172"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 1.31,

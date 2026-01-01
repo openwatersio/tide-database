@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-bristol-highlands",
+  "id": "us/ri/bristol-highlands",
   "name": "Bristol Highlands",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.69670104980469,
   "longitude": -71.29329681396484,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8452154",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8452154",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8452154.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8452154"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.305,
+    "HAT": 3.4239998,
+    "STND": 0,
+    "MHHW": 3.021,
+    "MHW": 2.948,
+    "DTL": 2.331,
+    "MTL": 2.32,
+    "MSL": 2.274,
+    "MLW": 1.691,
+    "MLLW": 1.64,
+    "GT": 1.381,
+    "MN": 1.259,
+    "DHQ": 0.072,
+    "DLQ": 0.051,
+    "HWI": 0.45,
+    "LWI": 5.85,
+    "NAVD88": 2.356
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 202.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.305,
-    "HAT": 3.4239998,
-    "STND": 0,
-    "MHHW": 3.021,
-    "MHW": 2.948,
-    "DTL": 2.331,
-    "MTL": 2.32,
-    "MSL": 2.274,
-    "MLW": 1.691,
-    "MLLW": 1.64,
-    "GT": 1.381,
-    "MN": 1.259,
-    "DHQ": 0.072,
-    "DLQ": 0.051,
-    "HWI": 0.45,
-    "LWI": 5.85,
-    "NAVD88": 2.356
-  },
-  "disclaimers": ""
+  ]
 }

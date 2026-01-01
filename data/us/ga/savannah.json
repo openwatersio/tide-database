@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-savannah",
+  "id": "us/ga/savannah",
   "name": "SAVANNAH",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.0817,
   "longitude": -81.0917,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8670681",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8670681",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8670681.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8670681"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ga-fort-pulaski-savannah-river-entrance",
+    "reference": "us/ga/fort-pulaski-savannah-river-entrance",
     "height": {
       "type": "ratio",
       "high": 1.14,

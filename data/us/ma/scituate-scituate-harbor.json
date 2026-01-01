@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-scituate-scituate-harbor",
+  "id": "us/ma/scituate-scituate-harbor",
   "name": "Scituate, Scituate Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.2017,
   "longitude": -70.7267,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8445138",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8445138",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8445138.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8445138"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.319,
+    "HAT": 4.472,
+    "STND": 0,
+    "MHHW": 3.873,
+    "MHW": 3.737,
+    "DTL": 2.388,
+    "MTL": 2.374,
+    "MSL": 2.394,
+    "MLW": 1.011,
+    "MLLW": 0.903,
+    "GT": 2.969,
+    "MN": 2.726,
+    "DHQ": 0.136,
+    "DLQ": 0.108,
+    "HWI": 3.775,
+    "LWI": 9.922
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.319,
-    "HAT": 4.472,
-    "STND": 0,
-    "MHHW": 3.873,
-    "MHW": 3.737,
-    "DTL": 2.388,
-    "MTL": 2.374,
-    "MSL": 2.394,
-    "MLW": 1.011,
-    "MLLW": 0.903,
-    "GT": 2.969,
-    "MN": 2.726,
-    "DHQ": 0.136,
-    "DLQ": 0.108,
-    "HWI": 3.775,
-    "LWI": 9.922
-  },
-  "disclaimers": ""
+  ]
 }

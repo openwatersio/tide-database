@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-martha-s-vineyard-gps-buoy",
+  "id": "us/ma/martha-s-vineyard-gps-buoy",
   "name": "Martha's Vineyard GPS Buoy",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.32622222222222,
   "longitude": -70.59033333333333,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8448875",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448875",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8448875.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448875"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -29.802837,
+    "HAT": -28.329838,
+    "STND": 0,
+    "MHHW": -28.614,
+    "MHW": -28.682,
+    "DTL": -29.09,
+    "MTL": -29.106,
+    "MSL": -29.126,
+    "MLW": -29.529,
+    "MLLW": -29.565,
+    "GT": 0.951,
+    "MN": 0.847,
+    "DHQ": 0.069,
+    "DLQ": 0.036,
+    "HWI": 12.21,
+    "LWI": 5.96
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -29.802837,
-    "HAT": -28.329838,
-    "STND": 0,
-    "MHHW": -28.614,
-    "MHW": -28.682,
-    "DTL": -29.09,
-    "MTL": -29.106,
-    "MSL": -29.126,
-    "MLW": -29.529,
-    "MLLW": -29.565,
-    "GT": 0.951,
-    "MN": 0.847,
-    "DHQ": 0.069,
-    "DLQ": 0.036,
-    "HWI": 12.21,
-    "LWI": 5.96
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-new-brunswick",
+  "id": "us/nj/new-brunswick",
   "name": "New Brunswick",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.48830032348633,
   "longitude": -74.43499755859375,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8531463",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531463",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8531463.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531463"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.31000006,
+    "HAT": 2.5879998,
+    "STND": 0,
+    "MHHW": 2.107,
+    "MHW": 2.007,
+    "DTL": 1.153,
+    "MTL": 1.137,
+    "MSL": 1.17,
+    "MLW": 0.267,
+    "MLLW": 0.199,
+    "GT": 1.909,
+    "MN": 1.74,
+    "DHQ": 0.101,
+    "DLQ": 0.068,
+    "HWI": 0.807,
+    "LWI": 7.429
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 354.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.31000006,
-    "HAT": 2.5879998,
-    "STND": 0,
-    "MHHW": 2.107,
-    "MHW": 2.007,
-    "DTL": 1.153,
-    "MTL": 1.137,
-    "MSL": 1.17,
-    "MLW": 0.267,
-    "MLLW": 0.199,
-    "GT": 1.909,
-    "MN": 1.74,
-    "DHQ": 0.101,
-    "DLQ": 0.068,
-    "HWI": 0.807,
-    "LWI": 7.429
-  },
-  "disclaimers": ""
+  ]
 }

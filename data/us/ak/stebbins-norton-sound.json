@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-stebbins-norton-sound",
+  "id": "us/ak/stebbins-norton-sound",
   "name": "Stebbins, Norton Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 63.525001525878906,
   "longitude": -162.29299926757812,
   "timezone": "America/Nome",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9468151",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468151",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9468151.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468151"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.464,
+    "HAT": 7.6740003,
+    "STND": 0,
+    "MHHW": 6.89,
+    "MHW": 6.815,
+    "DTL": 6.485,
+    "MTL": 6.484,
+    "MSL": 6.451,
+    "MLW": 6.152,
+    "MLLW": 6.08,
+    "GT": 0.81,
+    "MN": 0.663,
+    "DHQ": 0.075,
+    "DLQ": 0.072,
+    "NAVD88": 5.437
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.464,
-    "HAT": 7.6740003,
-    "STND": 0,
-    "MHHW": 6.89,
-    "MHW": 6.815,
-    "DTL": 6.485,
-    "MTL": 6.484,
-    "MSL": 6.451,
-    "MLW": 6.152,
-    "MLLW": 6.08,
-    "GT": 0.81,
-    "MN": 0.663,
-    "DHQ": 0.075,
-    "DLQ": 0.072,
-    "NAVD88": 5.437
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-hunters-point",
+  "id": "us/ca/hunters-point",
   "name": "Hunters Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.73,
   "longitude": -122.357,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414358",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414358",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414358.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414358"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.100000024,
+    "HAT": 3.276,
+    "STND": 0,
+    "MHHW": 2.85,
+    "MHW": 2.661,
+    "DTL": 1.814,
+    "MTL": 1.894,
+    "MSL": 1.863,
+    "MLW": 1.126,
+    "MLLW": 0.778,
+    "GT": 2.072,
+    "MN": 1.534,
+    "DHQ": 0.189,
+    "DLQ": 0.348,
+    "HWI": 8,
+    "LWI": 1.57
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 61.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.100000024,
-    "HAT": 3.276,
-    "STND": 0,
-    "MHHW": 2.85,
-    "MHW": 2.661,
-    "DTL": 1.814,
-    "MTL": 1.894,
-    "MSL": 1.863,
-    "MLW": 1.126,
-    "MLLW": 0.778,
-    "GT": 2.072,
-    "MN": 1.534,
-    "DHQ": 0.189,
-    "DLQ": 0.348,
-    "HWI": 8,
-    "LWI": 1.57
-  },
-  "disclaimers": ""
+  ]
 }

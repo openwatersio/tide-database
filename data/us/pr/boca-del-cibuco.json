@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-boca-del-cibuco",
+  "id": "us/pr/boca-del-cibuco",
   "name": "Boca del Cibuco",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.485200881958008,
   "longitude": -66.3843994140625,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9756567",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9756567",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9756567.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9756567"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.399,
+    "HAT": 5.341,
+    "STND": 0,
+    "MHHW": 5.12,
+    "MHW": 5.013,
+    "DTL": 4.843,
+    "MTL": 4.822,
+    "MSL": 4.822,
+    "MLW": 4.631,
+    "MLLW": 4.565,
+    "GT": 0.555,
+    "MN": 0.383,
+    "DHQ": 0.107,
+    "DLQ": 0.065,
+    "HWI": 0.56,
+    "LWI": 6.895,
+    "PRVD02": 4.817
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.399,
-    "HAT": 5.341,
-    "STND": 0,
-    "MHHW": 5.12,
-    "MHW": 5.013,
-    "DTL": 4.843,
-    "MTL": 4.822,
-    "MSL": 4.822,
-    "MLW": 4.631,
-    "MLLW": 4.565,
-    "GT": 0.555,
-    "MN": 0.383,
-    "DHQ": 0.107,
-    "DLQ": 0.065,
-    "HWI": 0.56,
-    "LWI": 6.895,
-    "PRVD02": 4.817
-  },
-  "disclaimers": ""
+  ]
 }

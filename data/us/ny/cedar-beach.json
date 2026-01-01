@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-cedar-beach",
+  "id": "us/ny/cedar-beach",
   "name": "Cedar Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.965,
   "longitude": -73.0433,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8514422",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514422",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8514422.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514422"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.48000002,
+    "HAT": 3.394,
+    "STND": 0,
+    "MHHW": 2.99,
+    "MHW": 2.892,
+    "DTL": 1.925,
+    "MTL": 1.91,
+    "MSL": 1.904,
+    "MLW": 0.928,
+    "MLLW": 0.859,
+    "GT": 2.132,
+    "MN": 1.964,
+    "DHQ": 0.099,
+    "DLQ": 0.07,
+    "HWI": 3.903,
+    "LWI": 10.233
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 307.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.48000002,
-    "HAT": 3.394,
-    "STND": 0,
-    "MHHW": 2.99,
-    "MHW": 2.892,
-    "DTL": 1.925,
-    "MTL": 1.91,
-    "MSL": 1.904,
-    "MLW": 0.928,
-    "MLLW": 0.859,
-    "GT": 2.132,
-    "MN": 1.964,
-    "DHQ": 0.099,
-    "DLQ": 0.07,
-    "HWI": 3.903,
-    "LWI": 10.233
-  },
-  "disclaimers": ""
+  ]
 }

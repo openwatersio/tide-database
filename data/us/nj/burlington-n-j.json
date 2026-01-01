@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-burlington-n-j",
+  "id": "us/nj/burlington-n-j",
   "name": "Burlington, N.J.",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.08169937133789,
   "longitude": -74.86969757080078,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8539094",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8539094",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8539094.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8539094"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.9449997,
+    "HAT": 7.887,
+    "STND": 0,
+    "MHHW": 7.526,
+    "MHW": 7.417,
+    "DTL": 6.33,
+    "MTL": 6.305,
+    "MSL": 6.35,
+    "MLW": 5.192,
+    "MLLW": 5.133,
+    "GT": 2.393,
+    "MN": 2.225,
+    "DHQ": 0.109,
+    "DLQ": 0.059,
+    "HWI": 7.162,
+    "LWI": 2.036
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 92.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.9449997,
-    "HAT": 7.887,
-    "STND": 0,
-    "MHHW": 7.526,
-    "MHW": 7.417,
-    "DTL": 6.33,
-    "MTL": 6.305,
-    "MSL": 6.35,
-    "MLW": 5.192,
-    "MLLW": 5.133,
-    "GT": 2.393,
-    "MN": 2.225,
-    "DHQ": 0.109,
-    "DLQ": 0.059,
-    "HWI": 7.162,
-    "LWI": 2.036
-  },
-  "disclaimers": ""
+  ]
 }

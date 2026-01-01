@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-goose-creek-entrance",
+  "id": "us/nj/goose-creek-entrance",
   "name": "Goose Creek entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.9633,
   "longitude": -74.115,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8533005",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533005",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8533005.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533005"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nj-sandy-hook-fort-hancock",
+    "reference": "us/nj/sandy-hook-fort-hancock",
     "height": {
       "type": "ratio",
       "high": 0.08,

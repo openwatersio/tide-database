@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-bristol-ferry",
+  "id": "us/ri/bristol-ferry",
   "name": "Bristol Ferry",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.6367,
   "longitude": -71.255,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8451552",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8451552",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8451552.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8451552"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.934,
+    "HAT": 3.019,
+    "STND": 0,
+    "MHHW": 2.656,
+    "MHW": 2.58,
+    "DTL": 1.972,
+    "MTL": 1.959,
+    "MSL": 1.904,
+    "MLW": 1.338,
+    "MLLW": 1.288,
+    "GT": 1.368,
+    "MN": 1.242,
+    "DHQ": 0.076,
+    "DLQ": 0.05,
+    "HWI": 0.517,
+    "LWI": 5.921
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.934,
-    "HAT": 3.019,
-    "STND": 0,
-    "MHHW": 2.656,
-    "MHW": 2.58,
-    "DTL": 1.972,
-    "MTL": 1.959,
-    "MSL": 1.904,
-    "MLW": 1.338,
-    "MLLW": 1.288,
-    "GT": 1.368,
-    "MN": 1.242,
-    "DHQ": 0.076,
-    "DLQ": 0.05,
-    "HWI": 0.517,
-    "LWI": 5.921
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-vaca-key-uscg-station-florida-bay",
+  "id": "us/fl/vaca-key-uscg-station-florida-bay",
   "name": "VACA KEY, USCG STATION, FLORIDA BAY",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.711,
   "longitude": -81.1065,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723970",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723970",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723970.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723970"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.592,
+    "HAT": 1.267,
+    "STND": 0,
+    "MHHW": 1.072,
+    "MHW": 1.04,
+    "DTL": 0.924,
+    "MTL": 0.931,
+    "MSL": 0.931,
+    "MLW": 0.822,
+    "MLLW": 0.775,
+    "GT": 0.297,
+    "MN": 0.218,
+    "DHQ": 0.032,
+    "DLQ": 0.047,
+    "NAVD88": 1.182
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 176.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.592,
-    "HAT": 1.267,
-    "STND": 0,
-    "MHHW": 1.072,
-    "MHW": 1.04,
-    "DTL": 0.924,
-    "MTL": 0.931,
-    "MSL": 0.931,
-    "MLW": 0.822,
-    "MLLW": 0.775,
-    "GT": 0.297,
-    "MN": 0.218,
-    "DHQ": 0.032,
-    "DLQ": 0.047,
-    "NAVD88": 1.182
-  },
-  "disclaimers": ""
+  ]
 }

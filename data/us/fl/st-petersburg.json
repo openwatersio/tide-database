@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-st-petersburg",
+  "id": "us/fl/st-petersburg",
   "name": "St. Petersburg",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.76059913635254,
   "longitude": -82.62689971923828,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726520",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726520",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726520.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726520"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.67200005,
+    "HAT": 1.978,
+    "STND": 0,
+    "MHHW": 1.716,
+    "MHW": 1.63,
+    "DTL": 1.372,
+    "MTL": 1.388,
+    "MSL": 1.394,
+    "MLW": 1.145,
+    "MLLW": 1.028,
+    "GT": 0.688,
+    "MN": 0.485,
+    "DHQ": 0.086,
+    "DLQ": 0.117,
+    "HWI": 7.01,
+    "LWI": 0.6,
+    "NAVD88": 1.478
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 322.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.67200005,
-    "HAT": 1.978,
-    "STND": 0,
-    "MHHW": 1.716,
-    "MHW": 1.63,
-    "DTL": 1.372,
-    "MTL": 1.388,
-    "MSL": 1.394,
-    "MLW": 1.145,
-    "MLLW": 1.028,
-    "GT": 0.688,
-    "MN": 0.485,
-    "DHQ": 0.086,
-    "DLQ": 0.117,
-    "HWI": 7.01,
-    "LWI": 0.6,
-    "NAVD88": 1.478
-  },
-  "disclaimers": ""
+  ]
 }

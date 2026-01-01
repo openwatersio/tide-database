@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-snug-harbor-chisik-island",
+  "id": "us/ak/snug-harbor-chisik-island",
   "name": "Snug Harbor, Chisik Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.10749816894531,
   "longitude": -152.58169555664062,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9456173",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456173",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9456173.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456173"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.0030003,
+    "HAT": 14.176001,
+    "STND": 0,
+    "MHHW": 12.583,
+    "MHW": 12.355,
+    "DTL": 10.161,
+    "MTL": 10.321,
+    "MSL": 10.338,
+    "MLW": 8.287,
+    "MLLW": 7.738,
+    "GT": 4.845,
+    "MN": 4.067,
+    "DHQ": 0.228,
+    "DLQ": 0.549,
+    "HWI": 12.24,
+    "LWI": 6.045,
+    "NAVD88": 8.869
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.0030003,
-    "HAT": 14.176001,
-    "STND": 0,
-    "MHHW": 12.583,
-    "MHW": 12.355,
-    "DTL": 10.161,
-    "MTL": 10.321,
-    "MSL": 10.338,
-    "MLW": 8.287,
-    "MLLW": 7.738,
-    "GT": 4.845,
-    "MN": 4.067,
-    "DHQ": 0.228,
-    "DLQ": 0.549,
-    "HWI": 12.24,
-    "LWI": 6.045,
-    "NAVD88": 8.869
-  },
-  "disclaimers": ""
+  ]
 }

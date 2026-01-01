@@ -1,10 +1,9 @@
 {
-  "id": "us-diego-garcia",
+  "id": "us/diego-garcia",
   "name": "Diego Garcia",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -7.29,
   "longitude": 72.3933,
   "timezone": "Indian/Chagos",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "2431000",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=2431000",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/2431000.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=2431000"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 9.666,
+    "HAT": 11.706,
+    "STND": 0,
+    "MHHW": 11.249,
+    "MHW": 11.22,
+    "DTL": 10.656,
+    "MTL": 10.665,
+    "MSL": 10.665,
+    "MLW": 10.11,
+    "MLLW": 10.063,
+    "GT": 1.186,
+    "MN": 1.11,
+    "DHQ": 0.03,
+    "DLQ": 0.047,
+    "HWI": 9.07,
+    "LWI": 2.86
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 345.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.666,
-    "HAT": 11.706,
-    "STND": 0,
-    "MHHW": 11.249,
-    "MHW": 11.22,
-    "DTL": 10.656,
-    "MTL": 10.665,
-    "MSL": 10.665,
-    "MLW": 10.11,
-    "MLLW": 10.063,
-    "GT": 1.186,
-    "MN": 1.11,
-    "DHQ": 0.03,
-    "DLQ": 0.047,
-    "HWI": 9.07,
-    "LWI": 2.86
-  },
-  "disclaimers": ""
+  ]
 }

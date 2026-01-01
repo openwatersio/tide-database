@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-pensacola-beach-pier",
+  "id": "us/fl/pensacola-beach-pier",
   "name": "Pensacola Beach Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.3275,
   "longitude": -87.141944,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729807",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729807",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729807.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729807"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.406,
+    "HAT": 2.403,
+    "STND": 0,
+    "MHHW": 2.148,
+    "MHW": 2.125,
+    "DTL": 1.936,
+    "MTL": 1.934,
+    "MSL": 1.927,
+    "MLW": 1.743,
+    "MLLW": 1.724,
+    "GT": 0.424,
+    "MN": 0.381,
+    "DHQ": 0.023,
+    "DLQ": 0.019,
+    "NAVD88": 1.886
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.406,
-    "HAT": 2.403,
-    "STND": 0,
-    "MHHW": 2.148,
-    "MHW": 2.125,
-    "DTL": 1.936,
-    "MTL": 1.934,
-    "MSL": 1.927,
-    "MLW": 1.743,
-    "MLLW": 1.724,
-    "GT": 0.424,
-    "MN": 0.381,
-    "DHQ": 0.023,
-    "DLQ": 0.019,
-    "NAVD88": 1.886
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-nukshak-island-shelikof-strait",
+  "id": "us/ak/nukshak-island-shelikof-strait",
   "name": "Nukshak Island, Shelikof Strait",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.3917,
   "longitude": -153.958,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9456717",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456717",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9456717.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456717"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.302,
+    "HAT": 4.377,
+    "STND": 0,
+    "MHHW": 3.205,
+    "MHW": 2.965,
+    "DTL": 1.1,
+    "MTL": 1.225,
+    "MSL": 1.211,
+    "MLW": -0.514,
+    "MLLW": -1.005,
+    "GT": 4.211,
+    "MN": 3.48,
+    "DHQ": 0.24,
+    "DLQ": 0.49,
+    "HWI": 11.214,
+    "LWI": 5.029
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.302,
-    "HAT": 4.377,
-    "STND": 0,
-    "MHHW": 3.205,
-    "MHW": 2.965,
-    "DTL": 1.1,
-    "MTL": 1.225,
-    "MSL": 1.211,
-    "MLW": -0.514,
-    "MLLW": -1.005,
-    "GT": 4.211,
-    "MN": 3.48,
-    "DHQ": 0.24,
-    "DLQ": 0.49,
-    "HWI": 11.214,
-    "LWI": 5.029
-  },
-  "disclaimers": ""
+  ]
 }

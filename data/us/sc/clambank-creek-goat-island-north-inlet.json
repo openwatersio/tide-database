@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-clambank-creek-goat-island-north-inlet",
+  "id": "us/sc/clambank-creek-goat-island-north-inlet",
   "name": "Clambank Creek, Goat Island, North Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.3333,
   "longitude": -79.1933,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8662299",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662299",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8662299.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662299"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.549,
+    "HAT": 2.911,
+    "STND": 0,
+    "MHHW": 2.567,
+    "MHW": 2.46,
+    "DTL": 1.769,
+    "MTL": 1.745,
+    "MSL": 1.799,
+    "MLW": 1.03,
+    "MLLW": 0.971,
+    "GT": 1.596,
+    "MN": 1.429,
+    "DHQ": 0.108,
+    "DLQ": 0.059,
+    "HWI": 0.907,
+    "LWI": 6.763,
+    "NAVD88": 1.908
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 315.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.549,
-    "HAT": 2.911,
-    "STND": 0,
-    "MHHW": 2.567,
-    "MHW": 2.46,
-    "DTL": 1.769,
-    "MTL": 1.745,
-    "MSL": 1.799,
-    "MLW": 1.03,
-    "MLLW": 0.971,
-    "GT": 1.596,
-    "MN": 1.429,
-    "DHQ": 0.108,
-    "DLQ": 0.059,
-    "HWI": 0.907,
-    "LWI": 6.763,
-    "NAVD88": 1.908
-  },
-  "disclaimers": ""
+  ]
 }

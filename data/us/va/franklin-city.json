@@ -1,10 +1,9 @@
 {
-  "id": "us-va-franklin-city",
+  "id": "us/va/franklin-city",
   "name": "Franklin City",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.0067,
   "longitude": -75.3817,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8630055",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630055",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8630055.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630055"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-ocean-city-fishing-pier",
+    "reference": "us/md/ocean-city-fishing-pier",
     "height": {
       "type": "ratio",
       "high": 0.22,

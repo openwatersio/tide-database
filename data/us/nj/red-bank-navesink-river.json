@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-red-bank-navesink-river",
+  "id": "us/nj/red-bank-navesink-river",
   "name": "Red Bank, Navesink River",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.355,
   "longitude": -74.065,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8531833",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531833",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8531833.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531833"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 2.09,
+    "MHW": 2,
+    "DTL": 1.493,
+    "MTL": 1.465,
+    "MSL": 1.453,
+    "MLW": 0.93,
+    "MLLW": 0.895,
+    "GT": 1.196,
+    "MN": 1.07,
+    "DHQ": 0.091,
+    "DLQ": 0.035,
+    "HWI": 1.568,
+    "LWI": 8.576
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 2.09,
-    "MHW": 2,
-    "DTL": 1.493,
-    "MTL": 1.465,
-    "MSL": 1.453,
-    "MLW": 0.93,
-    "MLLW": 0.895,
-    "GT": 1.196,
-    "MN": 1.07,
-    "DHQ": 0.091,
-    "DLQ": 0.035,
-    "HWI": 1.568,
-    "LWI": 8.576
-  },
-  "disclaimers": ""
+  ]
 }

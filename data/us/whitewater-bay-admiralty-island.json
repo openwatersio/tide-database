@@ -1,10 +1,9 @@
 {
-  "id": "us-whitewater-bay-admiralty-island",
+  "id": "us/whitewater-bay-admiralty-island",
   "name": "Whitewater Bay, Admiralty Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.23333333333299,
   "longitude": -134.6,
   "timezone": "America/Juneau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC1731",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC1731",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC1731.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC1731"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-juneau",
+    "reference": "us/ak/juneau",
     "height": {
       "type": "fixed",
       "high": -0.61,

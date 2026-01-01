@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-ballast-point",
+  "id": "us/fl/ballast-point",
   "name": "Ballast Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.89,
   "longitude": -82.48,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726639",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726639",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726639.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726639"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.047999978,
+    "HAT": 1.4200001,
+    "STND": 0,
+    "MHHW": 1.142,
+    "MHW": 1.049,
+    "DTL": 0.727,
+    "MTL": 0.747,
+    "MSL": 0.758,
+    "MLW": 0.445,
+    "MLLW": 0.312,
+    "GT": 0.831,
+    "MN": 0.604,
+    "DHQ": 0.093,
+    "DLQ": 0.133,
+    "HWI": 7.35,
+    "LWI": 0.964,
+    "NAVD88": 0.85
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.047999978,
-    "HAT": 1.4200001,
-    "STND": 0,
-    "MHHW": 1.142,
-    "MHW": 1.049,
-    "DTL": 0.727,
-    "MTL": 0.747,
-    "MSL": 0.758,
-    "MLW": 0.445,
-    "MLLW": 0.312,
-    "GT": 0.831,
-    "MN": 0.604,
-    "DHQ": 0.093,
-    "DLQ": 0.133,
-    "HWI": 7.35,
-    "LWI": 0.964,
-    "NAVD88": 0.85
-  },
-  "disclaimers": ""
+  ]
 }

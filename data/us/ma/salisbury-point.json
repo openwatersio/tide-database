@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-salisbury-point",
+  "id": "us/ma/salisbury-point",
   "name": "Salisbury Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.8383,
   "longitude": -70.9083,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8440273",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440273",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8440273.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440273"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.673,
+    "HAT": 4.04,
+    "STND": 0,
+    "MHHW": 3.624,
+    "MHW": 3.486,
+    "DTL": 2.362,
+    "MTL": 2.322,
+    "MSL": 2.326,
+    "MLW": 1.157,
+    "MLLW": 1.099,
+    "GT": 2.525,
+    "MN": 2.329,
+    "DHQ": 0.138,
+    "DLQ": 0.058,
+    "HWI": 4.503,
+    "LWI": 11.056
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 282.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.673,
-    "HAT": 4.04,
-    "STND": 0,
-    "MHHW": 3.624,
-    "MHW": 3.486,
-    "DTL": 2.362,
-    "MTL": 2.322,
-    "MSL": 2.326,
-    "MLW": 1.157,
-    "MLLW": 1.099,
-    "GT": 2.525,
-    "MN": 2.329,
-    "DHQ": 0.138,
-    "DLQ": 0.058,
-    "HWI": 4.503,
-    "LWI": 11.056
-  },
-  "disclaimers": ""
+  ]
 }

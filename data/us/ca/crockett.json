@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-crockett",
+  "id": "us/ca/crockett",
   "name": "Crockett",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.0583,
   "longitude": -122.223,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415143",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415143",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415143.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415143"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.749,
+    "HAT": 4.366,
+    "STND": 0,
+    "MHHW": 4.024,
+    "MHW": 3.855,
+    "DTL": 3.118,
+    "MTL": 3.185,
+    "MSL": 3.192,
+    "MLW": 2.515,
+    "MLLW": 2.212,
+    "GT": 1.812,
+    "MN": 1.34,
+    "DHQ": 0.17,
+    "DLQ": 0.303,
+    "HWI": 9.053,
+    "LWI": 2.803,
+    "NAVD88": 2.094
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 275.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.749,
-    "HAT": 4.366,
-    "STND": 0,
-    "MHHW": 4.024,
-    "MHW": 3.855,
-    "DTL": 3.118,
-    "MTL": 3.185,
-    "MSL": 3.192,
-    "MLW": 2.515,
-    "MLLW": 2.212,
-    "GT": 1.812,
-    "MN": 1.34,
-    "DHQ": 0.17,
-    "DLQ": 0.303,
-    "HWI": 9.053,
-    "LWI": 2.803,
-    "NAVD88": 2.094
-  },
-  "disclaimers": ""
+  ]
 }

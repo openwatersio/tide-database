@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-mansfield-cone",
+  "id": "us/ca/mansfield-cone",
   "name": "Mansfield Cone",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.94952777777777,
   "longitude": -121.4819444444445,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9412802",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9412802",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9412802.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9412802"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.133,
+    "HAT": 9.823,
+    "STND": 0,
+    "MHHW": 9.323,
+    "MHW": 9.107,
+    "DTL": 8.525,
+    "MTL": 8.573,
+    "MSL": 8.561,
+    "MLW": 8.04,
+    "MLLW": 7.726,
+    "GT": 1.597,
+    "MN": 1.067,
+    "DHQ": 0.216,
+    "DLQ": 0.314,
+    "HWI": 6.19,
+    "LWI": 12.26,
+    "NAVD88": 7.726
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.133,
-    "HAT": 9.823,
-    "STND": 0,
-    "MHHW": 9.323,
-    "MHW": 9.107,
-    "DTL": 8.525,
-    "MTL": 8.573,
-    "MSL": 8.561,
-    "MLW": 8.04,
-    "MLLW": 7.726,
-    "GT": 1.597,
-    "MN": 1.067,
-    "DHQ": 0.216,
-    "DLQ": 0.314,
-    "HWI": 6.19,
-    "LWI": 12.26,
-    "NAVD88": 7.726
-  },
-  "disclaimers": ""
+  ]
 }

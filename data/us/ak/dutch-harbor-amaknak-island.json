@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-dutch-harbor-amaknak-island",
+  "id": "us/ak/dutch-harbor-amaknak-island",
   "name": "Dutch Harbor, Amaknak Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 53.8917,
   "longitude": -166.537,
   "timezone": "America/Nome",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462611",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462611",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462611.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462611"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-unalaska",
+    "reference": "us/ak/unalaska",
     "height": {
       "type": "ratio",
       "high": 1,

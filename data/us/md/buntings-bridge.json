@@ -1,10 +1,9 @@
 {
-  "id": "us-md-buntings-bridge",
+  "id": "us/md/buntings-bridge",
   "name": "Buntings Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.13894444444445,
   "longitude": -75.18352777777778,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8570691",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570691",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8570691.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570691"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.839,
+    "HAT": 9.131,
+    "STND": 0,
+    "MHHW": 9.103,
+    "MHW": 9.071,
+    "DTL": 8.977,
+    "MTL": 8.978,
+    "MSL": 8.978,
+    "MLW": 8.885,
+    "MLLW": 8.852,
+    "GT": 0.25,
+    "MN": 0.186,
+    "DHQ": 0.032,
+    "DLQ": 0.033,
+    "HWI": 4.31,
+    "LWI": 11.12,
+    "NAVD88": 9.1
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 290.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.839,
-    "HAT": 9.131,
-    "STND": 0,
-    "MHHW": 9.103,
-    "MHW": 9.071,
-    "DTL": 8.977,
-    "MTL": 8.978,
-    "MSL": 8.978,
-    "MLW": 8.885,
-    "MLLW": 8.852,
-    "GT": 0.25,
-    "MN": 0.186,
-    "DHQ": 0.032,
-    "DLQ": 0.033,
-    "HWI": 4.31,
-    "LWI": 11.12,
-    "NAVD88": 9.1
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-vieux-fort-bay-st-lucia",
+  "id": "us/vieux-fort-bay-st-lucia",
   "name": "Vieux Fort Bay, St. Lucia",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 13.733333333333007,
   "longitude": -60.96666666666701,
   "timezone": "America/St_Lucia",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4777",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4777",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4777.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4777"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 0.69,

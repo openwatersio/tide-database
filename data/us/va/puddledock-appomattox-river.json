@@ -1,10 +1,9 @@
 {
-  "id": "us-va-puddledock-appomattox-river",
+  "id": "us/va/puddledock-appomattox-river",
   "name": "Puddledock, Appomattox River",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.2667,
   "longitude": -77.3717,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638489",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638489",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638489.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638489"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.0940001,
+    "HAT": 2.576,
+    "STND": 0,
+    "MHHW": 2.265,
+    "MHW": 2.198,
+    "DTL": 1.782,
+    "MTL": 1.772,
+    "MSL": 1.822,
+    "MLW": 1.346,
+    "MLLW": 1.299,
+    "GT": 0.966,
+    "MN": 0.852,
+    "DHQ": 0.067,
+    "DLQ": 0.047,
+    "HWI": 8.84,
+    "LWI": 3.08,
+    "NAVD88": 1.859
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.0940001,
-    "HAT": 2.576,
-    "STND": 0,
-    "MHHW": 2.265,
-    "MHW": 2.198,
-    "DTL": 1.782,
-    "MTL": 1.772,
-    "MSL": 1.822,
-    "MLW": 1.346,
-    "MLLW": 1.299,
-    "GT": 0.966,
-    "MN": 0.852,
-    "DHQ": 0.067,
-    "DLQ": 0.047,
-    "HWI": 8.84,
-    "LWI": 3.08,
-    "NAVD88": 1.859
-  },
-  "disclaimers": ""
+  ]
 }

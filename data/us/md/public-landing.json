@@ -1,10 +1,9 @@
 {
-  "id": "us-md-public-landing",
+  "id": "us/md/public-landing",
   "name": "Public Landing",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.1483,
   "longitude": -75.285,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8570649",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570649",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8570649.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570649"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.45,
+    "HAT": 0.879,
+    "STND": 0,
+    "MHHW": 0.767,
+    "MHW": 0.743,
+    "DTL": 0.659,
+    "MTL": 0.662,
+    "MSL": 0.666,
+    "MLW": 0.582,
+    "MLLW": 0.551,
+    "GT": 0.216,
+    "MN": 0.162,
+    "DHQ": 0.024,
+    "DLQ": 0.031,
+    "HWI": 4.585,
+    "LWI": 11.526
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.45,
-    "HAT": 0.879,
-    "STND": 0,
-    "MHHW": 0.767,
-    "MHW": 0.743,
-    "DTL": 0.659,
-    "MTL": 0.662,
-    "MSL": 0.666,
-    "MLW": 0.582,
-    "MLLW": 0.551,
-    "GT": 0.216,
-    "MN": 0.162,
-    "DHQ": 0.024,
-    "DLQ": 0.031,
-    "HWI": 4.585,
-    "LWI": 11.526
-  },
-  "disclaimers": ""
+  ]
 }

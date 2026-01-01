@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-nas-whidbey-island",
+  "id": "us/wa/nas-whidbey-island",
   "name": "NAS Whidbey Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.34280014038086,
   "longitude": -122.68579864501953,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9447973",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447973",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9447973.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447973"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 9.377,
+    "HAT": 13.186999,
+    "STND": 0,
+    "MHHW": 12.715,
+    "MHW": 12.525,
+    "DTL": 11.581,
+    "MTL": 11.82,
+    "MSL": 11.801,
+    "MLW": 11.115,
+    "MLLW": 10.448,
+    "GT": 2.267,
+    "MN": 1.411,
+    "DHQ": 0.189,
+    "DLQ": 0.667,
+    "HWI": 11.967,
+    "LWI": 5.575,
+    "NAVD88": 10.548
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.377,
-    "HAT": 13.186999,
-    "STND": 0,
-    "MHHW": 12.715,
-    "MHW": 12.525,
-    "DTL": 11.581,
-    "MTL": 11.82,
-    "MSL": 11.801,
-    "MLW": 11.115,
-    "MLLW": 10.448,
-    "GT": 2.267,
-    "MN": 1.411,
-    "DHQ": 0.189,
-    "DLQ": 0.667,
-    "HWI": 11.967,
-    "LWI": 5.575,
-    "NAVD88": 10.548
-  },
-  "disclaimers": ""
+  ]
 }

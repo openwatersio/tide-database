@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-shell-point-walker-creek",
+  "id": "us/fl/shell-point-walker-creek",
   "name": "Shell Point, Walker Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.05833333333333,
   "longitude": -84.29055555555556,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728229",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728229",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728229.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728229"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.132,
+    "HAT": 0.79099995,
+    "STND": 0,
+    "MHHW": 0.461,
+    "MHW": 0.392,
+    "DTL": -0.076,
+    "MTL": -0.007,
+    "MSL": -0.012,
+    "MLW": -0.407,
+    "MLLW": -0.614,
+    "GT": 1.076,
+    "MN": 0.801,
+    "DHQ": 0.069,
+    "DLQ": 0.206,
+    "HWI": 7.136,
+    "LWI": 0.928,
+    "NAVD88": 0.001
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 116.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.132,
-    "HAT": 0.79099995,
-    "STND": 0,
-    "MHHW": 0.461,
-    "MHW": 0.392,
-    "DTL": -0.076,
-    "MTL": -0.007,
-    "MSL": -0.012,
-    "MLW": -0.407,
-    "MLLW": -0.614,
-    "GT": 1.076,
-    "MN": 0.801,
-    "DHQ": 0.069,
-    "DLQ": 0.206,
-    "HWI": 7.136,
-    "LWI": 0.928,
-    "NAVD88": 0.001
-  },
-  "disclaimers": ""
+  ]
 }

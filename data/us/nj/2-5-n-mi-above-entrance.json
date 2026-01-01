@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-2-5-n-mi-above-entrance",
+  "id": "us/nj/2-5-n-mi-above-entrance",
   "name": "2.5 n.mi. above entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.505,
   "longitude": -75.4833,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8537753",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537753",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8537753.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537753"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-de-reedy-point",
+    "reference": "us/de/reedy-point",
     "height": {
       "type": "ratio",
       "high": 0.9,

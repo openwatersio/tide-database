@@ -1,10 +1,9 @@
 {
-  "id": "us-me-seavey-island",
+  "id": "us/me/seavey-island",
   "name": "Seavey Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.0797222,
   "longitude": -70.74111111111111,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8419870",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8419870",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8419870.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8419870"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.143,
+    "HAT": 3.916,
+    "STND": 0,
+    "MHHW": 3.403,
+    "MHW": 3.274,
+    "DTL": 2.047,
+    "MTL": 2.031,
+    "MSL": 2.05,
+    "MLW": 0.788,
+    "MLLW": 0.691,
+    "GT": 2.711,
+    "MN": 2.487,
+    "DHQ": 0.128,
+    "DLQ": 0.096,
+    "HWI": 3.917,
+    "LWI": 10.038,
+    "NAVD88": 2.127
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 119.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.143,
-    "HAT": 3.916,
-    "STND": 0,
-    "MHHW": 3.403,
-    "MHW": 3.274,
-    "DTL": 2.047,
-    "MTL": 2.031,
-    "MSL": 2.05,
-    "MLW": 0.788,
-    "MLLW": 0.691,
-    "GT": 2.711,
-    "MN": 2.487,
-    "DHQ": 0.128,
-    "DLQ": 0.096,
-    "HWI": 3.917,
-    "LWI": 10.038,
-    "NAVD88": 2.127
-  },
-  "disclaimers": ""
+  ]
 }

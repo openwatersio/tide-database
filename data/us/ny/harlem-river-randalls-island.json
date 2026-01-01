@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-harlem-river-randalls-island",
+  "id": "us/ny/harlem-river-randalls-island",
   "name": "Harlem River, Randalls Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8,
   "longitude": -73.9283,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518643",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518643",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518643.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518643"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.80799997,
+    "HAT": 3.1139998,
+    "STND": 0,
+    "MHHW": 2.721,
+    "MHW": 2.628,
+    "DTL": 1.952,
+    "MTL": 1.933,
+    "MSL": 1.943,
+    "MLW": 1.239,
+    "MLLW": 1.184,
+    "GT": 1.536,
+    "MN": 1.389,
+    "DHQ": 0.093,
+    "DLQ": 0.055,
+    "HWI": 2.747,
+    "LWI": 8.717
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.80799997,
-    "HAT": 3.1139998,
-    "STND": 0,
-    "MHHW": 2.721,
-    "MHW": 2.628,
-    "DTL": 1.952,
-    "MTL": 1.933,
-    "MSL": 1.943,
-    "MLW": 1.239,
-    "MLLW": 1.184,
-    "GT": 1.536,
-    "MN": 1.389,
-    "DHQ": 0.093,
-    "DLQ": 0.055,
-    "HWI": 2.747,
-    "LWI": 8.717
-  },
-  "disclaimers": ""
+  ]
 }

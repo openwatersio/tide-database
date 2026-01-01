@@ -1,10 +1,9 @@
 {
-  "id": "us-al-bayou-labatre-bridge",
+  "id": "us/al/bayou-labatre-bridge",
   "name": "Bayou LaBatre Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.40570068359375,
   "longitude": -88.2477035522461,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8739803",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8739803",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8739803.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8739803"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.7990003,
+    "HAT": 8.932,
+    "STND": 0,
+    "MHHW": 8.659,
+    "MHW": 8.611,
+    "DTL": 8.406,
+    "MTL": 8.403,
+    "MSL": 8.404,
+    "MLW": 8.195,
+    "MLLW": 8.153,
+    "GT": 0.506,
+    "MN": 0.416,
+    "DHQ": 0.047,
+    "DLQ": 0.042,
+    "NAVD88": 8.375
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 106,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.7990003,
-    "HAT": 8.932,
-    "STND": 0,
-    "MHHW": 8.659,
-    "MHW": 8.611,
-    "DTL": 8.406,
-    "MTL": 8.403,
-    "MSL": 8.404,
-    "MLW": 8.195,
-    "MLLW": 8.153,
-    "GT": 0.506,
-    "MN": 0.416,
-    "DHQ": 0.047,
-    "DLQ": 0.042,
-    "NAVD88": 8.375
-  },
-  "disclaimers": ""
+  ]
 }

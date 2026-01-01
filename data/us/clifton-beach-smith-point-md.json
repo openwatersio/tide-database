@@ -1,10 +1,9 @@
 {
-  "id": "us-clifton-beach-smith-point-md",
+  "id": "us/clifton-beach-smith-point-md",
   "name": "Clifton Beach, Smith Point, Md.",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.41333333333299,
   "longitude": -77.266666666667,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8578931",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578931",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8578931.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578931"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-dc-washington-washington-channel-d-c",
+    "reference": "us/dc/washington-washington-channel-d-c",
     "height": {
       "type": "ratio",
       "high": 0.41,

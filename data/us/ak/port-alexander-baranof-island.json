@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-port-alexander-baranof-island",
+  "id": "us/ak/port-alexander-baranof-island",
   "name": "Port Alexander, Baranof Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.2467,
   "longitude": -134.647,
   "timezone": "America/Sitka",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451054",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451054",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451054.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451054"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.08200002,
+    "HAT": 5.422,
+    "STND": 0,
+    "MHHW": 4.478,
+    "MHW": 4.219,
+    "DTL": 2.812,
+    "MTL": 2.902,
+    "MSL": 2.894,
+    "MLW": 1.585,
+    "MLLW": 1.145,
+    "GT": 3.333,
+    "MN": 2.634,
+    "DHQ": 0.259,
+    "DLQ": 0.439,
+    "HWI": 9.598,
+    "LWI": 3.331,
+    "NAVD88": 1.505
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 169.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.08200002,
-    "HAT": 5.422,
-    "STND": 0,
-    "MHHW": 4.478,
-    "MHW": 4.219,
-    "DTL": 2.812,
-    "MTL": 2.902,
-    "MSL": 2.894,
-    "MLW": 1.585,
-    "MLLW": 1.145,
-    "GT": 3.333,
-    "MN": 2.634,
-    "DHQ": 0.259,
-    "DLQ": 0.439,
-    "HWI": 9.598,
-    "LWI": 3.331,
-    "NAVD88": 1.505
-  },
-  "disclaimers": ""
+  ]
 }

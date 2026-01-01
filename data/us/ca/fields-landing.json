@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-fields-landing",
+  "id": "us/ca/fields-landing",
   "name": "Fields Landing",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.7233,
   "longitude": -124.222,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9418723",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418723",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9418723.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418723"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.22899997,
+    "HAT": 3.284,
+    "STND": 0,
+    "MHHW": 2.643,
+    "MHW": 2.426,
+    "DTL": 1.592,
+    "MTL": 1.674,
+    "MSL": 1.672,
+    "MLW": 0.922,
+    "MLLW": 0.541,
+    "GT": 2.101,
+    "MN": 1.505,
+    "DHQ": 0.216,
+    "DLQ": 0.38,
+    "HWI": 7.5,
+    "LWI": 1.1,
+    "NAVD88": 0.684
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.22899997,
-    "HAT": 3.284,
-    "STND": 0,
-    "MHHW": 2.643,
-    "MHW": 2.426,
-    "DTL": 1.592,
-    "MTL": 1.674,
-    "MSL": 1.672,
-    "MLW": 0.922,
-    "MLLW": 0.541,
-    "GT": 2.101,
-    "MN": 1.505,
-    "DHQ": 0.216,
-    "DLQ": 0.38,
-    "HWI": 7.5,
-    "LWI": 1.1,
-    "NAVD88": 0.684
-  },
-  "disclaimers": ""
+  ]
 }

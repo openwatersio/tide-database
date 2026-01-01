@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-yale-boathouse",
+  "id": "us/ct/yale-boathouse",
   "name": "Yale boathouse",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.43,
   "longitude": -72.0933,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8461467",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8461467",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8461467.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8461467"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ct-new-london-state-pier",
+    "reference": "us/ct/new-london-state-pier",
     "height": {
       "type": "ratio",
       "high": 1.07,

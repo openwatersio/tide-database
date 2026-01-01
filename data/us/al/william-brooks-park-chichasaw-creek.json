@@ -1,10 +1,9 @@
 {
-  "id": "us-al-william-brooks-park-chichasaw-creek",
+  "id": "us/al/william-brooks-park-chichasaw-creek",
   "name": "William Brooks Park, Chichasaw Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.78190040588379,
   "longitude": -88.07360076904297,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8737138",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8737138",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8737138.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8737138"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.1470003,
+    "HAT": 8.241,
+    "STND": 0,
+    "MHHW": 8.016,
+    "MHW": 7.986,
+    "DTL": 7.753,
+    "MTL": 7.757,
+    "MSL": 7.755,
+    "MLW": 7.528,
+    "MLLW": 7.491,
+    "GT": 0.525,
+    "MN": 0.458,
+    "DHQ": 0.03,
+    "DLQ": 0.037,
+    "NAVD88": 7.628
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 250.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.1470003,
-    "HAT": 8.241,
-    "STND": 0,
-    "MHHW": 8.016,
-    "MHW": 7.986,
-    "DTL": 7.753,
-    "MTL": 7.757,
-    "MSL": 7.755,
-    "MLW": 7.528,
-    "MLLW": 7.491,
-    "GT": 0.525,
-    "MN": 0.458,
-    "DHQ": 0.03,
-    "DLQ": 0.037,
-    "NAVD88": 7.628
-  },
-  "disclaimers": ""
+  ]
 }

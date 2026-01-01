@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-southeast-mona-island",
+  "id": "us/pr/southeast-mona-island",
   "name": "Southeast Mona Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.06529998779297,
   "longitude": -67.86609649658203,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9759866",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759866",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9759866.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759866"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.191,
+    "HAT": 1.629,
+    "STND": 0,
+    "MHHW": 1.522,
+    "MHW": 1.526,
+    "DTL": 1.419,
+    "MTL": 1.421,
+    "MSL": 1.411,
+    "MLW": 1.315,
+    "MLLW": 1.315,
+    "GT": 0.207,
+    "MN": 0.211,
+    "DHQ": -0.003,
+    "DLQ": 0,
+    "PRVD02": 1.462
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.191,
-    "HAT": 1.629,
-    "STND": 0,
-    "MHHW": 1.522,
-    "MHW": 1.526,
-    "DTL": 1.419,
-    "MTL": 1.421,
-    "MSL": 1.411,
-    "MLW": 1.315,
-    "MLLW": 1.315,
-    "GT": 0.207,
-    "MN": 0.211,
-    "DHQ": -0.003,
-    "DLQ": 0,
-    "PRVD02": 1.462
-  },
-  "disclaimers": ""
+  ]
 }

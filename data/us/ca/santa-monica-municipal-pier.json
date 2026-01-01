@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-santa-monica-municipal-pier",
+  "id": "us/ca/santa-monica-municipal-pier",
   "name": "Santa Monica, Municipal Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.0083,
   "longitude": -118.5,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410840",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410840",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410840"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.125,
+    "HAT": 2.9759998,
+    "STND": 0,
+    "MHHW": 2.398,
+    "MHW": 2.173,
+    "DTL": 1.572,
+    "MTL": 1.6,
+    "MSL": 1.594,
+    "MLW": 1.028,
+    "MLLW": 0.745,
+    "GT": 1.654,
+    "MN": 1.145,
+    "DHQ": 0.226,
+    "DLQ": 0.283,
+    "HWI": 5.19,
+    "LWI": 11.26,
+    "NAVD88": 0.802
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 106.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.125,
-    "HAT": 2.9759998,
-    "STND": 0,
-    "MHHW": 2.398,
-    "MHW": 2.173,
-    "DTL": 1.572,
-    "MTL": 1.6,
-    "MSL": 1.594,
-    "MLW": 1.028,
-    "MLLW": 0.745,
-    "GT": 1.654,
-    "MN": 1.145,
-    "DHQ": 0.226,
-    "DLQ": 0.283,
-    "HWI": 5.19,
-    "LWI": 11.26,
-    "NAVD88": 0.802
-  },
-  "disclaimers": ""
+  ]
 }

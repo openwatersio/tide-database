@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-dent-point-stepovak-bay",
+  "id": "us/ak/dent-point-stepovak-bay",
   "name": "Dent Point, Stepovak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.7833,
   "longitude": -159.88,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459281",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459281",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459281.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459281"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-kodiak-womens-bay",
+    "reference": "us/ak/kodiak-womens-bay",
     "height": {
       "type": "ratio",
       "high": 0.86,

@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-sea-level",
+  "id": "us/nc/sea-level",
   "name": "Sea Level",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.875,
   "longitude": -76.3433,
   "timezone": "America/New_York",
@@ -12,15 +11,14 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8655875",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8655875",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8655875.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8655875"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
-  "harmonic_constituents": [],
+  "disclaimers": "",
   "datums": {
     "LAT": 9.252,
     "HAT": 9.577,
@@ -40,5 +38,6 @@
     "LWI": 10.967,
     "NAVD88": 9.498
   },
-  "disclaimers": ""
+  "type": "reference",
+  "harmonic_constituents": []
 }

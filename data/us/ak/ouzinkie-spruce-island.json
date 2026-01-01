@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-ouzinkie-spruce-island",
+  "id": "us/ak/ouzinkie-spruce-island",
   "name": "Ouzinkie, Spruce Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.9217,
   "longitude": -152.498,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457287",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457287",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457287.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457287"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.9289999,
+    "HAT": 3.359,
+    "STND": 0,
+    "MHHW": 2.669,
+    "MHW": 2.41,
+    "DTL": 1.312,
+    "MTL": 1.354,
+    "MSL": 1.362,
+    "MLW": 0.299,
+    "MLLW": -0.045,
+    "GT": 2.714,
+    "MN": 2.111,
+    "DHQ": 0.26,
+    "DLQ": 0.343,
+    "HWI": 10.53,
+    "LWI": 4.13
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.9289999,
-    "HAT": 3.359,
-    "STND": 0,
-    "MHHW": 2.669,
-    "MHW": 2.41,
-    "DTL": 1.312,
-    "MTL": 1.354,
-    "MSL": 1.362,
-    "MLW": 0.299,
-    "MLLW": -0.045,
-    "GT": 2.714,
-    "MN": 2.111,
-    "DHQ": 0.26,
-    "DLQ": 0.343,
-    "HWI": 10.53,
-    "LWI": 4.13
-  },
-  "disclaimers": ""
+  ]
 }

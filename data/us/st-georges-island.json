@@ -1,10 +1,9 @@
 {
-  "id": "us-st-georges-island",
+  "id": "us/st-georges-island",
   "name": "St. Georges Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.3734016418457,
   "longitude": -64.70330047607422,
   "timezone": "Atlantic/Bermuda",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "2695540",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=2695540",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/2695540.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=2695540"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.76299995,
+    "HAT": 2.243,
+    "STND": 0,
+    "MHHW": 1.903,
+    "MHW": 1.826,
+    "DTL": 1.471,
+    "MTL": 1.444,
+    "MSL": 1.446,
+    "MLW": 1.063,
+    "MLLW": 1.039,
+    "GT": 0.864,
+    "MN": 0.763,
+    "DHQ": 0.077,
+    "DLQ": 0.024,
+    "HWI": 12.38,
+    "LWI": 6.2
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 73.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.76299995,
-    "HAT": 2.243,
-    "STND": 0,
-    "MHHW": 1.903,
-    "MHW": 1.826,
-    "DTL": 1.471,
-    "MTL": 1.444,
-    "MSL": 1.446,
-    "MLW": 1.063,
-    "MLLW": 1.039,
-    "GT": 0.864,
-    "MN": 0.763,
-    "DHQ": 0.077,
-    "DLQ": 0.024,
-    "HWI": 12.38,
-    "LWI": 6.2
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-snipe-island-econfina-river-state-park",
+  "id": "us/fl/snipe-island-econfina-river-state-park",
   "name": "Snipe Island, Econfina River State Park",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.061899185180664,
   "longitude": -83.95269775390625,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727976",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727976",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727976.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727976"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.728,
+    "HAT": 10.487,
+    "STND": 0,
+    "MHHW": 10.197,
+    "MHW": 10.147,
+    "DTL": 9.693,
+    "MTL": 9.747,
+    "MSL": 9.722,
+    "MLW": 9.347,
+    "MLLW": 9.188,
+    "GT": 1.009,
+    "MN": 0.8,
+    "DHQ": 0.05,
+    "DLQ": 0.159,
+    "NAVD88": 9.757
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.728,
-    "HAT": 10.487,
-    "STND": 0,
-    "MHHW": 10.197,
-    "MHW": 10.147,
-    "DTL": 9.693,
-    "MTL": 9.747,
-    "MSL": 9.722,
-    "MLW": 9.347,
-    "MLLW": 9.188,
-    "GT": 1.009,
-    "MN": 0.8,
-    "DHQ": 0.05,
-    "DLQ": 0.159,
-    "NAVD88": 9.757
-  },
-  "disclaimers": ""
+  ]
 }

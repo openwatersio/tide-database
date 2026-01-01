@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-port-aransas-h-caldwell-pier",
+  "id": "us/tx/port-aransas-h-caldwell-pier",
   "name": "Port Aransas (H. Caldwell Pier)",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.82670021057129,
   "longitude": -97.05000305175781,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8775270",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775270",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8775270.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775270"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.781,
+    "HAT": 2.22,
+    "STND": 0,
+    "MHHW": 1.778,
+    "MHW": 1.743,
+    "DTL": 1.529,
+    "MTL": 1.546,
+    "MSL": 1.561,
+    "MLW": 1.348,
+    "MLLW": 1.279,
+    "GT": 0.499,
+    "MN": 0.395,
+    "DHQ": 0.034,
+    "DLQ": 0.069,
+    "NAVD88": 1.439
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.781,
-    "HAT": 2.22,
-    "STND": 0,
-    "MHHW": 1.778,
-    "MHW": 1.743,
-    "DTL": 1.529,
-    "MTL": 1.546,
-    "MSL": 1.561,
-    "MLW": 1.348,
-    "MLLW": 1.279,
-    "GT": 0.499,
-    "MN": 0.395,
-    "DHQ": 0.034,
-    "DLQ": 0.069,
-    "NAVD88": 1.439
-  },
-  "disclaimers": ""
+  ]
 }

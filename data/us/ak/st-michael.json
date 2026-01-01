@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-st-michael",
+  "id": "us/ak/st-michael",
   "name": "St. Michael",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 63.474998474121094,
   "longitude": -162.02699279785156,
   "timezone": "America/Nome",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9468132",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468132",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9468132.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468132"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-unalakleet",
+    "reference": "us/ak/unalakleet",
     "height": {
       "type": "ratio",
       "high": 1,

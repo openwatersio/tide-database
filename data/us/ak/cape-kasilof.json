@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-cape-kasilof",
+  "id": "us/ak/cape-kasilof",
   "name": "Cape Kasilof",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.3367,
   "longitude": -151.38,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455711",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455711",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455711.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455711"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -4.305,
+    "HAT": 5.621,
+    "STND": 0,
+    "MHHW": 3.788,
+    "MHW": 3.587,
+    "DTL": 0.727,
+    "MTL": 0.936,
+    "MSL": 0.981,
+    "MLW": -1.716,
+    "MLLW": -2.334,
+    "GT": 6.123,
+    "MN": 5.303,
+    "DHQ": 0.201,
+    "DLQ": 0.619,
+    "HWI": 0.31,
+    "LWI": 6.79
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -4.305,
-    "HAT": 5.621,
-    "STND": 0,
-    "MHHW": 3.788,
-    "MHW": 3.587,
-    "DTL": 0.727,
-    "MTL": 0.936,
-    "MSL": 0.981,
-    "MLW": -1.716,
-    "MLLW": -2.334,
-    "GT": 6.123,
-    "MN": 5.303,
-    "DHQ": 0.201,
-    "DLQ": 0.619,
-    "HWI": 0.31,
-    "LWI": 6.79
-  },
-  "disclaimers": ""
+  ]
 }

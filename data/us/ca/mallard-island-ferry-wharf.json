@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-mallard-island-ferry-wharf",
+  "id": "us/ca/mallard-island-ferry-wharf",
   "name": "Mallard Island Ferry Wharf",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.0433,
   "longitude": -121.918,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415112",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415112",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415112.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415112"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.711,
+    "HAT": 2.6160002,
+    "STND": 0,
+    "MHHW": 2.323,
+    "MHW": 2.172,
+    "DTL": 1.652,
+    "MTL": 1.68,
+    "MSL": 1.687,
+    "MLW": 1.187,
+    "MLLW": 0.98,
+    "GT": 1.343,
+    "MN": 0.986,
+    "DHQ": 0.151,
+    "DLQ": 0.206,
+    "HWI": 10.731,
+    "LWI": 4.629
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 46.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.711,
-    "HAT": 2.6160002,
-    "STND": 0,
-    "MHHW": 2.323,
-    "MHW": 2.172,
-    "DTL": 1.652,
-    "MTL": 1.68,
-    "MSL": 1.687,
-    "MLW": 1.187,
-    "MLLW": 0.98,
-    "GT": 1.343,
-    "MN": 0.986,
-    "DHQ": 0.151,
-    "DLQ": 0.206,
-    "HWI": 10.731,
-    "LWI": 4.629
-  },
-  "disclaimers": ""
+  ]
 }

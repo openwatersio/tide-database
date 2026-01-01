@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-crescent-city",
+  "id": "us/ca/crescent-city",
   "name": "CRESCENT CITY",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.74561111111111,
   "longitude": -124.1843888888889,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9419750",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9419750",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9419750.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9419750"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.37399995,
+    "HAT": 3.821,
+    "STND": 0,
+    "MHHW": 3.219,
+    "MHW": 3.024,
+    "DTL": 2.172,
+    "MTL": 2.264,
+    "MSL": 2.254,
+    "MLW": 1.504,
+    "MLLW": 1.124,
+    "GT": 2.095,
+    "MN": 1.52,
+    "DHQ": 0.195,
+    "DLQ": 0.379,
+    "HWI": 7.37,
+    "LWI": 1.08,
+    "NAVD88": 1.24
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.37399995,
-    "HAT": 3.821,
-    "STND": 0,
-    "MHHW": 3.219,
-    "MHW": 3.024,
-    "DTL": 2.172,
-    "MTL": 2.264,
-    "MSL": 2.254,
-    "MLW": 1.504,
-    "MLLW": 1.124,
-    "GT": 2.095,
-    "MN": 1.52,
-    "DHQ": 0.195,
-    "DLQ": 0.379,
-    "HWI": 7.37,
-    "LWI": 1.08,
-    "NAVD88": 1.24
-  },
-  "disclaimers": ""
+  ]
 }

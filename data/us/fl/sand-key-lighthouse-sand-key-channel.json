@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-sand-key-lighthouse-sand-key-channel",
+  "id": "us/fl/sand-key-lighthouse-sand-key-channel",
   "name": "Sand Key Lighthouse, Sand Key Channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.4533,
   "longitude": -81.8783,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724635",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724635",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724635.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724635"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.19299999,
+    "HAT": 1.1789999,
+    "STND": 0,
+    "MHHW": 0.909,
+    "MHW": 0.821,
+    "DTL": 0.644,
+    "MTL": 0.633,
+    "MSL": 0.64,
+    "MLW": 0.444,
+    "MLLW": 0.379,
+    "GT": 0.531,
+    "MN": 0.376,
+    "DHQ": 0.089,
+    "DLQ": 0.066,
+    "HWI": 2.046,
+    "LWI": 7.862
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.19299999,
-    "HAT": 1.1789999,
-    "STND": 0,
-    "MHHW": 0.909,
-    "MHW": 0.821,
-    "DTL": 0.644,
-    "MTL": 0.633,
-    "MSL": 0.64,
-    "MLW": 0.444,
-    "MLLW": 0.379,
-    "GT": 0.531,
-    "MN": 0.376,
-    "DHQ": 0.089,
-    "DLQ": 0.066,
-    "HWI": 2.046,
-    "LWI": 7.862
-  },
-  "disclaimers": ""
+  ]
 }

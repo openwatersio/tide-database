@@ -1,10 +1,9 @@
 {
-  "id": "us-md-hillsboro-tuckahoe-creek",
+  "id": "us/md/hillsboro-tuckahoe-creek",
   "name": "Hillsboro, Tuckahoe Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.9167,
   "longitude": -75.945,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8572669",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572669",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8572669.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572669"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.671,
+    "HAT": 8.641,
+    "STND": 0,
+    "MHHW": 8.52,
+    "MHW": 8.468,
+    "DTL": 8.117,
+    "MTL": 8.119,
+    "MSL": 8.16,
+    "MLW": 7.77,
+    "MLLW": 7.713,
+    "GT": 0.807,
+    "MN": 0.699,
+    "DHQ": 0.052,
+    "DLQ": 0.057,
+    "HWI": 0.6,
+    "LWI": 7.022
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.671,
-    "HAT": 8.641,
-    "STND": 0,
-    "MHHW": 8.52,
-    "MHW": 8.468,
-    "DTL": 8.117,
-    "MTL": 8.119,
-    "MSL": 8.16,
-    "MLW": 7.77,
-    "MLLW": 7.713,
-    "GT": 0.807,
-    "MN": 0.699,
-    "DHQ": 0.052,
-    "DLQ": 0.057,
-    "HWI": 0.6,
-    "LWI": 7.022
-  },
-  "disclaimers": ""
+  ]
 }

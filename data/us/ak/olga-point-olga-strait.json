@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-olga-point-olga-strait",
+  "id": "us/ak/olga-point-olga-strait",
   "name": "Olga Point, Olga Strait",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.2283,
   "longitude": -135.537,
   "timezone": "America/Sitka",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451725",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451725",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451725.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451725"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sitka",
+    "reference": "us/ak/sitka",
     "height": {
       "type": "fixed",
       "high": 0,

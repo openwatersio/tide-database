@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-marco-big-marco-river",
+  "id": "us/fl/marco-big-marco-river",
   "name": "Marco, Big Marco River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.9717,
   "longitude": -81.7283,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724991",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724991",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724991.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724991"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.09499997,
+    "HAT": 1.5239999,
+    "STND": 0,
+    "MHHW": 1.294,
+    "MHW": 1.227,
+    "DTL": 0.871,
+    "MTL": 0.915,
+    "MSL": 0.905,
+    "MLW": 0.603,
+    "MLLW": 0.448,
+    "GT": 0.846,
+    "MN": 0.623,
+    "DHQ": 0.067,
+    "DLQ": 0.155,
+    "HWI": 6.11,
+    "LWI": 12.05,
+    "NAVD88": 1.097
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.09499997,
-    "HAT": 1.5239999,
-    "STND": 0,
-    "MHHW": 1.294,
-    "MHW": 1.227,
-    "DTL": 0.871,
-    "MTL": 0.915,
-    "MSL": 0.905,
-    "MLW": 0.603,
-    "MLLW": 0.448,
-    "GT": 0.846,
-    "MN": 0.623,
-    "DHQ": 0.067,
-    "DLQ": 0.155,
-    "HWI": 6.11,
-    "LWI": 12.05,
-    "NAVD88": 1.097
-  },
-  "disclaimers": ""
+  ]
 }

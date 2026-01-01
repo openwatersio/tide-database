@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-tin-city",
+  "id": "us/ak/tin-city",
   "name": "Tin City",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 65.55833333333334,
   "longitude": -167.975,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9469439",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469439",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9469439.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469439"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.989,
+    "HAT": 1.462,
+    "STND": 0,
+    "MHHW": 1.415,
+    "MHW": 1.356,
+    "DTL": 1.259,
+    "MTL": 1.245,
+    "MSL": 1.248,
+    "MLW": 1.134,
+    "MLLW": 1.104,
+    "GT": 0.311,
+    "MN": 0.221,
+    "DHQ": 0.059,
+    "DLQ": 0.031
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.989,
-    "HAT": 1.462,
-    "STND": 0,
-    "MHHW": 1.415,
-    "MHW": 1.356,
-    "DTL": 1.259,
-    "MTL": 1.245,
-    "MSL": 1.248,
-    "MLW": 1.134,
-    "MLLW": 1.104,
-    "GT": 0.311,
-    "MN": 0.221,
-    "DHQ": 0.059,
-    "DLQ": 0.031
-  },
-  "disclaimers": ""
+  ]
 }

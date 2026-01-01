@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-agnes-cove-aialik-peninsula",
+  "id": "us/ak/agnes-cove-aialik-peninsula",
   "name": "Agnes Cove, Aialik Peninsula",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.7733,
   "longitude": -149.588,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455120",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455120",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455120.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455120"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.9489999,
+    "HAT": 3.3760002,
+    "STND": 0,
+    "MHHW": 2.382,
+    "MHW": 2.102,
+    "DTL": 0.754,
+    "MTL": 0.824,
+    "MSL": 0.828,
+    "MLW": -0.454,
+    "MLLW": -0.875,
+    "GT": 3.257,
+    "MN": 2.556,
+    "DHQ": 0.281,
+    "DLQ": 0.421,
+    "HWI": 9.96,
+    "LWI": 3.71
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.9489999,
-    "HAT": 3.3760002,
-    "STND": 0,
-    "MHHW": 2.382,
-    "MHW": 2.102,
-    "DTL": 0.754,
-    "MTL": 0.824,
-    "MSL": 0.828,
-    "MLW": -0.454,
-    "MLLW": -0.875,
-    "GT": 3.257,
-    "MN": 2.556,
-    "DHQ": 0.281,
-    "DLQ": 0.421,
-    "HWI": 9.96,
-    "LWI": 3.71
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-port-isabel",
+  "id": "us/tx/port-isabel",
   "name": "Port Isabel",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.06116666666667,
   "longitude": -97.21552777777778,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8779770",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779770",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8779770.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779770"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.85886097,
+    "HAT": 1.846861,
+    "STND": 0,
+    "MHHW": 1.594,
+    "MHW": 1.576,
+    "DTL": 1.385,
+    "MTL": 1.4,
+    "MSL": 1.423,
+    "MLW": 1.224,
+    "MLLW": 1.175,
+    "GT": 0.418,
+    "MN": 0.351,
+    "DHQ": 0.018,
+    "DLQ": 0.049,
+    "NAVD88": 1.435
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 146.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.85886097,
-    "HAT": 1.846861,
-    "STND": 0,
-    "MHHW": 1.594,
-    "MHW": 1.576,
-    "DTL": 1.385,
-    "MTL": 1.4,
-    "MSL": 1.423,
-    "MLW": 1.224,
-    "MLLW": 1.175,
-    "GT": 0.418,
-    "MN": 0.351,
-    "DHQ": 0.018,
-    "DLQ": 0.049,
-    "NAVD88": 1.435
-  },
-  "disclaimers": ""
+  ]
 }

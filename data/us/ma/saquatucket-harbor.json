@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-saquatucket-harbor",
+  "id": "us/ma/saquatucket-harbor",
   "name": "Saquatucket Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.6683,
   "longitude": -70.0567,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447495",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447495",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447495.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447495"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.26,
+    "HAT": 3.1950002,
+    "STND": 0,
+    "MHHW": 2.863,
+    "MHW": 2.758,
+    "DTL": 2.201,
+    "MTL": 2.19,
+    "MSL": 2.22,
+    "MLW": 1.623,
+    "MLLW": 1.538,
+    "GT": 1.326,
+    "MN": 1.135,
+    "DHQ": 0.106,
+    "DLQ": 0.085,
+    "HWI": 4.504,
+    "LWI": 10.197,
+    "NAVD88": 2.326
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.26,
-    "HAT": 3.1950002,
-    "STND": 0,
-    "MHHW": 2.863,
-    "MHW": 2.758,
-    "DTL": 2.201,
-    "MTL": 2.19,
-    "MSL": 2.22,
-    "MLW": 1.623,
-    "MLLW": 1.538,
-    "GT": 1.326,
-    "MN": 1.135,
-    "DHQ": 0.106,
-    "DLQ": 0.085,
-    "HWI": 4.504,
-    "LWI": 10.197,
-    "NAVD88": 2.326
-  },
-  "disclaimers": ""
+  ]
 }

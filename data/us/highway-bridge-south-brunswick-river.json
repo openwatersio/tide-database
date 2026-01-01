@@ -1,10 +1,9 @@
 {
-  "id": "us-highway-bridge-south-brunswick-river",
+  "id": "us/highway-bridge-south-brunswick-river",
   "name": "Highway bridge, South Brunswick River",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.15,
   "longitude": -81.566666666667,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC3521",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC3521",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC3521.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC3521"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ga-fort-pulaski-savannah-river-entrance",
+    "reference": "us/ga/fort-pulaski-savannah-river-entrance",
     "height": {
       "type": "ratio",
       "high": 1.1,

@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-cheesequake-creek-garden-state-parkway",
+  "id": "us/nj/cheesequake-creek-garden-state-parkway",
   "name": "Cheesequake Creek, Garden State Parkway",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.4533,
   "longitude": -74.2733,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8531223",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531223",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8531223.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531223"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.26100004,
+    "HAT": 2.852,
+    "STND": 0,
+    "MHHW": 2.389,
+    "MHW": 2.295,
+    "DTL": 1.53,
+    "MTL": 1.515,
+    "MSL": 1.547,
+    "MLW": 0.734,
+    "MLLW": 0.672,
+    "GT": 1.716,
+    "MN": 1.561,
+    "DHQ": 0.093,
+    "DLQ": 0.062,
+    "HWI": 0.487,
+    "LWI": 6.846
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.26100004,
-    "HAT": 2.852,
-    "STND": 0,
-    "MHHW": 2.389,
-    "MHW": 2.295,
-    "DTL": 1.53,
-    "MTL": 1.515,
-    "MSL": 1.547,
-    "MLW": 0.734,
-    "MLLW": 0.672,
-    "GT": 1.716,
-    "MN": 1.561,
-    "DHQ": 0.093,
-    "DLQ": 0.062,
-    "HWI": 0.487,
-    "LWI": 6.846
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-siesta-key-big-sarasota-pass",
+  "id": "us/fl/siesta-key-big-sarasota-pass",
   "name": "Siesta Key, Big Sarasota Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.283899307250977,
   "longitude": -82.56500244140625,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726034",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726034",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726034.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726034"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.812,
+    "HAT": 8.972,
+    "STND": 0,
+    "MHHW": 8.735,
+    "MHW": 8.651,
+    "DTL": 8.426,
+    "MTL": 8.438,
+    "MSL": 8.438,
+    "MLW": 8.225,
+    "MLLW": 8.117,
+    "GT": 0.618,
+    "MN": 0.426,
+    "DHQ": 0.084,
+    "DLQ": 0.108,
+    "NAVD88": 8.6
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 80.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.812,
-    "HAT": 8.972,
-    "STND": 0,
-    "MHHW": 8.735,
-    "MHW": 8.651,
-    "DTL": 8.426,
-    "MTL": 8.438,
-    "MSL": 8.438,
-    "MLW": 8.225,
-    "MLLW": 8.117,
-    "GT": 0.618,
-    "MN": 0.426,
-    "DHQ": 0.084,
-    "DLQ": 0.108,
-    "NAVD88": 8.6
-  },
-  "disclaimers": ""
+  ]
 }

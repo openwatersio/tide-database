@@ -1,10 +1,9 @@
 {
-  "id": "us-la-calcasieu-ship-channel-bulk-terminal",
+  "id": "us/la/calcasieu-ship-channel-bulk-terminal",
   "name": "Calcasieu Ship Channel, Bulk Terminal",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.19029998779297,
   "longitude": -93.30069732666016,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8767961",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8767961",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8767961.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8767961"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.743,
+    "HAT": 7.57,
+    "STND": 0,
+    "MHHW": 7.448,
+    "MHW": 7.42,
+    "DTL": 7.244,
+    "MTL": 7.264,
+    "MSL": 7.268,
+    "MLW": 7.109,
+    "MLLW": 7.039,
+    "GT": 0.409,
+    "MN": 0.311,
+    "DHQ": 0.029,
+    "DLQ": 0.07,
+    "NAVD88": 7.233
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 351,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.743,
-    "HAT": 7.57,
-    "STND": 0,
-    "MHHW": 7.448,
-    "MHW": 7.42,
-    "DTL": 7.244,
-    "MTL": 7.264,
-    "MSL": 7.268,
-    "MLW": 7.109,
-    "MLLW": 7.039,
-    "GT": 0.409,
-    "MN": 0.311,
-    "DHQ": 0.029,
-    "DLQ": 0.07,
-    "NAVD88": 7.233
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-barbuda",
+  "id": "us/barbuda",
   "name": "Barbuda",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.59083366394043,
   "longitude": -61.820556640625,
   "timezone": "America/Antigua",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9761115",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9761115",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9761115.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9761115"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.364,
+    "HAT": 8.846,
+    "STND": 0,
+    "MHHW": 8.757,
+    "MHW": 8.751,
+    "DTL": 8.645,
+    "MTL": 8.659,
+    "MSL": 8.665,
+    "MLW": 8.567,
+    "MLLW": 8.532,
+    "GT": 0.225,
+    "MN": 0.185,
+    "DHQ": 0.006,
+    "DLQ": 0.035
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -173,22 +189,5 @@
       "phase_local": 155.8,
       "speed": 30.082138
     }
-  ],
-  "datums": {
-    "LAT": 8.364,
-    "HAT": 8.846,
-    "STND": 0,
-    "MHHW": 8.757,
-    "MHW": 8.751,
-    "DTL": 8.645,
-    "MTL": 8.659,
-    "MSL": 8.665,
-    "MLW": 8.567,
-    "MLLW": 8.532,
-    "GT": 0.225,
-    "MN": 0.185,
-    "DHQ": 0.006,
-    "DLQ": 0.035
-  },
-  "disclaimers": ""
+  ]
 }

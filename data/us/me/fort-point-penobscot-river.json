@@ -1,10 +1,9 @@
 {
-  "id": "us-me-fort-point-penobscot-river",
+  "id": "us/me/fort-point-penobscot-river",
   "name": "Fort Point, Penobscot River",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.4717,
   "longitude": -68.8133,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8414721",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414721",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8414721.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414721"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.114,
+    "HAT": 9.959,
+    "STND": 0,
+    "MHHW": 9.222,
+    "MHW": 9.101,
+    "DTL": 7.523,
+    "MTL": 7.518,
+    "MSL": 7.535,
+    "MLW": 5.935,
+    "MLLW": 5.825,
+    "GT": 3.397,
+    "MN": 3.166,
+    "DHQ": 0.122,
+    "DLQ": 0.11,
+    "HWI": 3.426,
+    "LWI": 9.621
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.114,
-    "HAT": 9.959,
-    "STND": 0,
-    "MHHW": 9.222,
-    "MHW": 9.101,
-    "DTL": 7.523,
-    "MTL": 7.518,
-    "MSL": 7.535,
-    "MLW": 5.935,
-    "MLLW": 5.825,
-    "GT": 3.397,
-    "MN": 3.166,
-    "DHQ": 0.122,
-    "DLQ": 0.11,
-    "HWI": 3.426,
-    "LWI": 9.621
-  },
-  "disclaimers": ""
+  ]
 }

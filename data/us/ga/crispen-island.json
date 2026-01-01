@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-crispen-island",
+  "id": "us/ga/crispen-island",
   "name": "Crispen Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.213300704956055,
   "longitude": -81.55000305175781,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8676808",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8676808",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8676808.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8676808"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.0047279596,
+    "HAT": 3.965272,
+    "STND": 0,
+    "MHHW": 3.154,
+    "MHW": 3.05,
+    "DTL": 1.861,
+    "MTL": 1.839,
+    "MSL": 1.959,
+    "MLW": 0.628,
+    "MLLW": 0.569,
+    "GT": 2.586,
+    "MN": 2.422,
+    "DHQ": 0.105,
+    "DLQ": 0.059,
+    "HWI": 2.08,
+    "LWI": 7.85
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.0047279596,
-    "HAT": 3.965272,
-    "STND": 0,
-    "MHHW": 3.154,
-    "MHW": 3.05,
-    "DTL": 1.861,
-    "MTL": 1.839,
-    "MSL": 1.959,
-    "MLW": 0.628,
-    "MLLW": 0.569,
-    "GT": 2.586,
-    "MN": 2.422,
-    "DHQ": 0.105,
-    "DLQ": 0.059,
-    "HWI": 2.08,
-    "LWI": 7.85
-  },
-  "disclaimers": ""
+  ]
 }

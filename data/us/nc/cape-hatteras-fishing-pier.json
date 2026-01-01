@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-cape-hatteras-fishing-pier",
+  "id": "us/nc/cape-hatteras-fishing-pier",
   "name": "CAPE HATTERAS FISHING PIER",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.2233,
   "longitude": -75.635,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8654400",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8654400",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8654400.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8654400"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.6489999,
+    "HAT": 2.393,
+    "STND": 0,
+    "MHHW": 2.017,
+    "MHW": 1.908,
+    "DTL": 1.489,
+    "MTL": 1.452,
+    "MSL": 1.453,
+    "MLW": 0.997,
+    "MLLW": 0.961,
+    "GT": 1.056,
+    "MN": 0.911,
+    "DHQ": 0.11,
+    "DLQ": 0.036,
+    "HWI": 12.18,
+    "LWI": 5.97,
+    "NAVD88": 1.588
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.6489999,
-    "HAT": 2.393,
-    "STND": 0,
-    "MHHW": 2.017,
-    "MHW": 1.908,
-    "DTL": 1.489,
-    "MTL": 1.452,
-    "MSL": 1.453,
-    "MLW": 0.997,
-    "MLLW": 0.961,
-    "GT": 1.056,
-    "MN": 0.911,
-    "DHQ": 0.11,
-    "DLQ": 0.036,
-    "HWI": 12.18,
-    "LWI": 5.97,
-    "NAVD88": 1.588
-  },
-  "disclaimers": ""
+  ]
 }

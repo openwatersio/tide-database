@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-east-bay-tampa-bay",
+  "id": "us/fl/east-bay-tampa-bay",
   "name": "East Bay, Tampa Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.923099517822266,
   "longitude": -82.42140197753906,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726674",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726674",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726674.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726674"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.29600003,
+    "HAT": 1.106,
+    "STND": 0,
+    "MHHW": 0.864,
+    "MHW": 0.761,
+    "DTL": 0.456,
+    "MTL": 0.485,
+    "MSL": 0.494,
+    "MLW": 0.209,
+    "MLLW": 0.048,
+    "GT": 0.816,
+    "MN": 0.551,
+    "DHQ": 0.103,
+    "DLQ": 0.161,
+    "NAVD88": 0.604
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.29600003,
-    "HAT": 1.106,
-    "STND": 0,
-    "MHHW": 0.864,
-    "MHW": 0.761,
-    "DTL": 0.456,
-    "MTL": 0.485,
-    "MSL": 0.494,
-    "MLW": 0.209,
-    "MLLW": 0.048,
-    "GT": 0.816,
-    "MN": 0.551,
-    "DHQ": 0.103,
-    "DLQ": 0.161,
-    "NAVD88": 0.604
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-false-bay-chatham-strait",
+  "id": "us/ak/false-bay-chatham-strait",
   "name": "False Bay, Chatham Strait",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.9667,
   "longitude": -134.935,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452328",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452328",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452328.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452328"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.1899998,
+    "HAT": 5.918,
+    "STND": 0,
+    "MHHW": 4.786,
+    "MHW": 4.503,
+    "DTL": 2.488,
+    "MTL": 2.59,
+    "MSL": 2.614,
+    "MLW": 0.678,
+    "MLLW": 0.189,
+    "GT": 4.597,
+    "MN": 3.825,
+    "DHQ": 0.283,
+    "DLQ": 0.488,
+    "HWI": 9.777,
+    "LWI": 3.562
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.1899998,
-    "HAT": 5.918,
-    "STND": 0,
-    "MHHW": 4.786,
-    "MHW": 4.503,
-    "DTL": 2.488,
-    "MTL": 2.59,
-    "MSL": 2.614,
-    "MLW": 0.678,
-    "MLLW": 0.189,
-    "GT": 4.597,
-    "MN": 3.825,
-    "DHQ": 0.283,
-    "DLQ": 0.488,
-    "HWI": 9.777,
-    "LWI": 3.562
-  },
-  "disclaimers": ""
+  ]
 }

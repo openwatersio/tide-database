@@ -1,10 +1,9 @@
 {
-  "id": "us-pa-marcus-hook-pa",
+  "id": "us/pa/marcus-hook-pa",
   "name": "Marcus Hook, Pa.",
-  "continent": "North America",
-  "country": "United States",
   "region": "PA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.81180555555556,
   "longitude": -75.4095,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8540433",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8540433",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8540433.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8540433"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.3480005,
+    "HAT": 8.832001,
+    "STND": 0,
+    "MHHW": 8.479,
+    "MHW": 8.365,
+    "DTL": 7.539,
+    "MTL": 7.509,
+    "MSL": 7.556,
+    "MLW": 6.653,
+    "MLLW": 6.598,
+    "GT": 1.88,
+    "MN": 1.713,
+    "DHQ": 0.114,
+    "DLQ": 0.054,
+    "HWI": 4.854,
+    "LWI": 12.125,
+    "NAVD88": 7.506
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 305.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.3480005,
-    "HAT": 8.832001,
-    "STND": 0,
-    "MHHW": 8.479,
-    "MHW": 8.365,
-    "DTL": 7.539,
-    "MTL": 7.509,
-    "MSL": 7.556,
-    "MLW": 6.653,
-    "MLLW": 6.598,
-    "GT": 1.88,
-    "MN": 1.713,
-    "DHQ": 0.114,
-    "DLQ": 0.054,
-    "HWI": 4.854,
-    "LWI": 12.125,
-    "NAVD88": 7.506
-  },
-  "disclaimers": ""
+  ]
 }

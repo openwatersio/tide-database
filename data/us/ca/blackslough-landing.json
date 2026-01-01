@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-blackslough-landing",
+  "id": "us/ca/blackslough-landing",
   "name": "Blackslough Landing",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.994998931884766,
   "longitude": -121.41999816894531,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415021",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415021",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415021.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415021"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 99.937004,
+    "HAT": 101.607,
+    "STND": 0,
+    "MHHW": 101.334,
+    "MHW": 101.196,
+    "DTL": 100.78,
+    "MTL": 100.78,
+    "MSL": 100.786,
+    "MLW": 100.363,
+    "MLLW": 100.225,
+    "GT": 1.108,
+    "MN": 0.832,
+    "DHQ": 0.138,
+    "DLQ": 0.138,
+    "HWI": 1.344,
+    "LWI": 7.725
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 99.937004,
-    "HAT": 101.607,
-    "STND": 0,
-    "MHHW": 101.334,
-    "MHW": 101.196,
-    "DTL": 100.78,
-    "MTL": 100.78,
-    "MSL": 100.786,
-    "MLW": 100.363,
-    "MLLW": 100.225,
-    "GT": 1.108,
-    "MN": 0.832,
-    "DHQ": 0.138,
-    "DLQ": 0.138,
-    "HWI": 1.344,
-    "LWI": 7.725
-  },
-  "disclaimers": ""
+  ]
 }

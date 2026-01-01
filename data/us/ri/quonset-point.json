@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-quonset-point",
+  "id": "us/ri/quonset-point",
   "name": "Quonset Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.58679962158203,
   "longitude": -71.41100311279297,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8454049",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454049",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8454049.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454049"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.698,
+    "HAT": 8.671,
+    "STND": 0,
+    "MHHW": 8.266,
+    "MHW": 8.191,
+    "DTL": 7.64,
+    "MTL": 7.627,
+    "MSL": 7.582,
+    "MLW": 7.062,
+    "MLLW": 7.015,
+    "GT": 1.251,
+    "MN": 1.128,
+    "DHQ": 0.075,
+    "DLQ": 0.047,
+    "HWI": 0.374,
+    "LWI": 5.884,
+    "NAVD88": 7.695
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 191.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.698,
-    "HAT": 8.671,
-    "STND": 0,
-    "MHHW": 8.266,
-    "MHW": 8.191,
-    "DTL": 7.64,
-    "MTL": 7.627,
-    "MSL": 7.582,
-    "MLW": 7.062,
-    "MLLW": 7.015,
-    "GT": 1.251,
-    "MN": 1.128,
-    "DHQ": 0.075,
-    "DLQ": 0.047,
-    "HWI": 0.374,
-    "LWI": 5.884,
-    "NAVD88": 7.695
-  },
-  "disclaimers": ""
+  ]
 }

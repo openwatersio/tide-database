@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-rahway-river-rr-bridge",
+  "id": "us/nj/rahway-river-rr-bridge",
   "name": "Rahway River, RR. Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.5983,
   "longitude": -74.2317,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8531077",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531077",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8531077.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531077"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nj-sandy-hook-fort-hancock",
+    "reference": "us/nj/sandy-hook-fort-hancock",
     "height": {
       "type": "ratio",
       "high": 1.14,

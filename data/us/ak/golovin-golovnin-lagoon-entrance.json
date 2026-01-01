@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-golovin-golovnin-lagoon-entrance",
+  "id": "us/ak/golovin-golovnin-lagoon-entrance",
   "name": "Golovin, Golovnin Lagoon Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 64.54630279541016,
   "longitude": -163.0316925048828,
   "timezone": "America/Nome",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9468793",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468793",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9468793.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468793"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.516,
+    "HAT": 8.389999,
+    "STND": 0,
+    "MHHW": 7.889,
+    "MHW": 7.865,
+    "DTL": 7.408,
+    "MTL": 7.401,
+    "MSL": 7.41,
+    "MLW": 6.938,
+    "MLLW": 6.927,
+    "GT": 0.962,
+    "MN": 0.927,
+    "DHQ": 0.024,
+    "DLQ": 0.011,
+    "NAVD88": 6.273
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.516,
-    "HAT": 8.389999,
-    "STND": 0,
-    "MHHW": 7.889,
-    "MHW": 7.865,
-    "DTL": 7.408,
-    "MTL": 7.401,
-    "MSL": 7.41,
-    "MLW": 6.938,
-    "MLLW": 6.927,
-    "GT": 0.962,
-    "MN": 0.927,
-    "DHQ": 0.024,
-    "DLQ": 0.011,
-    "NAVD88": 6.273
-  },
-  "disclaimers": ""
+  ]
 }

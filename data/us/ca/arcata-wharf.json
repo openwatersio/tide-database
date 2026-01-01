@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-arcata-wharf",
+  "id": "us/ca/arcata-wharf",
   "name": "Arcata Wharf",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.85,
   "longitude": -124.117,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9418851",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418851",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9418851.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418851"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-humboldt-bay-north-spit",
+    "reference": "us/ca/humboldt-bay-north-spit",
     "height": {
       "type": "fixed",
       "high": 0.03,

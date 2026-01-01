@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-humboldt-bay-north-spit",
+  "id": "us/ca/humboldt-bay-north-spit",
   "name": "HUMBOLDT BAY (North Spit)",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.76690555555555,
   "longitude": -124.2173444444445,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9418767",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418767",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9418767.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418767"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.70226,
+    "HAT": 7.12926,
+    "STND": 0,
+    "MHHW": 6.524,
+    "MHW": 6.307,
+    "DTL": 5.479,
+    "MTL": 5.562,
+    "MSL": 5.562,
+    "MLW": 4.817,
+    "MLLW": 4.434,
+    "GT": 2.09,
+    "MN": 1.49,
+    "DHQ": 0.216,
+    "DLQ": 0.384,
+    "HWI": 7.628,
+    "LWI": 1.184,
+    "NAVD88": 4.537
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 127.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.70226,
-    "HAT": 7.12926,
-    "STND": 0,
-    "MHHW": 6.524,
-    "MHW": 6.307,
-    "DTL": 5.479,
-    "MTL": 5.562,
-    "MSL": 5.562,
-    "MLW": 4.817,
-    "MLLW": 4.434,
-    "GT": 2.09,
-    "MN": 1.49,
-    "DHQ": 0.216,
-    "DLQ": 0.384,
-    "HWI": 7.628,
-    "LWI": 1.184,
-    "NAVD88": 4.537
-  },
-  "disclaimers": ""
+  ]
 }

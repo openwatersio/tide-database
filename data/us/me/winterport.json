@@ -1,10 +1,9 @@
 {
-  "id": "us-me-winterport",
+  "id": "us/me/winterport",
   "name": "Winterport",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.63669967651367,
   "longitude": -68.8416976928711,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8414781",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414781",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8414781.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414781"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 4.448,
+    "MHW": 4.309,
+    "DTL": 2.534,
+    "MTL": 2.517,
+    "MSL": 2.508,
+    "MLW": 0.725,
+    "MLLW": 0.62,
+    "GT": 3.829,
+    "MN": 3.583,
+    "DHQ": 0.14,
+    "DLQ": 0.106,
+    "HWI": 3.135,
+    "LWI": 9.587
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 4.448,
-    "MHW": 4.309,
-    "DTL": 2.534,
-    "MTL": 2.517,
-    "MSL": 2.508,
-    "MLW": 0.725,
-    "MLLW": 0.62,
-    "GT": 3.829,
-    "MN": 3.583,
-    "DHQ": 0.14,
-    "DLQ": 0.106,
-    "HWI": 3.135,
-    "LWI": 9.587
-  },
-  "disclaimers": ""
+  ]
 }

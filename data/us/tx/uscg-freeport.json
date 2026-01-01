@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-uscg-freeport",
+  "id": "us/tx/uscg-freeport",
   "name": "USCG Freeport",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.94330555555555,
   "longitude": -95.3025,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8772447",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8772447",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8772447.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8772447"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.017,
+    "HAT": 9.184999,
+    "STND": 0,
+    "MHHW": 8.923,
+    "MHW": 8.88,
+    "DTL": 8.672,
+    "MTL": 8.69,
+    "MSL": 8.695,
+    "MLW": 8.499,
+    "MLLW": 8.421,
+    "GT": 0.502,
+    "MN": 0.381,
+    "DHQ": 0.042,
+    "DLQ": 0.078,
+    "NAVD88": 8.605
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 186.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.017,
-    "HAT": 9.184999,
-    "STND": 0,
-    "MHHW": 8.923,
-    "MHW": 8.88,
-    "DTL": 8.672,
-    "MTL": 8.69,
-    "MSL": 8.695,
-    "MLW": 8.499,
-    "MLLW": 8.421,
-    "GT": 0.502,
-    "MN": 0.381,
-    "DHQ": 0.042,
-    "DLQ": 0.078,
-    "NAVD88": 8.605
-  },
-  "disclaimers": ""
+  ]
 }

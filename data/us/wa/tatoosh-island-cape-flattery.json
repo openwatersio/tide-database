@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-tatoosh-island-cape-flattery",
+  "id": "us/wa/tatoosh-island-cape-flattery",
   "name": "Tatoosh Island, Cape Flattery",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.391700744628906,
   "longitude": -124.73699951171875,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9442971",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9442971",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9442971.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9442971"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-neah-bay",
+    "reference": "us/wa/neah-bay",
     "height": {
       "type": "ratio",
       "high": 1.01,

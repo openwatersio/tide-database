@@ -1,10 +1,9 @@
 {
-  "id": "us-ifalik-atoll",
+  "id": "us/ifalik-atoll",
   "name": "Ifalik Atoll",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 7.25,
   "longitude": 144.45,
   "timezone": "Pacific/Chuuk",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2647",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2647",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2647.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2647"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-apra-harbor-guam",
+    "reference": "us/apra-harbor-guam",
     "height": {
       "type": "ratio",
       "high": 1,

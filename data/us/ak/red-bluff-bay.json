@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-red-bluff-bay",
+  "id": "us/ak/red-bluff-bay",
   "name": "Red Bluff Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.8567,
   "longitude": -134.723,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451467",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451467",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451467.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451467"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.3390002,
+    "HAT": 8.444,
+    "STND": 0,
+    "MHHW": 7.464,
+    "MHW": 7.191,
+    "DTL": 5.512,
+    "MTL": 5.608,
+    "MSL": 5.629,
+    "MLW": 4.026,
+    "MLLW": 3.56,
+    "GT": 3.904,
+    "MN": 3.165,
+    "DHQ": 0.273,
+    "DLQ": 0.465,
+    "HWI": 9.7,
+    "LWI": 3.53
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.3390002,
-    "HAT": 8.444,
-    "STND": 0,
-    "MHHW": 7.464,
-    "MHW": 7.191,
-    "DTL": 5.512,
-    "MTL": 5.608,
-    "MSL": 5.629,
-    "MLW": 4.026,
-    "MLLW": 3.56,
-    "GT": 3.904,
-    "MN": 3.165,
-    "DHQ": 0.273,
-    "DLQ": 0.465,
-    "HWI": 9.7,
-    "LWI": 3.53
-  },
-  "disclaimers": ""
+  ]
 }

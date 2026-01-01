@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-dennis-creek-2-5-n-mi-above-entrance",
+  "id": "us/nj/dennis-creek-2-5-n-mi-above-entrance",
   "name": "Dennis Creek, 2.5 n.mi. above entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.1783,
   "longitude": -74.8517,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8536736",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536736",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8536736.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536736"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-de-lewes-breakwater-harbor",
+    "reference": "us/de/lewes-breakwater-harbor",
     "height": {
       "type": "ratio",
       "high": 1.26,

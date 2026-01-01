@@ -1,10 +1,9 @@
 {
-  "id": "us-de-lewes-breakwater-harbor",
+  "id": "us/de/lewes-breakwater-harbor",
   "name": "LEWES (BREAKWATER HARBOR)",
-  "continent": "North America",
-  "country": "United States",
   "region": "DE",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.78283333333334,
   "longitude": -75.11927777777778,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8557380",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8557380",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8557380.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8557380"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.48497796,
+    "HAT": 2.6279778,
+    "STND": 0,
+    "MHHW": 2.266,
+    "MHW": 2.138,
+    "DTL": 1.557,
+    "MTL": 1.517,
+    "MSL": 1.528,
+    "MLW": 0.896,
+    "MLLW": 0.848,
+    "GT": 1.418,
+    "MN": 1.242,
+    "DHQ": 0.128,
+    "DLQ": 0.048,
+    "HWI": 1.135,
+    "LWI": 7.148,
+    "NAVD88": 1.649
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 274.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.48497796,
-    "HAT": 2.6279778,
-    "STND": 0,
-    "MHHW": 2.266,
-    "MHW": 2.138,
-    "DTL": 1.557,
-    "MTL": 1.517,
-    "MSL": 1.528,
-    "MLW": 0.896,
-    "MLLW": 0.848,
-    "GT": 1.418,
-    "MN": 1.242,
-    "DHQ": 0.128,
-    "DLQ": 0.048,
-    "HWI": 1.135,
-    "LWI": 7.148,
-    "NAVD88": 1.649
-  },
-  "disclaimers": ""
+  ]
 }

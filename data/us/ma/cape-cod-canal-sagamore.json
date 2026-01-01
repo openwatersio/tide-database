@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-cape-cod-canal-sagamore",
+  "id": "us/ma/cape-cod-canal-sagamore",
   "name": "Cape Cod Canal, Sagamore",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.775,
   "longitude": -70.535,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447173",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447173",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447173.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447173"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.339,
+    "HAT": 3.3569999,
+    "STND": 0,
+    "MHHW": 2.806,
+    "MHW": 2.687,
+    "DTL": 1.497,
+    "MTL": 1.483,
+    "MSL": 1.533,
+    "MLW": 0.28,
+    "MLLW": 0.188,
+    "GT": 2.618,
+    "MN": 2.407,
+    "DHQ": 0.119,
+    "DLQ": 0.091,
+    "HWI": 3.488,
+    "LWI": 9.808
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.339,
-    "HAT": 3.3569999,
-    "STND": 0,
-    "MHHW": 2.806,
-    "MHW": 2.687,
-    "DTL": 1.497,
-    "MTL": 1.483,
-    "MSL": 1.533,
-    "MLW": 0.28,
-    "MLLW": 0.188,
-    "GT": 2.618,
-    "MN": 2.407,
-    "DHQ": 0.119,
-    "DLQ": 0.091,
-    "HWI": 3.488,
-    "LWI": 9.808
-  },
-  "disclaimers": ""
+  ]
 }

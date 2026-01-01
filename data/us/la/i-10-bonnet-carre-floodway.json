@@ -1,10 +1,9 @@
 {
-  "id": "us-la-i-10-bonnet-carre-floodway",
+  "id": "us/la/i-10-bonnet-carre-floodway",
   "name": "I-10 BONNET CARRE FLOODWAY",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.067899703979492,
   "longitude": -90.38999938964844,
   "timezone": "America/Chicago",
@@ -12,15 +11,14 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8762483",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762483",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8762483.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762483"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
-  "harmonic_constituents": [],
+  "disclaimers": "",
   "datums": {
     "LAT": -0.207,
     "HAT": 0.331,
@@ -37,5 +35,6 @@
     "DHQ": 0.001,
     "DLQ": 0
   },
-  "disclaimers": ""
+  "type": "reference",
+  "harmonic_constituents": []
 }

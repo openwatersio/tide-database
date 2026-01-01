@@ -1,10 +1,9 @@
 {
-  "id": "us-va-chincoteague-island-blake-cove",
+  "id": "us/va/chincoteague-island-blake-cove",
   "name": "Chincoteague Island, Blake Cove",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.9517,
   "longitude": -75.355,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8630194",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630194",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8630194.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630194"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-ocean-city-fishing-pier",
+    "reference": "us/md/ocean-city-fishing-pier",
     "height": {
       "type": "ratio",
       "high": 0.28,

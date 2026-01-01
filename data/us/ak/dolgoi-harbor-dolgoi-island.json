@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-dolgoi-harbor-dolgoi-island",
+  "id": "us/ak/dolgoi-harbor-dolgoi-island",
   "name": "Dolgoi Harbor, Dolgoi Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.121700286865234,
   "longitude": -161.79200744628906,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459758",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459758",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459758.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459758"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.399,
+    "HAT": 8.968,
+    "STND": 0,
+    "MHHW": 8.271,
+    "MHW": 8.068,
+    "DTL": 7.237,
+    "MTL": 7.335,
+    "MSL": 7.317,
+    "MLW": 6.603,
+    "MLLW": 6.203,
+    "GT": 2.067,
+    "MN": 1.464,
+    "DHQ": 0.203,
+    "DLQ": 0.4,
+    "HWI": 11.394,
+    "LWI": 4.962
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.399,
-    "HAT": 8.968,
-    "STND": 0,
-    "MHHW": 8.271,
-    "MHW": 8.068,
-    "DTL": 7.237,
-    "MTL": 7.335,
-    "MSL": 7.317,
-    "MLW": 6.603,
-    "MLLW": 6.203,
-    "GT": 2.067,
-    "MN": 1.464,
-    "DHQ": 0.203,
-    "DLQ": 0.4,
-    "HWI": 11.394,
-    "LWI": 4.962
-  },
-  "disclaimers": ""
+  ]
 }

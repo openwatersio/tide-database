@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-harris-the-narrows",
+  "id": "us/fl/harris-the-narrows",
   "name": "Harris, The Narrows",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.4083,
   "longitude": -86.7317,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729613",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729613",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729613.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729613"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-pensacola",
+    "reference": "us/fl/pensacola",
     "height": {
       "type": "ratio",
       "high": 1.1,

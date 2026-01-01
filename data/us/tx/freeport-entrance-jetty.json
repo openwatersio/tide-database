@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-freeport-entrance-jetty",
+  "id": "us/tx/freeport-entrance-jetty",
   "name": "Freeport Entrance Jetty",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.930299758911133,
   "longitude": -95.30590057373047,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8772479",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8772479",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8772479.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8772479"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.468,
+    "HAT": 7.643,
+    "STND": 0,
+    "MHHW": 7.39,
+    "MHW": 7.348,
+    "DTL": 7.13,
+    "MTL": 7.143,
+    "MSL": 7.151,
+    "MLW": 6.938,
+    "MLLW": 6.869,
+    "GT": 0.521,
+    "MN": 0.41,
+    "DHQ": 0.042,
+    "DLQ": 0.068,
+    "NAVD88": 6.98
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 176.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.468,
-    "HAT": 7.643,
-    "STND": 0,
-    "MHHW": 7.39,
-    "MHW": 7.348,
-    "DTL": 7.13,
-    "MTL": 7.143,
-    "MSL": 7.151,
-    "MLW": 6.938,
-    "MLLW": 6.869,
-    "GT": 0.521,
-    "MN": 0.41,
-    "DHQ": 0.042,
-    "DLQ": 0.068,
-    "NAVD88": 6.98
-  },
-  "disclaimers": ""
+  ]
 }

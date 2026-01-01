@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-bangor-wharf",
+  "id": "us/wa/bangor-wharf",
   "name": "Bangor Wharf",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.7483,
   "longitude": -122.727,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9445133",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445133",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9445133.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445133"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.57500005,
+    "HAT": 4.762,
+    "STND": 0,
+    "MHHW": 4.205,
+    "MHW": 3.934,
+    "DTL": 2.518,
+    "MTL": 2.821,
+    "MSL": 2.809,
+    "MLW": 1.708,
+    "MLLW": 0.831,
+    "GT": 3.374,
+    "MN": 2.226,
+    "DHQ": 0.271,
+    "DLQ": 0.877,
+    "HWI": 0.182,
+    "LWI": 6.561
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 88,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.57500005,
-    "HAT": 4.762,
-    "STND": 0,
-    "MHHW": 4.205,
-    "MHW": 3.934,
-    "DTL": 2.518,
-    "MTL": 2.821,
-    "MSL": 2.809,
-    "MLW": 1.708,
-    "MLLW": 0.831,
-    "GT": 3.374,
-    "MN": 2.226,
-    "DHQ": 0.271,
-    "DLQ": 0.877,
-    "HWI": 0.182,
-    "LWI": 6.561
-  },
-  "disclaimers": ""
+  ]
 }

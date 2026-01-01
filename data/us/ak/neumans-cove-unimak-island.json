@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-neumans-cove-unimak-island",
+  "id": "us/ak/neumans-cove-unimak-island",
   "name": "Neumans Cove, Unimak Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.9667,
   "longitude": -163.44,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462948",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462948",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462948.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462948"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.598,
+    "HAT": 1.8959999,
+    "STND": 0,
+    "MHHW": 1.401,
+    "MHW": 1.325,
+    "DTL": 0.746,
+    "MTL": 0.886,
+    "MSL": 0.879,
+    "MLW": 0.446,
+    "MLLW": 0.092,
+    "GT": 1.309,
+    "MN": 0.879,
+    "DHQ": 0.076,
+    "DLQ": 0.354
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.598,
-    "HAT": 1.8959999,
-    "STND": 0,
-    "MHHW": 1.401,
-    "MHW": 1.325,
-    "DTL": 0.746,
-    "MTL": 0.886,
-    "MSL": 0.879,
-    "MLW": 0.446,
-    "MLLW": 0.092,
-    "GT": 1.309,
-    "MN": 0.879,
-    "DHQ": 0.076,
-    "DLQ": 0.354
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-muir-inlet",
+  "id": "us/ak/muir-inlet",
   "name": "Muir Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.9133,
   "longitude": -136.108,
   "timezone": "America/Juneau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452584",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452584",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452584.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452584"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-elfin-cove-port-althorp",
+    "reference": "us/ak/elfin-cove-port-althorp",
     "height": {
       "type": "ratio",
       "high": 1.55,

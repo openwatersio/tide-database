@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-little-talbot-island-ocean",
+  "id": "us/fl/little-talbot-island-ocean",
   "name": "Little Talbot Island, ocean",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.43,
   "longitude": -81.405,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720194",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720194",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720194.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720194"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-fernandina-beach-amelia-river",
+    "reference": "us/fl/fernandina-beach-amelia-river",
     "height": {
       "type": "ratio",
       "high": 0.91,

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-fernandina-beach-amelia-river",
+  "id": "us/fl/fernandina-beach-amelia-river",
   "name": "Fernandina Beach, Amelia River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.67135555555556,
   "longitude": -81.46584166666666,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720030",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720030",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720030.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720030"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.008999944,
+    "HAT": 3.039,
+    "STND": 0,
+    "MHHW": 2.517,
+    "MHW": 2.41,
+    "DTL": 1.517,
+    "MTL": 1.493,
+    "MSL": 1.522,
+    "MLW": 0.575,
+    "MLLW": 0.518,
+    "GT": 1.999,
+    "MN": 1.834,
+    "DHQ": 0.107,
+    "DLQ": 0.057,
+    "HWI": 1.36,
+    "LWI": 7.26,
+    "NAVD88": 1.683
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 295.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.008999944,
-    "HAT": 3.039,
-    "STND": 0,
-    "MHHW": 2.517,
-    "MHW": 2.41,
-    "DTL": 1.517,
-    "MTL": 1.493,
-    "MSL": 1.522,
-    "MLW": 0.575,
-    "MLLW": 0.518,
-    "GT": 1.999,
-    "MN": 1.834,
-    "DHQ": 0.107,
-    "DLQ": 0.057,
-    "HWI": 1.36,
-    "LWI": 7.26,
-    "NAVD88": 1.683
-  },
-  "disclaimers": ""
+  ]
 }

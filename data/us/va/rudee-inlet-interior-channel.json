@@ -1,10 +1,9 @@
 {
-  "id": "us-va-rudee-inlet-interior-channel",
+  "id": "us/va/rudee-inlet-interior-channel",
   "name": "Rudee Inlet, interior channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.8317,
   "longitude": -75.9733,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8639207",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8639207",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8639207.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8639207"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.46899998,
+    "HAT": 2.255,
+    "STND": 0,
+    "MHHW": 1.903,
+    "MHW": 1.815,
+    "DTL": 1.338,
+    "MTL": 1.314,
+    "MSL": 1.319,
+    "MLW": 0.812,
+    "MLLW": 0.772,
+    "GT": 1.131,
+    "MN": 1.003,
+    "DHQ": 0.088,
+    "DLQ": 0.04,
+    "HWI": 0.096,
+    "LWI": 6.346
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 159.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.46899998,
-    "HAT": 2.255,
-    "STND": 0,
-    "MHHW": 1.903,
-    "MHW": 1.815,
-    "DTL": 1.338,
-    "MTL": 1.314,
-    "MSL": 1.319,
-    "MLW": 0.812,
-    "MLLW": 0.772,
-    "GT": 1.131,
-    "MN": 1.003,
-    "DHQ": 0.088,
-    "DLQ": 0.04,
-    "HWI": 0.096,
-    "LWI": 6.346
-  },
-  "disclaimers": ""
+  ]
 }

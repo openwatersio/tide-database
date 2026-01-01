@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-buffalo-bayou-houston-ship-channel",
+  "id": "us/tx/buffalo-bayou-houston-ship-channel",
   "name": "Buffalo Bayou, Houston Ship Channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.761899948120117,
   "longitude": -95.34429931640625,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770542",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770542",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770542.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770542"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.9500003,
+    "HAT": 9.081,
+    "STND": 0,
+    "MHHW": 8.891,
+    "MHW": 8.849,
+    "DTL": 8.637,
+    "MTL": 8.651,
+    "MSL": 8.656,
+    "MLW": 8.452,
+    "MLLW": 8.383,
+    "GT": 0.508,
+    "MN": 0.397,
+    "DHQ": 0.042,
+    "DLQ": 0.07,
+    "NAVD88": 8.3
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 87.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.9500003,
-    "HAT": 9.081,
-    "STND": 0,
-    "MHHW": 8.891,
-    "MHW": 8.849,
-    "DTL": 8.637,
-    "MTL": 8.651,
-    "MSL": 8.656,
-    "MLW": 8.452,
-    "MLLW": 8.383,
-    "GT": 0.508,
-    "MN": 0.397,
-    "DHQ": 0.042,
-    "DLQ": 0.07,
-    "NAVD88": 8.3
-  },
-  "disclaimers": ""
+  ]
 }

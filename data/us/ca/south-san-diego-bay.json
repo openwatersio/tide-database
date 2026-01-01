@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-south-san-diego-bay",
+  "id": "us/ca/south-san-diego-bay",
   "name": "South San Diego Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.62910079956055,
   "longitude": -117.10780334472656,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410135",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410135",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410135.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410135"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.494,
+    "HAT": 8.571,
+    "STND": 0,
+    "MHHW": 7.948,
+    "MHW": 7.722,
+    "DTL": 7.045,
+    "MTL": 7.076,
+    "MSL": 7.073,
+    "MLW": 6.429,
+    "MLLW": 6.142,
+    "GT": 1.807,
+    "MN": 1.293,
+    "DHQ": 0.226,
+    "DLQ": 0.287,
+    "HWI": 5.059,
+    "LWI": 11.2
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.494,
-    "HAT": 8.571,
-    "STND": 0,
-    "MHHW": 7.948,
-    "MHW": 7.722,
-    "DTL": 7.045,
-    "MTL": 7.076,
-    "MSL": 7.073,
-    "MLW": 6.429,
-    "MLLW": 6.142,
-    "GT": 1.807,
-    "MN": 1.293,
-    "DHQ": 0.226,
-    "DLQ": 0.287,
-    "HWI": 5.059,
-    "LWI": 11.2
-  },
-  "disclaimers": ""
+  ]
 }

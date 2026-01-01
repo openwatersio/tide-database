@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-berkeley",
+  "id": "us/ca/berkeley",
   "name": "Berkeley",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.8650016784668,
   "longitude": -122.30699920654297,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414816",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414816",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414816.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414816"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.803,
+    "HAT": 3.8189998,
+    "STND": 0,
+    "MHHW": 3.348,
+    "MHW": 3.16,
+    "DTL": 2.418,
+    "MTL": 2.498,
+    "MSL": 2.488,
+    "MLW": 1.835,
+    "MLLW": 1.488,
+    "GT": 1.861,
+    "MN": 1.324,
+    "DHQ": 0.189,
+    "DLQ": 0.348,
+    "HWI": 7.89,
+    "LWI": 1.313,
+    "NAVD88": 1.448
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.803,
-    "HAT": 3.8189998,
-    "STND": 0,
-    "MHHW": 3.348,
-    "MHW": 3.16,
-    "DTL": 2.418,
-    "MTL": 2.498,
-    "MSL": 2.488,
-    "MLW": 1.835,
-    "MLLW": 1.488,
-    "GT": 1.861,
-    "MN": 1.324,
-    "DHQ": 0.189,
-    "DLQ": 0.348,
-    "HWI": 7.89,
-    "LWI": 1.313,
-    "NAVD88": 1.448
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-pass-a-grille-beach",
+  "id": "us/pass-a-grille-beach",
   "name": "Pass-a-Grille Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.683333333332993,
   "longitude": -82.733333333333,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4271",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4271",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4271.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4271"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-st-petersburg",
+    "reference": "us/fl/st-petersburg",
     "height": {
       "type": "ratio",
       "high": 0.87,

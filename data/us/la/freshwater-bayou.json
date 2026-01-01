@@ -1,10 +1,9 @@
 {
-  "id": "us-la-freshwater-bayou",
+  "id": "us/la/freshwater-bayou",
   "name": "Freshwater Bayou",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.655399322509766,
   "longitude": -92.25070190429688,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8765969",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765969",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8765969.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765969"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 9.352,
+    "HAT": 9.766001,
+    "STND": 0,
+    "MHHW": 9.721,
+    "MHW": 9.704,
+    "DTL": 9.592,
+    "MTL": 9.599,
+    "MSL": 9.6,
+    "MLW": 9.495,
+    "MLLW": 9.463,
+    "GT": 0.257,
+    "MN": 0.209,
+    "DHQ": 0.017,
+    "DLQ": 0.031,
+    "NAVD88": 9.592
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.352,
-    "HAT": 9.766001,
-    "STND": 0,
-    "MHHW": 9.721,
-    "MHW": 9.704,
-    "DTL": 9.592,
-    "MTL": 9.599,
-    "MSL": 9.6,
-    "MLW": 9.495,
-    "MLLW": 9.463,
-    "GT": 0.257,
-    "MN": 0.209,
-    "DHQ": 0.017,
-    "DLQ": 0.031,
-    "NAVD88": 9.592
-  },
-  "disclaimers": ""
+  ]
 }

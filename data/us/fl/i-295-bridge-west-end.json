@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-i-295-bridge-west-end",
+  "id": "us/fl/i-295-bridge-west-end",
   "name": "I-295 bridge (west end)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.19241666666667,
   "longitude": -81.68888888888888,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720357",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720357",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720357.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720357"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.375,
+    "HAT": 0.36800003,
+    "STND": 0,
+    "MHHW": 0.117,
+    "MHW": 0.102,
+    "DTL": -0.036,
+    "MTL": -0.032,
+    "MSL": -0.036,
+    "MLW": -0.166,
+    "MLLW": -0.191,
+    "GT": 0.309,
+    "MN": 0.269,
+    "DHQ": 0.016,
+    "DLQ": 0.025,
+    "HWI": 4.045,
+    "LWI": 10.678,
+    "NAVD88": -0.002
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 316.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.375,
-    "HAT": 0.36800003,
-    "STND": 0,
-    "MHHW": 0.117,
-    "MHW": 0.102,
-    "DTL": -0.036,
-    "MTL": -0.032,
-    "MSL": -0.036,
-    "MLW": -0.166,
-    "MLLW": -0.191,
-    "GT": 0.309,
-    "MN": 0.269,
-    "DHQ": 0.016,
-    "DLQ": 0.025,
-    "HWI": 4.045,
-    "LWI": 10.678,
-    "NAVD88": -0.002
-  },
-  "disclaimers": ""
+  ]
 }

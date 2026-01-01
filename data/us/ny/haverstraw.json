@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-haverstraw",
+  "id": "us/ny/haverstraw",
   "name": "Haverstraw",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.2183,
   "longitude": -73.9633,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518924",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518924",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518924.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518924"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.714,
+    "HAT": 3.336,
+    "STND": 0,
+    "MHHW": 3.047,
+    "MHW": 2.962,
+    "DTL": 2.487,
+    "MTL": 2.47,
+    "MSL": 2.477,
+    "MLW": 1.979,
+    "MLLW": 1.927,
+    "GT": 1.12,
+    "MN": 0.983,
+    "DHQ": 0.085,
+    "DLQ": 0.052,
+    "HWI": 3.07,
+    "LWI": 9.91,
+    "NAVD88": 2.427
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 161.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.714,
-    "HAT": 3.336,
-    "STND": 0,
-    "MHHW": 3.047,
-    "MHW": 2.962,
-    "DTL": 2.487,
-    "MTL": 2.47,
-    "MSL": 2.477,
-    "MLW": 1.979,
-    "MLLW": 1.927,
-    "GT": 1.12,
-    "MN": 0.983,
-    "DHQ": 0.085,
-    "DLQ": 0.052,
-    "HWI": 3.07,
-    "LWI": 9.91,
-    "NAVD88": 2.427
-  },
-  "disclaimers": ""
+  ]
 }

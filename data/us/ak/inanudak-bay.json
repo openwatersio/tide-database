@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-inanudak-bay",
+  "id": "us/ak/inanudak-bay",
   "name": "Inanudak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 53.2967,
   "longitude": -168.352,
   "timezone": "America/Nome",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462408",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462408",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462408.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462408"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-unalaska",
+    "reference": "us/ak/unalaska",
     "height": {
       "type": "ratio",
       "high": 0.96,

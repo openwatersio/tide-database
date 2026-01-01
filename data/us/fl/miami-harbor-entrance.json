@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-miami-harbor-entrance",
+  "id": "us/fl/miami-harbor-entrance",
   "name": "Miami Harbor Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.7683,
   "longitude": -80.1317,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723170",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723170",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723170.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723170"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.48499995,
+    "HAT": 1.948,
+    "STND": 0,
+    "MHHW": 1.583,
+    "MHW": 1.558,
+    "DTL": 1.172,
+    "MTL": 1.183,
+    "MSL": 1.188,
+    "MLW": 0.809,
+    "MLLW": 0.76,
+    "GT": 0.823,
+    "MN": 0.75,
+    "DHQ": 0.025,
+    "DLQ": 0.049,
+    "HWI": 0.779,
+    "LWI": 6.929,
+    "NAVD88": 1.481
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.48499995,
-    "HAT": 1.948,
-    "STND": 0,
-    "MHHW": 1.583,
-    "MHW": 1.558,
-    "DTL": 1.172,
-    "MTL": 1.183,
-    "MSL": 1.188,
-    "MLW": 0.809,
-    "MLLW": 0.76,
-    "GT": 0.823,
-    "MN": 0.75,
-    "DHQ": 0.025,
-    "DLQ": 0.049,
-    "HWI": 0.779,
-    "LWI": 6.929,
-    "NAVD88": 1.481
-  },
-  "disclaimers": ""
+  ]
 }

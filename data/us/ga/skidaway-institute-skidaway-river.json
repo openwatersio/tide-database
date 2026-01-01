@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-skidaway-institute-skidaway-river",
+  "id": "us/ga/skidaway-institute-skidaway-river",
   "name": "Skidaway Institute, Skidaway River",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.99,
   "longitude": -81.0233,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8671086",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671086",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8671086.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671086"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.7582719,
+    "HAT": 5.523272,
+    "STND": 0,
+    "MHHW": 4.88,
+    "MHW": 4.759,
+    "DTL": 3.604,
+    "MTL": 3.581,
+    "MSL": 3.629,
+    "MLW": 2.403,
+    "MLLW": 2.328,
+    "GT": 2.552,
+    "MN": 2.356,
+    "DHQ": 0.122,
+    "DLQ": 0.075,
+    "HWI": 1.29,
+    "LWI": 7.12
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.7582719,
-    "HAT": 5.523272,
-    "STND": 0,
-    "MHHW": 4.88,
-    "MHW": 4.759,
-    "DTL": 3.604,
-    "MTL": 3.581,
-    "MSL": 3.629,
-    "MLW": 2.403,
-    "MLLW": 2.328,
-    "GT": 2.552,
-    "MN": 2.356,
-    "DHQ": 0.122,
-    "DLQ": 0.075,
-    "HWI": 1.29,
-    "LWI": 7.12
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-knapp-landing-willow-bar",
+  "id": "us/wa/knapp-landing-willow-bar",
   "name": "Knapp Landing, Willow Bar",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.74169921875,
   "longitude": -122.75499725341797,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440171",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440171",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440171.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440171"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.4050002,
+    "HAT": 4.84,
+    "STND": 0,
+    "MHHW": 4.582,
+    "MHW": 4.42,
+    "DTL": 4.103,
+    "MTL": 4.063,
+    "MSL": 4.038,
+    "MLW": 3.705,
+    "MLLW": 3.623,
+    "GT": 0.958,
+    "MN": 0.716,
+    "DHQ": 0.161,
+    "DLQ": 0.082,
+    "HWI": 0.956,
+    "LWI": 8.613,
+    "NAVD88": 1.498
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.4050002,
-    "HAT": 4.84,
-    "STND": 0,
-    "MHHW": 4.582,
-    "MHW": 4.42,
-    "DTL": 4.103,
-    "MTL": 4.063,
-    "MSL": 4.038,
-    "MLW": 3.705,
-    "MLLW": 3.623,
-    "GT": 0.958,
-    "MN": 0.716,
-    "DHQ": 0.161,
-    "DLQ": 0.082,
-    "HWI": 0.956,
-    "LWI": 8.613,
-    "NAVD88": 1.498
-  },
-  "disclaimers": ""
+  ]
 }

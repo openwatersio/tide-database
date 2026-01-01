@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-burrough-bay-behm-canal",
+  "id": "us/ak/burrough-bay-behm-canal",
   "name": "Burrough Bay, Behm Canal",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.0383,
   "longitude": -131.095,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450914",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450914",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450914.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450914"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -3.287749,
+    "HAT": 4.266251,
+    "STND": 0,
+    "MHHW": 3,
+    "MHW": 2.726,
+    "DTL": 0.577,
+    "MTL": 0.677,
+    "MSL": 0.671,
+    "MLW": -1.371,
+    "MLLW": -1.846,
+    "GT": 4.846,
+    "MN": 4.098,
+    "DHQ": 0.274,
+    "DLQ": 0.474,
+    "HWI": 9.4,
+    "LWI": 3.1
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -3.287749,
-    "HAT": 4.266251,
-    "STND": 0,
-    "MHHW": 3,
-    "MHW": 2.726,
-    "DTL": 0.577,
-    "MTL": 0.677,
-    "MSL": 0.671,
-    "MLW": -1.371,
-    "MLLW": -1.846,
-    "GT": 4.846,
-    "MN": 4.098,
-    "DHQ": 0.274,
-    "DLQ": 0.474,
-    "HWI": 9.4,
-    "LWI": 3.1
-  },
-  "disclaimers": ""
+  ]
 }

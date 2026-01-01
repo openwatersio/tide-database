@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-fort-mcree-breakwater",
+  "id": "us/fl/fort-mcree-breakwater",
   "name": "Fort McRee Breakwater",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.3267,
   "longitude": -87.3117,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729887",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729887",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729887.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729887"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-pensacola",
+    "reference": "us/fl/pensacola",
     "height": {
       "type": "ratio",
       "high": 0.8,

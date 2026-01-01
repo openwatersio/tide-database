@@ -1,10 +1,9 @@
 {
-  "id": "us-al-lower-bryant-landing",
+  "id": "us/al/lower-bryant-landing",
   "name": "Lower Bryant Landing",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.9783,
   "longitude": -87.8733,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8737373",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8737373",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8737373.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8737373"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.868,
+    "HAT": 6.914,
+    "STND": 0,
+    "MHHW": 6.657,
+    "MHW": 6.632,
+    "DTL": 6.389,
+    "MTL": 6.388,
+    "MSL": 6.403,
+    "MLW": 6.143,
+    "MLLW": 6.121,
+    "GT": 0.536,
+    "MN": 0.489,
+    "DHQ": 0.025,
+    "DLQ": 0.022
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.868,
-    "HAT": 6.914,
-    "STND": 0,
-    "MHHW": 6.657,
-    "MHW": 6.632,
-    "DTL": 6.389,
-    "MTL": 6.388,
-    "MSL": 6.403,
-    "MLW": 6.143,
-    "MLLW": 6.121,
-    "GT": 0.536,
-    "MN": 0.489,
-    "DHQ": 0.025,
-    "DLQ": 0.022
-  },
-  "disclaimers": ""
+  ]
 }

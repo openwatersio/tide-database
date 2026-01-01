@@ -1,10 +1,9 @@
 {
-  "id": "us-va-fort-eustis-marad",
+  "id": "us/va/fort-eustis-marad",
   "name": "Fort Eustis (MARAD)",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.13822222222223,
   "longitude": -76.62275,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638017",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638017",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638017.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638017"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.5639997,
+    "HAT": 8.74,
+    "STND": 0,
+    "MHHW": 8.503,
+    "MHW": 8.449,
+    "DTL": 8.119,
+    "MTL": 8.115,
+    "MSL": 8.124,
+    "MLW": 7.781,
+    "MLLW": 7.734,
+    "GT": 0.769,
+    "MN": 0.667,
+    "DHQ": 0.054,
+    "DLQ": 0.047,
+    "HWI": 3.291,
+    "LWI": 9.686
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.5639997,
-    "HAT": 8.74,
-    "STND": 0,
-    "MHHW": 8.503,
-    "MHW": 8.449,
-    "DTL": 8.119,
-    "MTL": 8.115,
-    "MSL": 8.124,
-    "MLW": 7.781,
-    "MLLW": 7.734,
-    "GT": 0.769,
-    "MN": 0.667,
-    "DHQ": 0.054,
-    "DLQ": 0.047,
-    "HWI": 3.291,
-    "LWI": 9.686
-  },
-  "disclaimers": ""
+  ]
 }

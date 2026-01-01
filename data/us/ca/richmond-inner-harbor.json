@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-richmond-inner-harbor",
+  "id": "us/ca/richmond-inner-harbor",
   "name": "Richmond Inner Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.91,
   "longitude": -122.358,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414849",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414849",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414849.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414849"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-san-francisco-golden-gate",
+    "reference": "us/ca/san-francisco-golden-gate",
     "height": {
       "type": "ratio",
       "high": 1.04,

@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-port-of-west-sacramento",
+  "id": "us/ca/port-of-west-sacramento",
   "name": "Port of West Sacramento",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.56224822998047,
   "longitude": -121.54630279541016,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9416131",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9416131",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9416131.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9416131"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.825,
+    "HAT": 6.898,
+    "STND": 0,
+    "MHHW": 6.549,
+    "MHW": 6.42,
+    "DTL": 5.885,
+    "MTL": 5.902,
+    "MSL": 5.882,
+    "MLW": 5.384,
+    "MLLW": 5.22,
+    "GT": 1.329,
+    "MN": 1.035,
+    "DHQ": 0.129,
+    "DLQ": 0.164,
+    "HWI": 0.564,
+    "LWI": 7.8,
+    "NAVD88": 4.576
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.825,
-    "HAT": 6.898,
-    "STND": 0,
-    "MHHW": 6.549,
-    "MHW": 6.42,
-    "DTL": 5.885,
-    "MTL": 5.902,
-    "MSL": 5.882,
-    "MLW": 5.384,
-    "MLLW": 5.22,
-    "GT": 1.329,
-    "MN": 1.035,
-    "DHQ": 0.129,
-    "DLQ": 0.164,
-    "HWI": 0.564,
-    "LWI": 7.8,
-    "NAVD88": 4.576
-  },
-  "disclaimers": ""
+  ]
 }

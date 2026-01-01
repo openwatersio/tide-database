@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-sewall-point",
+  "id": "us/fl/sewall-point",
   "name": "Sewall Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.174999237060547,
   "longitude": -80.18830108642578,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722371",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722371",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722371.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722371"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.681,
+    "HAT": 0.01700002,
+    "STND": 0,
+    "MHHW": -0.08,
+    "MHW": -0.127,
+    "DTL": -0.334,
+    "MTL": -0.334,
+    "MSL": -0.332,
+    "MLW": -0.541,
+    "MLLW": -0.588,
+    "GT": 0.508,
+    "MN": 0.413,
+    "DHQ": 0.047,
+    "DLQ": 0.047,
+    "HWI": 1.93,
+    "LWI": 8.322,
+    "NAVD88": 0.01
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 107.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.681,
-    "HAT": 0.01700002,
-    "STND": 0,
-    "MHHW": -0.08,
-    "MHW": -0.127,
-    "DTL": -0.334,
-    "MTL": -0.334,
-    "MSL": -0.332,
-    "MLW": -0.541,
-    "MLLW": -0.588,
-    "GT": 0.508,
-    "MN": 0.413,
-    "DHQ": 0.047,
-    "DLQ": 0.047,
-    "HWI": 1.93,
-    "LWI": 8.322,
-    "NAVD88": 0.01
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-beach-channel-bridge",
+  "id": "us/ny/beach-channel-bridge",
   "name": "Beach Channel (bridge)",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.5883,
   "longitude": -73.82,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8517137",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8517137",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8517137.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8517137"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.9639997,
+    "HAT": 7.641,
+    "STND": 0,
+    "MHHW": 7.229,
+    "MHW": 7.121,
+    "DTL": 6.313,
+    "MTL": 6.292,
+    "MSL": 6.29,
+    "MLW": 5.464,
+    "MLLW": 5.398,
+    "GT": 1.832,
+    "MN": 1.657,
+    "DHQ": 0.108,
+    "DLQ": 0.066,
+    "HWI": 0.574,
+    "LWI": 6.985
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 334.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.9639997,
-    "HAT": 7.641,
-    "STND": 0,
-    "MHHW": 7.229,
-    "MHW": 7.121,
-    "DTL": 6.313,
-    "MTL": 6.292,
-    "MSL": 6.29,
-    "MLW": 5.464,
-    "MLLW": 5.398,
-    "GT": 1.832,
-    "MN": 1.657,
-    "DHQ": 0.108,
-    "DLQ": 0.066,
-    "HWI": 0.574,
-    "LWI": 6.985
-  },
-  "disclaimers": ""
+  ]
 }

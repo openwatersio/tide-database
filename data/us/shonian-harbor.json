@@ -1,10 +1,9 @@
 {
-  "id": "us-shonian-harbor",
+  "id": "us/shonian-harbor",
   "name": "Shonian Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 7.050000190734863,
   "longitude": 134.26669311523438,
   "timezone": "Pacific/Palau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2631",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2631",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2631.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2631"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fm-malakal-harbor-palau-island",
+    "reference": "us/fm/malakal-harbor-palau-island",
     "height": {
       "type": "ratio",
       "high": 0.89,

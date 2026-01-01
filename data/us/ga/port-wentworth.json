@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-port-wentworth",
+  "id": "us/ga/port-wentworth",
   "name": "Port Wentworth",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.14330555555556,
   "longitude": -81.14169444444444,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8670424",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8670424",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8670424.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8670424"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.19799995,
+    "HAT": 3.777,
+    "STND": 0,
+    "MHHW": 3.024,
+    "MHW": 2.932,
+    "DTL": 1.706,
+    "MTL": 1.692,
+    "MSL": 1.813,
+    "MLW": 0.452,
+    "MLLW": 0.389,
+    "GT": 2.635,
+    "MN": 2.48,
+    "DHQ": 0.092,
+    "DLQ": 0.063,
+    "HWI": 1.245,
+    "LWI": 7.588,
+    "NAVD88": 1.786
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.19799995,
-    "HAT": 3.777,
-    "STND": 0,
-    "MHHW": 3.024,
-    "MHW": 2.932,
-    "DTL": 1.706,
-    "MTL": 1.692,
-    "MSL": 1.813,
-    "MLW": 0.452,
-    "MLLW": 0.389,
-    "GT": 2.635,
-    "MN": 2.48,
-    "DHQ": 0.092,
-    "DLQ": 0.063,
-    "HWI": 1.245,
-    "LWI": 7.588,
-    "NAVD88": 1.786
-  },
-  "disclaimers": ""
+  ]
 }

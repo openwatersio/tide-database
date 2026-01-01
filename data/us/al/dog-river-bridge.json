@@ -1,10 +1,9 @@
 {
-  "id": "us-al-dog-river-bridge",
+  "id": "us/al/dog-river-bridge",
   "name": "Dog River Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.565200805664062,
   "longitude": -88.08799743652344,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8735391",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8735391",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8735391.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8735391"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.458,
+    "HAT": 9.571,
+    "STND": 0,
+    "MHHW": 9.32,
+    "MHW": 9.294,
+    "DTL": 9.07,
+    "MTL": 9.072,
+    "MSL": 9.066,
+    "MLW": 8.849,
+    "MLLW": 8.82,
+    "GT": 0.5,
+    "MN": 0.445,
+    "DHQ": 0.026,
+    "DLQ": 0.029
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 215.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.458,
-    "HAT": 9.571,
-    "STND": 0,
-    "MHHW": 9.32,
-    "MHW": 9.294,
-    "DTL": 9.07,
-    "MTL": 9.072,
-    "MSL": 9.066,
-    "MLW": 8.849,
-    "MLLW": 8.82,
-    "GT": 0.5,
-    "MN": 0.445,
-    "DHQ": 0.026,
-    "DLQ": 0.029
-  },
-  "disclaimers": ""
+  ]
 }

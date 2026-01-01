@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-fishing-bend-santa-rosa-sound",
+  "id": "us/fl/fishing-bend-santa-rosa-sound",
   "name": "Fishing Bend, Santa Rosa Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.336700439453125,
   "longitude": -87.13999938964844,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729806",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729806",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729806.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729806"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.603,
+    "HAT": 1.444,
+    "STND": 0,
+    "MHHW": 1.251,
+    "MHW": 1.23,
+    "DTL": 1.056,
+    "MTL": 1.053,
+    "MSL": 1.053,
+    "MLW": 0.876,
+    "MLLW": 0.86,
+    "GT": 0.391,
+    "MN": 0.354,
+    "DHQ": 0.021,
+    "DLQ": 0.016,
+    "NAVD88": 0.986
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.603,
-    "HAT": 1.444,
-    "STND": 0,
-    "MHHW": 1.251,
-    "MHW": 1.23,
-    "DTL": 1.056,
-    "MTL": 1.053,
-    "MSL": 1.053,
-    "MLW": 0.876,
-    "MLLW": 0.86,
-    "GT": 0.391,
-    "MN": 0.354,
-    "DHQ": 0.021,
-    "DLQ": 0.016,
-    "NAVD88": 0.986
-  },
-  "disclaimers": ""
+  ]
 }

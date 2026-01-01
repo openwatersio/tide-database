@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-ocean-drive-bridge",
+  "id": "us/nj/ocean-drive-bridge",
   "name": "Ocean Drive bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.1217,
   "longitude": -74.7167,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8535375",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535375",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8535375.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535375"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.08699995,
+    "HAT": 2.1069999,
+    "STND": 0,
+    "MHHW": 1.792,
+    "MHW": 1.673,
+    "DTL": 1.102,
+    "MTL": 1.07,
+    "MSL": 1.083,
+    "MLW": 0.467,
+    "MLLW": 0.412,
+    "GT": 1.38,
+    "MN": 1.206,
+    "DHQ": 0.118,
+    "DLQ": 0.055,
+    "HWI": 0.391,
+    "LWI": 6.463
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 242.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.08699995,
-    "HAT": 2.1069999,
-    "STND": 0,
-    "MHHW": 1.792,
-    "MHW": 1.673,
-    "DTL": 1.102,
-    "MTL": 1.07,
-    "MSL": 1.083,
-    "MLW": 0.467,
-    "MLLW": 0.412,
-    "GT": 1.38,
-    "MN": 1.206,
-    "DHQ": 0.118,
-    "DLQ": 0.055,
-    "HWI": 0.391,
-    "LWI": 6.463
-  },
-  "disclaimers": ""
+  ]
 }

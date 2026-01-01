@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-wildwood-crest-ocean-pier",
+  "id": "us/nj/wildwood-crest-ocean-pier",
   "name": "Wildwood Crest, ocean pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.975,
   "longitude": -74.8233,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8535835",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535835",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8535835.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535835"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.962,
+    "HAT": 3.2350001,
+    "STND": 0,
+    "MHHW": 2.829,
+    "MHW": 2.695,
+    "DTL": 2.078,
+    "MTL": 2.039,
+    "MSL": 2.046,
+    "MLW": 1.382,
+    "MLLW": 1.327,
+    "GT": 1.502,
+    "MN": 1.313,
+    "DHQ": 0.134,
+    "DLQ": 0.055,
+    "HWI": 12.361,
+    "LWI": 6.173
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.962,
-    "HAT": 3.2350001,
-    "STND": 0,
-    "MHHW": 2.829,
-    "MHW": 2.695,
-    "DTL": 2.078,
-    "MTL": 2.039,
-    "MSL": 2.046,
-    "MLW": 1.382,
-    "MLLW": 1.327,
-    "GT": 1.502,
-    "MN": 1.313,
-    "DHQ": 0.134,
-    "DLQ": 0.055,
-    "HWI": 12.361,
-    "LWI": 6.173
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-arena-cove",
+  "id": "us/ca/arena-cove",
   "name": "ARENA COVE",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.91455555555556,
   "longitude": -123.7110833333333,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9416841",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9416841",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9416841.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9416841"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.146,
+    "HAT": 11.139999,
+    "STND": 0,
+    "MHHW": 10.607,
+    "MHW": 10.402,
+    "DTL": 9.712,
+    "MTL": 9.786,
+    "MSL": 9.775,
+    "MLW": 9.17,
+    "MLLW": 8.818,
+    "GT": 1.789,
+    "MN": 1.233,
+    "DHQ": 0.204,
+    "DLQ": 0.352,
+    "HWI": 6.843,
+    "LWI": 0.511,
+    "NAVD88": 8.86
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 149.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.146,
-    "HAT": 11.139999,
-    "STND": 0,
-    "MHHW": 10.607,
-    "MHW": 10.402,
-    "DTL": 9.712,
-    "MTL": 9.786,
-    "MSL": 9.775,
-    "MLW": 9.17,
-    "MLLW": 8.818,
-    "GT": 1.789,
-    "MN": 1.233,
-    "DHQ": 0.204,
-    "DLQ": 0.352,
-    "HWI": 6.843,
-    "LWI": 0.511,
-    "NAVD88": 8.86
-  },
-  "disclaimers": ""
+  ]
 }

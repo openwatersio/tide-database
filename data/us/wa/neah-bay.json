@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-neah-bay",
+  "id": "us/wa/neah-bay",
   "name": "NEAH BAY",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.37072222222222,
   "longitude": -124.6015888888889,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9443090",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9443090",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9443090.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9443090"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.2976551,
+    "HAT": 3.7623448,
+    "STND": 0,
+    "MHHW": 3.035,
+    "MHW": 2.778,
+    "DTL": 1.823,
+    "MTL": 1.937,
+    "MSL": 1.925,
+    "MLW": 1.096,
+    "MLLW": 0.61,
+    "GT": 2.425,
+    "MN": 1.681,
+    "DHQ": 0.258,
+    "DLQ": 0.486,
+    "HWI": 8.546,
+    "LWI": 2.286,
+    "NAVD88": 0.866
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 311.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.2976551,
-    "HAT": 3.7623448,
-    "STND": 0,
-    "MHHW": 3.035,
-    "MHW": 2.778,
-    "DTL": 1.823,
-    "MTL": 1.937,
-    "MSL": 1.925,
-    "MLW": 1.096,
-    "MLLW": 0.61,
-    "GT": 2.425,
-    "MN": 1.681,
-    "DHQ": 0.258,
-    "DLQ": 0.486,
-    "HWI": 8.546,
-    "LWI": 2.286,
-    "NAVD88": 0.866
-  },
-  "disclaimers": ""
+  ]
 }

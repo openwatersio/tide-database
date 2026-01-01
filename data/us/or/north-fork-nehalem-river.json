@@ -1,10 +1,9 @@
 {
-  "id": "us-or-north-fork-nehalem-river",
+  "id": "us/or/north-fork-nehalem-river",
   "name": "North Fork, Nehalem River",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.73379898071289,
   "longitude": -123.87640380859375,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9437954",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9437954",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9437954.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9437954"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.547,
+    "HAT": 9.545,
+    "STND": 0,
+    "MHHW": 8.892,
+    "MHW": 8.68,
+    "DTL": 7.616,
+    "MTL": 7.686,
+    "MSL": 7.673,
+    "MLW": 6.691,
+    "MLLW": 6.34,
+    "GT": 2.552,
+    "MN": 1.989,
+    "DHQ": 0.212,
+    "DLQ": 0.351,
+    "HWI": 8.632,
+    "LWI": 2.807
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.547,
-    "HAT": 9.545,
-    "STND": 0,
-    "MHHW": 8.892,
-    "MHW": 8.68,
-    "DTL": 7.616,
-    "MTL": 7.686,
-    "MSL": 7.673,
-    "MLW": 6.691,
-    "MLLW": 6.34,
-    "GT": 2.552,
-    "MN": 1.989,
-    "DHQ": 0.212,
-    "DLQ": 0.351,
-    "HWI": 8.632,
-    "LWI": 2.807
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-lynn-lynn-harbor",
+  "id": "us/ma/lynn-lynn-harbor",
   "name": "Lynn, Lynn Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.4583,
   "longitude": -70.9433,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8443187",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8443187",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8443187.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8443187"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.27600002,
+    "HAT": 4.726,
+    "STND": 0,
+    "MHHW": 4.04,
+    "MHW": 3.905,
+    "DTL": 2.525,
+    "MTL": 2.509,
+    "MSL": 2.532,
+    "MLW": 1.113,
+    "MLLW": 1.01,
+    "GT": 3.031,
+    "MN": 2.792,
+    "DHQ": 0.136,
+    "DLQ": 0.103,
+    "HWI": 3.748,
+    "LWI": 9.878
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 135.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.27600002,
-    "HAT": 4.726,
-    "STND": 0,
-    "MHHW": 4.04,
-    "MHW": 3.905,
-    "DTL": 2.525,
-    "MTL": 2.509,
-    "MSL": 2.532,
-    "MLW": 1.113,
-    "MLLW": 1.01,
-    "GT": 3.031,
-    "MN": 2.792,
-    "DHQ": 0.136,
-    "DLQ": 0.103,
-    "HWI": 3.748,
-    "LWI": 9.878
-  },
-  "disclaimers": ""
+  ]
 }

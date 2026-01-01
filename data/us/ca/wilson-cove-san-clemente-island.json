@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-wilson-cove-san-clemente-island",
+  "id": "us/ca/wilson-cove-san-clemente-island",
   "name": "Wilson Cove, San Clemente Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.005001068115234,
   "longitude": -118.55699920654297,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410032",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410032",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410032.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410032"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.08,
+    "HAT": 6.878,
+    "STND": 0,
+    "MHHW": 6.279,
+    "MHW": 6.05,
+    "DTL": 5.48,
+    "MTL": 5.502,
+    "MSL": 5.495,
+    "MLW": 4.953,
+    "MLLW": 4.681,
+    "GT": 1.598,
+    "MN": 1.097,
+    "DHQ": 0.229,
+    "DLQ": 0.272,
+    "HWI": 5.114,
+    "LWI": 11.162,
+    "NAVD88": 4.681
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.08,
-    "HAT": 6.878,
-    "STND": 0,
-    "MHHW": 6.279,
-    "MHW": 6.05,
-    "DTL": 5.48,
-    "MTL": 5.502,
-    "MSL": 5.495,
-    "MLW": 4.953,
-    "MLLW": 4.681,
-    "GT": 1.598,
-    "MN": 1.097,
-    "DHQ": 0.229,
-    "DLQ": 0.272,
-    "HWI": 5.114,
-    "LWI": 11.162,
-    "NAVD88": 4.681
-  },
-  "disclaimers": ""
+  ]
 }

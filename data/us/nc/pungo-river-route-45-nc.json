@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-pungo-river-route-45-nc",
+  "id": "us/nc/pungo-river-route-45-nc",
   "name": "Pungo River, Route 45, NC",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.585201263427734,
   "longitude": -76.48560333251953,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8653244",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8653244",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8653244.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8653244"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.123,
+    "HAT": 0.033,
+    "STND": 0,
+    "MHHW": 0.067,
+    "MHW": 0.031,
+    "DTL": -0.055,
+    "MTL": -0.053,
+    "MSL": -0.045,
+    "MLW": -0.138,
+    "MLLW": -0.179,
+    "GT": 0.247,
+    "MN": 0.17,
+    "DHQ": 0.037,
+    "DLQ": 0.041,
+    "NAVD88": -0.026
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.123,
-    "HAT": 0.033,
-    "STND": 0,
-    "MHHW": 0.067,
-    "MHW": 0.031,
-    "DTL": -0.055,
-    "MTL": -0.053,
-    "MSL": -0.045,
-    "MLW": -0.138,
-    "MLLW": -0.179,
-    "GT": 0.247,
-    "MN": 0.17,
-    "DHQ": 0.037,
-    "DLQ": 0.041,
-    "NAVD88": -0.026
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-va-colonial-beach-va",
+  "id": "us/va/colonial-beach-va",
   "name": "Colonial Beach, Va.",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.2517,
   "longitude": -76.96,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8635150",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635150",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8635150.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635150"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.59084594,
+    "HAT": 1.5728459,
+    "STND": 0,
+    "MHHW": 1.396,
+    "MHW": 1.346,
+    "DTL": 1.101,
+    "MTL": 1.097,
+    "MSL": 1.099,
+    "MLW": 0.849,
+    "MLLW": 0.805,
+    "GT": 0.591,
+    "MN": 0.498,
+    "DHQ": 0.05,
+    "DLQ": 0.043,
+    "HWI": 7.352,
+    "LWI": 1.405,
+    "NAVD88": 1.106
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 91.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.59084594,
-    "HAT": 1.5728459,
-    "STND": 0,
-    "MHHW": 1.396,
-    "MHW": 1.346,
-    "DTL": 1.101,
-    "MTL": 1.097,
-    "MSL": 1.099,
-    "MLW": 0.849,
-    "MLLW": 0.805,
-    "GT": 0.591,
-    "MN": 0.498,
-    "DHQ": 0.05,
-    "DLQ": 0.043,
-    "HWI": 7.352,
-    "LWI": 1.405,
-    "NAVD88": 1.106
-  },
-  "disclaimers": ""
+  ]
 }

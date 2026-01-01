@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-boca-chica-marina",
+  "id": "us/fl/boca-chica-marina",
   "name": "Boca Chica Marina",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.575,
   "longitude": -81.7083,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724493",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724493",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724493.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724493"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.6750002,
+    "HAT": 4.321,
+    "STND": 0,
+    "MHHW": 4.157,
+    "MHW": 4.081,
+    "DTL": 3.967,
+    "MTL": 3.954,
+    "MSL": 3.976,
+    "MLW": 3.828,
+    "MLLW": 3.776,
+    "GT": 0.381,
+    "MN": 0.254,
+    "DHQ": 0.076,
+    "DLQ": 0.051,
+    "NAVD88": 4.214
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.6750002,
-    "HAT": 4.321,
-    "STND": 0,
-    "MHHW": 4.157,
-    "MHW": 4.081,
-    "DTL": 3.967,
-    "MTL": 3.954,
-    "MSL": 3.976,
-    "MLW": 3.828,
-    "MLLW": 3.776,
-    "GT": 0.381,
-    "MN": 0.254,
-    "DHQ": 0.076,
-    "DLQ": 0.051,
-    "NAVD88": 4.214
-  },
-  "disclaimers": ""
+  ]
 }

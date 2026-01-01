@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-fall-river-massachusetts",
+  "id": "us/ma/fall-river-massachusetts",
   "name": "Fall River, Massachusetts",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.70429992675781,
   "longitude": -71.16410064697266,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447386",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447386",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447386.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447386"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.026,
+    "HAT": 8.248,
+    "STND": 0,
+    "MHHW": 7.816,
+    "MHW": 7.743,
+    "DTL": 7.088,
+    "MTL": 7.078,
+    "MSL": 7.033,
+    "MLW": 6.412,
+    "MLLW": 6.361,
+    "GT": 1.456,
+    "MN": 1.331,
+    "DHQ": 0.073,
+    "DLQ": 0.052,
+    "HWI": 0.573,
+    "LWI": 5.966,
+    "NAVD88": 7.102
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 211.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.026,
-    "HAT": 8.248,
-    "STND": 0,
-    "MHHW": 7.816,
-    "MHW": 7.743,
-    "DTL": 7.088,
-    "MTL": 7.078,
-    "MSL": 7.033,
-    "MLW": 6.412,
-    "MLLW": 6.361,
-    "GT": 1.456,
-    "MN": 1.331,
-    "DHQ": 0.073,
-    "DLQ": 0.052,
-    "HWI": 0.573,
-    "LWI": 5.966,
-    "NAVD88": 7.102
-  },
-  "disclaimers": ""
+  ]
 }

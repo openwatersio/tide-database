@@ -1,10 +1,9 @@
 {
-  "id": "us-cabo-san-antonio",
+  "id": "us/cabo-san-antonio",
   "name": "Cabo San Antonio",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 21.866666666667008,
   "longitude": -84.96666666666701,
   "timezone": "America/Havana",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4685",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4685",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4685.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4685"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pr-san-juan",
+    "reference": "us/pr/san-juan",
     "height": {
       "type": "ratio",
       "high": 0.92,

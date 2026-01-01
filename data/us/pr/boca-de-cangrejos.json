@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-boca-de-cangrejos",
+  "id": "us/pr/boca-de-cangrejos",
   "name": "Boca de Cangrejos",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.456600189208984,
   "longitude": -65.99150085449219,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9754986",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9754986",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9754986.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9754986"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.354,
+    "HAT": 9.102,
+    "STND": 0,
+    "MHHW": 8.93,
+    "MHW": 8.858,
+    "DTL": 8.715,
+    "MTL": 8.71,
+    "MSL": 8.711,
+    "MLW": 8.562,
+    "MLLW": 8.501,
+    "GT": 0.429,
+    "MN": 0.297,
+    "DHQ": 0.071,
+    "DLQ": 0.061,
+    "HWI": 0.965,
+    "LWI": 7.235,
+    "PRVD02": 8.743
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.354,
-    "HAT": 9.102,
-    "STND": 0,
-    "MHHW": 8.93,
-    "MHW": 8.858,
-    "DTL": 8.715,
-    "MTL": 8.71,
-    "MSL": 8.711,
-    "MLW": 8.562,
-    "MLLW": 8.501,
-    "GT": 0.429,
-    "MN": 0.297,
-    "DHQ": 0.071,
-    "DLQ": 0.061,
-    "HWI": 0.965,
-    "LWI": 7.235,
-    "PRVD02": 8.743
-  },
-  "disclaimers": ""
+  ]
 }

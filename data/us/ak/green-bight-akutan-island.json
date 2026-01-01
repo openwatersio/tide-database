@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-green-bight-akutan-island",
+  "id": "us/ak/green-bight-akutan-island",
   "name": "Green Bight, Akutan Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.11027777777778,
   "longitude": -165.6613888888889,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462705",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462705",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462705.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462705"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 40.157,
+    "HAT": 42.946,
+    "STND": 0,
+    "MHHW": 42.357,
+    "MHW": 42.199,
+    "DTL": 41.593,
+    "MTL": 41.716,
+    "MSL": 41.702,
+    "MLW": 41.233,
+    "MLLW": 40.829,
+    "GT": 1.528,
+    "MN": 0.966,
+    "DHQ": 0.158,
+    "DLQ": 0.404
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 40.157,
-    "HAT": 42.946,
-    "STND": 0,
-    "MHHW": 42.357,
-    "MHW": 42.199,
-    "DTL": 41.593,
-    "MTL": 41.716,
-    "MSL": 41.702,
-    "MLW": 41.233,
-    "MLLW": 40.829,
-    "GT": 1.528,
-    "MN": 0.966,
-    "DHQ": 0.158,
-    "DLQ": 0.404
-  },
-  "disclaimers": ""
+  ]
 }

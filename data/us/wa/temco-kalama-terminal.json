@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-temco-kalama-terminal",
+  "id": "us/wa/temco-kalama-terminal",
   "name": "Temco Kalama Terminal",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.986698150634766,
   "longitude": -122.83670043945312,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,35 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440357",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440357",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440357.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440357"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.079,
+    "HAT": 3.877,
+    "STND": 0,
+    "MHHW": 3.504,
+    "MHW": 3.36,
+    "DTL": 2.945,
+    "MTL": 2.917,
+    "MSL": 2.904,
+    "MLW": 2.474,
+    "MLLW": 2.387,
+    "GT": 1.117,
+    "MN": 0.886,
+    "DHQ": 0.144,
+    "DLQ": 0.087,
+    "HWI": 11.759,
+    "LWI": 7.206,
+    "NAVD88": 0.727,
+    "CRD_OFFSET": 1.813
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,26 +337,5 @@
       "phase_local": 193,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.079,
-    "HAT": 3.877,
-    "STND": 0,
-    "MHHW": 3.504,
-    "MHW": 3.36,
-    "DTL": 2.945,
-    "MTL": 2.917,
-    "MSL": 2.904,
-    "MLW": 2.474,
-    "MLLW": 2.387,
-    "GT": 1.117,
-    "MN": 0.886,
-    "DHQ": 0.144,
-    "DLQ": 0.087,
-    "HWI": 11.759,
-    "LWI": 7.206,
-    "NAVD88": 0.727,
-    "CRD_OFFSET": 1.813
-  },
-  "disclaimers": ""
+  ]
 }

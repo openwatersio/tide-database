@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-lake-bay",
+  "id": "us/ak/lake-bay",
   "name": "Lake Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.0233,
   "longitude": -132.92,
   "timezone": "America/Sitka",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450904",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450904",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450904.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450904"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-ketchikan",
+    "reference": "us/ak/ketchikan",
     "height": {
       "type": "ratio",
       "high": 1.03,

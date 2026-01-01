@@ -1,10 +1,9 @@
 {
-  "id": "us-vi-botany-bay-st-thomas-island",
+  "id": "us/vi/botany-bay-st-thomas-island",
   "name": "Botany Bay, St. Thomas Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "VI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.3633,
   "longitude": -65.035,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751774",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751774",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751774.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751774"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.181,
+    "HAT": 0.957,
+    "STND": 0,
+    "MHHW": 0.746,
+    "MHW": 0.668,
+    "DTL": 0.55,
+    "MTL": 0.531,
+    "MSL": 0.534,
+    "MLW": 0.394,
+    "MLLW": 0.355,
+    "GT": 0.391,
+    "MN": 0.274,
+    "DHQ": 0.077,
+    "DLQ": 0.039,
+    "HWI": 0.54,
+    "LWI": 6.863
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.181,
-    "HAT": 0.957,
-    "STND": 0,
-    "MHHW": 0.746,
-    "MHW": 0.668,
-    "DTL": 0.55,
-    "MTL": 0.531,
-    "MSL": 0.534,
-    "MLW": 0.394,
-    "MLLW": 0.355,
-    "GT": 0.391,
-    "MN": 0.274,
-    "DHQ": 0.077,
-    "DLQ": 0.039,
-    "HWI": 0.54,
-    "LWI": 6.863
-  },
-  "disclaimers": ""
+  ]
 }

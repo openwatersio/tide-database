@@ -1,10 +1,9 @@
 {
-  "id": "us-matanzas",
+  "id": "us/matanzas",
   "name": "Matanzas",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 23.066666666667007,
   "longitude": -81.53333333333299,
   "timezone": "America/Havana",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4691",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4691",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4691.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4691"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 0.92,

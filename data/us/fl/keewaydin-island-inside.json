@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-keewaydin-island-inside",
+  "id": "us/fl/keewaydin-island-inside",
   "name": "Keewaydin island (inside)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.025,
   "longitude": -81.7683,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725019",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725019",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725019.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725019"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.09899998,
+    "HAT": 1.2490001,
+    "STND": 0,
+    "MHHW": 0.987,
+    "MHW": 0.913,
+    "DTL": 0.589,
+    "MTL": 0.624,
+    "MSL": 0.633,
+    "MLW": 0.335,
+    "MLLW": 0.192,
+    "GT": 0.795,
+    "MN": 0.578,
+    "DHQ": 0.074,
+    "DLQ": 0.143,
+    "HWI": 6.083,
+    "LWI": 12.203,
+    "NAVD88": 0.802
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.09899998,
-    "HAT": 1.2490001,
-    "STND": 0,
-    "MHHW": 0.987,
-    "MHW": 0.913,
-    "DTL": 0.589,
-    "MTL": 0.624,
-    "MSL": 0.633,
-    "MLW": 0.335,
-    "MLLW": 0.192,
-    "GT": 0.795,
-    "MN": 0.578,
-    "DHQ": 0.074,
-    "DLQ": 0.143,
-    "HWI": 6.083,
-    "LWI": 12.203,
-    "NAVD88": 0.802
-  },
-  "disclaimers": ""
+  ]
 }

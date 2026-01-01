@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-clearwater-beach",
+  "id": "us/fl/clearwater-beach",
   "name": "Clearwater Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.9783333,
   "longitude": -82.8316667,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726724",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726724",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726724.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726724"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.102999985,
+    "HAT": 1.654,
+    "STND": 0,
+    "MHHW": 1.363,
+    "MHW": 1.26,
+    "DTL": 0.945,
+    "MTL": 0.971,
+    "MSL": 0.977,
+    "MLW": 0.683,
+    "MLLW": 0.527,
+    "GT": 0.836,
+    "MN": 0.577,
+    "DHQ": 0.103,
+    "DLQ": 0.156,
+    "HWI": 4.393,
+    "LWI": 10.426,
+    "NAVD88": 1.073
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 155.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.102999985,
-    "HAT": 1.654,
-    "STND": 0,
-    "MHHW": 1.363,
-    "MHW": 1.26,
-    "DTL": 0.945,
-    "MTL": 0.971,
-    "MSL": 0.977,
-    "MLW": 0.683,
-    "MLLW": 0.527,
-    "GT": 0.836,
-    "MN": 0.577,
-    "DHQ": 0.103,
-    "DLQ": 0.156,
-    "HWI": 4.393,
-    "LWI": 10.426,
-    "NAVD88": 1.073
-  },
-  "disclaimers": ""
+  ]
 }

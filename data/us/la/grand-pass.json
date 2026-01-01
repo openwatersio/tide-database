@@ -1,10 +1,9 @@
 {
-  "id": "us-la-grand-pass",
+  "id": "us/la/grand-pass",
   "name": "Grand Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.126699447631836,
   "longitude": -89.2217025756836,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8760668",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760668",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8760668.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760668"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.39199996,
+    "HAT": 1.589,
+    "STND": 0,
+    "MHHW": 1.289,
+    "MHW": 1.272,
+    "DTL": 1.065,
+    "MTL": 1.065,
+    "MSL": 1.063,
+    "MLW": 0.859,
+    "MLLW": 0.842,
+    "GT": 0.447,
+    "MN": 0.413,
+    "DHQ": 0.017,
+    "DLQ": 0.017
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.39199996,
-    "HAT": 1.589,
-    "STND": 0,
-    "MHHW": 1.289,
-    "MHW": 1.272,
-    "DTL": 1.065,
-    "MTL": 1.065,
-    "MSL": 1.063,
-    "MLW": 0.859,
-    "MLLW": 0.842,
-    "GT": 0.447,
-    "MN": 0.413,
-    "DHQ": 0.017,
-    "DLQ": 0.017
-  },
-  "disclaimers": ""
+  ]
 }

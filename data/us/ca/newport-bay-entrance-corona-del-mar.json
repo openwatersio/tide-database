@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-newport-bay-entrance-corona-del-mar",
+  "id": "us/ca/newport-bay-entrance-corona-del-mar",
   "name": "Newport Bay Entrance, Corona del Mar",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.6033,
   "longitude": -117.883,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410580",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410580",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410580.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410580"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.4189999,
+    "HAT": 3.21,
+    "STND": 0,
+    "MHHW": 2.665,
+    "MHW": 2.44,
+    "DTL": 1.841,
+    "MTL": 1.868,
+    "MSL": 1.861,
+    "MLW": 1.295,
+    "MLLW": 1.016,
+    "GT": 1.649,
+    "MN": 1.145,
+    "DHQ": 0.225,
+    "DLQ": 0.279,
+    "HWI": 5.082,
+    "LWI": 11.153,
+    "NAVD88": 1.071
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.4189999,
-    "HAT": 3.21,
-    "STND": 0,
-    "MHHW": 2.665,
-    "MHW": 2.44,
-    "DTL": 1.841,
-    "MTL": 1.868,
-    "MSL": 1.861,
-    "MLW": 1.295,
-    "MLLW": 1.016,
-    "GT": 1.649,
-    "MN": 1.145,
-    "DHQ": 0.225,
-    "DLQ": 0.279,
-    "HWI": 5.082,
-    "LWI": 11.153,
-    "NAVD88": 1.071
-  },
-  "disclaimers": ""
+  ]
 }

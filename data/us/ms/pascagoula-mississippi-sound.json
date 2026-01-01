@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-pascagoula-mississippi-sound",
+  "id": "us/ms/pascagoula-mississippi-sound",
   "name": "Pascagoula, Mississippi Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.34,
   "longitude": -88.5333,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8741196",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8741196",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8741196.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8741196"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.5960001,
+    "HAT": 1.511,
+    "STND": 0,
+    "MHHW": 1.286,
+    "MHW": 1.261,
+    "DTL": 1.053,
+    "MTL": 1.053,
+    "MSL": 1.052,
+    "MLW": 0.845,
+    "MLLW": 0.819,
+    "GT": 0.467,
+    "MN": 0.416,
+    "DHQ": 0.026,
+    "DLQ": 0.025
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.5960001,
-    "HAT": 1.511,
-    "STND": 0,
-    "MHHW": 1.286,
-    "MHW": 1.261,
-    "DTL": 1.053,
-    "MTL": 1.053,
-    "MSL": 1.052,
-    "MLW": 0.845,
-    "MLLW": 0.819,
-    "GT": 0.467,
-    "MN": 0.416,
-    "DHQ": 0.026,
-    "DLQ": 0.025
-  },
-  "disclaimers": ""
+  ]
 }

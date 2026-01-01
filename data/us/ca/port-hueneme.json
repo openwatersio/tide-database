@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-port-hueneme",
+  "id": "us/ca/port-hueneme",
   "name": "Port Hueneme",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.1483,
   "longitude": -119.203,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9411065",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9411065",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9411065.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9411065"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-los-angeles-outer-harbor",
+    "reference": "us/ca/los-angeles-outer-harbor",
     "height": {
       "type": "fixed",
       "high": -0.03,

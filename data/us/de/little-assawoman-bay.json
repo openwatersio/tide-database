@@ -1,10 +1,9 @@
 {
-  "id": "us-de-little-assawoman-bay",
+  "id": "us/de/little-assawoman-bay",
   "name": "Little Assawoman Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "DE",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.45500183105469,
   "longitude": -75.05829620361328,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8559957",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8559957",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8559957.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8559957"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.394,
+    "HAT": 0.178,
+    "STND": 0,
+    "MHHW": 0.063,
+    "MHW": 0.023,
+    "DTL": -0.1,
+    "MTL": -0.1,
+    "MSL": -0.092,
+    "MLW": -0.223,
+    "MLLW": -0.263,
+    "GT": 0.327,
+    "MN": 0.248,
+    "DHQ": 0.04,
+    "DLQ": 0.04,
+    "HWI": 3.636,
+    "LWI": 9.982
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 184.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.394,
-    "HAT": 0.178,
-    "STND": 0,
-    "MHHW": 0.063,
-    "MHW": 0.023,
-    "DTL": -0.1,
-    "MTL": -0.1,
-    "MSL": -0.092,
-    "MLW": -0.223,
-    "MLLW": -0.263,
-    "GT": 0.327,
-    "MN": 0.248,
-    "DHQ": 0.04,
-    "DLQ": 0.04,
-    "HWI": 3.636,
-    "LWI": 9.982
-  },
-  "disclaimers": ""
+  ]
 }

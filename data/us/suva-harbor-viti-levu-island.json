@@ -1,10 +1,9 @@
 {
-  "id": "us-suva-harbor-viti-levu-island",
+  "id": "us/suva-harbor-viti-levu-island",
   "name": "SUVA HARBOR, Viti Levu Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -18.1333,
   "longitude": 178.425,
   "timezone": "Pacific/Fiji",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1910000",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1910000",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1910000.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1910000"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.601,
+    "HAT": 12.603,
+    "STND": 0,
+    "MHHW": 12.263,
+    "MHW": 12.196,
+    "DTL": 11.612,
+    "MTL": 11.616,
+    "MSL": 11.617,
+    "MLW": 11.035,
+    "MLLW": 10.961,
+    "GT": 1.302,
+    "MN": 1.161,
+    "DHQ": 0.067,
+    "DLQ": 0.074,
+    "HWI": 6.86,
+    "LWI": 0.68
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.601,
-    "HAT": 12.603,
-    "STND": 0,
-    "MHHW": 12.263,
-    "MHW": 12.196,
-    "DTL": 11.612,
-    "MTL": 11.616,
-    "MSL": 11.617,
-    "MLW": 11.035,
-    "MLLW": 10.961,
-    "GT": 1.302,
-    "MN": 1.161,
-    "DHQ": 0.067,
-    "DLQ": 0.074,
-    "HWI": 6.86,
-    "LWI": 0.68
-  },
-  "disclaimers": ""
+  ]
 }

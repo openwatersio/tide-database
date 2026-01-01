@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-dyckman-street-ferry-slip",
+  "id": "us/ny/dyckman-street-ferry-slip",
   "name": "Dyckman Street, Ferry Slip",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8683,
   "longitude": -73.9333,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518902",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518902",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518902.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518902"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.0600001,
+    "HAT": 3.0900002,
+    "STND": 0,
+    "MHHW": 2.739,
+    "MHW": 2.66,
+    "DTL": 2.067,
+    "MTL": 2.054,
+    "MSL": 2.098,
+    "MLW": 1.448,
+    "MLLW": 1.396,
+    "GT": 1.343,
+    "MN": 1.212,
+    "DHQ": 0.079,
+    "DLQ": 0.052,
+    "HWI": 1.69,
+    "LWI": 7.95,
+    "NAVD88": 2.127
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.0600001,
-    "HAT": 3.0900002,
-    "STND": 0,
-    "MHHW": 2.739,
-    "MHW": 2.66,
-    "DTL": 2.067,
-    "MTL": 2.054,
-    "MSL": 2.098,
-    "MLW": 1.448,
-    "MLLW": 1.396,
-    "GT": 1.343,
-    "MN": 1.212,
-    "DHQ": 0.079,
-    "DLQ": 0.052,
-    "HWI": 1.69,
-    "LWI": 7.95,
-    "NAVD88": 2.127
-  },
-  "disclaimers": ""
+  ]
 }

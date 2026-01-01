@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-santa-isabel",
+  "id": "us/pr/santa-isabel",
   "name": "Santa Isabel",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.955,
   "longitude": -66.4067,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9756639",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9756639",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9756639.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9756639"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.644,
+    "HAT": 8.177,
+    "STND": 0,
+    "MHHW": 8.014,
+    "MHW": 8.011,
+    "DTL": 7.906,
+    "MTL": 7.906,
+    "MSL": 7.91,
+    "MLW": 7.802,
+    "MLLW": 7.799,
+    "GT": 0.215,
+    "MN": 0.209,
+    "DHQ": 0.003,
+    "DLQ": 0.003
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.644,
-    "HAT": 8.177,
-    "STND": 0,
-    "MHHW": 8.014,
-    "MHW": 8.011,
-    "DTL": 7.906,
-    "MTL": 7.906,
-    "MSL": 7.91,
-    "MLW": 7.802,
-    "MLLW": 7.799,
-    "GT": 0.215,
-    "MN": 0.209,
-    "DHQ": 0.003,
-    "DLQ": 0.003
-  },
-  "disclaimers": ""
+  ]
 }

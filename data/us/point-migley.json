@@ -1,10 +1,9 @@
 {
-  "id": "us-point-migley",
+  "id": "us/point-migley",
   "name": "Point Migley",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.75,
   "longitude": -122.71666666666995,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC1173",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC1173",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC1173.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC1173"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-port-townsend",
+    "reference": "us/wa/port-townsend",
     "height": {
       "type": "fixed",
       "high": 0.03,

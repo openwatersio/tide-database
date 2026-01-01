@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-ponce-de-leon-inlet",
+  "id": "us/fl/ponce-de-leon-inlet",
   "name": "Ponce de Leon Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.06333333333333,
   "longitude": -80.91583333333334,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8721147",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721147",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8721147.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721147"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.026,
+    "HAT": 0.737,
+    "STND": 0,
+    "MHHW": 0.324,
+    "MHW": 0.236,
+    "DTL": -0.195,
+    "MTL": -0.216,
+    "MSL": -0.215,
+    "MLW": -0.67,
+    "MLLW": -0.714,
+    "GT": 1.039,
+    "MN": 0.907,
+    "DHQ": 0.088,
+    "DLQ": 0.044,
+    "HWI": 0.882,
+    "LWI": 6.982,
+    "NAVD88": -0.013
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 187.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.026,
-    "HAT": 0.737,
-    "STND": 0,
-    "MHHW": 0.324,
-    "MHW": 0.236,
-    "DTL": -0.195,
-    "MTL": -0.216,
-    "MSL": -0.215,
-    "MLW": -0.67,
-    "MLLW": -0.714,
-    "GT": 1.039,
-    "MN": 0.907,
-    "DHQ": 0.088,
-    "DLQ": 0.044,
-    "HWI": 0.882,
-    "LWI": 6.982,
-    "NAVD88": -0.013
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-safety-harbor-old-tampa-bay",
+  "id": "us/fl/safety-harbor-old-tampa-bay",
   "name": "Safety Harbor, Old Tampa Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.9883,
   "longitude": -82.685,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726738",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726738",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726738.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726738"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.24600005,
+    "HAT": 1.6700001,
+    "STND": 0,
+    "MHHW": 1.422,
+    "MHW": 1.316,
+    "DTL": 0.997,
+    "MTL": 1.024,
+    "MSL": 1.024,
+    "MLW": 0.733,
+    "MLLW": 0.572,
+    "GT": 0.85,
+    "MN": 0.583,
+    "DHQ": 0.106,
+    "DLQ": 0.161,
+    "NAVD88": 1.109
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -221,23 +238,5 @@
       "phase_local": 346.2,
       "speed": 115.93642
     }
-  ],
-  "datums": {
-    "LAT": 0.24600005,
-    "HAT": 1.6700001,
-    "STND": 0,
-    "MHHW": 1.422,
-    "MHW": 1.316,
-    "DTL": 0.997,
-    "MTL": 1.024,
-    "MSL": 1.024,
-    "MLW": 0.733,
-    "MLLW": 0.572,
-    "GT": 0.85,
-    "MN": 0.583,
-    "DHQ": 0.106,
-    "DLQ": 0.161,
-    "NAVD88": 1.109
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-springmaid-pier-myrtle-beach",
+  "id": "us/sc/springmaid-pier-myrtle-beach",
   "name": "Springmaid Pier, Myrtle beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.654998779296875,
   "longitude": -78.91829681396484,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8661070",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661070",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8661070.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661070"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.459,
+    "HAT": 11.158,
+    "STND": 0,
+    "MHHW": 10.635,
+    "MHW": 10.516,
+    "DTL": 9.782,
+    "MTL": 9.751,
+    "MSL": 9.754,
+    "MLW": 8.985,
+    "MLLW": 8.928,
+    "GT": 1.707,
+    "MN": 1.531,
+    "DHQ": 0.119,
+    "DLQ": 0.057,
+    "HWI": 12.31,
+    "LWI": 6.17,
+    "NAVD88": 9.89
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 311.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.459,
-    "HAT": 11.158,
-    "STND": 0,
-    "MHHW": 10.635,
-    "MHW": 10.516,
-    "DTL": 9.782,
-    "MTL": 9.751,
-    "MSL": 9.754,
-    "MLW": 8.985,
-    "MLLW": 8.928,
-    "GT": 1.707,
-    "MN": 1.531,
-    "DHQ": 0.119,
-    "DLQ": 0.057,
-    "HWI": 12.31,
-    "LWI": 6.17,
-    "NAVD88": 9.89
-  },
-  "disclaimers": ""
+  ]
 }

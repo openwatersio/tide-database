@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-sequim-bay-entrance",
+  "id": "us/wa/sequim-bay-entrance",
   "name": "Sequim Bay entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.0817,
   "longitude": -123.043,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9444555",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444555",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9444555.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444555"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-port-townsend",
+    "reference": "us/wa/port-townsend",
     "height": {
       "type": "ratio",
       "high": 0.94,

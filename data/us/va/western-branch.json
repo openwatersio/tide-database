@@ -1,10 +1,9 @@
 {
-  "id": "us-va-western-branch",
+  "id": "us/va/western-branch",
   "name": "Western Branch",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.82322222222222,
   "longitude": -76.39911111111111,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638339",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638339",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638339.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638339"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.059,
+    "HAT": 9.49,
+    "STND": 0,
+    "MHHW": 9.254,
+    "MHW": 9.19,
+    "DTL": 8.779,
+    "MTL": 8.769,
+    "MSL": 8.773,
+    "MLW": 8.347,
+    "MLLW": 8.303,
+    "GT": 0.951,
+    "MN": 0.843,
+    "DHQ": 0.064,
+    "DLQ": 0.044,
+    "HWI": 1.741,
+    "LWI": 8.053
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 323.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.059,
-    "HAT": 9.49,
-    "STND": 0,
-    "MHHW": 9.254,
-    "MHW": 9.19,
-    "DTL": 8.779,
-    "MTL": 8.769,
-    "MSL": 8.773,
-    "MLW": 8.347,
-    "MLLW": 8.303,
-    "GT": 0.951,
-    "MN": 0.843,
-    "DHQ": 0.064,
-    "DLQ": 0.044,
-    "HWI": 1.741,
-    "LWI": 8.053
-  },
-  "disclaimers": ""
+  ]
 }

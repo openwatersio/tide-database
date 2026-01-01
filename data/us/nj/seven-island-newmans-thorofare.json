@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-seven-island-newmans-thorofare",
+  "id": "us/nj/seven-island-newmans-thorofare",
   "name": "Seven Island, Newmans Thorofare",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.5167,
   "longitude": -74.3367,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8534296",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534296",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8534296.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534296"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nj-sandy-hook-fort-hancock",
+    "reference": "us/nj/sandy-hook-fort-hancock",
     "height": {
       "type": "ratio",
       "high": 0.73,

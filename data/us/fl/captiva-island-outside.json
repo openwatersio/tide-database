@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-captiva-island-outside",
+  "id": "us/fl/captiva-island-outside",
   "name": "Captiva Island (outside)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.4783,
   "longitude": -82.1833,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725383",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725383",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725383.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725383"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.926,
+    "HAT": 0.38099998,
+    "STND": 0,
+    "MHHW": 0.142,
+    "MHW": 0.061,
+    "DTL": -0.217,
+    "MTL": -0.173,
+    "MSL": -0.172,
+    "MLW": -0.408,
+    "MLLW": -0.576,
+    "GT": 0.719,
+    "MN": 0.47,
+    "DHQ": 0.08,
+    "DLQ": 0.168,
+    "HWI": 4.96,
+    "LWI": 10.89,
+    "NAVD88": -0.002
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.926,
-    "HAT": 0.38099998,
-    "STND": 0,
-    "MHHW": 0.142,
-    "MHW": 0.061,
-    "DTL": -0.217,
-    "MTL": -0.173,
-    "MSL": -0.172,
-    "MLW": -0.408,
-    "MLLW": -0.576,
-    "GT": 0.719,
-    "MN": 0.47,
-    "DHQ": 0.08,
-    "DLQ": 0.168,
-    "HWI": 4.96,
-    "LWI": 10.89,
-    "NAVD88": -0.002
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-hendry-creek-estero-bay",
+  "id": "us/fl/hendry-creek-estero-bay",
   "name": "Hendry Creek, Estero Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.47,
   "longitude": -81.8767,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725377",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725377",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725377.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725377"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.57000005,
+    "HAT": 1.645,
+    "STND": 0,
+    "MHHW": 1.434,
+    "MHW": 1.343,
+    "DTL": 1.12,
+    "MTL": 1.114,
+    "MSL": 1.116,
+    "MLW": 0.885,
+    "MLLW": 0.806,
+    "GT": 0.628,
+    "MN": 0.459,
+    "DHQ": 0.091,
+    "DLQ": 0.079,
+    "HWI": 6.6,
+    "LWI": 1.05
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.57000005,
-    "HAT": 1.645,
-    "STND": 0,
-    "MHHW": 1.434,
-    "MHW": 1.343,
-    "DTL": 1.12,
-    "MTL": 1.114,
-    "MSL": 1.116,
-    "MLW": 0.885,
-    "MLLW": 0.806,
-    "GT": 0.628,
-    "MN": 0.459,
-    "DHQ": 0.091,
-    "DLQ": 0.079,
-    "HWI": 6.6,
-    "LWI": 1.05
-  },
-  "disclaimers": ""
+  ]
 }

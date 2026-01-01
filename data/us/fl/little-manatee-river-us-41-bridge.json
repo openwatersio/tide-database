@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-little-manatee-river-us-41-bridge",
+  "id": "us/fl/little-manatee-river-us-41-bridge",
   "name": "Little Manatee River, US 41 Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.705,
   "longitude": -82.4483,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726436",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726436",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726436.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726436"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.51900005,
+    "HAT": 1.566,
+    "STND": 0,
+    "MHHW": 1.364,
+    "MHW": 1.307,
+    "DTL": 1.061,
+    "MTL": 1.072,
+    "MSL": 1.072,
+    "MLW": 0.837,
+    "MLLW": 0.758,
+    "GT": 0.606,
+    "MN": 0.471,
+    "DHQ": 0.057,
+    "DLQ": 0.079,
+    "NAVD88": 1.148
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -221,23 +238,5 @@
       "phase_local": 0,
       "speed": 115.93642
     }
-  ],
-  "datums": {
-    "LAT": 0.51900005,
-    "HAT": 1.566,
-    "STND": 0,
-    "MHHW": 1.364,
-    "MHW": 1.307,
-    "DTL": 1.061,
-    "MTL": 1.072,
-    "MSL": 1.072,
-    "MLW": 0.837,
-    "MLLW": 0.758,
-    "GT": 0.606,
-    "MN": 0.471,
-    "DHQ": 0.057,
-    "DLQ": 0.079,
-    "NAVD88": 1.148
-  },
-  "disclaimers": ""
+  ]
 }

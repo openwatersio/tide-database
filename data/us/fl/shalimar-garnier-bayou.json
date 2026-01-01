@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-shalimar-garnier-bayou",
+  "id": "us/fl/shalimar-garnier-bayou",
   "name": "Shalimar, Garnier Bayou",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.435,
   "longitude": -86.5867,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729538",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729538",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729538.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729538"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-pensacola",
+    "reference": "us/fl/pensacola",
     "height": {
       "type": "ratio",
       "high": 0.32,

@@ -1,10 +1,9 @@
 {
-  "id": "us-or-port-orford",
+  "id": "us/or/port-orford",
   "name": "Port Orford",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.73899841308594,
   "longitude": -124.49829864501953,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9431647",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9431647",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9431647.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9431647"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.2209997,
+    "HAT": 9.888,
+    "STND": 0,
+    "MHHW": 9.263,
+    "MHW": 9.048,
+    "DTL": 8.154,
+    "MTL": 8.253,
+    "MSL": 8.242,
+    "MLW": 7.458,
+    "MLLW": 7.044,
+    "GT": 2.219,
+    "MN": 1.59,
+    "DHQ": 0.215,
+    "DLQ": 0.414,
+    "HWI": 7.576,
+    "LWI": 1.261,
+    "NAVD88": 7.168
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 182.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.2209997,
-    "HAT": 9.888,
-    "STND": 0,
-    "MHHW": 9.263,
-    "MHW": 9.048,
-    "DTL": 8.154,
-    "MTL": 8.253,
-    "MSL": 8.242,
-    "MLW": 7.458,
-    "MLLW": 7.044,
-    "GT": 2.219,
-    "MN": 1.59,
-    "DHQ": 0.215,
-    "DLQ": 0.414,
-    "HWI": 7.576,
-    "LWI": 1.261,
-    "NAVD88": 7.168
-  },
-  "disclaimers": ""
+  ]
 }

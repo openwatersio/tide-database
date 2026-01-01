@@ -1,10 +1,9 @@
 {
-  "id": "us-or-waldport-alsea-bay",
+  "id": "us/or/waldport-alsea-bay",
   "name": "Waldport, Alsea Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.43436111111111,
   "longitude": -124.0580833333333,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9434939",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9434939",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9434939.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9434939"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.467,
+    "HAT": 7.9440002,
+    "STND": 0,
+    "MHHW": 7.407,
+    "MHW": 7.19,
+    "DTL": 6.251,
+    "MTL": 6.333,
+    "MSL": 6.339,
+    "MLW": 5.475,
+    "MLLW": 5.094,
+    "GT": 2.314,
+    "MN": 1.714,
+    "DHQ": 0.218,
+    "DLQ": 0.382,
+    "HWI": 8.49,
+    "LWI": 2.3,
+    "NAVD88": 5.106
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 257.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.467,
-    "HAT": 7.9440002,
-    "STND": 0,
-    "MHHW": 7.407,
-    "MHW": 7.19,
-    "DTL": 6.251,
-    "MTL": 6.333,
-    "MSL": 6.339,
-    "MLW": 5.475,
-    "MLLW": 5.094,
-    "GT": 2.314,
-    "MN": 1.714,
-    "DHQ": 0.218,
-    "DLQ": 0.382,
-    "HWI": 8.49,
-    "LWI": 2.3,
-    "NAVD88": 5.106
-  },
-  "disclaimers": ""
+  ]
 }

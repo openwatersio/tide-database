@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-spring-warrior-creek",
+  "id": "us/fl/spring-warrior-creek",
   "name": "Spring Warrior Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.92,
   "longitude": -83.6717,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727843",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727843",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727843.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727843"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.25899994,
+    "HAT": 2.1859999,
+    "STND": 0,
+    "MHHW": 1.8,
+    "MHW": 1.721,
+    "DTL": 1.273,
+    "MTL": 1.313,
+    "MSL": 1.293,
+    "MLW": 0.905,
+    "MLLW": 0.747,
+    "GT": 1.053,
+    "MN": 0.816,
+    "DHQ": 0.078,
+    "DLQ": 0.159,
+    "HWI": 6.75,
+    "LWI": 0.869,
+    "NAVD88": 1.265
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 90.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.25899994,
-    "HAT": 2.1859999,
-    "STND": 0,
-    "MHHW": 1.8,
-    "MHW": 1.721,
-    "DTL": 1.273,
-    "MTL": 1.313,
-    "MSL": 1.293,
-    "MLW": 0.905,
-    "MLLW": 0.747,
-    "GT": 1.053,
-    "MN": 0.816,
-    "DHQ": 0.078,
-    "DLQ": 0.159,
-    "HWI": 6.75,
-    "LWI": 0.869,
-    "NAVD88": 1.265
-  },
-  "disclaimers": ""
+  ]
 }

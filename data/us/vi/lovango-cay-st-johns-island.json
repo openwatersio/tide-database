@@ -1,10 +1,9 @@
 {
-  "id": "us-vi-lovango-cay-st-johns-island",
+  "id": "us/vi/lovango-cay-st-johns-island",
   "name": "Lovango Cay, St. Johns Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "VI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.36066666666667,
   "longitude": -64.80352777777777,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751467",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751467",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751467.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751467"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.294,
+    "HAT": 8.811999,
+    "STND": 0,
+    "MHHW": 8.703,
+    "MHW": 8.623,
+    "DTL": 8.542,
+    "MTL": 8.531,
+    "MSL": 8.532,
+    "MLW": 8.438,
+    "MLLW": 8.381,
+    "GT": 0.323,
+    "MN": 0.185,
+    "DHQ": 0.08,
+    "DLQ": 0.057
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 141.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.294,
-    "HAT": 8.811999,
-    "STND": 0,
-    "MHHW": 8.703,
-    "MHW": 8.623,
-    "DTL": 8.542,
-    "MTL": 8.531,
-    "MSL": 8.532,
-    "MLW": 8.438,
-    "MLLW": 8.381,
-    "GT": 0.323,
-    "MN": 0.185,
-    "DHQ": 0.08,
-    "DLQ": 0.057
-  },
-  "disclaimers": ""
+  ]
 }

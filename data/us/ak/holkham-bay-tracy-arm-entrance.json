@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-holkham-bay-tracy-arm-entrance",
+  "id": "us/ak/holkham-bay-tracy-arm-entrance",
   "name": "Holkham Bay, Tracy Arm Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.76,
   "longitude": -133.603,
   "timezone": "America/Juneau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452067",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452067",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452067.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452067"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-juneau",
+    "reference": "us/ak/juneau",
     "height": {
       "type": "ratio",
       "high": 0.96,

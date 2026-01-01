@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-cox-wc-53-platform",
+  "id": "us/tx/cox-wc-53-platform",
   "name": "COX WC-53 Platform",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.62400054931641,
   "longitude": -93.75,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770752",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770752",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770752.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770752"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -17.784,
+    "HAT": -16.421001,
+    "STND": 0,
+    "MHHW": -16.596,
+    "MHW": -16.673,
+    "DTL": -16.964,
+    "MTL": -16.915,
+    "MSL": -16.926,
+    "MLW": -17.156,
+    "MLLW": -17.332,
+    "GT": 0.736,
+    "MN": 0.483,
+    "DHQ": 0.077,
+    "DLQ": 0.176,
+    "NAVD88": -16.87
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -17.784,
-    "HAT": -16.421001,
-    "STND": 0,
-    "MHHW": -16.596,
-    "MHW": -16.673,
-    "DTL": -16.964,
-    "MTL": -16.915,
-    "MSL": -16.926,
-    "MLW": -17.156,
-    "MLLW": -17.332,
-    "GT": 0.736,
-    "MN": 0.483,
-    "DHQ": 0.077,
-    "DLQ": 0.176,
-    "NAVD88": -16.87
-  },
-  "disclaimers": ""
+  ]
 }

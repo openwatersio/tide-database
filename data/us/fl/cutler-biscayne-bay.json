@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cutler-biscayne-bay",
+  "id": "us/fl/cutler-biscayne-bay",
   "name": "Cutler, Biscayne Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.615,
   "longitude": -80.305,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723289",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723289",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723289.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723289"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.656,
+    "HAT": 1.825,
+    "STND": 0,
+    "MHHW": 1.512,
+    "MHW": 1.494,
+    "DTL": 1.188,
+    "MTL": 1.199,
+    "MSL": 1.197,
+    "MLW": 0.903,
+    "MLLW": 0.863,
+    "GT": 0.649,
+    "MN": 0.591,
+    "DHQ": 0.018,
+    "DLQ": 0.04,
+    "HWI": 2.167,
+    "LWI": 8.932,
+    "NAVD88": 1.455
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 166.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.656,
-    "HAT": 1.825,
-    "STND": 0,
-    "MHHW": 1.512,
-    "MHW": 1.494,
-    "DTL": 1.188,
-    "MTL": 1.199,
-    "MSL": 1.197,
-    "MLW": 0.903,
-    "MLLW": 0.863,
-    "GT": 0.649,
-    "MN": 0.591,
-    "DHQ": 0.018,
-    "DLQ": 0.04,
-    "HWI": 2.167,
-    "LWI": 8.932,
-    "NAVD88": 1.455
-  },
-  "disclaimers": ""
+  ]
 }

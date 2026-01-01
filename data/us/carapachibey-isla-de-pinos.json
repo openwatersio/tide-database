@@ -1,10 +1,9 @@
 {
-  "id": "us-carapachibey-isla-de-pinos",
+  "id": "us/carapachibey-isla-de-pinos",
   "name": "Carapachibey, Isla de Pinos",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 21.45,
   "longitude": -82.91666666666701,
   "timezone": "America/Havana",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4681",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4681",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4681.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4681"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pr-san-juan",
+    "reference": "us/pr/san-juan",
     "height": {
       "type": "ratio",
       "high": 0.54,

@@ -1,10 +1,9 @@
 {
-  "id": "us-la-cote-blanche-island-west-cote-blanche-bay",
+  "id": "us/la/cote-blanche-island-west-cote-blanche-bay",
   "name": "Cote Blanche Island, West Cote Blanche Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.735,
   "longitude": -91.7133,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8764931",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764931",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8764931.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764931"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-tx-galveston-galveston-channel",
+    "reference": "us/tx/galveston-galveston-channel",
     "height": {
       "type": "ratio",
       "high": 1,

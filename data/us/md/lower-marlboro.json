@@ -1,10 +1,9 @@
 {
-  "id": "us-md-lower-marlboro",
+  "id": "us/md/lower-marlboro",
   "name": "Lower Marlboro",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.655,
   "longitude": -76.68333333333334,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8579542",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8579542",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8579542.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8579542"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.523,
+    "HAT": 3.273,
+    "STND": 0,
+    "MHHW": 3.207,
+    "MHW": 3.165,
+    "DTL": 2.881,
+    "MTL": 2.887,
+    "MSL": 2.897,
+    "MLW": 2.609,
+    "MLLW": 2.556,
+    "GT": 0.651,
+    "MN": 0.556,
+    "DHQ": 0.042,
+    "DLQ": 0.053,
+    "HWI": 8.774,
+    "LWI": 2.803
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.523,
-    "HAT": 3.273,
-    "STND": 0,
-    "MHHW": 3.207,
-    "MHW": 3.165,
-    "DTL": 2.881,
-    "MTL": 2.887,
-    "MSL": 2.897,
-    "MLW": 2.609,
-    "MLLW": 2.556,
-    "GT": 0.651,
-    "MN": 0.556,
-    "DHQ": 0.042,
-    "DLQ": 0.053,
-    "HWI": 8.774,
-    "LWI": 2.803
-  },
-  "disclaimers": ""
+  ]
 }

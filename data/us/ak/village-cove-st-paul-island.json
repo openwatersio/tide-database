@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-village-cove-st-paul-island",
+  "id": "us/ak/village-cove-st-paul-island",
   "name": "Village Cove, St. Paul Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.125301361083984,
   "longitude": -170.2852020263672,
   "timezone": "America/Nome",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9464212",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464212",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9464212.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464212"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.046000004,
+    "HAT": 1.752,
+    "STND": 0,
+    "MHHW": 1.425,
+    "MHW": 1.351,
+    "DTL": 0.932,
+    "MTL": 1.035,
+    "MSL": 1.012,
+    "MLW": 0.719,
+    "MLLW": 0.439,
+    "GT": 0.986,
+    "MN": 0.633,
+    "DHQ": 0.073,
+    "DLQ": 0.28,
+    "HWI": 3.33,
+    "LWI": 9.52,
+    "NAVD88": 0.217
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.046000004,
-    "HAT": 1.752,
-    "STND": 0,
-    "MHHW": 1.425,
-    "MHW": 1.351,
-    "DTL": 0.932,
-    "MTL": 1.035,
-    "MSL": 1.012,
-    "MLW": 0.719,
-    "MLLW": 0.439,
-    "GT": 0.986,
-    "MN": 0.633,
-    "DHQ": 0.073,
-    "DLQ": 0.28,
-    "HWI": 3.33,
-    "LWI": 9.52,
-    "NAVD88": 0.217
-  },
-  "disclaimers": ""
+  ]
 }

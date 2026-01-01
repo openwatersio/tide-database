@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-davis-core-sound",
+  "id": "us/nc/davis-core-sound",
   "name": "Davis, Core Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.79679870605469,
   "longitude": -76.45549774169922,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8656201",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656201",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8656201.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656201"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.573999,
+    "HAT": 9.287,
+    "STND": 0,
+    "MHHW": 9.115,
+    "MHW": 9.069,
+    "DTL": 8.913,
+    "MTL": 8.904,
+    "MSL": 8.903,
+    "MLW": 8.738,
+    "MLLW": 8.71,
+    "GT": 0.405,
+    "MN": 0.33,
+    "DHQ": 0.047,
+    "DLQ": 0.029,
+    "HWI": 2.97,
+    "LWI": 9.607
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.573999,
-    "HAT": 9.287,
-    "STND": 0,
-    "MHHW": 9.115,
-    "MHW": 9.069,
-    "DTL": 8.913,
-    "MTL": 8.904,
-    "MSL": 8.903,
-    "MLW": 8.738,
-    "MLLW": 8.71,
-    "GT": 0.405,
-    "MN": 0.33,
-    "DHQ": 0.047,
-    "DLQ": 0.029,
-    "HWI": 2.97,
-    "LWI": 9.607
-  },
-  "disclaimers": ""
+  ]
 }

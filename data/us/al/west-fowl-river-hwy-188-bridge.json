@@ -1,10 +1,9 @@
 {
-  "id": "us-al-west-fowl-river-hwy-188-bridge",
+  "id": "us/al/west-fowl-river-hwy-188-bridge",
   "name": "West Fowl River, Hwy 188 bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.37660026550293,
   "longitude": -88.15859985351562,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8738043",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8738043",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8738043.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8738043"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.599,
+    "HAT": 6.731,
+    "STND": 0,
+    "MHHW": 6.449,
+    "MHW": 6.402,
+    "DTL": 6.192,
+    "MTL": 6.191,
+    "MSL": 6.194,
+    "MLW": 5.981,
+    "MLLW": 5.936,
+    "GT": 0.513,
+    "MN": 0.421,
+    "DHQ": 0.047,
+    "DLQ": 0.045,
+    "NAVD88": 6.173
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 136.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.599,
-    "HAT": 6.731,
-    "STND": 0,
-    "MHHW": 6.449,
-    "MHW": 6.402,
-    "DTL": 6.192,
-    "MTL": 6.191,
-    "MSL": 6.194,
-    "MLW": 5.981,
-    "MLLW": 5.936,
-    "GT": 0.513,
-    "MN": 0.421,
-    "DHQ": 0.047,
-    "DLQ": 0.045,
-    "NAVD88": 6.173
-  },
-  "disclaimers": ""
+  ]
 }

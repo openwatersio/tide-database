@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-fleming-key-north-end",
+  "id": "us/fl/fleming-key-north-end",
   "name": "Fleming Key, north end",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.5917,
   "longitude": -81.795,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724571",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724571",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724571.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724571"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.795,
+    "HAT": 9.533,
+    "STND": 0,
+    "MHHW": 9.378,
+    "MHW": 9.299,
+    "DTL": 9.157,
+    "MTL": 9.146,
+    "MSL": 9.151,
+    "MLW": 8.992,
+    "MLLW": 8.935,
+    "GT": 0.443,
+    "MN": 0.307,
+    "DHQ": 0.079,
+    "DLQ": 0.057,
+    "HWI": 4.396,
+    "LWI": 10.297
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.795,
-    "HAT": 9.533,
-    "STND": 0,
-    "MHHW": 9.378,
-    "MHW": 9.299,
-    "DTL": 9.157,
-    "MTL": 9.146,
-    "MSL": 9.151,
-    "MLW": 8.992,
-    "MLLW": 8.935,
-    "GT": 0.443,
-    "MN": 0.307,
-    "DHQ": 0.079,
-    "DLQ": 0.057,
-    "HWI": 4.396,
-    "LWI": 10.297
-  },
-  "disclaimers": ""
+  ]
 }

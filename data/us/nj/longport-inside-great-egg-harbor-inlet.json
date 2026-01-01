@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-longport-inside-great-egg-harbor-inlet",
+  "id": "us/nj/longport-inside-great-egg-harbor-inlet",
   "name": "Longport (inside), Great Egg Harbor Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.3083,
   "longitude": -74.5333,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8534836",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534836",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8534836.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534836"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.33799994,
+    "HAT": 2.262,
+    "STND": 0,
+    "MHHW": 1.945,
+    "MHW": 1.822,
+    "DTL": 1.285,
+    "MTL": 1.246,
+    "MSL": 1.244,
+    "MLW": 0.67,
+    "MLLW": 0.625,
+    "GT": 1.32,
+    "MN": 1.152,
+    "DHQ": 0.123,
+    "DLQ": 0.045,
+    "HWI": 0.333,
+    "LWI": 6.645
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.33799994,
-    "HAT": 2.262,
-    "STND": 0,
-    "MHHW": 1.945,
-    "MHW": 1.822,
-    "DTL": 1.285,
-    "MTL": 1.246,
-    "MSL": 1.244,
-    "MLW": 0.67,
-    "MLLW": 0.625,
-    "GT": 1.32,
-    "MN": 1.152,
-    "DHQ": 0.123,
-    "DLQ": 0.045,
-    "HWI": 0.333,
-    "LWI": 6.645
-  },
-  "disclaimers": ""
+  ]
 }

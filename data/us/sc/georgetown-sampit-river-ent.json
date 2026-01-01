@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-georgetown-sampit-river-ent",
+  "id": "us/sc/georgetown-sampit-river-ent",
   "name": "Georgetown, Sampit River Ent.",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.361698150634766,
   "longitude": -79.27999877929688,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8662926",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662926",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8662926.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662926"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.88,
+    "HAT": 7.802,
+    "STND": 0,
+    "MHHW": 7.434,
+    "MHW": 7.362,
+    "DTL": 6.789,
+    "MTL": 6.78,
+    "MSL": 6.811,
+    "MLW": 6.197,
+    "MLLW": 6.144,
+    "GT": 1.29,
+    "MN": 1.165,
+    "DHQ": 0.072,
+    "DLQ": 0.053,
+    "HWI": 1.656,
+    "LWI": 8.546,
+    "NAVD88": 6.813
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.88,
-    "HAT": 7.802,
-    "STND": 0,
-    "MHHW": 7.434,
-    "MHW": 7.362,
-    "DTL": 6.789,
-    "MTL": 6.78,
-    "MSL": 6.811,
-    "MLW": 6.197,
-    "MLLW": 6.144,
-    "GT": 1.29,
-    "MN": 1.165,
-    "DHQ": 0.072,
-    "DLQ": 0.053,
-    "HWI": 1.656,
-    "LWI": 8.546,
-    "NAVD88": 6.813
-  },
-  "disclaimers": ""
+  ]
 }

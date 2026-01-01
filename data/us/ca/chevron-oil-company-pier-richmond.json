@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-chevron-oil-company-pier-richmond",
+  "id": "us/ca/chevron-oil-company-pier-richmond",
   "name": "Chevron Oil Company Pier, Richmond",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.92829895019531,
   "longitude": -122.4000015258789,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414863",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414863",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414863.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414863"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.9560003,
+    "HAT": 5.801,
+    "STND": 0,
+    "MHHW": 5.374,
+    "MHW": 5.189,
+    "DTL": 4.453,
+    "MTL": 4.532,
+    "MSL": 4.524,
+    "MLW": 3.875,
+    "MLLW": 3.533,
+    "GT": 1.841,
+    "MN": 1.314,
+    "DHQ": 0.185,
+    "DLQ": 0.342,
+    "HWI": 7.949,
+    "LWI": 1.478,
+    "NAVD88": 3.528
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 115,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.9560003,
-    "HAT": 5.801,
-    "STND": 0,
-    "MHHW": 5.374,
-    "MHW": 5.189,
-    "DTL": 4.453,
-    "MTL": 4.532,
-    "MSL": 4.524,
-    "MLW": 3.875,
-    "MLLW": 3.533,
-    "GT": 1.841,
-    "MN": 1.314,
-    "DHQ": 0.185,
-    "DLQ": 0.342,
-    "HWI": 7.949,
-    "LWI": 1.478,
-    "NAVD88": 3.528
-  },
-  "disclaimers": ""
+  ]
 }

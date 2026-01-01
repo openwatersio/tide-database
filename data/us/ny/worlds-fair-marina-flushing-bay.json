@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-worlds-fair-marina-flushing-bay",
+  "id": "us/ny/worlds-fair-marina-flushing-bay",
   "name": "Worlds Fair Marina, Flushing Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.761,
   "longitude": -73.85036111111111,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8517251",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8517251",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8517251.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8517251"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.9830003,
+    "HAT": 8.331,
+    "STND": 0,
+    "MHHW": 7.754,
+    "MHW": 7.644,
+    "DTL": 6.628,
+    "MTL": 6.616,
+    "MSL": 6.622,
+    "MLW": 5.588,
+    "MLLW": 5.503,
+    "GT": 2.251,
+    "MN": 2.057,
+    "DHQ": 0.11,
+    "DLQ": 0.085,
+    "HWI": 4.243,
+    "LWI": 11.023
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.9830003,
-    "HAT": 8.331,
-    "STND": 0,
-    "MHHW": 7.754,
-    "MHW": 7.644,
-    "DTL": 6.628,
-    "MTL": 6.616,
-    "MSL": 6.622,
-    "MLW": 5.588,
-    "MLLW": 5.503,
-    "GT": 2.251,
-    "MN": 2.057,
-    "DHQ": 0.11,
-    "DLQ": 0.085,
-    "HWI": 4.243,
-    "LWI": 11.023
-  },
-  "disclaimers": ""
+  ]
 }

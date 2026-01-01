@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-bahia-salinas",
+  "id": "us/pr/bahia-salinas",
   "name": "Bahia Salinas",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.95144444444444,
   "longitude": -67.19658333333334,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9759197",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759197",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9759197.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759197"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.062,
+    "HAT": 8.523,
+    "STND": 0,
+    "MHHW": 8.385,
+    "MHW": 8.378,
+    "DTL": 8.285,
+    "MTL": 8.284,
+    "MSL": 8.283,
+    "MLW": 8.189,
+    "MLLW": 8.185,
+    "GT": 0.2,
+    "MN": 0.189,
+    "DHQ": 0.007,
+    "DLQ": 0.004
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 117.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.062,
-    "HAT": 8.523,
-    "STND": 0,
-    "MHHW": 8.385,
-    "MHW": 8.378,
-    "DTL": 8.285,
-    "MTL": 8.284,
-    "MSL": 8.283,
-    "MLW": 8.189,
-    "MLLW": 8.185,
-    "GT": 0.2,
-    "MN": 0.189,
-    "DHQ": 0.007,
-    "DLQ": 0.004
-  },
-  "disclaimers": ""
+  ]
 }

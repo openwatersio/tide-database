@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-port-lions-ak",
+  "id": "us/ak/port-lions-ak",
   "name": "Port Lions, AK",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.87347222222222,
   "longitude": -152.8671111111111,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457391",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457391",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457391.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457391"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.7290006,
+    "HAT": 10.373,
+    "STND": 0,
+    "MHHW": 9.504,
+    "MHW": 9.227,
+    "DTL": 8.077,
+    "MTL": 8.113,
+    "MSL": 8.112,
+    "MLW": 7,
+    "MLLW": 6.65,
+    "GT": 2.854,
+    "MN": 2.227,
+    "DHQ": 0.277,
+    "DLQ": 0.35,
+    "HWI": 10.57,
+    "LWI": 4.29
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.7290006,
-    "HAT": 10.373,
-    "STND": 0,
-    "MHHW": 9.504,
-    "MHW": 9.227,
-    "DTL": 8.077,
-    "MTL": 8.113,
-    "MSL": 8.112,
-    "MLW": 7,
-    "MLLW": 6.65,
-    "GT": 2.854,
-    "MN": 2.227,
-    "DHQ": 0.277,
-    "DLQ": 0.35,
-    "HWI": 10.57,
-    "LWI": 4.29
-  },
-  "disclaimers": ""
+  ]
 }

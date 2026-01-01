@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-greenhead-slough",
+  "id": "us/wa/greenhead-slough",
   "name": "Greenhead Slough",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.37220001220703,
   "longitude": -123.95030212402344,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440650",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440650",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440650.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440650"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.9560003,
+    "HAT": 8.704,
+    "STND": 0,
+    "MHHW": 7.963,
+    "MHW": 7.733,
+    "DTL": 6.333,
+    "MTL": 6.398,
+    "MSL": 6.497,
+    "MLW": 5.062,
+    "MLLW": 4.703,
+    "GT": 3.26,
+    "MN": 2.671,
+    "DHQ": 0.23,
+    "DLQ": 0.359,
+    "HWI": 9.769,
+    "LWI": 3.664
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.9560003,
-    "HAT": 8.704,
-    "STND": 0,
-    "MHHW": 7.963,
-    "MHW": 7.733,
-    "DTL": 6.333,
-    "MTL": 6.398,
-    "MSL": 6.497,
-    "MLW": 5.062,
-    "MLLW": 4.703,
-    "GT": 3.26,
-    "MN": 2.671,
-    "DHQ": 0.23,
-    "DLQ": 0.359,
-    "HWI": 9.769,
-    "LWI": 3.664
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-capers-creek-south-capers-island",
+  "id": "us/sc/capers-creek-south-capers-island",
   "name": "Capers Creek, South Capers Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.8567,
   "longitude": -79.7067,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8664941",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664941",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8664941.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664941"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.48800004,
+    "HAT": 3.027,
+    "STND": 0,
+    "MHHW": 2.569,
+    "MHW": 2.451,
+    "DTL": 1.756,
+    "MTL": 1.723,
+    "MSL": 1.73,
+    "MLW": 0.995,
+    "MLLW": 0.944,
+    "GT": 1.625,
+    "MN": 1.457,
+    "DHQ": 0.117,
+    "DLQ": 0.051,
+    "HWI": 0.441,
+    "LWI": 6.399
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 235.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.48800004,
-    "HAT": 3.027,
-    "STND": 0,
-    "MHHW": 2.569,
-    "MHW": 2.451,
-    "DTL": 1.756,
-    "MTL": 1.723,
-    "MSL": 1.73,
-    "MLW": 0.995,
-    "MLLW": 0.944,
-    "GT": 1.625,
-    "MN": 1.457,
-    "DHQ": 0.117,
-    "DLQ": 0.051,
-    "HWI": 0.441,
-    "LWI": 6.399
-  },
-  "disclaimers": ""
+  ]
 }

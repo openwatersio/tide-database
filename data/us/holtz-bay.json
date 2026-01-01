@@ -1,10 +1,9 @@
 {
-  "id": "us-holtz-bay",
+  "id": "us/holtz-bay",
   "name": "Holtz Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 52.91669845581055,
   "longitude": 173.1667022705078,
   "timezone": "America/Adak",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2317",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2317",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2317.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2317"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-massacre-bay",
+    "reference": "us/ak/massacre-bay",
     "height": {
       "type": "ratio",
       "high": 1.12,

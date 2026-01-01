@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-bellingham",
+  "id": "us/wa/bellingham",
   "name": "Bellingham",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.745,
   "longitude": -122.495,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449211",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449211",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449211.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449211"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-port-townsend",
+    "reference": "us/wa/port-townsend",
     "height": {
       "type": "ratio",
       "high": 0.99,

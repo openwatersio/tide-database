@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-seldovia-kachemak-bay",
+  "id": "us/ak/seldovia-kachemak-bay",
   "name": "SELDOVIA, Kachemak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.44049835205078,
   "longitude": -151.7198944091797,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455500",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455500",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455500.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455500"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.27699995,
+    "HAT": 9.172,
+    "STND": 0,
+    "MHHW": 7.567,
+    "MHW": 7.32,
+    "DTL": 4.839,
+    "MTL": 4.952,
+    "MSL": 4.98,
+    "MLW": 2.585,
+    "MLLW": 2.068,
+    "GT": 5.499,
+    "MN": 4.735,
+    "DHQ": 0.247,
+    "DLQ": 0.517,
+    "HWI": 11.18,
+    "LWI": 4.86
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 303.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.27699995,
-    "HAT": 9.172,
-    "STND": 0,
-    "MHHW": 7.567,
-    "MHW": 7.32,
-    "DTL": 4.839,
-    "MTL": 4.952,
-    "MSL": 4.98,
-    "MLW": 2.585,
-    "MLLW": 2.068,
-    "GT": 5.499,
-    "MN": 4.735,
-    "DHQ": 0.247,
-    "DLQ": 0.517,
-    "HWI": 11.18,
-    "LWI": 4.86
-  },
-  "disclaimers": ""
+  ]
 }

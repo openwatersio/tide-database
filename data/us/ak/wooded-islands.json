@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-wooded-islands",
+  "id": "us/ak/wooded-islands",
   "name": "Wooded Islands",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.875,
   "longitude": -147.403,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454562",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454562",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454562.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454562"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.45,
+    "HAT": 6.4309998,
+    "STND": 0,
+    "MHHW": 5.595,
+    "MHW": 5.32,
+    "DTL": 4.034,
+    "MTL": 4.116,
+    "MSL": 4.119,
+    "MLW": 2.912,
+    "MLLW": 2.474,
+    "GT": 3.121,
+    "MN": 2.408,
+    "DHQ": 0.275,
+    "DLQ": 0.438,
+    "HWI": 10.043,
+    "LWI": 3.723
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.45,
-    "HAT": 6.4309998,
-    "STND": 0,
-    "MHHW": 5.595,
-    "MHW": 5.32,
-    "DTL": 4.034,
-    "MTL": 4.116,
-    "MSL": 4.119,
-    "MLW": 2.912,
-    "MLLW": 2.474,
-    "GT": 3.121,
-    "MN": 2.408,
-    "DHQ": 0.275,
-    "DLQ": 0.438,
-    "HWI": 10.043,
-    "LWI": 3.723
-  },
-  "disclaimers": ""
+  ]
 }

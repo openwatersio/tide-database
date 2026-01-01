@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-saginaw-bay-kuiu-island",
+  "id": "us/ak/saginaw-bay-kuiu-island",
   "name": "Saginaw Bay, Kuiu Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.90333333333334,
   "longitude": -134.3030555555556,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451497",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451497",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451497.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451497"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.94400024,
+    "HAT": 7.502,
+    "STND": 0,
+    "MHHW": 6.369,
+    "MHW": 6.112,
+    "DTL": 4.277,
+    "MTL": 4.38,
+    "MSL": 4.399,
+    "MLW": 2.649,
+    "MLLW": 2.184,
+    "GT": 4.185,
+    "MN": 3.462,
+    "DHQ": 0.258,
+    "DLQ": 0.465,
+    "HWI": 9.66,
+    "LWI": 3.33
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.94400024,
-    "HAT": 7.502,
-    "STND": 0,
-    "MHHW": 6.369,
-    "MHW": 6.112,
-    "DTL": 4.277,
-    "MTL": 4.38,
-    "MSL": 4.399,
-    "MLW": 2.649,
-    "MLLW": 2.184,
-    "GT": 4.185,
-    "MN": 3.462,
-    "DHQ": 0.258,
-    "DLQ": 0.465,
-    "HWI": 9.66,
-    "LWI": 3.33
-  },
-  "disclaimers": ""
+  ]
 }

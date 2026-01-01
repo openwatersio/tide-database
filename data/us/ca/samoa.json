@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-samoa",
+  "id": "us/ca/samoa",
   "name": "Samoa",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8267,
   "longitude": -124.18,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9418817",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418817",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9418817.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9418817"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.22000003,
+    "HAT": 3.374,
+    "STND": 0,
+    "MHHW": 2.767,
+    "MHW": 2.548,
+    "DTL": 1.644,
+    "MTL": 1.733,
+    "MSL": 1.737,
+    "MLW": 0.917,
+    "MLLW": 0.522,
+    "GT": 2.245,
+    "MN": 1.631,
+    "DHQ": 0.219,
+    "DLQ": 0.395,
+    "HWI": 7.86,
+    "LWI": 1.18,
+    "NAVD88": 0.741
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.22000003,
-    "HAT": 3.374,
-    "STND": 0,
-    "MHHW": 2.767,
-    "MHW": 2.548,
-    "DTL": 1.644,
-    "MTL": 1.733,
-    "MSL": 1.737,
-    "MLW": 0.917,
-    "MLLW": 0.522,
-    "GT": 2.245,
-    "MN": 1.631,
-    "DHQ": 0.219,
-    "DLQ": 0.395,
-    "HWI": 7.86,
-    "LWI": 1.18,
-    "NAVD88": 0.741
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-md-fort-mchenry-marsh",
+  "id": "us/md/fort-mchenry-marsh",
   "name": "Fort McHenry Marsh",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.2617,
   "longitude": -76.585,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8574683",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8574683",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8574683.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8574683"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.063,
+    "HAT": 1.944,
+    "STND": 0,
+    "MHHW": 1.762,
+    "MHW": 1.67,
+    "DTL": 1.509,
+    "MTL": 1.496,
+    "MSL": 1.499,
+    "MLW": 1.323,
+    "MLLW": 1.257,
+    "GT": 0.505,
+    "MN": 0.346,
+    "DHQ": 0.092,
+    "DLQ": 0.066,
+    "HWI": 11.515,
+    "LWI": 5.677
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 340.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.063,
-    "HAT": 1.944,
-    "STND": 0,
-    "MHHW": 1.762,
-    "MHW": 1.67,
-    "DTL": 1.509,
-    "MTL": 1.496,
-    "MSL": 1.499,
-    "MLW": 1.323,
-    "MLLW": 1.257,
-    "GT": 0.505,
-    "MN": 0.346,
-    "DHQ": 0.092,
-    "DLQ": 0.066,
-    "HWI": 11.515,
-    "LWI": 5.677
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-pepperfish-keys",
+  "id": "us/pepperfish-keys",
   "name": "Pepperfish Keys",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.5,
   "longitude": -83.366666666667,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4301",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4301",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4301.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4301"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-cedar-key",
+    "reference": "us/fl/cedar-key",
     "height": {
       "type": "ratio",
       "high": 0.88,

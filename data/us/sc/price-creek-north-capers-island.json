@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-price-creek-north-capers-island",
+  "id": "us/sc/price-creek-north-capers-island",
   "name": "Price Creek, North Capers Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.8817,
   "longitude": -79.6583,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8664801",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664801",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8664801.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664801"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-sc-charleston-customhouse-wharf",
+    "reference": "us/sc/charleston-customhouse-wharf",
     "height": {
       "type": "ratio",
       "high": 0.92,

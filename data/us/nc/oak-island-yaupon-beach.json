@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-oak-island-yaupon-beach",
+  "id": "us/nc/oak-island-yaupon-beach",
   "name": "Oak Island, Yaupon Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.9017,
   "longitude": -78.0817,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8659182",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8659182",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8659182.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8659182"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.59300005,
+    "HAT": 3.154,
+    "STND": 0,
+    "MHHW": 2.653,
+    "MHW": 2.539,
+    "DTL": 1.85,
+    "MTL": 1.819,
+    "MSL": 1.824,
+    "MLW": 1.098,
+    "MLLW": 1.048,
+    "GT": 1.605,
+    "MN": 1.44,
+    "DHQ": 0.114,
+    "DLQ": 0.051,
+    "HWI": 12.243,
+    "LWI": 6.088,
+    "NAVD88": 1.994
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -269,25 +288,5 @@
       "phase_local": 269,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.59300005,
-    "HAT": 3.154,
-    "STND": 0,
-    "MHHW": 2.653,
-    "MHW": 2.539,
-    "DTL": 1.85,
-    "MTL": 1.819,
-    "MSL": 1.824,
-    "MLW": 1.098,
-    "MLLW": 1.048,
-    "GT": 1.605,
-    "MN": 1.44,
-    "DHQ": 0.114,
-    "DLQ": 0.051,
-    "HWI": 12.243,
-    "LWI": 6.088,
-    "NAVD88": 1.994
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-va-fishermans-island",
+  "id": "us/va/fishermans-island",
   "name": "Fishermans Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.0967,
   "longitude": -75.9833,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8632085",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8632085",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8632085.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8632085"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-chesapeake-bay-bridge-tunnel",
+    "reference": "us/va/chesapeake-bay-bridge-tunnel",
     "height": {
       "type": "ratio",
       "high": 1.19,

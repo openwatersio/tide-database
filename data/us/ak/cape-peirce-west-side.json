@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-cape-peirce-west-side",
+  "id": "us/ak/cape-peirce-west-side",
   "name": "Cape Peirce, West Side",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.62670135498047,
   "longitude": -161.83700561523438,
   "timezone": "America/Anchorage",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465137",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465137",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465137.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465137"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.7869997,
+    "HAT": 8.946,
+    "STND": 0,
+    "MHHW": 8.142,
+    "MHW": 7.722,
+    "DTL": 7.174,
+    "MTL": 7.051,
+    "MSL": 7.062,
+    "MLW": 6.38,
+    "MLLW": 6.206,
+    "GT": 1.936,
+    "MN": 1.342,
+    "DHQ": 0.42,
+    "DLQ": 0.174
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.7869997,
-    "HAT": 8.946,
-    "STND": 0,
-    "MHHW": 8.142,
-    "MHW": 7.722,
-    "DTL": 7.174,
-    "MTL": 7.051,
-    "MSL": 7.062,
-    "MLW": 6.38,
-    "MLLW": 6.206,
-    "GT": 1.936,
-    "MN": 1.342,
-    "DHQ": 0.42,
-    "DLQ": 0.174
-  },
-  "disclaimers": ""
+  ]
 }

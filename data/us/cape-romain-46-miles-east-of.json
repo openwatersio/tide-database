@@ -1,10 +1,9 @@
 {
-  "id": "us-cape-romain-46-miles-east-of",
+  "id": "us/cape-romain-46-miles-east-of",
   "name": "Cape Romain, 46 miles east of",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.1,
   "longitude": -78.433333333333,
   "timezone": "Etc/GMT+5",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC3011",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC3011",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC3011.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC3011"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-sc-charleston-customhouse-wharf",
+    "reference": "us/sc/charleston-customhouse-wharf",
     "height": {
       "type": "ratio",
       "high": 0.78,

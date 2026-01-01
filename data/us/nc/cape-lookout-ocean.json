@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-cape-lookout-ocean",
+  "id": "us/nc/cape-lookout-ocean",
   "name": "Cape Lookout (ocean)",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.6083,
   "longitude": -76.5283,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8656937",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656937",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8656937.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656937"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nc-cape-hatteras-fishing-pier",
+    "reference": "us/nc/cape-hatteras-fishing-pier",
     "height": {
       "type": "ratio",
       "high": 1.15,

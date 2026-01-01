@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-tuckerton-shooting-thorofare-little-egg-inlet",
+  "id": "us/nj/tuckerton-shooting-thorofare-little-egg-inlet",
   "name": "Tuckerton, Shooting Thorofare, Little Egg Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.50830078125,
   "longitude": -74.32499694824219,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8534319",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534319",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8534319.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534319"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.773,
+    "HAT": 0.66,
+    "STND": 0,
+    "MHHW": 0.458,
+    "MHW": 0.356,
+    "DTL": -0.05,
+    "MTL": -0.079,
+    "MSL": -0.084,
+    "MLW": -0.515,
+    "MLLW": -0.558,
+    "GT": 1.017,
+    "MN": 0.872,
+    "DHQ": 0.102,
+    "DLQ": 0.043,
+    "HWI": 0.905,
+    "LWI": 7.026,
+    "NAVD88": 0
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 196.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.773,
-    "HAT": 0.66,
-    "STND": 0,
-    "MHHW": 0.458,
-    "MHW": 0.356,
-    "DTL": -0.05,
-    "MTL": -0.079,
-    "MSL": -0.084,
-    "MLW": -0.515,
-    "MLLW": -0.558,
-    "GT": 1.017,
-    "MN": 0.872,
-    "DHQ": 0.102,
-    "DLQ": 0.043,
-    "HWI": 0.905,
-    "LWI": 7.026,
-    "NAVD88": 0
-  },
-  "disclaimers": ""
+  ]
 }

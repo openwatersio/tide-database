@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-vernon-view-burnside-river",
+  "id": "us/ga/vernon-view-burnside-river",
   "name": "Vernon View, Burnside River",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.9267,
   "longitude": -81.0983,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8671642",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671642",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8671642.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671642"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ga-fort-pulaski-savannah-river-entrance",
+    "reference": "us/ga/fort-pulaski-savannah-river-entrance",
     "height": {
       "type": "ratio",
       "high": 1.09,

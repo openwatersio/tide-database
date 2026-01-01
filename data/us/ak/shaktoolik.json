@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-shaktoolik",
+  "id": "us/ak/shaktoolik",
   "name": "Shaktoolik",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 64.38022222222222,
   "longitude": -161.2351388888889,
   "timezone": "America/Anchorage",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9468691",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468691",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9468691.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468691"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.201,
+    "HAT": 8.473,
+    "STND": 0,
+    "MHHW": 7.873,
+    "MHW": 7.666,
+    "DTL": 7.311,
+    "MTL": 7.295,
+    "MSL": 7.244,
+    "MLW": 6.925,
+    "MLLW": 6.735,
+    "GT": 1.147,
+    "MN": 0.741,
+    "DHQ": 0.207,
+    "DLQ": 0.19
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.201,
-    "HAT": 8.473,
-    "STND": 0,
-    "MHHW": 7.873,
-    "MHW": 7.666,
-    "DTL": 7.311,
-    "MTL": 7.295,
-    "MSL": 7.244,
-    "MLW": 6.925,
-    "MLLW": 6.735,
-    "GT": 1.147,
-    "MN": 0.741,
-    "DHQ": 0.207,
-    "DLQ": 0.19
-  },
-  "disclaimers": ""
+  ]
 }

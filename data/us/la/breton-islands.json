@@ -1,10 +1,9 @@
 {
-  "id": "us-la-breton-islands",
+  "id": "us/la/breton-islands",
   "name": "Breton Islands",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.4933,
   "longitude": -89.1733,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8760595",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760595",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8760595.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760595"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-la-south-pass",
+    "reference": "us/la/south-pass",
     "height": {
       "type": "ratio",
       "high": 1.14,

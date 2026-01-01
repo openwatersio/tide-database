@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-renaissance-sa-13-platform",
+  "id": "us/tx/renaissance-sa-13-platform",
   "name": "Renaissance SA-13 Platform",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.47900009155273,
   "longitude": -93.63999938964844,
   "timezone": "Etc/GMT+6",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8771050",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771050",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8771050.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771050"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -18.863,
+    "HAT": -17.456001,
+    "STND": 0,
+    "MHHW": -17.702,
+    "MHW": -17.75,
+    "DTL": -18.035,
+    "MTL": -17.981,
+    "MSL": -17.988,
+    "MLW": -18.212,
+    "MLLW": -18.368,
+    "GT": 0.666,
+    "MN": 0.462,
+    "DHQ": 0.048,
+    "DLQ": 0.156,
+    "NAVD88": -17.911
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -18.863,
-    "HAT": -17.456001,
-    "STND": 0,
-    "MHHW": -17.702,
-    "MHW": -17.75,
-    "DTL": -18.035,
-    "MTL": -17.981,
-    "MSL": -17.988,
-    "MLW": -18.212,
-    "MLLW": -18.368,
-    "GT": 0.666,
-    "MN": 0.462,
-    "DHQ": 0.048,
-    "DLQ": 0.156,
-    "NAVD88": -17.911
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-college-fiord",
+  "id": "us/ak/college-fiord",
   "name": "College Fiord",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 61.2057991027832,
   "longitude": -147.7613983154297,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454672",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454672",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454672.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454672"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.6940001,
+    "HAT": 4.4249997,
+    "STND": 0,
+    "MHHW": 3.307,
+    "MHW": 3.019,
+    "DTL": 1.393,
+    "MTL": 1.482,
+    "MSL": 1.532,
+    "MLW": -0.054,
+    "MLLW": -0.519,
+    "GT": 3.827,
+    "MN": 3.074,
+    "DHQ": 0.288,
+    "DLQ": 0.465,
+    "HWI": 10.083,
+    "LWI": 3.778,
+    "NAVD88": 0.188
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.6940001,
-    "HAT": 4.4249997,
-    "STND": 0,
-    "MHHW": 3.307,
-    "MHW": 3.019,
-    "DTL": 1.393,
-    "MTL": 1.482,
-    "MSL": 1.532,
-    "MLW": -0.054,
-    "MLLW": -0.519,
-    "GT": 3.827,
-    "MN": 3.074,
-    "DHQ": 0.288,
-    "DLQ": 0.465,
-    "HWI": 10.083,
-    "LWI": 3.778,
-    "NAVD88": 0.188
-  },
-  "disclaimers": ""
+  ]
 }

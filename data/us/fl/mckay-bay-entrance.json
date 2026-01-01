@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-mckay-bay-entrance",
+  "id": "us/fl/mckay-bay-entrance",
   "name": "McKay Bay Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.913299560546875,
   "longitude": -82.42500305175781,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726667",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726667",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726667.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726667"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.302,
+    "HAT": 1.151,
+    "STND": 0,
+    "MHHW": 0.9,
+    "MHW": 0.8,
+    "DTL": 0.492,
+    "MTL": 0.517,
+    "MSL": 0.526,
+    "MLW": 0.235,
+    "MLLW": 0.083,
+    "GT": 0.817,
+    "MN": 0.566,
+    "DHQ": 0.1,
+    "DLQ": 0.151,
+    "HWI": 7.223,
+    "LWI": 1.033,
+    "NAVD88": 0.597
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 345.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.302,
-    "HAT": 1.151,
-    "STND": 0,
-    "MHHW": 0.9,
-    "MHW": 0.8,
-    "DTL": 0.492,
-    "MTL": 0.517,
-    "MSL": 0.526,
-    "MLW": 0.235,
-    "MLLW": 0.083,
-    "GT": 0.817,
-    "MN": 0.566,
-    "DHQ": 0.1,
-    "DLQ": 0.151,
-    "HWI": 7.223,
-    "LWI": 1.033,
-    "NAVD88": 0.597
-  },
-  "disclaimers": ""
+  ]
 }

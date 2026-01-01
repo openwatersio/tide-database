@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-punta-rassa-san-carlos-bay",
+  "id": "us/fl/punta-rassa-san-carlos-bay",
   "name": "Punta Rassa, San Carlos Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.488300323486328,
   "longitude": -82.01329803466797,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725391",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725391",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725391.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725391"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.96500003,
+    "HAT": 0.41999996,
+    "STND": 0,
+    "MHHW": 0.164,
+    "MHW": 0.082,
+    "DTL": -0.216,
+    "MTL": -0.179,
+    "MSL": -0.17,
+    "MLW": -0.44,
+    "MLLW": -0.598,
+    "GT": 0.763,
+    "MN": 0.523,
+    "DHQ": 0.082,
+    "DLQ": 0.158,
+    "HWI": 5.803,
+    "LWI": 11.913,
+    "NAVD88": -0.011
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 279.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.96500003,
-    "HAT": 0.41999996,
-    "STND": 0,
-    "MHHW": 0.164,
-    "MHW": 0.082,
-    "DTL": -0.216,
-    "MTL": -0.179,
-    "MSL": -0.17,
-    "MLW": -0.44,
-    "MLLW": -0.598,
-    "GT": 0.763,
-    "MN": 0.523,
-    "DHQ": 0.082,
-    "DLQ": 0.158,
-    "HWI": 5.803,
-    "LWI": 11.913,
-    "NAVD88": -0.011
-  },
-  "disclaimers": ""
+  ]
 }

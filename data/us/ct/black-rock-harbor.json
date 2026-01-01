@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-black-rock-harbor",
+  "id": "us/ct/black-rock-harbor",
   "name": "Black Rock Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.1567,
   "longitude": -73.2133,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8467373",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8467373",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8467373.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8467373"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.682,
+    "HAT": 4.921,
+    "STND": 0,
+    "MHHW": 4.425,
+    "MHW": 4.322,
+    "DTL": 3.306,
+    "MTL": 3.293,
+    "MSL": 3.295,
+    "MLW": 2.264,
+    "MLLW": 2.188,
+    "GT": 2.237,
+    "MN": 2.058,
+    "DHQ": 0.103,
+    "DLQ": 0.077,
+    "HWI": 3.805,
+    "LWI": 10.151
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -309,24 +327,5 @@
       "phase_local": 90.8,
       "speed": 115.93642
     }
-  ],
-  "datums": {
-    "LAT": 1.682,
-    "HAT": 4.921,
-    "STND": 0,
-    "MHHW": 4.425,
-    "MHW": 4.322,
-    "DTL": 3.306,
-    "MTL": 3.293,
-    "MSL": 3.295,
-    "MLW": 2.264,
-    "MLLW": 2.188,
-    "GT": 2.237,
-    "MN": 2.058,
-    "DHQ": 0.103,
-    "DLQ": 0.077,
-    "HWI": 3.805,
-    "LWI": 10.151
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-va-chesapeake-bay-bridge-tunnel",
+  "id": "us/va/chesapeake-bay-bridge-tunnel",
   "name": "CHESAPEAKE BAY BRIDGE TUNNEL",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.96670150756836,
   "longitude": -76.11329650878906,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638863",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638863",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638863.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638863"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.4150066,
+    "HAT": 8.900007,
+    "STND": 0,
+    "MHHW": 8.588,
+    "MHW": 8.518,
+    "DTL": 8.146,
+    "MTL": 8.129,
+    "MSL": 8.135,
+    "MLW": 7.741,
+    "MLLW": 7.704,
+    "GT": 0.885,
+    "MN": 0.777,
+    "DHQ": 0.07,
+    "DLQ": 0.037,
+    "HWI": 0.646,
+    "LWI": 6.841
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 218,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.4150066,
-    "HAT": 8.900007,
-    "STND": 0,
-    "MHHW": 8.588,
-    "MHW": 8.518,
-    "DTL": 8.146,
-    "MTL": 8.129,
-    "MSL": 8.135,
-    "MLW": 7.741,
-    "MLLW": 7.704,
-    "GT": 0.885,
-    "MN": 0.777,
-    "DHQ": 0.07,
-    "DLQ": 0.037,
-    "HWI": 0.646,
-    "LWI": 6.841
-  },
-  "disclaimers": ""
+  ]
 }

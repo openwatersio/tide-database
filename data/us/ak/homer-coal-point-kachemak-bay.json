@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-homer-coal-point-kachemak-bay",
+  "id": "us/ak/homer-coal-point-kachemak-bay",
   "name": "Homer, Coal Point, Kachemak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.60139846801758,
   "longitude": -151.4105987548828,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455558",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455558",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455558.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455558"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.197,
+    "HAT": 7.939,
+    "STND": 0,
+    "MHHW": 6.316,
+    "MHW": 6.06,
+    "DTL": 3.507,
+    "MTL": 3.632,
+    "MSL": 3.665,
+    "MLW": 1.203,
+    "MLLW": 0.698,
+    "GT": 5.618,
+    "MN": 4.857,
+    "DHQ": 0.256,
+    "DLQ": 0.506,
+    "HWI": 11.223,
+    "LWI": 4.9,
+    "NAVD88": 2.251
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.197,
-    "HAT": 7.939,
-    "STND": 0,
-    "MHHW": 6.316,
-    "MHW": 6.06,
-    "DTL": 3.507,
-    "MTL": 3.632,
-    "MSL": 3.665,
-    "MLW": 1.203,
-    "MLLW": 0.698,
-    "GT": 5.618,
-    "MN": 4.857,
-    "DHQ": 0.256,
-    "DLQ": 0.506,
-    "HWI": 11.223,
-    "LWI": 4.9,
-    "NAVD88": 2.251
-  },
-  "disclaimers": ""
+  ]
 }

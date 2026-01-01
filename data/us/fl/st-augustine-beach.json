@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-st-augustine-beach",
+  "id": "us/fl/st-augustine-beach",
   "name": "St. Augustine Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.8567,
   "longitude": -81.2633,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720587",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720587",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720587.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720587"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.508,
+    "HAT": 3.019,
+    "STND": 0,
+    "MHHW": 2.485,
+    "MHW": 2.37,
+    "DTL": 1.701,
+    "MTL": 1.668,
+    "MSL": 1.658,
+    "MLW": 0.965,
+    "MLLW": 0.916,
+    "GT": 1.569,
+    "MN": 1.405,
+    "DHQ": 0.115,
+    "DLQ": 0.049,
+    "HWI": 0.524,
+    "LWI": 6.732,
+    "NAVD88": 1.872
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 161.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.508,
-    "HAT": 3.019,
-    "STND": 0,
-    "MHHW": 2.485,
-    "MHW": 2.37,
-    "DTL": 1.701,
-    "MTL": 1.668,
-    "MSL": 1.658,
-    "MLW": 0.965,
-    "MLLW": 0.916,
-    "GT": 1.569,
-    "MN": 1.405,
-    "DHQ": 0.115,
-    "DLQ": 0.049,
-    "HWI": 0.524,
-    "LWI": 6.732,
-    "NAVD88": 1.872
-  },
-  "disclaimers": ""
+  ]
 }

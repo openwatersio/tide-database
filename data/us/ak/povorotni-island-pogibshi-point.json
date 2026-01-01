@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-povorotni-island-pogibshi-point",
+  "id": "us/ak/povorotni-island-pogibshi-point",
   "name": "Povorotni Island, Pogibshi Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.515,
   "longitude": -135.555,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451936",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451936",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451936.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451936"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.723,
+    "HAT": 5.4309998,
+    "STND": 0,
+    "MHHW": 4.236,
+    "MHW": 3.938,
+    "DTL": 1.928,
+    "MTL": 2.01,
+    "MSL": 2.04,
+    "MLW": 0.082,
+    "MLLW": -0.378,
+    "GT": 4.615,
+    "MN": 3.857,
+    "DHQ": 0.297,
+    "DLQ": 0.461,
+    "HWI": 9.747,
+    "LWI": 3.572
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.723,
-    "HAT": 5.4309998,
-    "STND": 0,
-    "MHHW": 4.236,
-    "MHW": 3.938,
-    "DTL": 1.928,
-    "MTL": 2.01,
-    "MSL": 2.04,
-    "MLW": 0.082,
-    "MLLW": -0.378,
-    "GT": 4.615,
-    "MN": 3.857,
-    "DHQ": 0.297,
-    "DLQ": 0.461,
-    "HWI": 9.747,
-    "LWI": 3.572
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-md-vienna",
+  "id": "us/md/vienna",
   "name": "Vienna",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.48333,
   "longitude": -75.81833333333333,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8571773",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571773",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8571773.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571773"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.5,
+    "HAT": 7.357,
+    "STND": 0,
+    "MHHW": 7.277,
+    "MHW": 7.229,
+    "DTL": 6.902,
+    "MTL": 6.906,
+    "MSL": 6.933,
+    "MLW": 6.582,
+    "MLLW": 6.527,
+    "GT": 0.751,
+    "MN": 0.647,
+    "DHQ": 0.048,
+    "DLQ": 0.055,
+    "HWI": 8.961,
+    "LWI": 2.968
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.5,
-    "HAT": 7.357,
-    "STND": 0,
-    "MHHW": 7.277,
-    "MHW": 7.229,
-    "DTL": 6.902,
-    "MTL": 6.906,
-    "MSL": 6.933,
-    "MLW": 6.582,
-    "MLLW": 6.527,
-    "GT": 0.751,
-    "MN": 0.647,
-    "DHQ": 0.048,
-    "DLQ": 0.055,
-    "HWI": 8.961,
-    "LWI": 2.968
-  },
-  "disclaimers": ""
+  ]
 }

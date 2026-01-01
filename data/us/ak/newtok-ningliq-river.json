@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-newtok-ningliq-river",
+  "id": "us/ak/newtok-ningliq-river",
   "name": "Newtok, Ningliq River",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.93450164794922,
   "longitude": -164.63870239257812,
   "timezone": "America/Nome",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9466563",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466563",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9466563.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466563"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.091,
+    "HAT": 6.8120003,
+    "STND": 0,
+    "MHHW": 6.442,
+    "MHW": 6.374,
+    "DTL": 5.493,
+    "MTL": 5.562,
+    "MSL": 5.579,
+    "MLW": 4.749,
+    "MLLW": 4.545,
+    "GT": 1.897,
+    "MN": 1.625,
+    "DHQ": 0.068,
+    "DLQ": 0.204,
+    "HWI": 10.082,
+    "LWI": 5.115,
+    "NAVD88": 4.384
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.091,
-    "HAT": 6.8120003,
-    "STND": 0,
-    "MHHW": 6.442,
-    "MHW": 6.374,
-    "DTL": 5.493,
-    "MTL": 5.562,
-    "MSL": 5.579,
-    "MLW": 4.749,
-    "MLLW": 4.545,
-    "GT": 1.897,
-    "MN": 1.625,
-    "DHQ": 0.068,
-    "DLQ": 0.204,
-    "HWI": 10.082,
-    "LWI": 5.115,
-    "NAVD88": 4.384
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-plum-gut-harbor-plum-island",
+  "id": "us/ny/plum-gut-harbor-plum-island",
   "name": "Plum Gut Harbor, Plum Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.1717,
   "longitude": -72.205,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8511236",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511236",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8511236.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511236"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.939,
+    "HAT": 2.4029999,
+    "STND": 0,
+    "MHHW": 2.136,
+    "MHW": 2.046,
+    "DTL": 1.665,
+    "MTL": 1.65,
+    "MSL": 1.658,
+    "MLW": 1.254,
+    "MLLW": 1.194,
+    "GT": 0.942,
+    "MN": 0.792,
+    "DHQ": 0.09,
+    "DLQ": 0.06,
+    "HWI": 2.582,
+    "LWI": 8.887,
+    "NAVD88": 1.785
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -229,25 +248,5 @@
       "phase_local": 289.7,
       "speed": 30.082138
     }
-  ],
-  "datums": {
-    "LAT": 0.939,
-    "HAT": 2.4029999,
-    "STND": 0,
-    "MHHW": 2.136,
-    "MHW": 2.046,
-    "DTL": 1.665,
-    "MTL": 1.65,
-    "MSL": 1.658,
-    "MLW": 1.254,
-    "MLLW": 1.194,
-    "GT": 0.942,
-    "MN": 0.792,
-    "DHQ": 0.09,
-    "DLQ": 0.06,
-    "HWI": 2.582,
-    "LWI": 8.887,
-    "NAVD88": 1.785
-  },
-  "disclaimers": ""
+  ]
 }

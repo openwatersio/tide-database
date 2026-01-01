@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-conn-brown-harbor-aransas-pass",
+  "id": "us/tx/conn-brown-harbor-aransas-pass",
   "name": "Conn Brown Harbor, Aransas Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.908100128173828,
   "longitude": -97.13529968261719,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8775083",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775083",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8775083.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775083"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.96,
+    "HAT": 8.285,
+    "STND": 0,
+    "MHHW": 8.212,
+    "MHW": 8.207,
+    "DTL": 8.129,
+    "MTL": 8.128,
+    "MSL": 8.144,
+    "MLW": 8.049,
+    "MLLW": 8.046,
+    "GT": 0.166,
+    "MN": 0.158,
+    "DHQ": 0.005,
+    "DLQ": 0.003,
+    "NAVD88": 7.935
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.96,
-    "HAT": 8.285,
-    "STND": 0,
-    "MHHW": 8.212,
-    "MHW": 8.207,
-    "DTL": 8.129,
-    "MTL": 8.128,
-    "MSL": 8.144,
-    "MLW": 8.049,
-    "MLLW": 8.046,
-    "GT": 0.166,
-    "MN": 0.158,
-    "DHQ": 0.005,
-    "DLQ": 0.003,
-    "NAVD88": 7.935
-  },
-  "disclaimers": ""
+  ]
 }

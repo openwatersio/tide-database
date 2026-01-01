@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-platinum",
+  "id": "us/ak/platinum",
   "name": "Platinum",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.0467,
   "longitude": -161.818,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465396",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465396",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465396.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465396"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.652,
+    "HAT": 14.626,
+    "STND": 0,
+    "MHHW": 13.845,
+    "MHW": 13.024,
+    "DTL": 12.407,
+    "MTL": 12.092,
+    "MSL": 12.142,
+    "MLW": 11.16,
+    "MLLW": 10.969,
+    "GT": 2.876,
+    "MN": 1.864,
+    "DHQ": 0.821,
+    "DLQ": 0.191,
+    "HWI": 5.8,
+    "LWI": 11.79
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.652,
-    "HAT": 14.626,
-    "STND": 0,
-    "MHHW": 13.845,
-    "MHW": 13.024,
-    "DTL": 12.407,
-    "MTL": 12.092,
-    "MSL": 12.142,
-    "MLW": 11.16,
-    "MLLW": 10.969,
-    "GT": 2.876,
-    "MN": 1.864,
-    "DHQ": 0.821,
-    "DLQ": 0.191,
-    "HWI": 5.8,
-    "LWI": 11.79
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-jenkins-creek-1-mi-above-entrance",
+  "id": "us/sc/jenkins-creek-1-mi-above-entrance",
   "name": "Jenkins Creek, 1 mi. above entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.44,
   "longitude": -80.5533,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8667982",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667982",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8667982.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667982"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ga-fort-pulaski-savannah-river-entrance",
+    "reference": "us/ga/fort-pulaski-savannah-river-entrance",
     "height": {
       "type": "ratio",
       "high": 0.98,

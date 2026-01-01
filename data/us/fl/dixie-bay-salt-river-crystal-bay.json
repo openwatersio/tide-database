@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-dixie-bay-salt-river-crystal-bay",
+  "id": "us/fl/dixie-bay-salt-river-crystal-bay",
   "name": "Dixie Bay, Salt River, Crystal Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.8817,
   "longitude": -82.635,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727336",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727336",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727336.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727336"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.482,
+    "HAT": 1.556,
+    "STND": 0,
+    "MHHW": 1.333,
+    "MHW": 1.251,
+    "DTL": 1.003,
+    "MTL": 0.994,
+    "MSL": 0.985,
+    "MLW": 0.737,
+    "MLLW": 0.672,
+    "GT": 0.662,
+    "MN": 0.514,
+    "DHQ": 0.083,
+    "DLQ": 0.066,
+    "HWI": 8.488,
+    "LWI": 3.437,
+    "NAVD88": 1.045
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.482,
-    "HAT": 1.556,
-    "STND": 0,
-    "MHHW": 1.333,
-    "MHW": 1.251,
-    "DTL": 1.003,
-    "MTL": 0.994,
-    "MSL": 0.985,
-    "MLW": 0.737,
-    "MLLW": 0.672,
-    "GT": 0.662,
-    "MN": 0.514,
-    "DHQ": 0.083,
-    "DLQ": 0.066,
-    "HWI": 8.488,
-    "LWI": 3.437,
-    "NAVD88": 1.045
-  },
-  "disclaimers": ""
+  ]
 }

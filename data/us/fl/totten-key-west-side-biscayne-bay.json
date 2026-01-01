@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-totten-key-west-side-biscayne-bay",
+  "id": "us/fl/totten-key-west-side-biscayne-bay",
   "name": "Totten Key, west side, Biscayne Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.3783,
   "longitude": -80.2567,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723467",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723467",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723467.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723467"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-government-cut-miami-harbor-entrance",
+    "reference": "us/fl/government-cut-miami-harbor-entrance",
     "height": {
       "type": "ratio",
       "high": 0.54,

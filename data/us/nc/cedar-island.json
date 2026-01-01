@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-cedar-island",
+  "id": "us/nc/cedar-island",
   "name": "Cedar Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.01890182495117,
   "longitude": -76.31430053710938,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8655151",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8655151",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8655151.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8655151"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.133,
+    "HAT": 0.067,
+    "STND": 0,
+    "MHHW": 0.027,
+    "MHW": 0.033,
+    "DTL": -0.032,
+    "MTL": -0.019,
+    "MSL": -0.036,
+    "MLW": -0.071,
+    "MLLW": -0.091,
+    "GT": 0.119,
+    "MN": 0.105,
+    "DHQ": -0.005,
+    "DLQ": 0.02,
+    "NAVD88": 0.016
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.133,
-    "HAT": 0.067,
-    "STND": 0,
-    "MHHW": 0.027,
-    "MHW": 0.033,
-    "DTL": -0.032,
-    "MTL": -0.019,
-    "MSL": -0.036,
-    "MLW": -0.071,
-    "MLLW": -0.091,
-    "GT": 0.119,
-    "MN": 0.105,
-    "DHQ": -0.005,
-    "DLQ": 0.02,
-    "NAVD88": 0.016
-  },
-  "disclaimers": ""
+  ]
 }

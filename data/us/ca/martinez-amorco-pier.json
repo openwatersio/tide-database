@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-martinez-amorco-pier",
+  "id": "us/ca/martinez-amorco-pier",
   "name": "Martinez-Amorco Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.03463888888889,
   "longitude": -122.1251944444445,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415102",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415102",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415102.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415102"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.205,
+    "HAT": 12.657,
+    "STND": 0,
+    "MHHW": 12.324,
+    "MHW": 12.166,
+    "DTL": 11.507,
+    "MTL": 11.562,
+    "MSL": 11.561,
+    "MLW": 10.957,
+    "MLLW": 10.69,
+    "GT": 1.634,
+    "MN": 1.209,
+    "DHQ": 0.158,
+    "DLQ": 0.267,
+    "HWI": 9.528,
+    "LWI": 3.334,
+    "NAVD88": 10.515
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.205,
-    "HAT": 12.657,
-    "STND": 0,
-    "MHHW": 12.324,
-    "MHW": 12.166,
-    "DTL": 11.507,
-    "MTL": 11.562,
-    "MSL": 11.561,
-    "MLW": 10.957,
-    "MLLW": 10.69,
-    "GT": 1.634,
-    "MN": 1.209,
-    "DHQ": 0.158,
-    "DLQ": 0.267,
-    "HWI": 9.528,
-    "LWI": 3.334,
-    "NAVD88": 10.515
-  },
-  "disclaimers": ""
+  ]
 }

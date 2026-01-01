@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-enbridge-ingleside",
+  "id": "us/tx/enbridge-ingleside",
   "name": "Enbridge, Ingleside",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.81861111111111,
   "longitude": -97.20894444444444,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8775283",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775283",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8775283.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775283"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 5.879,
+    "HAT": 6.4230003,
+    "STND": 0,
+    "MHHW": 6.255,
+    "MHW": 6.25,
+    "DTL": 6.165,
+    "MTL": 6.165,
+    "MSL": 6.175,
+    "MLW": 6.08,
+    "MLLW": 6.075,
+    "GT": 0.179,
+    "MN": 0.17,
+    "DHQ": 0.004,
+    "DLQ": 0.005
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.879,
-    "HAT": 6.4230003,
-    "STND": 0,
-    "MHHW": 6.255,
-    "MHW": 6.25,
-    "DTL": 6.165,
-    "MTL": 6.165,
-    "MSL": 6.175,
-    "MLW": 6.08,
-    "MLLW": 6.075,
-    "GT": 0.179,
-    "MN": 0.17,
-    "DHQ": 0.004,
-    "DLQ": 0.005
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

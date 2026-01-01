@@ -1,10 +1,9 @@
 {
-  "id": "us-md-solomons-island",
+  "id": "us/md/solomons-island",
   "name": "Solomons Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.31669998168945,
   "longitude": -76.45169830322266,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8577330",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8577330",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8577330.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8577330"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.974537,
+    "HAT": 1.704537,
+    "STND": 0,
+    "MHHW": 1.584,
+    "MHW": 1.54,
+    "DTL": 1.36,
+    "MTL": 1.361,
+    "MSL": 1.366,
+    "MLW": 1.183,
+    "MLLW": 1.135,
+    "GT": 0.449,
+    "MN": 0.356,
+    "DHQ": 0.045,
+    "DLQ": 0.048,
+    "HWI": 6.899,
+    "LWI": 0.933,
+    "NAVD88": 1.394
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 35,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.974537,
-    "HAT": 1.704537,
-    "STND": 0,
-    "MHHW": 1.584,
-    "MHW": 1.54,
-    "DTL": 1.36,
-    "MTL": 1.361,
-    "MSL": 1.366,
-    "MLW": 1.183,
-    "MLLW": 1.135,
-    "GT": 0.449,
-    "MN": 0.356,
-    "DHQ": 0.045,
-    "DLQ": 0.048,
-    "HWI": 6.899,
-    "LWI": 0.933,
-    "NAVD88": 1.394
-  },
-  "disclaimers": ""
+  ]
 }

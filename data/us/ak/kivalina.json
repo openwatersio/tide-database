@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kivalina",
+  "id": "us/ak/kivalina",
   "name": "Kivalina",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 67.7267,
   "longitude": -164.592,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9491253",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9491253",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9491253.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9491253"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.106,
+    "HAT": 1.549,
+    "STND": 0,
+    "MHHW": 1.47,
+    "MHW": 1.429,
+    "DTL": 1.333,
+    "MTL": 1.327,
+    "MSL": 1.329,
+    "MLW": 1.224,
+    "MLLW": 1.195,
+    "GT": 0.275,
+    "MN": 0.205,
+    "DHQ": 0.041,
+    "DLQ": 0.029
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.106,
-    "HAT": 1.549,
-    "STND": 0,
-    "MHHW": 1.47,
-    "MHW": 1.429,
-    "DTL": 1.333,
-    "MTL": 1.327,
-    "MSL": 1.329,
-    "MLW": 1.224,
-    "MLLW": 1.195,
-    "GT": 0.275,
-    "MN": 0.205,
-    "DHQ": 0.041,
-    "DLQ": 0.029
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-pa-philadelphia-municipal-pier-11-pa",
+  "id": "us/pa/philadelphia-municipal-pier-11-pa",
   "name": "Philadelphia, Municipal Pier 11, Pa.",
-  "continent": "North America",
-  "country": "United States",
   "region": "PA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.9533,
   "longitude": -75.1383,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8545530",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8545530",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8545530.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8545530"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.9209999,
+    "HAT": 3.6069999,
+    "STND": 0,
+    "MHHW": 3.213,
+    "MHW": 3.095,
+    "DTL": 2.173,
+    "MTL": 2.144,
+    "MSL": 2.202,
+    "MLW": 1.192,
+    "MLLW": 1.133,
+    "GT": 2.08,
+    "MN": 1.903,
+    "DHQ": 0.118,
+    "DLQ": 0.059,
+    "HWI": 6.382,
+    "LWI": 1.052,
+    "NAVD88": 2.12
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 44.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.9209999,
-    "HAT": 3.6069999,
-    "STND": 0,
-    "MHHW": 3.213,
-    "MHW": 3.095,
-    "DTL": 2.173,
-    "MTL": 2.144,
-    "MSL": 2.202,
-    "MLW": 1.192,
-    "MLLW": 1.133,
-    "GT": 2.08,
-    "MN": 1.903,
-    "DHQ": 0.118,
-    "DLQ": 0.059,
-    "HWI": 6.382,
-    "LWI": 1.052,
-    "NAVD88": 2.12
-  },
-  "disclaimers": ""
+  ]
 }

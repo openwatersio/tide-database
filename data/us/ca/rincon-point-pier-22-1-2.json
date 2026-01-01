@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-rincon-point-pier-22-1-2",
+  "id": "us/ca/rincon-point-pier-22-1-2",
   "name": "Rincon Point, Pier 22 1/2",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.79,
   "longitude": -122.387,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414317",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414317",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414317.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414317"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.42499995,
+    "HAT": 3.3839998,
+    "STND": 0,
+    "MHHW": 2.97,
+    "MHW": 2.779,
+    "DTL": 2.016,
+    "MTL": 2.091,
+    "MSL": 2.057,
+    "MLW": 1.403,
+    "MLLW": 1.062,
+    "GT": 1.908,
+    "MN": 1.375,
+    "DHQ": 0.192,
+    "DLQ": 0.342,
+    "HWI": 7.915,
+    "LWI": 1.298,
+    "NAVD88": 1.068
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 38.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.42499995,
-    "HAT": 3.3839998,
-    "STND": 0,
-    "MHHW": 2.97,
-    "MHW": 2.779,
-    "DTL": 2.016,
-    "MTL": 2.091,
-    "MSL": 2.057,
-    "MLW": 1.403,
-    "MLLW": 1.062,
-    "GT": 1.908,
-    "MN": 1.375,
-    "DHQ": 0.192,
-    "DLQ": 0.342,
-    "HWI": 7.915,
-    "LWI": 1.298,
-    "NAVD88": 1.068
-  },
-  "disclaimers": ""
+  ]
 }

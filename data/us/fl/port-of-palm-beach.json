@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-port-of-palm-beach",
+  "id": "us/fl/port-of-palm-beach",
   "name": "Port of Palm Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.77,
   "longitude": -80.0517,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722588",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722588",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722588.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722588"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.232,
+    "HAT": 8.913,
+    "STND": 0,
+    "MHHW": 8.493,
+    "MHW": 8.438,
+    "DTL": 8.029,
+    "MTL": 8.024,
+    "MSL": 8.028,
+    "MLW": 7.611,
+    "MLLW": 7.564,
+    "GT": 0.928,
+    "MN": 0.828,
+    "DHQ": 0.055,
+    "DLQ": 0.046,
+    "HWI": 0.789,
+    "LWI": 7.023,
+    "NAVD88": 8.323
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -253,25 +272,5 @@
       "phase_local": 222.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.232,
-    "HAT": 8.913,
-    "STND": 0,
-    "MHHW": 8.493,
-    "MHW": 8.438,
-    "DTL": 8.029,
-    "MTL": 8.024,
-    "MSL": 8.028,
-    "MLW": 7.611,
-    "MLLW": 7.564,
-    "GT": 0.928,
-    "MN": 0.828,
-    "DHQ": 0.055,
-    "DLQ": 0.046,
-    "HWI": 0.789,
-    "LWI": 7.023,
-    "NAVD88": 8.323
-  },
-  "disclaimers": ""
+  ]
 }

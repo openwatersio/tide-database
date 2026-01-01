@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-kingston",
+  "id": "us/ny/kingston",
   "name": "Kingston",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.9183,
   "longitude": -73.9833,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518993",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518993",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518993.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518993"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ny-new-york-the-battery",
+    "reference": "us/ny/new-york-the-battery",
     "height": {
       "type": "ratio",
       "high": 0.81,

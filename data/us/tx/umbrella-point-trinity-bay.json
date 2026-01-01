@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-umbrella-point-trinity-bay",
+  "id": "us/tx/umbrella-point-trinity-bay",
   "name": "Umbrella Point, Trinity Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.68,
   "longitude": -94.8683,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770625",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770625",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770625.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770625"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.6240001,
+    "HAT": 2.561,
+    "STND": 0,
+    "MHHW": 2.349,
+    "MHW": 2.337,
+    "DTL": 2.155,
+    "MTL": 2.164,
+    "MSL": 2.173,
+    "MLW": 1.99,
+    "MLLW": 1.961,
+    "GT": 0.388,
+    "MN": 0.347,
+    "DHQ": 0.012,
+    "DLQ": 0.029
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 348.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.6240001,
-    "HAT": 2.561,
-    "STND": 0,
-    "MHHW": 2.349,
-    "MHW": 2.337,
-    "DTL": 2.155,
-    "MTL": 2.164,
-    "MSL": 2.173,
-    "MLW": 1.99,
-    "MLLW": 1.961,
-    "GT": 0.388,
-    "MN": 0.347,
-    "DHQ": 0.012,
-    "DLQ": 0.029
-  },
-  "disclaimers": ""
+  ]
 }

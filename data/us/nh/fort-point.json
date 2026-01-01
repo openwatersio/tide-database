@@ -1,10 +1,9 @@
 {
-  "id": "us-nh-fort-point",
+  "id": "us/nh/fort-point",
   "name": "Fort Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "NH",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.07170104980469,
   "longitude": -70.71170043945312,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8423898",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8423898",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8423898.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8423898"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.1730001,
+    "HAT": 4.342,
+    "STND": 0,
+    "MHHW": 3.689,
+    "MHW": 3.559,
+    "DTL": 2.258,
+    "MTL": 2.244,
+    "MSL": 2.255,
+    "MLW": 0.929,
+    "MLLW": 0.826,
+    "GT": 2.863,
+    "MN": 2.631,
+    "DHQ": 0.13,
+    "DLQ": 0.102,
+    "HWI": 3.737,
+    "LWI": 9.852,
+    "NAVD88": 2.35
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 90.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.1730001,
-    "HAT": 4.342,
-    "STND": 0,
-    "MHHW": 3.689,
-    "MHW": 3.559,
-    "DTL": 2.258,
-    "MTL": 2.244,
-    "MSL": 2.255,
-    "MLW": 0.929,
-    "MLLW": 0.826,
-    "GT": 2.863,
-    "MN": 2.631,
-    "DHQ": 0.13,
-    "DLQ": 0.102,
-    "HWI": 3.737,
-    "LWI": 9.852,
-    "NAVD88": 2.35
-  },
-  "disclaimers": ""
+  ]
 }

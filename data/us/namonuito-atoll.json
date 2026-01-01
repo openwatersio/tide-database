@@ -1,10 +1,9 @@
 {
-  "id": "us-namonuito-atoll",
+  "id": "us/namonuito-atoll",
   "name": "Namonuito Atoll",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 8.583333333333297,
   "longitude": 149.65,
   "timezone": "Pacific/Chuuk",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2653",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2653",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2653.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2653"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fm-chuuk-moen-island",
+    "reference": "us/fm/chuuk-moen-island",
     "height": {
       "type": "ratio",
       "high": 0.69,

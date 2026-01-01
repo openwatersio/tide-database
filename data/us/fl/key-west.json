@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-key-west",
+  "id": "us/fl/key-west",
   "name": "KEY WEST",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.555700302124023,
   "longitude": -81.80789947509766,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724580",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724580",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724580.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724580"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.1563871,
+    "HAT": 2.193387,
+    "STND": 0,
+    "MHHW": 1.941,
+    "MHW": 1.853,
+    "DTL": 1.665,
+    "MTL": 1.658,
+    "MSL": 1.662,
+    "MLW": 1.463,
+    "MLLW": 1.39,
+    "GT": 0.551,
+    "MN": 0.39,
+    "DHQ": 0.088,
+    "DLQ": 0.073,
+    "HWI": 2.766,
+    "LWI": 8.397,
+    "NAVD88": 1.928
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 311.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.1563871,
-    "HAT": 2.193387,
-    "STND": 0,
-    "MHHW": 1.941,
-    "MHW": 1.853,
-    "DTL": 1.665,
-    "MTL": 1.658,
-    "MSL": 1.662,
-    "MLW": 1.463,
-    "MLLW": 1.39,
-    "GT": 0.551,
-    "MN": 0.39,
-    "DHQ": 0.088,
-    "DLQ": 0.073,
-    "HWI": 2.766,
-    "LWI": 8.397,
-    "NAVD88": 1.928
-  },
-  "disclaimers": ""
+  ]
 }

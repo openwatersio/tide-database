@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-edwards-creek-1-mi-above-entrance",
+  "id": "us/fl/edwards-creek-1-mi-above-entrance",
   "name": "Edwards Creek, 1 mi. above entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.5017,
   "longitude": -81.5417,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720145",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720145",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720145.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720145"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.089999974,
+    "HAT": 1.914,
+    "STND": 0,
+    "MHHW": 1.679,
+    "MHW": 1.612,
+    "DTL": 0.914,
+    "MTL": 0.912,
+    "MSL": 0.984,
+    "MLW": 0.212,
+    "MLLW": 0.149,
+    "GT": 1.531,
+    "MN": 1.4,
+    "DHQ": 0.067,
+    "DLQ": 0.063,
+    "HWI": 2.729,
+    "LWI": 9.114,
+    "NAVD88": 1.045
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 102.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.089999974,
-    "HAT": 1.914,
-    "STND": 0,
-    "MHHW": 1.679,
-    "MHW": 1.612,
-    "DTL": 0.914,
-    "MTL": 0.912,
-    "MSL": 0.984,
-    "MLW": 0.212,
-    "MLLW": 0.149,
-    "GT": 1.531,
-    "MN": 1.4,
-    "DHQ": 0.067,
-    "DLQ": 0.063,
-    "HWI": 2.729,
-    "LWI": 9.114,
-    "NAVD88": 1.045
-  },
-  "disclaimers": ""
+  ]
 }

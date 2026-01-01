@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-port-angeles",
+  "id": "us/wa/port-angeles",
   "name": "Port Angeles",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.125,
   "longitude": -123.44000244140625,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9444090",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444090",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9444090.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444090"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.125471,
+    "HAT": 12.034471,
+    "STND": 0,
+    "MHHW": 11.393,
+    "MHW": 11.227,
+    "DTL": 10.316,
+    "MTL": 10.526,
+    "MSL": 10.534,
+    "MLW": 9.826,
+    "MLLW": 9.24,
+    "GT": 2.153,
+    "MN": 1.401,
+    "DHQ": 0.166,
+    "DLQ": 0.586,
+    "HWI": 10.556,
+    "LWI": 4.433,
+    "NAVD88": 9.369
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 3.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.125471,
-    "HAT": 12.034471,
-    "STND": 0,
-    "MHHW": 11.393,
-    "MHW": 11.227,
-    "DTL": 10.316,
-    "MTL": 10.526,
-    "MSL": 10.534,
-    "MLW": 9.826,
-    "MLLW": 9.24,
-    "GT": 2.153,
-    "MN": 1.401,
-    "DHQ": 0.166,
-    "DLQ": 0.586,
-    "HWI": 10.556,
-    "LWI": 4.433,
-    "NAVD88": 9.369
-  },
-  "disclaimers": ""
+  ]
 }

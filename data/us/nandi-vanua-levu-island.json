@@ -1,10 +1,9 @@
 {
-  "id": "us-nandi-vanua-levu-island",
+  "id": "us/nandi-vanua-levu-island",
   "name": "Nandi, Vanua Levu Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -16.96666666666667,
   "longitude": 178.7666666666667,
   "timezone": "Pacific/Fiji",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2889",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2889",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2889.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2889"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-suva-harbor-viti-levu-island",
+    "reference": "us/suva-harbor-viti-levu-island",
     "height": {
       "type": "fixed",
       "high": 0.09,

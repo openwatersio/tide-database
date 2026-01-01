@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-northville",
+  "id": "us/ny/northville",
   "name": "Northville",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.9817,
   "longitude": -72.645,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8512987",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512987",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8512987.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512987"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.11099994,
+    "HAT": 2.413,
+    "STND": 0,
+    "MHHW": 2.035,
+    "MHW": 1.941,
+    "DTL": 1.139,
+    "MTL": 1.125,
+    "MSL": 1.121,
+    "MLW": 0.309,
+    "MLLW": 0.243,
+    "GT": 1.792,
+    "MN": 1.632,
+    "DHQ": 0.094,
+    "DLQ": 0.066,
+    "HWI": 3.898,
+    "LWI": 10.092
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 358.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.11099994,
-    "HAT": 2.413,
-    "STND": 0,
-    "MHHW": 2.035,
-    "MHW": 1.941,
-    "DTL": 1.139,
-    "MTL": 1.125,
-    "MSL": 1.121,
-    "MLW": 0.309,
-    "MLLW": 0.243,
-    "GT": 1.792,
-    "MN": 1.632,
-    "DHQ": 0.094,
-    "DLQ": 0.066,
-    "HWI": 3.898,
-    "LWI": 10.092
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-wainwright-chukchi-sea",
+  "id": "us/ak/wainwright-chukchi-sea",
   "name": "Wainwright, Chukchi Sea",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 70.643798828125,
   "longitude": -160.06509399414062,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9494212",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9494212",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9494212.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9494212"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 21.937,
+    "HAT": 22.617,
+    "STND": 0,
+    "MHHW": 22.298,
+    "MHW": 22.293,
+    "DTL": 22.228,
+    "MTL": 22.214,
+    "MSL": 22.245,
+    "MLW": 22.136,
+    "MLLW": 22.157,
+    "GT": 0.141,
+    "MN": 0.157,
+    "DHQ": 0.005,
+    "DLQ": -0.021,
+    "HWI": 8.48,
+    "LWI": 2.14,
+    "NAVD88": 21.244
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 21.937,
-    "HAT": 22.617,
-    "STND": 0,
-    "MHHW": 22.298,
-    "MHW": 22.293,
-    "DTL": 22.228,
-    "MTL": 22.214,
-    "MSL": 22.245,
-    "MLW": 22.136,
-    "MLLW": 22.157,
-    "GT": 0.141,
-    "MN": 0.157,
-    "DHQ": 0.005,
-    "DLQ": -0.021,
-    "HWI": 8.48,
-    "LWI": 2.14,
-    "NAVD88": 21.244
-  },
-  "disclaimers": ""
+  ]
 }

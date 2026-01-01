@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-sneads-ferry-new-river",
+  "id": "us/nc/sneads-ferry-new-river",
   "name": "Sneads Ferry, New River",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.57630157470703,
   "longitude": -77.39540100097656,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8657002",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8657002",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8657002.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8657002"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.211,
+    "HAT": 6.802,
+    "STND": 0,
+    "MHHW": 6.603,
+    "MHW": 6.584,
+    "DTL": 6.491,
+    "MTL": 6.497,
+    "MSL": 6.5,
+    "MLW": 6.41,
+    "MLLW": 6.379,
+    "GT": 0.224,
+    "MN": 0.174,
+    "DHQ": 0.02,
+    "DLQ": 0.031,
+    "HWI": 1.758,
+    "LWI": 8.645,
+    "NAVD88": 6.591
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 140.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.211,
-    "HAT": 6.802,
-    "STND": 0,
-    "MHHW": 6.603,
-    "MHW": 6.584,
-    "DTL": 6.491,
-    "MTL": 6.497,
-    "MSL": 6.5,
-    "MLW": 6.41,
-    "MLLW": 6.379,
-    "GT": 0.224,
-    "MN": 0.174,
-    "DHQ": 0.02,
-    "DLQ": 0.031,
-    "HWI": 1.758,
-    "LWI": 8.645,
-    "NAVD88": 6.591
-  },
-  "disclaimers": ""
+  ]
 }

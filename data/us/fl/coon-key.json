@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-coon-key",
+  "id": "us/fl/coon-key",
   "name": "Coon Key",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.8967,
   "longitude": -81.6367,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724964",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724964",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724964.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724964"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.23800004,
+    "HAT": 2.18,
+    "STND": 0,
+    "MHHW": 1.836,
+    "MHW": 1.753,
+    "DTL": 1.258,
+    "MTL": 1.311,
+    "MSL": 1.307,
+    "MLW": 0.869,
+    "MLLW": 0.68,
+    "GT": 1.156,
+    "MN": 0.884,
+    "DHQ": 0.083,
+    "DLQ": 0.189,
+    "HWI": 6.225,
+    "LWI": 0.297
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.23800004,
-    "HAT": 2.18,
-    "STND": 0,
-    "MHHW": 1.836,
-    "MHW": 1.753,
-    "DTL": 1.258,
-    "MTL": 1.311,
-    "MSL": 1.307,
-    "MLW": 0.869,
-    "MLLW": 0.68,
-    "GT": 1.156,
-    "MN": 0.884,
-    "DHQ": 0.083,
-    "DLQ": 0.189,
-    "HWI": 6.225,
-    "LWI": 0.297
-  },
-  "disclaimers": ""
+  ]
 }

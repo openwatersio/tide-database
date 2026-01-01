@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-piney-point",
+  "id": "us/ma/piney-point",
   "name": "Piney Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.695,
   "longitude": -70.72,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447416",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447416",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447416.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447416"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.782,
+    "HAT": 2.8140001,
+    "STND": 0,
+    "MHHW": 2.447,
+    "MHW": 2.363,
+    "DTL": 1.782,
+    "MTL": 1.767,
+    "MSL": 1.697,
+    "MLW": 1.171,
+    "MLLW": 1.118,
+    "GT": 1.329,
+    "MN": 1.193,
+    "DHQ": 0.083,
+    "DLQ": 0.053,
+    "HWI": 0.429,
+    "LWI": 6.079
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.782,
-    "HAT": 2.8140001,
-    "STND": 0,
-    "MHHW": 2.447,
-    "MHW": 2.363,
-    "DTL": 1.782,
-    "MTL": 1.767,
-    "MSL": 1.697,
-    "MLW": 1.171,
-    "MLLW": 1.118,
-    "GT": 1.329,
-    "MN": 1.193,
-    "DHQ": 0.083,
-    "DLQ": 0.053,
-    "HWI": 0.429,
-    "LWI": 6.079
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-sabine-offshore-light-uscg-s-1-platform",
+  "id": "us/tx/sabine-offshore-light-uscg-s-1-platform",
   "name": "Sabine Offshore Light (USCG S-1 Platform)",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.4689998626709,
   "longitude": -93.72000122070312,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8771367",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771367",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8771367.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771367"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.05,
+    "HAT": 0.40199998,
+    "STND": 0,
+    "MHHW": 0.147,
+    "MHW": 0.09,
+    "DTL": -0.203,
+    "MTL": -0.155,
+    "MSL": -0.169,
+    "MLW": -0.4,
+    "MLLW": -0.554,
+    "GT": 0.702,
+    "MN": 0.491,
+    "DHQ": 0.056,
+    "DLQ": 0.154
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 281.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.05,
-    "HAT": 0.40199998,
-    "STND": 0,
-    "MHHW": 0.147,
-    "MHW": 0.09,
-    "DTL": -0.203,
-    "MTL": -0.155,
-    "MSL": -0.169,
-    "MLW": -0.4,
-    "MLLW": -0.554,
-    "GT": 0.702,
-    "MN": 0.491,
-    "DHQ": 0.056,
-    "DLQ": 0.154
-  },
-  "disclaimers": ""
+  ]
 }

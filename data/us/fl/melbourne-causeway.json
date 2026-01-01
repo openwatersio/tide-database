@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-melbourne-causeway",
+  "id": "us/fl/melbourne-causeway",
   "name": "Melbourne Causeway",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.08329963684082,
   "longitude": -80.5916976928711,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8721843",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721843",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8721843.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721843"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.375,
+    "HAT": 0.010000005,
+    "STND": 0,
+    "MHHW": -0.192,
+    "MHW": -0.194,
+    "DTL": -0.235,
+    "MTL": -0.23,
+    "MSL": -0.228,
+    "MLW": -0.265,
+    "MLLW": -0.278,
+    "GT": 0.086,
+    "MN": 0.071,
+    "DHQ": 0.003,
+    "DLQ": 0.013,
+    "NAVD88": -0.003
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.375,
-    "HAT": 0.010000005,
-    "STND": 0,
-    "MHHW": -0.192,
-    "MHW": -0.194,
-    "DTL": -0.235,
-    "MTL": -0.23,
-    "MSL": -0.228,
-    "MLW": -0.265,
-    "MLLW": -0.278,
-    "GT": 0.086,
-    "MN": 0.071,
-    "DHQ": 0.003,
-    "DLQ": 0.013,
-    "NAVD88": -0.003
-  },
-  "disclaimers": ""
+  ]
 }

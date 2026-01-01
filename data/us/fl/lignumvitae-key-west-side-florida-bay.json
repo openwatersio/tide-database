@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-lignumvitae-key-west-side-florida-bay",
+  "id": "us/fl/lignumvitae-key-west-side-florida-bay",
   "name": "Lignumvitae Key, west side, Florida Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.9,
   "longitude": -80.705,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723825",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723825",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723825.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723825"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 0.47,

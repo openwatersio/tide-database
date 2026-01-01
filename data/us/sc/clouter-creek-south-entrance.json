@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-clouter-creek-south-entrance",
+  "id": "us/sc/clouter-creek-south-entrance",
   "name": "Clouter Creek, south entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.86,
   "longitude": -79.9383,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8664945",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664945",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8664945.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664945"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-sc-charleston-customhouse-wharf",
+    "reference": "us/sc/charleston-customhouse-wharf",
     "height": {
       "type": "ratio",
       "high": 1.02,

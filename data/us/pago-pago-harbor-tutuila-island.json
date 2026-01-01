@@ -1,10 +1,9 @@
 {
-  "id": "us-pago-pago-harbor-tutuila-island",
+  "id": "us/pago-pago-harbor-tutuila-island",
   "name": "PAGO PAGO Harbor, Tutuila Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -14.279999732971191,
   "longitude": -170.69000244140625,
   "timezone": "Pacific/Pago_Pago",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1770000",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1770000",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1770000.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1770000"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.802,
+    "HAT": 2.103,
+    "STND": 0,
+    "MHHW": 1.861,
+    "MHW": 1.82,
+    "DTL": 1.437,
+    "MTL": 1.425,
+    "MSL": 1.426,
+    "MLW": 1.031,
+    "MLLW": 1.013,
+    "GT": 0.848,
+    "MN": 0.789,
+    "DHQ": 0.041,
+    "DLQ": 0.018,
+    "HWI": 6.22,
+    "LWI": 12.38
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 245.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.802,
-    "HAT": 2.103,
-    "STND": 0,
-    "MHHW": 1.861,
-    "MHW": 1.82,
-    "DTL": 1.437,
-    "MTL": 1.425,
-    "MSL": 1.426,
-    "MLW": 1.031,
-    "MLLW": 1.013,
-    "GT": 0.848,
-    "MN": 0.789,
-    "DHQ": 0.041,
-    "DLQ": 0.018,
-    "HWI": 6.22,
-    "LWI": 12.38
-  },
-  "disclaimers": ""
+  ]
 }

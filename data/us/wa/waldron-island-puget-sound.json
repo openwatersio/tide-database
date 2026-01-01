@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-waldron-island-puget-sound",
+  "id": "us/wa/waldron-island-puget-sound",
   "name": "WALDRON ISLAND, PUGET SOUND",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.686798095703125,
   "longitude": -123.03759765625,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449746",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449746",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449746.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449746"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.3399997,
+    "HAT": 9.66,
+    "STND": 0,
+    "MHHW": 9.102,
+    "MHW": 8.888,
+    "DTL": 7.819,
+    "MTL": 8.07,
+    "MSL": 8.023,
+    "MLW": 7.251,
+    "MLLW": 6.536,
+    "GT": 2.566,
+    "MN": 1.636,
+    "DHQ": 0.214,
+    "DLQ": 0.716,
+    "HWI": 0.703,
+    "LWI": 6.788
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.3399997,
-    "HAT": 9.66,
-    "STND": 0,
-    "MHHW": 9.102,
-    "MHW": 8.888,
-    "DTL": 7.819,
-    "MTL": 8.07,
-    "MSL": 8.023,
-    "MLW": 7.251,
-    "MLLW": 6.536,
-    "GT": 2.566,
-    "MN": 1.636,
-    "DHQ": 0.214,
-    "DLQ": 0.716,
-    "HWI": 0.703,
-    "LWI": 6.788
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kotzebue",
+  "id": "us/ak/kotzebue",
   "name": "Kotzebue",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 66.9017,
   "longitude": -162.582,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9490424",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9490424",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9490424.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9490424"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.997,
+    "HAT": 1.312,
+    "STND": 0,
+    "MHHW": 1.257,
+    "MHW": 1.236,
+    "DTL": 1.149,
+    "MTL": 1.158,
+    "MSL": 1.143,
+    "MLW": 1.08,
+    "MLLW": 1.04,
+    "GT": 0.217,
+    "MN": 0.156,
+    "DHQ": 0.022,
+    "DLQ": 0.04
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.997,
-    "HAT": 1.312,
-    "STND": 0,
-    "MHHW": 1.257,
-    "MHW": 1.236,
-    "DTL": 1.149,
-    "MTL": 1.158,
-    "MSL": 1.143,
-    "MLW": 1.08,
-    "MLLW": 1.04,
-    "GT": 0.217,
-    "MN": 0.156,
-    "DHQ": 0.022,
-    "DLQ": 0.04
-  },
-  "disclaimers": ""
+  ]
 }

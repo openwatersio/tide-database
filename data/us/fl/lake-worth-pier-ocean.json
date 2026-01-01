@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-lake-worth-pier-ocean",
+  "id": "us/fl/lake-worth-pier-ocean",
   "name": "Lake Worth Pier (ocean)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.6127778,
   "longitude": -80.0341667,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722670",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722670",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722670.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722670"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.861,
+    "HAT": 10.434999,
+    "STND": 0,
+    "MHHW": 10.075,
+    "MHW": 10.018,
+    "DTL": 9.608,
+    "MTL": 9.604,
+    "MSL": 9.61,
+    "MLW": 9.189,
+    "MLLW": 9.141,
+    "GT": 0.934,
+    "MN": 0.829,
+    "DHQ": 0.057,
+    "DLQ": 0.047,
+    "HWI": 0.541,
+    "LWI": 6.707,
+    "NAVD88": 9.905
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -245,25 +264,5 @@
       "phase_local": 198.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.861,
-    "HAT": 10.434999,
-    "STND": 0,
-    "MHHW": 10.075,
-    "MHW": 10.018,
-    "DTL": 9.608,
-    "MTL": 9.604,
-    "MSL": 9.61,
-    "MLW": 9.189,
-    "MLLW": 9.141,
-    "GT": 0.934,
-    "MN": 0.829,
-    "DHQ": 0.057,
-    "DLQ": 0.047,
-    "HWI": 0.541,
-    "LWI": 6.707,
-    "NAVD88": 9.905
-  },
-  "disclaimers": ""
+  ]
 }

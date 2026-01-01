@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-pascagoula-south-side",
+  "id": "us/ms/pascagoula-south-side",
   "name": "Pascagoula, South Side",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.322200775146484,
   "longitude": -88.50800323486328,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8740993",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8740993",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8740993.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8740993"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.3910003,
+    "HAT": 8.636,
+    "STND": 0,
+    "MHHW": 8.362,
+    "MHW": 8.334,
+    "DTL": 8.1,
+    "MTL": 8.098,
+    "MSL": 8.083,
+    "MLW": 7.861,
+    "MLLW": 7.837,
+    "GT": 0.525,
+    "MN": 0.473,
+    "DHQ": 0.028,
+    "DLQ": 0.024,
+    "NAVD88": 8.082
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 68.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.3910003,
-    "HAT": 8.636,
-    "STND": 0,
-    "MHHW": 8.362,
-    "MHW": 8.334,
-    "DTL": 8.1,
-    "MTL": 8.098,
-    "MSL": 8.083,
-    "MLW": 7.861,
-    "MLLW": 7.837,
-    "GT": 0.525,
-    "MN": 0.473,
-    "DHQ": 0.028,
-    "DLQ": 0.024,
-    "NAVD88": 8.082
-  },
-  "disclaimers": ""
+  ]
 }

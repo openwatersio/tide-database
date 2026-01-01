@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-packwood-place-mosquito-lagoon",
+  "id": "us/fl/packwood-place-mosquito-lagoon",
   "name": "Packwood Place, Mosquito Lagoon",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.94,
   "longitude": -80.87,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8721222",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721222",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8721222.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721222"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.649,
+    "HAT": 1.163,
+    "STND": 0,
+    "MHHW": 1.09,
+    "MHW": 1.04,
+    "DTL": 0.9,
+    "MTL": 0.878,
+    "MSL": 0.876,
+    "MLW": 0.716,
+    "MLLW": 0.709,
+    "GT": 0.381,
+    "MN": 0.323,
+    "DHQ": 0.05,
+    "DLQ": 0.007,
+    "HWI": 2.866,
+    "LWI": 9.636,
+    "NAVD88": 1.027
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.649,
-    "HAT": 1.163,
-    "STND": 0,
-    "MHHW": 1.09,
-    "MHW": 1.04,
-    "DTL": 0.9,
-    "MTL": 0.878,
-    "MSL": 0.876,
-    "MLW": 0.716,
-    "MLLW": 0.709,
-    "GT": 0.381,
-    "MN": 0.323,
-    "DHQ": 0.05,
-    "DLQ": 0.007,
-    "HWI": 2.866,
-    "LWI": 9.636,
-    "NAVD88": 1.027
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-penrhyn-tongareva-island",
+  "id": "us/penrhyn-tongareva-island",
   "name": "Penrhyn (Tongareva Island)",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -9,
   "longitude": -157.98333,
   "timezone": "Pacific/Rarotonga",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2823",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2823",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2823.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2823"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pago-pago-harbor-tutuila-island",
+    "reference": "us/pago-pago-harbor-tutuila-island",
     "height": {
       "type": "ratio",
       "high": 0.62,

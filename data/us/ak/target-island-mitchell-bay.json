@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-target-island-mitchell-bay",
+  "id": "us/ak/target-island-mitchell-bay",
   "name": "Target Island, Mitchell Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.5333,
   "longitude": -134.417,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451953",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451953",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451953.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451953"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 14.66374,
+    "HAT": 19.699741,
+    "STND": 0,
+    "MHHW": 18.975,
+    "MHW": 18.697,
+    "DTL": 17.267,
+    "MTL": 17.289,
+    "MSL": 17.302,
+    "MLW": 15.881,
+    "MLLW": 15.559,
+    "GT": 3.416,
+    "MN": 2.817,
+    "DHQ": 0.277,
+    "DLQ": 0.322,
+    "HWI": 11.31,
+    "LWI": 5.18
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 14.66374,
-    "HAT": 19.699741,
-    "STND": 0,
-    "MHHW": 18.975,
-    "MHW": 18.697,
-    "DTL": 17.267,
-    "MTL": 17.289,
-    "MSL": 17.302,
-    "MLW": 15.881,
-    "MLLW": 15.559,
-    "GT": 3.416,
-    "MN": 2.817,
-    "DHQ": 0.277,
-    "DLQ": 0.322,
-    "HWI": 11.31,
-    "LWI": 5.18
-  },
-  "disclaimers": ""
+  ]
 }

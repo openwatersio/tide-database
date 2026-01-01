@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-cape-espenberg-kotzebue-sound",
+  "id": "us/ak/cape-espenberg-kotzebue-sound",
   "name": "CAPE ESPENBERG, KOTZEBUE SOUND",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 66.58569444444444,
   "longitude": -164.2508333333333,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9490096",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9490096",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9490096.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9490096"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 46.497,
+    "HAT": 46.95,
+    "STND": 0,
+    "MHHW": 46.883,
+    "MHW": 46.851,
+    "DTL": 46.732,
+    "MTL": 46.741,
+    "MSL": 46.74,
+    "MLW": 46.631,
+    "MLLW": 46.581,
+    "GT": 0.302,
+    "MN": 0.219,
+    "DHQ": 0.032,
+    "DLQ": 0.05,
+    "HWI": 10.99,
+    "LWI": 4.91
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 46.497,
-    "HAT": 46.95,
-    "STND": 0,
-    "MHHW": 46.883,
-    "MHW": 46.851,
-    "DTL": 46.732,
-    "MTL": 46.741,
-    "MSL": 46.74,
-    "MLW": 46.631,
-    "MLLW": 46.581,
-    "GT": 0.302,
-    "MN": 0.219,
-    "DHQ": 0.032,
-    "DLQ": 0.05,
-    "HWI": 10.99,
-    "LWI": 4.91
-  },
-  "disclaimers": ""
+  ]
 }

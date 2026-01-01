@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-biltmore-shores-south-oyster-bay",
+  "id": "us/ny/biltmore-shores-south-oyster-bay",
   "name": "Biltmore Shores, South Oyster Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.6667,
   "longitude": -73.4683,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516055",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516055",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516055.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516055"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nj-sandy-hook-fort-hancock",
+    "reference": "us/nj/sandy-hook-fort-hancock",
     "height": {
       "type": "ratio",
       "high": 0.3,

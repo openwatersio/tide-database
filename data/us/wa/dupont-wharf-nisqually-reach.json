@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-dupont-wharf-nisqually-reach",
+  "id": "us/wa/dupont-wharf-nisqually-reach",
   "name": "Dupont Wharf, Nisqually Reach",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.1183,
   "longitude": -122.665,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9446828",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446828",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9446828.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446828"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-seattle-madison-st-elliott-bay",
+    "reference": "us/wa/seattle-madison-st-elliott-bay",
     "height": {
       "type": "ratio",
       "high": 1.2,

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-se-tigalda-island-pacific-ocean",
+  "id": "us/ak/se-tigalda-island-pacific-ocean",
   "name": "SE Tigalda Island, Pacific Ocean",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.10180555555556,
   "longitude": -164.9415833333333,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462786",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462786",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462786.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462786"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.889,
+    "HAT": 8.781,
+    "STND": 0,
+    "MHHW": 8.174,
+    "MHW": 7.994,
+    "DTL": 7.367,
+    "MTL": 7.479,
+    "MSL": 7.461,
+    "MLW": 6.963,
+    "MLLW": 6.56,
+    "GT": 1.614,
+    "MN": 1.032,
+    "DHQ": 0.179,
+    "DLQ": 0.403,
+    "HWI": 11.632,
+    "LWI": 5.275
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.889,
-    "HAT": 8.781,
-    "STND": 0,
-    "MHHW": 8.174,
-    "MHW": 7.994,
-    "DTL": 7.367,
-    "MTL": 7.479,
-    "MSL": 7.461,
-    "MLW": 6.963,
-    "MLLW": 6.56,
-    "GT": 1.614,
-    "MN": 1.032,
-    "DHQ": 0.179,
-    "DLQ": 0.403,
-    "HWI": 11.632,
-    "LWI": 5.275
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-md-long-beach",
+  "id": "us/md/long-beach",
   "name": "Long Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.465,
   "longitude": -76.4733,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8577004",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8577004",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8577004.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8577004"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.974,
+    "HAT": 3.629,
+    "STND": 0,
+    "MHHW": 3.53,
+    "MHW": 3.48,
+    "DTL": 3.325,
+    "MTL": 3.326,
+    "MSL": 3.329,
+    "MLW": 3.172,
+    "MLLW": 3.121,
+    "GT": 0.409,
+    "MN": 0.307,
+    "DHQ": 0.05,
+    "DLQ": 0.051,
+    "HWI": 7.75,
+    "LWI": 1.634
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -221,24 +239,5 @@
       "phase_local": 107.1,
       "speed": 30.082138
     }
-  ],
-  "datums": {
-    "LAT": 2.974,
-    "HAT": 3.629,
-    "STND": 0,
-    "MHHW": 3.53,
-    "MHW": 3.48,
-    "DTL": 3.325,
-    "MTL": 3.326,
-    "MSL": 3.329,
-    "MLW": 3.172,
-    "MLLW": 3.121,
-    "GT": 0.409,
-    "MN": 0.307,
-    "DHQ": 0.05,
-    "DLQ": 0.051,
-    "HWI": 7.75,
-    "LWI": 1.634
-  },
-  "disclaimers": ""
+  ]
 }

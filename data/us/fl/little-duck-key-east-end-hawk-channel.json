@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-little-duck-key-east-end-hawk-channel",
+  "id": "us/fl/little-duck-key-east-end-hawk-channel",
   "name": "Little Duck Key, east end, Hawk Channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.6817,
   "longitude": -81.2283,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724093",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724093",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724093.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724093"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 0.67,

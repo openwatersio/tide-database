@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-annisquam-lobster-cove",
+  "id": "us/ma/annisquam-lobster-cove",
   "name": "Annisquam, Lobster Cove",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.654998779296875,
   "longitude": -70.67669677734375,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8441571",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8441571",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8441571.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8441571"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 3.42,
+    "MHW": 3.288,
+    "DTL": 1.96,
+    "MTL": 1.945,
+    "MSL": 1.952,
+    "MLW": 0.602,
+    "MLLW": 0.501,
+    "GT": 2.919,
+    "MN": 2.686,
+    "DHQ": 0.131,
+    "DLQ": 0.101,
+    "HWI": 3.756,
+    "LWI": 9.859
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 109.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 3.42,
-    "MHW": 3.288,
-    "DTL": 1.96,
-    "MTL": 1.945,
-    "MSL": 1.952,
-    "MLW": 0.602,
-    "MLLW": 0.501,
-    "GT": 2.919,
-    "MN": 2.686,
-    "DHQ": 0.131,
-    "DLQ": 0.101,
-    "HWI": 3.756,
-    "LWI": 9.859
-  },
-  "disclaimers": ""
+  ]
 }

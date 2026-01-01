@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-lost-river-seward-peninsula",
+  "id": "us/ak/lost-river-seward-peninsula",
   "name": "Lost River, Seward Peninsula",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 65.39,
   "longitude": -167.145,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9469338",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469338",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9469338.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469338"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.354,
+    "HAT": 1.8280001,
+    "STND": 0,
+    "MHHW": 1.795,
+    "MHW": 1.753,
+    "DTL": 1.628,
+    "MTL": 1.622,
+    "MSL": 1.62,
+    "MLW": 1.49,
+    "MLLW": 1.462,
+    "GT": 0.333,
+    "MN": 0.263,
+    "DHQ": 0.041,
+    "DLQ": 0.029,
+    "HWI": 6.78,
+    "LWI": 0.55
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.354,
-    "HAT": 1.8280001,
-    "STND": 0,
-    "MHHW": 1.795,
-    "MHW": 1.753,
-    "DTL": 1.628,
-    "MTL": 1.622,
-    "MSL": 1.62,
-    "MLW": 1.49,
-    "MLLW": 1.462,
-    "GT": 0.333,
-    "MN": 0.263,
-    "DHQ": 0.041,
-    "DLQ": 0.029,
-    "HWI": 6.78,
-    "LWI": 0.55
-  },
-  "disclaimers": ""
+  ]
 }

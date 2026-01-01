@@ -1,10 +1,9 @@
 {
-  "id": "us-me-gravelly-point-whiting-bay",
+  "id": "us/me/gravelly-point-whiting-bay",
   "name": "Gravelly Point, Whiting Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.823299407958984,
   "longitude": -67.15170288085938,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8410864",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410864",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8410864.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410864"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.973,
+    "HAT": 9.053,
+    "STND": 0,
+    "MHHW": 8.334,
+    "MHW": 8.187,
+    "DTL": 5.483,
+    "MTL": 5.459,
+    "MSL": 5.459,
+    "MLW": 2.731,
+    "MLLW": 2.632,
+    "GT": 5.702,
+    "MN": 5.456,
+    "DHQ": 0.147,
+    "DLQ": 0.099,
+    "HWI": 4.408,
+    "LWI": 10.983
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 297.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.973,
-    "HAT": 9.053,
-    "STND": 0,
-    "MHHW": 8.334,
-    "MHW": 8.187,
-    "DTL": 5.483,
-    "MTL": 5.459,
-    "MSL": 5.459,
-    "MLW": 2.731,
-    "MLLW": 2.632,
-    "GT": 5.702,
-    "MN": 5.456,
-    "DHQ": 0.147,
-    "DLQ": 0.099,
-    "HWI": 4.408,
-    "LWI": 10.983
-  },
-  "disclaimers": ""
+  ]
 }

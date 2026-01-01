@@ -1,10 +1,9 @@
 {
-  "id": "us-nomwin-atoll-hall-islands",
+  "id": "us/nomwin-atoll-hall-islands",
   "name": "Nomwin Atoll, Hall Islands",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 8.45,
   "longitude": 151.78333333332992,
   "timezone": "Pacific/Chuuk",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2655",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2655",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2655.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2655"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fm-chuuk-moen-island",
+    "reference": "us/fm/chuuk-moen-island",
     "height": {
       "type": "ratio",
       "high": 0.8,

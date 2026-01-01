@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-atlantic-beach",
+  "id": "us/nc/atlantic-beach",
   "name": "Atlantic Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.6933,
   "longitude": -76.7117,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8656590",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656590",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8656590.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656590"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.231,
+    "HAT": 3.281,
+    "STND": 0,
+    "MHHW": 2.869,
+    "MHW": 2.765,
+    "DTL": 2.237,
+    "MTL": 2.209,
+    "MSL": 2.215,
+    "MLW": 1.652,
+    "MLLW": 1.605,
+    "GT": 1.263,
+    "MN": 1.113,
+    "DHQ": 0.103,
+    "DLQ": 0.047,
+    "HWI": 12.13,
+    "LWI": 5.98,
+    "NAVD88": 2.362
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 178.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.231,
-    "HAT": 3.281,
-    "STND": 0,
-    "MHHW": 2.869,
-    "MHW": 2.765,
-    "DTL": 2.237,
-    "MTL": 2.209,
-    "MSL": 2.215,
-    "MLW": 1.652,
-    "MLLW": 1.605,
-    "GT": 1.263,
-    "MN": 1.113,
-    "DHQ": 0.103,
-    "DLQ": 0.047,
-    "HWI": 12.13,
-    "LWI": 5.98,
-    "NAVD88": 2.362
-  },
-  "disclaimers": ""
+  ]
 }

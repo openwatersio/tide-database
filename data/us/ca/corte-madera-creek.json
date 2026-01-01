@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-corte-madera-creek",
+  "id": "us/ca/corte-madera-creek",
   "name": "Corte Madera Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.94329833984375,
   "longitude": -122.51300048828125,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414874",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414874",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414874.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414874"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.322,
+    "HAT": 5.058,
+    "STND": 0,
+    "MHHW": 4.623,
+    "MHW": 4.44,
+    "DTL": 3.739,
+    "MTL": 3.812,
+    "MSL": 3.801,
+    "MLW": 3.184,
+    "MLLW": 2.855,
+    "GT": 1.768,
+    "MN": 1.257,
+    "DHQ": 0.183,
+    "DLQ": 0.328,
+    "HWI": 8.125,
+    "LWI": 1.701
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 193.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.322,
-    "HAT": 5.058,
-    "STND": 0,
-    "MHHW": 4.623,
-    "MHW": 4.44,
-    "DTL": 3.739,
-    "MTL": 3.812,
-    "MSL": 3.801,
-    "MLW": 3.184,
-    "MLLW": 2.855,
-    "GT": 1.768,
-    "MN": 1.257,
-    "DHQ": 0.183,
-    "DLQ": 0.328,
-    "HWI": 8.125,
-    "LWI": 1.701
-  },
-  "disclaimers": ""
+  ]
 }

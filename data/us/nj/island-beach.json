@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-island-beach",
+  "id": "us/nj/island-beach",
   "name": "Island Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.8517,
   "longitude": -74.0883,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8533345",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533345",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8533345.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533345"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nj-sandy-hook-fort-hancock",
+    "reference": "us/nj/sandy-hook-fort-hancock",
     "height": {
       "type": "ratio",
       "high": 0.08,

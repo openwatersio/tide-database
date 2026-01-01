@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-walburg-creek-entrance",
+  "id": "us/ga/walburg-creek-entrance",
   "name": "Walburg Creek entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.69,
   "longitude": -81.155,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8673437",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8673437",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8673437.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8673437"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ga-fort-pulaski-savannah-river-entrance",
+    "reference": "us/ga/fort-pulaski-savannah-river-entrance",
     "height": {
       "type": "ratio",
       "high": 1.03,

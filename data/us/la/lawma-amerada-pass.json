@@ -1,10 +1,9 @@
 {
-  "id": "us-la-lawma-amerada-pass",
+  "id": "us/la/lawma-amerada-pass",
   "name": "LAWMA, Amerada Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.449600219726562,
   "longitude": -91.33809661865234,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8764227",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764227",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8764227.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764227"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.774,
+    "HAT": 7.833,
+    "STND": 0,
+    "MHHW": 7.633,
+    "MHW": 7.586,
+    "DTL": 7.387,
+    "MTL": 7.413,
+    "MSL": 7.4,
+    "MLW": 7.239,
+    "MLLW": 7.141,
+    "GT": 0.492,
+    "MN": 0.347,
+    "DHQ": 0.047,
+    "DLQ": 0.099,
+    "NAVD88": 7.421
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 206.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.774,
-    "HAT": 7.833,
-    "STND": 0,
-    "MHHW": 7.633,
-    "MHW": 7.586,
-    "DTL": 7.387,
-    "MTL": 7.413,
-    "MSL": 7.4,
-    "MLW": 7.239,
-    "MLLW": 7.141,
-    "GT": 0.492,
-    "MN": 0.347,
-    "DHQ": 0.047,
-    "DLQ": 0.099,
-    "NAVD88": 7.421
-  },
-  "disclaimers": ""
+  ]
 }

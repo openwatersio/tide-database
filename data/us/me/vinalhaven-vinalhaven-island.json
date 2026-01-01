@@ -1,10 +1,9 @@
 {
-  "id": "us-me-vinalhaven-vinalhaven-island",
+  "id": "us/me/vinalhaven-vinalhaven-island",
   "name": "Vinalhaven, Vinalhaven Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.0433,
   "longitude": -68.84,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8414776",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414776",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8414776.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8414776"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-me-bar-harbor",
+    "reference": "us/me/bar-harbor",
     "height": {
       "type": "ratio",
       "high": 0.87,

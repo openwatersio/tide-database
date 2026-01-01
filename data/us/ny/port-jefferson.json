@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-port-jefferson",
+  "id": "us/ny/port-jefferson",
   "name": "Port Jefferson",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.95000076293945,
   "longitude": -73.07669830322266,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8514560",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514560",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8514560.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514560"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.73800004,
+    "HAT": 3.786,
+    "STND": 0,
+    "MHHW": 3.341,
+    "MHW": 3.243,
+    "DTL": 2.25,
+    "MTL": 2.236,
+    "MSL": 2.233,
+    "MLW": 1.228,
+    "MLLW": 1.16,
+    "GT": 2.181,
+    "MN": 2.015,
+    "DHQ": 0.097,
+    "DLQ": 0.069,
+    "HWI": 3.873,
+    "LWI": 10.208,
+    "NAVD88": 2.292
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 311.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.73800004,
-    "HAT": 3.786,
-    "STND": 0,
-    "MHHW": 3.341,
-    "MHW": 3.243,
-    "DTL": 2.25,
-    "MTL": 2.236,
-    "MSL": 2.233,
-    "MLW": 1.228,
-    "MLLW": 1.16,
-    "GT": 2.181,
-    "MN": 2.015,
-    "DHQ": 0.097,
-    "DLQ": 0.069,
-    "HWI": 3.873,
-    "LWI": 10.208,
-    "NAVD88": 2.292
-  },
-  "disclaimers": ""
+  ]
 }

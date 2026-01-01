@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-seabeck-seabeck-bay",
+  "id": "us/wa/seabeck-seabeck-bay",
   "name": "Seabeck, Seabeck Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.6417,
   "longitude": -122.828,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9445303",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445303",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9445303.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445303"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-seattle-madison-st-elliott-bay",
+    "reference": "us/wa/seattle-madison-st-elliott-bay",
     "height": {
       "type": "ratio",
       "high": 1.01,

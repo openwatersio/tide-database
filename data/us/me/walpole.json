@@ -1,10 +1,9 @@
 {
-  "id": "us-me-walpole",
+  "id": "us/me/walpole",
   "name": "Walpole",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.9333,
   "longitude": -69.58,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8416731",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8416731",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8416731.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8416731"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.41900015,
+    "HAT": 4.723,
+    "STND": 0,
+    "MHHW": 4.115,
+    "MHW": 3.981,
+    "DTL": 2.568,
+    "MTL": 2.556,
+    "MSL": 2.561,
+    "MLW": 1.131,
+    "MLLW": 1.021,
+    "GT": 3.094,
+    "MN": 2.85,
+    "DHQ": 0.134,
+    "DLQ": 0.11,
+    "HWI": 3.678,
+    "LWI": 9.976
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 201.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.41900015,
-    "HAT": 4.723,
-    "STND": 0,
-    "MHHW": 4.115,
-    "MHW": 3.981,
-    "DTL": 2.568,
-    "MTL": 2.556,
-    "MSL": 2.561,
-    "MLW": 1.131,
-    "MLLW": 1.021,
-    "GT": 3.094,
-    "MN": 2.85,
-    "DHQ": 0.134,
-    "DLQ": 0.11,
-    "HWI": 3.678,
-    "LWI": 9.976
-  },
-  "disclaimers": ""
+  ]
 }

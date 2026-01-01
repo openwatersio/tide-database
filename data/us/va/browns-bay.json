@@ -1,10 +1,9 @@
 {
-  "id": "us-va-browns-bay",
+  "id": "us/va/browns-bay",
   "name": "Browns Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.3,
   "longitude": -76.4,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8637444",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8637444",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8637444.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8637444"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-hampton-roads-sewells-point",
+    "reference": "us/va/hampton-roads-sewells-point",
     "height": {
       "type": "ratio",
       "high": 0.98,

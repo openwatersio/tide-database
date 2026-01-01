@@ -1,10 +1,9 @@
 {
-  "id": "us-vi-christiansted-harbor-st-croix",
+  "id": "us/vi/christiansted-harbor-st-croix",
   "name": "Christiansted Harbor, St Croix",
-  "continent": "North America",
-  "country": "United States",
   "region": "VI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.74769444444445,
   "longitude": -64.69838888888889,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751364",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751364",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751364.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751364"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.103,
+    "HAT": 8.585,
+    "STND": 0,
+    "MHHW": 8.479,
+    "MHW": 8.472,
+    "DTL": 8.365,
+    "MTL": 8.367,
+    "MSL": 8.367,
+    "MLW": 8.263,
+    "MLLW": 8.252,
+    "GT": 0.226,
+    "MN": 0.209,
+    "DHQ": 0.007,
+    "DLQ": 0.011,
+    "VIVD09": 8.373
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 113.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.103,
-    "HAT": 8.585,
-    "STND": 0,
-    "MHHW": 8.479,
-    "MHW": 8.472,
-    "DTL": 8.365,
-    "MTL": 8.367,
-    "MSL": 8.367,
-    "MLW": 8.263,
-    "MLLW": 8.252,
-    "GT": 0.226,
-    "MN": 0.209,
-    "DHQ": 0.007,
-    "DLQ": 0.011,
-    "VIVD09": 8.373
-  },
-  "disclaimers": ""
+  ]
 }

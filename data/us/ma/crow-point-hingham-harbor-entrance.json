@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-crow-point-hingham-harbor-entrance",
+  "id": "us/ma/crow-point-hingham-harbor-entrance",
   "name": "Crow Point, Hingham Harbor entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.2617,
   "longitude": -70.8933,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8444662",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444662",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8444662.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444662"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ma-boston",
+    "reference": "us/ma/boston",
     "height": {
       "type": "ratio",
       "high": 0.99,

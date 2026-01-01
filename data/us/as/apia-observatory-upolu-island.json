@@ -1,10 +1,9 @@
 {
-  "id": "us-as-apia-observatory-upolu-island",
+  "id": "us/as/apia-observatory-upolu-island",
   "name": "APIA (Observatory), Upolu Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -13.808300018310547,
   "longitude": -171.76699829101562,
   "timezone": "Pacific/Apia",
@@ -12,14 +11,22 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1778000",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1778000",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1778000.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1778000"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.684,
+    "HAT": 0.705,
+    "STND": 0,
+    "MSL": 0,
+    "MLLW": -1.61
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,13 +324,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.684,
-    "HAT": 0.705,
-    "STND": 0,
-    "MSL": 0,
-    "MLLW": -1.61
-  },
-  "disclaimers": ""
+  ]
 }

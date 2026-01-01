@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-st-joseph-point-st-joseph-bay",
+  "id": "us/fl/st-joseph-point-st-joseph-bay",
   "name": "St. Joseph Point, St. Joseph Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.873300552368164,
   "longitude": -85.38999938964844,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728958",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728958",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728958.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728958"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.16,
+    "HAT": 0.845,
+    "STND": 0,
+    "MHHW": 0.611,
+    "MHW": 0.518,
+    "DTL": 0.374,
+    "MTL": 0.341,
+    "MSL": 0.369,
+    "MLW": 0.164,
+    "MLLW": 0.137,
+    "GT": 0.474,
+    "MN": 0.355,
+    "DHQ": 0.093,
+    "DLQ": 0.027,
+    "NAVD88": 0.376
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.16,
-    "HAT": 0.845,
-    "STND": 0,
-    "MHHW": 0.611,
-    "MHW": 0.518,
-    "DTL": 0.374,
-    "MTL": 0.341,
-    "MSL": 0.369,
-    "MLW": 0.164,
-    "MLLW": 0.137,
-    "GT": 0.474,
-    "MN": 0.355,
-    "DHQ": 0.093,
-    "DLQ": 0.027,
-    "NAVD88": 0.376
-  },
-  "disclaimers": ""
+  ]
 }
