@@ -29,7 +29,11 @@ $ npm install @neaps/tide-database
 The package exports an array of all tide stations in the database:
 
 ```typescript
-import stations from '@neaps/tide-database';
+import { constituents, stations } from '@neaps/tide-database';
+
+// Constituents is an array of all harmonic constituents used in the database with a description and speed.
+console.log('Total constituents:', constituents.length);
+console.log(constituents[0]);
 
 // Stations is an array of all the files in `data/`
 console.log('Total stations:', stations.length);
