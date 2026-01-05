@@ -84,6 +84,10 @@ Releases of this database use [Semantic Versioning](https://semver.org/), with t
 * Minor version changes indicate backward-compatible additions to the data structure or APIs, such as new fields.
 * Patch version changes indicate updates to station data, and will always be the current date. For example, "0.1.20260101".
 
+## Releasing
+
+Releases are created by [running the Publish action](https://github.com/neaps/tide-database/actions/workflows/publish.yml) on GitHub Actions. This action will use the major and minor `version` defined in `package.json`, and set the patch version to the current date.
+
 ## License
 
 * All code in this repository is licensed under the [MIT License](./LICENSE).
