@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-louis-bay",
+  "id": "us/ak/louis-bay",
   "name": "Louis Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.4617,
   "longitude": -147.672,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454642",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454642",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454642.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454642"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-cordova",
+    "reference": "us/ak/cordova",
     "height": {
       "type": "ratio",
       "high": 0.96,

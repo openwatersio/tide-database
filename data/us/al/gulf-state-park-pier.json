@@ -1,10 +1,9 @@
 {
-  "id": "us-al-gulf-state-park-pier",
+  "id": "us/al/gulf-state-park-pier",
   "name": "Gulf State Park Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.248300552368164,
   "longitude": -87.66829681396484,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8731269",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8731269",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8731269.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8731269"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.409,
+    "HAT": 7.403,
+    "STND": 0,
+    "MHHW": 7.145,
+    "MHW": 7.137,
+    "DTL": 6.932,
+    "MTL": 6.93,
+    "MSL": 6.921,
+    "MLW": 6.723,
+    "MLLW": 6.719,
+    "GT": 0.427,
+    "MN": 0.414,
+    "DHQ": 0.009,
+    "DLQ": 0.004,
+    "NAVD88": 6.93
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.409,
-    "HAT": 7.403,
-    "STND": 0,
-    "MHHW": 7.145,
-    "MHW": 7.137,
-    "DTL": 6.932,
-    "MTL": 6.93,
-    "MSL": 6.921,
-    "MLW": 6.723,
-    "MLLW": 6.719,
-    "GT": 0.427,
-    "MN": 0.414,
-    "DHQ": 0.009,
-    "DLQ": 0.004,
-    "NAVD88": 6.93
-  },
-  "disclaimers": ""
+  ]
 }

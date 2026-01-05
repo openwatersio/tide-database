@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-cape-cod-canal-bourne-bridge",
+  "id": "us/ma/cape-cod-canal-bourne-bridge",
   "name": "Cape Cod Canal, Bourne Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.745,
   "longitude": -70.5933,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447259",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447259",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447259.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447259"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.76963806,
+    "HAT": 2.913638,
+    "STND": 0,
+    "MHHW": 2.58,
+    "MHW": 2.461,
+    "DTL": 1.825,
+    "MTL": 1.806,
+    "MSL": 1.83,
+    "MLW": 1.152,
+    "MLLW": 1.069,
+    "GT": 1.512,
+    "MN": 1.309,
+    "DHQ": 0.119,
+    "DLQ": 0.083,
+    "HWI": 2.52,
+    "LWI": 9.53
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.76963806,
-    "HAT": 2.913638,
-    "STND": 0,
-    "MHHW": 2.58,
-    "MHW": 2.461,
-    "DTL": 1.825,
-    "MTL": 1.806,
-    "MSL": 1.83,
-    "MLW": 1.152,
-    "MLLW": 1.069,
-    "GT": 1.512,
-    "MN": 1.309,
-    "DHQ": 0.119,
-    "DLQ": 0.083,
-    "HWI": 2.52,
-    "LWI": 9.53
-  },
-  "disclaimers": ""
+  ]
 }

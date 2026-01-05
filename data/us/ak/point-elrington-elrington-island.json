@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-point-elrington-elrington-island",
+  "id": "us/ak/point-elrington-elrington-island",
   "name": "Point Elrington, Elrington Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.9383,
   "longitude": -148.227,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454814",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454814",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454814.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454814"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.1969999,
+    "HAT": 3.988,
+    "STND": 0,
+    "MHHW": 3.084,
+    "MHW": 2.79,
+    "DTL": 1.434,
+    "MTL": 1.504,
+    "MSL": 1.518,
+    "MLW": 0.218,
+    "MLLW": -0.215,
+    "GT": 3.301,
+    "MN": 2.572,
+    "DHQ": 0.294,
+    "DLQ": 0.434,
+    "HWI": 9.853,
+    "LWI": 3.678
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.1969999,
-    "HAT": 3.988,
-    "STND": 0,
-    "MHHW": 3.084,
-    "MHW": 2.79,
-    "DTL": 1.434,
-    "MTL": 1.504,
-    "MSL": 1.518,
-    "MLW": 0.218,
-    "MLLW": -0.215,
-    "GT": 3.301,
-    "MN": 2.572,
-    "DHQ": 0.294,
-    "DLQ": 0.434,
-    "HWI": 9.853,
-    "LWI": 3.678
-  },
-  "disclaimers": ""
+  ]
 }

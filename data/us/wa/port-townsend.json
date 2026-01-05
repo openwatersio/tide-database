@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-port-townsend",
+  "id": "us/wa/port-townsend",
   "name": "PORT TOWNSEND",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.11122222222222,
   "longitude": -122.7596777777778,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9444900",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444900",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9444900.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444900"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.19649196,
+    "HAT": 4.0995083,
+    "STND": 0,
+    "MHHW": 3.621,
+    "MHW": 3.414,
+    "DTL": 2.323,
+    "MTL": 2.599,
+    "MSL": 2.547,
+    "MLW": 1.785,
+    "MLLW": 1.025,
+    "GT": 2.597,
+    "MN": 1.629,
+    "DHQ": 0.208,
+    "DLQ": 0.76,
+    "HWI": 12.343,
+    "LWI": 5.669
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 331.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.19649196,
-    "HAT": 4.0995083,
-    "STND": 0,
-    "MHHW": 3.621,
-    "MHW": 3.414,
-    "DTL": 2.323,
-    "MTL": 2.599,
-    "MSL": 2.547,
-    "MLW": 1.785,
-    "MLLW": 1.025,
-    "GT": 2.597,
-    "MN": 1.629,
-    "DHQ": 0.208,
-    "DLQ": 0.76,
-    "HWI": 12.343,
-    "LWI": 5.669
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-castle-islands-duncan-canal",
+  "id": "us/ak/castle-islands-duncan-canal",
   "name": "Castle Islands, Duncan Canal",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.643306732177734,
   "longitude": -133.15199279785156,
   "timezone": "America/Sitka",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451321",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451321",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451321.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451321"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.381,
+    "HAT": 10.971,
+    "STND": 0,
+    "MHHW": 9.652,
+    "MHW": 9.382,
+    "DTL": 7.24,
+    "MTL": 7.336,
+    "MSL": 7.269,
+    "MLW": 5.29,
+    "MLLW": 4.828,
+    "GT": 4.824,
+    "MN": 4.093,
+    "DHQ": 0.269,
+    "DLQ": 0.462,
+    "HWI": 9.799,
+    "LWI": 3.292,
+    "NAVD88": 5.803
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.381,
-    "HAT": 10.971,
-    "STND": 0,
-    "MHHW": 9.652,
-    "MHW": 9.382,
-    "DTL": 7.24,
-    "MTL": 7.336,
-    "MSL": 7.269,
-    "MLW": 5.29,
-    "MLLW": 4.828,
-    "GT": 4.824,
-    "MN": 4.093,
-    "DHQ": 0.269,
-    "DLQ": 0.462,
-    "HWI": 9.799,
-    "LWI": 3.292,
-    "NAVD88": 5.803
-  },
-  "disclaimers": ""
+  ]
 }

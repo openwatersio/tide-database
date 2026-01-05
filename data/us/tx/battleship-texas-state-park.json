@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-battleship-texas-state-park",
+  "id": "us/tx/battleship-texas-state-park",
   "name": "Battleship Texas State Park",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.75670051574707,
   "longitude": -95.08999633789062,
   "timezone": "America/Chicago",
@@ -12,14 +11,26 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770743",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770743",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770743.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770743"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 2.847,
+    "HAT": 3.934,
+    "STND": 0,
+    "MHHW": 3.694,
+    "MHW": 3.668,
+    "MTL": 3.483,
+    "MSL": 3.494,
+    "MLW": 3.297,
+    "MLLW": 3.245
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,17 +328,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.847,
-    "HAT": 3.934,
-    "STND": 0,
-    "MHHW": 3.694,
-    "MHW": 3.668,
-    "MTL": 3.483,
-    "MSL": 3.494,
-    "MLW": 3.297,
-    "MLLW": 3.245
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-horns-hook-east-90th-street",
+  "id": "us/ny/horns-hook-east-90th-street",
   "name": "Horns Hook, East 90th Street",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.7767,
   "longitude": -73.9417,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518668",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518668",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518668.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518668"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.0479999,
+    "HAT": 3.501,
+    "STND": 0,
+    "MHHW": 3.01,
+    "MHW": 2.915,
+    "DTL": 2.22,
+    "MTL": 2.202,
+    "MSL": 2.202,
+    "MLW": 1.488,
+    "MLLW": 1.43,
+    "GT": 1.58,
+    "MN": 1.427,
+    "DHQ": 0.095,
+    "DLQ": 0.058,
+    "HWI": 2.74,
+    "LWI": 8.78
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 326.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.0479999,
-    "HAT": 3.501,
-    "STND": 0,
-    "MHHW": 3.01,
-    "MHW": 2.915,
-    "DTL": 2.22,
-    "MTL": 2.202,
-    "MSL": 2.202,
-    "MLW": 1.488,
-    "MLLW": 1.43,
-    "GT": 1.58,
-    "MN": 1.427,
-    "DHQ": 0.095,
-    "DLQ": 0.058,
-    "HWI": 2.74,
-    "LWI": 8.78
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-bay-city",
+  "id": "us/bay-city",
   "name": "Bay City",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.51666666666701,
   "longitude": -123.9,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC0865",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0865",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC0865.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0865"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-crescent-city",
+    "reference": "us/ca/crescent-city",
     "height": {
       "type": "ratio",
       "high": 1.02,

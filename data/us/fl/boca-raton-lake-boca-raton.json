@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-boca-raton-lake-boca-raton",
+  "id": "us/fl/boca-raton-lake-boca-raton",
   "name": "Boca Raton, Lake Boca Raton",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.343299865722656,
   "longitude": -80.07669830322266,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722816",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722816",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722816.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722816"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.566,
+    "HAT": 1.576,
+    "STND": 0,
+    "MHHW": 1.441,
+    "MHW": 1.402,
+    "DTL": 1.065,
+    "MTL": 1.068,
+    "MSL": 1.074,
+    "MLW": 0.735,
+    "MLLW": 0.689,
+    "GT": 0.752,
+    "MN": 0.667,
+    "DHQ": 0.039,
+    "DLQ": 0.046,
+    "HWI": 1.549,
+    "LWI": 8.104
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 127.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.566,
-    "HAT": 1.576,
-    "STND": 0,
-    "MHHW": 1.441,
-    "MHW": 1.402,
-    "DTL": 1.065,
-    "MTL": 1.068,
-    "MSL": 1.074,
-    "MLW": 0.735,
-    "MLLW": 0.689,
-    "GT": 0.752,
-    "MN": 0.667,
-    "DHQ": 0.039,
-    "DLQ": 0.046,
-    "HWI": 1.549,
-    "LWI": 8.104
-  },
-  "disclaimers": ""
+  ]
 }

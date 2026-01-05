@@ -1,10 +1,9 @@
 {
-  "id": "us-la-east-timbalier-island-timbalier-bay",
+  "id": "us/la/east-timbalier-island-timbalier-bay",
   "name": "East Timbalier Island, Timbalier Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.0767,
   "longitude": -90.285,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8762223",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762223",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8762223.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762223"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.552,
+    "HAT": 1.513,
+    "STND": 0,
+    "MHHW": 1.28,
+    "MHW": 1.27,
+    "DTL": 1.078,
+    "MTL": 1.079,
+    "MSL": 1.086,
+    "MLW": 0.888,
+    "MLLW": 0.876,
+    "GT": 0.404,
+    "MN": 0.381,
+    "DHQ": 0.01,
+    "DLQ": 0.012
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 167.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.552,
-    "HAT": 1.513,
-    "STND": 0,
-    "MHHW": 1.28,
-    "MHW": 1.27,
-    "DTL": 1.078,
-    "MTL": 1.079,
-    "MSL": 1.086,
-    "MLW": 0.888,
-    "MLLW": 0.876,
-    "GT": 0.404,
-    "MN": 0.381,
-    "DHQ": 0.01,
-    "DLQ": 0.012
-  },
-  "disclaimers": ""
+  ]
 }

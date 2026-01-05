@@ -1,10 +1,9 @@
 {
-  "id": "us-al-point-clear-mobile-bay",
+  "id": "us/al/point-clear-mobile-bay",
   "name": "Point Clear, Mobile Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.48663888888889,
   "longitude": -87.93452777777777,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8733821",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8733821",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8733821.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8733821"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.267,
+    "HAT": 9.327,
+    "STND": 0,
+    "MHHW": 9.04,
+    "MHW": 9.046,
+    "DTL": 8.812,
+    "MTL": 8.817,
+    "MSL": 8.821,
+    "MLW": 8.588,
+    "MLLW": 8.583,
+    "GT": 0.457,
+    "MN": 0.457,
+    "DHQ": -0.005,
+    "DLQ": 0.005
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.267,
-    "HAT": 9.327,
-    "STND": 0,
-    "MHHW": 9.04,
-    "MHW": 9.046,
-    "DTL": 8.812,
-    "MTL": 8.817,
-    "MSL": 8.821,
-    "MLW": 8.588,
-    "MLLW": 8.583,
-    "GT": 0.457,
-    "MN": 0.457,
-    "DHQ": -0.005,
-    "DLQ": 0.005
-  },
-  "disclaimers": ""
+  ]
 }

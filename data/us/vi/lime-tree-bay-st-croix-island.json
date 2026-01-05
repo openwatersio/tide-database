@@ -1,10 +1,9 @@
 {
-  "id": "us-vi-lime-tree-bay-st-croix-island",
+  "id": "us/vi/lime-tree-bay-st-croix-island",
   "name": "LIME TREE BAY, ST.CROIX ISLAND",
-  "continent": "North America",
-  "country": "United States",
   "region": "VI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.694700241088867,
   "longitude": -64.75379943847656,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751401",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751401",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751401.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751401"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.231,
+    "HAT": 10.737,
+    "STND": 0,
+    "MHHW": 10.605,
+    "MHW": 10.603,
+    "DTL": 10.497,
+    "MTL": 10.498,
+    "MSL": 10.501,
+    "MLW": 10.393,
+    "MLLW": 10.389,
+    "GT": 0.216,
+    "MN": 0.21,
+    "DHQ": 0.002,
+    "DLQ": 0.004,
+    "VIVD09": 10.501
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 119.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.231,
-    "HAT": 10.737,
-    "STND": 0,
-    "MHHW": 10.605,
-    "MHW": 10.603,
-    "DTL": 10.497,
-    "MTL": 10.498,
-    "MSL": 10.501,
-    "MLW": 10.393,
-    "MLLW": 10.389,
-    "GT": 0.216,
-    "MN": 0.21,
-    "DHQ": 0.002,
-    "DLQ": 0.004,
-    "VIVD09": 10.501
-  },
-  "disclaimers": ""
+  ]
 }

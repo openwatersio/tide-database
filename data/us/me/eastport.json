@@ -1,10 +1,9 @@
 {
-  "id": "us-me-eastport",
+  "id": "us/me/eastport",
   "name": "EASTPORT",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.90460968017578,
   "longitude": -66.9828872680664,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8410140",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410140",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8410140.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410140"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.40991163,
+    "HAT": 8.399912,
+    "STND": 0,
+    "MHHW": 7.336,
+    "MHW": 7.191,
+    "DTL": 4.399,
+    "MTL": 4.395,
+    "MSL": 4.42,
+    "MLW": 1.598,
+    "MLLW": 1.462,
+    "GT": 5.874,
+    "MN": 5.593,
+    "DHQ": 0.145,
+    "DLQ": 0.136,
+    "HWI": 3.3,
+    "LWI": 9.695,
+    "NAVD88": 4.491
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 194.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.40991163,
-    "HAT": 8.399912,
-    "STND": 0,
-    "MHHW": 7.336,
-    "MHW": 7.191,
-    "DTL": 4.399,
-    "MTL": 4.395,
-    "MSL": 4.42,
-    "MLW": 1.598,
-    "MLLW": 1.462,
-    "GT": 5.874,
-    "MN": 5.593,
-    "DHQ": 0.145,
-    "DLQ": 0.136,
-    "HWI": 3.3,
-    "LWI": 9.695,
-    "NAVD88": 4.491
-  },
-  "disclaimers": ""
+  ]
 }

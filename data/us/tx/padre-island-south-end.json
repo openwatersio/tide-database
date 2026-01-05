@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-padre-island-south-end",
+  "id": "us/tx/padre-island-south-end",
   "name": "PADRE ISLAND (south end)",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.0683,
   "longitude": -97.1567,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8779750",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779750",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8779750.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779750"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.13100004,
+    "HAT": 1.32,
+    "STND": 0,
+    "MHHW": 1.029,
+    "MHW": 1.012,
+    "DTL": 0.805,
+    "MTL": 0.821,
+    "MSL": 0.846,
+    "MLW": 0.63,
+    "MLLW": 0.58,
+    "GT": 0.449,
+    "MN": 0.382,
+    "DHQ": 0.017,
+    "DLQ": 0.05,
+    "NAVD88": 0.854
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.13100004,
-    "HAT": 1.32,
-    "STND": 0,
-    "MHHW": 1.029,
-    "MHW": 1.012,
-    "DTL": 0.805,
-    "MTL": 0.821,
-    "MSL": 0.846,
-    "MLW": 0.63,
-    "MLLW": 0.58,
-    "GT": 0.449,
-    "MN": 0.382,
-    "DHQ": 0.017,
-    "DLQ": 0.05,
-    "NAVD88": 0.854
-  },
-  "disclaimers": ""
+  ]
 }

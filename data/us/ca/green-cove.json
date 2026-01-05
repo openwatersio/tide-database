@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-green-cove",
+  "id": "us/ca/green-cove",
   "name": "Green Cove",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.70433333333333,
   "longitude": -123.4493888888889,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9416409",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9416409",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9416409.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9416409"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.301,
+    "HAT": 6.124,
+    "STND": 0,
+    "MHHW": 5.588,
+    "MHW": 5.384,
+    "DTL": 4.791,
+    "MTL": 4.831,
+    "MSL": 4.806,
+    "MLW": 4.278,
+    "MLLW": 3.993,
+    "GT": 1.594,
+    "MN": 1.106,
+    "DHQ": 0.204,
+    "DLQ": 0.284,
+    "HWI": 6.847,
+    "LWI": 0.495
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.301,
-    "HAT": 6.124,
-    "STND": 0,
-    "MHHW": 5.588,
-    "MHW": 5.384,
-    "DTL": 4.791,
-    "MTL": 4.831,
-    "MSL": 4.806,
-    "MLW": 4.278,
-    "MLLW": 3.993,
-    "GT": 1.594,
-    "MN": 1.106,
-    "DHQ": 0.204,
-    "DLQ": 0.284,
-    "HWI": 6.847,
-    "LWI": 0.495
-  },
-  "disclaimers": ""
+  ]
 }

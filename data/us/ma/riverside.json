@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-riverside",
+  "id": "us/ma/riverside",
   "name": "Riverside",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.7633,
   "longitude": -71.0767,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8440889",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440889",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8440889.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440889"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.78700006,
+    "HAT": 3.277,
+    "STND": 0,
+    "MHHW": 2.988,
+    "MHW": 2.847,
+    "DTL": 2.027,
+    "MTL": 1.975,
+    "MSL": 1.914,
+    "MLW": 1.104,
+    "MLLW": 1.067,
+    "GT": 1.921,
+    "MN": 1.743,
+    "DHQ": 0.141,
+    "DLQ": 0.037,
+    "HWI": 5.523,
+    "LWI": 0.842,
+    "NAVD88": 1.487
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.78700006,
-    "HAT": 3.277,
-    "STND": 0,
-    "MHHW": 2.988,
-    "MHW": 2.847,
-    "DTL": 2.027,
-    "MTL": 1.975,
-    "MSL": 1.914,
-    "MLW": 1.104,
-    "MLLW": 1.067,
-    "GT": 1.921,
-    "MN": 1.743,
-    "DHQ": 0.141,
-    "DLQ": 0.037,
-    "HWI": 5.523,
-    "LWI": 0.842,
-    "NAVD88": 1.487
-  },
-  "disclaimers": ""
+  ]
 }

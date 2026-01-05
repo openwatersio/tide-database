@@ -1,10 +1,9 @@
 {
-  "id": "us-va-lewisetta-va",
+  "id": "us/va/lewisetta-va",
   "name": "Lewisetta, Va.",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.99610137939453,
   "longitude": -76.46440124511719,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8635750",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635750",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8635750.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8635750"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.306579,
+    "HAT": 2.050579,
+    "STND": 0,
+    "MHHW": 1.913,
+    "MHW": 1.87,
+    "DTL": 1.683,
+    "MTL": 1.68,
+    "MSL": 1.685,
+    "MLW": 1.49,
+    "MLLW": 1.454,
+    "GT": 0.458,
+    "MN": 0.379,
+    "DHQ": 0.043,
+    "DLQ": 0.036,
+    "HWI": 6.169,
+    "LWI": 0.099,
+    "NAVD88": 1.707
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 334.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.306579,
-    "HAT": 2.050579,
-    "STND": 0,
-    "MHHW": 1.913,
-    "MHW": 1.87,
-    "DTL": 1.683,
-    "MTL": 1.68,
-    "MSL": 1.685,
-    "MLW": 1.49,
-    "MLLW": 1.454,
-    "GT": 0.458,
-    "MN": 0.379,
-    "DHQ": 0.043,
-    "DLQ": 0.036,
-    "HWI": 6.169,
-    "LWI": 0.099,
-    "NAVD88": 1.707
-  },
-  "disclaimers": ""
+  ]
 }

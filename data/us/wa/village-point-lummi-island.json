@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-village-point-lummi-island",
+  "id": "us/wa/village-point-lummi-island",
   "name": "Village Point, Lummi Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.7167,
   "longitude": -122.708,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449161",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449161",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449161.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449161"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.17000008,
+    "HAT": 4.8050003,
+    "STND": 0,
+    "MHHW": 4.129,
+    "MHW": 3.885,
+    "DTL": 2.811,
+    "MTL": 3.077,
+    "MSL": 3.016,
+    "MLW": 2.269,
+    "MLLW": 1.492,
+    "GT": 2.637,
+    "MN": 1.616,
+    "DHQ": 0.244,
+    "DLQ": 0.777,
+    "HWI": 0.605,
+    "LWI": 6.835
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.17000008,
-    "HAT": 4.8050003,
-    "STND": 0,
-    "MHHW": 4.129,
-    "MHW": 3.885,
-    "DTL": 2.811,
-    "MTL": 3.077,
-    "MSL": 3.016,
-    "MLW": 2.269,
-    "MLLW": 1.492,
-    "GT": 2.637,
-    "MN": 1.616,
-    "DHQ": 0.244,
-    "DLQ": 0.777,
-    "HWI": 0.605,
-    "LWI": 6.835
-  },
-  "disclaimers": ""
+  ]
 }

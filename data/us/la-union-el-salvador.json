@@ -1,10 +1,9 @@
 {
-  "id": "us-la-union-el-salvador",
+  "id": "us/la-union-el-salvador",
   "name": "La Union, El Salvador",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 13.3333,
   "longitude": -87.8217,
   "timezone": "America/El_Salvador",
@@ -12,14 +11,22 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9640507",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9640507",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9640507.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9640507"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.095,
+    "HAT": 1.953,
+    "STND": 0,
+    "MSL": 0,
+    "MLLW": -1.554
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,13 +324,5 @@
       "phase_local": 5.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.095,
-    "HAT": 1.953,
-    "STND": 0,
-    "MSL": 0,
-    "MLLW": -1.554
-  },
-  "disclaimers": ""
+  ]
 }

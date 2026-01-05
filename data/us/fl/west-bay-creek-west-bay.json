@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-west-bay-creek-west-bay",
+  "id": "us/fl/west-bay-creek-west-bay",
   "name": "West Bay Creek, West Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.29330062866211,
   "longitude": -85.8582992553711,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729197",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729197",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729197.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729197"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.334,
+    "HAT": 5.351,
+    "STND": 0,
+    "MHHW": 5.11,
+    "MHW": 5.088,
+    "DTL": 4.882,
+    "MTL": 4.884,
+    "MSL": 4.882,
+    "MLW": 4.68,
+    "MLLW": 4.654,
+    "GT": 0.456,
+    "MN": 0.408,
+    "DHQ": 0.022,
+    "DLQ": 0.025,
+    "NAVD88": 4.822
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.334,
-    "HAT": 5.351,
-    "STND": 0,
-    "MHHW": 5.11,
-    "MHW": 5.088,
-    "DTL": 4.882,
-    "MTL": 4.884,
-    "MSL": 4.882,
-    "MLW": 4.68,
-    "MLLW": 4.654,
-    "GT": 0.456,
-    "MN": 0.408,
-    "DHQ": 0.022,
-    "DLQ": 0.025,
-    "NAVD88": 4.822
-  },
-  "disclaimers": ""
+  ]
 }

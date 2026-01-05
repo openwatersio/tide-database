@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-fieldsboro-n-j",
+  "id": "us/nj/fieldsboro-n-j",
   "name": "Fieldsboro, N.J.",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.1367,
   "longitude": -74.7367,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8539487",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8539487",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8539487.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8539487"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.34100008,
+    "HAT": 2.927,
+    "STND": 0,
+    "MHHW": 2.593,
+    "MHW": 2.482,
+    "DTL": 1.302,
+    "MTL": 1.278,
+    "MSL": 1.303,
+    "MLW": 0.073,
+    "MLLW": 0.012,
+    "GT": 2.581,
+    "MN": 2.409,
+    "DHQ": 0.111,
+    "DLQ": 0.062,
+    "HWI": 7.392,
+    "LWI": 2.561,
+    "NAVD88": 1.152
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.34100008,
-    "HAT": 2.927,
-    "STND": 0,
-    "MHHW": 2.593,
-    "MHW": 2.482,
-    "DTL": 1.302,
-    "MTL": 1.278,
-    "MSL": 1.303,
-    "MLW": 0.073,
-    "MLLW": 0.012,
-    "GT": 2.581,
-    "MN": 2.409,
-    "DHQ": 0.111,
-    "DLQ": 0.062,
-    "HWI": 7.392,
-    "LWI": 2.561,
-    "NAVD88": 1.152
-  },
-  "disclaimers": ""
+  ]
 }

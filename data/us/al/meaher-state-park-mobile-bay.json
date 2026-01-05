@@ -1,10 +1,9 @@
 {
-  "id": "us-al-meaher-state-park-mobile-bay",
+  "id": "us/al/meaher-state-park-mobile-bay",
   "name": "Meaher State Park, Mobile Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.66716666666667,
   "longitude": -87.93644444444445,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8733839",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8733839",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8733839.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8733839"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.711,
+    "HAT": 9.771,
+    "STND": 0,
+    "MHHW": 9.493,
+    "MHW": 9.492,
+    "DTL": 9.259,
+    "MTL": 9.266,
+    "MSL": 9.265,
+    "MLW": 9.04,
+    "MLLW": 9.024,
+    "GT": 0.469,
+    "MN": 0.452,
+    "DHQ": 0.001,
+    "DLQ": 0.016
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.711,
-    "HAT": 9.771,
-    "STND": 0,
-    "MHHW": 9.493,
-    "MHW": 9.492,
-    "DTL": 9.259,
-    "MTL": 9.266,
-    "MSL": 9.265,
-    "MLW": 9.04,
-    "MLLW": 9.024,
-    "GT": 0.469,
-    "MN": 0.452,
-    "DHQ": 0.001,
-    "DLQ": 0.016
-  },
-  "disclaimers": ""
+  ]
 }

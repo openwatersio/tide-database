@@ -1,10 +1,9 @@
 {
-  "id": "us-md-annapolis-us-naval-academy",
+  "id": "us/md/annapolis-us-naval-academy",
   "name": "Annapolis (US Naval Academy)",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.983882904052734,
   "longitude": -76.48003387451172,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8575512",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8575512",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8575512.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8575512"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.1589999,
+    "HAT": 1.961,
+    "STND": 0,
+    "MHHW": 1.815,
+    "MHW": 1.741,
+    "DTL": 1.596,
+    "MTL": 1.592,
+    "MSL": 1.596,
+    "MLW": 1.444,
+    "MLLW": 1.377,
+    "GT": 0.438,
+    "MN": 0.297,
+    "DHQ": 0.074,
+    "DLQ": 0.067,
+    "HWI": 10.04,
+    "LWI": 3.97,
+    "NAVD88": 1.612
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 173.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.1589999,
-    "HAT": 1.961,
-    "STND": 0,
-    "MHHW": 1.815,
-    "MHW": 1.741,
-    "DTL": 1.596,
-    "MTL": 1.592,
-    "MSL": 1.596,
-    "MLW": 1.444,
-    "MLLW": 1.377,
-    "GT": 0.438,
-    "MN": 0.297,
-    "DHQ": 0.074,
-    "DLQ": 0.067,
-    "HWI": 10.04,
-    "LWI": 3.97,
-    "NAVD88": 1.612
-  },
-  "disclaimers": ""
+  ]
 }

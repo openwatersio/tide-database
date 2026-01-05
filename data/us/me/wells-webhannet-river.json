@@ -1,10 +1,9 @@
 {
-  "id": "us-me-wells-webhannet-river",
+  "id": "us/me/wells-webhannet-river",
   "name": "Wells, Webhannet River",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.31999969482422,
   "longitude": -70.56330108642578,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8419317",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8419317",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8419317.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8419317"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.863,
+    "HAT": 8.021,
+    "STND": 0,
+    "MHHW": 7.415,
+    "MHW": 7.284,
+    "DTL": 5.958,
+    "MTL": 5.945,
+    "MSL": 5.956,
+    "MLW": 4.606,
+    "MLLW": 4.502,
+    "GT": 2.914,
+    "MN": 2.679,
+    "DHQ": 0.131,
+    "DLQ": 0.104,
+    "HWI": 3.708,
+    "LWI": 9.79,
+    "NAVD88": 6.068
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 72.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.863,
-    "HAT": 8.021,
-    "STND": 0,
-    "MHHW": 7.415,
-    "MHW": 7.284,
-    "DTL": 5.958,
-    "MTL": 5.945,
-    "MSL": 5.956,
-    "MLW": 4.606,
-    "MLLW": 4.502,
-    "GT": 2.914,
-    "MN": 2.679,
-    "DHQ": 0.131,
-    "DLQ": 0.104,
-    "HWI": 3.708,
-    "LWI": 9.79,
-    "NAVD88": 6.068
-  },
-  "disclaimers": ""
+  ]
 }

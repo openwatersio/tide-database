@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-blaine-semiahmoo-bay",
+  "id": "us/wa/blaine-semiahmoo-bay",
   "name": "Blaine, Semiahmoo Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.9917,
   "longitude": -122.765,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449679",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449679",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449679.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449679"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.62100005,
+    "HAT": 3.961,
+    "STND": 0,
+    "MHHW": 3.473,
+    "MHW": 3.211,
+    "DTL": 2.02,
+    "MTL": 2.295,
+    "MSL": 2.238,
+    "MLW": 1.378,
+    "MLLW": 0.568,
+    "GT": 2.904,
+    "MN": 1.833,
+    "DHQ": 0.261,
+    "DLQ": 0.81,
+    "HWI": 0.814,
+    "LWI": 7.118,
+    "NAVD88": 0.878
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.62100005,
-    "HAT": 3.961,
-    "STND": 0,
-    "MHHW": 3.473,
-    "MHW": 3.211,
-    "DTL": 2.02,
-    "MTL": 2.295,
-    "MSL": 2.238,
-    "MLW": 1.378,
-    "MLLW": 0.568,
-    "GT": 2.904,
-    "MN": 1.833,
-    "DHQ": 0.261,
-    "DLQ": 0.81,
-    "HWI": 0.814,
-    "LWI": 7.118,
-    "NAVD88": 0.878
-  },
-  "disclaimers": ""
+  ]
 }

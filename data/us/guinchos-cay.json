@@ -1,10 +1,9 @@
 {
-  "id": "us-guinchos-cay",
+  "id": "us/guinchos-cay",
   "name": "Guinchos Cay",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 22.75,
   "longitude": -78.116666666667,
   "timezone": "America/Nassau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4609",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4609",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4609.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4609"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-settlement-point-grand-bahamas-island",
+    "reference": "us/settlement-point-grand-bahamas-island",
     "height": {
       "type": "ratio",
       "high": 0.79,

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-camp-cove-aialik-bay",
+  "id": "us/ak/camp-cove-aialik-bay",
   "name": "Camp Cove, Aialik Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.6933,
   "longitude": -149.748,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455151",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455151",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455151.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455151"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.714,
+    "HAT": 6.052,
+    "STND": 0,
+    "MHHW": 5.028,
+    "MHW": 4.754,
+    "DTL": 3.403,
+    "MTL": 3.474,
+    "MSL": 3.478,
+    "MLW": 2.194,
+    "MLLW": 1.778,
+    "GT": 3.25,
+    "MN": 2.559,
+    "DHQ": 0.274,
+    "DLQ": 0.417,
+    "HWI": 9.965,
+    "LWI": 3.715
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.714,
-    "HAT": 6.052,
-    "STND": 0,
-    "MHHW": 5.028,
-    "MHW": 4.754,
-    "DTL": 3.403,
-    "MTL": 3.474,
-    "MSL": 3.478,
-    "MLW": 2.194,
-    "MLLW": 1.778,
-    "GT": 3.25,
-    "MN": 2.559,
-    "DHQ": 0.274,
-    "DLQ": 0.417,
-    "HWI": 9.965,
-    "LWI": 3.715
-  },
-  "disclaimers": ""
+  ]
 }

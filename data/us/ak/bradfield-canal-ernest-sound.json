@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-bradfield-canal-ernest-sound",
+  "id": "us/ak/bradfield-canal-ernest-sound",
   "name": "Bradfield Canal, Ernest Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.195526123046875,
   "longitude": -131.5574188232422,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451012",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451012",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451012.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451012"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.9777489,
+    "HAT": 4.773251,
+    "STND": 0,
+    "MHHW": 3.531,
+    "MHW": 3.246,
+    "DTL": 1.004,
+    "MTL": 1.098,
+    "MSL": 1.084,
+    "MLW": -1.049,
+    "MLLW": -1.524,
+    "GT": 5.055,
+    "MN": 4.295,
+    "DHQ": 0.285,
+    "DLQ": 0.474,
+    "HWI": 9.6,
+    "LWI": 3.18
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.9777489,
-    "HAT": 4.773251,
-    "STND": 0,
-    "MHHW": 3.531,
-    "MHW": 3.246,
-    "DTL": 1.004,
-    "MTL": 1.098,
-    "MSL": 1.084,
-    "MLW": -1.049,
-    "MLLW": -1.524,
-    "GT": 5.055,
-    "MN": 4.295,
-    "DHQ": 0.285,
-    "DLQ": 0.474,
-    "HWI": 9.6,
-    "LWI": 3.18
-  },
-  "disclaimers": ""
+  ]
 }

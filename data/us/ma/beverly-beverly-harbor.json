@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-beverly-beverly-harbor",
+  "id": "us/ma/beverly-beverly-harbor",
   "name": "Beverly, Beverly Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.540000915527344,
   "longitude": -70.88670349121094,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8442417",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8442417",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8442417.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8442417"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.12100005,
+    "HAT": 4.134,
+    "STND": 0,
+    "MHHW": 3.493,
+    "MHW": 3.356,
+    "DTL": 2.011,
+    "MTL": 1.994,
+    "MSL": 2.006,
+    "MLW": 0.633,
+    "MLLW": 0.53,
+    "GT": 2.963,
+    "MN": 2.723,
+    "DHQ": 0.137,
+    "DLQ": 0.103,
+    "HWI": 3.778,
+    "LWI": 9.908
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.12100005,
-    "HAT": 4.134,
-    "STND": 0,
-    "MHHW": 3.493,
-    "MHW": 3.356,
-    "DTL": 2.011,
-    "MTL": 1.994,
-    "MSL": 2.006,
-    "MLW": 0.633,
-    "MLLW": 0.53,
-    "GT": 2.963,
-    "MN": 2.723,
-    "DHQ": 0.137,
-    "DLQ": 0.103,
-    "HWI": 3.778,
-    "LWI": 9.908
-  },
-  "disclaimers": ""
+  ]
 }

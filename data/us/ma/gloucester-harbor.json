@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-gloucester-harbor",
+  "id": "us/ma/gloucester-harbor",
   "name": "Gloucester Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.61000061035156,
   "longitude": -70.66000366210938,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8441841",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8441841",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8441841.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8441841"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 4.149,
+    "MHW": 4.013,
+    "DTL": 2.691,
+    "MTL": 2.673,
+    "MSL": 2.685,
+    "MLW": 1.333,
+    "MLLW": 1.232,
+    "GT": 2.917,
+    "MN": 2.681,
+    "DHQ": 0.136,
+    "DLQ": 0.1,
+    "HWI": 3.725,
+    "LWI": 9.868
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 4.149,
-    "MHW": 4.013,
-    "DTL": 2.691,
-    "MTL": 2.673,
-    "MSL": 2.685,
-    "MLW": 1.333,
-    "MLLW": 1.232,
-    "GT": 2.917,
-    "MN": 2.681,
-    "DHQ": 0.136,
-    "DLQ": 0.1,
-    "HWI": 3.725,
-    "LWI": 9.868
-  },
-  "disclaimers": ""
+  ]
 }

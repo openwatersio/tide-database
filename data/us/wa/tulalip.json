@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-tulalip",
+  "id": "us/wa/tulalip",
   "name": "Tulalip",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.065,
   "longitude": -122.288,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9447773",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447773",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9447773.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447773"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.203,
+    "HAT": 11.6310005,
+    "STND": 0,
+    "MHHW": 10.931,
+    "MHW": 10.676,
+    "DTL": 9.246,
+    "MTL": 9.541,
+    "MSL": 9.534,
+    "MLW": 8.407,
+    "MLLW": 7.56,
+    "GT": 3.371,
+    "MN": 2.269,
+    "DHQ": 0.256,
+    "DLQ": 0.847,
+    "HWI": 0.42,
+    "LWI": 6.59,
+    "NAVD88": 8.182
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.203,
-    "HAT": 11.6310005,
-    "STND": 0,
-    "MHHW": 10.931,
-    "MHW": 10.676,
-    "DTL": 9.246,
-    "MTL": 9.541,
-    "MSL": 9.534,
-    "MLW": 8.407,
-    "MLLW": 7.56,
-    "GT": 3.371,
-    "MN": 2.269,
-    "DHQ": 0.256,
-    "DLQ": 0.847,
-    "HWI": 0.42,
-    "LWI": 6.59,
-    "NAVD88": 8.182
-  },
-  "disclaimers": ""
+  ]
 }

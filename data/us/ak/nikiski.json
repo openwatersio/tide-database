@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-nikiski",
+  "id": "us/ak/nikiski",
   "name": "NIKISKI",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.6833333,
   "longitude": -151.3980556,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455760",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455760",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455760.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455760"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.25300026,
+    "HAT": 9.807,
+    "STND": 0,
+    "MHHW": 8.273,
+    "MHW": 8.05,
+    "DTL": 5.142,
+    "MTL": 5.356,
+    "MSL": 5.453,
+    "MLW": 2.661,
+    "MLLW": 2.011,
+    "GT": 6.262,
+    "MN": 5.39,
+    "DHQ": 0.223,
+    "DLQ": 0.65,
+    "HWI": 1.189,
+    "LWI": 7.567,
+    "NAVD88": 4.216
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 148.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.25300026,
-    "HAT": 9.807,
-    "STND": 0,
-    "MHHW": 8.273,
-    "MHW": 8.05,
-    "DTL": 5.142,
-    "MTL": 5.356,
-    "MSL": 5.453,
-    "MLW": 2.661,
-    "MLLW": 2.011,
-    "GT": 6.262,
-    "MN": 5.39,
-    "DHQ": 0.223,
-    "DLQ": 0.65,
-    "HWI": 1.189,
-    "LWI": 7.567,
-    "NAVD88": 4.216
-  },
-  "disclaimers": ""
+  ]
 }

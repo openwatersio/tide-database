@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-beacon-rock-state-park",
+  "id": "us/wa/beacon-rock-state-park",
   "name": "Beacon Rock State Park",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.62030029296875,
   "longitude": -122.02030181884766,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440079",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440079",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440079.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440079"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.064,
+    "HAT": 10.804,
+    "STND": 0,
+    "MHHW": 10.71,
+    "MHW": 10.59,
+    "DTL": 10.445,
+    "MTL": 10.434,
+    "MSL": 10.418,
+    "MLW": 10.278,
+    "MLLW": 10.18,
+    "GT": 0.53,
+    "MN": 0.312,
+    "DHQ": 0.12,
+    "DLQ": 0.098,
+    "HWI": 4.226,
+    "LWI": 12.376
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.064,
-    "HAT": 10.804,
-    "STND": 0,
-    "MHHW": 10.71,
-    "MHW": 10.59,
-    "DTL": 10.445,
-    "MTL": 10.434,
-    "MSL": 10.418,
-    "MLW": 10.278,
-    "MLLW": 10.18,
-    "GT": 0.53,
-    "MN": 0.312,
-    "DHQ": 0.12,
-    "DLQ": 0.098,
-    "HWI": 4.226,
-    "LWI": 12.376
-  },
-  "disclaimers": ""
+  ]
 }

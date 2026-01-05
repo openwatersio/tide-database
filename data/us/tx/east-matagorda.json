@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-east-matagorda",
+  "id": "us/tx/east-matagorda",
   "name": "East Matagorda",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.709999084472656,
   "longitude": -95.91390228271484,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8773146",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8773146",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8773146.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8773146"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 9.186,
+    "HAT": 9.745,
+    "STND": 0,
+    "MHHW": 9.546,
+    "MHW": 9.545,
+    "DTL": 9.474,
+    "MTL": 9.475,
+    "MSL": 9.486,
+    "MLW": 9.405,
+    "MLLW": 9.403,
+    "GT": 0.143,
+    "MN": 0.14,
+    "DHQ": 0.001,
+    "DLQ": 0.002,
+    "NAVD88": 9.236
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 180.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.186,
-    "HAT": 9.745,
-    "STND": 0,
-    "MHHW": 9.546,
-    "MHW": 9.545,
-    "DTL": 9.474,
-    "MTL": 9.475,
-    "MSL": 9.486,
-    "MLW": 9.405,
-    "MLLW": 9.403,
-    "GT": 0.143,
-    "MN": 0.14,
-    "DHQ": 0.001,
-    "DLQ": 0.002,
-    "NAVD88": 9.236
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

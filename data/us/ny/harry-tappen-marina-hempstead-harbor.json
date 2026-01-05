@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-harry-tappen-marina-hempstead-harbor",
+  "id": "us/ny/harry-tappen-marina-hempstead-harbor",
   "name": "Harry Tappen Marina, Hempstead Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.83461111111111,
   "longitude": -73.65241666666667,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516607",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516607",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516607.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516607"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.264,
+    "HAT": 8.878,
+    "STND": 0,
+    "MHHW": 8.247,
+    "MHW": 8.138,
+    "DTL": 7.047,
+    "MTL": 7.028,
+    "MSL": 7.031,
+    "MLW": 5.917,
+    "MLLW": 5.847,
+    "GT": 2.4,
+    "MN": 2.221,
+    "DHQ": 0.109,
+    "DLQ": 0.07,
+    "HWI": 3.727,
+    "LWI": 10.383
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.264,
-    "HAT": 8.878,
-    "STND": 0,
-    "MHHW": 8.247,
-    "MHW": 8.138,
-    "DTL": 7.047,
-    "MTL": 7.028,
-    "MSL": 7.031,
-    "MLW": 5.917,
-    "MLLW": 5.847,
-    "GT": 2.4,
-    "MN": 2.221,
-    "DHQ": 0.109,
-    "DLQ": 0.07,
-    "HWI": 3.727,
-    "LWI": 10.383
-  },
-  "disclaimers": ""
+  ]
 }

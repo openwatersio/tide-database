@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-port-malmesbury-kuiu-island",
+  "id": "us/ak/port-malmesbury-kuiu-island",
   "name": "Port Malmesbury, Kuiu Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.305,
   "longitude": -134.238,
   "timezone": "America/Sitka",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451093",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451093",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451093.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451093"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sitka",
+    "reference": "us/ak/sitka",
     "height": {
       "type": "fixed",
       "high": 0.37,

@@ -1,10 +1,9 @@
 {
-  "id": "us-rock-islands",
+  "id": "us/rock-islands",
   "name": "Rock Islands",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.966699600219727,
   "longitude": -83.83329772949219,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4309",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4309",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4309.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4309"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-st-marks-river-entrance",
+    "reference": "us/fl/st-marks-river-entrance",
     "height": {
       "type": "ratio",
       "high": 0.93,

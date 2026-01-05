@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-tacoma-commencement-bay-sitcum-waterway",
+  "id": "us/wa/tacoma-commencement-bay-sitcum-waterway",
   "name": "Tacoma, Commencement Bay, Sitcum Waterway",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.266700744628906,
   "longitude": -122.41329956054688,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9446484",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446484",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9446484.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446484"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.141,
+    "HAT": 4.3479996,
+    "STND": 0,
+    "MHHW": 3.778,
+    "MHW": 3.512,
+    "DTL": 1.983,
+    "MTL": 2.283,
+    "MSL": 2.274,
+    "MLW": 1.055,
+    "MLLW": 0.189,
+    "GT": 3.589,
+    "MN": 2.456,
+    "DHQ": 0.266,
+    "DLQ": 0.867,
+    "HWI": 0.473,
+    "LWI": 6.708,
+    "NAVD88": 0.918
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 129.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.141,
-    "HAT": 4.3479996,
-    "STND": 0,
-    "MHHW": 3.778,
-    "MHW": 3.512,
-    "DTL": 1.983,
-    "MTL": 2.283,
-    "MSL": 2.274,
-    "MLW": 1.055,
-    "MLLW": 0.189,
-    "GT": 3.589,
-    "MN": 2.456,
-    "DHQ": 0.266,
-    "DLQ": 0.867,
-    "HWI": 0.473,
-    "LWI": 6.708,
-    "NAVD88": 0.918
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-md-st-michaels-san-domingo-creek",
+  "id": "us/md/st-michaels-san-domingo-creek",
   "name": "St. Michaels, San Domingo Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.775,
   "longitude": -76.2333,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8572313",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572313",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8572313.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8572313"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-baltimore-fort-mchenry",
+    "reference": "us/md/baltimore-fort-mchenry",
     "height": {
       "type": "ratio",
       "high": 1.25,

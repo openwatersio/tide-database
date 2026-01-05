@@ -1,10 +1,9 @@
 {
-  "id": "us-hi-hana",
+  "id": "us/hi/hana",
   "name": "Hana",
-  "continent": "North America",
-  "country": "United States",
   "region": "HI",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 20.7617,
   "longitude": -155.987,
   "timezone": "Pacific/Honolulu",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1615395",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1615395",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1615395.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1615395"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-hi-kahului",
+    "reference": "us/hi/kahului",
     "height": {
       "type": "ratio",
       "high": 1.05,

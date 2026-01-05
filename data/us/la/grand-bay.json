@@ -1,10 +1,9 @@
 {
-  "id": "us-la-grand-bay",
+  "id": "us/la/grand-bay",
   "name": "Grand Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.38655555555556,
   "longitude": -89.3801388888889,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8760889",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760889",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8760889.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760889"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.385,
+    "HAT": 11.19,
+    "STND": 0,
+    "MHHW": 10.993,
+    "MHW": 10.989,
+    "DTL": 10.798,
+    "MTL": 10.8,
+    "MSL": 10.806,
+    "MLW": 10.611,
+    "MLLW": 10.602,
+    "GT": 0.391,
+    "MN": 0.378,
+    "DHQ": 0.004,
+    "DLQ": 0.009
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 334.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.385,
-    "HAT": 11.19,
-    "STND": 0,
-    "MHHW": 10.993,
-    "MHW": 10.989,
-    "DTL": 10.798,
-    "MTL": 10.8,
-    "MSL": 10.806,
-    "MLW": 10.611,
-    "MLLW": 10.602,
-    "GT": 0.391,
-    "MN": 0.378,
-    "DHQ": 0.004,
-    "DLQ": 0.009
-  },
-  "disclaimers": ""
+  ]
 }

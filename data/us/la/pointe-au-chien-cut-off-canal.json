@@ -1,10 +1,9 @@
 {
-  "id": "us-la-pointe-au-chien-cut-off-canal",
+  "id": "us/la/pointe-au-chien-cut-off-canal",
   "name": "Pointe Au Chien, Cut Off Canal",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.41670036315918,
   "longitude": -90.44670104980469,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8762525",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762525",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8762525.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762525"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.88900006,
+    "HAT": 1.347,
+    "STND": 0,
+    "MHHW": 1.201,
+    "MHW": 1.203,
+    "DTL": 1.134,
+    "MTL": 1.135,
+    "MSL": 1.141,
+    "MLW": 1.067,
+    "MLLW": 1.067,
+    "GT": 0.135,
+    "MN": 0.135,
+    "DHQ": 0,
+    "DLQ": 0.001
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.88900006,
-    "HAT": 1.347,
-    "STND": 0,
-    "MHHW": 1.201,
-    "MHW": 1.203,
-    "DTL": 1.134,
-    "MTL": 1.135,
-    "MSL": 1.141,
-    "MLW": 1.067,
-    "MLLW": 1.067,
-    "GT": 0.135,
-    "MN": 0.135,
-    "DHQ": 0,
-    "DLQ": 0.001
-  },
-  "disclaimers": ""
+  ]
 }

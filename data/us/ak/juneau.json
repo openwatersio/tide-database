@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-juneau",
+  "id": "us/ak/juneau",
   "name": "Juneau",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.2988,
   "longitude": -134.4106,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452210",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452210",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452210.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452210"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.5109999,
+    "HAT": 7.2349997,
+    "STND": 0,
+    "MHHW": 5.93,
+    "MHW": 5.635,
+    "DTL": 3.462,
+    "MTL": 3.541,
+    "MSL": 3.576,
+    "MLW": 1.447,
+    "MLLW": 0.959,
+    "GT": 4.97,
+    "MN": 4.188,
+    "DHQ": 0.295,
+    "DLQ": 0.488,
+    "HWI": 9.78,
+    "LWI": 3.51
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 228.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.5109999,
-    "HAT": 7.2349997,
-    "STND": 0,
-    "MHHW": 5.93,
-    "MHW": 5.635,
-    "DTL": 3.462,
-    "MTL": 3.541,
-    "MSL": 3.576,
-    "MLW": 1.447,
-    "MLLW": 0.959,
-    "GT": 4.97,
-    "MN": 4.188,
-    "DHQ": 0.295,
-    "DLQ": 0.488,
-    "HWI": 9.78,
-    "LWI": 3.51
-  },
-  "disclaimers": ""
+  ]
 }

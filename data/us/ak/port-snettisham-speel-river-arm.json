@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-port-snettisham-speel-river-arm",
+  "id": "us/ak/port-snettisham-speel-river-arm",
   "name": "Port Snettisham, Speel River Arm",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.116695404052734,
   "longitude": -133.69000244140625,
   "timezone": "America/Juneau",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452081",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452081",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452081.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452081"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.097,
+    "HAT": 10.364,
+    "STND": 0,
+    "MHHW": 9.103,
+    "MHW": 8.809,
+    "DTL": 6.789,
+    "MTL": 6.84,
+    "MSL": 6.837,
+    "MLW": 4.87,
+    "MLLW": 4.474,
+    "GT": 4.629,
+    "MN": 3.94,
+    "DHQ": 0.294,
+    "DLQ": 0.396,
+    "HWI": 9.77,
+    "LWI": 3.663,
+    "NAVD88": 5.238
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.097,
-    "HAT": 10.364,
-    "STND": 0,
-    "MHHW": 9.103,
-    "MHW": 8.809,
-    "DTL": 6.789,
-    "MTL": 6.84,
-    "MSL": 6.837,
-    "MLW": 4.87,
-    "MLLW": 4.474,
-    "GT": 4.629,
-    "MN": 3.94,
-    "DHQ": 0.294,
-    "DLQ": 0.396,
-    "HWI": 9.77,
-    "LWI": 3.663,
-    "NAVD88": 5.238
-  },
-  "disclaimers": ""
+  ]
 }

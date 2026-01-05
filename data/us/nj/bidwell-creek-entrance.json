@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-bidwell-creek-entrance",
+  "id": "us/nj/bidwell-creek-entrance",
   "name": "Bidwell Creek entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.1283,
   "longitude": -74.8917,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8536581",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536581",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8536581.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536581"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.6029999,
+    "HAT": 3.302,
+    "STND": 0,
+    "MHHW": 2.866,
+    "MHW": 2.735,
+    "DTL": 1.907,
+    "MTL": 1.871,
+    "MSL": 1.91,
+    "MLW": 1.006,
+    "MLLW": 0.948,
+    "GT": 1.917,
+    "MN": 1.729,
+    "DHQ": 0.13,
+    "DLQ": 0.058,
+    "HWI": 1.378,
+    "LWI": 7.915
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.6029999,
-    "HAT": 3.302,
-    "STND": 0,
-    "MHHW": 2.866,
-    "MHW": 2.735,
-    "DTL": 1.907,
-    "MTL": 1.871,
-    "MSL": 1.91,
-    "MLW": 1.006,
-    "MLLW": 0.948,
-    "GT": 1.917,
-    "MN": 1.729,
-    "DHQ": 0.13,
-    "DLQ": 0.058,
-    "HWI": 1.378,
-    "LWI": 7.915
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-de-murderkill-river-entrance",
+  "id": "us/de/murderkill-river-entrance",
   "name": "Murderkill River entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "DE",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.0583,
   "longitude": -75.3967,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8555388",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8555388",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8555388.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8555388"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-de-lewes-breakwater-harbor",
+    "reference": "us/de/lewes-breakwater-harbor",
     "height": {
       "type": "ratio",
       "high": 1.25,

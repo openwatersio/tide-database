@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-armitage-island-thatcher-pass",
+  "id": "us/wa/armitage-island-thatcher-pass",
   "name": "Armitage Island, Thatcher Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.535,
   "longitude": -122.797,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449932",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449932",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449932.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449932"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.015000105,
+    "HAT": 4.106,
+    "STND": 0,
+    "MHHW": 3.624,
+    "MHW": 3.437,
+    "DTL": 2.429,
+    "MTL": 2.689,
+    "MSL": 2.655,
+    "MLW": 1.941,
+    "MLLW": 1.233,
+    "GT": 2.391,
+    "MN": 1.495,
+    "DHQ": 0.187,
+    "DLQ": 0.708,
+    "HWI": 0.287,
+    "LWI": 6.145
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 30.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.015000105,
-    "HAT": 4.106,
-    "STND": 0,
-    "MHHW": 3.624,
-    "MHW": 3.437,
-    "DTL": 2.429,
-    "MTL": 2.689,
-    "MSL": 2.655,
-    "MLW": 1.941,
-    "MLLW": 1.233,
-    "GT": 2.391,
-    "MN": 1.495,
-    "DHQ": 0.187,
-    "DLQ": 0.708,
-    "HWI": 0.287,
-    "LWI": 6.145
-  },
-  "disclaimers": ""
+  ]
 }

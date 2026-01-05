@@ -1,10 +1,9 @@
 {
-  "id": "us-santa-barbara-island",
+  "id": "us/santa-barbara-island",
   "name": "Santa Barbara Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.48333333333299,
   "longitude": -119.03333333333005,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC0463",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0463",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC0463.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0463"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-los-angeles-outer-harbor",
+    "reference": "us/ca/los-angeles-outer-harbor",
     "height": {
       "type": "ratio",
       "high": 0.92,

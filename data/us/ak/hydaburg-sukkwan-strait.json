@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-hydaburg-sukkwan-strait",
+  "id": "us/ak/hydaburg-sukkwan-strait",
   "name": "HYDABURG, SUKKWAN STRAIT",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.201698303222656,
   "longitude": -132.822998046875,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450364",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450364",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450364.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450364"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.25274897,
+    "HAT": 6.0472507,
+    "STND": 0,
+    "MHHW": 4.916,
+    "MHW": 4.641,
+    "DTL": 2.928,
+    "MTL": 3.027,
+    "MSL": 3.016,
+    "MLW": 1.413,
+    "MLLW": 0.941,
+    "GT": 3.974,
+    "MN": 3.228,
+    "DHQ": 0.274,
+    "DLQ": 0.472,
+    "HWI": 9.47,
+    "LWI": 3.2
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.25274897,
-    "HAT": 6.0472507,
-    "STND": 0,
-    "MHHW": 4.916,
-    "MHW": 4.641,
-    "DTL": 2.928,
-    "MTL": 3.027,
-    "MSL": 3.016,
-    "MLW": 1.413,
-    "MLLW": 0.941,
-    "GT": 3.974,
-    "MN": 3.228,
-    "DHQ": 0.274,
-    "DLQ": 0.472,
-    "HWI": 9.47,
-    "LWI": 3.2
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-point-no-point",
+  "id": "us/nj/point-no-point",
   "name": "Point No Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.7317,
   "longitude": -74.1167,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8530743",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8530743",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8530743.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8530743"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ny-new-york-the-battery",
+    "reference": "us/ny/new-york-the-battery",
     "height": {
       "type": "ratio",
       "high": 1.15,

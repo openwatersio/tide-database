@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-bayport",
+  "id": "us/fl/bayport",
   "name": "Bayport",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.5333,
   "longitude": -82.65,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727151",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727151",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727151.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727151"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.14099997,
+    "HAT": 1.746,
+    "STND": 0,
+    "MHHW": 1.461,
+    "MHW": 1.344,
+    "DTL": 0.98,
+    "MTL": 0.99,
+    "MSL": 0.978,
+    "MLW": 0.635,
+    "MLLW": 0.498,
+    "GT": 0.963,
+    "MN": 0.709,
+    "DHQ": 0.117,
+    "DLQ": 0.137,
+    "HWI": 6.473,
+    "LWI": 1.045,
+    "NAVD88": 1.059
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.14099997,
-    "HAT": 1.746,
-    "STND": 0,
-    "MHHW": 1.461,
-    "MHW": 1.344,
-    "DTL": 0.98,
-    "MTL": 0.99,
-    "MSL": 0.978,
-    "MLW": 0.635,
-    "MLLW": 0.498,
-    "GT": 0.963,
-    "MN": 0.709,
-    "DHQ": 0.117,
-    "DLQ": 0.137,
-    "HWI": 6.473,
-    "LWI": 1.045,
-    "NAVD88": 1.059
-  },
-  "disclaimers": ""
+  ]
 }

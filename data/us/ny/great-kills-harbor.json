@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-great-kills-harbor",
+  "id": "us/ny/great-kills-harbor",
   "name": "Great Kills Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.5433,
   "longitude": -74.14,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8519436",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519436",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8519436.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519436"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.842,
+    "HAT": 8.339001,
+    "STND": 0,
+    "MHHW": 7.917,
+    "MHW": 7.815,
+    "DTL": 7.084,
+    "MTL": 7.066,
+    "MSL": 7.083,
+    "MLW": 6.317,
+    "MLLW": 6.251,
+    "GT": 1.666,
+    "MN": 1.497,
+    "DHQ": 0.102,
+    "DLQ": 0.066,
+    "HWI": 0.261,
+    "LWI": 6.704
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.842,
-    "HAT": 8.339001,
-    "STND": 0,
-    "MHHW": 7.917,
-    "MHW": 7.815,
-    "DTL": 7.084,
-    "MTL": 7.066,
-    "MSL": 7.083,
-    "MLW": 6.317,
-    "MLLW": 6.251,
-    "GT": 1.666,
-    "MN": 1.497,
-    "DHQ": 0.102,
-    "DLQ": 0.066,
-    "HWI": 0.261,
-    "LWI": 6.704
-  },
-  "disclaimers": ""
+  ]
 }

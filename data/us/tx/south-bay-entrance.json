@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-south-bay-entrance",
+  "id": "us/tx/south-bay-entrance",
   "name": "South Bay entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.0517,
   "longitude": -97.1817,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8779768",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779768",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8779768.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779768"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-tx-padre-island-south-end",
+    "reference": "us/tx/padre-island-south-end",
     "height": {
       "type": "ratio",
       "high": 0.91,

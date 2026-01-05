@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-mangrove-pt-crystal-bay",
+  "id": "us/fl/mangrove-pt-crystal-bay",
   "name": "Mangrove Pt., Crystal Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.87,
   "longitude": -82.7233,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727333",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727333",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727333.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727333"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.199,
+    "HAT": 1.916,
+    "STND": 0,
+    "MHHW": 1.644,
+    "MHW": 1.537,
+    "DTL": 1.088,
+    "MTL": 1.108,
+    "MSL": 1.102,
+    "MLW": 0.678,
+    "MLLW": 0.532,
+    "GT": 1.112,
+    "MN": 0.859,
+    "DHQ": 0.107,
+    "DLQ": 0.146,
+    "HWI": 6.783,
+    "LWI": 1.189
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.199,
-    "HAT": 1.916,
-    "STND": 0,
-    "MHHW": 1.644,
-    "MHW": 1.537,
-    "DTL": 1.088,
-    "MTL": 1.108,
-    "MSL": 1.102,
-    "MLW": 0.678,
-    "MLLW": 0.532,
-    "GT": 1.112,
-    "MN": 0.859,
-    "DHQ": 0.107,
-    "DLQ": 0.146,
-    "HWI": 6.783,
-    "LWI": 1.189
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-md-woolford-church-creek",
+  "id": "us/md/woolford-church-creek",
   "name": "Woolford, Church Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.5067,
   "longitude": -76.1733,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8571807",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571807",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8571807.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571807"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-baltimore-fort-mchenry",
+    "reference": "us/md/baltimore-fort-mchenry",
     "height": {
       "type": "ratio",
       "high": 1.25,

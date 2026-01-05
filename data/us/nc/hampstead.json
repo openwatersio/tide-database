@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-hampstead",
+  "id": "us/nc/hampstead",
   "name": "Hampstead",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.33940124511719,
   "longitude": -77.70600128173828,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8657813",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8657813",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8657813.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8657813"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.7070003,
+    "HAT": 9.609,
+    "STND": 0,
+    "MHHW": 9.234,
+    "MHW": 9.135,
+    "DTL": 8.653,
+    "MTL": 8.629,
+    "MSL": 8.642,
+    "MLW": 8.122,
+    "MLLW": 8.073,
+    "GT": 1.162,
+    "MN": 1.013,
+    "DHQ": 0.099,
+    "DLQ": 0.05,
+    "HWI": 0.933,
+    "LWI": 7.335,
+    "NAVD88": 8.798
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 356.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.7070003,
-    "HAT": 9.609,
-    "STND": 0,
-    "MHHW": 9.234,
-    "MHW": 9.135,
-    "DTL": 8.653,
-    "MTL": 8.629,
-    "MSL": 8.642,
-    "MLW": 8.122,
-    "MLLW": 8.073,
-    "GT": 1.162,
-    "MN": 1.013,
-    "DHQ": 0.099,
-    "DLQ": 0.05,
-    "HWI": 0.933,
-    "LWI": 7.335,
-    "NAVD88": 8.798
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-telegraph-bay-puget-sound",
+  "id": "us/wa/telegraph-bay-puget-sound",
   "name": "TELEGRAPH BAY, PUGET SOUND",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.44329833984375,
   "longitude": -122.80500030517578,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449988",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449988",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449988.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449988"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.96800005,
+    "HAT": 2.31,
+    "STND": 0,
+    "MHHW": 1.885,
+    "MHW": 1.737,
+    "DTL": 0.937,
+    "MTL": 1.148,
+    "MSL": 1.123,
+    "MLW": 0.559,
+    "MLLW": -0.009,
+    "GT": 1.895,
+    "MN": 1.178,
+    "DHQ": 0.148,
+    "DLQ": 0.569,
+    "HWI": 12.32,
+    "LWI": 5.675
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.96800005,
-    "HAT": 2.31,
-    "STND": 0,
-    "MHHW": 1.885,
-    "MHW": 1.737,
-    "DTL": 0.937,
-    "MTL": 1.148,
-    "MSL": 1.123,
-    "MLW": 0.559,
-    "MLLW": -0.009,
-    "GT": 1.895,
-    "MN": 1.178,
-    "DHQ": 0.148,
-    "DLQ": 0.569,
-    "HWI": 12.32,
-    "LWI": 5.675
-  },
-  "disclaimers": ""
+  ]
 }

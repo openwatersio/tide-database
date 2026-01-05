@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-daymark-156-head-of-mud-river",
+  "id": "us/ga/daymark-156-head-of-mud-river",
   "name": "Daymark #156, Head of Mud River",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.4867,
   "longitude": -81.32,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8674975",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8674975",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8674975.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8674975"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.365,
+    "HAT": 3.332,
+    "STND": 0,
+    "MHHW": 2.642,
+    "MHW": 2.525,
+    "DTL": 1.407,
+    "MTL": 1.382,
+    "MSL": 1.452,
+    "MLW": 0.239,
+    "MLLW": 0.171,
+    "GT": 2.472,
+    "MN": 2.286,
+    "DHQ": 0.118,
+    "DLQ": 0.068,
+    "HWI": 1.292,
+    "LWI": 7.448
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.365,
-    "HAT": 3.332,
-    "STND": 0,
-    "MHHW": 2.642,
-    "MHW": 2.525,
-    "DTL": 1.407,
-    "MTL": 1.382,
-    "MSL": 1.452,
-    "MLW": 0.239,
-    "MLLW": 0.171,
-    "GT": 2.472,
-    "MN": 2.286,
-    "DHQ": 0.118,
-    "DLQ": 0.068,
-    "HWI": 1.292,
-    "LWI": 7.448
-  },
-  "disclaimers": ""
+  ]
 }

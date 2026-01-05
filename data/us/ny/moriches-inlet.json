@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-moriches-inlet",
+  "id": "us/ny/moriches-inlet",
   "name": "Moriches Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.76441666666667,
   "longitude": -72.75597222222223,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8513398",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8513398",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8513398.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8513398"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.179,
+    "HAT": 6.686,
+    "STND": 0,
+    "MHHW": 6.419,
+    "MHW": 6.351,
+    "DTL": 5.932,
+    "MTL": 5.921,
+    "MSL": 5.936,
+    "MLW": 5.491,
+    "MLLW": 5.445,
+    "GT": 0.973,
+    "MN": 0.861,
+    "DHQ": 0.067,
+    "DLQ": 0.045,
+    "HWI": 0.108,
+    "LWI": 5.501
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.179,
-    "HAT": 6.686,
-    "STND": 0,
-    "MHHW": 6.419,
-    "MHW": 6.351,
-    "DTL": 5.932,
-    "MTL": 5.921,
-    "MSL": 5.936,
-    "MLW": 5.491,
-    "MLLW": 5.445,
-    "GT": 0.973,
-    "MN": 0.861,
-    "DHQ": 0.067,
-    "DLQ": 0.045,
-    "HWI": 0.108,
-    "LWI": 5.501
-  },
-  "disclaimers": ""
+  ]
 }

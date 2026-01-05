@@ -1,10 +1,9 @@
 {
-  "id": "us-papeete-harbor-fare-ute-point",
+  "id": "us/papeete-harbor-fare-ute-point",
   "name": "Papeete Harbor, Fare Ute Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -17.535,
   "longitude": -149.572,
   "timezone": "Pacific/Tahiti",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1732417",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1732417",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1732417.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1732417"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 12.6449995,
+    "HAT": 13.078,
+    "STND": 0,
+    "MHHW": 12.948,
+    "MHW": 12.933,
+    "DTL": 12.839,
+    "MTL": 12.836,
+    "MSL": 12.837,
+    "MLW": 12.74,
+    "MLLW": 12.729,
+    "GT": 0.219,
+    "MN": 0.193,
+    "DHQ": 0.016,
+    "DLQ": 0.011,
+    "HWI": 10.304,
+    "LWI": 4.711
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 119.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 12.6449995,
-    "HAT": 13.078,
-    "STND": 0,
-    "MHHW": 12.948,
-    "MHW": 12.933,
-    "DTL": 12.839,
-    "MTL": 12.836,
-    "MSL": 12.837,
-    "MLW": 12.74,
-    "MLLW": 12.729,
-    "GT": 0.219,
-    "MN": 0.193,
-    "DHQ": 0.016,
-    "DLQ": 0.011,
-    "HWI": 10.304,
-    "LWI": 4.711
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-miner-island",
+  "id": "us/ak/miner-island",
   "name": "Miner Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.01,
   "longitude": -136.342,
   "timezone": "America/Juneau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452633",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452633",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452633.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452633"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-elfin-cove-port-althorp",
+    "reference": "us/ak/elfin-cove-port-althorp",
     "height": {
       "type": "ratio",
       "high": 0.94,

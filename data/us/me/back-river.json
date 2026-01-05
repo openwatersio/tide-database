@@ -1,10 +1,9 @@
 {
-  "id": "us-me-back-river",
+  "id": "us/me/back-river",
   "name": "Back River",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.9583,
   "longitude": -69.6833,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8416961",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8416961",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8416961.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8416961"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-me-portland",
+    "reference": "us/me/portland",
     "height": {
       "type": "ratio",
       "high": 1,

@@ -1,10 +1,9 @@
 {
-  "id": "us-la-the-rigolets-u-s-highway-90",
+  "id": "us/la/the-rigolets-u-s-highway-90",
   "name": "The Rigolets, U.S. Highway 90",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.1667,
   "longitude": -89.7367,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8761402",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761402",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8761402.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761402"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.658,
+    "HAT": 1.3280001,
+    "STND": 0,
+    "MHHW": 1.132,
+    "MHW": 1.126,
+    "DTL": 1.022,
+    "MTL": 1.025,
+    "MSL": 1.031,
+    "MLW": 0.924,
+    "MLLW": 0.912,
+    "GT": 0.22,
+    "MN": 0.203,
+    "DHQ": 0.006,
+    "DLQ": 0.012
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.658,
-    "HAT": 1.3280001,
-    "STND": 0,
-    "MHHW": 1.132,
-    "MHW": 1.126,
-    "DTL": 1.022,
-    "MTL": 1.025,
-    "MSL": 1.031,
-    "MLW": 0.924,
-    "MLLW": 0.912,
-    "GT": 0.22,
-    "MN": 0.203,
-    "DHQ": 0.006,
-    "DLQ": 0.012
-  },
-  "disclaimers": ""
+  ]
 }

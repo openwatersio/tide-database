@@ -1,10 +1,9 @@
 {
-  "id": "us-cape-fear",
+  "id": "us/cape-fear",
   "name": "Cape Fear",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.85,
   "longitude": -77.96666666666701,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC2847",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC2847",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC2847.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC2847"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nc-cape-hatteras-fishing-pier",
+    "reference": "us/nc/cape-hatteras-fishing-pier",
     "height": {
       "type": "ratio",
       "high": 1.47,

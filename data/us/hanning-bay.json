@@ -1,10 +1,9 @@
 {
-  "id": "us-hanning-bay",
+  "id": "us/hanning-bay",
   "name": "Hanning Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.95,
   "longitude": -147.68333333332993,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC1893",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC1893",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC1893.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC1893"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-cordova",
+    "reference": "us/ak/cordova",
     "height": {
       "type": "fixed",
       "high": -0.3,

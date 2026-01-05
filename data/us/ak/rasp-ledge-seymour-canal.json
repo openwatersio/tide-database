@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-rasp-ledge-seymour-canal",
+  "id": "us/ak/rasp-ledge-seymour-canal",
   "name": "Rasp Ledge, Seymour Canal",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.6783,
   "longitude": -134.038,
   "timezone": "America/Juneau",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452128",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452128",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452128.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452128"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-juneau",
+    "reference": "us/ak/juneau",
     "height": {
       "type": "fixed",
       "high": -0.21,

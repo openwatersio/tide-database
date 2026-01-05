@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-corning-landing-whale-branch",
+  "id": "us/sc/corning-landing-whale-branch",
   "name": "Corning Landing, Whale Branch",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.5025,
   "longitude": -80.7841,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8667633",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667633",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8667633.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667633"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.20800006,
+    "HAT": 3.7450001,
+    "STND": 0,
+    "MHHW": 3.213,
+    "MHW": 3.1,
+    "DTL": 1.902,
+    "MTL": 1.877,
+    "MSL": 2.055,
+    "MLW": 0.654,
+    "MLLW": 0.592,
+    "GT": 2.621,
+    "MN": 2.446,
+    "DHQ": 0.112,
+    "DLQ": 0.062,
+    "HWI": 2.055,
+    "LWI": 8.17
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.20800006,
-    "HAT": 3.7450001,
-    "STND": 0,
-    "MHHW": 3.213,
-    "MHW": 3.1,
-    "DTL": 1.902,
-    "MTL": 1.877,
-    "MSL": 2.055,
-    "MLW": 0.654,
-    "MLLW": 0.592,
-    "GT": 2.621,
-    "MN": 2.446,
-    "DHQ": 0.112,
-    "DLQ": 0.062,
-    "HWI": 2.055,
-    "LWI": 8.17
-  },
-  "disclaimers": ""
+  ]
 }

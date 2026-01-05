@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-duxbury-duxbury-harbor",
+  "id": "us/ma/duxbury-duxbury-harbor",
   "name": "Duxbury, Duxbury Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.0383,
   "longitude": -70.67,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8446166",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8446166",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8446166.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8446166"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.31400013,
+    "HAT": 4.776,
+    "STND": 0,
+    "MHHW": 4.132,
+    "MHW": 3.998,
+    "DTL": 2.505,
+    "MTL": 2.491,
+    "MSL": 2.552,
+    "MLW": 0.983,
+    "MLLW": 0.877,
+    "GT": 3.255,
+    "MN": 3.015,
+    "DHQ": 0.134,
+    "DLQ": 0.106,
+    "HWI": 3.841,
+    "LWI": 10.478,
+    "NAVD88": 2.684
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.31400013,
-    "HAT": 4.776,
-    "STND": 0,
-    "MHHW": 4.132,
-    "MHW": 3.998,
-    "DTL": 2.505,
-    "MTL": 2.491,
-    "MSL": 2.552,
-    "MLW": 0.983,
-    "MLLW": 0.877,
-    "GT": 3.255,
-    "MN": 3.015,
-    "DHQ": 0.134,
-    "DLQ": 0.106,
-    "HWI": 3.841,
-    "LWI": 10.478,
-    "NAVD88": 2.684
-  },
-  "disclaimers": ""
+  ]
 }

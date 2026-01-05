@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-gandy-bridge-old-tampa-bay",
+  "id": "us/fl/gandy-bridge-old-tampa-bay",
   "name": "Gandy Bridge, Old Tampa Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.8933,
   "longitude": -82.5383,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726641",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726641",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726641.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726641"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-st-petersburg",
+    "reference": "us/fl/st-petersburg",
     "height": {
       "type": "ratio",
       "high": 1.12,

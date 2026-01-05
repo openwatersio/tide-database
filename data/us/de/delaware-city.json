@@ -1,10 +1,9 @@
 {
-  "id": "us-de-delaware-city",
+  "id": "us/de/delaware-city",
   "name": "Delaware City",
-  "continent": "North America",
-  "country": "United States",
   "region": "DE",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.58219444444445,
   "longitude": -75.58897222222222,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8551762",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8551762",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8551762.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8551762"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.54,
+    "HAT": 8.999001,
+    "STND": 0,
+    "MHHW": 8.656,
+    "MHW": 8.54,
+    "DTL": 7.742,
+    "MTL": 7.711,
+    "MSL": 7.728,
+    "MLW": 6.881,
+    "MLLW": 6.827,
+    "GT": 1.829,
+    "MN": 1.659,
+    "DHQ": 0.116,
+    "DLQ": 0.054,
+    "HWI": 3.866,
+    "LWI": 10.863
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 250,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.54,
-    "HAT": 8.999001,
-    "STND": 0,
-    "MHHW": 8.656,
-    "MHW": 8.54,
-    "DTL": 7.742,
-    "MTL": 7.711,
-    "MSL": 7.728,
-    "MLW": 6.881,
-    "MLLW": 6.827,
-    "GT": 1.829,
-    "MN": 1.659,
-    "DHQ": 0.116,
-    "DLQ": 0.054,
-    "HWI": 3.866,
-    "LWI": 10.863
-  },
-  "disclaimers": ""
+  ]
 }

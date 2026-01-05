@@ -1,10 +1,9 @@
 {
-  "id": "us-md-colton-point-md",
+  "id": "us/md/colton-point-md",
   "name": "Colton Point, Md.",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.2233,
   "longitude": -76.7483,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8578465",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578465",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8578465.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578465"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-dc-washington-washington-channel-d-c",
+    "reference": "us/dc/washington-washington-channel-d-c",
     "height": {
       "type": "ratio",
       "high": 0.65,

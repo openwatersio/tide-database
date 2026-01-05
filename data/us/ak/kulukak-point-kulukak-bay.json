@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kulukak-point-kulukak-bay",
+  "id": "us/ak/kulukak-point-kulukak-bay",
   "name": "Kulukak Point, Kulukak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.84000015258789,
   "longitude": -159.64700317382812,
   "timezone": "America/Anchorage",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465265",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465265",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465265.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465265"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.179,
+    "HAT": 11.768,
+    "STND": 0,
+    "MHHW": 10.729,
+    "MHW": 10.243,
+    "DTL": 9.004,
+    "MTL": 9.129,
+    "MSL": 9.127,
+    "MLW": 8.015,
+    "MLLW": 7.279,
+    "GT": 3.45,
+    "MN": 2.227,
+    "DHQ": 0.486,
+    "DLQ": 0.736
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.179,
-    "HAT": 11.768,
-    "STND": 0,
-    "MHHW": 10.729,
-    "MHW": 10.243,
-    "DTL": 9.004,
-    "MTL": 9.129,
-    "MSL": 9.127,
-    "MLW": 8.015,
-    "MLLW": 7.279,
-    "GT": 3.45,
-    "MN": 2.227,
-    "DHQ": 0.486,
-    "DLQ": 0.736
-  },
-  "disclaimers": ""
+  ]
 }

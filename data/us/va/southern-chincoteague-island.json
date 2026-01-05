@@ -1,10 +1,9 @@
 {
-  "id": "us-va-southern-chincoteague-island",
+  "id": "us/va/southern-chincoteague-island",
   "name": "Southern Chincoteague Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.902400970458984,
   "longitude": -75.40789794921875,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8630315",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630315",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8630315.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630315"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.969,
+    "HAT": 0.552,
+    "STND": 0,
+    "MHHW": 0.281,
+    "MHW": 0.212,
+    "DTL": -0.209,
+    "MTL": -0.222,
+    "MSL": -0.2,
+    "MLW": -0.657,
+    "MLLW": -0.699,
+    "GT": 0.981,
+    "MN": 0.87,
+    "DHQ": 0.068,
+    "DLQ": 0.042,
+    "HWI": 0.477,
+    "LWI": 6.631
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 186.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.969,
-    "HAT": 0.552,
-    "STND": 0,
-    "MHHW": 0.281,
-    "MHW": 0.212,
-    "DTL": -0.209,
-    "MTL": -0.222,
-    "MSL": -0.2,
-    "MLW": -0.657,
-    "MLLW": -0.699,
-    "GT": 0.981,
-    "MN": 0.87,
-    "DHQ": 0.068,
-    "DLQ": 0.042,
-    "HWI": 0.477,
-    "LWI": 6.631
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-hoonah-port-fredrick",
+  "id": "us/ak/hoonah-port-fredrick",
   "name": "Hoonah, Port Fredrick",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.10755555555556,
   "longitude": -135.4441944444444,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452438",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452438",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452438.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452438"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 11.065,
+    "HAT": 18.183,
+    "STND": 0,
+    "MHHW": 17.052,
+    "MHW": 16.77,
+    "DTL": 14.764,
+    "MTL": 14.862,
+    "MSL": 14.891,
+    "MLW": 12.954,
+    "MLLW": 12.477,
+    "GT": 4.575,
+    "MN": 3.815,
+    "DHQ": 0.282,
+    "DLQ": 0.477,
+    "HWI": 9.75,
+    "LWI": 3.51
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 11.065,
-    "HAT": 18.183,
-    "STND": 0,
-    "MHHW": 17.052,
-    "MHW": 16.77,
-    "DTL": 14.764,
-    "MTL": 14.862,
-    "MSL": 14.891,
-    "MLW": 12.954,
-    "MLLW": 12.477,
-    "GT": 4.575,
-    "MN": 3.815,
-    "DHQ": 0.282,
-    "DLQ": 0.477,
-    "HWI": 9.75,
-    "LWI": 3.51
-  },
-  "disclaimers": ""
+  ]
 }

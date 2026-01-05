@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-st-marys",
+  "id": "us/ga/st-marys",
   "name": "St. Marys",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.72,
   "longitude": -81.5483,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8679964",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8679964",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8679964.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8679964"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.023000002,
+    "HAT": 2.894,
+    "STND": 0,
+    "MHHW": 2.427,
+    "MHW": 2.325,
+    "DTL": 1.453,
+    "MTL": 1.432,
+    "MSL": 1.484,
+    "MLW": 0.539,
+    "MLLW": 0.479,
+    "GT": 1.948,
+    "MN": 1.786,
+    "DHQ": 0.102,
+    "DLQ": 0.059,
+    "HWI": 2.001,
+    "LWI": 8.02
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -245,24 +263,5 @@
       "phase_local": 349,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.023000002,
-    "HAT": 2.894,
-    "STND": 0,
-    "MHHW": 2.427,
-    "MHW": 2.325,
-    "DTL": 1.453,
-    "MTL": 1.432,
-    "MSL": 1.484,
-    "MLW": 0.539,
-    "MLLW": 0.479,
-    "GT": 1.948,
-    "MN": 1.786,
-    "DHQ": 0.102,
-    "DLQ": 0.059,
-    "HWI": 2.001,
-    "LWI": 8.02
-  },
-  "disclaimers": ""
+  ]
 }

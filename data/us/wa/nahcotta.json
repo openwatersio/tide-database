@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-nahcotta",
+  "id": "us/wa/nahcotta",
   "name": "Nahcotta",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.5017,
   "longitude": -124.023,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440747",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440747",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440747.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440747"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-toke-point",
+    "reference": "us/wa/toke-point",
     "height": {
       "type": "ratio",
       "high": 1.13,

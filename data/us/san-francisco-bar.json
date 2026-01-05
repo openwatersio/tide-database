@@ -1,10 +1,9 @@
 {
-  "id": "us-san-francisco-bar",
+  "id": "us/san-francisco-bar",
   "name": "San Francisco Bar",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.76666666666701,
   "longitude": -122.63333333333004,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC0509",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0509",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC0509.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0509"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-san-francisco-golden-gate",
+    "reference": "us/ca/san-francisco-golden-gate",
     "height": {
       "type": "fixed",
       "high": -0.06,

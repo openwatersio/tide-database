@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-skull-creek-south-entrance-hilton-head-island",
+  "id": "us/sc/skull-creek-south-entrance-hilton-head-island",
   "name": "Skull Creek, south entrance, Hilton Head Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.2233,
   "longitude": -80.7717,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8669133",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8669133",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8669133.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8669133"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ga-fort-pulaski-savannah-river-entrance",
+    "reference": "us/ga/fort-pulaski-savannah-river-entrance",
     "height": {
       "type": "ratio",
       "high": 1.05,

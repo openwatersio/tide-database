@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-ceiba-roosevelt-road",
+  "id": "us/pr/ceiba-roosevelt-road",
   "name": "Ceiba, Roosevelt Road",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.228099822998047,
   "longitude": -65.61969757080078,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9753182",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9753182",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9753182.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9753182"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.415,
+    "HAT": 8.005,
+    "STND": 0,
+    "MHHW": 7.864,
+    "MHW": 7.805,
+    "DTL": 7.705,
+    "MTL": 7.697,
+    "MSL": 7.696,
+    "MLW": 7.588,
+    "MLLW": 7.547,
+    "GT": 0.317,
+    "MN": 0.217,
+    "DHQ": 0.059,
+    "DLQ": 0.042,
+    "PRVD02": 7.677
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.415,
-    "HAT": 8.005,
-    "STND": 0,
-    "MHHW": 7.864,
-    "MHW": 7.805,
-    "DTL": 7.705,
-    "MTL": 7.697,
-    "MSL": 7.696,
-    "MLW": 7.588,
-    "MLLW": 7.547,
-    "GT": 0.317,
-    "MN": 0.217,
-    "DHQ": 0.059,
-    "DLQ": 0.042,
-    "PRVD02": 7.677
-  },
-  "disclaimers": ""
+  ]
 }

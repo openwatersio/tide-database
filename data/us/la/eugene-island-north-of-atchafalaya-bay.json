@@ -1,10 +1,9 @@
 {
-  "id": "us-la-eugene-island-north-of-atchafalaya-bay",
+  "id": "us/la/eugene-island-north-of-atchafalaya-bay",
   "name": "Eugene Island, North of, Atchafalaya Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.36750030517578,
   "longitude": -91.38390350341797,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8764314",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764314",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8764314.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764314"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.3370001,
+    "HAT": 4.525,
+    "STND": 0,
+    "MHHW": 4.312,
+    "MHW": 4.27,
+    "DTL": 4.028,
+    "MTL": 4.068,
+    "MSL": 4.057,
+    "MLW": 3.866,
+    "MLLW": 3.745,
+    "GT": 0.566,
+    "MN": 0.404,
+    "DHQ": 0.042,
+    "DLQ": 0.12
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 229.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.3370001,
-    "HAT": 4.525,
-    "STND": 0,
-    "MHHW": 4.312,
-    "MHW": 4.27,
-    "DTL": 4.028,
-    "MTL": 4.068,
-    "MSL": 4.057,
-    "MLW": 3.866,
-    "MLLW": 3.745,
-    "GT": 0.566,
-    "MN": 0.404,
-    "DHQ": 0.042,
-    "DLQ": 0.12
-  },
-  "disclaimers": ""
+  ]
 }

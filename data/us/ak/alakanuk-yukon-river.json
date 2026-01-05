@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-alakanuk-yukon-river",
+  "id": "us/ak/alakanuk-yukon-river",
   "name": "Alakanuk, Yukon River",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 62.687198638916016,
   "longitude": -164.66690063476562,
   "timezone": "America/Nome",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9467645",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9467645",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9467645.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9467645"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.96,
+    "HAT": 9.1380005,
+    "STND": 0,
+    "MHHW": 8.886,
+    "MHW": 8.687,
+    "DTL": 8.526,
+    "MTL": 8.451,
+    "MSL": 8.444,
+    "MLW": 8.213,
+    "MLLW": 8.166,
+    "GT": 0.72,
+    "MN": 0.474,
+    "DHQ": 0.199,
+    "DLQ": 0.048,
+    "NAVD88": 6.372
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.96,
-    "HAT": 9.1380005,
-    "STND": 0,
-    "MHHW": 8.886,
-    "MHW": 8.687,
-    "DTL": 8.526,
-    "MTL": 8.451,
-    "MSL": 8.444,
-    "MLW": 8.213,
-    "MLLW": 8.166,
-    "GT": 0.72,
-    "MN": 0.474,
-    "DHQ": 0.199,
-    "DLQ": 0.048,
-    "NAVD88": 6.372
-  },
-  "disclaimers": ""
+  ]
 }

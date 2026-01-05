@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-blue-angels-park",
+  "id": "us/fl/blue-angels-park",
   "name": "Blue Angels Park",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.38694444444445,
   "longitude": -87.42880555555556,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729941",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729941",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729941.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729941"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.3810005,
+    "HAT": 8.793,
+    "STND": 0,
+    "MHHW": 8.705,
+    "MHW": 8.703,
+    "DTL": 8.579,
+    "MTL": 8.578,
+    "MSL": 8.576,
+    "MLW": 8.453,
+    "MLLW": 8.453,
+    "GT": 0.252,
+    "MN": 0.25,
+    "DHQ": 0.002,
+    "DLQ": 0
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.3810005,
-    "HAT": 8.793,
-    "STND": 0,
-    "MHHW": 8.705,
-    "MHW": 8.703,
-    "DTL": 8.579,
-    "MTL": 8.578,
-    "MSL": 8.576,
-    "MLW": 8.453,
-    "MLLW": 8.453,
-    "GT": 0.252,
-    "MN": 0.25,
-    "DHQ": 0.002,
-    "DLQ": 0
-  },
-  "disclaimers": ""
+  ]
 }

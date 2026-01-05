@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-big-salt-lake",
+  "id": "us/ak/big-salt-lake",
   "name": "Big Salt Lake",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.6,
   "longitude": -132.95,
   "timezone": "America/Sitka",
@@ -12,15 +11,14 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450623",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450623",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450623.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450623"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
-  "harmonic_constituents": [],
+  "disclaimers": "",
   "datums": {
     "STND": 0,
     "MHHW": 1.408,
@@ -28,5 +26,6 @@
     "DHQ": 0.22,
     "HWI": 11.17
   },
-  "disclaimers": ""
+  "type": "reference",
+  "harmonic_constituents": []
 }

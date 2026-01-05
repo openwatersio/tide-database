@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-vallenar-point",
+  "id": "us/ak/vallenar-point",
   "name": "Vallenar Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.4267,
   "longitude": -131.847,
   "timezone": "America/Sitka",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450511",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450511",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450511.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450511"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-ketchikan",
+    "reference": "us/ak/ketchikan",
     "height": {
       "type": "ratio",
       "high": 0.99,

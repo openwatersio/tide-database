@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-hagens-cove",
+  "id": "us/fl/hagens-cove",
   "name": "Hagens Cove",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.79669952392578,
   "longitude": -83.58380126953125,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727792",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727792",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727792.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727792"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.121,
+    "HAT": 9.077,
+    "STND": 0,
+    "MHHW": 8.71,
+    "MHW": 8.638,
+    "DTL": 8.189,
+    "MTL": 8.246,
+    "MSL": 8.228,
+    "MLW": 7.855,
+    "MLLW": 7.667,
+    "GT": 1.043,
+    "MN": 0.784,
+    "DHQ": 0.072,
+    "DLQ": 0.188,
+    "HWI": 6.583,
+    "LWI": 0.847,
+    "NAVD88": 8.252
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.121,
-    "HAT": 9.077,
-    "STND": 0,
-    "MHHW": 8.71,
-    "MHW": 8.638,
-    "DTL": 8.189,
-    "MTL": 8.246,
-    "MSL": 8.228,
-    "MLW": 7.855,
-    "MLLW": 7.667,
-    "GT": 1.043,
-    "MN": 0.784,
-    "DHQ": 0.072,
-    "DLQ": 0.188,
-    "HWI": 6.583,
-    "LWI": 0.847,
-    "NAVD88": 8.252
-  },
-  "disclaimers": ""
+  ]
 }

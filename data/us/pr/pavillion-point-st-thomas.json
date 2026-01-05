@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-pavillion-point-st-thomas",
+  "id": "us/pr/pavillion-point-st-thomas",
   "name": "Pavillion Point, St. Thomas",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.33989906311035,
   "longitude": -64.85240173339844,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751561",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751561",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751561.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751561"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 9.193,
+    "HAT": 9.842,
+    "STND": 0,
+    "MHHW": 9.665,
+    "MHW": 9.599,
+    "DTL": 9.494,
+    "MTL": 9.482,
+    "MSL": 9.483,
+    "MLW": 9.364,
+    "MLLW": 9.322,
+    "GT": 0.342,
+    "MN": 0.234,
+    "DHQ": 0.066,
+    "DLQ": 0.042,
+    "VIVD09": 9.487
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.193,
-    "HAT": 9.842,
-    "STND": 0,
-    "MHHW": 9.665,
-    "MHW": 9.599,
-    "DTL": 9.494,
-    "MTL": 9.482,
-    "MSL": 9.483,
-    "MLW": 9.364,
-    "MLLW": 9.322,
-    "GT": 0.342,
-    "MN": 0.234,
-    "DHQ": 0.066,
-    "DLQ": 0.042,
-    "VIVD09": 9.487
-  },
-  "disclaimers": ""
+  ]
 }

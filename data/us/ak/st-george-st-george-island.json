@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-st-george-st-george-island",
+  "id": "us/ak/st-george-st-george-island",
   "name": "St. George, St. George Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.60327777777778,
   "longitude": -169.5495555555555,
   "timezone": "America/Nome",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9463888",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9463888",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9463888.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9463888"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.545,
+    "HAT": 12.441,
+    "STND": 0,
+    "MHHW": 12.151,
+    "MHW": 12.08,
+    "DTL": 11.624,
+    "MTL": 11.72,
+    "MSL": 11.709,
+    "MLW": 11.361,
+    "MLLW": 11.098,
+    "GT": 1.053,
+    "MN": 0.718,
+    "DHQ": 0.071,
+    "DLQ": 0.264,
+    "NAVD88": 11.009
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.545,
-    "HAT": 12.441,
-    "STND": 0,
-    "MHHW": 12.151,
-    "MHW": 12.08,
-    "DTL": 11.624,
-    "MTL": 11.72,
-    "MSL": 11.709,
-    "MLW": 11.361,
-    "MLLW": 11.098,
-    "GT": 1.053,
-    "MN": 0.718,
-    "DHQ": 0.071,
-    "DLQ": 0.264,
-    "NAVD88": 11.009
-  },
-  "disclaimers": ""
+  ]
 }

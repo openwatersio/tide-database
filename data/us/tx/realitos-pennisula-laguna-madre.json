@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-realitos-pennisula-laguna-madre",
+  "id": "us/tx/realitos-pennisula-laguna-madre",
   "name": "Realitos Pennisula, Laguna Madre",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.262399673461914,
   "longitude": -97.2853012084961,
   "timezone": "America/Chicago",
@@ -12,14 +11,30 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8779280",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779280",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8779280.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779280"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 4.6,
+    "HAT": 5.099,
+    "STND": 0,
+    "MHHW": 4.933,
+    "MHW": 4.93,
+    "MTL": 4.849,
+    "MSL": 4.854,
+    "MLW": 4.767,
+    "MLLW": 4.761,
+    "GT": 0.172,
+    "MN": 0.163,
+    "DHQ": 0.003,
+    "DLQ": 0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,21 +332,5 @@
       "phase_local": 296.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.6,
-    "HAT": 5.099,
-    "STND": 0,
-    "MHHW": 4.933,
-    "MHW": 4.93,
-    "MTL": 4.849,
-    "MSL": 4.854,
-    "MLW": 4.767,
-    "MLLW": 4.761,
-    "GT": 0.172,
-    "MN": 0.163,
-    "DHQ": 0.003,
-    "DLQ": 0.006
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

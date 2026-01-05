@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cat-point-apalachicola-bay",
+  "id": "us/fl/cat-point-apalachicola-bay",
   "name": "Cat Point, Apalachicola Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.72330093383789,
   "longitude": -84.88670349121094,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728619",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728619",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728619.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728619"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.731,
+    "HAT": 0.48000002,
+    "STND": 0,
+    "MHHW": 0.264,
+    "MHW": 0.22,
+    "DTL": -0.042,
+    "MTL": 0.01,
+    "MSL": -0.001,
+    "MLW": -0.199,
+    "MLLW": -0.349,
+    "GT": 0.614,
+    "MN": 0.42,
+    "DHQ": 0.044,
+    "DLQ": 0.15,
+    "NAVD88": -0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 191.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.731,
-    "HAT": 0.48000002,
-    "STND": 0,
-    "MHHW": 0.264,
-    "MHW": 0.22,
-    "DTL": -0.042,
-    "MTL": 0.01,
-    "MSL": -0.001,
-    "MLW": -0.199,
-    "MLLW": -0.349,
-    "GT": 0.614,
-    "MN": 0.42,
-    "DHQ": 0.044,
-    "DLQ": 0.15,
-    "NAVD88": -0.006
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-va-newport-news",
+  "id": "us/va/newport-news",
   "name": "Newport News",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.9733,
   "longitude": -76.4333,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638379",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638379",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638379.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638379"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-hampton-roads-sewells-point",
+    "reference": "us/va/hampton-roads-sewells-point",
     "height": {
       "type": "ratio",
       "high": 1.08,

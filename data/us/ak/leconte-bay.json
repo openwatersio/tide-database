@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-leconte-bay",
+  "id": "us/ak/leconte-bay",
   "name": "Leconte Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.7883,
   "longitude": -132.502,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451422",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451422",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451422.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451422"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.6257489,
+    "HAT": 4.759251,
+    "STND": 0,
+    "MHHW": 3.606,
+    "MHW": 3.312,
+    "DTL": 1.166,
+    "MTL": 1.259,
+    "MSL": 1.296,
+    "MLW": -0.794,
+    "MLLW": -1.274,
+    "GT": 4.88,
+    "MN": 4.106,
+    "DHQ": 0.293,
+    "DLQ": 0.48,
+    "HWI": 9.81,
+    "LWI": 3.59
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.6257489,
-    "HAT": 4.759251,
-    "STND": 0,
-    "MHHW": 3.606,
-    "MHW": 3.312,
-    "DTL": 1.166,
-    "MTL": 1.259,
-    "MSL": 1.296,
-    "MLW": -0.794,
-    "MLLW": -1.274,
-    "GT": 4.88,
-    "MN": 4.106,
-    "DHQ": 0.293,
-    "DLQ": 0.48,
-    "HWI": 9.81,
-    "LWI": 3.59
-  },
-  "disclaimers": ""
+  ]
 }

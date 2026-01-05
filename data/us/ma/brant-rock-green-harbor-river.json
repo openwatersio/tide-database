@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-brant-rock-green-harbor-river",
+  "id": "us/ma/brant-rock-green-harbor-river",
   "name": "Brant Rock, Green Harbor River",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.0833,
   "longitude": -70.6467,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8446009",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8446009",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8446009.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8446009"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.18900001,
+    "HAT": 4.041,
+    "STND": 0,
+    "MHHW": 3.424,
+    "MHW": 3.288,
+    "DTL": 1.919,
+    "MTL": 1.905,
+    "MSL": 1.923,
+    "MLW": 0.521,
+    "MLLW": 0.415,
+    "GT": 3.009,
+    "MN": 2.767,
+    "DHQ": 0.136,
+    "DLQ": 0.106,
+    "HWI": 3.818,
+    "LWI": 9.982
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.18900001,
-    "HAT": 4.041,
-    "STND": 0,
-    "MHHW": 3.424,
-    "MHW": 3.288,
-    "DTL": 1.919,
-    "MTL": 1.905,
-    "MSL": 1.923,
-    "MLW": 0.521,
-    "MLLW": 0.415,
-    "GT": 3.009,
-    "MN": 2.767,
-    "DHQ": 0.136,
-    "DLQ": 0.106,
-    "HWI": 3.818,
-    "LWI": 9.982
-  },
-  "disclaimers": ""
+  ]
 }

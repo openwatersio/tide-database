@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-warrington-2-miles-south-of",
+  "id": "us/fl/warrington-2-miles-south-of",
   "name": "Warrington, 2 miles south of",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.345,
   "longitude": -87.2733,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729868",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729868",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729868.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729868"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-pensacola",
+    "reference": "us/fl/pensacola",
     "height": {
       "type": "ratio",
       "high": 1,

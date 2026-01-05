@@ -1,10 +1,9 @@
 {
-  "id": "us-va-scotland",
+  "id": "us/va/scotland",
   "name": "Scotland",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.185,
   "longitude": -76.7833,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638433",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638433",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638433.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638433"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.2329998,
+    "HAT": 3.3019998,
+    "STND": 0,
+    "MHHW": 3.09,
+    "MHW": 3.031,
+    "DTL": 2.737,
+    "MTL": 2.733,
+    "MSL": 2.735,
+    "MLW": 2.435,
+    "MLLW": 2.384,
+    "GT": 0.706,
+    "MN": 0.597,
+    "DHQ": 0.058,
+    "DLQ": 0.05,
+    "HWI": 4.261,
+    "LWI": 11.061
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.2329998,
-    "HAT": 3.3019998,
-    "STND": 0,
-    "MHHW": 3.09,
-    "MHW": 3.031,
-    "DTL": 2.737,
-    "MTL": 2.733,
-    "MSL": 2.735,
-    "MLW": 2.435,
-    "MLLW": 2.384,
-    "GT": 0.706,
-    "MN": 0.597,
-    "DHQ": 0.058,
-    "DLQ": 0.05,
-    "HWI": 4.261,
-    "LWI": 11.061
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-northeast-cape",
+  "id": "us/ak/northeast-cape",
   "name": "Northeast Cape",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 63.3167,
   "longitude": -168.967,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9468039",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468039",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9468039.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468039"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.729,
+    "HAT": 9.849,
+    "STND": 0,
+    "MHHW": 9.625,
+    "MHW": 9.555,
+    "DTL": 9.25,
+    "MTL": 9.248,
+    "MSL": 9.258,
+    "MLW": 8.941,
+    "MLLW": 8.875,
+    "GT": 0.75,
+    "MN": 0.614,
+    "DHQ": 0.07,
+    "DLQ": 0.066,
+    "HWI": 9.85,
+    "LWI": 3.69
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.729,
-    "HAT": 9.849,
-    "STND": 0,
-    "MHHW": 9.625,
-    "MHW": 9.555,
-    "DTL": 9.25,
-    "MTL": 9.248,
-    "MSL": 9.258,
-    "MLW": 8.941,
-    "MLLW": 8.875,
-    "GT": 0.75,
-    "MN": 0.614,
-    "DHQ": 0.07,
-    "DLQ": 0.066,
-    "HWI": 9.85,
-    "LWI": 3.69
-  },
-  "disclaimers": ""
+  ]
 }

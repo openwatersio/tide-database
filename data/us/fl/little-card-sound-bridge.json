@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-little-card-sound-bridge",
+  "id": "us/fl/little-card-sound-bridge",
   "name": "Little Card Sound bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.2883,
   "longitude": -80.37,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723534",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723534",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723534.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723534"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.918,
+    "HAT": 1.47,
+    "STND": 0,
+    "MHHW": 1.237,
+    "MHW": 1.224,
+    "DTL": 1.141,
+    "MTL": 1.143,
+    "MSL": 1.143,
+    "MLW": 1.062,
+    "MLLW": 1.044,
+    "GT": 0.192,
+    "MN": 0.161,
+    "DHQ": 0.013,
+    "DLQ": 0.018,
+    "HWI": 4.65,
+    "LWI": 11.187,
+    "NAVD88": 1.369
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 340.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.918,
-    "HAT": 1.47,
-    "STND": 0,
-    "MHHW": 1.237,
-    "MHW": 1.224,
-    "DTL": 1.141,
-    "MTL": 1.143,
-    "MSL": 1.143,
-    "MLW": 1.062,
-    "MLLW": 1.044,
-    "GT": 0.192,
-    "MN": 0.161,
-    "DHQ": 0.013,
-    "DLQ": 0.018,
-    "HWI": 4.65,
-    "LWI": 11.187,
-    "NAVD88": 1.369
-  },
-  "disclaimers": ""
+  ]
 }

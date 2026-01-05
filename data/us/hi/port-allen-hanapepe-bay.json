@@ -1,10 +1,9 @@
 {
-  "id": "us-hi-port-allen-hanapepe-bay",
+  "id": "us/hi/port-allen-hanapepe-bay",
   "name": "Port Allen, Hanapepe Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "HI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 21.9033,
   "longitude": -159.592,
   "timezone": "Pacific/Honolulu",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1611347",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1611347",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1611347.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1611347"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.816,
+    "HAT": 1.858,
+    "STND": 0,
+    "MHHW": 1.572,
+    "MHW": 1.45,
+    "DTL": 1.292,
+    "MTL": 1.26,
+    "MSL": 1.265,
+    "MLW": 1.071,
+    "MLLW": 1.011,
+    "GT": 0.561,
+    "MN": 0.379,
+    "DHQ": 0.123,
+    "DLQ": 0.06,
+    "HWI": 1.49,
+    "LWI": 7.8
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.816,
-    "HAT": 1.858,
-    "STND": 0,
-    "MHHW": 1.572,
-    "MHW": 1.45,
-    "DTL": 1.292,
-    "MTL": 1.26,
-    "MSL": 1.265,
-    "MLW": 1.071,
-    "MLLW": 1.011,
-    "GT": 0.561,
-    "MN": 0.379,
-    "DHQ": 0.123,
-    "DLQ": 0.06,
-    "HWI": 1.49,
-    "LWI": 7.8
-  },
-  "disclaimers": ""
+  ]
 }

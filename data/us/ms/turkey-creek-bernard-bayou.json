@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-turkey-creek-bernard-bayou",
+  "id": "us/ms/turkey-creek-bernard-bayou",
   "name": "Turkey Creek, Bernard Bayou",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.4267,
   "longitude": -89.0533,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8745375",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8745375",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8745375.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8745375"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-la-south-pass",
+    "reference": "us/la/south-pass",
     "height": {
       "type": "ratio",
       "high": 1.54,

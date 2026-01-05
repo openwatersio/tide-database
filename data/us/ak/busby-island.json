@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-busby-island",
+  "id": "us/ak/busby-island",
   "name": "Busby Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.8983,
   "longitude": -146.782,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454374",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454374",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454374.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454374"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-valdez-port-valdez",
+    "reference": "us/ak/valdez-port-valdez",
     "height": {
       "type": "ratio",
       "high": 0.98,

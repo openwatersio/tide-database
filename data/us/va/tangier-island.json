@@ -1,10 +1,9 @@
 {
-  "id": "us-va-tangier-island",
+  "id": "us/va/tangier-island",
   "name": "Tangier Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.8283,
   "longitude": -75.9933,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8633532",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8633532",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8633532.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8633532"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.758,
+    "HAT": 1.4879999,
+    "STND": 0,
+    "MHHW": 1.365,
+    "MHW": 1.316,
+    "DTL": 1.097,
+    "MTL": 1.087,
+    "MSL": 1.089,
+    "MLW": 0.857,
+    "MLLW": 0.829,
+    "GT": 0.535,
+    "MN": 0.459,
+    "DHQ": 0.049,
+    "DLQ": 0.028,
+    "HWI": 4.609,
+    "LWI": 11.104
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.758,
-    "HAT": 1.4879999,
-    "STND": 0,
-    "MHHW": 1.365,
-    "MHW": 1.316,
-    "DTL": 1.097,
-    "MTL": 1.087,
-    "MSL": 1.089,
-    "MLW": 0.857,
-    "MLLW": 0.829,
-    "GT": 0.535,
-    "MN": 0.459,
-    "DHQ": 0.049,
-    "DLQ": 0.028,
-    "HWI": 4.609,
-    "LWI": 11.104
-  },
-  "disclaimers": ""
+  ]
 }

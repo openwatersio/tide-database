@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-texas-city-galveston-bay",
+  "id": "us/tx/texas-city-galveston-bay",
   "name": "Texas City, Galveston Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.390600204467773,
   "longitude": -94.88490295410156,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8771262",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771262",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8771262.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771262"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.9680004,
+    "HAT": 8.778001,
+    "STND": 0,
+    "MHHW": 8.584,
+    "MHW": 8.569,
+    "DTL": 8.418,
+    "MTL": 8.421,
+    "MSL": 8.435,
+    "MLW": 8.273,
+    "MLLW": 8.253,
+    "GT": 0.331,
+    "MN": 0.296,
+    "DHQ": 0.014,
+    "DLQ": 0.02,
+    "NAVD88": 8.268
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.9680004,
-    "HAT": 8.778001,
-    "STND": 0,
-    "MHHW": 8.584,
-    "MHW": 8.569,
-    "DTL": 8.418,
-    "MTL": 8.421,
-    "MSL": 8.435,
-    "MLW": 8.273,
-    "MLLW": 8.253,
-    "GT": 0.331,
-    "MN": 0.296,
-    "DHQ": 0.014,
-    "DLQ": 0.02,
-    "NAVD88": 8.268
-  },
-  "disclaimers": ""
+  ]
 }

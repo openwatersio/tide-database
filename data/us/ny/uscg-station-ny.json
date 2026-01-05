@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-uscg-station-ny",
+  "id": "us/ny/uscg-station-ny",
   "name": "USCG Station NY",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.612,
   "longitude": -74.0598611111111,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8519050",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519050",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8519050.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519050"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.9760003,
+    "HAT": 9.312,
+    "STND": 0,
+    "MHHW": 8.893,
+    "MHW": 8.797,
+    "DTL": 8.134,
+    "MTL": 8.116,
+    "MSL": 8.14,
+    "MLW": 7.435,
+    "MLLW": 7.374,
+    "GT": 1.519,
+    "MN": 1.362,
+    "DHQ": 0.097,
+    "DLQ": 0.061,
+    "HWI": 0.48,
+    "LWI": 6.81,
+    "NAVD88": 8.2
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.9760003,
-    "HAT": 9.312,
-    "STND": 0,
-    "MHHW": 8.893,
-    "MHW": 8.797,
-    "DTL": 8.134,
-    "MTL": 8.116,
-    "MSL": 8.14,
-    "MLW": 7.435,
-    "MLLW": 7.374,
-    "GT": 1.519,
-    "MN": 1.362,
-    "DHQ": 0.097,
-    "DLQ": 0.061,
-    "HWI": 0.48,
-    "LWI": 6.81,
-    "NAVD88": 8.2
-  },
-  "disclaimers": ""
+  ]
 }

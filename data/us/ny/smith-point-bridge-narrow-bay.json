@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-smith-point-bridge-narrow-bay",
+  "id": "us/ny/smith-point-bridge-narrow-bay",
   "name": "Smith Point Bridge, Narrow Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.7383,
   "longitude": -72.8683,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8513825",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8513825",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8513825.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8513825"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.678,
+    "HAT": 1.375,
+    "STND": 0,
+    "MHHW": 1.26,
+    "MHW": 1.211,
+    "DTL": 1.037,
+    "MTL": 1.03,
+    "MSL": 1.038,
+    "MLW": 0.85,
+    "MLLW": 0.814,
+    "GT": 0.446,
+    "MN": 0.361,
+    "DHQ": 0.049,
+    "DLQ": 0.036,
+    "HWI": 2.218,
+    "LWI": 9.199
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 149.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.678,
-    "HAT": 1.375,
-    "STND": 0,
-    "MHHW": 1.26,
-    "MHW": 1.211,
-    "DTL": 1.037,
-    "MTL": 1.03,
-    "MSL": 1.038,
-    "MLW": 0.85,
-    "MLLW": 0.814,
-    "GT": 0.446,
-    "MN": 0.361,
-    "DHQ": 0.049,
-    "DLQ": 0.036,
-    "HWI": 2.218,
-    "LWI": 9.199
-  },
-  "disclaimers": ""
+  ]
 }

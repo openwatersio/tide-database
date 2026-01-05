@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-lofton-lanceford-creek",
+  "id": "us/fl/lofton-lanceford-creek",
   "name": "Lofton, Lanceford Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.6433,
   "longitude": -81.5233,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720051",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720051",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720051.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720051"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.34799993,
+    "HAT": 2.638,
+    "STND": 0,
+    "MHHW": 2.153,
+    "MHW": 2.039,
+    "DTL": 1.102,
+    "MTL": 1.075,
+    "MSL": 1.11,
+    "MLW": 0.111,
+    "MLLW": 0.051,
+    "GT": 2.102,
+    "MN": 1.928,
+    "DHQ": 0.114,
+    "DLQ": 0.061,
+    "HWI": 1.658,
+    "LWI": 7.253,
+    "NAVD88": 1.263
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -237,25 +256,5 @@
       "phase_local": 77.8,
       "speed": 115.93642
     }
-  ],
-  "datums": {
-    "LAT": -0.34799993,
-    "HAT": 2.638,
-    "STND": 0,
-    "MHHW": 2.153,
-    "MHW": 2.039,
-    "DTL": 1.102,
-    "MTL": 1.075,
-    "MSL": 1.11,
-    "MLW": 0.111,
-    "MLLW": 0.051,
-    "GT": 2.102,
-    "MN": 1.928,
-    "DHQ": 0.114,
-    "DLQ": 0.061,
-    "HWI": 1.658,
-    "LWI": 7.253,
-    "NAVD88": 1.263
-  },
-  "disclaimers": ""
+  ]
 }

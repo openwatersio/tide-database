@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-sand-bay-great-sitkin-island",
+  "id": "us/ak/sand-bay-great-sitkin-island",
   "name": "Sand Bay, Great Sitkin Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 51.9733,
   "longitude": -176.085,
   "timezone": "America/Adak",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9461453",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461453",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9461453.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461453"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sweeper-cove-kuluk-bay-adak-island",
+    "reference": "us/ak/sweeper-cove-kuluk-bay-adak-island",
     "height": {
       "type": "ratio",
       "high": 0.97,

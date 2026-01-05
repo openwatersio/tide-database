@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-big-lagoon",
+  "id": "us/fl/big-lagoon",
   "name": "Big Lagoon",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.32670021057129,
   "longitude": -87.35669708251953,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729909",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729909",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729909.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729909"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.63399994,
+    "HAT": 1.437,
+    "STND": 0,
+    "MHHW": 1.232,
+    "MHW": 1.223,
+    "DTL": 1.066,
+    "MTL": 1.073,
+    "MSL": 1.063,
+    "MLW": 0.923,
+    "MLLW": 0.91,
+    "GT": 0.312,
+    "MN": 0.301,
+    "DHQ": 0.01,
+    "DLQ": 0.013,
+    "NAVD88": 0.962
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.63399994,
-    "HAT": 1.437,
-    "STND": 0,
-    "MHHW": 1.232,
-    "MHW": 1.223,
-    "DTL": 1.066,
-    "MTL": 1.073,
-    "MSL": 1.063,
-    "MLW": 0.923,
-    "MLLW": 0.91,
-    "GT": 0.312,
-    "MN": 0.301,
-    "DHQ": 0.01,
-    "DLQ": 0.013,
-    "NAVD88": 0.962
-  },
-  "disclaimers": ""
+  ]
 }

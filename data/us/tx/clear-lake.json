@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-clear-lake",
+  "id": "us/tx/clear-lake",
   "name": "Clear Lake",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.5633,
   "longitude": -95.0667,
   "timezone": "America/Chicago",
@@ -12,14 +11,26 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770933",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770933",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770933.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770933"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 1.235,
+    "HAT": 2.078,
+    "STND": 0,
+    "MHHW": 1.904,
+    "MHW": 1.887,
+    "MTL": 1.73,
+    "MSL": 1.74,
+    "MLW": 1.572,
+    "MLLW": 1.547
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,17 +328,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.235,
-    "HAT": 2.078,
-    "STND": 0,
-    "MHHW": 1.904,
-    "MHW": 1.887,
-    "MTL": 1.73,
-    "MSL": 1.74,
-    "MLW": 1.572,
-    "MLLW": 1.547
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

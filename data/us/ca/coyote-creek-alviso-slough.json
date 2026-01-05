@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-coyote-creek-alviso-slough",
+  "id": "us/ca/coyote-creek-alviso-slough",
   "name": "Coyote Creek, Alviso Slough",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.465,
   "longitude": -122.023,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414575",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414575",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414575.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414575"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.71000004,
+    "HAT": 3.058,
+    "STND": 0,
+    "MHHW": 2.616,
+    "MHW": 2.435,
+    "DTL": 1.267,
+    "MTL": 1.357,
+    "MSL": 1.402,
+    "MLW": 0.278,
+    "MLLW": -0.081,
+    "GT": 2.699,
+    "MN": 2.156,
+    "DHQ": 0.182,
+    "DLQ": 0.361,
+    "HWI": 8.618,
+    "LWI": 2.596
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 272.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.71000004,
-    "HAT": 3.058,
-    "STND": 0,
-    "MHHW": 2.616,
-    "MHW": 2.435,
-    "DTL": 1.267,
-    "MTL": 1.357,
-    "MSL": 1.402,
-    "MLW": 0.278,
-    "MLLW": -0.081,
-    "GT": 2.699,
-    "MN": 2.156,
-    "DHQ": 0.182,
-    "DLQ": 0.361,
-    "HWI": 8.618,
-    "LWI": 2.596
-  },
-  "disclaimers": ""
+  ]
 }

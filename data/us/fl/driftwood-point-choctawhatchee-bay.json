@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-driftwood-point-choctawhatchee-bay",
+  "id": "us/fl/driftwood-point-choctawhatchee-bay",
   "name": "Driftwood Point, Choctawhatchee Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.389400482177734,
   "longitude": -86.32879638671875,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729425",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729425",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729425.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729425"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.660999,
+    "HAT": 9.134999,
+    "STND": 0,
+    "MHHW": 9,
+    "MHW": 8.994,
+    "DTL": 8.915,
+    "MTL": 8.911,
+    "MSL": 8.912,
+    "MLW": 8.827,
+    "MLLW": 8.83,
+    "GT": 0.17,
+    "MN": 0.167,
+    "DHQ": 0.006,
+    "DLQ": -0.002
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.660999,
-    "HAT": 9.134999,
-    "STND": 0,
-    "MHHW": 9,
-    "MHW": 8.994,
-    "DTL": 8.915,
-    "MTL": 8.911,
-    "MSL": 8.912,
-    "MLW": 8.827,
-    "MLLW": 8.83,
-    "GT": 0.17,
-    "MN": 0.167,
-    "DHQ": 0.006,
-    "DLQ": -0.002
-  },
-  "disclaimers": ""
+  ]
 }

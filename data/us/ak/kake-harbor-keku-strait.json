@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kake-harbor-keku-strait",
+  "id": "us/ak/kake-harbor-keku-strait",
   "name": "Kake Harbor, Keku Strait",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.94830555555556,
   "longitude": -133.8947222222222,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451528",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451528",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451528.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451528"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.303741,
+    "HAT": 13.112741,
+    "STND": 0,
+    "MHHW": 12.015,
+    "MHW": 11.74,
+    "DTL": 9.845,
+    "MTL": 9.941,
+    "MSL": 9.963,
+    "MLW": 8.141,
+    "MLLW": 7.675,
+    "GT": 4.34,
+    "MN": 3.599,
+    "DHQ": 0.276,
+    "DLQ": 0.466,
+    "HWI": 9.69,
+    "LWI": 3.43
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.303741,
-    "HAT": 13.112741,
-    "STND": 0,
-    "MHHW": 12.015,
-    "MHW": 11.74,
-    "DTL": 9.845,
-    "MTL": 9.941,
-    "MSL": 9.963,
-    "MLW": 8.141,
-    "MLLW": 7.675,
-    "GT": 4.34,
-    "MN": 3.599,
-    "DHQ": 0.276,
-    "DLQ": 0.466,
-    "HWI": 9.69,
-    "LWI": 3.43
-  },
-  "disclaimers": ""
+  ]
 }

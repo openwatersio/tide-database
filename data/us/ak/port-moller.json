@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-port-moller",
+  "id": "us/ak/port-moller",
   "name": "Port Moller",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.9858333,
   "longitude": -160.5736111,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9463502",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9463502",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9463502.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9463502"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.846,
+    "HAT": 12.943,
+    "STND": 0,
+    "MHHW": 12.095,
+    "MHW": 11.831,
+    "DTL": 10.497,
+    "MTL": 10.697,
+    "MSL": 10.682,
+    "MLW": 9.563,
+    "MLLW": 8.9,
+    "GT": 3.196,
+    "MN": 2.268,
+    "DHQ": 0.264,
+    "DLQ": 0.664,
+    "HWI": 7.257,
+    "LWI": 1.095
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 94.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.846,
-    "HAT": 12.943,
-    "STND": 0,
-    "MHHW": 12.095,
-    "MHW": 11.831,
-    "DTL": 10.497,
-    "MTL": 10.697,
-    "MSL": 10.682,
-    "MLW": 9.563,
-    "MLLW": 8.9,
-    "GT": 3.196,
-    "MN": 2.268,
-    "DHQ": 0.264,
-    "DLQ": 0.664,
-    "HWI": 7.257,
-    "LWI": 1.095
-  },
-  "disclaimers": ""
+  ]
 }

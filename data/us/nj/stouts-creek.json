@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-stouts-creek",
+  "id": "us/nj/stouts-creek",
   "name": "Stouts Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.845001220703125,
   "longitude": -74.15170288085938,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8533365",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533365",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8533365.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8533365"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.13999999,
+    "HAT": 0.62,
+    "STND": 0,
+    "MHHW": 0.528,
+    "MHW": 0.491,
+    "DTL": 0.393,
+    "MTL": 0.389,
+    "MSL": 0.392,
+    "MLW": 0.287,
+    "MLLW": 0.259,
+    "GT": 0.268,
+    "MN": 0.204,
+    "DHQ": 0.037,
+    "DLQ": 0.028,
+    "HWI": 2.899,
+    "LWI": 9.426
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 136.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.13999999,
-    "HAT": 0.62,
-    "STND": 0,
-    "MHHW": 0.528,
-    "MHW": 0.491,
-    "DTL": 0.393,
-    "MTL": 0.389,
-    "MSL": 0.392,
-    "MLW": 0.287,
-    "MLLW": 0.259,
-    "GT": 0.268,
-    "MN": 0.204,
-    "DHQ": 0.037,
-    "DLQ": 0.028,
-    "HWI": 2.899,
-    "LWI": 9.426
-  },
-  "disclaimers": ""
+  ]
 }

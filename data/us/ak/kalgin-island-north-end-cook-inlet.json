@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kalgin-island-north-end-cook-inlet",
+  "id": "us/ak/kalgin-island-north-end-cook-inlet",
   "name": "Kalgin Island (north end),  Cook Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.51169967651367,
   "longitude": -151.95199584960938,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455732",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455732",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455732.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455732"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.598,
+    "HAT": 6.58,
+    "STND": 0,
+    "MHHW": 4.993,
+    "MHW": 4.761,
+    "DTL": 2.14,
+    "MTL": 2.326,
+    "MSL": 2.387,
+    "MLW": -0.109,
+    "MLLW": -0.714,
+    "GT": 5.707,
+    "MN": 4.87,
+    "DHQ": 0.233,
+    "DLQ": 0.605,
+    "HWI": 0.57,
+    "LWI": 6.8
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.598,
-    "HAT": 6.58,
-    "STND": 0,
-    "MHHW": 4.993,
-    "MHW": 4.761,
-    "DTL": 2.14,
-    "MTL": 2.326,
-    "MSL": 2.387,
-    "MLW": -0.109,
-    "MLLW": -0.714,
-    "GT": 5.707,
-    "MN": 4.87,
-    "DHQ": 0.233,
-    "DLQ": 0.605,
-    "HWI": 0.57,
-    "LWI": 6.8
-  },
-  "disclaimers": ""
+  ]
 }

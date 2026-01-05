@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-upper-golovnin-lagoon",
+  "id": "us/ak/upper-golovnin-lagoon",
   "name": "Upper Golovnin Lagoon",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 64.62079620361328,
   "longitude": -163.1490020751953,
   "timezone": "America/Nome",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9468841",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468841",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9468841.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9468841"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.3120003,
+    "HAT": 9.052,
+    "STND": 0,
+    "MHHW": 8.6,
+    "MHW": 8.574,
+    "DTL": 8.136,
+    "MTL": 8.131,
+    "MSL": 8.119,
+    "MLW": 7.688,
+    "MLLW": 7.673,
+    "GT": 0.926,
+    "MN": 0.886,
+    "DHQ": 0.026,
+    "DLQ": 0.014,
+    "NAVD88": 6.973
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.3120003,
-    "HAT": 9.052,
-    "STND": 0,
-    "MHHW": 8.6,
-    "MHW": 8.574,
-    "DTL": 8.136,
-    "MTL": 8.131,
-    "MSL": 8.119,
-    "MLW": 7.688,
-    "MLLW": 7.673,
-    "GT": 0.926,
-    "MN": 0.886,
-    "DHQ": 0.026,
-    "DLQ": 0.014,
-    "NAVD88": 6.973
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-wickford",
+  "id": "us/ri/wickford",
   "name": "Wickford",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.5717,
   "longitude": -71.445,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8454538",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454538",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8454538.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454538"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.681,
+    "HAT": 4.582,
+    "STND": 0,
+    "MHHW": 4.251,
+    "MHW": 4.172,
+    "DTL": 3.623,
+    "MTL": 3.607,
+    "MSL": 3.559,
+    "MLW": 3.041,
+    "MLLW": 2.996,
+    "GT": 1.255,
+    "MN": 1.131,
+    "DHQ": 0.079,
+    "DLQ": 0.046,
+    "HWI": 0.317,
+    "LWI": 5.821
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.681,
-    "HAT": 4.582,
-    "STND": 0,
-    "MHHW": 4.251,
-    "MHW": 4.172,
-    "DTL": 3.623,
-    "MTL": 3.607,
-    "MSL": 3.559,
-    "MLW": 3.041,
-    "MLLW": 2.996,
-    "GT": 1.255,
-    "MN": 1.131,
-    "DHQ": 0.079,
-    "DLQ": 0.046,
-    "HWI": 0.317,
-    "LWI": 5.821
-  },
-  "disclaimers": ""
+  ]
 }

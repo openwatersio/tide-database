@@ -1,10 +1,9 @@
 {
-  "id": "us-va-willcox-wharf-charles-city",
+  "id": "us/va/willcox-wharf-charles-city",
   "name": "Willcox Wharf, Charles City",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.315,
   "longitude": -77.0983,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638464",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638464",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638464.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638464"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.1470001,
+    "HAT": 2.183,
+    "STND": 0,
+    "MHHW": 1.995,
+    "MHW": 1.923,
+    "DTL": 1.612,
+    "MTL": 1.601,
+    "MSL": 1.626,
+    "MLW": 1.278,
+    "MLLW": 1.229,
+    "GT": 0.766,
+    "MN": 0.645,
+    "DHQ": 0.072,
+    "DLQ": 0.049,
+    "HWI": 7.051,
+    "LWI": 0.966
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.1470001,
-    "HAT": 2.183,
-    "STND": 0,
-    "MHHW": 1.995,
-    "MHW": 1.923,
-    "DTL": 1.612,
-    "MTL": 1.601,
-    "MSL": 1.626,
-    "MLW": 1.278,
-    "MLLW": 1.229,
-    "GT": 0.766,
-    "MN": 0.645,
-    "DHQ": 0.072,
-    "DLQ": 0.049,
-    "HWI": 7.051,
-    "LWI": 0.966
-  },
-  "disclaimers": ""
+  ]
 }

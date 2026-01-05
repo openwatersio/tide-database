@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-upper-northwestern-fiord-harris-bay",
+  "id": "us/ak/upper-northwestern-fiord-harris-bay",
   "name": "Upper Northwestern Fiord, Harris Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.79,
   "longitude": -150.032,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455204",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455204",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455204.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455204"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.38700008,
+    "HAT": 5.86,
+    "STND": 0,
+    "MHHW": 4.797,
+    "MHW": 4.525,
+    "DTL": 3.146,
+    "MTL": 3.216,
+    "MSL": 3.223,
+    "MLW": 1.907,
+    "MLLW": 1.494,
+    "GT": 3.303,
+    "MN": 2.619,
+    "DHQ": 0.272,
+    "DLQ": 0.412,
+    "HWI": 10.09,
+    "LWI": 3.9
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.38700008,
-    "HAT": 5.86,
-    "STND": 0,
-    "MHHW": 4.797,
-    "MHW": 4.525,
-    "DTL": 3.146,
-    "MTL": 3.216,
-    "MSL": 3.223,
-    "MLW": 1.907,
-    "MLLW": 1.494,
-    "GT": 3.303,
-    "MN": 2.619,
-    "DHQ": 0.272,
-    "DLQ": 0.412,
-    "HWI": 10.09,
-    "LWI": 3.9
-  },
-  "disclaimers": ""
+  ]
 }

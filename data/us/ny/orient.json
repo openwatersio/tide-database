@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-orient",
+  "id": "us/ny/orient",
   "name": "Orient",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.1367,
   "longitude": -72.3067,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8511671",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511671",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8511671.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511671"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.361,
+    "HAT": 8.691,
+    "STND": 0,
+    "MHHW": 8.476,
+    "MHW": 8.378,
+    "DTL": 8.013,
+    "MTL": 7.995,
+    "MSL": 8.012,
+    "MLW": 7.611,
+    "MLLW": 7.551,
+    "GT": 0.925,
+    "MN": 0.766,
+    "DHQ": 0.098,
+    "DLQ": 0.061,
+    "HWI": 2.77,
+    "LWI": 9.023
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.361,
-    "HAT": 8.691,
-    "STND": 0,
-    "MHHW": 8.476,
-    "MHW": 8.378,
-    "DTL": 8.013,
-    "MTL": 7.995,
-    "MSL": 8.012,
-    "MLW": 7.611,
-    "MLLW": 7.551,
-    "GT": 0.925,
-    "MN": 0.766,
-    "DHQ": 0.098,
-    "DLQ": 0.061,
-    "HWI": 2.77,
-    "LWI": 9.023
-  },
-  "disclaimers": ""
+  ]
 }

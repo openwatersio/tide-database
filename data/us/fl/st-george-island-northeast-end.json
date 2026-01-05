@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-st-george-island-northeast-end",
+  "id": "us/fl/st-george-island-northeast-end",
   "name": "St. George Island, Northeast End",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.766695022583008,
   "longitude": -84.69999694824219,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728486",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728486",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728486.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728486"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.15500003,
+    "HAT": 1.553,
+    "STND": 0,
+    "MHHW": 1.327,
+    "MHW": 1.284,
+    "DTL": 0.992,
+    "MTL": 1.046,
+    "MSL": 1.023,
+    "MLW": 0.808,
+    "MLLW": 0.657,
+    "GT": 0.67,
+    "MN": 0.475,
+    "DHQ": 0.043,
+    "DLQ": 0.151,
+    "NAVD88": 1.04
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.15500003,
-    "HAT": 1.553,
-    "STND": 0,
-    "MHHW": 1.327,
-    "MHW": 1.284,
-    "DTL": 0.992,
-    "MTL": 1.046,
-    "MSL": 1.023,
-    "MLW": 0.808,
-    "MLLW": 0.657,
-    "GT": 0.67,
-    "MN": 0.475,
-    "DHQ": 0.043,
-    "DLQ": 0.151,
-    "NAVD88": 1.04
-  },
-  "disclaimers": ""
+  ]
 }

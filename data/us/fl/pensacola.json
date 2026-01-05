@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-pensacola",
+  "id": "us/fl/pensacola",
   "name": "PENSACOLA",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.404399871826172,
   "longitude": -87.21119689941406,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729840",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729840",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729840.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729840"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.211114,
+    "HAT": 3.231114,
+    "STND": 0,
+    "MHHW": 2.952,
+    "MHW": 2.943,
+    "DTL": 2.761,
+    "MTL": 2.76,
+    "MSL": 2.757,
+    "MLW": 2.578,
+    "MLLW": 2.569,
+    "GT": 0.383,
+    "MN": 0.365,
+    "DHQ": 0.009,
+    "DLQ": 0.008,
+    "NAVD88": 2.667
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 330.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.211114,
-    "HAT": 3.231114,
-    "STND": 0,
-    "MHHW": 2.952,
-    "MHW": 2.943,
-    "DTL": 2.761,
-    "MTL": 2.76,
-    "MSL": 2.757,
-    "MLW": 2.578,
-    "MLLW": 2.569,
-    "GT": 0.383,
-    "MN": 0.365,
-    "DHQ": 0.009,
-    "DLQ": 0.008,
-    "NAVD88": 2.667
-  },
-  "disclaimers": ""
+  ]
 }

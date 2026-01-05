@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-sea-otter-harbor",
+  "id": "us/ak/sea-otter-harbor",
   "name": "Sea Otter Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.1267,
   "longitude": -133.167,
   "timezone": "America/Sitka",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450312",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450312",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450312.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450312"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sitka",
+    "reference": "us/ak/sitka",
     "height": {
       "type": "fixed",
       "high": -0.06,

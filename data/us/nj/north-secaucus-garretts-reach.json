@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-north-secaucus-garretts-reach",
+  "id": "us/nj/north-secaucus-garretts-reach",
   "name": "North Secaucus, Garretts Reach",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.805,
   "longitude": -74.0533,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8530531",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8530531",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8530531.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8530531"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ny-new-york-the-battery",
+    "reference": "us/ny/new-york-the-battery",
     "height": {
       "type": "ratio",
       "high": 1.23,

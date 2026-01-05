@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-nix-point-perdido-bay",
+  "id": "us/fl/nix-point-perdido-bay",
   "name": "Nix Point, Perdido Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.3933,
   "longitude": -87.425,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729962",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729962",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729962.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729962"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-pensacola",
+    "reference": "us/fl/pensacola",
     "height": {
       "type": "ratio",
       "high": 0.57,

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-emmonak-kwiguk-pass-yukon-river",
+  "id": "us/ak/emmonak-kwiguk-pass-yukon-river",
   "name": "Emmonak, Kwiguk Pass, Yukon River",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 62.77750015258789,
   "longitude": -164.54690551757812,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9467701",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9467701",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9467701.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9467701"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.6480002,
+    "HAT": 7.784,
+    "STND": 0,
+    "MHHW": 7.469,
+    "MHW": 7.282,
+    "DTL": 7.164,
+    "MTL": 7.095,
+    "MSL": 7.105,
+    "MLW": 6.909,
+    "MLLW": 6.861,
+    "GT": 0.608,
+    "MN": 0.374,
+    "DHQ": 0.186,
+    "DLQ": 0.048
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.6480002,
-    "HAT": 7.784,
-    "STND": 0,
-    "MHHW": 7.469,
-    "MHW": 7.282,
-    "DTL": 7.164,
-    "MTL": 7.095,
-    "MSL": 7.105,
-    "MLW": 6.909,
-    "MLLW": 6.861,
-    "GT": 0.608,
-    "MN": 0.374,
-    "DHQ": 0.186,
-    "DLQ": 0.048
-  },
-  "disclaimers": ""
+  ]
 }

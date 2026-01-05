@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-garden-city-bridge-main-creek",
+  "id": "us/sc/garden-city-bridge-main-creek",
   "name": "Garden City Bridge, Main Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.5783,
   "longitude": -79.0033,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8661419",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661419",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8661419.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661419"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.22400004,
+    "HAT": 2.2150002,
+    "STND": 0,
+    "MHHW": 1.938,
+    "MHW": 1.817,
+    "DTL": 1.209,
+    "MTL": 1.168,
+    "MSL": 1.177,
+    "MLW": 0.519,
+    "MLLW": 0.481,
+    "GT": 1.457,
+    "MN": 1.298,
+    "DHQ": 0.121,
+    "DLQ": 0.039,
+    "HWI": 1.219,
+    "LWI": 8.306,
+    "NAVD88": 1.284
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 91.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.22400004,
-    "HAT": 2.2150002,
-    "STND": 0,
-    "MHHW": 1.938,
-    "MHW": 1.817,
-    "DTL": 1.209,
-    "MTL": 1.168,
-    "MSL": 1.177,
-    "MLW": 0.519,
-    "MLLW": 0.481,
-    "GT": 1.457,
-    "MN": 1.298,
-    "DHQ": 0.121,
-    "DLQ": 0.039,
-    "HWI": 1.219,
-    "LWI": 8.306,
-    "NAVD88": 1.284
-  },
-  "disclaimers": ""
+  ]
 }

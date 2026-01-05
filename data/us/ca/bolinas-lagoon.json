@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-bolinas-lagoon",
+  "id": "us/ca/bolinas-lagoon",
   "name": "Bolinas Lagoon",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.90800094604492,
   "longitude": -122.67849731445312,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414958",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414958",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414958.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414958"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.403,
+    "HAT": 2.328,
+    "STND": 0,
+    "MHHW": 2.012,
+    "MHW": 1.826,
+    "DTL": 1.361,
+    "MTL": 1.381,
+    "MSL": 1.39,
+    "MLW": 0.937,
+    "MLLW": 0.709,
+    "GT": 1.303,
+    "MN": 0.889,
+    "DHQ": 0.187,
+    "DLQ": 0.227,
+    "HWI": 7.609,
+    "LWI": 1.493,
+    "NAVD88": 0.368
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 265.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.403,
-    "HAT": 2.328,
-    "STND": 0,
-    "MHHW": 2.012,
-    "MHW": 1.826,
-    "DTL": 1.361,
-    "MTL": 1.381,
-    "MSL": 1.39,
-    "MLW": 0.937,
-    "MLLW": 0.709,
-    "GT": 1.303,
-    "MN": 0.889,
-    "DHQ": 0.187,
-    "DLQ": 0.227,
-    "HWI": 7.609,
-    "LWI": 1.493,
-    "NAVD88": 0.368
-  },
-  "disclaimers": ""
+  ]
 }

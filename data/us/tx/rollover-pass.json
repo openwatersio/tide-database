@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-rollover-pass",
+  "id": "us/tx/rollover-pass",
   "name": "Rollover Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.514999389648438,
   "longitude": -94.51329803466797,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770971",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770971",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770971.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770971"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 0.566,
+    "HAT": 1.605,
+    "STND": 0,
+    "MHHW": 1.388,
+    "MHW": 1.357,
+    "DTL": 1.182,
+    "MTL": 1.195,
+    "MSL": 1.201,
+    "MLW": 1.032,
+    "MLLW": 0.976,
+    "GT": 0.411,
+    "MN": 0.325,
+    "DHQ": 0.031,
+    "DLQ": 0.055,
+    "NAVD88": 1.202
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 325,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.566,
-    "HAT": 1.605,
-    "STND": 0,
-    "MHHW": 1.388,
-    "MHW": 1.357,
-    "DTL": 1.182,
-    "MTL": 1.195,
-    "MSL": 1.201,
-    "MLW": 1.032,
-    "MLLW": 0.976,
-    "GT": 0.411,
-    "MN": 0.325,
-    "DHQ": 0.031,
-    "DLQ": 0.055,
-    "NAVD88": 1.202
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-nut-island-quincy-bay",
+  "id": "us/ma/nut-island-quincy-bay",
   "name": "Nut Island, Quincy Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.28,
   "longitude": -70.9533,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8444525",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444525",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8444525.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444525"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.906,
+    "HAT": 8.309999,
+    "STND": 0,
+    "MHHW": 7.665,
+    "MHW": 7.528,
+    "DTL": 6.108,
+    "MTL": 6.092,
+    "MSL": 6.126,
+    "MLW": 4.656,
+    "MLLW": 4.552,
+    "GT": 3.113,
+    "MN": 2.872,
+    "DHQ": 0.136,
+    "DLQ": 0.104,
+    "HWI": 3.751,
+    "LWI": 9.946
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 150.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.906,
-    "HAT": 8.309999,
-    "STND": 0,
-    "MHHW": 7.665,
-    "MHW": 7.528,
-    "DTL": 6.108,
-    "MTL": 6.092,
-    "MSL": 6.126,
-    "MLW": 4.656,
-    "MLLW": 4.552,
-    "GT": 3.113,
-    "MN": 2.872,
-    "DHQ": 0.136,
-    "DLQ": 0.104,
-    "HWI": 3.751,
-    "LWI": 9.946
-  },
-  "disclaimers": ""
+  ]
 }

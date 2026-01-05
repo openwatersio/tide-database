@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-bayside-copano-bay",
+  "id": "us/tx/bayside-copano-bay",
   "name": "Bayside, Copano Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.068300247192383,
   "longitude": -97.19560241699219,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8774652",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8774652",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8774652.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8774652"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.74,
+    "HAT": 6.9519997,
+    "STND": 0,
+    "MHHW": 6.915,
+    "MHW": 6.913,
+    "DTL": 6.852,
+    "MTL": 6.853,
+    "MSL": 6.858,
+    "MLW": 6.794,
+    "MLLW": 6.789,
+    "GT": 0.126,
+    "MN": 0.12,
+    "DHQ": 0.001,
+    "DLQ": 0.005,
+    "NAVD88": 6.614
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.74,
-    "HAT": 6.9519997,
-    "STND": 0,
-    "MHHW": 6.915,
-    "MHW": 6.913,
-    "DTL": 6.852,
-    "MTL": 6.853,
-    "MSL": 6.858,
-    "MLW": 6.794,
-    "MLLW": 6.789,
-    "GT": 0.126,
-    "MN": 0.12,
-    "DHQ": 0.001,
-    "DLQ": 0.005,
-    "NAVD88": 6.614
-  },
-  "disclaimers": ""
+  ]
 }

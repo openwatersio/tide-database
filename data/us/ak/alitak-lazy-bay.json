@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-alitak-lazy-bay",
+  "id": "us/ak/alitak-lazy-bay",
   "name": "Alitak, Lazy Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.89738888888889,
   "longitude": -154.248,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457804",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457804",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457804.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457804"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.5409999,
+    "HAT": 6.352,
+    "STND": 0,
+    "MHHW": 5.291,
+    "MHW": 5.047,
+    "DTL": 3.503,
+    "MTL": 3.62,
+    "MSL": 3.597,
+    "MLW": 2.194,
+    "MLLW": 1.715,
+    "GT": 3.575,
+    "MN": 2.853,
+    "DHQ": 0.244,
+    "DLQ": 0.478,
+    "HWI": 10.624,
+    "LWI": 4.58
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 87.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.5409999,
-    "HAT": 6.352,
-    "STND": 0,
-    "MHHW": 5.291,
-    "MHW": 5.047,
-    "DTL": 3.503,
-    "MTL": 3.62,
-    "MSL": 3.597,
-    "MLW": 2.194,
-    "MLLW": 1.715,
-    "GT": 3.575,
-    "MN": 2.853,
-    "DHQ": 0.244,
-    "DLQ": 0.478,
-    "HWI": 10.624,
-    "LWI": 4.58
-  },
-  "disclaimers": ""
+  ]
 }

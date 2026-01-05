@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-hanbury-point-mosquito-pass-san-juan-i",
+  "id": "us/wa/hanbury-point-mosquito-pass-san-juan-i",
   "name": "Hanbury Point, Mosquito Pass, San Juan I.",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.5817,
   "longitude": -123.17,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449828",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449828",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449828.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449828"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.25699997,
+    "HAT": 3.6290002,
+    "STND": 0,
+    "MHHW": 3.174,
+    "MHW": 2.972,
+    "DTL": 2.011,
+    "MTL": 2.265,
+    "MSL": 2.216,
+    "MLW": 1.558,
+    "MLLW": 0.849,
+    "GT": 2.324,
+    "MN": 1.414,
+    "DHQ": 0.202,
+    "DLQ": 0.709,
+    "HWI": 0.105,
+    "LWI": 6.13
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 355.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.25699997,
-    "HAT": 3.6290002,
-    "STND": 0,
-    "MHHW": 3.174,
-    "MHW": 2.972,
-    "DTL": 2.011,
-    "MTL": 2.265,
-    "MSL": 2.216,
-    "MLW": 1.558,
-    "MLLW": 0.849,
-    "GT": 2.324,
-    "MN": 1.414,
-    "DHQ": 0.202,
-    "DLQ": 0.709,
-    "HWI": 0.105,
-    "LWI": 6.13
-  },
-  "disclaimers": ""
+  ]
 }

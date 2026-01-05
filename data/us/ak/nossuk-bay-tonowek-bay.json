@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-nossuk-bay-tonowek-bay",
+  "id": "us/ak/nossuk-bay-tonowek-bay",
   "name": "Nossuk Bay, Tonowek Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.72166666666666,
   "longitude": -133.35,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450711",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450711",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450711.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450711"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.74399996,
+    "HAT": 4.0950003,
+    "STND": 0,
+    "MHHW": 3.344,
+    "MHW": 3.095,
+    "DTL": 1.758,
+    "MTL": 1.843,
+    "MSL": 1.838,
+    "MLW": 0.591,
+    "MLLW": 0.173,
+    "GT": 3.17,
+    "MN": 2.503,
+    "DHQ": 0.249,
+    "DLQ": 0.418,
+    "HWI": 9.277,
+    "LWI": 3.012
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.74399996,
-    "HAT": 4.0950003,
-    "STND": 0,
-    "MHHW": 3.344,
-    "MHW": 3.095,
-    "DTL": 1.758,
-    "MTL": 1.843,
-    "MSL": 1.838,
-    "MLW": 0.591,
-    "MLLW": 0.173,
-    "GT": 3.17,
-    "MN": 2.503,
-    "DHQ": 0.249,
-    "DLQ": 0.418,
-    "HWI": 9.277,
-    "LWI": 3.012
-  },
-  "disclaimers": ""
+  ]
 }

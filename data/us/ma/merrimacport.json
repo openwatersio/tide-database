@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-merrimacport",
+  "id": "us/ma/merrimacport",
   "name": "Merrimacport",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.825,
   "longitude": -70.9883,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8440369",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440369",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8440369.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440369"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.23399997,
+    "HAT": 2.888,
+    "STND": 0,
+    "MHHW": 2.477,
+    "MHW": 2.344,
+    "DTL": 1.31,
+    "MTL": 1.27,
+    "MSL": 1.284,
+    "MLW": 0.196,
+    "MLLW": 0.143,
+    "GT": 2.334,
+    "MN": 2.148,
+    "DHQ": 0.133,
+    "DLQ": 0.053,
+    "HWI": 5.013,
+    "LWI": 11.879
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.23399997,
-    "HAT": 2.888,
-    "STND": 0,
-    "MHHW": 2.477,
-    "MHW": 2.344,
-    "DTL": 1.31,
-    "MTL": 1.27,
-    "MSL": 1.284,
-    "MLW": 0.196,
-    "MLLW": 0.143,
-    "GT": 2.334,
-    "MN": 2.148,
-    "DHQ": 0.133,
-    "DLQ": 0.053,
-    "HWI": 5.013,
-    "LWI": 11.879
-  },
-  "disclaimers": ""
+  ]
 }

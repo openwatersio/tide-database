@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-chilkat-inlet",
+  "id": "us/ak/chilkat-inlet",
   "name": "Chilkat Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.17,
   "longitude": -135.4,
   "timezone": "America/Juneau",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452421",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452421",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452421.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452421"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -3.016,
+    "HAT": 4.56,
+    "STND": 0,
+    "MHHW": 3.336,
+    "MHW": 3.029,
+    "DTL": 0.826,
+    "MTL": 0.913,
+    "MSL": 0.954,
+    "MLW": -1.202,
+    "MLLW": -1.685,
+    "GT": 5.021,
+    "MN": 4.231,
+    "DHQ": 0.307,
+    "DLQ": 0.482,
+    "HWI": 9.71,
+    "LWI": 3.49
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -3.016,
-    "HAT": 4.56,
-    "STND": 0,
-    "MHHW": 3.336,
-    "MHW": 3.029,
-    "DTL": 0.826,
-    "MTL": 0.913,
-    "MSL": 0.954,
-    "MLW": -1.202,
-    "MLLW": -1.685,
-    "GT": 5.021,
-    "MN": 4.231,
-    "DHQ": 0.307,
-    "DLQ": 0.482,
-    "HWI": 9.71,
-    "LWI": 3.49
-  },
-  "disclaimers": ""
+  ]
 }

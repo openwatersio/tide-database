@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-kenai-city-pier",
+  "id": "us/ak/kenai-city-pier",
   "name": "Kenai City Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.545,
   "longitude": -151.218,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455742",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455742",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455742.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455742"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-seldovia-kachemak-bay",
+    "reference": "us/ak/seldovia-kachemak-bay",
     "height": {
       "type": "fixed",
       "high": 0.58,

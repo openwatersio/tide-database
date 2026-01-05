@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-weymouth-fore-river-bridge",
+  "id": "us/ma/weymouth-fore-river-bridge",
   "name": "Weymouth Fore River Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.2483,
   "longitude": -70.9667,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8444788",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444788",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8444788.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444788"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.1140003,
+    "HAT": 9.576,
+    "STND": 0,
+    "MHHW": 8.92,
+    "MHW": 8.782,
+    "DTL": 7.343,
+    "MTL": 7.325,
+    "MSL": 7.367,
+    "MLW": 5.867,
+    "MLLW": 5.766,
+    "GT": 3.154,
+    "MN": 2.915,
+    "DHQ": 0.138,
+    "DLQ": 0.101,
+    "HWI": 3.791,
+    "LWI": 9.988
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.1140003,
-    "HAT": 9.576,
-    "STND": 0,
-    "MHHW": 8.92,
-    "MHW": 8.782,
-    "DTL": 7.343,
-    "MTL": 7.325,
-    "MSL": 7.367,
-    "MLW": 5.867,
-    "MLLW": 5.766,
-    "GT": 3.154,
-    "MN": 2.915,
-    "DHQ": 0.138,
-    "DLQ": 0.101,
-    "HWI": 3.791,
-    "LWI": 9.988
-  },
-  "disclaimers": ""
+  ]
 }

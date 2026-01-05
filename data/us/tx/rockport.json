@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-rockport",
+  "id": "us/tx/rockport",
   "name": "Rockport",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.0216667,
   "longitude": -97.0466667,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8774770",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8774770",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8774770.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8774770"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.7750001,
+    "HAT": 2.2350001,
+    "STND": 0,
+    "MHHW": 2.078,
+    "MHW": 2.077,
+    "DTL": 2.022,
+    "MTL": 2.022,
+    "MSL": 2.025,
+    "MLW": 1.968,
+    "MLLW": 1.967,
+    "GT": 0.111,
+    "MN": 0.109,
+    "DHQ": 0.001,
+    "DLQ": 0.001,
+    "NAVD88": 1.682
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 236.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.7750001,
-    "HAT": 2.2350001,
-    "STND": 0,
-    "MHHW": 2.078,
-    "MHW": 2.077,
-    "DTL": 2.022,
-    "MTL": 2.022,
-    "MSL": 2.025,
-    "MLW": 1.968,
-    "MLLW": 1.967,
-    "GT": 0.111,
-    "MN": 0.109,
-    "DHQ": 0.001,
-    "DLQ": 0.001,
-    "NAVD88": 1.682
-  },
-  "disclaimers": ""
+  ]
 }

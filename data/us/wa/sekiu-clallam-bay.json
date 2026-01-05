@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-sekiu-clallam-bay",
+  "id": "us/wa/sekiu-clallam-bay",
   "name": "Sekiu, Clallam Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.2633,
   "longitude": -124.297,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9443361",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9443361",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9443361.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9443361"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.078,
+    "HAT": 8.103001,
+    "STND": 0,
+    "MHHW": 7.343,
+    "MHW": 7.087,
+    "DTL": 6.2,
+    "MTL": 6.344,
+    "MSL": 6.326,
+    "MLW": 5.602,
+    "MLLW": 5.057,
+    "GT": 2.286,
+    "MN": 1.486,
+    "DHQ": 0.256,
+    "DLQ": 0.544,
+    "HWI": 8.939,
+    "LWI": 2.574,
+    "NAVD88": 5.233
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 332.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.078,
-    "HAT": 8.103001,
-    "STND": 0,
-    "MHHW": 7.343,
-    "MHW": 7.087,
-    "DTL": 6.2,
-    "MTL": 6.344,
-    "MSL": 6.326,
-    "MLW": 5.602,
-    "MLLW": 5.057,
-    "GT": 2.286,
-    "MN": 1.486,
-    "DHQ": 0.256,
-    "DLQ": 0.544,
-    "HWI": 8.939,
-    "LWI": 2.574,
-    "NAVD88": 5.233
-  },
-  "disclaimers": ""
+  ]
 }

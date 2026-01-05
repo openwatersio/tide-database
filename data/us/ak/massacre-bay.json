@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-massacre-bay",
+  "id": "us/ak/massacre-bay",
   "name": "MASSACRE BAY",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 52.84000015258789,
   "longitude": 173.19500732421875,
   "timezone": "America/Adak",
@@ -12,14 +11,22 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9460150",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9460150",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9460150.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9460150"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.155,
+    "HAT": 0.933,
+    "STND": 0,
+    "MSL": 0,
+    "MLLW": -0.591
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,13 +324,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.155,
-    "HAT": 0.933,
-    "STND": 0,
-    "MSL": 0,
-    "MLLW": -0.591
-  },
-  "disclaimers": ""
+  ]
 }

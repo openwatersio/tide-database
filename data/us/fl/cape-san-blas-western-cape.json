@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cape-san-blas-western-cape",
+  "id": "us/fl/cape-san-blas-western-cape",
   "name": "Cape San Blas, Western Cape",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.764400482177734,
   "longitude": -85.40249633789062,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728978",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728978",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728978.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728978"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.075999,
+    "HAT": 9.141999,
+    "STND": 0,
+    "MHHW": 8.894,
+    "MHW": 8.876,
+    "DTL": 8.644,
+    "MTL": 8.644,
+    "MSL": 8.636,
+    "MLW": 8.413,
+    "MLLW": 8.394,
+    "GT": 0.5,
+    "MN": 0.463,
+    "DHQ": 0.018,
+    "DLQ": 0.019,
+    "NAVD88": 8.633
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.075999,
-    "HAT": 9.141999,
-    "STND": 0,
-    "MHHW": 8.894,
-    "MHW": 8.876,
-    "DTL": 8.644,
-    "MTL": 8.644,
-    "MSL": 8.636,
-    "MLW": 8.413,
-    "MLLW": 8.394,
-    "GT": 0.5,
-    "MN": 0.463,
-    "DHQ": 0.018,
-    "DLQ": 0.019,
-    "NAVD88": 8.633
-  },
-  "disclaimers": ""
+  ]
 }

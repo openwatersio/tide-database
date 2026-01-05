@@ -1,10 +1,9 @@
 {
-  "id": "us-va-richmond-river-locks",
+  "id": "us/va/richmond-river-locks",
   "name": "Richmond (river locks)",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.525,
   "longitude": -77.42,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638495",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638495",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638495.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638495"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.44700003,
+    "HAT": 1.186,
+    "STND": 0,
+    "MHHW": 0.874,
+    "MHW": 0.807,
+    "DTL": 0.313,
+    "MTL": 0.302,
+    "MSL": 0.339,
+    "MLW": -0.202,
+    "MLLW": -0.248,
+    "GT": 1.123,
+    "MN": 1.011,
+    "DHQ": 0.067,
+    "DLQ": 0.045,
+    "HWI": 8.957,
+    "LWI": 3.654
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 180.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.44700003,
-    "HAT": 1.186,
-    "STND": 0,
-    "MHHW": 0.874,
-    "MHW": 0.807,
-    "DTL": 0.313,
-    "MTL": 0.302,
-    "MSL": 0.339,
-    "MLW": -0.202,
-    "MLLW": -0.248,
-    "GT": 1.123,
-    "MN": 1.011,
-    "DHQ": 0.067,
-    "DLQ": 0.045,
-    "HWI": 8.957,
-    "LWI": 3.654
-  },
-  "disclaimers": ""
+  ]
 }

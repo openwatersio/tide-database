@@ -1,10 +1,9 @@
 {
-  "id": "us-easter-island-chile",
+  "id": "us/easter-island-chile",
   "name": "Easter Island (Chile)",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": -27.13333333333333,
   "longitude": -109.45,
   "timezone": "Pacific/Easter",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2819",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2819",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2819.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2819"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pago-pago-harbor-tutuila-island",
+    "reference": "us/pago-pago-harbor-tutuila-island",
     "height": {
       "type": "ratio",
       "high": 0.86,

@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-handsboro-bridge-bernard-bayou",
+  "id": "us/ms/handsboro-bridge-bernard-bayou",
   "name": "Handsboro Bridge, Bernard Bayou",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.4067,
   "longitude": -89.0267,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8745101",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8745101",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8745101.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8745101"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.06700003,
+    "HAT": 1.237,
+    "STND": 0,
+    "MHHW": 0.991,
+    "MHW": 0.946,
+    "DTL": 0.69,
+    "MTL": 0.695,
+    "MSL": 0.702,
+    "MLW": 0.445,
+    "MLLW": 0.388,
+    "GT": 0.603,
+    "MN": 0.501,
+    "DHQ": 0.045,
+    "DLQ": 0.056
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.06700003,
-    "HAT": 1.237,
-    "STND": 0,
-    "MHHW": 0.991,
-    "MHW": 0.946,
-    "DTL": 0.69,
-    "MTL": 0.695,
-    "MSL": 0.702,
-    "MLW": 0.445,
-    "MLLW": 0.388,
-    "GT": 0.603,
-    "MN": 0.501,
-    "DHQ": 0.045,
-    "DLQ": 0.056
-  },
-  "disclaimers": ""
+  ]
 }

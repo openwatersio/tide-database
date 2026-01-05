@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-north-captiva-island",
+  "id": "us/fl/north-captiva-island",
   "name": "North Captiva Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.605,
   "longitude": -82.2183,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725488",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725488",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725488.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725488"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.061999977,
+    "HAT": 1.181,
+    "STND": 0,
+    "MHHW": 0.968,
+    "MHW": 0.907,
+    "DTL": 0.661,
+    "MTL": 0.672,
+    "MSL": 0.672,
+    "MLW": 0.436,
+    "MLLW": 0.353,
+    "GT": 0.615,
+    "MN": 0.47,
+    "DHQ": 0.061,
+    "DLQ": 0.083
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.061999977,
-    "HAT": 1.181,
-    "STND": 0,
-    "MHHW": 0.968,
-    "MHW": 0.907,
-    "DTL": 0.661,
-    "MTL": 0.672,
-    "MSL": 0.672,
-    "MLW": 0.436,
-    "MLLW": 0.353,
-    "GT": 0.615,
-    "MN": 0.47,
-    "DHQ": 0.061,
-    "DLQ": 0.083
-  },
-  "disclaimers": ""
+  ]
 }

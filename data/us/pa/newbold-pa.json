@@ -1,10 +1,9 @@
 {
-  "id": "us-pa-newbold-pa",
+  "id": "us/pa/newbold-pa",
   "name": "Newbold, Pa.",
-  "continent": "North America",
-  "country": "United States",
   "region": "PA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.13733333333333,
   "longitude": -74.75183333333334,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8548989",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8548989",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8548989.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8548989"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.102,
+    "HAT": 7.3170004,
+    "STND": 0,
+    "MHHW": 6.921,
+    "MHW": 6.813,
+    "DTL": 5.643,
+    "MTL": 5.618,
+    "MSL": 5.682,
+    "MLW": 4.423,
+    "MLLW": 4.364,
+    "GT": 2.558,
+    "MN": 2.39,
+    "DHQ": 0.109,
+    "DLQ": 0.059,
+    "HWI": 7.449,
+    "LWI": 2.48
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 105,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.102,
-    "HAT": 7.3170004,
-    "STND": 0,
-    "MHHW": 6.921,
-    "MHW": 6.813,
-    "DTL": 5.643,
-    "MTL": 5.618,
-    "MSL": 5.682,
-    "MLW": 4.423,
-    "MLLW": 4.364,
-    "GT": 2.558,
-    "MN": 2.39,
-    "DHQ": 0.109,
-    "DLQ": 0.059,
-    "HWI": 7.449,
-    "LWI": 2.48
-  },
-  "disclaimers": ""
+  ]
 }

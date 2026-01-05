@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-st-george-island-sikes-cut",
+  "id": "us/fl/st-george-island-sikes-cut",
   "name": "St. George Island, Sikes Cut",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.613300323486328,
   "longitude": -84.95829772949219,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728669",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728669",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728669.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728669"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.49400002,
+    "HAT": 1.437,
+    "STND": 0,
+    "MHHW": 1.344,
+    "MHW": 1.275,
+    "DTL": 1.044,
+    "MTL": 1.089,
+    "MSL": 1.087,
+    "MLW": 0.903,
+    "MLLW": 0.744,
+    "GT": 0.6,
+    "MN": 0.371,
+    "DHQ": 0.069,
+    "DLQ": 0.159,
+    "NAVD88": 1.154
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.49400002,
-    "HAT": 1.437,
-    "STND": 0,
-    "MHHW": 1.344,
-    "MHW": 1.275,
-    "DTL": 1.044,
-    "MTL": 1.089,
-    "MSL": 1.087,
-    "MLW": 0.903,
-    "MLLW": 0.744,
-    "GT": 0.6,
-    "MN": 0.371,
-    "DHQ": 0.069,
-    "DLQ": 0.159,
-    "NAVD88": 1.154
-  },
-  "disclaimers": ""
+  ]
 }

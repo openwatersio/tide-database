@@ -1,10 +1,9 @@
 {
-  "id": "us-alcan-harbor-shemya-island",
+  "id": "us/alcan-harbor-shemya-island",
   "name": "Alcan Harbor, Shemya Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 52.71670150756836,
   "longitude": 174.0666961669922,
   "timezone": "America/Adak",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2309",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2309",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2309.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2309"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-massacre-bay",
+    "reference": "us/ak/massacre-bay",
     "height": {
       "type": "ratio",
       "high": 1.03,

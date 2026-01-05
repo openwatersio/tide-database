@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-patchogue",
+  "id": "us/ny/patchogue",
   "name": "Patchogue",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.75,
   "longitude": -73,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8514322",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514322",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8514322.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514322"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.162,
+    "HAT": 1.66,
+    "STND": 0,
+    "MHHW": 1.608,
+    "MHW": 1.56,
+    "DTL": 1.399,
+    "MTL": 1.391,
+    "MSL": 1.39,
+    "MLW": 1.221,
+    "MLLW": 1.19,
+    "GT": 0.418,
+    "MN": 0.339,
+    "DHQ": 0.048,
+    "DLQ": 0.031,
+    "HWI": 3.518,
+    "LWI": 10.193
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 240.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.162,
-    "HAT": 1.66,
-    "STND": 0,
-    "MHHW": 1.608,
-    "MHW": 1.56,
-    "DTL": 1.399,
-    "MTL": 1.391,
-    "MSL": 1.39,
-    "MLW": 1.221,
-    "MLLW": 1.19,
-    "GT": 0.418,
-    "MN": 0.339,
-    "DHQ": 0.048,
-    "DLQ": 0.031,
-    "HWI": 3.518,
-    "LWI": 10.193
-  },
-  "disclaimers": ""
+  ]
 }

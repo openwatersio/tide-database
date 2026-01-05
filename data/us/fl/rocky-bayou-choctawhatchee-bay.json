@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-rocky-bayou-choctawhatchee-bay",
+  "id": "us/fl/rocky-bayou-choctawhatchee-bay",
   "name": "Rocky Bayou, Choctawhatchee Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.50670051574707,
   "longitude": -86.44670104980469,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729479",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729479",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729479.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729479"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.1569996,
+    "HAT": 4.6289997,
+    "STND": 0,
+    "MHHW": 4.498,
+    "MHW": 4.492,
+    "DTL": 4.413,
+    "MTL": 4.412,
+    "MSL": 4.411,
+    "MLW": 4.333,
+    "MLLW": 4.329,
+    "GT": 0.169,
+    "MN": 0.159,
+    "DHQ": 0.006,
+    "DLQ": 0.004
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.1569996,
-    "HAT": 4.6289997,
-    "STND": 0,
-    "MHHW": 4.498,
-    "MHW": 4.492,
-    "DTL": 4.413,
-    "MTL": 4.412,
-    "MSL": 4.411,
-    "MLW": 4.333,
-    "MLLW": 4.329,
-    "GT": 0.169,
-    "MN": 0.159,
-    "DHQ": 0.006,
-    "DLQ": 0.004
-  },
-  "disclaimers": ""
+  ]
 }

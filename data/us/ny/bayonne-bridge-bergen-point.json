@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-bayonne-bridge-bergen-point",
+  "id": "us/ny/bayonne-bridge-bergen-point",
   "name": "Bayonne Bridge, Bergen Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.63911111111111,
   "longitude": -74.14630555555556,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8519483",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519483",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8519483.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8519483"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.83300006,
+    "HAT": 3.384,
+    "STND": 0,
+    "MHHW": 2.971,
+    "MHW": 2.873,
+    "DTL": 2.131,
+    "MTL": 2.115,
+    "MSL": 2.137,
+    "MLW": 1.355,
+    "MLLW": 1.291,
+    "GT": 1.681,
+    "MN": 1.518,
+    "DHQ": 0.098,
+    "DLQ": 0.065,
+    "HWI": 0.72,
+    "LWI": 7.31
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 333.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.83300006,
-    "HAT": 3.384,
-    "STND": 0,
-    "MHHW": 2.971,
-    "MHW": 2.873,
-    "DTL": 2.131,
-    "MTL": 2.115,
-    "MSL": 2.137,
-    "MLW": 1.355,
-    "MLLW": 1.291,
-    "GT": 1.681,
-    "MN": 1.518,
-    "DHQ": 0.098,
-    "DLQ": 0.065,
-    "HWI": 0.72,
-    "LWI": 7.31
-  },
-  "disclaimers": ""
+  ]
 }

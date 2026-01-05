@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-washougal",
+  "id": "us/wa/washougal",
   "name": "Washougal",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.57830047607422,
   "longitude": -122.38200378417969,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440047",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440047",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440047.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440047"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.446,
+    "HAT": 5.107,
+    "STND": 0,
+    "MHHW": 5.027,
+    "MHW": 4.912,
+    "DTL": 4.746,
+    "MTL": 4.731,
+    "MSL": 4.711,
+    "MLW": 4.551,
+    "MLLW": 4.464,
+    "GT": 0.564,
+    "MN": 0.362,
+    "DHQ": 0.115,
+    "DLQ": 0.087
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.446,
-    "HAT": 5.107,
-    "STND": 0,
-    "MHHW": 5.027,
-    "MHW": 4.912,
-    "DTL": 4.746,
-    "MTL": 4.731,
-    "MSL": 4.711,
-    "MLW": 4.551,
-    "MLLW": 4.464,
-    "GT": 0.564,
-    "MN": 0.362,
-    "DHQ": 0.115,
-    "DLQ": 0.087
-  },
-  "disclaimers": ""
+  ]
 }

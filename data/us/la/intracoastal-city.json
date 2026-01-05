@@ -1,10 +1,9 @@
 {
-  "id": "us-la-intracoastal-city",
+  "id": "us/la/intracoastal-city",
   "name": "Intracoastal City",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.783000946044922,
   "longitude": -92.15560150146484,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8765785",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765785",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8765785.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765785"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.552,
+    "HAT": 9.477,
+    "STND": 0,
+    "MHHW": 9.354,
+    "MHW": 9.317,
+    "DTL": 9.111,
+    "MTL": 9.131,
+    "MSL": 9.121,
+    "MLW": 8.945,
+    "MLLW": 8.867,
+    "GT": 0.487,
+    "MN": 0.372,
+    "DHQ": 0.037,
+    "DLQ": 0.078,
+    "NAVD88": 9.24
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.552,
-    "HAT": 9.477,
-    "STND": 0,
-    "MHHW": 9.354,
-    "MHW": 9.317,
-    "DTL": 9.111,
-    "MTL": 9.131,
-    "MSL": 9.121,
-    "MLW": 8.945,
-    "MLLW": 8.867,
-    "GT": 0.487,
-    "MN": 0.372,
-    "DHQ": 0.037,
-    "DLQ": 0.078,
-    "NAVD88": 9.24
-  },
-  "disclaimers": ""
+  ]
 }

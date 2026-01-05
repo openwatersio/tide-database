@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-carter-bay-kuskokwim-bay",
+  "id": "us/ak/carter-bay-kuskokwim-bay",
   "name": "Carter Bay, Kuskokwim Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.37801666666667,
   "longitude": -162.0293333333333,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465601",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465601",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465601.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465601"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.1460001,
+    "HAT": 7.943,
+    "STND": 0,
+    "MHHW": 7.171,
+    "MHW": 6.457,
+    "DTL": 5.544,
+    "MTL": 5.288,
+    "MSL": 5.348,
+    "MLW": 4.118,
+    "MLLW": 3.916,
+    "GT": 3.256,
+    "MN": 2.338,
+    "DHQ": 0.715,
+    "DLQ": 0.203,
+    "HWI": 6.5,
+    "LWI": 0.11
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 136.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.1460001,
-    "HAT": 7.943,
-    "STND": 0,
-    "MHHW": 7.171,
-    "MHW": 6.457,
-    "DTL": 5.544,
-    "MTL": 5.288,
-    "MSL": 5.348,
-    "MLW": 4.118,
-    "MLLW": 3.916,
-    "GT": 3.256,
-    "MN": 2.338,
-    "DHQ": 0.715,
-    "DLQ": 0.203,
-    "HWI": 6.5,
-    "LWI": 0.11
-  },
-  "disclaimers": ""
+  ]
 }

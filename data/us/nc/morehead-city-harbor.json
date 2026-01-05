@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-morehead-city-harbor",
+  "id": "us/nc/morehead-city-harbor",
   "name": "Morehead City Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.720001220703125,
   "longitude": -76.71080017089844,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8656502",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656502",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8656502.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8656502"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.53199995,
+    "HAT": 2.229,
+    "STND": 0,
+    "MHHW": 1.867,
+    "MHW": 1.784,
+    "DTL": 1.335,
+    "MTL": 1.315,
+    "MSL": 1.326,
+    "MLW": 0.845,
+    "MLLW": 0.802,
+    "GT": 1.066,
+    "MN": 0.938,
+    "DHQ": 0.084,
+    "DLQ": 0.044,
+    "HWI": 0.34,
+    "LWI": 6.582,
+    "NAVD88": 1.444
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.53199995,
-    "HAT": 2.229,
-    "STND": 0,
-    "MHHW": 1.867,
-    "MHW": 1.784,
-    "DTL": 1.335,
-    "MTL": 1.315,
-    "MSL": 1.326,
-    "MLW": 0.845,
-    "MLLW": 0.802,
-    "GT": 1.066,
-    "MN": 0.938,
-    "DHQ": 0.084,
-    "DLQ": 0.044,
-    "HWI": 0.34,
-    "LWI": 6.582,
-    "NAVD88": 1.444
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-suisun-slough-entrance",
+  "id": "us/ca/suisun-slough-entrance",
   "name": "Suisun Slough entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.1283,
   "longitude": -122.073,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415265",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415265",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415265.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415265"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.531,
+    "HAT": 2.7259998,
+    "STND": 0,
+    "MHHW": 2.439,
+    "MHW": 2.284,
+    "DTL": 1.68,
+    "MTL": 1.714,
+    "MSL": 1.716,
+    "MLW": 1.144,
+    "MLLW": 0.92,
+    "GT": 1.518,
+    "MN": 1.14,
+    "DHQ": 0.155,
+    "DLQ": 0.224,
+    "HWI": 10.062,
+    "LWI": 4.175
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 44,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.531,
-    "HAT": 2.7259998,
-    "STND": 0,
-    "MHHW": 2.439,
-    "MHW": 2.284,
-    "DTL": 1.68,
-    "MTL": 1.714,
-    "MSL": 1.716,
-    "MLW": 1.144,
-    "MLLW": 0.92,
-    "GT": 1.518,
-    "MN": 1.14,
-    "DHQ": 0.155,
-    "DLQ": 0.224,
-    "HWI": 10.062,
-    "LWI": 4.175
-  },
-  "disclaimers": ""
+  ]
 }

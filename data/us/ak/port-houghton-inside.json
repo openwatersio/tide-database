@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-port-houghton-inside",
+  "id": "us/ak/port-houghton-inside",
   "name": "Port Houghton (Inside)",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.32500076293945,
   "longitude": -133.18299865722656,
   "timezone": "America/Juneau",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451798",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451798",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451798.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451798"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.8569999,
+    "HAT": 10.146999,
+    "STND": 0,
+    "MHHW": 8.934,
+    "MHW": 8.65,
+    "DTL": 6.619,
+    "MTL": 6.712,
+    "MSL": 6.74,
+    "MLW": 4.774,
+    "MLLW": 4.304,
+    "GT": 4.631,
+    "MN": 3.875,
+    "DHQ": 0.285,
+    "DLQ": 0.471,
+    "HWI": 9.73,
+    "LWI": 3.473,
+    "NAVD88": 5.222
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.8569999,
-    "HAT": 10.146999,
-    "STND": 0,
-    "MHHW": 8.934,
-    "MHW": 8.65,
-    "DTL": 6.619,
-    "MTL": 6.712,
-    "MSL": 6.74,
-    "MLW": 4.774,
-    "MLLW": 4.304,
-    "GT": 4.631,
-    "MN": 3.875,
-    "DHQ": 0.285,
-    "DLQ": 0.471,
-    "HWI": 9.73,
-    "LWI": 3.473,
-    "NAVD88": 5.222
-  },
-  "disclaimers": ""
+  ]
 }

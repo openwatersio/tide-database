@@ -1,10 +1,9 @@
 {
-  "id": "us-saxis-starling-creek-pocomoke-sound",
+  "id": "us/saxis-starling-creek-pocomoke-sound",
   "name": "Saxis, Starling Creek, Pocomoke Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.92166666666701,
   "longitude": -75.728333333333,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8573777",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8573777",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8573777.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8573777"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-chesapeake-bay-bridge-tunnel",
+    "reference": "us/va/chesapeake-bay-bridge-tunnel",
     "height": {
       "type": "ratio",
       "high": 0.89,

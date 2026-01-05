@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-penuelas-punta-guayanilla",
+  "id": "us/pr/penuelas-punta-guayanilla",
   "name": "Penuelas (Punta Guayanilla)",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.97252777777778,
   "longitude": -66.76177777777778,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9758053",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9758053",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9758053.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9758053"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data are measured by the Puerto Rico Seismic Network (PRSN), located at the University of Puerto Rico Mayaguez. PRSN is a National Ocean Service (NOS) partner that adheres to NOS data collection standards. For more information on the PRSN, visit their <a href=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=45\">website</a>.",
+  "datums": {
+    "LAT": 9.6050005,
+    "HAT": 10.074,
+    "STND": 0,
+    "MHHW": 9.943,
+    "MHW": 9.94,
+    "DTL": 9.837,
+    "MTL": 9.838,
+    "MSL": 9.836,
+    "MLW": 9.737,
+    "MLLW": 9.731,
+    "GT": 0.212,
+    "MN": 0.202,
+    "DHQ": 0.004,
+    "DLQ": 0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 199.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.6050005,
-    "HAT": 10.074,
-    "STND": 0,
-    "MHHW": 9.943,
-    "MHW": 9.94,
-    "DTL": 9.837,
-    "MTL": 9.838,
-    "MSL": 9.836,
-    "MLW": 9.737,
-    "MLLW": 9.731,
-    "GT": 0.212,
-    "MN": 0.202,
-    "DHQ": 0.004,
-    "DLQ": 0.006
-  },
-  "disclaimers": "These data are measured by the Puerto Rico Seismic Network (PRSN), located at the University of Puerto Rico Mayaguez. PRSN is a National Ocean Service (NOS) partner that adheres to NOS data collection standards. For more information on the PRSN, visit their <a href=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=45\">website</a>."
+  ]
 }

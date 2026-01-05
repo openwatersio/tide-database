@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-east-bayou-hwy-65-bridge-east-bay",
+  "id": "us/fl/east-bayou-hwy-65-bridge-east-bay",
   "name": "East Bayou, Hwy 65 bridge, East Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.818899154663086,
   "longitude": -84.85030364990234,
   "timezone": "America/New_York",
@@ -12,14 +11,30 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728593",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728593",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728593.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728593"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 6.73,
+    "MHW": 6.685,
+    "DTL": 6.416,
+    "MTL": 6.468,
+    "MSL": 6.457,
+    "MLW": 6.251,
+    "MLLW": 6.102,
+    "GT": 0.628,
+    "MN": 0.434,
+    "DHQ": 0.045,
+    "DLQ": 0.149,
+    "NAVD88": 6.425
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,21 +332,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 6.73,
-    "MHW": 6.685,
-    "DTL": 6.416,
-    "MTL": 6.468,
-    "MSL": 6.457,
-    "MLW": 6.251,
-    "MLLW": 6.102,
-    "GT": 0.628,
-    "MN": 0.434,
-    "DHQ": 0.045,
-    "DLQ": 0.149,
-    "NAVD88": 6.425
-  },
-  "disclaimers": ""
+  ]
 }

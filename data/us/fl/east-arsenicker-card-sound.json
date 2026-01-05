@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-east-arsenicker-card-sound",
+  "id": "us/fl/east-arsenicker-card-sound",
   "name": "East Arsenicker, Card Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.3733,
   "longitude": -80.29,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723465",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723465",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723465.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723465"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.771,
+    "HAT": 1.396,
+    "STND": 0,
+    "MHHW": 1.219,
+    "MHW": 1.204,
+    "DTL": 1.064,
+    "MTL": 1.069,
+    "MSL": 1.064,
+    "MLW": 0.933,
+    "MLLW": 0.909,
+    "GT": 0.31,
+    "MN": 0.27,
+    "DHQ": 0.015,
+    "DLQ": 0.024,
+    "HWI": 3.61,
+    "LWI": 10.142
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.771,
-    "HAT": 1.396,
-    "STND": 0,
-    "MHHW": 1.219,
-    "MHW": 1.204,
-    "DTL": 1.064,
-    "MTL": 1.069,
-    "MSL": 1.064,
-    "MLW": 0.933,
-    "MLLW": 0.909,
-    "GT": 0.31,
-    "MN": 0.27,
-    "DHQ": 0.015,
-    "DLQ": 0.024,
-    "HWI": 3.61,
-    "LWI": 10.142
-  },
-  "disclaimers": ""
+  ]
 }

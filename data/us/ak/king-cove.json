@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-king-cove",
+  "id": "us/ak/king-cove",
   "name": "King Cove",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.05988888888889,
   "longitude": -162.3261111111111,
   "timezone": "America/Nome",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459881",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459881",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459881.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459881"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.41200006,
+    "HAT": 3.977,
+    "STND": 0,
+    "MHHW": 3.299,
+    "MHW": 3.089,
+    "DTL": 2.258,
+    "MTL": 2.356,
+    "MSL": 2.342,
+    "MLW": 1.622,
+    "MLLW": 1.218,
+    "GT": 2.081,
+    "MN": 1.467,
+    "DHQ": 0.209,
+    "DLQ": 0.404,
+    "HWI": 11.363,
+    "LWI": 4.944,
+    "NAVD88": 1.385
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.41200006,
-    "HAT": 3.977,
-    "STND": 0,
-    "MHHW": 3.299,
-    "MHW": 3.089,
-    "DTL": 2.258,
-    "MTL": 2.356,
-    "MSL": 2.342,
-    "MLW": 1.622,
-    "MLLW": 1.218,
-    "GT": 2.081,
-    "MN": 1.467,
-    "DHQ": 0.209,
-    "DLQ": 0.404,
-    "HWI": 11.363,
-    "LWI": 4.944,
-    "NAVD88": 1.385
-  },
-  "disclaimers": ""
+  ]
 }

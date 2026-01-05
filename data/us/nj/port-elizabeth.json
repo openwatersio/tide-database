@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-port-elizabeth",
+  "id": "us/nj/port-elizabeth",
   "name": "Port Elizabeth",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.673301696777344,
   "longitude": -74.13999938964844,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8530882",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8530882",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8530882.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8530882"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.059000015,
+    "HAT": 2.638,
+    "STND": 0,
+    "MHHW": 2.216,
+    "MHW": 2.112,
+    "DTL": 1.364,
+    "MTL": 1.343,
+    "MSL": 1.368,
+    "MLW": 0.574,
+    "MLLW": 0.512,
+    "GT": 1.704,
+    "MN": 1.538,
+    "DHQ": 0.104,
+    "DLQ": 0.062,
+    "HWI": 0.797,
+    "LWI": 7.436
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 354.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.059000015,
-    "HAT": 2.638,
-    "STND": 0,
-    "MHHW": 2.216,
-    "MHW": 2.112,
-    "DTL": 1.364,
-    "MTL": 1.343,
-    "MSL": 1.368,
-    "MLW": 0.574,
-    "MLLW": 0.512,
-    "GT": 1.704,
-    "MN": 1.538,
-    "DHQ": 0.104,
-    "DLQ": 0.062,
-    "HWI": 0.797,
-    "LWI": 7.436
-  },
-  "disclaimers": ""
+  ]
 }

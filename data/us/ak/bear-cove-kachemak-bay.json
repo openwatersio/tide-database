@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-bear-cove-kachemak-bay",
+  "id": "us/ak/bear-cove-kachemak-bay",
   "name": "Bear Cove, Kachemak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.725,
   "longitude": -151.023,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455595",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455595",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455595.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455595"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -6.0030003,
+    "HAT": 3.1590002,
+    "STND": 0,
+    "MHHW": 1.597,
+    "MHW": 1.346,
+    "DTL": -1.245,
+    "MTL": -1.118,
+    "MSL": -1.088,
+    "MLW": -3.582,
+    "MLLW": -4.087,
+    "GT": 5.684,
+    "MN": 4.927,
+    "DHQ": 0.252,
+    "DLQ": 0.506,
+    "HWI": 11.23,
+    "LWI": 4.89
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -6.0030003,
-    "HAT": 3.1590002,
-    "STND": 0,
-    "MHHW": 1.597,
-    "MHW": 1.346,
-    "DTL": -1.245,
-    "MTL": -1.118,
-    "MSL": -1.088,
-    "MLW": -3.582,
-    "MLLW": -4.087,
-    "GT": 5.684,
-    "MN": 4.927,
-    "DHQ": 0.252,
-    "DLQ": 0.506,
-    "HWI": 11.23,
-    "LWI": 4.89
-  },
-  "disclaimers": ""
+  ]
 }

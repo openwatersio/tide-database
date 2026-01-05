@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-walkers-landing-pickering-passage",
+  "id": "us/wa/walkers-landing-pickering-passage",
   "name": "Walkers Landing, Pickering Passage",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.2817,
   "longitude": -122.923,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9446489",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446489",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9446489.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446489"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-seattle-madison-st-elliott-bay",
+    "reference": "us/wa/seattle-madison-st-elliott-bay",
     "height": {
       "type": "ratio",
       "high": 1.26,

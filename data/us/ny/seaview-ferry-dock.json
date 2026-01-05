@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-seaview-ferry-dock",
+  "id": "us/ny/seaview-ferry-dock",
   "name": "Seaview Ferry Dock",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.64925,
   "longitude": -73.15061111111112,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8514779",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514779",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8514779.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8514779"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.779,
+    "HAT": 9.4800005,
+    "STND": 0,
+    "MHHW": 9.35,
+    "MHW": 9.307,
+    "DTL": 9.129,
+    "MTL": 9.128,
+    "MSL": 9.123,
+    "MLW": 8.949,
+    "MLLW": 8.908,
+    "GT": 0.443,
+    "MN": 0.358,
+    "DHQ": 0.043,
+    "DLQ": 0.041,
+    "HWI": 2.61,
+    "LWI": 9.02
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.779,
-    "HAT": 9.4800005,
-    "STND": 0,
-    "MHHW": 9.35,
-    "MHW": 9.307,
-    "DTL": 9.129,
-    "MTL": 9.128,
-    "MSL": 9.123,
-    "MLW": 8.949,
-    "MLLW": 8.908,
-    "GT": 0.443,
-    "MN": 0.358,
-    "DHQ": 0.043,
-    "DLQ": 0.041,
-    "HWI": 2.61,
-    "LWI": 9.02
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-gulfport-harbor-mississippi-sound",
+  "id": "us/ms/gulfport-harbor-mississippi-sound",
   "name": "Gulfport Harbor, Mississippi Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.36,
   "longitude": -89.0817,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8745557",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8745557",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8745557.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8745557"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.34999996,
+    "HAT": 1.5179999,
+    "STND": 0,
+    "MHHW": 1.248,
+    "MHW": 1.22,
+    "DTL": 0.985,
+    "MTL": 0.986,
+    "MSL": 0.988,
+    "MLW": 0.751,
+    "MLLW": 0.721,
+    "GT": 0.527,
+    "MN": 0.468,
+    "DHQ": 0.028,
+    "DLQ": 0.03,
+    "NAVD88": 0.948
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 173.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.34999996,
-    "HAT": 1.5179999,
-    "STND": 0,
-    "MHHW": 1.248,
-    "MHW": 1.22,
-    "DTL": 0.985,
-    "MTL": 0.986,
-    "MSL": 0.988,
-    "MLW": 0.751,
-    "MLLW": 0.721,
-    "GT": 0.527,
-    "MN": 0.468,
-    "DHQ": 0.028,
-    "DLQ": 0.03,
-    "NAVD88": 0.948
-  },
-  "disclaimers": ""
+  ]
 }

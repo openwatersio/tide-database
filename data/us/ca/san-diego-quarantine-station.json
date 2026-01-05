@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-san-diego-quarantine-station",
+  "id": "us/ca/san-diego-quarantine-station",
   "name": "San Diego, Quarantine Station",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.7033,
   "longitude": -117.235,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410166",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410166",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410166.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410166"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-san-diego-broadway",
+    "reference": "us/ca/san-diego-broadway",
     "height": {
       "type": "ratio",
       "high": 0.96,

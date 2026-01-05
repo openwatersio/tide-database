@@ -1,10 +1,9 @@
 {
-  "id": "us-mist-harbor-nagai-island",
+  "id": "us/mist-harbor-nagai-island",
   "name": "Mist Harbor, Nagai Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.13333333333299,
   "longitude": -159.85,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2119",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2119",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2119.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2119"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sand-point-popof-island",
+    "reference": "us/ak/sand-point-popof-island",
     "height": {
       "type": "ratio",
       "high": 0.97,

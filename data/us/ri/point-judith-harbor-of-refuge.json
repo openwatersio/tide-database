@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-point-judith-harbor-of-refuge",
+  "id": "us/ri/point-judith-harbor-of-refuge",
   "name": "Point Judith, Harbor of Refuge",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.3633,
   "longitude": -71.49,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8455083",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8455083",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8455083.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8455083"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.263,
+    "HAT": 1.4679999,
+    "STND": 0,
+    "MHHW": 1.101,
+    "MHW": 1.024,
+    "DTL": 0.586,
+    "MTL": 0.567,
+    "MSL": 0.539,
+    "MLW": 0.109,
+    "MLLW": 0.071,
+    "GT": 1.03,
+    "MN": 0.915,
+    "DHQ": 0.077,
+    "DLQ": 0.039,
+    "HWI": 0.262,
+    "LWI": 6.464
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 180.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.263,
-    "HAT": 1.4679999,
-    "STND": 0,
-    "MHHW": 1.101,
-    "MHW": 1.024,
-    "DTL": 0.586,
-    "MTL": 0.567,
-    "MSL": 0.539,
-    "MLW": 0.109,
-    "MLLW": 0.071,
-    "GT": 1.03,
-    "MN": 0.915,
-    "DHQ": 0.077,
-    "DLQ": 0.039,
-    "HWI": 0.262,
-    "LWI": 6.464
-  },
-  "disclaimers": ""
+  ]
 }

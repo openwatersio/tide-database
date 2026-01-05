@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-north-charleston-ashley-river",
+  "id": "us/sc/north-charleston-ashley-river",
   "name": "North Charleston, Ashley river",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.900299072265625,
   "longitude": -80.11750030517578,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8664699",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664699",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8664699.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664699"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.5360003,
+    "HAT": 9.436,
+    "STND": 0,
+    "MHHW": 8.861,
+    "MHW": 8.776,
+    "DTL": 7.884,
+    "MTL": 7.875,
+    "MSL": 8.026,
+    "MLW": 6.974,
+    "MLLW": 6.906,
+    "GT": 1.955,
+    "MN": 1.801,
+    "DHQ": 0.086,
+    "DLQ": 0.069,
+    "HWI": 2.086,
+    "LWI": 7.853,
+    "NAVD88": 7.993
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.5360003,
-    "HAT": 9.436,
-    "STND": 0,
-    "MHHW": 8.861,
-    "MHW": 8.776,
-    "DTL": 7.884,
-    "MTL": 7.875,
-    "MSL": 8.026,
-    "MLW": 6.974,
-    "MLLW": 6.906,
-    "GT": 1.955,
-    "MN": 1.801,
-    "DHQ": 0.086,
-    "DLQ": 0.069,
-    "HWI": 2.086,
-    "LWI": 7.853,
-    "NAVD88": 7.993
-  },
-  "disclaimers": ""
+  ]
 }

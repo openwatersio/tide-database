@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-clearwater",
+  "id": "us/fl/clearwater",
   "name": "Clearwater",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.955,
   "longitude": -82.8067,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726706",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726706",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726706.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726706"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-cedar-key",
+    "reference": "us/fl/cedar-key",
     "height": {
       "type": "ratio",
       "high": 0.65,

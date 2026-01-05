@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-strathmere-strathmere-bay",
+  "id": "us/nj/strathmere-strathmere-bay",
   "name": "Strathmere, Strathmere Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.2,
   "longitude": -74.6567,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8535163",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535163",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8535163.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535163"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nj-atlantic-city-ocean",
+    "reference": "us/nj/atlantic-city-ocean",
     "height": {
       "type": "ratio",
       "high": 0.95,

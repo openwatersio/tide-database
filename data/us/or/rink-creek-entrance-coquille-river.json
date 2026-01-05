@@ -1,10 +1,9 @@
 {
-  "id": "us-or-rink-creek-entrance-coquille-river",
+  "id": "us/or/rink-creek-entrance-coquille-river",
   "name": "Rink Creek Entrance, Coquille River",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.157901763916016,
   "longitude": -124.18180084228516,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9432436",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9432436",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9432436.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9432436"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.193,
+    "HAT": 6.6159997,
+    "STND": 0,
+    "MHHW": 6.175,
+    "MHW": 5.958,
+    "DTL": 5.38,
+    "MTL": 5.351,
+    "MSL": 5.344,
+    "MLW": 4.744,
+    "MLLW": 4.585,
+    "GT": 1.59,
+    "MN": 1.214,
+    "DHQ": 0.217,
+    "DLQ": 0.159,
+    "HWI": 10.107,
+    "LWI": 4.547
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.193,
-    "HAT": 6.6159997,
-    "STND": 0,
-    "MHHW": 6.175,
-    "MHW": 5.958,
-    "DTL": 5.38,
-    "MTL": 5.351,
-    "MSL": 5.344,
-    "MLW": 4.744,
-    "MLLW": 4.585,
-    "GT": 1.59,
-    "MN": 1.214,
-    "DHQ": 0.217,
-    "DLQ": 0.159,
-    "HWI": 10.107,
-    "LWI": 4.547
-  },
-  "disclaimers": ""
+  ]
 }

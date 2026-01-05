@@ -1,10 +1,9 @@
 {
-  "id": "us-md-cherry-island-beckwiths-creek",
+  "id": "us/md/cherry-island-beckwiths-creek",
   "name": "Cherry Island, Beckwiths Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.5617,
   "longitude": -76.2083,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8571881",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571881",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8571881.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571881"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-baltimore-fort-mchenry",
+    "reference": "us/md/baltimore-fort-mchenry",
     "height": {
       "type": "ratio",
       "high": 1.18,

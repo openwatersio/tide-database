@@ -1,10 +1,9 @@
 {
-  "id": "us-hi-haleiwa-waialua-bay",
+  "id": "us/hi/haleiwa-waialua-bay",
   "name": "Haleiwa, Waialua Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "HI",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 21.5983,
   "longitude": -158.108,
   "timezone": "Pacific/Honolulu",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1612668",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1612668",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1612668.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1612668"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-hi-honolulu",
+    "reference": "us/hi/honolulu",
     "height": {
       "type": "ratio",
       "high": 0.8,

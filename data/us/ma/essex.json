@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-essex",
+  "id": "us/ma/essex",
   "name": "Essex",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.6317,
   "longitude": -70.7767,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8441771",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8441771",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8441771.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8441771"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.51499987,
+    "HAT": 4.769,
+    "STND": 0,
+    "MHHW": 4.131,
+    "MHW": 4.001,
+    "DTL": 2.619,
+    "MTL": 2.601,
+    "MSL": 2.656,
+    "MLW": 1.202,
+    "MLLW": 1.106,
+    "GT": 3.025,
+    "MN": 2.799,
+    "DHQ": 0.131,
+    "DLQ": 0.096,
+    "HWI": 3.946,
+    "LWI": 10.263
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 251.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.51499987,
-    "HAT": 4.769,
-    "STND": 0,
-    "MHHW": 4.131,
-    "MHW": 4.001,
-    "DTL": 2.619,
-    "MTL": 2.601,
-    "MSL": 2.656,
-    "MLW": 1.202,
-    "MLLW": 1.106,
-    "GT": 3.025,
-    "MN": 2.799,
-    "DHQ": 0.131,
-    "DLQ": 0.096,
-    "HWI": 3.946,
-    "LWI": 10.263
-  },
-  "disclaimers": ""
+  ]
 }

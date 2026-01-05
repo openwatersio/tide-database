@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-locust-point-hog-island",
+  "id": "us/fl/locust-point-hog-island",
   "name": "Locust Point, Hog Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.93,
   "longitude": -82.1367,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725745",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725745",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725745.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725745"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.596,
+    "HAT": 1.714,
+    "STND": 0,
+    "MHHW": 1.471,
+    "MHW": 1.375,
+    "DTL": 1.174,
+    "MTL": 1.19,
+    "MSL": 1.184,
+    "MLW": 1.004,
+    "MLLW": 0.877,
+    "GT": 0.595,
+    "MN": 0.372,
+    "DHQ": 0.096,
+    "DLQ": 0.127,
+    "HWI": 8.255,
+    "LWI": 2.03
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.596,
-    "HAT": 1.714,
-    "STND": 0,
-    "MHHW": 1.471,
-    "MHW": 1.375,
-    "DTL": 1.174,
-    "MTL": 1.19,
-    "MSL": 1.184,
-    "MLW": 1.004,
-    "MLLW": 0.877,
-    "GT": 0.595,
-    "MN": 0.372,
-    "DHQ": 0.096,
-    "DLQ": 0.127,
-    "HWI": 8.255,
-    "LWI": 2.03
-  },
-  "disclaimers": ""
+  ]
 }

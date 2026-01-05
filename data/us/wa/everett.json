@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-everett",
+  "id": "us/wa/everett",
   "name": "Everett",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.98,
   "longitude": -122.223,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9447659",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447659",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9447659.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447659"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.384,
+    "HAT": 3.9359999,
+    "STND": 0,
+    "MHHW": 3.3,
+    "MHW": 3.034,
+    "DTL": 1.609,
+    "MTL": 1.904,
+    "MSL": 1.896,
+    "MLW": 0.774,
+    "MLLW": -0.08,
+    "GT": 3.381,
+    "MN": 2.259,
+    "DHQ": 0.266,
+    "DLQ": 0.855,
+    "HWI": 0.411,
+    "LWI": 6.613,
+    "NAVD88": 0.54
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.384,
-    "HAT": 3.9359999,
-    "STND": 0,
-    "MHHW": 3.3,
-    "MHW": 3.034,
-    "DTL": 1.609,
-    "MTL": 1.904,
-    "MSL": 1.896,
-    "MLW": 0.774,
-    "MLLW": -0.08,
-    "GT": 3.381,
-    "MN": 2.259,
-    "DHQ": 0.266,
-    "DLQ": 0.855,
-    "HWI": 0.411,
-    "LWI": 6.613,
-    "NAVD88": 0.54
-  },
-  "disclaimers": ""
+  ]
 }

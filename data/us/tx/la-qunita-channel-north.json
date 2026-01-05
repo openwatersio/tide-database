@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-la-qunita-channel-north",
+  "id": "us/tx/la-qunita-channel-north",
   "name": "La Qunita Channel North",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.880399703979492,
   "longitude": -97.27349853515625,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8775132",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775132",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8775132.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775132"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.067,
+    "HAT": 2.4789999,
+    "STND": 0,
+    "MHHW": 2.39,
+    "MHW": 2.383,
+    "DTL": 2.282,
+    "MTL": 2.284,
+    "MSL": 2.297,
+    "MLW": 2.184,
+    "MLLW": 2.173,
+    "GT": 0.217,
+    "MN": 0.2,
+    "DHQ": 0.007,
+    "DLQ": 0.01,
+    "NAVD88": 2.153
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 272,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.067,
-    "HAT": 2.4789999,
-    "STND": 0,
-    "MHHW": 2.39,
-    "MHW": 2.383,
-    "DTL": 2.282,
-    "MTL": 2.284,
-    "MSL": 2.297,
-    "MLW": 2.184,
-    "MLLW": 2.173,
-    "GT": 0.217,
-    "MN": 0.2,
-    "DHQ": 0.007,
-    "DLQ": 0.01,
-    "NAVD88": 2.153
-  },
-  "disclaimers": ""
+  ]
 }

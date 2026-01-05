@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-isanotski-strait-entrance-ikatan-bay",
+  "id": "us/ak/isanotski-strait-entrance-ikatan-bay",
   "name": "Isanotski Strait Entrance, Ikatan Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.77844444444445,
   "longitude": -163.3642777777778,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462961",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462961",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462961.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462961"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.9929996,
+    "HAT": 10.471,
+    "STND": 0,
+    "MHHW": 9.82,
+    "MHW": 9.618,
+    "DTL": 8.815,
+    "MTL": 8.921,
+    "MSL": 8.907,
+    "MLW": 8.224,
+    "MLLW": 7.81,
+    "GT": 2.01,
+    "MN": 1.394,
+    "DHQ": 0.202,
+    "DLQ": 0.414,
+    "HWI": 11.594,
+    "LWI": 5.185
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.9929996,
-    "HAT": 10.471,
-    "STND": 0,
-    "MHHW": 9.82,
-    "MHW": 9.618,
-    "DTL": 8.815,
-    "MTL": 8.921,
-    "MSL": 8.907,
-    "MLW": 8.224,
-    "MLLW": 7.81,
-    "GT": 2.01,
-    "MN": 1.394,
-    "DHQ": 0.202,
-    "DLQ": 0.414,
-    "HWI": 11.594,
-    "LWI": 5.185
-  },
-  "disclaimers": ""
+  ]
 }

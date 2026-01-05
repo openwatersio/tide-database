@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-la-push-quillayute-river",
+  "id": "us/wa/la-push-quillayute-river",
   "name": "La Push, Quillayute River",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.91283611111111,
   "longitude": -124.6357388888889,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9442396",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9442396",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9442396.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9442396"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.59599996,
+    "HAT": 4.962,
+    "STND": 0,
+    "MHHW": 4.174,
+    "MHW": 3.958,
+    "DTL": 2.875,
+    "MTL": 2.977,
+    "MSL": 2.971,
+    "MLW": 1.995,
+    "MLLW": 1.577,
+    "GT": 2.596,
+    "MN": 1.963,
+    "DHQ": 0.215,
+    "DLQ": 0.418,
+    "HWI": 8.193,
+    "LWI": 1.992,
+    "NAVD88": 2.017
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 288.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.59599996,
-    "HAT": 4.962,
-    "STND": 0,
-    "MHHW": 4.174,
-    "MHW": 3.958,
-    "DTL": 2.875,
-    "MTL": 2.977,
-    "MSL": 2.971,
-    "MLW": 1.995,
-    "MLLW": 1.577,
-    "GT": 2.596,
-    "MN": 1.963,
-    "DHQ": 0.215,
-    "DLQ": 0.418,
-    "HWI": 8.193,
-    "LWI": 1.992,
-    "NAVD88": 2.017
-  },
-  "disclaimers": ""
+  ]
 }

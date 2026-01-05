@@ -1,10 +1,9 @@
 {
-  "id": "us-md-mccreedy-s-creek-fishing-bay",
+  "id": "us/md/mccreedy-s-creek-fishing-bay",
   "name": "McCreedy's Creek, Fishing Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.3,
   "longitude": -76.005,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8571559",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571559",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8571559.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8571559"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.941,
+    "HAT": 2.947,
+    "STND": 0,
+    "MHHW": 2.78,
+    "MHW": 2.729,
+    "DTL": 2.416,
+    "MTL": 2.409,
+    "MSL": 2.408,
+    "MLW": 2.09,
+    "MLLW": 2.051,
+    "GT": 0.729,
+    "MN": 0.638,
+    "DHQ": 0.052,
+    "DLQ": 0.039,
+    "HWI": 6.449,
+    "LWI": 0.777
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 59.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.941,
-    "HAT": 2.947,
-    "STND": 0,
-    "MHHW": 2.78,
-    "MHW": 2.729,
-    "DTL": 2.416,
-    "MTL": 2.409,
-    "MSL": 2.408,
-    "MLW": 2.09,
-    "MLLW": 2.051,
-    "GT": 0.729,
-    "MN": 0.638,
-    "DHQ": 0.052,
-    "DLQ": 0.039,
-    "HWI": 6.449,
-    "LWI": 0.777
-  },
-  "disclaimers": ""
+  ]
 }

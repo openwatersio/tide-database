@@ -1,10 +1,9 @@
 {
-  "id": "us-puerto-de-gibara",
+  "id": "us/puerto-de-gibara",
   "name": "Puerto de Gibara",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 21.116666666667008,
   "longitude": -76.116666666667,
   "timezone": "America/Havana",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4653",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4653",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4653.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4653"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-hampton-roads-sewells-point",
+    "reference": "us/va/hampton-roads-sewells-point",
     "height": {
       "type": "ratio",
       "high": 0.76,

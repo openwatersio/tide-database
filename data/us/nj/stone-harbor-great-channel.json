@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-stone-harbor-great-channel",
+  "id": "us/nj/stone-harbor-great-channel",
   "name": "Stone Harbor, Great Channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.05670166015625,
   "longitude": -74.76499938964844,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8535581",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535581",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8535581.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8535581"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.147,
+    "HAT": 0.949,
+    "STND": 0,
+    "MHHW": 0.633,
+    "MHW": 0.514,
+    "DTL": -0.088,
+    "MTL": -0.123,
+    "MSL": -0.099,
+    "MLW": -0.761,
+    "MLLW": -0.811,
+    "GT": 1.445,
+    "MN": 1.276,
+    "DHQ": 0.119,
+    "DLQ": 0.05,
+    "HWI": 0.828,
+    "LWI": 7.057,
+    "NAVD88": 0
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 330.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.147,
-    "HAT": 0.949,
-    "STND": 0,
-    "MHHW": 0.633,
-    "MHW": 0.514,
-    "DTL": -0.088,
-    "MTL": -0.123,
-    "MSL": -0.099,
-    "MLW": -0.761,
-    "MLLW": -0.811,
-    "GT": 1.445,
-    "MN": 1.276,
-    "DHQ": 0.119,
-    "DLQ": 0.05,
-    "HWI": 0.828,
-    "LWI": 7.057,
-    "NAVD88": 0
-  },
-  "disclaimers": ""
+  ]
 }

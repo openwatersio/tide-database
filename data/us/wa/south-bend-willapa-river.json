@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-south-bend-willapa-river",
+  "id": "us/wa/south-bend-willapa-river",
   "name": "South Bend, Willapa River",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.6633,
   "longitude": -123.798,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9440875",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440875",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9440875.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9440875"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.46099997,
+    "HAT": 5.119,
+    "STND": 0,
+    "MHHW": 4.386,
+    "MHW": 4.168,
+    "DTL": 2.89,
+    "MTL": 3.001,
+    "MSL": 3.046,
+    "MLW": 1.834,
+    "MLLW": 1.394,
+    "GT": 2.992,
+    "MN": 2.334,
+    "DHQ": 0.217,
+    "DLQ": 0.44,
+    "HWI": 9.019,
+    "LWI": 2.784,
+    "NAVD88": 1.821
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.46099997,
-    "HAT": 5.119,
-    "STND": 0,
-    "MHHW": 4.386,
-    "MHW": 4.168,
-    "DTL": 2.89,
-    "MTL": 3.001,
-    "MSL": 3.046,
-    "MLW": 1.834,
-    "MLLW": 1.394,
-    "GT": 2.992,
-    "MN": 2.334,
-    "DHQ": 0.217,
-    "DLQ": 0.44,
-    "HWI": 9.019,
-    "LWI": 2.784,
-    "NAVD88": 1.821
-  },
-  "disclaimers": ""
+  ]
 }

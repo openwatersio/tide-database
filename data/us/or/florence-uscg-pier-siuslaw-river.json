@@ -1,10 +1,9 @@
 {
-  "id": "us-or-florence-uscg-pier-siuslaw-river",
+  "id": "us/or/florence-uscg-pier-siuslaw-river",
   "name": "Florence USCG Pier, Siuslaw River",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.00210189819336,
   "longitude": -124.12300109863281,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9434098",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9434098",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9434098.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9434098"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.403,
+    "HAT": 9.027,
+    "STND": 0,
+    "MHHW": 8.415,
+    "MHW": 8.22,
+    "DTL": 7.286,
+    "MTL": 7.378,
+    "MSL": 7.376,
+    "MLW": 6.536,
+    "MLLW": 6.157,
+    "GT": 2.258,
+    "MN": 1.684,
+    "DHQ": 0.195,
+    "DLQ": 0.379,
+    "HWI": 8.073,
+    "LWI": 1.79
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 212.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.403,
-    "HAT": 9.027,
-    "STND": 0,
-    "MHHW": 8.415,
-    "MHW": 8.22,
-    "DTL": 7.286,
-    "MTL": 7.378,
-    "MSL": 7.376,
-    "MLW": 6.536,
-    "MLLW": 6.157,
-    "GT": 2.258,
-    "MN": 1.684,
-    "DHQ": 0.195,
-    "DLQ": 0.379,
-    "HWI": 8.073,
-    "LWI": 1.79
-  },
-  "disclaimers": ""
+  ]
 }

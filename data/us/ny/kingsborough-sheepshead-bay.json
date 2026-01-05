@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-kingsborough-sheepshead-bay",
+  "id": "us/ny/kingsborough-sheepshead-bay",
   "name": "Kingsborough, Sheepshead Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.581199645996094,
   "longitude": -73.93379974365234,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8517756",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8517756",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8517756.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8517756"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.852,
+    "HAT": 8.3,
+    "STND": 0,
+    "MHHW": 7.915,
+    "MHW": 7.807,
+    "DTL": 7.078,
+    "MTL": 7.056,
+    "MSL": 7.051,
+    "MLW": 6.306,
+    "MLLW": 6.241,
+    "GT": 1.674,
+    "MN": 1.502,
+    "DHQ": 0.108,
+    "DLQ": 0.064,
+    "HWI": 0.366,
+    "LWI": 6.587
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 269.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.852,
-    "HAT": 8.3,
-    "STND": 0,
-    "MHHW": 7.915,
-    "MHW": 7.807,
-    "DTL": 7.078,
-    "MTL": 7.056,
-    "MSL": 7.051,
-    "MLW": 6.306,
-    "MLLW": 6.241,
-    "GT": 1.674,
-    "MN": 1.502,
-    "DHQ": 0.108,
-    "DLQ": 0.064,
-    "HWI": 0.366,
-    "LWI": 6.587
-  },
-  "disclaimers": ""
+  ]
 }

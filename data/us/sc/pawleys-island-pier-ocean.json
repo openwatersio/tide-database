@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-pawleys-island-pier-ocean",
+  "id": "us/sc/pawleys-island-pier-ocean",
   "name": "Pawleys Island Pier (ocean)",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.4317,
   "longitude": -79.1167,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8662006",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662006",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8662006.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8662006"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.59599996,
+    "HAT": 3.2979999,
+    "STND": 0,
+    "MHHW": 2.818,
+    "MHW": 2.699,
+    "DTL": 1.981,
+    "MTL": 1.95,
+    "MSL": 1.954,
+    "MLW": 1.2,
+    "MLLW": 1.144,
+    "GT": 1.674,
+    "MN": 1.499,
+    "DHQ": 0.118,
+    "DLQ": 0.056,
+    "HWI": 12.414,
+    "LWI": 6.274
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 314.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.59599996,
-    "HAT": 3.2979999,
-    "STND": 0,
-    "MHHW": 2.818,
-    "MHW": 2.699,
-    "DTL": 1.981,
-    "MTL": 1.95,
-    "MSL": 1.954,
-    "MLW": 1.2,
-    "MLLW": 1.144,
-    "GT": 1.674,
-    "MN": 1.499,
-    "DHQ": 0.118,
-    "DLQ": 0.056,
-    "HWI": 12.414,
-    "LWI": 6.274
-  },
-  "disclaimers": ""
+  ]
 }

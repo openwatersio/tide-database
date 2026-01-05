@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-brigantine-channel-hoffman-thorofare",
+  "id": "us/nj/brigantine-channel-hoffman-thorofare",
   "name": "Brigantine Channel @ Hoffman Thorofare",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.435,
   "longitude": -74.3633,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8534496",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534496",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8534496.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534496"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nj-atlantic-city-ocean",
+    "reference": "us/nj/atlantic-city-ocean",
     "height": {
       "type": "ratio",
       "high": 0.9,

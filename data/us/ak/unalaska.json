@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-unalaska",
+  "id": "us/ak/unalaska",
   "name": "Unalaska",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 53.87919444444444,
   "longitude": -166.5403055555556,
   "timezone": "America/Nome",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462620",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462620",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462620.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462620"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.23600006,
+    "HAT": 2.357,
+    "STND": 0,
+    "MHHW": 1.89,
+    "MHW": 1.803,
+    "DTL": 1.341,
+    "MTL": 1.439,
+    "MSL": 1.427,
+    "MLW": 1.075,
+    "MLLW": 0.792,
+    "GT": 1.098,
+    "MN": 0.728,
+    "DHQ": 0.087,
+    "DLQ": 0.283,
+    "HWI": 2.79,
+    "LWI": 8.98,
+    "NAVD88": 0.712
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 39.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.23600006,
-    "HAT": 2.357,
-    "STND": 0,
-    "MHHW": 1.89,
-    "MHW": 1.803,
-    "DTL": 1.341,
-    "MTL": 1.439,
-    "MSL": 1.427,
-    "MLW": 1.075,
-    "MLLW": 0.792,
-    "GT": 1.098,
-    "MN": 0.728,
-    "DHQ": 0.087,
-    "DLQ": 0.283,
-    "HWI": 2.79,
-    "LWI": 8.98,
-    "NAVD88": 0.712
-  },
-  "disclaimers": ""
+  ]
 }

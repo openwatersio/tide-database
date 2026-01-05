@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-north-foreland",
+  "id": "us/ak/north-foreland",
   "name": "North Foreland",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 61.04330555555556,
   "longitude": -151.163,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455869",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455869",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455869.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455869"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.3789997,
+    "HAT": 10.681999,
+    "STND": 0,
+    "MHHW": 9.285,
+    "MHW": 9.076,
+    "DTL": 6.091,
+    "MTL": 6.316,
+    "MSL": 6.404,
+    "MLW": 3.557,
+    "MLLW": 2.898,
+    "GT": 6.387,
+    "MN": 5.519,
+    "DHQ": 0.209,
+    "DLQ": 0.659,
+    "HWI": 2.559,
+    "LWI": 8.907
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.3789997,
-    "HAT": 10.681999,
-    "STND": 0,
-    "MHHW": 9.285,
-    "MHW": 9.076,
-    "DTL": 6.091,
-    "MTL": 6.316,
-    "MSL": 6.404,
-    "MLW": 3.557,
-    "MLLW": 2.898,
-    "GT": 6.387,
-    "MN": 5.519,
-    "DHQ": 0.209,
-    "DLQ": 0.659,
-    "HWI": 2.559,
-    "LWI": 8.907
-  },
-  "disclaimers": ""
+  ]
 }

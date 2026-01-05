@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-port-leon",
+  "id": "us/fl/port-leon",
   "name": "Port Leon",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.124399185180664,
   "longitude": -84.14900207519531,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728104",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728104",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728104.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728104"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.577,
+    "HAT": 8.455,
+    "STND": 0,
+    "MHHW": 8.125,
+    "MHW": 8.065,
+    "DTL": 7.605,
+    "MTL": 7.671,
+    "MSL": 7.682,
+    "MLW": 7.277,
+    "MLLW": 7.085,
+    "GT": 1.04,
+    "MN": 0.787,
+    "DHQ": 0.061,
+    "DLQ": 0.192,
+    "HWI": 7.963,
+    "LWI": 1.507,
+    "NAVD88": 7.653
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.577,
-    "HAT": 8.455,
-    "STND": 0,
-    "MHHW": 8.125,
-    "MHW": 8.065,
-    "DTL": 7.605,
-    "MTL": 7.671,
-    "MSL": 7.682,
-    "MLW": 7.277,
-    "MLLW": 7.085,
-    "GT": 1.04,
-    "MN": 0.787,
-    "DHQ": 0.061,
-    "DLQ": 0.192,
-    "HWI": 7.963,
-    "LWI": 1.507,
-    "NAVD88": 7.653
-  },
-  "disclaimers": ""
+  ]
 }

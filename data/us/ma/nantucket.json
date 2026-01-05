@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-nantucket",
+  "id": "us/ma/nantucket",
   "name": "NANTUCKET",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.28499984741211,
   "longitude": -70.0967025756836,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8449130",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8449130",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8449130.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8449130"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.645149,
+    "HAT": 2.2781491,
+    "STND": 0,
+    "MHHW": 2.004,
+    "MHW": 1.9,
+    "DTL": 1.459,
+    "MTL": 1.438,
+    "MSL": 1.454,
+    "MLW": 0.976,
+    "MLLW": 0.915,
+    "GT": 1.089,
+    "MN": 0.925,
+    "DHQ": 0.104,
+    "DLQ": 0.061,
+    "HWI": 4.874,
+    "LWI": 10.64
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 134.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.645149,
-    "HAT": 2.2781491,
-    "STND": 0,
-    "MHHW": 2.004,
-    "MHW": 1.9,
-    "DTL": 1.459,
-    "MTL": 1.438,
-    "MSL": 1.454,
-    "MLW": 0.976,
-    "MLLW": 0.915,
-    "GT": 1.089,
-    "MN": 0.925,
-    "DHQ": 0.104,
-    "DLQ": 0.061,
-    "HWI": 4.874,
-    "LWI": 10.64
-  },
-  "disclaimers": ""
+  ]
 }

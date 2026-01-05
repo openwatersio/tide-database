@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-la-jolla-scripps-institution-wharf",
+  "id": "us/ca/la-jolla-scripps-institution-wharf",
   "name": "La Jolla (Scripps Institution Wharf)",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.86688888888889,
   "longitude": -117.2571388888889,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410230",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410230",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410230.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410230"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.7193351,
+    "HAT": 3.5273352,
+    "STND": 0,
+    "MHHW": 2.955,
+    "MHW": 2.733,
+    "DTL": 2.143,
+    "MTL": 2.17,
+    "MSL": 2.163,
+    "MLW": 1.607,
+    "MLLW": 1.331,
+    "GT": 1.624,
+    "MN": 1.126,
+    "DHQ": 0.222,
+    "DLQ": 0.276,
+    "HWI": 5.007,
+    "LWI": 11.072,
+    "NAVD88": 1.389
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.7193351,
-    "HAT": 3.5273352,
-    "STND": 0,
-    "MHHW": 2.955,
-    "MHW": 2.733,
-    "DTL": 2.143,
-    "MTL": 2.17,
-    "MSL": 2.163,
-    "MLW": 1.607,
-    "MLLW": 1.331,
-    "GT": 1.624,
-    "MN": 1.126,
-    "DHQ": 0.222,
-    "DLQ": 0.276,
-    "HWI": 5.007,
-    "LWI": 11.072,
-    "NAVD88": 1.389
-  },
-  "disclaimers": ""
+  ]
 }

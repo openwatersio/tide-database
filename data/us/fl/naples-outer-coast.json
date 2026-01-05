@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-naples-outer-coast",
+  "id": "us/fl/naples-outer-coast",
   "name": "Naples (outer coast)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.1316667,
   "longitude": -81.8075,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725110",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725110",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725110.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725110"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.22299999,
+    "HAT": 1.819,
+    "STND": 0,
+    "MHHW": 1.527,
+    "MHW": 1.45,
+    "DTL": 1.09,
+    "MTL": 1.144,
+    "MSL": 1.155,
+    "MLW": 0.837,
+    "MLLW": 0.653,
+    "GT": 0.875,
+    "MN": 0.613,
+    "DHQ": 0.077,
+    "DLQ": 0.185,
+    "HWI": 5.12,
+    "LWI": 11.29,
+    "NAVD88": 1.343
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 207,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.22299999,
-    "HAT": 1.819,
-    "STND": 0,
-    "MHHW": 1.527,
-    "MHW": 1.45,
-    "DTL": 1.09,
-    "MTL": 1.144,
-    "MSL": 1.155,
-    "MLW": 0.837,
-    "MLLW": 0.653,
-    "GT": 0.875,
-    "MN": 0.613,
-    "DHQ": 0.077,
-    "DLQ": 0.185,
-    "HWI": 5.12,
-    "LWI": 11.29,
-    "NAVD88": 1.343
-  },
-  "disclaimers": ""
+  ]
 }

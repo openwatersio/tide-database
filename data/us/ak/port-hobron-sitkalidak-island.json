@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-port-hobron-sitkalidak-island",
+  "id": "us/ak/port-hobron-sitkalidak-island",
   "name": "Port Hobron, Sitkalidak Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.1633,
   "longitude": -153.152,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457479",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457479",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457479.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457479"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-kodiak-womens-bay",
+    "reference": "us/ak/kodiak-womens-bay",
     "height": {
       "type": "fixed",
       "high": -0.09,

@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-boston-light",
+  "id": "us/ma/boston-light",
   "name": "Boston Light",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.3283,
   "longitude": -70.8917,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8444162",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444162",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8444162.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444162"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.621,
+    "HAT": 5.8710003,
+    "STND": 0,
+    "MHHW": 5.243,
+    "MHW": 5.109,
+    "DTL": 3.747,
+    "MTL": 3.73,
+    "MSL": 3.749,
+    "MLW": 2.351,
+    "MLLW": 2.251,
+    "GT": 2.992,
+    "MN": 2.759,
+    "DHQ": 0.134,
+    "DLQ": 0.1,
+    "HWI": 3.724,
+    "LWI": 9.904
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 115.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.621,
-    "HAT": 5.8710003,
-    "STND": 0,
-    "MHHW": 5.243,
-    "MHW": 5.109,
-    "DTL": 3.747,
-    "MTL": 3.73,
-    "MSL": 3.749,
-    "MLW": 2.351,
-    "MLLW": 2.251,
-    "GT": 2.992,
-    "MN": 2.759,
-    "DHQ": 0.134,
-    "DLQ": 0.1,
-    "HWI": 3.724,
-    "LWI": 9.904
-  },
-  "disclaimers": ""
+  ]
 }

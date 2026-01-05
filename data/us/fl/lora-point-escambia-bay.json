@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-lora-point-escambia-bay",
+  "id": "us/fl/lora-point-escambia-bay",
   "name": "Lora Point, Escambia Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.514999389648438,
   "longitude": -87.16169738769531,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729816",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729816",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729816.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729816"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.62600005,
+    "HAT": 1.633,
+    "STND": 0,
+    "MHHW": 1.395,
+    "MHW": 1.377,
+    "DTL": 1.181,
+    "MTL": 1.179,
+    "MSL": 1.177,
+    "MLW": 0.982,
+    "MLLW": 0.966,
+    "GT": 0.429,
+    "MN": 0.395,
+    "DHQ": 0.019,
+    "DLQ": 0.015
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 55.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.62600005,
-    "HAT": 1.633,
-    "STND": 0,
-    "MHHW": 1.395,
-    "MHW": 1.377,
-    "DTL": 1.181,
-    "MTL": 1.179,
-    "MSL": 1.177,
-    "MLW": 0.982,
-    "MLLW": 0.966,
-    "GT": 0.429,
-    "MN": 0.395,
-    "DHQ": 0.019,
-    "DLQ": 0.015
-  },
-  "disclaimers": ""
+  ]
 }

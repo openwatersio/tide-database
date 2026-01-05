@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-gravina-river",
+  "id": "us/ak/gravina-river",
   "name": "Gravina River",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.766700744628906,
   "longitude": -146.0845947265625,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454153",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454153",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454153.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454153"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.248,
+    "HAT": 10.109,
+    "STND": 0,
+    "MHHW": 9.042,
+    "MHW": 8.762,
+    "DTL": 7.207,
+    "MTL": 7.296,
+    "MSL": 7.334,
+    "MLW": 5.83,
+    "MLLW": 5.373,
+    "GT": 3.669,
+    "MN": 2.931,
+    "DHQ": 0.28,
+    "DLQ": 0.457,
+    "HWI": 10.001,
+    "LWI": 3.69,
+    "NAVD88": 5.618
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.248,
-    "HAT": 10.109,
-    "STND": 0,
-    "MHHW": 9.042,
-    "MHW": 8.762,
-    "DTL": 7.207,
-    "MTL": 7.296,
-    "MSL": 7.334,
-    "MLW": 5.83,
-    "MLLW": 5.373,
-    "GT": 3.669,
-    "MN": 2.931,
-    "DHQ": 0.28,
-    "DLQ": 0.457,
-    "HWI": 10.001,
-    "LWI": 3.69,
-    "NAVD88": 5.618
-  },
-  "disclaimers": ""
+  ]
 }

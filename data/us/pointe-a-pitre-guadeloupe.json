@@ -1,10 +1,9 @@
 {
-  "id": "us-pointe-a-pitre-guadeloupe",
+  "id": "us/pointe-a-pitre-guadeloupe",
   "name": "Pointe-a-Pitre, Guadeloupe",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 16.233333333332993,
   "longitude": -61.53333333333299,
   "timezone": "America/Guadeloupe",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4769",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4769",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4769.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4769"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-vi-lime-tree-bay-st-croix-island",
+    "reference": "us/vi/lime-tree-bay-st-croix-island",
     "height": {
       "type": "ratio",
       "high": 3.24,

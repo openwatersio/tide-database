@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-budd-inlet-olympia-shoal",
+  "id": "us/wa/budd-inlet-olympia-shoal",
   "name": "Budd Inlet, Olympia Shoal",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.0983,
   "longitude": -122.895,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9446807",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446807",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9446807.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9446807"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 11.171,
+    "HAT": 17.559,
+    "STND": 0,
+    "MHHW": 16.926,
+    "MHW": 16.637,
+    "DTL": 14.716,
+    "MTL": 15.041,
+    "MSL": 15.046,
+    "MLW": 13.445,
+    "MLLW": 12.506,
+    "GT": 4.419,
+    "MN": 3.192,
+    "DHQ": 0.289,
+    "DLQ": 0.939,
+    "HWI": 1.11,
+    "LWI": 7.55,
+    "NAVD88": 13.756
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 201.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 11.171,
-    "HAT": 17.559,
-    "STND": 0,
-    "MHHW": 16.926,
-    "MHW": 16.637,
-    "DTL": 14.716,
-    "MTL": 15.041,
-    "MSL": 15.046,
-    "MLW": 13.445,
-    "MLLW": 12.506,
-    "GT": 4.419,
-    "MN": 3.192,
-    "DHQ": 0.289,
-    "DLQ": 0.939,
-    "HWI": 1.11,
-    "LWI": 7.55,
-    "NAVD88": 13.756
-  },
-  "disclaimers": ""
+  ]
 }

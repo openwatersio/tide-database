@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-goose-point-east-bay",
+  "id": "us/fl/goose-point-east-bay",
   "name": "Goose Point, East Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.061199188232422,
   "longitude": -85.48860168457031,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729026",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729026",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729026.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729026"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.4049997,
+    "HAT": 8.514,
+    "STND": 0,
+    "MHHW": 8.235,
+    "MHW": 8.205,
+    "DTL": 8.003,
+    "MTL": 8.006,
+    "MSL": 8,
+    "MLW": 7.806,
+    "MLLW": 7.771,
+    "GT": 0.463,
+    "MN": 0.399,
+    "DHQ": 0.029,
+    "DLQ": 0.035,
+    "NAVD88": 7.958
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.4049997,
-    "HAT": 8.514,
-    "STND": 0,
-    "MHHW": 8.235,
-    "MHW": 8.205,
-    "DTL": 8.003,
-    "MTL": 8.006,
-    "MSL": 8,
-    "MLW": 7.806,
-    "MLLW": 7.771,
-    "GT": 0.463,
-    "MN": 0.399,
-    "DHQ": 0.029,
-    "DLQ": 0.035,
-    "NAVD88": 7.958
-  },
-  "disclaimers": ""
+  ]
 }

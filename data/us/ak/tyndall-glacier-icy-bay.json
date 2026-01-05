@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-tyndall-glacier-icy-bay",
+  "id": "us/ak/tyndall-glacier-icy-bay",
   "name": "Tyndall Glacier, Icy Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.07830047607422,
   "longitude": -141.27499389648438,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9453431",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9453431",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9453431.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9453431"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.2390003,
+    "HAT": 11.162001,
+    "STND": 0,
+    "MHHW": 10.262,
+    "MHW": 10.015,
+    "DTL": 8.768,
+    "MTL": 8.851,
+    "MSL": 8.85,
+    "MLW": 7.687,
+    "MLLW": 7.273,
+    "GT": 2.99,
+    "MN": 2.328,
+    "DHQ": 0.248,
+    "DLQ": 0.414,
+    "HWI": 9.733,
+    "LWI": 3.56,
+    "NAVD88": 7.178
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.2390003,
-    "HAT": 11.162001,
-    "STND": 0,
-    "MHHW": 10.262,
-    "MHW": 10.015,
-    "DTL": 8.768,
-    "MTL": 8.851,
-    "MSL": 8.85,
-    "MLW": 7.687,
-    "MLLW": 7.273,
-    "GT": 2.99,
-    "MN": 2.328,
-    "DHQ": 0.248,
-    "DLQ": 0.414,
-    "HWI": 9.733,
-    "LWI": 3.56,
-    "NAVD88": 7.178
-  },
-  "disclaimers": ""
+  ]
 }

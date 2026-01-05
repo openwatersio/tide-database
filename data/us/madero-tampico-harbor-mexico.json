@@ -1,10 +1,9 @@
 {
-  "id": "us-madero-tampico-harbor-mexico",
+  "id": "us/madero-tampico-harbor-mexico",
   "name": "Madero, Tampico Harbor, Mexico",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 22.2617,
   "longitude": -97.795,
   "timezone": "America/Monterrey",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9500966",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9500966",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9500966.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9500966"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.059,
+    "HAT": 3.991,
+    "STND": 0,
+    "MHHW": 3.813,
+    "MHW": 3.794,
+    "DTL": 3.604,
+    "MTL": 3.625,
+    "MSL": 3.645,
+    "MLW": 3.455,
+    "MLLW": 3.395,
+    "GT": 0.418,
+    "MN": 0.338,
+    "DHQ": 0.019,
+    "DLQ": 0.061
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.059,
-    "HAT": 3.991,
-    "STND": 0,
-    "MHHW": 3.813,
-    "MHW": 3.794,
-    "DTL": 3.604,
-    "MTL": 3.625,
-    "MSL": 3.645,
-    "MLW": 3.455,
-    "MLLW": 3.395,
-    "GT": 0.418,
-    "MN": 0.338,
-    "DHQ": 0.019,
-    "DLQ": 0.061
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-priest-point",
+  "id": "us/wa/priest-point",
   "name": "Priest Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.03494444444444,
   "longitude": -122.2271944444445,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9447717",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447717",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9447717.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9447717"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.2799997,
+    "HAT": 9.578,
+    "STND": 0,
+    "MHHW": 8.957,
+    "MHW": 8.696,
+    "DTL": 7.288,
+    "MTL": 7.567,
+    "MSL": 7.558,
+    "MLW": 6.438,
+    "MLLW": 5.619,
+    "GT": 3.338,
+    "MN": 2.258,
+    "DHQ": 0.261,
+    "DLQ": 0.82,
+    "HWI": 0.49,
+    "LWI": 6.88,
+    "NAVD88": 6.194
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.2799997,
-    "HAT": 9.578,
-    "STND": 0,
-    "MHHW": 8.957,
-    "MHW": 8.696,
-    "DTL": 7.288,
-    "MTL": 7.567,
-    "MSL": 7.558,
-    "MLW": 6.438,
-    "MLLW": 5.619,
-    "GT": 3.338,
-    "MN": 2.258,
-    "DHQ": 0.261,
-    "DLQ": 0.82,
-    "HWI": 0.49,
-    "LWI": 6.88,
-    "NAVD88": 6.194
-  },
-  "disclaimers": ""
+  ]
 }

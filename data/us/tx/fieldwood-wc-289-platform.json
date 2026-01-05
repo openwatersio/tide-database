@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-fieldwood-wc-289-platform",
+  "id": "us/tx/fieldwood-wc-289-platform",
   "name": "Fieldwood WC-289 Platform",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.34700012207031,
   "longitude": -93.63500213623047,
   "timezone": "Etc/GMT+6",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8771074",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771074",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8771074.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771074"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -12.274,
+    "HAT": -10.973001,
+    "STND": 0,
+    "MHHW": -11.149,
+    "MHW": -11.21,
+    "DTL": -11.487,
+    "MTL": -11.441,
+    "MSL": -11.451,
+    "MLW": -11.672,
+    "MLLW": -11.825,
+    "GT": 0.676,
+    "MN": 0.462,
+    "DHQ": 0.061,
+    "DLQ": 0.153,
+    "NAVD88": -11.545
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -12.274,
-    "HAT": -10.973001,
-    "STND": 0,
-    "MHHW": -11.149,
-    "MHW": -11.21,
-    "DTL": -11.487,
-    "MTL": -11.441,
-    "MSL": -11.451,
-    "MLW": -11.672,
-    "MLLW": -11.825,
-    "GT": 0.676,
-    "MN": 0.462,
-    "DHQ": 0.061,
-    "DLQ": 0.153,
-    "NAVD88": -11.545
-  },
-  "disclaimers": ""
+  ]
 }

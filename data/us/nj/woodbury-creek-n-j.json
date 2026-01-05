@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-woodbury-creek-n-j",
+  "id": "us/nj/woodbury-creek-n-j",
   "name": "Woodbury Creek, N.J.",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.86,
   "longitude": -75.1867,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8538548",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8538548",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8538548.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8538548"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pa-philadelphia-us-coast-guard-station-pa",
+    "reference": "us/pa/philadelphia-us-coast-guard-station-pa",
     "height": {
       "type": "ratio",
       "high": 0.96,

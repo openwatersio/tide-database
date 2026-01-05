@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-newburyport",
+  "id": "us/ma/newburyport",
   "name": "Newburyport",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.815,
   "longitude": -70.8733,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8440466",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440466",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8440466.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440466"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.98099995,
+    "HAT": 4.67,
+    "STND": 0,
+    "MHHW": 4.148,
+    "MHW": 4.015,
+    "DTL": 2.813,
+    "MTL": 2.782,
+    "MSL": 2.781,
+    "MLW": 1.549,
+    "MLLW": 1.477,
+    "GT": 2.67,
+    "MN": 2.466,
+    "DHQ": 0.133,
+    "DLQ": 0.072,
+    "HWI": 4.103,
+    "LWI": 10.639
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.98099995,
-    "HAT": 4.67,
-    "STND": 0,
-    "MHHW": 4.148,
-    "MHW": 4.015,
-    "DTL": 2.813,
-    "MTL": 2.782,
-    "MSL": 2.781,
-    "MLW": 1.549,
-    "MLLW": 1.477,
-    "GT": 2.67,
-    "MN": 2.466,
-    "DHQ": 0.133,
-    "DLQ": 0.072,
-    "HWI": 4.103,
-    "LWI": 10.639
-  },
-  "disclaimers": ""
+  ]
 }

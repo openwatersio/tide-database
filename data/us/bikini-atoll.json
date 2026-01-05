@@ -1,10 +1,9 @@
 {
-  "id": "us-bikini-atoll",
+  "id": "us/bikini-atoll",
   "name": "Bikini Atoll",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 11.6,
   "longitude": 165.55,
   "timezone": "Pacific/Majuro",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2687",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2687",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2687.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2687"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-kwajalein-atoll-kwajalein-i",
+    "reference": "us/kwajalein-atoll-kwajalein-i",
     "height": {
       "type": "fixed",
       "high": 0,

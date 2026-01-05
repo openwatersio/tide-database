@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cedar-key",
+  "id": "us/fl/cedar-key",
   "name": "Cedar Key",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.135000228881836,
   "longitude": -83.03170013427734,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727520",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727520",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727520.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727520"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.059000015,
+    "HAT": 1.9909999,
+    "STND": 0,
+    "MHHW": 1.708,
+    "MHW": 1.605,
+    "DTL": 1.129,
+    "MTL": 1.174,
+    "MSL": 1.171,
+    "MLW": 0.743,
+    "MLLW": 0.55,
+    "GT": 1.157,
+    "MN": 0.862,
+    "DHQ": 0.103,
+    "DLQ": 0.192,
+    "HWI": 6.493,
+    "LWI": 0.337,
+    "NAVD88": 1.237
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 357,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.059000015,
-    "HAT": 1.9909999,
-    "STND": 0,
-    "MHHW": 1.708,
-    "MHW": 1.605,
-    "DTL": 1.129,
-    "MTL": 1.174,
-    "MSL": 1.171,
-    "MLW": 0.743,
-    "MLLW": 0.55,
-    "GT": 1.157,
-    "MN": 0.862,
-    "DHQ": 0.103,
-    "DLQ": 0.192,
-    "HWI": 6.493,
-    "LWI": 0.337,
-    "NAVD88": 1.237
-  },
-  "disclaimers": ""
+  ]
 }

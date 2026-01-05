@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-central-aguirre",
+  "id": "us/pr/central-aguirre",
   "name": "Central Aguirre",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.950000762939453,
   "longitude": -66.22640228271484,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9755971",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9755971",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9755971.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9755971"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.602,
+    "HAT": 8.054,
+    "STND": 0,
+    "MHHW": 7.947,
+    "MHW": 7.943,
+    "DTL": 7.84,
+    "MTL": 7.839,
+    "MSL": 7.833,
+    "MLW": 7.735,
+    "MLLW": 7.733,
+    "GT": 0.214,
+    "MN": 0.208,
+    "DHQ": 0.004,
+    "DLQ": 0.002,
+    "PRVD02": 7.858
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.602,
-    "HAT": 8.054,
-    "STND": 0,
-    "MHHW": 7.947,
-    "MHW": 7.943,
-    "DTL": 7.84,
-    "MTL": 7.839,
-    "MSL": 7.833,
-    "MLW": 7.735,
-    "MLLW": 7.733,
-    "GT": 0.214,
-    "MN": 0.208,
-    "DHQ": 0.004,
-    "DLQ": 0.002,
-    "PRVD02": 7.858
-  },
-  "disclaimers": ""
+  ]
 }

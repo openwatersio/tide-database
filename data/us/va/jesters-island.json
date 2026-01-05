@@ -1,10 +1,9 @@
 {
-  "id": "us-va-jesters-island",
+  "id": "us/va/jesters-island",
   "name": "Jesters Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.9817008972168,
   "longitude": -75.30169677734375,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8630111",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630111",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8630111.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630111"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.48200002,
+    "HAT": 1.029,
+    "STND": 0,
+    "MHHW": 0.9,
+    "MHW": 0.874,
+    "DTL": 0.756,
+    "MTL": 0.759,
+    "MSL": 0.758,
+    "MLW": 0.643,
+    "MLLW": 0.613,
+    "GT": 0.287,
+    "MN": 0.231,
+    "DHQ": 0.026,
+    "DLQ": 0.03,
+    "HWI": 2.431,
+    "LWI": 9.579
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.48200002,
-    "HAT": 1.029,
-    "STND": 0,
-    "MHHW": 0.9,
-    "MHW": 0.874,
-    "DTL": 0.756,
-    "MTL": 0.759,
-    "MSL": 0.758,
-    "MLW": 0.643,
-    "MLLW": 0.613,
-    "GT": 0.287,
-    "MN": 0.231,
-    "DHQ": 0.026,
-    "DLQ": 0.03,
-    "HWI": 2.431,
-    "LWI": 9.579
-  },
-  "disclaimers": ""
+  ]
 }

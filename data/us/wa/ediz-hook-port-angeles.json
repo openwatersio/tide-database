@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-ediz-hook-port-angeles",
+  "id": "us/wa/ediz-hook-port-angeles",
   "name": "Ediz Hook, Port Angeles",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.14,
   "longitude": -123.413,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9444122",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444122",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9444122.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9444122"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-port-townsend",
+    "reference": "us/wa/port-townsend",
     "height": {
       "type": "ratio",
       "high": 0.81,

@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-providence-state-pier-no-1",
+  "id": "us/ri/providence-state-pier-no-1",
   "name": "Providence, State Pier no.1",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.80716666666667,
   "longitude": -71.40066666666667,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8454000",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454000",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8454000.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8454000"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.72005296,
+    "HAT": 2.969053,
+    "STND": 0,
+    "MHHW": 2.539,
+    "MHW": 2.464,
+    "DTL": 1.802,
+    "MTL": 1.791,
+    "MSL": 1.749,
+    "MLW": 1.119,
+    "MLLW": 1.064,
+    "GT": 1.476,
+    "MN": 1.346,
+    "DHQ": 0.075,
+    "DLQ": 0.055,
+    "HWI": 0.477,
+    "LWI": 5.921,
+    "NAVD88": 1.818
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 209.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.72005296,
-    "HAT": 2.969053,
-    "STND": 0,
-    "MHHW": 2.539,
-    "MHW": 2.464,
-    "DTL": 1.802,
-    "MTL": 1.791,
-    "MSL": 1.749,
-    "MLW": 1.119,
-    "MLLW": 1.064,
-    "GT": 1.476,
-    "MN": 1.346,
-    "DHQ": 0.075,
-    "DLQ": 0.055,
-    "HWI": 0.477,
-    "LWI": 5.921,
-    "NAVD88": 1.818
-  },
-  "disclaimers": ""
+  ]
 }

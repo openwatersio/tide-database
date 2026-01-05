@@ -1,10 +1,9 @@
 {
-  "id": "us-three-star-point",
+  "id": "us/three-star-point",
   "name": "Three Star Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.9,
   "longitude": -159.16666666667007,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2105",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2105",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2105.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2105"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-kodiak-womens-bay",
+    "reference": "us/ak/kodiak-womens-bay",
     "height": {
       "type": "ratio",
       "high": 0.9,

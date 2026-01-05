@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-port-san-luis",
+  "id": "us/ca/port-san-luis",
   "name": "PORT SAN LUIS",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.16888888888889,
   "longitude": -120.7541666666667,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9412110",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9412110",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9412110.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9412110"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.6939999,
+    "HAT": 3.4629998,
+    "STND": 0,
+    "MHHW": 2.919,
+    "MHW": 2.704,
+    "DTL": 2.108,
+    "MTL": 2.159,
+    "MSL": 2.149,
+    "MLW": 1.613,
+    "MLLW": 1.296,
+    "GT": 1.623,
+    "MN": 1.09,
+    "DHQ": 0.216,
+    "DLQ": 0.317,
+    "HWI": 5.92,
+    "LWI": 11.98,
+    "NAVD88": 1.32
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 162.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.6939999,
-    "HAT": 3.4629998,
-    "STND": 0,
-    "MHHW": 2.919,
-    "MHW": 2.704,
-    "DTL": 2.108,
-    "MTL": 2.159,
-    "MSL": 2.149,
-    "MLW": 1.613,
-    "MLLW": 1.296,
-    "GT": 1.623,
-    "MN": 1.09,
-    "DHQ": 0.216,
-    "DLQ": 0.317,
-    "HWI": 5.92,
-    "LWI": 11.98,
-    "NAVD88": 1.32
-  },
-  "disclaimers": ""
+  ]
 }

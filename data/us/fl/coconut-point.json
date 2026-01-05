@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-coconut-point",
+  "id": "us/fl/coconut-point",
   "name": "Coconut Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.4,
   "longitude": -81.8433,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725319",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725319",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725319.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725319"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.30699998,
+    "HAT": 1.599,
+    "STND": 0,
+    "MHHW": 1.355,
+    "MHW": 1.274,
+    "DTL": 0.977,
+    "MTL": 1.007,
+    "MSL": 1.018,
+    "MLW": 0.74,
+    "MLLW": 0.599,
+    "GT": 0.755,
+    "MN": 0.533,
+    "DHQ": 0.081,
+    "DLQ": 0.141,
+    "HWI": 5.76,
+    "LWI": 12.27,
+    "NAVD88": 1.133
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.30699998,
-    "HAT": 1.599,
-    "STND": 0,
-    "MHHW": 1.355,
-    "MHW": 1.274,
-    "DTL": 0.977,
-    "MTL": 1.007,
-    "MSL": 1.018,
-    "MLW": 0.74,
-    "MLLW": 0.599,
-    "GT": 0.755,
-    "MN": 0.533,
-    "DHQ": 0.081,
-    "DLQ": 0.141,
-    "HWI": 5.76,
-    "LWI": 12.27,
-    "NAVD88": 1.133
-  },
-  "disclaimers": ""
+  ]
 }

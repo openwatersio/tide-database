@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-turner-bay-similk-bay",
+  "id": "us/wa/turner-bay-similk-bay",
   "name": "Turner Bay, Similk Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.445,
   "longitude": -122.555,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9448657",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9448657",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9448657.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9448657"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.40999985,
+    "HAT": 4.592,
+    "STND": 0,
+    "MHHW": 4.007,
+    "MHW": 3.743,
+    "DTL": 2.431,
+    "MTL": 2.68,
+    "MSL": 2.667,
+    "MLW": 1.616,
+    "MLLW": 0.855,
+    "GT": 3.151,
+    "MN": 2.126,
+    "DHQ": 0.264,
+    "DLQ": 0.761,
+    "HWI": 0.97,
+    "LWI": 7.24
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.40999985,
-    "HAT": 4.592,
-    "STND": 0,
-    "MHHW": 4.007,
-    "MHW": 3.743,
-    "DTL": 2.431,
-    "MTL": 2.68,
-    "MSL": 2.667,
-    "MLW": 1.616,
-    "MLLW": 0.855,
-    "GT": 3.151,
-    "MN": 2.126,
-    "DHQ": 0.264,
-    "DLQ": 0.761,
-    "HWI": 0.97,
-    "LWI": 7.24
-  },
-  "disclaimers": ""
+  ]
 }

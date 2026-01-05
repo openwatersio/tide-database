@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-viola-turning-basin",
+  "id": "us/tx/viola-turning-basin",
   "name": "Viola Turning Basin",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.846099853515625,
   "longitude": -97.52069854736328,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8775222",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775222",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8775222.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8775222"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.035,
+    "HAT": 8.5789995,
+    "STND": 0,
+    "MHHW": 8.441,
+    "MHW": 8.436,
+    "DTL": 8.333,
+    "MTL": 8.335,
+    "MSL": 8.348,
+    "MLW": 8.234,
+    "MLLW": 8.225,
+    "GT": 0.217,
+    "MN": 0.202,
+    "DHQ": 0.005,
+    "DLQ": 0.009
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 323.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.035,
-    "HAT": 8.5789995,
-    "STND": 0,
-    "MHHW": 8.441,
-    "MHW": 8.436,
-    "DTL": 8.333,
-    "MTL": 8.335,
-    "MSL": 8.348,
-    "MLW": 8.234,
-    "MLLW": 8.225,
-    "GT": 0.217,
-    "MN": 0.202,
-    "DHQ": 0.005,
-    "DLQ": 0.009
-  },
-  "disclaimers": ""
+  ]
 }

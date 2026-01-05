@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-sesuit-harbor-east-dennis",
+  "id": "us/ma/sesuit-harbor-east-dennis",
   "name": "Sesuit Harbor, East Dennis",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.7517,
   "longitude": -70.155,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447241",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447241",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447241.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447241"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.020999908,
+    "HAT": 4.6260004,
+    "STND": 0,
+    "MHHW": 3.908,
+    "MHW": 3.769,
+    "DTL": 2.313,
+    "MTL": 2.286,
+    "MSL": 2.311,
+    "MLW": 0.802,
+    "MLLW": 0.718,
+    "GT": 3.189,
+    "MN": 2.967,
+    "DHQ": 0.138,
+    "DLQ": 0.084,
+    "HWI": 3.755,
+    "LWI": 9.912
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.020999908,
-    "HAT": 4.6260004,
-    "STND": 0,
-    "MHHW": 3.908,
-    "MHW": 3.769,
-    "DTL": 2.313,
-    "MTL": 2.286,
-    "MSL": 2.311,
-    "MLW": 0.802,
-    "MLLW": 0.718,
-    "GT": 3.189,
-    "MN": 2.967,
-    "DHQ": 0.138,
-    "DLQ": 0.084,
-    "HWI": 3.755,
-    "LWI": 9.912
-  },
-  "disclaimers": ""
+  ]
 }

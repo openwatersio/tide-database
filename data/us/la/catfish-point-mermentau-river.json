@@ -1,10 +1,9 @@
 {
-  "id": "us-la-catfish-point-mermentau-river",
+  "id": "us/la/catfish-point-mermentau-river",
   "name": "Catfish Point, Mermentau River",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.862899780273438,
   "longitude": -92.8488998413086,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8767095",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8767095",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8767095.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8767095"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.733,
+    "HAT": 9.474,
+    "STND": 0,
+    "MHHW": 9.356,
+    "MHW": 9.324,
+    "DTL": 9.149,
+    "MTL": 9.168,
+    "MSL": 9.164,
+    "MLW": 9.011,
+    "MLLW": 8.941,
+    "GT": 0.415,
+    "MN": 0.313,
+    "DHQ": 0.032,
+    "DLQ": 0.07,
+    "NAVD88": 9.259
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 240.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.733,
-    "HAT": 9.474,
-    "STND": 0,
-    "MHHW": 9.356,
-    "MHW": 9.324,
-    "DTL": 9.149,
-    "MTL": 9.168,
-    "MSL": 9.164,
-    "MLW": 9.011,
-    "MLLW": 8.941,
-    "GT": 0.415,
-    "MN": 0.313,
-    "DHQ": 0.032,
-    "DLQ": 0.07,
-    "NAVD88": 9.259
-  },
-  "disclaimers": ""
+  ]
 }

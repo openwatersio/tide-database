@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-fripps-inlet-hunting-island-bridge",
+  "id": "us/sc/fripps-inlet-hunting-island-bridge",
   "name": "Fripps Inlet, Hunting Island Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.34,
   "longitude": -80.465,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8668498",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8668498",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8668498.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8668498"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.3079996,
+    "HAT": 8.3689995,
+    "STND": 0,
+    "MHHW": 7.857,
+    "MHW": 7.74,
+    "DTL": 6.838,
+    "MTL": 6.81,
+    "MSL": 6.844,
+    "MLW": 5.88,
+    "MLLW": 5.819,
+    "GT": 2.038,
+    "MN": 1.86,
+    "DHQ": 0.116,
+    "DLQ": 0.062,
+    "HWI": 0.336,
+    "LWI": 6.531,
+    "NAVD88": 6.933
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 310.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.3079996,
-    "HAT": 8.3689995,
-    "STND": 0,
-    "MHHW": 7.857,
-    "MHW": 7.74,
-    "DTL": 6.838,
-    "MTL": 6.81,
-    "MSL": 6.844,
-    "MLW": 5.88,
-    "MLLW": 5.819,
-    "GT": 2.038,
-    "MN": 1.86,
-    "DHQ": 0.116,
-    "DLQ": 0.062,
-    "HWI": 0.336,
-    "LWI": 6.531,
-    "NAVD88": 6.933
-  },
-  "disclaimers": ""
+  ]
 }

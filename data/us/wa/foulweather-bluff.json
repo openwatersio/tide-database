@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-foulweather-bluff",
+  "id": "us/wa/foulweather-bluff",
   "name": "Foulweather Bluff",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.9267,
   "longitude": -122.617,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9445016",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445016",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9445016.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445016"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.09500003,
+    "HAT": 4.6809998,
+    "STND": 0,
+    "MHHW": 4.133,
+    "MHW": 3.881,
+    "DTL": 2.609,
+    "MTL": 2.896,
+    "MSL": 2.875,
+    "MLW": 1.911,
+    "MLLW": 1.084,
+    "GT": 3.049,
+    "MN": 1.97,
+    "DHQ": 0.252,
+    "DLQ": 0.827,
+    "HWI": 0.131,
+    "LWI": 6.398
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.09500003,
-    "HAT": 4.6809998,
-    "STND": 0,
-    "MHHW": 4.133,
-    "MHW": 3.881,
-    "DTL": 2.609,
-    "MTL": 2.896,
-    "MSL": 2.875,
-    "MLW": 1.911,
-    "MLLW": 1.084,
-    "GT": 3.049,
-    "MN": 1.97,
-    "DHQ": 0.252,
-    "DLQ": 0.827,
-    "HWI": 0.131,
-    "LWI": 6.398
-  },
-  "disclaimers": ""
+  ]
 }

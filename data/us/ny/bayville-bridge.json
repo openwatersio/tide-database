@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-bayville-bridge",
+  "id": "us/ny/bayville-bridge",
   "name": "Bayville Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.9033,
   "longitude": -73.55,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516299",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516299",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516299.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516299"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.68999994,
+    "HAT": 4.2539997,
+    "STND": 0,
+    "MHHW": 3.68,
+    "MHW": 3.57,
+    "DTL": 2.459,
+    "MTL": 2.443,
+    "MSL": 2.438,
+    "MLW": 1.316,
+    "MLLW": 1.238,
+    "GT": 2.442,
+    "MN": 2.253,
+    "DHQ": 0.111,
+    "DLQ": 0.079,
+    "HWI": 3.689,
+    "LWI": 10.211
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.68999994,
-    "HAT": 4.2539997,
-    "STND": 0,
-    "MHHW": 3.68,
-    "MHW": 3.57,
-    "DTL": 2.459,
-    "MTL": 2.443,
-    "MSL": 2.438,
-    "MLW": 1.316,
-    "MLLW": 1.238,
-    "GT": 2.442,
-    "MN": 2.253,
-    "DHQ": 0.111,
-    "DLQ": 0.079,
-    "HWI": 3.689,
-    "LWI": 10.211
-  },
-  "disclaimers": ""
+  ]
 }

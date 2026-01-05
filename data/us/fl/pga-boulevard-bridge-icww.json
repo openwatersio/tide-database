@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-pga-boulevard-bridge-icww",
+  "id": "us/fl/pga-boulevard-bridge-icww",
   "name": "PGA Boulevard Bridge, ICWW",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.8433,
   "longitude": -80.0667,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722548",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722548",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722548.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722548"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.48900008,
+    "HAT": 1.96,
+    "STND": 0,
+    "MHHW": 1.638,
+    "MHW": 1.589,
+    "DTL": 1.189,
+    "MTL": 1.187,
+    "MSL": 1.19,
+    "MLW": 0.784,
+    "MLLW": 0.74,
+    "GT": 0.898,
+    "MN": 0.804,
+    "DHQ": 0.049,
+    "DLQ": 0.044,
+    "HWI": 1.284,
+    "LWI": 7.682,
+    "NAVD88": 1.495
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -221,25 +240,5 @@
       "phase_local": 269.7,
       "speed": 30.082138
     }
-  ],
-  "datums": {
-    "LAT": 0.48900008,
-    "HAT": 1.96,
-    "STND": 0,
-    "MHHW": 1.638,
-    "MHW": 1.589,
-    "DTL": 1.189,
-    "MTL": 1.187,
-    "MSL": 1.19,
-    "MLW": 0.784,
-    "MLLW": 0.74,
-    "GT": 0.898,
-    "MN": 0.804,
-    "DHQ": 0.049,
-    "DLQ": 0.044,
-    "HWI": 1.284,
-    "LWI": 7.682,
-    "NAVD88": 1.495
-  },
-  "disclaimers": ""
+  ]
 }

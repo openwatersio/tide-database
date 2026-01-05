@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-west-mystic-mystic-river",
+  "id": "us/ct/west-mystic-mystic-river",
   "name": "WEST MYSTIC, MYSTIC RIVER",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.343299865722656,
   "longitude": -71.9749984741211,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8460751",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8460751",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8460751.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8460751"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.490999,
+    "HAT": 9.882999,
+    "STND": 0,
+    "MHHW": 9.63,
+    "MHW": 9.541,
+    "DTL": 9.176,
+    "MTL": 9.16,
+    "MSL": 9.171,
+    "MLW": 8.779,
+    "MLLW": 8.721,
+    "GT": 0.91,
+    "MN": 0.762,
+    "DHQ": 0.089,
+    "DLQ": 0.059,
+    "HWI": 1.677,
+    "LWI": 8.212,
+    "NAVD88": 9.286
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 93.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.490999,
-    "HAT": 9.882999,
-    "STND": 0,
-    "MHHW": 9.63,
-    "MHW": 9.541,
-    "DTL": 9.176,
-    "MTL": 9.16,
-    "MSL": 9.171,
-    "MLW": 8.779,
-    "MLLW": 8.721,
-    "GT": 0.91,
-    "MN": 0.762,
-    "DHQ": 0.089,
-    "DLQ": 0.059,
-    "HWI": 1.677,
-    "LWI": 8.212,
-    "NAVD88": 9.286
-  },
-  "disclaimers": ""
+  ]
 }

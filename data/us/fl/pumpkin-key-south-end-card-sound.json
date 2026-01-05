@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-pumpkin-key-south-end-card-sound",
+  "id": "us/fl/pumpkin-key-south-end-card-sound",
   "name": "Pumpkin Key, south end, Card Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.325,
   "longitude": -80.2933,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723506",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723506",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723506.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723506"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.945,
+    "HAT": 1.484,
+    "STND": 0,
+    "MHHW": 1.311,
+    "MHW": 1.309,
+    "DTL": 1.197,
+    "MTL": 1.21,
+    "MSL": 1.194,
+    "MLW": 1.111,
+    "MLLW": 1.083,
+    "GT": 0.229,
+    "MN": 0.199,
+    "DHQ": 0.002,
+    "DLQ": 0.028
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.945,
-    "HAT": 1.484,
-    "STND": 0,
-    "MHHW": 1.311,
-    "MHW": 1.309,
-    "DTL": 1.197,
-    "MTL": 1.21,
-    "MSL": 1.194,
-    "MLW": 1.111,
-    "MLLW": 1.083,
-    "GT": 0.229,
-    "MN": 0.199,
-    "DHQ": 0.002,
-    "DLQ": 0.028
-  },
-  "disclaimers": ""
+  ]
 }

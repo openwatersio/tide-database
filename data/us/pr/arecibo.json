@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-arecibo",
+  "id": "us/pr/arecibo",
   "name": "Arecibo",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.48052777777778,
   "longitude": -66.70236111111112,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9757809",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9757809",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9757809.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9757809"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data are measured by the Puerto Rico Seismic Network (PRSN), located at the University of Puerto Rico Mayaguez. PRSN is a National Ocean Service (NOS) partner that adheres to NOS data collection standards. For more information on the PRSN, visit their <a href=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=45\">website</a>.",
+  "datums": {
+    "LAT": 6.574,
+    "HAT": 7.463,
+    "STND": 0,
+    "MHHW": 7.274,
+    "MHW": 7.176,
+    "DTL": 7.006,
+    "MTL": 6.987,
+    "MSL": 6.99,
+    "MLW": 6.798,
+    "MLLW": 6.738,
+    "GT": 0.536,
+    "MN": 0.378,
+    "DHQ": 0.097,
+    "DLQ": 0.061,
+    "HWI": 0.075,
+    "LWI": 6.377
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.574,
-    "HAT": 7.463,
-    "STND": 0,
-    "MHHW": 7.274,
-    "MHW": 7.176,
-    "DTL": 7.006,
-    "MTL": 6.987,
-    "MSL": 6.99,
-    "MLW": 6.798,
-    "MLLW": 6.738,
-    "GT": 0.536,
-    "MN": 0.378,
-    "DHQ": 0.097,
-    "DLQ": 0.061,
-    "HWI": 0.075,
-    "LWI": 6.377
-  },
-  "disclaimers": "These data are measured by the Puerto Rico Seismic Network (PRSN), located at the University of Puerto Rico Mayaguez. PRSN is a National Ocean Service (NOS) partner that adheres to NOS data collection standards. For more information on the PRSN, visit their <a href=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=45\">website</a>."
+  ]
 }

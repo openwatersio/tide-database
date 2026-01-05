@@ -1,10 +1,9 @@
 {
-  "id": "us-kwajalein-atoll-kwajalein-i",
+  "id": "us/kwajalein-atoll-kwajalein-i",
   "name": "KWAJALEIN ATOLL (Kwajalein I.)",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 8.731666564941406,
   "longitude": 167.7361145019531,
   "timezone": "Pacific/Kwajalein",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1820000",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1820000",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1820000.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1820000"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.51500005,
+    "HAT": 2.522,
+    "STND": 0,
+    "MHHW": 2.084,
+    "MHW": 1.978,
+    "DTL": 1.487,
+    "MTL": 1.453,
+    "MSL": 1.457,
+    "MLW": 0.929,
+    "MLLW": 0.89,
+    "GT": 1.194,
+    "MN": 1.049,
+    "DHQ": 0.106,
+    "DLQ": 0.038,
+    "HWI": 4.4,
+    "LWI": 10.6
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 116.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.51500005,
-    "HAT": 2.522,
-    "STND": 0,
-    "MHHW": 2.084,
-    "MHW": 1.978,
-    "DTL": 1.487,
-    "MTL": 1.453,
-    "MSL": 1.457,
-    "MLW": 0.929,
-    "MLLW": 0.89,
-    "GT": 1.194,
-    "MN": 1.049,
-    "DHQ": 0.106,
-    "DLQ": 0.038,
-    "HWI": 4.4,
-    "LWI": 10.6
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-chance-cove-lagoon",
+  "id": "us/ak/chance-cove-lagoon",
   "name": "Chance Cove (Lagoon)",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.4883,
   "longitude": -150.312,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455249",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455249",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455249.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455249"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-seward-resurrection-bay",
+    "reference": "us/ak/seward-resurrection-bay",
     "height": {
       "type": "ratio",
       "high": 1.04,

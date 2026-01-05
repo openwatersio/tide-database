@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-queensboro-bridge",
+  "id": "us/ny/queensboro-bridge",
   "name": "Queensboro Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.7583,
   "longitude": -73.9583,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518687",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518687",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518687.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518687"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.155,
+    "HAT": 0.99799997,
+    "STND": 0,
+    "MHHW": 0.688,
+    "MHW": 0.587,
+    "DTL": -0.054,
+    "MTL": -0.072,
+    "MSL": -0.063,
+    "MLW": -0.732,
+    "MLLW": -0.796,
+    "GT": 1.484,
+    "MN": 1.32,
+    "DHQ": 0.101,
+    "DLQ": 0.064,
+    "HWI": 2.213,
+    "LWI": 8.173,
+    "NAVD88": -0.002
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.155,
-    "HAT": 0.99799997,
-    "STND": 0,
-    "MHHW": 0.688,
-    "MHW": 0.587,
-    "DTL": -0.054,
-    "MTL": -0.072,
-    "MSL": -0.063,
-    "MLW": -0.732,
-    "MLLW": -0.796,
-    "GT": 1.484,
-    "MN": 1.32,
-    "DHQ": 0.101,
-    "DLQ": 0.064,
-    "HWI": 2.213,
-    "LWI": 8.173,
-    "NAVD88": -0.002
-  },
-  "disclaimers": ""
+  ]
 }

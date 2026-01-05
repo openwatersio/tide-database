@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-snag-point",
+  "id": "us/ak/snag-point",
   "name": "Snag Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.04,
   "longitude": -158.447,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465374",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465374",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465374.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465374"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 11.434999,
+    "HAT": 19.844,
+    "STND": 0,
+    "MHHW": 18.71,
+    "MHW": 18.176,
+    "DTL": 15.565,
+    "MTL": 15.651,
+    "MSL": 15.722,
+    "MLW": 13.124,
+    "MLLW": 12.419,
+    "GT": 6.29,
+    "MN": 5.053,
+    "DHQ": 0.533,
+    "DLQ": 0.704,
+    "HWI": 0,
+    "LWI": 7.16
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 11.434999,
-    "HAT": 19.844,
-    "STND": 0,
-    "MHHW": 18.71,
-    "MHW": 18.176,
-    "DTL": 15.565,
-    "MTL": 15.651,
-    "MSL": 15.722,
-    "MLW": 13.124,
-    "MLLW": 12.419,
-    "GT": 6.29,
-    "MN": 5.053,
-    "DHQ": 0.533,
-    "DLQ": 0.704,
-    "HWI": 0,
-    "LWI": 7.16
-  },
-  "disclaimers": ""
+  ]
 }

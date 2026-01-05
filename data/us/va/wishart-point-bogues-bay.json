@@ -1,10 +1,9 @@
 {
-  "id": "us-va-wishart-point-bogues-bay",
+  "id": "us/va/wishart-point-bogues-bay",
   "name": "Wishart Point, Bogues Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.8817,
   "longitude": -75.4917,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8630371",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630371",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8630371.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8630371"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-ocean-city-fishing-pier",
+    "reference": "us/md/ocean-city-fishing-pier",
     "height": {
       "type": "ratio",
       "high": 0.77,

@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-fish-bay-st-john",
+  "id": "us/pr/fish-bay-st-john",
   "name": "Fish Bay, St. John",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.31920051574707,
   "longitude": -64.76180267333984,
   "timezone": "America/St_Thomas",
@@ -12,15 +11,14 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751388",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751388",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751388.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751388"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
-  "harmonic_constituents": [],
+  "disclaimers": "",
   "datums": {
     "LAT": 8.823999,
     "HAT": 9.355,
@@ -38,5 +36,6 @@
     "DLQ": 0.018,
     "VIVD09": 9.079
   },
-  "disclaimers": ""
+  "type": "reference",
+  "harmonic_constituents": []
 }

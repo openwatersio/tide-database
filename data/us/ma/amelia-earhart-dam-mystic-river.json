@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-amelia-earhart-dam-mystic-river",
+  "id": "us/ma/amelia-earhart-dam-mystic-river",
   "name": "Amelia Earhart Dam, Mystic River",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.395,
   "longitude": -71.0767,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8443662",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8443662",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8443662.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8443662"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.5740001,
+    "HAT": 5.0340004,
+    "STND": 0,
+    "MHHW": 4.377,
+    "MHW": 4.243,
+    "DTL": 2.802,
+    "MTL": 2.786,
+    "MSL": 2.825,
+    "MLW": 1.329,
+    "MLLW": 1.227,
+    "GT": 3.15,
+    "MN": 2.913,
+    "DHQ": 0.134,
+    "DLQ": 0.102,
+    "HWI": 3.748,
+    "LWI": 9.965
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.5740001,
-    "HAT": 5.0340004,
-    "STND": 0,
-    "MHHW": 4.377,
-    "MHW": 4.243,
-    "DTL": 2.802,
-    "MTL": 2.786,
-    "MSL": 2.825,
-    "MLW": 1.329,
-    "MLLW": 1.227,
-    "GT": 3.15,
-    "MN": 2.913,
-    "DHQ": 0.134,
-    "DLQ": 0.102,
-    "HWI": 3.748,
-    "LWI": 9.965
-  },
-  "disclaimers": ""
+  ]
 }

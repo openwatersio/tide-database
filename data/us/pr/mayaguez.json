@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-mayaguez",
+  "id": "us/pr/mayaguez",
   "name": "Mayaguez",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.21883333333333,
   "longitude": -67.16244444444445,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9759394",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759394",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9759394.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759394"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.93200004,
+    "HAT": 1.6140001,
+    "STND": 0,
+    "MHHW": 1.468,
+    "MHW": 1.404,
+    "DTL": 1.26,
+    "MTL": 1.246,
+    "MSL": 1.243,
+    "MLW": 1.088,
+    "MLLW": 1.052,
+    "GT": 0.416,
+    "MN": 0.317,
+    "DHQ": 0.063,
+    "DLQ": 0.036,
+    "HWI": 0.531,
+    "LWI": 6.925,
+    "PRVD02": 1.201
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 123.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.93200004,
-    "HAT": 1.6140001,
-    "STND": 0,
-    "MHHW": 1.468,
-    "MHW": 1.404,
-    "DTL": 1.26,
-    "MTL": 1.246,
-    "MSL": 1.243,
-    "MLW": 1.088,
-    "MLLW": 1.052,
-    "GT": 0.416,
-    "MN": 0.317,
-    "DHQ": 0.063,
-    "DLQ": 0.036,
-    "HWI": 0.531,
-    "LWI": 6.925,
-    "PRVD02": 1.201
-  },
-  "disclaimers": ""
+  ]
 }

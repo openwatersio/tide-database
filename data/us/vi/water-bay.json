@@ -1,10 +1,9 @@
 {
-  "id": "us-vi-water-bay",
+  "id": "us/vi/water-bay",
   "name": "Water Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "VI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.34894444444445,
   "longitude": -64.86416666666666,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751583",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751583",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751583.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751583"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.3,
+    "HAT": 5.979,
+    "STND": 0,
+    "MHHW": 5.802,
+    "MHW": 5.731,
+    "DTL": 5.62,
+    "MTL": 5.608,
+    "MSL": 5.609,
+    "MLW": 5.484,
+    "MLLW": 5.438,
+    "GT": 0.364,
+    "MN": 0.247,
+    "DHQ": 0.071,
+    "DLQ": 0.046,
+    "HWI": 0.33,
+    "LWI": 6.92
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.3,
-    "HAT": 5.979,
-    "STND": 0,
-    "MHHW": 5.802,
-    "MHW": 5.731,
-    "DTL": 5.62,
-    "MTL": 5.608,
-    "MSL": 5.609,
-    "MLW": 5.484,
-    "MLLW": 5.438,
-    "GT": 0.364,
-    "MN": 0.247,
-    "DHQ": 0.071,
-    "DLQ": 0.046,
-    "HWI": 0.33,
-    "LWI": 6.92
-  },
-  "disclaimers": ""
+  ]
 }

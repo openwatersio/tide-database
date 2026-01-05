@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-nelson-island-tooksook-bay",
+  "id": "us/ak/nelson-island-tooksook-bay",
   "name": "Nelson Island, Tooksook Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.5167,
   "longitude": -165.133,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9466298",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466298",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9466298.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466298"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.5559998,
+    "HAT": 11.736,
+    "STND": 0,
+    "MHHW": 11.182,
+    "MHW": 11.043,
+    "DTL": 9.702,
+    "MTL": 9.797,
+    "MSL": 9.801,
+    "MLW": 8.55,
+    "MLLW": 8.222,
+    "GT": 2.96,
+    "MN": 2.493,
+    "DHQ": 0.139,
+    "DLQ": 0.328,
+    "HWI": 8.491,
+    "LWI": 2.509
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.5559998,
-    "HAT": 11.736,
-    "STND": 0,
-    "MHHW": 11.182,
-    "MHW": 11.043,
-    "DTL": 9.702,
-    "MTL": 9.797,
-    "MSL": 9.801,
-    "MLW": 8.55,
-    "MLLW": 8.222,
-    "GT": 2.96,
-    "MN": 2.493,
-    "DHQ": 0.139,
-    "DLQ": 0.328,
-    "HWI": 8.491,
-    "LWI": 2.509
-  },
-  "disclaimers": ""
+  ]
 }

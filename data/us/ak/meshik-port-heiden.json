@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-meshik-port-heiden",
+  "id": "us/ak/meshik-port-heiden",
   "name": "Meshik, Port Heiden",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.90829849243164,
   "longitude": -158.68490600585938,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9464075",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464075",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9464075.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464075"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 10.516,
+    "HAT": 16.19,
+    "STND": 0,
+    "MHHW": 15.262,
+    "MHW": 14.908,
+    "DTL": 13.493,
+    "MTL": 13.669,
+    "MSL": 13.681,
+    "MLW": 12.43,
+    "MLLW": 11.723,
+    "GT": 3.54,
+    "MN": 2.479,
+    "DHQ": 0.354,
+    "DLQ": 0.707,
+    "HWI": 8.88,
+    "LWI": 3.25
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 10.516,
-    "HAT": 16.19,
-    "STND": 0,
-    "MHHW": 15.262,
-    "MHW": 14.908,
-    "DTL": 13.493,
-    "MTL": 13.669,
-    "MSL": 13.681,
-    "MLW": 12.43,
-    "MLLW": 11.723,
-    "GT": 3.54,
-    "MN": 2.479,
-    "DHQ": 0.354,
-    "DLQ": 0.707,
-    "HWI": 8.88,
-    "LWI": 3.25
-  },
-  "disclaimers": ""
+  ]
 }

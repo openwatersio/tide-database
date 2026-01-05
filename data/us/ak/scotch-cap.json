@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-scotch-cap",
+  "id": "us/ak/scotch-cap",
   "name": "Scotch Cap",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.39363888888889,
   "longitude": -164.7457222222222,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462808",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462808",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462808.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462808"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.018000007,
+    "HAT": 3.297,
+    "STND": 0,
+    "MHHW": 2.642,
+    "MHW": 2.474,
+    "DTL": 1.7,
+    "MTL": 1.863,
+    "MSL": 1.862,
+    "MLW": 1.253,
+    "MLLW": 0.759,
+    "GT": 1.883,
+    "MN": 1.22,
+    "DHQ": 0.168,
+    "DLQ": 0.494,
+    "HWI": 0.024,
+    "LWI": 6.086
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.018000007,
-    "HAT": 3.297,
-    "STND": 0,
-    "MHHW": 2.642,
-    "MHW": 2.474,
-    "DTL": 1.7,
-    "MTL": 1.863,
-    "MSL": 1.862,
-    "MLW": 1.253,
-    "MLLW": 0.759,
-    "GT": 1.883,
-    "MN": 1.22,
-    "DHQ": 0.168,
-    "DLQ": 0.494,
-    "HWI": 0.024,
-    "LWI": 6.086
-  },
-  "disclaimers": ""
+  ]
 }

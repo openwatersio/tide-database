@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-bartlett-cove-glacier-bay",
+  "id": "us/ak/bartlett-cove-glacier-bay",
   "name": "Bartlett Cove, Glacier Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.45669937133789,
   "longitude": -135.88299560546875,
   "timezone": "America/Juneau",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452534",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452534",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452534.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452534"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.625,
+    "HAT": 11.717999,
+    "STND": 0,
+    "MHHW": 10.467,
+    "MHW": 10.185,
+    "DTL": 8.221,
+    "MTL": 8.328,
+    "MSL": 8.327,
+    "MLW": 6.471,
+    "MLLW": 5.975,
+    "GT": 4.492,
+    "MN": 3.715,
+    "DHQ": 0.282,
+    "DLQ": 0.496,
+    "HWI": 9.943,
+    "LWI": 3.75,
+    "NAVD88": 6.829
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 106.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.625,
-    "HAT": 11.717999,
-    "STND": 0,
-    "MHHW": 10.467,
-    "MHW": 10.185,
-    "DTL": 8.221,
-    "MTL": 8.328,
-    "MSL": 8.327,
-    "MLW": 6.471,
-    "MLLW": 5.975,
-    "GT": 4.492,
-    "MN": 3.715,
-    "DHQ": 0.282,
-    "DLQ": 0.496,
-    "HWI": 9.943,
-    "LWI": 3.75,
-    "NAVD88": 6.829
-  },
-  "disclaimers": ""
+  ]
 }

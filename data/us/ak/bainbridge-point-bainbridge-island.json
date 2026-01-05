@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-bainbridge-point-bainbridge-island",
+  "id": "us/ak/bainbridge-point-bainbridge-island",
   "name": "Bainbridge Point, Bainbridge Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.19670104980469,
   "longitude": -148.04200744628906,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454755",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454755",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454755.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454755"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.7707589,
+    "HAT": 4.023241,
+    "STND": 0,
+    "MHHW": 2.967,
+    "MHW": 2.677,
+    "DTL": 1.17,
+    "MTL": 1.25,
+    "MSL": 1.283,
+    "MLW": -0.177,
+    "MLLW": -0.627,
+    "GT": 3.595,
+    "MN": 2.854,
+    "DHQ": 0.29,
+    "DLQ": 0.45,
+    "HWI": 9.97,
+    "LWI": 3.74
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.7707589,
-    "HAT": 4.023241,
-    "STND": 0,
-    "MHHW": 2.967,
-    "MHW": 2.677,
-    "DTL": 1.17,
-    "MTL": 1.25,
-    "MSL": 1.283,
-    "MLW": -0.177,
-    "MLLW": -0.627,
-    "GT": 3.595,
-    "MN": 2.854,
-    "DHQ": 0.29,
-    "DLQ": 0.45,
-    "HWI": 9.97,
-    "LWI": 3.74
-  },
-  "disclaimers": ""
+  ]
 }

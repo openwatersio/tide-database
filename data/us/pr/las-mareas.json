@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-las-mareas",
+  "id": "us/pr/las-mareas",
   "name": "Las Mareas",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.9283,
   "longitude": -66.1583,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9755679",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9755679",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9755679.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9755679"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.9139998,
+    "HAT": 4.344,
+    "STND": 0,
+    "MHHW": 4.218,
+    "MHW": 4.216,
+    "DTL": 4.117,
+    "MTL": 4.119,
+    "MSL": 4.115,
+    "MLW": 4.021,
+    "MLLW": 4.015,
+    "GT": 0.203,
+    "MN": 0.195,
+    "DHQ": 0.002,
+    "DLQ": 0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.9139998,
-    "HAT": 4.344,
-    "STND": 0,
-    "MHHW": 4.218,
-    "MHW": 4.216,
-    "DTL": 4.117,
-    "MTL": 4.119,
-    "MSL": 4.115,
-    "MLW": 4.021,
-    "MLLW": 4.015,
-    "GT": 0.203,
-    "MN": 0.195,
-    "DHQ": 0.002,
-    "DLQ": 0.006
-  },
-  "disclaimers": ""
+  ]
 }

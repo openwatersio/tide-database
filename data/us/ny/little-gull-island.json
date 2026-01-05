@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-little-gull-island",
+  "id": "us/ny/little-gull-island",
   "name": "Little Gull Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.2067,
   "longitude": -72.1017,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8510884",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8510884",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8510884.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8510884"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ct-new-london-state-pier",
+    "reference": "us/ct/new-london-state-pier",
     "height": {
       "type": "ratio",
       "high": 0.85,

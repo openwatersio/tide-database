@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-st-simons-light",
+  "id": "us/ga/st-simons-light",
   "name": "St. Simons Light",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.1317,
   "longitude": -81.3967,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8677344",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8677344",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8677344.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8677344"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.07799995,
+    "HAT": 3.35,
+    "STND": 0,
+    "MHHW": 2.713,
+    "MHW": 2.6,
+    "DTL": 1.616,
+    "MTL": 1.591,
+    "MSL": 1.605,
+    "MLW": 0.582,
+    "MLLW": 0.519,
+    "GT": 2.195,
+    "MN": 2.018,
+    "DHQ": 0.114,
+    "DLQ": 0.063,
+    "HWI": 0.743,
+    "LWI": 7.163,
+    "NAVD88": 1.809
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 351,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.07799995,
-    "HAT": 3.35,
-    "STND": 0,
-    "MHHW": 2.713,
-    "MHW": 2.6,
-    "DTL": 1.616,
-    "MTL": 1.591,
-    "MSL": 1.605,
-    "MLW": 0.582,
-    "MLLW": 0.519,
-    "GT": 2.195,
-    "MN": 2.018,
-    "DHQ": 0.114,
-    "DLQ": 0.063,
-    "HWI": 0.743,
-    "LWI": 7.163,
-    "NAVD88": 1.809
-  },
-  "disclaimers": ""
+  ]
 }

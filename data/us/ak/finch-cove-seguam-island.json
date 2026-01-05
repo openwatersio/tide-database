@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-finch-cove-seguam-island",
+  "id": "us/ak/finch-cove-seguam-island",
   "name": "Finch Cove, Seguam Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 52.3917,
   "longitude": -172.405,
   "timezone": "America/Adak",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9461945",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461945",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9461945.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461945"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-sweeper-cove-kuluk-bay-adak-island",
+    "reference": "us/ak/sweeper-cove-kuluk-bay-adak-island",
     "height": {
       "type": "ratio",
       "high": 0.87,

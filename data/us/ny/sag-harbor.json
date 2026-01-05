@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-sag-harbor",
+  "id": "us/ny/sag-harbor",
   "name": "Sag Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.0033,
   "longitude": -72.2967,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8511629",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511629",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8511629.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8511629"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.178,
+    "HAT": 8.521,
+    "STND": 0,
+    "MHHW": 8.28,
+    "MHW": 8.193,
+    "DTL": 7.844,
+    "MTL": 7.826,
+    "MSL": 7.843,
+    "MLW": 7.459,
+    "MLLW": 7.408,
+    "GT": 0.872,
+    "MN": 0.735,
+    "DHQ": 0.086,
+    "DLQ": 0.051,
+    "HWI": 3.04,
+    "LWI": 9.29,
+    "NAVD88": 7.941
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.178,
-    "HAT": 8.521,
-    "STND": 0,
-    "MHHW": 8.28,
-    "MHW": 8.193,
-    "DTL": 7.844,
-    "MTL": 7.826,
-    "MSL": 7.843,
-    "MLW": 7.459,
-    "MLLW": 7.408,
-    "GT": 0.872,
-    "MN": 0.735,
-    "DHQ": 0.086,
-    "DLQ": 0.051,
-    "HWI": 3.04,
-    "LWI": 9.29,
-    "NAVD88": 7.941
-  },
-  "disclaimers": ""
+  ]
 }

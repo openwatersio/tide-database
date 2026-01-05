@@ -1,10 +1,9 @@
 {
-  "id": "us-md-ocean-city-fishing-pier",
+  "id": "us/md/ocean-city-fishing-pier",
   "name": "OCEAN CITY (FISHING PIER)",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.3267,
   "longitude": -75.0833,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8570280",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570280",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8570280.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8570280"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.91300005,
+    "HAT": 2.8569999,
+    "STND": 0,
+    "MHHW": 2.473,
+    "MHW": 2.359,
+    "DTL": 1.879,
+    "MTL": 1.847,
+    "MSL": 1.853,
+    "MLW": 1.334,
+    "MLLW": 1.286,
+    "GT": 1.187,
+    "MN": 1.024,
+    "DHQ": 0.114,
+    "DLQ": 0.049,
+    "HWI": 12.32,
+    "LWI": 6.175,
+    "NAVD88": 1.993
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.91300005,
-    "HAT": 2.8569999,
-    "STND": 0,
-    "MHHW": 2.473,
-    "MHW": 2.359,
-    "DTL": 1.879,
-    "MTL": 1.847,
-    "MSL": 1.853,
-    "MLW": 1.334,
-    "MLLW": 1.286,
-    "GT": 1.187,
-    "MN": 1.024,
-    "DHQ": 0.114,
-    "DLQ": 0.049,
-    "HWI": 12.32,
-    "LWI": 6.175,
-    "NAVD88": 1.993
-  },
-  "disclaimers": ""
+  ]
 }

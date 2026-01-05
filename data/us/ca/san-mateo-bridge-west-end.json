@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-san-mateo-bridge-west-end",
+  "id": "us/ca/san-mateo-bridge-west-end",
   "name": "San Mateo Bridge (west end)",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.58,
   "longitude": -122.253,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414458",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414458",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414458.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414458"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.825,
+    "HAT": 7.2799997,
+    "STND": 0,
+    "MHHW": 6.838,
+    "MHW": 6.644,
+    "DTL": 5.661,
+    "MTL": 5.745,
+    "MSL": 5.737,
+    "MLW": 4.846,
+    "MLLW": 4.484,
+    "GT": 2.353,
+    "MN": 1.799,
+    "DHQ": 0.193,
+    "DLQ": 0.361,
+    "HWI": 8.26,
+    "LWI": 2.03
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 251.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.825,
-    "HAT": 7.2799997,
-    "STND": 0,
-    "MHHW": 6.838,
-    "MHW": 6.644,
-    "DTL": 5.661,
-    "MTL": 5.745,
-    "MSL": 5.737,
-    "MLW": 4.846,
-    "MLLW": 4.484,
-    "GT": 2.353,
-    "MN": 1.799,
-    "DHQ": 0.193,
-    "DLQ": 0.361,
-    "HWI": 8.26,
-    "LWI": 2.03
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-ponquoque-point",
+  "id": "us/ny/ponquoque-point",
   "name": "Ponquoque Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.85,
   "longitude": -72.5033,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8512451",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512451",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8512451.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512451"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.164,
+    "HAT": 2.681,
+    "STND": 0,
+    "MHHW": 2.396,
+    "MHW": 2.318,
+    "DTL": 1.911,
+    "MTL": 1.891,
+    "MSL": 1.889,
+    "MLW": 1.465,
+    "MLLW": 1.426,
+    "GT": 0.969,
+    "MN": 0.853,
+    "DHQ": 0.078,
+    "DLQ": 0.039,
+    "HWI": 0.173,
+    "LWI": 6.694,
+    "NAVD88": 1.98
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.164,
-    "HAT": 2.681,
-    "STND": 0,
-    "MHHW": 2.396,
-    "MHW": 2.318,
-    "DTL": 1.911,
-    "MTL": 1.891,
-    "MSL": 1.889,
-    "MLW": 1.465,
-    "MLLW": 1.426,
-    "GT": 0.969,
-    "MN": 0.853,
-    "DHQ": 0.078,
-    "DLQ": 0.039,
-    "HWI": 0.173,
-    "LWI": 6.694,
-    "NAVD88": 1.98
-  },
-  "disclaimers": ""
+  ]
 }

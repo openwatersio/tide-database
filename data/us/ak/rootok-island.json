@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-rootok-island",
+  "id": "us/ak/rootok-island",
   "name": "Rootok Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.05222222222222,
   "longitude": -165.5141666666667,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462723",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462723",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462723.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462723"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.958,
+    "HAT": 7.751,
+    "STND": 0,
+    "MHHW": 7.166,
+    "MHW": 6.997,
+    "DTL": 6.394,
+    "MTL": 6.497,
+    "MSL": 6.487,
+    "MLW": 5.997,
+    "MLLW": 5.623,
+    "GT": 1.543,
+    "MN": 1,
+    "DHQ": 0.169,
+    "DLQ": 0.374
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.958,
-    "HAT": 7.751,
-    "STND": 0,
-    "MHHW": 7.166,
-    "MHW": 6.997,
-    "DTL": 6.394,
-    "MTL": 6.497,
-    "MSL": 6.487,
-    "MLW": 5.997,
-    "MLLW": 5.623,
-    "GT": 1.543,
-    "MN": 1,
-    "DHQ": 0.169,
-    "DLQ": 0.374
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-white-beach-east-bay",
+  "id": "us/fl/white-beach-east-bay",
   "name": "WHITE BEACH, EAST BAY",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.785,
   "longitude": -84.8983,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728694",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728694",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728694.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728694"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.546,
+    "HAT": 1.5929999,
+    "STND": 0,
+    "MHHW": 1.477,
+    "MHW": 1.433,
+    "DTL": 1.177,
+    "MTL": 1.239,
+    "MSL": 1.217,
+    "MLW": 1.046,
+    "MLLW": 0.876,
+    "GT": 0.602,
+    "MN": 0.386,
+    "DHQ": 0.045,
+    "DLQ": 0.17,
+    "HWI": 8.58,
+    "LWI": 2.98
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.546,
-    "HAT": 1.5929999,
-    "STND": 0,
-    "MHHW": 1.477,
-    "MHW": 1.433,
-    "DTL": 1.177,
-    "MTL": 1.239,
-    "MSL": 1.217,
-    "MLW": 1.046,
-    "MLLW": 0.876,
-    "GT": 0.602,
-    "MN": 0.386,
-    "DHQ": 0.045,
-    "DLQ": 0.17,
-    "HWI": 8.58,
-    "LWI": 2.98
-  },
-  "disclaimers": ""
+  ]
 }

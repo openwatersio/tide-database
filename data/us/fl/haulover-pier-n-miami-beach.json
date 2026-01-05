@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-haulover-pier-n-miami-beach",
+  "id": "us/fl/haulover-pier-n-miami-beach",
   "name": "Haulover Pier, N. Miami Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 25.9033,
   "longitude": -80.12,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723080",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723080",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723080.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723080"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.697,
+    "HAT": 2.1399999,
+    "STND": 0,
+    "MHHW": 1.793,
+    "MHW": 1.772,
+    "DTL": 1.384,
+    "MTL": 1.394,
+    "MSL": 1.398,
+    "MLW": 1.017,
+    "MLLW": 0.975,
+    "GT": 0.818,
+    "MN": 0.755,
+    "DHQ": 0.022,
+    "DLQ": 0.042,
+    "HWI": 0.673,
+    "LWI": 6.871,
+    "NAVD88": 1.662
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.697,
-    "HAT": 2.1399999,
-    "STND": 0,
-    "MHHW": 1.793,
-    "MHW": 1.772,
-    "DTL": 1.384,
-    "MTL": 1.394,
-    "MSL": 1.398,
-    "MLW": 1.017,
-    "MLLW": 0.975,
-    "GT": 0.818,
-    "MN": 0.755,
-    "DHQ": 0.022,
-    "DLQ": 0.042,
-    "HWI": 0.673,
-    "LWI": 6.871,
-    "NAVD88": 1.662
-  },
-  "disclaimers": ""
+  ]
 }

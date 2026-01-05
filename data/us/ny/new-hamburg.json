@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-new-hamburg",
+  "id": "us/ny/new-hamburg",
   "name": "New Hamburg",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.5833,
   "longitude": -73.95,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518939",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518939",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518939.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518939"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ny-new-york-the-battery",
+    "reference": "us/ny/new-york-the-battery",
     "height": {
       "type": "ratio",
       "high": 0.64,

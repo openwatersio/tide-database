@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-kings-bay",
+  "id": "us/fl/kings-bay",
   "name": "Kings Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.8983,
   "longitude": -82.5983,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727343",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727343",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727343.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727343"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.14,
+    "HAT": 2.12,
+    "STND": 0,
+    "MHHW": 1.996,
+    "MHW": 1.912,
+    "DTL": 1.64,
+    "MTL": 1.638,
+    "MSL": 1.64,
+    "MLW": 1.364,
+    "MLLW": 1.284,
+    "GT": 0.712,
+    "MN": 0.549,
+    "DHQ": 0.084,
+    "DLQ": 0.08,
+    "HWI": 8.813,
+    "LWI": 3.46,
+    "NAVD88": 1.643
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.14,
-    "HAT": 2.12,
-    "STND": 0,
-    "MHHW": 1.996,
-    "MHW": 1.912,
-    "DTL": 1.64,
-    "MTL": 1.638,
-    "MSL": 1.64,
-    "MLW": 1.364,
-    "MLLW": 1.284,
-    "GT": 0.712,
-    "MN": 0.549,
-    "DHQ": 0.084,
-    "DLQ": 0.08,
-    "HWI": 8.813,
-    "LWI": 3.46,
-    "NAVD88": 1.643
-  },
-  "disclaimers": ""
+  ]
 }

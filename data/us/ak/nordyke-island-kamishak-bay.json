@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-nordyke-island-kamishak-bay",
+  "id": "us/ak/nordyke-island-kamishak-bay",
   "name": "Nordyke Island, Kamishak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.1783,
   "longitude": -154.087,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9456822",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456822",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9456822.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456822"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-seldovia-kachemak-bay",
+    "reference": "us/ak/seldovia-kachemak-bay",
     "height": {
       "type": "fixed",
       "high": -0.85,

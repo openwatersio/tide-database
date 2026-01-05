@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-black-creek-s-c-l-rr-bridge",
+  "id": "us/fl/black-creek-s-c-l-rr-bridge",
   "name": "Black Creek, S.C.L. RR. bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.079999923706055,
   "longitude": -81.76170349121094,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720434",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720434",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720434.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720434"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.374,
+    "HAT": 0.43,
+    "STND": 0,
+    "MHHW": 0.143,
+    "MHW": 0.127,
+    "DTL": -0.014,
+    "MTL": -0.013,
+    "MSL": -0.011,
+    "MLW": -0.153,
+    "MLLW": -0.172,
+    "GT": 0.316,
+    "MN": 0.281,
+    "DHQ": 0.017,
+    "DLQ": 0.019,
+    "HWI": 5.631,
+    "LWI": 12.294,
+    "NAVD88": 0.004
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.374,
-    "HAT": 0.43,
-    "STND": 0,
-    "MHHW": 0.143,
-    "MHW": 0.127,
-    "DTL": -0.014,
-    "MTL": -0.013,
-    "MSL": -0.011,
-    "MLW": -0.153,
-    "MLLW": -0.172,
-    "GT": 0.316,
-    "MN": 0.281,
-    "DHQ": 0.017,
-    "DLQ": 0.019,
-    "HWI": 5.631,
-    "LWI": 12.294,
-    "NAVD88": 0.004
-  },
-  "disclaimers": ""
+  ]
 }

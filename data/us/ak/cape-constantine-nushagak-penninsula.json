@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-cape-constantine-nushagak-penninsula",
+  "id": "us/ak/cape-constantine-nushagak-penninsula",
   "name": "Cape Constantine, Nushagak Penninsula",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.52170181274414,
   "longitude": -159.15199279785156,
   "timezone": "America/Anchorage",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9464961",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464961",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9464961.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9464961"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.59299994,
+    "HAT": 4.999,
+    "STND": 0,
+    "MHHW": 3.928,
+    "MHW": 3.6,
+    "DTL": 2.228,
+    "MTL": 2.362,
+    "MSL": 2.372,
+    "MLW": 1.124,
+    "MLLW": 0.528,
+    "GT": 3.401,
+    "MN": 2.476,
+    "DHQ": 0.328,
+    "DLQ": 0.596
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.59299994,
-    "HAT": 4.999,
-    "STND": 0,
-    "MHHW": 3.928,
-    "MHW": 3.6,
-    "DTL": 2.228,
-    "MTL": 2.362,
-    "MSL": 2.372,
-    "MLW": 1.124,
-    "MLLW": 0.528,
-    "GT": 3.401,
-    "MN": 2.476,
-    "DHQ": 0.328,
-    "DLQ": 0.596
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-ventnor-city-ocean-pier",
+  "id": "us/nj/ventnor-city-ocean-pier",
   "name": "Ventnor City, ocean pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.335,
   "longitude": -74.4767,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8534770",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534770",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8534770.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534770"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.1409999,
+    "HAT": 3.2919998,
+    "STND": 0,
+    "MHHW": 2.918,
+    "MHW": 2.79,
+    "DTL": 2.213,
+    "MTL": 2.175,
+    "MSL": 2.185,
+    "MLW": 1.56,
+    "MLLW": 1.507,
+    "GT": 1.411,
+    "MN": 1.23,
+    "DHQ": 0.128,
+    "DLQ": 0.053,
+    "HWI": 12.291,
+    "LWI": 6.086,
+    "NAVD88": 2.304
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 228.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.1409999,
-    "HAT": 3.2919998,
-    "STND": 0,
-    "MHHW": 2.918,
-    "MHW": 2.79,
-    "DTL": 2.213,
-    "MTL": 2.175,
-    "MSL": 2.185,
-    "MLW": 1.56,
-    "MLLW": 1.507,
-    "GT": 1.411,
-    "MN": 1.23,
-    "DHQ": 0.128,
-    "DLQ": 0.053,
-    "HWI": 12.291,
-    "LWI": 6.086,
-    "NAVD88": 2.304
-  },
-  "disclaimers": ""
+  ]
 }

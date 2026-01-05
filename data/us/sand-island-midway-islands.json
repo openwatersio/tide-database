@@ -1,10 +1,9 @@
 {
-  "id": "us-sand-island-midway-islands",
+  "id": "us/sand-island-midway-islands",
   "name": "SAND ISLAND, MIDWAY ISLANDS",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.2116667,
   "longitude": -177.36,
   "timezone": "Pacific/Midway",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1619910",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1619910",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1619910.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1619910"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.67499995,
+    "HAT": 1.3629999,
+    "STND": 0,
+    "MHHW": 1.206,
+    "MHW": 1.152,
+    "DTL": 1.015,
+    "MTL": 1.021,
+    "MSL": 1.02,
+    "MLW": 0.889,
+    "MLLW": 0.824,
+    "GT": 0.381,
+    "MN": 0.263,
+    "DHQ": 0.054,
+    "DLQ": 0.065,
+    "HWI": 3.18,
+    "LWI": 9.48
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 305.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.67499995,
-    "HAT": 1.3629999,
-    "STND": 0,
-    "MHHW": 1.206,
-    "MHW": 1.152,
-    "DTL": 1.015,
-    "MTL": 1.021,
-    "MSL": 1.02,
-    "MLW": 0.889,
-    "MLLW": 0.824,
-    "GT": 0.381,
-    "MN": 0.263,
-    "DHQ": 0.054,
-    "DLQ": 0.065,
-    "HWI": 3.18,
-    "LWI": 9.48
-  },
-  "disclaimers": ""
+  ]
 }

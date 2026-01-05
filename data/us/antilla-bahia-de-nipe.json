@@ -1,10 +1,9 @@
 {
-  "id": "us-antilla-bahia-de-nipe",
+  "id": "us/antilla-bahia-de-nipe",
   "name": "Antilla, Bahia de Nipe",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 20.83333333333299,
   "longitude": -75.733333333333,
   "timezone": "America/Havana",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TEC4657",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4657",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TEC4657.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC4657"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-hampton-roads-sewells-point",
+    "reference": "us/va/hampton-roads-sewells-point",
     "height": {
       "type": "ratio",
       "high": 0.89,

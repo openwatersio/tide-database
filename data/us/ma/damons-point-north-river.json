@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-damons-point-north-river",
+  "id": "us/ma/damons-point-north-river",
   "name": "Damons Point, North River",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.16,
   "longitude": -70.7333,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8445425",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8445425",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8445425.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8445425"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ma-boston",
+    "reference": "us/ma/boston",
     "height": {
       "type": "ratio",
       "high": 0.89,

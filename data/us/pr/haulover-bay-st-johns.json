@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-haulover-bay-st-johns",
+  "id": "us/pr/haulover-bay-st-johns",
   "name": "Haulover Bay, St. Johns",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.349700927734375,
   "longitude": -64.67960357666016,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751419",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751419",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751419.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751419"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.503,
+    "HAT": 9.072,
+    "STND": 0,
+    "MHHW": 8.934,
+    "MHW": 8.885,
+    "DTL": 8.789,
+    "MTL": 8.782,
+    "MSL": 8.783,
+    "MLW": 8.679,
+    "MLLW": 8.644,
+    "GT": 0.291,
+    "MN": 0.206,
+    "DHQ": 0.049,
+    "DLQ": 0.035,
+    "VIVD09": 8.846
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.503,
-    "HAT": 9.072,
-    "STND": 0,
-    "MHHW": 8.934,
-    "MHW": 8.885,
-    "DTL": 8.789,
-    "MTL": 8.782,
-    "MSL": 8.783,
-    "MLW": 8.679,
-    "MLLW": 8.644,
-    "GT": 0.291,
-    "MN": 0.206,
-    "DHQ": 0.049,
-    "DLQ": 0.035,
-    "VIVD09": 8.846
-  },
-  "disclaimers": ""
+  ]
 }

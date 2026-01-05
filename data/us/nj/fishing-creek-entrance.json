@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-fishing-creek-entrance",
+  "id": "us/nj/fishing-creek-entrance",
   "name": "Fishing Creek entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.2167,
   "longitude": -75.1583,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8536848",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536848",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8536848.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536848"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-de-reedy-point",
+    "reference": "us/de/reedy-point",
     "height": {
       "type": "ratio",
       "high": 1.02,

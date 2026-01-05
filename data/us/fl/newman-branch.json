@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-newman-branch",
+  "id": "us/fl/newman-branch",
   "name": "NEWMAN BRANCH",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.7833,
   "longitude": -82.4067,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8726539",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726539",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8726539.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8726539"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.46200007,
+    "HAT": 1.8460001,
+    "STND": 0,
+    "MHHW": 1.582,
+    "MHW": 1.491,
+    "DTL": 1.185,
+    "MTL": 1.203,
+    "MSL": 1.213,
+    "MLW": 0.916,
+    "MLLW": 0.787,
+    "GT": 0.795,
+    "MN": 0.575,
+    "DHQ": 0.091,
+    "DLQ": 0.128,
+    "HWI": 6.987,
+    "LWI": 0.777,
+    "NAVD88": 1.296
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.46200007,
-    "HAT": 1.8460001,
-    "STND": 0,
-    "MHHW": 1.582,
-    "MHW": 1.491,
-    "DTL": 1.185,
-    "MTL": 1.203,
-    "MSL": 1.213,
-    "MLW": 0.916,
-    "MLLW": 0.787,
-    "GT": 0.795,
-    "MN": 0.575,
-    "DHQ": 0.091,
-    "DLQ": 0.128,
-    "HWI": 6.987,
-    "LWI": 0.777,
-    "NAVD88": 1.296
-  },
-  "disclaimers": ""
+  ]
 }

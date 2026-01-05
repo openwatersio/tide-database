@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cape-coral-bridge",
+  "id": "us/fl/cape-coral-bridge",
   "name": "Cape Coral Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.56329917907715,
   "longitude": -81.93329620361328,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725451",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725451",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725451.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725451"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.157001,
+    "HAT": 8.88,
+    "STND": 0,
+    "MHHW": 8.694,
+    "MHW": 8.635,
+    "DTL": 8.52,
+    "MTL": 8.511,
+    "MSL": 8.512,
+    "MLW": 8.387,
+    "MLLW": 8.346,
+    "GT": 0.348,
+    "MN": 0.249,
+    "DHQ": 0.059,
+    "DLQ": 0.04,
+    "HWI": 8.45,
+    "LWI": 2.23,
+    "NAVD88": 8.62
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 96.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.157001,
-    "HAT": 8.88,
-    "STND": 0,
-    "MHHW": 8.694,
-    "MHW": 8.635,
-    "DTL": 8.52,
-    "MTL": 8.511,
-    "MSL": 8.512,
-    "MLW": 8.387,
-    "MLLW": 8.346,
-    "GT": 0.348,
-    "MN": 0.249,
-    "DHQ": 0.059,
-    "DLQ": 0.04,
-    "HWI": 8.45,
-    "LWI": 2.23,
-    "NAVD88": 8.62
-  },
-  "disclaimers": ""
+  ]
 }

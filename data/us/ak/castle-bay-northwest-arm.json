@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-castle-bay-northwest-arm",
+  "id": "us/ak/castle-bay-northwest-arm",
   "name": "Castle Bay, Northwest Arm",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.2317,
   "longitude": -158.347,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9458907",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9458907",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9458907.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9458907"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.9560003,
+    "HAT": 10.478,
+    "STND": 0,
+    "MHHW": 9.64,
+    "MHW": 9.392,
+    "DTL": 8.296,
+    "MTL": 8.39,
+    "MSL": 8.368,
+    "MLW": 7.388,
+    "MLLW": 6.951,
+    "GT": 2.688,
+    "MN": 2.004,
+    "DHQ": 0.248,
+    "DLQ": 0.436,
+    "HWI": 11.224,
+    "LWI": 5.099
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.9560003,
-    "HAT": 10.478,
-    "STND": 0,
-    "MHHW": 9.64,
-    "MHW": 9.392,
-    "DTL": 8.296,
-    "MTL": 8.39,
-    "MSL": 8.368,
-    "MLW": 7.388,
-    "MLLW": 6.951,
-    "GT": 2.688,
-    "MN": 2.004,
-    "DHQ": 0.248,
-    "DLQ": 0.436,
-    "HWI": 11.224,
-    "LWI": 5.099
-  },
-  "disclaimers": ""
+  ]
 }

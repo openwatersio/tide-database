@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-stathems-neck-stow-creek-n-j",
+  "id": "us/nj/stathems-neck-stow-creek-n-j",
   "name": "Stathems Neck, Stow Creek, N.J.",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.4067,
   "longitude": -75.405,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8537416",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537416",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8537416.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537416"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-de-reedy-point",
+    "reference": "us/de/reedy-point",
     "height": {
       "type": "ratio",
       "high": 0.88,

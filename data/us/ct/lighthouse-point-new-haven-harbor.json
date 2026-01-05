@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-lighthouse-point-new-haven-harbor",
+  "id": "us/ct/lighthouse-point-new-haven-harbor",
   "name": "Lighthouse Point, New Haven Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.2517,
   "longitude": -72.905,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8465692",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8465692",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8465692.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8465692"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ct-bridgeport",
+    "reference": "us/ct/bridgeport",
     "height": {
       "type": "ratio",
       "high": 0.91,

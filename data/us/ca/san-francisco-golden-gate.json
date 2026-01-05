@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-san-francisco-golden-gate",
+  "id": "us/ca/san-francisco-golden-gate",
   "name": "SAN FRANCISCO (Golden Gate)",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.80630555555555,
   "longitude": -122.4658888888889,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414290",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414290",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414290.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414290"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.2268009,
+    "HAT": 4.027801,
+    "STND": 0,
+    "MHHW": 3.602,
+    "MHW": 3.416,
+    "DTL": 2.712,
+    "MTL": 2.792,
+    "MSL": 2.773,
+    "MLW": 2.168,
+    "MLLW": 1.822,
+    "GT": 1.78,
+    "MN": 1.248,
+    "DHQ": 0.186,
+    "DLQ": 0.346,
+    "HWI": 7.535,
+    "LWI": 0.848,
+    "NAVD88": 1.804
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 37.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.2268009,
-    "HAT": 4.027801,
-    "STND": 0,
-    "MHHW": 3.602,
-    "MHW": 3.416,
-    "DTL": 2.712,
-    "MTL": 2.792,
-    "MSL": 2.773,
-    "MLW": 2.168,
-    "MLLW": 1.822,
-    "GT": 1.78,
-    "MN": 1.248,
-    "DHQ": 0.186,
-    "DLQ": 0.346,
-    "HWI": 7.535,
-    "LWI": 0.848,
-    "NAVD88": 1.804
-  },
-  "disclaimers": ""
+  ]
 }

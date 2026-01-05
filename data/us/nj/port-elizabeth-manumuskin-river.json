@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-port-elizabeth-manumuskin-river",
+  "id": "us/nj/port-elizabeth-manumuskin-river",
   "name": "Port Elizabeth, Manumuskin River",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.3133,
   "longitude": -74.985,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8537147",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537147",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8537147.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537147"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-de-lewes-breakwater-harbor",
+    "reference": "us/de/lewes-breakwater-harbor",
     "height": {
       "type": "ratio",
       "high": 1.05,

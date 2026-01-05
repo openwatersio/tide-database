@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-long-beach-terminal-island",
+  "id": "us/ca/long-beach-terminal-island",
   "name": "Long Beach, Terminal Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.7517,
   "longitude": -118.227,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410680",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410680",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410680.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410680"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.02700007,
+    "HAT": 2.868,
+    "STND": 0,
+    "MHHW": 2.286,
+    "MHW": 2.061,
+    "DTL": 1.445,
+    "MTL": 1.476,
+    "MSL": 1.471,
+    "MLW": 0.892,
+    "MLLW": 0.605,
+    "GT": 1.681,
+    "MN": 1.169,
+    "DHQ": 0.225,
+    "DLQ": 0.287,
+    "HWI": 5.126,
+    "LWI": 11.198
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.02700007,
-    "HAT": 2.868,
-    "STND": 0,
-    "MHHW": 2.286,
-    "MHW": 2.061,
-    "DTL": 1.445,
-    "MTL": 1.476,
-    "MSL": 1.471,
-    "MLW": 0.892,
-    "MLLW": 0.605,
-    "GT": 1.681,
-    "MN": 1.169,
-    "DHQ": 0.225,
-    "DLQ": 0.287,
-    "HWI": 5.126,
-    "LWI": 11.198
-  },
-  "disclaimers": ""
+  ]
 }

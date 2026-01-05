@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-padre-island-port-mansfield-channel-ent",
+  "id": "us/tx/padre-island-port-mansfield-channel-ent",
   "name": "Padre Island, Port Mansfield Channel Ent.",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.564199447631836,
   "longitude": -97.27649688720703,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8778485",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8778485",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8778485.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8778485"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.856,
+    "HAT": 7.941,
+    "STND": 0,
+    "MHHW": 7.653,
+    "MHW": 7.635,
+    "DTL": 7.434,
+    "MTL": 7.45,
+    "MSL": 7.472,
+    "MLW": 7.265,
+    "MLLW": 7.215,
+    "GT": 0.438,
+    "MN": 0.37,
+    "DHQ": 0.018,
+    "DLQ": 0.051,
+    "NAVD88": 7.507
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 136.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.856,
-    "HAT": 7.941,
-    "STND": 0,
-    "MHHW": 7.653,
-    "MHW": 7.635,
-    "DTL": 7.434,
-    "MTL": 7.45,
-    "MSL": 7.472,
-    "MLW": 7.265,
-    "MLLW": 7.215,
-    "GT": 0.438,
-    "MN": 0.37,
-    "DHQ": 0.018,
-    "DLQ": 0.051,
-    "NAVD88": 7.507
-  },
-  "disclaimers": ""
+  ]
 }

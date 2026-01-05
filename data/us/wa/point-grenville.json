@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-point-grenville",
+  "id": "us/wa/point-grenville",
   "name": "Point Grenville",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.3033,
   "longitude": -124.27,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9441627",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441627",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9441627.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441627"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-wa-toke-point",
+    "reference": "us/wa/toke-point",
     "height": {
       "type": "ratio",
       "high": 0.92,

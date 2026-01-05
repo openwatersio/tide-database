@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-pompeston-creek-n-j",
+  "id": "us/nj/pompeston-creek-n-j",
   "name": "Pompeston Creek, N.J.",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.0133,
   "longitude": -75.0083,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8538875",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8538875",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8538875.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8538875"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-pa-philadelphia-us-coast-guard-station-pa",
+    "reference": "us/pa/philadelphia-us-coast-guard-station-pa",
     "height": {
       "type": "ratio",
       "high": 1.05,

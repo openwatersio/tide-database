@@ -1,10 +1,9 @@
 {
-  "id": "us-va-cape-henry",
+  "id": "us/va/cape-henry",
   "name": "Cape Henry",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.93000030517578,
   "longitude": -76.00666809082031,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638999",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638999",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638999.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638999"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-nc-duck-pier",
+    "reference": "us/nc/duck-pier",
     "height": {
       "type": "ratio",
       "high": 0.96,

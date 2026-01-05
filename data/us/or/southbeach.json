@@ -1,10 +1,9 @@
 {
-  "id": "us-or-southbeach",
+  "id": "us/or/southbeach",
   "name": "Southbeach",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.62544444444445,
   "longitude": -124.0449444444444,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9435380",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9435380",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9435380.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9435380"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.5409999,
+    "HAT": 4.631,
+    "STND": 0,
+    "MHHW": 3.935,
+    "MHW": 3.723,
+    "DTL": 2.663,
+    "MTL": 2.768,
+    "MSL": 2.75,
+    "MLW": 1.813,
+    "MLLW": 1.392,
+    "GT": 2.543,
+    "MN": 1.91,
+    "DHQ": 0.212,
+    "DLQ": 0.421,
+    "HWI": 7.97,
+    "LWI": 1.69,
+    "NAVD88": 1.626
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 128,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.5409999,
-    "HAT": 4.631,
-    "STND": 0,
-    "MHHW": 3.935,
-    "MHW": 3.723,
-    "DTL": 2.663,
-    "MTL": 2.768,
-    "MSL": 2.75,
-    "MLW": 1.813,
-    "MLLW": 1.392,
-    "GT": 2.543,
-    "MN": 1.91,
-    "DHQ": 0.212,
-    "DLQ": 0.421,
-    "HWI": 7.97,
-    "LWI": 1.69,
-    "NAVD88": 1.626
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-millview-perdido-bay",
+  "id": "us/fl/millview-perdido-bay",
   "name": "Millview, Perdido Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.4183,
   "longitude": -87.3567,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729905",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729905",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729905.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729905"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.508,
+    "HAT": 0.953,
+    "STND": 0,
+    "MHHW": 0.86,
+    "MHW": 0.854,
+    "DTL": 0.735,
+    "MTL": 0.73,
+    "MSL": 0.723,
+    "MLW": 0.607,
+    "MLLW": 0.609,
+    "GT": 0.252,
+    "MN": 0.247,
+    "DHQ": 0.007,
+    "DLQ": -0.001,
+    "NAVD88": 0.6
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.508,
-    "HAT": 0.953,
-    "STND": 0,
-    "MHHW": 0.86,
-    "MHW": 0.854,
-    "DTL": 0.735,
-    "MTL": 0.73,
-    "MSL": 0.723,
-    "MLW": 0.607,
-    "MLLW": 0.609,
-    "GT": 0.252,
-    "MN": 0.247,
-    "DHQ": 0.007,
-    "DLQ": -0.001,
-    "NAVD88": 0.6
-  },
-  "disclaimers": ""
+  ]
 }

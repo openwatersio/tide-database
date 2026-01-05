@@ -1,10 +1,9 @@
 {
-  "id": "us-la-joseph-harbor",
+  "id": "us/la/joseph-harbor",
   "name": "Joseph Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.637500762939453,
   "longitude": -92.76719665527344,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8766941",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8766941",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8766941.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8766941"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.106001,
+    "HAT": 9.467,
+    "STND": 0,
+    "MHHW": 9.226,
+    "MHW": 9.172,
+    "DTL": 8.892,
+    "MTL": 8.941,
+    "MSL": 8.935,
+    "MLW": 8.711,
+    "MLLW": 8.557,
+    "GT": 0.669,
+    "MN": 0.461,
+    "DHQ": 0.054,
+    "DLQ": 0.154,
+    "NAVD88": 9.064
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.106001,
-    "HAT": 9.467,
-    "STND": 0,
-    "MHHW": 9.226,
-    "MHW": 9.172,
-    "DTL": 8.892,
-    "MTL": 8.941,
-    "MSL": 8.935,
-    "MLW": 8.711,
-    "MLLW": 8.557,
-    "GT": 0.669,
-    "MN": 0.461,
-    "DHQ": 0.054,
-    "DLQ": 0.154,
-    "NAVD88": 9.064
-  },
-  "disclaimers": ""
+  ]
 }

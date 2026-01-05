@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-albany",
+  "id": "us/ny/albany",
   "name": "ALBANY",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.65,
   "longitude": -73.7467,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518995",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518995",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518995.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518995"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.408,
+    "HAT": 4.8059998,
+    "STND": 0,
+    "MHHW": 4.419,
+    "MHW": 4.303,
+    "DTL": 3.568,
+    "MTL": 3.544,
+    "MSL": 3.586,
+    "MLW": 2.784,
+    "MLLW": 2.717,
+    "GT": 1.702,
+    "MN": 1.519,
+    "DHQ": 0.116,
+    "DLQ": 0.067,
+    "HWI": 9.222,
+    "LWI": 4.122,
+    "NAVD88": 3.267
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 176.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.408,
-    "HAT": 4.8059998,
-    "STND": 0,
-    "MHHW": 4.419,
-    "MHW": 4.303,
-    "DTL": 3.568,
-    "MTL": 3.544,
-    "MSL": 3.586,
-    "MLW": 2.784,
-    "MLLW": 2.717,
-    "GT": 1.702,
-    "MN": 1.519,
-    "DHQ": 0.116,
-    "DLQ": 0.067,
-    "HWI": 9.222,
-    "LWI": 4.122,
-    "NAVD88": 3.267
-  },
-  "disclaimers": ""
+  ]
 }

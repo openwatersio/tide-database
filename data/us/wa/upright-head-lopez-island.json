@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-upright-head-lopez-island",
+  "id": "us/wa/upright-head-lopez-island",
   "name": "Upright Head, Lopez Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.57170104980469,
   "longitude": -122.88500213623047,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449911",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449911",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449911.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449911"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.985,
+    "HAT": 9.093,
+    "STND": 0,
+    "MHHW": 8.54,
+    "MHW": 8.344,
+    "DTL": 7.345,
+    "MTL": 7.598,
+    "MSL": 7.559,
+    "MLW": 6.853,
+    "MLLW": 6.151,
+    "GT": 2.389,
+    "MN": 1.491,
+    "DHQ": 0.196,
+    "DLQ": 0.702,
+    "HWI": 0.35,
+    "LWI": 6.365
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.985,
-    "HAT": 9.093,
-    "STND": 0,
-    "MHHW": 8.54,
-    "MHW": 8.344,
-    "DTL": 7.345,
-    "MTL": 7.598,
-    "MSL": 7.559,
-    "MLW": 6.853,
-    "MLLW": 6.151,
-    "GT": 2.389,
-    "MN": 1.491,
-    "DHQ": 0.196,
-    "DLQ": 0.702,
-    "HWI": 0.35,
-    "LWI": 6.365
-  },
-  "disclaimers": ""
+  ]
 }

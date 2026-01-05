@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-levelock",
+  "id": "us/ak/levelock",
   "name": "Levelock",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.11330032348633,
   "longitude": -156.83200073242188,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9465419",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465419",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9465419.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9465419"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.379,
+    "HAT": 9.473,
+    "STND": 0,
+    "MHHW": 9.208,
+    "MHW": 8.747,
+    "DTL": 7.502,
+    "MTL": 7.353,
+    "MSL": 7.084,
+    "MLW": 5.959,
+    "MLLW": 5.796,
+    "GT": 3.411,
+    "MN": 2.788,
+    "DHQ": 0.46,
+    "DLQ": 0.162,
+    "HWI": 0.854,
+    "LWI": 10.324,
+    "NAVD88": 4.353
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.379,
-    "HAT": 9.473,
-    "STND": 0,
-    "MHHW": 9.208,
-    "MHW": 8.747,
-    "DTL": 7.502,
-    "MTL": 7.353,
-    "MSL": 7.084,
-    "MLW": 5.959,
-    "MLLW": 5.796,
-    "GT": 3.411,
-    "MN": 2.788,
-    "DHQ": 0.46,
-    "DLQ": 0.162,
-    "HWI": 0.854,
-    "LWI": 10.324,
-    "NAVD88": 4.353
-  },
-  "disclaimers": ""
+  ]
 }

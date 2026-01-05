@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-richmond-hill-ogeechee-river",
+  "id": "us/ga/richmond-hill-ogeechee-river",
   "name": "Richmond Hill, Ogeechee River",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.94300079345703,
   "longitude": -81.28980255126953,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8671489",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671489",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8671489.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8671489"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.955,
+    "HAT": 9.213,
+    "STND": 0,
+    "MHHW": 8.765,
+    "MHW": 8.707,
+    "DTL": 7.97,
+    "MTL": 7.992,
+    "MSL": 8.111,
+    "MLW": 7.277,
+    "MLLW": 7.176,
+    "GT": 1.589,
+    "MN": 1.431,
+    "DHQ": 0.058,
+    "DLQ": 0.101,
+    "HWI": 3.022,
+    "LWI": 9.898,
+    "NAVD88": 7.906
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.955,
-    "HAT": 9.213,
-    "STND": 0,
-    "MHHW": 8.765,
-    "MHW": 8.707,
-    "DTL": 7.97,
-    "MTL": 7.992,
-    "MSL": 8.111,
-    "MLW": 7.277,
-    "MLLW": 7.176,
-    "GT": 1.589,
-    "MN": 1.431,
-    "DHQ": 0.058,
-    "DLQ": 0.101,
-    "HWI": 3.022,
-    "LWI": 9.898,
-    "NAVD88": 7.906
-  },
-  "disclaimers": ""
+  ]
 }

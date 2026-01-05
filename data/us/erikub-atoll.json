@@ -1,10 +1,9 @@
 {
-  "id": "us-erikub-atoll",
+  "id": "us/erikub-atoll",
   "name": "Erikub Atoll",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 9.2,
   "longitude": 169.91666666667007,
   "timezone": "Pacific/Majuro",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2717",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2717",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2717.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2717"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-kwajalein-atoll-kwajalein-i",
+    "reference": "us/kwajalein-atoll-kwajalein-i",
     "height": {
       "type": "fixed",
       "high": 0,

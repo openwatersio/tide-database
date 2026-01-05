@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-yabucoa-harbor",
+  "id": "us/pr/yabucoa-harbor",
   "name": "Yabucoa Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.05508333333333,
   "longitude": -65.833,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9754228",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9754228",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9754228.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9754228"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data are measured by the Puerto Rico Seismic Network (PRSN), located at the University of Puerto Rico Mayaguez. PRSN is a National Ocean Service (NOS) partner that adheres to NOS data collection standards. For more information on the PRSN, visit their <a href=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=45\">website</a>.",
+  "datums": {
+    "LAT": 3.205,
+    "HAT": 3.689,
+    "STND": 0,
+    "MHHW": 3.565,
+    "MHW": 3.561,
+    "DTL": 3.456,
+    "MTL": 3.459,
+    "MSL": 3.454,
+    "MLW": 3.356,
+    "MLLW": 3.347,
+    "GT": 0.218,
+    "MN": 0.205,
+    "DHQ": 0.004,
+    "DLQ": 0.009
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 120.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.205,
-    "HAT": 3.689,
-    "STND": 0,
-    "MHHW": 3.565,
-    "MHW": 3.561,
-    "DTL": 3.456,
-    "MTL": 3.459,
-    "MSL": 3.454,
-    "MLW": 3.356,
-    "MLLW": 3.347,
-    "GT": 0.218,
-    "MN": 0.205,
-    "DHQ": 0.004,
-    "DLQ": 0.009
-  },
-  "disclaimers": "These data are measured by the Puerto Rico Seismic Network (PRSN), located at the University of Puerto Rico Mayaguez. PRSN is a National Ocean Service (NOS) partner that adheres to NOS data collection standards. For more information on the PRSN, visit their <a href=\"http://tidesandcurrents.noaa.gov/redirect.shtml?url=45\">website</a>."
+  ]
 }

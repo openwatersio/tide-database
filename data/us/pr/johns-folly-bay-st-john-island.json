@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-johns-folly-bay-st-john-island",
+  "id": "us/pr/johns-folly-bay-st-john-island",
   "name": "Johns Folly Bay, St. John Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.316999435424805,
   "longitude": -64.70210266113281,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751274",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751274",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751274.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751274"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.325,
+    "HAT": 8.875999,
+    "STND": 0,
+    "MHHW": 8.731,
+    "MHW": 8.716,
+    "DTL": 8.597,
+    "MTL": 8.598,
+    "MSL": 8.591,
+    "MLW": 8.479,
+    "MLLW": 8.464,
+    "GT": 0.267,
+    "MN": 0.237,
+    "DHQ": 0.014,
+    "DLQ": 0.015,
+    "VIVD09": 8.634
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.325,
-    "HAT": 8.875999,
-    "STND": 0,
-    "MHHW": 8.731,
-    "MHW": 8.716,
-    "DTL": 8.597,
-    "MTL": 8.598,
-    "MSL": 8.591,
-    "MLW": 8.479,
-    "MLLW": 8.464,
-    "GT": 0.267,
-    "MN": 0.237,
-    "DHQ": 0.014,
-    "DLQ": 0.015,
-    "VIVD09": 8.634
-  },
-  "disclaimers": ""
+  ]
 }

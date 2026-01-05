@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-ceylon",
+  "id": "us/ga/ceylon",
   "name": "Ceylon",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.9633,
   "longitude": -81.655,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8678466",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8678466",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8678466.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8678466"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-fernandina-beach-amelia-river",
+    "reference": "us/fl/fernandina-beach-amelia-river",
     "height": {
       "type": "ratio",
       "high": 1.09,

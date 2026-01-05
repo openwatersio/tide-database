@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-gray-gables",
+  "id": "us/ma/gray-gables",
   "name": "Gray Gables",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.735,
   "longitude": -70.6233,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447295",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447295",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447295.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447295"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.664,
+    "HAT": 4.45,
+    "STND": 0,
+    "MHHW": 4.132,
+    "MHW": 4.037,
+    "DTL": 3.507,
+    "MTL": 3.486,
+    "MSL": 3.419,
+    "MLW": 2.934,
+    "MLLW": 2.882,
+    "GT": 1.25,
+    "MN": 1.103,
+    "DHQ": 0.095,
+    "DLQ": 0.052,
+    "HWI": 0.879,
+    "LWI": 7.189
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.664,
-    "HAT": 4.45,
-    "STND": 0,
-    "MHHW": 4.132,
-    "MHW": 4.037,
-    "DTL": 3.507,
-    "MTL": 3.486,
-    "MSL": 3.419,
-    "MLW": 2.934,
-    "MLLW": 2.882,
-    "GT": 1.25,
-    "MN": 1.103,
-    "DHQ": 0.095,
-    "DLQ": 0.052,
-    "HWI": 0.879,
-    "LWI": 7.189
-  },
-  "disclaimers": ""
+  ]
 }

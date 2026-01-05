@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-udamat-bay-sedanka-island",
+  "id": "us/ak/udamat-bay-sedanka-island",
   "name": "Udamat Bay, Sedanka Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 53.82891666666667,
   "longitude": -166.21625,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9462645",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462645",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9462645.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462645"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.010999918,
+    "HAT": 2.572,
+    "STND": 0,
+    "MHHW": 2.188,
+    "MHW": 2.056,
+    "DTL": 1.411,
+    "MTL": 1.521,
+    "MSL": 1.511,
+    "MLW": 0.986,
+    "MLLW": 0.634,
+    "GT": 1.554,
+    "MN": 1.07,
+    "DHQ": 0.132,
+    "DLQ": 0.351
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.010999918,
-    "HAT": 2.572,
-    "STND": 0,
-    "MHHW": 2.188,
-    "MHW": 2.056,
-    "DTL": 1.411,
-    "MTL": 1.521,
-    "MSL": 1.511,
-    "MLW": 0.986,
-    "MLLW": 0.634,
-    "GT": 1.554,
-    "MN": 1.07,
-    "DHQ": 0.132,
-    "DLQ": 0.351
-  },
-  "disclaimers": ""
+  ]
 }

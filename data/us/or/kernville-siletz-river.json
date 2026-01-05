@@ -1,10 +1,9 @@
 {
-  "id": "us-or-kernville-siletz-river",
+  "id": "us/or/kernville-siletz-river",
   "name": "Kernville, Siletz River",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.8967,
   "longitude": -124,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9436031",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9436031",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9436031.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9436031"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-crescent-city",
+    "reference": "us/ca/crescent-city",
     "height": {
       "type": "ratio",
       "high": 0.86,

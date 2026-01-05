@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-herring-point",
+  "id": "us/ak/herring-point",
   "name": "Herring Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.475,
   "longitude": -147.792,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454691",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454691",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454691.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454691"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.6889999,
+    "HAT": 5.179,
+    "STND": 0,
+    "MHHW": 4.116,
+    "MHW": 3.839,
+    "DTL": 2.299,
+    "MTL": 2.387,
+    "MSL": 2.426,
+    "MLW": 0.935,
+    "MLLW": 0.482,
+    "GT": 3.634,
+    "MN": 2.904,
+    "DHQ": 0.277,
+    "DLQ": 0.453,
+    "HWI": 10.035,
+    "LWI": 3.746
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.6889999,
-    "HAT": 5.179,
-    "STND": 0,
-    "MHHW": 4.116,
-    "MHW": 3.839,
-    "DTL": 2.299,
-    "MTL": 2.387,
-    "MSL": 2.426,
-    "MLW": 0.935,
-    "MLLW": 0.482,
-    "GT": 3.634,
-    "MN": 2.904,
-    "DHQ": 0.277,
-    "DLQ": 0.453,
-    "HWI": 10.035,
-    "LWI": 3.746
-  },
-  "disclaimers": ""
+  ]
 }

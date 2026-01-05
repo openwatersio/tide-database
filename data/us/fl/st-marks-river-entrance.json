@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-st-marks-river-entrance",
+  "id": "us/fl/st-marks-river-entrance",
   "name": "ST. MARKS RIVER ENTRANCE",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.0783,
   "longitude": -84.1783,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728130",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728130",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728130.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728130"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.25500005,
+    "HAT": 1.618,
+    "STND": 0,
+    "MHHW": 1.314,
+    "MHW": 1.242,
+    "DTL": 0.782,
+    "MTL": 0.841,
+    "MSL": 0.835,
+    "MLW": 0.439,
+    "MLLW": 0.251,
+    "GT": 1.063,
+    "MN": 0.802,
+    "DHQ": 0.072,
+    "DLQ": 0.189,
+    "NAVD88": 0.813
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 107.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.25500005,
-    "HAT": 1.618,
-    "STND": 0,
-    "MHHW": 1.314,
-    "MHW": 1.242,
-    "DTL": 0.782,
-    "MTL": 0.841,
-    "MSL": 0.835,
-    "MLW": 0.439,
-    "MLLW": 0.251,
-    "GT": 1.063,
-    "MN": 0.802,
-    "DHQ": 0.072,
-    "DLQ": 0.189,
-    "NAVD88": 0.813
-  },
-  "disclaimers": ""
+  ]
 }

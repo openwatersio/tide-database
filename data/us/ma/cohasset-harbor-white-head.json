@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-cohasset-harbor-white-head",
+  "id": "us/ma/cohasset-harbor-white-head",
   "name": "Cohasset Harbor (White Head)",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.2483,
   "longitude": -70.785,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8444762",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444762",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8444762.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8444762"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ma-boston",
+    "reference": "us/ma/boston",
     "height": {
       "type": "ratio",
       "high": 0.92,

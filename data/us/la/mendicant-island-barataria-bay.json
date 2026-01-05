@@ -1,10 +1,9 @@
 {
-  "id": "us-la-mendicant-island-barataria-bay",
+  "id": "us/la/mendicant-island-barataria-bay",
   "name": "Mendicant Island, Barataria Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.318300247192383,
   "longitude": -89.9800033569336,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8761742",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761742",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8761742.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761742"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.70400006,
+    "HAT": 1.48,
+    "STND": 0,
+    "MHHW": 1.276,
+    "MHW": 1.274,
+    "DTL": 1.124,
+    "MTL": 1.124,
+    "MSL": 1.126,
+    "MLW": 0.974,
+    "MLLW": 0.971,
+    "GT": 0.305,
+    "MN": 0.299,
+    "DHQ": 0.002,
+    "DLQ": 0.004
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 36.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.70400006,
-    "HAT": 1.48,
-    "STND": 0,
-    "MHHW": 1.276,
-    "MHW": 1.274,
-    "DTL": 1.124,
-    "MTL": 1.124,
-    "MSL": 1.126,
-    "MLW": 0.974,
-    "MLLW": 0.971,
-    "GT": 0.305,
-    "MN": 0.299,
-    "DHQ": 0.002,
-    "DLQ": 0.004
-  },
-  "disclaimers": ""
+  ]
 }

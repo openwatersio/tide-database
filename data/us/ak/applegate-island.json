@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-applegate-island",
+  "id": "us/ak/applegate-island",
   "name": "Applegate Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.6233,
   "longitude": -148.165,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454794",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454794",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454794.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454794"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-cordova",
+    "reference": "us/ak/cordova",
     "height": {
       "type": "fixed",
       "high": -0.18,

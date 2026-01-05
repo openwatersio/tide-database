@@ -1,10 +1,9 @@
 {
-  "id": "us-or-depoe-bay",
+  "id": "us/or/depoe-bay",
   "name": "Depoe Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.81,
   "longitude": -124.058,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9435827",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9435827",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9435827.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9435827"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.09399986,
+    "HAT": 4.282,
+    "STND": 0,
+    "MHHW": 3.547,
+    "MHW": 3.331,
+    "DTL": 2.291,
+    "MTL": 2.392,
+    "MSL": 2.382,
+    "MLW": 1.454,
+    "MLLW": 1.036,
+    "GT": 2.511,
+    "MN": 1.877,
+    "DHQ": 0.216,
+    "DLQ": 0.418,
+    "HWI": 7.811,
+    "LWI": 1.54,
+    "NAVD88": 1.229
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.09399986,
-    "HAT": 4.282,
-    "STND": 0,
-    "MHHW": 3.547,
-    "MHW": 3.331,
-    "DTL": 2.291,
-    "MTL": 2.392,
-    "MSL": 2.382,
-    "MLW": 1.454,
-    "MLLW": 1.036,
-    "GT": 2.511,
-    "MN": 1.877,
-    "DHQ": 0.216,
-    "DLQ": 0.418,
-    "HWI": 7.811,
-    "LWI": 1.54,
-    "NAVD88": 1.229
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-anchorage-knik-arm",
+  "id": "us/ak/anchorage-knik-arm",
   "name": "ANCHORAGE, Knik Arm",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 61.2375,
   "longitude": -149.8903888888889,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455920",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455920",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455920.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455920"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.375,
+    "HAT": 12.208,
+    "STND": 0,
+    "MHHW": 10.8,
+    "MHW": 10.578,
+    "DTL": 6.356,
+    "MTL": 6.587,
+    "MSL": 6.931,
+    "MLW": 2.596,
+    "MLLW": 1.911,
+    "GT": 8.889,
+    "MN": 7.982,
+    "DHQ": 0.222,
+    "DLQ": 0.685,
+    "HWI": 3.65,
+    "LWI": 10.41,
+    "NAVD88": 5.195
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -981,25 +1000,5 @@
       "phase_local": 144.9,
       "speed": 27.341696
     }
-  ],
-  "datums": {
-    "LAT": 0.375,
-    "HAT": 12.208,
-    "STND": 0,
-    "MHHW": 10.8,
-    "MHW": 10.578,
-    "DTL": 6.356,
-    "MTL": 6.587,
-    "MSL": 6.931,
-    "MLW": 2.596,
-    "MLLW": 1.911,
-    "GT": 8.889,
-    "MN": 7.982,
-    "DHQ": 0.222,
-    "DLQ": 0.685,
-    "HWI": 3.65,
-    "LWI": 10.41,
-    "NAVD88": 5.195
-  },
-  "disclaimers": ""
+  ]
 }

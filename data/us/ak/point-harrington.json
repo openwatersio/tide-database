@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-point-harrington",
+  "id": "us/ak/point-harrington",
   "name": "Point Harrington",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.1783,
   "longitude": -132.697,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451005",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451005",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451005.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451005"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.146,
+    "HAT": 5.4049997,
+    "STND": 0,
+    "MHHW": 4.162,
+    "MHW": 3.89,
+    "DTL": 1.73,
+    "MTL": 1.825,
+    "MSL": 1.815,
+    "MLW": -0.239,
+    "MLLW": -0.701,
+    "GT": 4.864,
+    "MN": 4.131,
+    "DHQ": 0.271,
+    "DLQ": 0.462,
+    "HWI": 9.559,
+    "LWI": 3.105
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.146,
-    "HAT": 5.4049997,
-    "STND": 0,
-    "MHHW": 4.162,
-    "MHW": 3.89,
-    "DTL": 1.73,
-    "MTL": 1.825,
-    "MSL": 1.815,
-    "MLW": -0.239,
-    "MLLW": -0.701,
-    "GT": 4.864,
-    "MN": 4.131,
-    "DHQ": 0.271,
-    "DLQ": 0.462,
-    "HWI": 9.559,
-    "LWI": 3.105
-  },
-  "disclaimers": ""
+  ]
 }

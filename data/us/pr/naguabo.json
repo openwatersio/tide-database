@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-naguabo",
+  "id": "us/pr/naguabo",
   "name": "Naguabo",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.18705555555556,
   "longitude": -65.71138888888889,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9753641",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9753641",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9753641.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9753641"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.9390001,
+    "HAT": 2.423,
+    "STND": 0,
+    "MHHW": 2.306,
+    "MHW": 2.288,
+    "DTL": 2.182,
+    "MTL": 2.185,
+    "MSL": 2.176,
+    "MLW": 2.081,
+    "MLLW": 2.058,
+    "GT": 0.248,
+    "MN": 0.207,
+    "DHQ": 0.017,
+    "DLQ": 0.023
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.9390001,
-    "HAT": 2.423,
-    "STND": 0,
-    "MHHW": 2.306,
-    "MHW": 2.288,
-    "DTL": 2.182,
-    "MTL": 2.185,
-    "MSL": 2.176,
-    "MLW": 2.081,
-    "MLLW": 2.058,
-    "GT": 0.248,
-    "MN": 0.207,
-    "DHQ": 0.017,
-    "DLQ": 0.023
-  },
-  "disclaimers": ""
+  ]
 }

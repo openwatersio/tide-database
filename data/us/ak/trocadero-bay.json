@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-trocadero-bay",
+  "id": "us/ak/trocadero-bay",
   "name": "TROCADERO BAY",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.35166666666667,
   "longitude": -132.9380555555556,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450463",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450463",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450463.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450463"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.73000014,
+    "HAT": 4,
+    "STND": 0,
+    "MHHW": 3.259,
+    "MHW": 3.011,
+    "DTL": 1.723,
+    "MTL": 1.805,
+    "MSL": 1.798,
+    "MLW": 0.599,
+    "MLLW": 0.186,
+    "GT": 3.074,
+    "MN": 2.412,
+    "DHQ": 0.248,
+    "DLQ": 0.413,
+    "HWI": 9.367,
+    "LWI": 3.112
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.73000014,
-    "HAT": 4,
-    "STND": 0,
-    "MHHW": 3.259,
-    "MHW": 3.011,
-    "DTL": 1.723,
-    "MTL": 1.805,
-    "MSL": 1.798,
-    "MLW": 0.599,
-    "MLLW": 0.186,
-    "GT": 3.074,
-    "MN": 2.412,
-    "DHQ": 0.248,
-    "DLQ": 0.413,
-    "HWI": 9.367,
-    "LWI": 3.112
-  },
-  "disclaimers": ""
+  ]
 }

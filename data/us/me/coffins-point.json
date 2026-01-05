@@ -1,10 +1,9 @@
 {
-  "id": "us-me-coffins-point",
+  "id": "us/me/coffins-point",
   "name": "Coffins Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.87,
   "longitude": -67.1083,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8410714",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410714",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8410714.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8410714"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.20499992,
+    "HAT": 7.616,
+    "STND": 0,
+    "MHHW": 6.672,
+    "MHW": 6.506,
+    "DTL": 3.904,
+    "MTL": 3.875,
+    "MSL": 3.892,
+    "MLW": 1.243,
+    "MLLW": 1.136,
+    "GT": 5.535,
+    "MN": 5.263,
+    "DHQ": 0.165,
+    "DLQ": 0.107,
+    "HWI": 3.82,
+    "LWI": 10.255
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.20499992,
-    "HAT": 7.616,
-    "STND": 0,
-    "MHHW": 6.672,
-    "MHW": 6.506,
-    "DTL": 3.904,
-    "MTL": 3.875,
-    "MSL": 3.892,
-    "MLW": 1.243,
-    "MLLW": 1.136,
-    "GT": 5.535,
-    "MN": 5.263,
-    "DHQ": 0.165,
-    "DLQ": 0.107,
-    "HWI": 3.82,
-    "LWI": 10.255
-  },
-  "disclaimers": ""
+  ]
 }

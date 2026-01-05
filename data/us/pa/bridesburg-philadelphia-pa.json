@@ -1,10 +1,9 @@
 {
-  "id": "us-pa-bridesburg-philadelphia-pa",
+  "id": "us/pa/bridesburg-philadelphia-pa",
   "name": "Bridesburg, Philadelphia, Pa.",
-  "continent": "North America",
-  "country": "United States",
   "region": "PA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.97968333333333,
   "longitude": -75.07931666666667,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8546252",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8546252",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8546252.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8546252"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.751,
+    "HAT": 8.376,
+    "STND": 0,
+    "MHHW": 8.076,
+    "MHW": 7.958,
+    "DTL": 7.014,
+    "MTL": 6.984,
+    "MSL": 7.046,
+    "MLW": 6.01,
+    "MLLW": 5.952,
+    "GT": 2.124,
+    "MN": 1.948,
+    "DHQ": 0.118,
+    "DLQ": 0.057,
+    "HWI": 6.556,
+    "LWI": 1.214
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 28.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.751,
-    "HAT": 8.376,
-    "STND": 0,
-    "MHHW": 8.076,
-    "MHW": 7.958,
-    "DTL": 7.014,
-    "MTL": 6.984,
-    "MSL": 7.046,
-    "MLW": 6.01,
-    "MLLW": 5.952,
-    "GT": 2.124,
-    "MN": 1.948,
-    "DHQ": 0.118,
-    "DLQ": 0.057,
-    "HWI": 6.556,
-    "LWI": 1.214
-  },
-  "disclaimers": ""
+  ]
 }

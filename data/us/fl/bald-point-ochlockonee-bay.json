@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-bald-point-ochlockonee-bay",
+  "id": "us/fl/bald-point-ochlockonee-bay",
   "name": "Bald Point, Ochlockonee Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.9483,
   "longitude": -84.3417,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728237",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728237",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728237.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728237"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.983,
+    "HAT": 0.74700004,
+    "STND": 0,
+    "MHHW": 0.425,
+    "MHW": 0.36,
+    "DTL": -0.049,
+    "MTL": 0.007,
+    "MSL": -0.002,
+    "MLW": -0.344,
+    "MLLW": -0.524,
+    "GT": 0.95,
+    "MN": 0.705,
+    "DHQ": 0.066,
+    "DLQ": 0.18,
+    "HWI": 7.273,
+    "LWI": 1.163,
+    "NAVD88": -0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.983,
-    "HAT": 0.74700004,
-    "STND": 0,
-    "MHHW": 0.425,
-    "MHW": 0.36,
-    "DTL": -0.049,
-    "MTL": 0.007,
-    "MSL": -0.002,
-    "MLW": -0.344,
-    "MLLW": -0.524,
-    "GT": 0.95,
-    "MN": 0.705,
-    "DHQ": 0.066,
-    "DLQ": 0.18,
-    "HWI": 7.273,
-    "LWI": 1.163,
-    "NAVD88": -0.006
-  },
-  "disclaimers": ""
+  ]
 }

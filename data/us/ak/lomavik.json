@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-lomavik",
+  "id": "us/ak/lomavik",
   "name": "Lomavik",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.554298400878906,
   "longitude": -162.29710388183594,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9466328",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466328",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9466328.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466328"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.4669995,
+    "HAT": 10.796999,
+    "STND": 0,
+    "MHHW": 9.962,
+    "MHW": 9.48,
+    "DTL": 8.755,
+    "MTL": 8.62,
+    "MSL": 8.73,
+    "MLW": 7.76,
+    "MLLW": 7.547,
+    "GT": 2.415,
+    "MN": 1.72,
+    "DHQ": 0.483,
+    "DLQ": 0.212,
+    "HWI": 11.75,
+    "LWI": 6.89
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.4669995,
-    "HAT": 10.796999,
-    "STND": 0,
-    "MHHW": 9.962,
-    "MHW": 9.48,
-    "DTL": 8.755,
-    "MTL": 8.62,
-    "MSL": 8.73,
-    "MLW": 7.76,
-    "MLLW": 7.547,
-    "GT": 2.415,
-    "MN": 1.72,
-    "DHQ": 0.483,
-    "DLQ": 0.212,
-    "HWI": 11.75,
-    "LWI": 6.89
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-cape-krusenstern",
+  "id": "us/ak/cape-krusenstern",
   "name": "Cape Krusenstern",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 67.05419444444445,
   "longitude": -163.3212777777778,
   "timezone": "America/Nome",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9490571",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9490571",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9490571.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9490571"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 12.156,
+    "HAT": 12.412,
+    "STND": 0,
+    "MHHW": 12.404,
+    "MHW": 12.387,
+    "DTL": 12.303,
+    "MTL": 12.314,
+    "MSL": 12.274,
+    "MLW": 12.24,
+    "MLLW": 12.203,
+    "GT": 0.201,
+    "MN": 0.147,
+    "DHQ": 0.017,
+    "DLQ": 0.037
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 12.156,
-    "HAT": 12.412,
-    "STND": 0,
-    "MHHW": 12.404,
-    "MHW": 12.387,
-    "DTL": 12.303,
-    "MTL": 12.314,
-    "MSL": 12.274,
-    "MLW": 12.24,
-    "MLLW": 12.203,
-    "GT": 0.201,
-    "MN": 0.147,
-    "DHQ": 0.017,
-    "DLQ": 0.037
-  },
-  "disclaimers": ""
+  ]
 }

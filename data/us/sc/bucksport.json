@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-bucksport",
+  "id": "us/sc/bucksport",
   "name": "Bucksport",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.6467,
   "longitude": -79.095,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8661139",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661139",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8661139.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661139"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.061,
+    "HAT": 2.144,
+    "STND": 0,
+    "MHHW": 1.979,
+    "MHW": 1.943,
+    "DTL": 1.606,
+    "MTL": 1.614,
+    "MSL": 1.666,
+    "MLW": 1.285,
+    "MLLW": 1.233,
+    "GT": 0.746,
+    "MN": 0.658,
+    "DHQ": 0.036,
+    "DLQ": 0.052,
+    "HWI": 4.801,
+    "LWI": 11.522,
+    "NAVD88": 1.384
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 219,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.061,
-    "HAT": 2.144,
-    "STND": 0,
-    "MHHW": 1.979,
-    "MHW": 1.943,
-    "DTL": 1.606,
-    "MTL": 1.614,
-    "MSL": 1.666,
-    "MLW": 1.285,
-    "MLLW": 1.233,
-    "GT": 0.746,
-    "MN": 0.658,
-    "DHQ": 0.036,
-    "DLQ": 0.052,
-    "HWI": 4.801,
-    "LWI": 11.522,
-    "NAVD88": 1.384
-  },
-  "disclaimers": ""
+  ]
 }

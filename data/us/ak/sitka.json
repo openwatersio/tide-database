@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-sitka",
+  "id": "us/ak/sitka",
   "name": "Sitka",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.05169444444444,
   "longitude": -135.342,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451600",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451600",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451600.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451600"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.37874103,
+    "HAT": 5.276741,
+    "STND": 0,
+    "MHHW": 4.407,
+    "MHW": 4.17,
+    "DTL": 2.893,
+    "MTL": 2.997,
+    "MSL": 2.989,
+    "MLW": 1.824,
+    "MLLW": 1.379,
+    "GT": 3.029,
+    "MN": 2.346,
+    "DHQ": 0.238,
+    "DLQ": 0.445,
+    "HWI": 9.517,
+    "LWI": 3.252
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 195.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.37874103,
-    "HAT": 5.276741,
-    "STND": 0,
-    "MHHW": 4.407,
-    "MHW": 4.17,
-    "DTL": 2.893,
-    "MTL": 2.997,
-    "MSL": 2.989,
-    "MLW": 1.824,
-    "MLLW": 1.379,
-    "GT": 3.029,
-    "MN": 2.346,
-    "DHQ": 0.238,
-    "DLQ": 0.445,
-    "HWI": 9.517,
-    "LWI": 3.252
-  },
-  "disclaimers": ""
+  ]
 }

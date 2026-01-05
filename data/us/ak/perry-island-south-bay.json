@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-perry-island-south-bay",
+  "id": "us/ak/perry-island-south-bay",
   "name": "Perry Island (South Bay)",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.6717,
   "longitude": -147.932,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454721",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454721",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454721.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454721"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.5940001,
+    "HAT": 4.3380003,
+    "STND": 0,
+    "MHHW": 3.238,
+    "MHW": 2.948,
+    "DTL": 1.416,
+    "MTL": 1.497,
+    "MSL": 1.533,
+    "MLW": 0.045,
+    "MLLW": -0.405,
+    "GT": 3.644,
+    "MN": 2.904,
+    "DHQ": 0.289,
+    "DLQ": 0.451,
+    "HWI": 10.033,
+    "LWI": 3.743
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.5940001,
-    "HAT": 4.3380003,
-    "STND": 0,
-    "MHHW": 3.238,
-    "MHW": 2.948,
-    "DTL": 1.416,
-    "MTL": 1.497,
-    "MSL": 1.533,
-    "MLW": 0.045,
-    "MLLW": -0.405,
-    "GT": 3.644,
-    "MN": 2.904,
-    "DHQ": 0.289,
-    "DLQ": 0.451,
-    "HWI": 10.033,
-    "LWI": 3.743
-  },
-  "disclaimers": ""
+  ]
 }

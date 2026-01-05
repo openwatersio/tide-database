@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-queen-isabella-causeway-west-end",
+  "id": "us/tx/queen-isabella-causeway-west-end",
   "name": "Queen Isabella Causeway (west end)",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.0717,
   "longitude": -97.1917,
   "timezone": "America/Chicago",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8779739",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779739",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8779739.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779739"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-tx-padre-island-south-end",
+    "reference": "us/tx/padre-island-south-end",
     "height": {
       "type": "ratio",
       "high": 0.81,

@@ -1,10 +1,9 @@
 {
-  "id": "us-or-north-jetty-tillamook-bay",
+  "id": "us/or/north-jetty-tillamook-bay",
   "name": "North Jetty, Tillamook Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 45.56999969482422,
   "longitude": -123.96499633789062,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9437585",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9437585",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9437585.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9437585"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 9.145,
+    "HAT": 13.161,
+    "STND": 0,
+    "MHHW": 12.455,
+    "MHW": 12.245,
+    "DTL": 11.23,
+    "MTL": 11.329,
+    "MSL": 11.304,
+    "MLW": 10.413,
+    "MLLW": 10.004,
+    "GT": 2.45,
+    "MN": 1.831,
+    "DHQ": 0.21,
+    "DLQ": 0.409,
+    "HWI": 8.15,
+    "LWI": 1.69,
+    "NAVD88": 10.128
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.145,
-    "HAT": 13.161,
-    "STND": 0,
-    "MHHW": 12.455,
-    "MHW": 12.245,
-    "DTL": 11.23,
-    "MTL": 11.329,
-    "MSL": 11.304,
-    "MLW": 10.413,
-    "MLLW": 10.004,
-    "GT": 2.45,
-    "MN": 1.831,
-    "DHQ": 0.21,
-    "DLQ": 0.409,
-    "HWI": 8.15,
-    "LWI": 1.69,
-    "NAVD88": 10.128
-  },
-  "disclaimers": ""
+  ]
 }

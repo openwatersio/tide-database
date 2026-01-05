@@ -1,10 +1,9 @@
 {
-  "id": "us-balboa-canal-zone",
+  "id": "us/balboa-canal-zone",
   "name": "Balboa, Canal Zone",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 8.96667,
   "longitude": -79.56666666666666,
   "timezone": "America/Panama",
@@ -12,14 +11,20 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9812501",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9812501",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9812501.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9812501"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MSL": 0,
+    "MLLW": -2.569
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,11 +322,5 @@
       "phase_local": 78.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MSL": 0,
-    "MLLW": -2.569
-  },
-  "disclaimers": ""
+  ]
 }

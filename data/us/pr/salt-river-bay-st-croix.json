@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-salt-river-bay-st-croix",
+  "id": "us/pr/salt-river-bay-st-croix",
   "name": "Salt River Bay, St. Croix",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 17.775299072265625,
   "longitude": -64.76229858398438,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751389",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751389",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751389.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751389"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.995999,
+    "HAT": 9.466,
+    "STND": 0,
+    "MHHW": 9.356,
+    "MHW": 9.351,
+    "DTL": 9.248,
+    "MTL": 9.249,
+    "MSL": 9.249,
+    "MLW": 9.148,
+    "MLLW": 9.139,
+    "GT": 0.217,
+    "MN": 0.203,
+    "DHQ": 0.005,
+    "DLQ": 0.008,
+    "VIVD09": 9.247
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.995999,
-    "HAT": 9.466,
-    "STND": 0,
-    "MHHW": 9.356,
-    "MHW": 9.351,
-    "DTL": 9.248,
-    "MTL": 9.249,
-    "MSL": 9.249,
-    "MLW": 9.148,
-    "MLLW": 9.139,
-    "GT": 0.217,
-    "MN": 0.203,
-    "DHQ": 0.005,
-    "DLQ": 0.008,
-    "VIVD09": 9.247
-  },
-  "disclaimers": ""
+  ]
 }

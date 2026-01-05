@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-beaufort",
+  "id": "us/sc/beaufort",
   "name": "Beaufort",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.43,
   "longitude": -80.675,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8667999",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667999",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8667999.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8667999"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.521,
+    "HAT": 3.92,
+    "STND": 0,
+    "MHHW": 3.365,
+    "MHW": 3.248,
+    "DTL": 2.149,
+    "MTL": 2.123,
+    "MSL": 2.25,
+    "MLW": 0.998,
+    "MLLW": 0.933,
+    "GT": 2.432,
+    "MN": 2.251,
+    "DHQ": 0.117,
+    "DLQ": 0.065,
+    "HWI": 1.648,
+    "LWI": 7.748,
+    "NAVD88": 2.283
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.521,
-    "HAT": 3.92,
-    "STND": 0,
-    "MHHW": 3.365,
-    "MHW": 3.248,
-    "DTL": 2.149,
-    "MTL": 2.123,
-    "MSL": 2.25,
-    "MLW": 0.998,
-    "MLLW": 0.933,
-    "GT": 2.432,
-    "MN": 2.251,
-    "DHQ": 0.117,
-    "DLQ": 0.065,
-    "HWI": 1.648,
-    "LWI": 7.748,
-    "NAVD88": 2.283
-  },
-  "disclaimers": ""
+  ]
 }

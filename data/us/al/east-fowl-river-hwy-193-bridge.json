@@ -1,10 +1,9 @@
 {
-  "id": "us-al-east-fowl-river-hwy-193-bridge",
+  "id": "us/al/east-fowl-river-hwy-193-bridge",
   "name": "East Fowl River, Hwy 193 Bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.443700790405273,
   "longitude": -88.11389923095703,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8735523",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8735523",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8735523.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8735523"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.75,
+    "HAT": 4.825,
+    "STND": 0,
+    "MHHW": 4.557,
+    "MHW": 4.541,
+    "DTL": 4.333,
+    "MTL": 4.335,
+    "MSL": 4.331,
+    "MLW": 4.129,
+    "MLLW": 4.11,
+    "GT": 0.447,
+    "MN": 0.412,
+    "DHQ": 0.016,
+    "DLQ": 0.019,
+    "NAVD88": 4.307
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 178.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.75,
-    "HAT": 4.825,
-    "STND": 0,
-    "MHHW": 4.557,
-    "MHW": 4.541,
-    "DTL": 4.333,
-    "MTL": 4.335,
-    "MSL": 4.331,
-    "MLW": 4.129,
-    "MLLW": 4.11,
-    "GT": 0.447,
-    "MN": 0.412,
-    "DHQ": 0.016,
-    "DLQ": 0.019,
-    "NAVD88": 4.307
-  },
-  "disclaimers": ""
+  ]
 }

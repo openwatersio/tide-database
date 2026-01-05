@@ -1,10 +1,9 @@
 {
-  "id": "us-three-saints-bay",
+  "id": "us/three-saints-bay",
   "name": "Three Saints Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.11666666666701,
   "longitude": -153.5166666666701,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2047",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2047",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2047.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2047"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-kodiak-womens-bay",
+    "reference": "us/ak/kodiak-womens-bay",
     "height": {
       "type": "fixed",
       "high": -0.06,

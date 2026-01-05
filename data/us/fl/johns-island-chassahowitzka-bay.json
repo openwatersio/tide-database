@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-johns-island-chassahowitzka-bay",
+  "id": "us/fl/johns-island-chassahowitzka-bay",
   "name": "Johns Island, Chassahowitzka Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.6917,
   "longitude": -82.6383,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727235",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727235",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727235.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727235"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.296,
+    "HAT": 1.469,
+    "STND": 0,
+    "MHHW": 1.256,
+    "MHW": 1.154,
+    "DTL": 0.895,
+    "MTL": 0.88,
+    "MSL": 0.866,
+    "MLW": 0.607,
+    "MLLW": 0.533,
+    "GT": 0.723,
+    "MN": 0.547,
+    "DHQ": 0.102,
+    "DLQ": 0.073,
+    "HWI": 7.415,
+    "LWI": 2.22
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 156.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.296,
-    "HAT": 1.469,
-    "STND": 0,
-    "MHHW": 1.256,
-    "MHW": 1.154,
-    "DTL": 0.895,
-    "MTL": 0.88,
-    "MSL": 0.866,
-    "MLW": 0.607,
-    "MLLW": 0.533,
-    "GT": 0.723,
-    "MN": 0.547,
-    "DHQ": 0.102,
-    "DLQ": 0.073,
-    "HWI": 7.415,
-    "LWI": 2.22
-  },
-  "disclaimers": ""
+  ]
 }

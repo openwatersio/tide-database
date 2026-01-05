@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-charleston-customhouse-wharf",
+  "id": "us/sc/charleston-customhouse-wharf",
   "name": "CHARLESTON (Customhouse Wharf)",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.7808333,
   "longitude": -79.9236111,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8665530",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8665530",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8665530.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8665530"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.3672229,
+    "HAT": 3.054223,
+    "STND": 0,
+    "MHHW": 2.6,
+    "MHW": 2.491,
+    "DTL": 1.721,
+    "MTL": 1.695,
+    "MSL": 1.733,
+    "MLW": 0.9,
+    "MLLW": 0.843,
+    "GT": 1.757,
+    "MN": 1.591,
+    "DHQ": 0.109,
+    "DLQ": 0.057,
+    "HWI": 0.406,
+    "LWI": 6.628,
+    "NAVD88": 1.8
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 304.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.3672229,
-    "HAT": 3.054223,
-    "STND": 0,
-    "MHHW": 2.6,
-    "MHW": 2.491,
-    "DTL": 1.721,
-    "MTL": 1.695,
-    "MSL": 1.733,
-    "MLW": 0.9,
-    "MLLW": 0.843,
-    "GT": 1.757,
-    "MN": 1.591,
-    "DHQ": 0.109,
-    "DLQ": 0.057,
-    "HWI": 0.406,
-    "LWI": 6.628,
-    "NAVD88": 1.8
-  },
-  "disclaimers": ""
+  ]
 }

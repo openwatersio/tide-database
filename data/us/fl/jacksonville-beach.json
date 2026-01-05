@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-jacksonville-beach",
+  "id": "us/fl/jacksonville-beach",
   "name": "Jacksonville Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.2833,
   "longitude": -81.3867,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720291",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720291",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720291.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720291"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 3.608,
+    "MHW": 3.493,
+    "DTL": 2.752,
+    "MTL": 2.72,
+    "MSL": 2.673,
+    "MLW": 1.947,
+    "MLLW": 1.897,
+    "GT": 1.711,
+    "MN": 1.546,
+    "DHQ": 0.115,
+    "DLQ": 0.05,
+    "HWI": 0.528,
+    "LWI": 6.818,
+    "NAVD88": 2.853
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 3.608,
-    "MHW": 3.493,
-    "DTL": 2.752,
-    "MTL": 2.72,
-    "MSL": 2.673,
-    "MLW": 1.947,
-    "MLLW": 1.897,
-    "GT": 1.711,
-    "MN": 1.546,
-    "DHQ": 0.115,
-    "DLQ": 0.05,
-    "HWI": 0.528,
-    "LWI": 6.818,
-    "NAVD88": 2.853
-  },
-  "disclaimers": ""
+  ]
 }

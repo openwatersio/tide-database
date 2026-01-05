@@ -1,10 +1,9 @@
 {
-  "id": "us-va-kingsmill",
+  "id": "us/va/kingsmill",
   "name": "Kingsmill",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.22,
   "longitude": -76.6633,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638424",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638424",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638424.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638424"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.4620001,
+    "HAT": 3.6720002,
+    "STND": 0,
+    "MHHW": 3.436,
+    "MHW": 3.371,
+    "DTL": 3.036,
+    "MTL": 3.027,
+    "MSL": 3.028,
+    "MLW": 2.683,
+    "MLLW": 2.635,
+    "GT": 0.801,
+    "MN": 0.688,
+    "DHQ": 0.065,
+    "DLQ": 0.048,
+    "HWI": 3.626,
+    "LWI": 10.261
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.4620001,
-    "HAT": 3.6720002,
-    "STND": 0,
-    "MHHW": 3.436,
-    "MHW": 3.371,
-    "DTL": 3.036,
-    "MTL": 3.027,
-    "MSL": 3.028,
-    "MLW": 2.683,
-    "MLLW": 2.635,
-    "GT": 0.801,
-    "MN": 0.688,
-    "DHQ": 0.065,
-    "DLQ": 0.048,
-    "HWI": 3.626,
-    "LWI": 10.261
-  },
-  "disclaimers": ""
+  ]
 }

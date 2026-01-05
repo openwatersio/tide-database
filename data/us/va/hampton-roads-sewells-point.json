@@ -1,10 +1,9 @@
 {
-  "id": "us-va-hampton-roads-sewells-point",
+  "id": "us/va/hampton-roads-sewells-point",
   "name": "HAMPTON ROADS (Sewells Point)",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.9427778,
   "longitude": -76.3286111,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638610",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638610",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638610.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638610"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.07,
+    "HAT": 2.463,
+    "STND": 0,
+    "MHHW": 2.176,
+    "MHW": 2.114,
+    "DTL": 1.756,
+    "MTL": 1.744,
+    "MSL": 1.748,
+    "MLW": 1.374,
+    "MLLW": 1.336,
+    "GT": 0.841,
+    "MN": 0.74,
+    "DHQ": 0.062,
+    "DLQ": 0.038,
+    "HWI": 1.55,
+    "LWI": 7.83,
+    "NAVD88": 1.827
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 286.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.07,
-    "HAT": 2.463,
-    "STND": 0,
-    "MHHW": 2.176,
-    "MHW": 2.114,
-    "DTL": 1.756,
-    "MTL": 1.744,
-    "MSL": 1.748,
-    "MLW": 1.374,
-    "MLLW": 1.336,
-    "GT": 0.841,
-    "MN": 0.74,
-    "DHQ": 0.062,
-    "DLQ": 0.038,
-    "HWI": 1.55,
-    "LWI": 7.83,
-    "NAVD88": 1.827
-  },
-  "disclaimers": ""
+  ]
 }

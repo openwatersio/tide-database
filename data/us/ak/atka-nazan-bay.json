@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-atka-nazan-bay",
+  "id": "us/ak/atka-nazan-bay",
   "name": "Atka, Nazan Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 52.23194444444444,
   "longitude": -174.1725,
   "timezone": "America/Adak",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9461710",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461710",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9461710.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9461710"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.618,
+    "HAT": 9.793,
+    "STND": 0,
+    "MHHW": 9.254,
+    "MHW": 9.187,
+    "DTL": 8.733,
+    "MTL": 8.778,
+    "MSL": 8.811,
+    "MLW": 8.369,
+    "MLLW": 8.212,
+    "GT": 1.042,
+    "MN": 0.818,
+    "DHQ": 0.067,
+    "DLQ": 0.157,
+    "NAVD88": 8.479
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -237,23 +254,5 @@
       "phase_local": 5.7,
       "speed": 30.082138
     }
-  ],
-  "datums": {
-    "LAT": 7.618,
-    "HAT": 9.793,
-    "STND": 0,
-    "MHHW": 9.254,
-    "MHW": 9.187,
-    "DTL": 8.733,
-    "MTL": 8.778,
-    "MSL": 8.811,
-    "MLW": 8.369,
-    "MLLW": 8.212,
-    "GT": 1.042,
-    "MN": 0.818,
-    "DHQ": 0.067,
-    "DLQ": 0.157,
-    "NAVD88": 8.479
-  },
-  "disclaimers": ""
+  ]
 }

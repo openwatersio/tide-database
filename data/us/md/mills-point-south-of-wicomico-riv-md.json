@@ -1,10 +1,9 @@
 {
-  "id": "us-md-mills-point-south-of-wicomico-riv-md",
+  "id": "us/md/mills-point-south-of-wicomico-riv-md",
   "name": "Mills Point (south of), Wicomico Riv., Md.",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.3267,
   "longitude": -76.8333,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8578551",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578551",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8578551.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578551"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-dc-washington-washington-channel-d-c",
+    "reference": "us/dc/washington-washington-channel-d-c",
     "height": {
       "type": "ratio",
       "high": 0.65,

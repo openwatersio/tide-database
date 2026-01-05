@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-glen-cove-hempstead-harbor",
+  "id": "us/ny/glen-cove-hempstead-harbor",
   "name": "Glen Cove, Hempstead Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8633,
   "longitude": -73.655,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516614",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516614",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516614.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516614"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.09200001,
+    "HAT": 3.649,
+    "STND": 0,
+    "MHHW": 3.061,
+    "MHW": 2.95,
+    "DTL": 1.862,
+    "MTL": 1.842,
+    "MSL": 1.844,
+    "MLW": 0.734,
+    "MLLW": 0.663,
+    "GT": 2.398,
+    "MN": 2.216,
+    "DHQ": 0.11,
+    "DLQ": 0.072,
+    "HWI": 3.696,
+    "LWI": 10.335,
+    "NAVD88": 1.928
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.09200001,
-    "HAT": 3.649,
-    "STND": 0,
-    "MHHW": 3.061,
-    "MHW": 2.95,
-    "DTL": 1.862,
-    "MTL": 1.842,
-    "MSL": 1.844,
-    "MLW": 0.734,
-    "MLLW": 0.663,
-    "GT": 2.398,
-    "MN": 2.216,
-    "DHQ": 0.11,
-    "DLQ": 0.072,
-    "HWI": 3.696,
-    "LWI": 10.335,
-    "NAVD88": 1.928
-  },
-  "disclaimers": ""
+  ]
 }

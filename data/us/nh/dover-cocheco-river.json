@@ -1,10 +1,9 @@
 {
-  "id": "us-nh-dover-cocheco-river",
+  "id": "us/nh/dover-cocheco-river",
   "name": "Dover, Cocheco River",
-  "continent": "North America",
-  "country": "United States",
   "region": "NH",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.1983,
   "longitude": -70.8683,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8420411",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8420411",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8420411.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8420411"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.5469999,
+    "HAT": 4.661,
+    "STND": 0,
+    "MHHW": 4.25,
+    "MHW": 4.14,
+    "DTL": 3.083,
+    "MTL": 3.067,
+    "MSL": 3.106,
+    "MLW": 1.993,
+    "MLLW": 1.915,
+    "GT": 2.335,
+    "MN": 2.147,
+    "DHQ": 0.11,
+    "DLQ": 0.078,
+    "HWI": 5.328,
+    "LWI": 11.401
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.5469999,
-    "HAT": 4.661,
-    "STND": 0,
-    "MHHW": 4.25,
-    "MHW": 4.14,
-    "DTL": 3.083,
-    "MTL": 3.067,
-    "MSL": 3.106,
-    "MLW": 1.993,
-    "MLLW": 1.915,
-    "GT": 2.335,
-    "MN": 2.147,
-    "DHQ": 0.11,
-    "DLQ": 0.078,
-    "HWI": 5.328,
-    "LWI": 11.401
-  },
-  "disclaimers": ""
+  ]
 }

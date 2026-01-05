@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-naples-naples-bay-north-end",
+  "id": "us/fl/naples-naples-bay-north-end",
   "name": "Naples, Naples Bay, north end",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.136699676513672,
   "longitude": -81.78829956054688,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725114",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725114",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725114.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725114"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.14899993,
+    "HAT": 1.6819999,
+    "STND": 0,
+    "MHHW": 1.407,
+    "MHW": 1.332,
+    "DTL": 0.987,
+    "MTL": 1.031,
+    "MSL": 1.045,
+    "MLW": 0.73,
+    "MLLW": 0.567,
+    "GT": 0.841,
+    "MN": 0.601,
+    "DHQ": 0.076,
+    "DLQ": 0.164,
+    "HWI": 5.94,
+    "LWI": 12.34,
+    "NAVD88": 1.197
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 267.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.14899993,
-    "HAT": 1.6819999,
-    "STND": 0,
-    "MHHW": 1.407,
-    "MHW": 1.332,
-    "DTL": 0.987,
-    "MTL": 1.031,
-    "MSL": 1.045,
-    "MLW": 0.73,
-    "MLLW": 0.567,
-    "GT": 0.841,
-    "MN": 0.601,
-    "DHQ": 0.076,
-    "DLQ": 0.164,
-    "HWI": 5.94,
-    "LWI": 12.34,
-    "NAVD88": 1.197
-  },
-  "disclaimers": ""
+  ]
 }

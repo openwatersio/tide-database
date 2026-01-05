@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-ozello-st-martins-river",
+  "id": "us/fl/ozello-st-martins-river",
   "name": "Ozello, St. Martins River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.825,
   "longitude": -82.6583,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727306",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727306",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727306.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727306"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.177,
+    "HAT": 1.508,
+    "STND": 0,
+    "MHHW": 1.433,
+    "MHW": 1.385,
+    "DTL": 1.32,
+    "MTL": 1.311,
+    "MSL": 1.315,
+    "MLW": 1.237,
+    "MLLW": 1.207,
+    "GT": 0.226,
+    "MN": 0.148,
+    "DHQ": 0.048,
+    "DLQ": 0.03,
+    "HWI": 10.948,
+    "LWI": 5.782,
+    "NAVD88": 1.35
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.177,
-    "HAT": 1.508,
-    "STND": 0,
-    "MHHW": 1.433,
-    "MHW": 1.385,
-    "DTL": 1.32,
-    "MTL": 1.311,
-    "MSL": 1.315,
-    "MLW": 1.237,
-    "MLLW": 1.207,
-    "GT": 0.226,
-    "MN": 0.148,
-    "DHQ": 0.048,
-    "DLQ": 0.03,
-    "HWI": 10.948,
-    "LWI": 5.782,
-    "NAVD88": 1.35
-  },
-  "disclaimers": ""
+  ]
 }

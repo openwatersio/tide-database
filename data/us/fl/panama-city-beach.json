@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-panama-city-beach",
+  "id": "us/fl/panama-city-beach",
   "name": "Panama City Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.21375,
   "longitude": -85.87858333333334,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729210",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729210",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729210.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729210"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.919,
+    "HAT": 8.934,
+    "STND": 0,
+    "MHHW": 8.656,
+    "MHW": 8.633,
+    "DTL": 8.444,
+    "MTL": 8.442,
+    "MSL": 8.434,
+    "MLW": 8.251,
+    "MLLW": 8.231,
+    "GT": 0.425,
+    "MN": 0.382,
+    "DHQ": 0.023,
+    "DLQ": 0.02,
+    "NAVD88": 8.393
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 333.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.919,
-    "HAT": 8.934,
-    "STND": 0,
-    "MHHW": 8.656,
-    "MHW": 8.633,
-    "DTL": 8.444,
-    "MTL": 8.442,
-    "MSL": 8.434,
-    "MLW": 8.251,
-    "MLLW": 8.231,
-    "GT": 0.425,
-    "MN": 0.382,
-    "DHQ": 0.023,
-    "DLQ": 0.02,
-    "NAVD88": 8.393
-  },
-  "disclaimers": ""
+  ]
 }

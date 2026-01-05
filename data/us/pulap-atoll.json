@@ -1,10 +1,9 @@
 {
-  "id": "us-pulap-atoll",
+  "id": "us/pulap-atoll",
   "name": "Pulap Atoll",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 7.633333333333304,
   "longitude": 149.41666666667007,
   "timezone": "Pacific/Chuuk",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2651",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2651",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2651.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2651"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fm-chuuk-moen-island",
+    "reference": "us/fm/chuuk-moen-island",
     "height": {
       "type": "ratio",
       "high": 0.74,

@@ -1,10 +1,9 @@
 {
-  "id": "us-al-gulf-shores-icww",
+  "id": "us/al/gulf-shores-icww",
   "name": "Gulf Shores, ICWW",
-  "continent": "North America",
-  "country": "United States",
   "region": "AL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.27988888888889,
   "longitude": -87.68427777777778,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8731439",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8731439",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8731439.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8731439"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.362,
+    "HAT": 9.162,
+    "STND": 0,
+    "MHHW": 8.977,
+    "MHW": 8.962,
+    "DTL": 8.791,
+    "MTL": 8.796,
+    "MSL": 8.788,
+    "MLW": 8.629,
+    "MLLW": 8.606,
+    "GT": 0.371,
+    "MN": 0.333,
+    "DHQ": 0.014,
+    "DLQ": 0.023
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 118.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.362,
-    "HAT": 9.162,
-    "STND": 0,
-    "MHHW": 8.977,
-    "MHW": 8.962,
-    "DTL": 8.791,
-    "MTL": 8.796,
-    "MSL": 8.788,
-    "MLW": 8.629,
-    "MLLW": 8.606,
-    "GT": 0.371,
-    "MN": 0.333,
-    "DHQ": 0.014,
-    "DLQ": 0.023
-  },
-  "disclaimers": ""
+  ]
 }

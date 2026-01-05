@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-white-city-icww",
+  "id": "us/fl/white-city-icww",
   "name": "White City, ICWW",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.88069444444444,
   "longitude": -85.22144444444444,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728853",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728853",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728853.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728853"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.604,
+    "HAT": 1.262,
+    "STND": 0,
+    "MHHW": 1.11,
+    "MHW": 1.09,
+    "DTL": 0.956,
+    "MTL": 0.959,
+    "MSL": 0.96,
+    "MLW": 0.828,
+    "MLLW": 0.802,
+    "GT": 0.309,
+    "MN": 0.262,
+    "DHQ": 0.021,
+    "DLQ": 0.026,
+    "NAVD88": 0.824
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 9.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.604,
-    "HAT": 1.262,
-    "STND": 0,
-    "MHHW": 1.11,
-    "MHW": 1.09,
-    "DTL": 0.956,
-    "MTL": 0.959,
-    "MSL": 0.96,
-    "MLW": 0.828,
-    "MLLW": 0.802,
-    "GT": 0.309,
-    "MN": 0.262,
-    "DHQ": 0.021,
-    "DLQ": 0.026,
-    "NAVD88": 0.824
-  },
-  "disclaimers": ""
+  ]
 }

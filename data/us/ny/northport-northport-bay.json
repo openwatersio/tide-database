@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-northport-northport-bay",
+  "id": "us/ny/northport-northport-bay",
   "name": "Northport, Northport Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.9,
   "longitude": -73.3533,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8515586",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8515586",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8515586.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8515586"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.291,
+    "HAT": 3.748,
+    "STND": 0,
+    "MHHW": 3.211,
+    "MHW": 3.104,
+    "DTL": 2.015,
+    "MTL": 1.996,
+    "MSL": 1.999,
+    "MLW": 0.888,
+    "MLLW": 0.819,
+    "GT": 2.392,
+    "MN": 2.215,
+    "DHQ": 0.107,
+    "DLQ": 0.069,
+    "HWI": 3.706,
+    "LWI": 10.211
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.291,
-    "HAT": 3.748,
-    "STND": 0,
-    "MHHW": 3.211,
-    "MHW": 3.104,
-    "DTL": 2.015,
-    "MTL": 1.996,
-    "MSL": 1.999,
-    "MLW": 0.888,
-    "MLLW": 0.819,
-    "GT": 2.392,
-    "MN": 2.215,
-    "DHQ": 0.107,
-    "DLQ": 0.069,
-    "HWI": 3.706,
-    "LWI": 10.211
-  },
-  "disclaimers": ""
+  ]
 }

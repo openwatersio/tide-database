@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-puerto-real",
+  "id": "us/pr/puerto-real",
   "name": "Puerto Real",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.07480555555556,
   "longitude": -67.18877777777777,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9759189",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759189",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9759189.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9759189"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.786,
+    "HAT": 9.249,
+    "STND": 0,
+    "MHHW": 9.131,
+    "MHW": 9.106,
+    "DTL": 9.008,
+    "MTL": 9.01,
+    "MSL": 9.014,
+    "MLW": 8.914,
+    "MLLW": 8.884,
+    "GT": 0.247,
+    "MN": 0.192,
+    "DHQ": 0.025,
+    "DLQ": 0.03
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 109.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.786,
-    "HAT": 9.249,
-    "STND": 0,
-    "MHHW": 9.131,
-    "MHW": 9.106,
-    "DTL": 9.008,
-    "MTL": 9.01,
-    "MSL": 9.014,
-    "MLW": 8.914,
-    "MLLW": 8.884,
-    "GT": 0.247,
-    "MN": 0.192,
-    "DHQ": 0.025,
-    "DLQ": 0.03
-  },
-  "disclaimers": ""
+  ]
 }

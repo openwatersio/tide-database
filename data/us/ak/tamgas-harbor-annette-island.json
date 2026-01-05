@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-tamgas-harbor-annette-island",
+  "id": "us/ak/tamgas-harbor-annette-island",
   "name": "Tamgas Harbor, Annette Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.0667,
   "longitude": -131.542,
   "timezone": "America/Metlakatla",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450273",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450273",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450273.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450273"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-ketchikan",
+    "reference": "us/ak/ketchikan",
     "height": {
       "type": "ratio",
       "high": 0.98,

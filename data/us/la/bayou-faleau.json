@@ -1,10 +1,9 @@
 {
-  "id": "us-la-bayou-faleau",
+  "id": "us/la/bayou-faleau",
   "name": "Bayou Faleau",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.47038888888889,
   "longitude": -90.34222222222222,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8762329",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762329",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8762329.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762329"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.995,
+    "HAT": 9.536,
+    "STND": 0,
+    "MHHW": 9.403,
+    "MHW": 9.404,
+    "DTL": 9.294,
+    "MTL": 9.295,
+    "MSL": 9.285,
+    "MLW": 9.186,
+    "MLLW": 9.184,
+    "GT": 0.219,
+    "MN": 0.218,
+    "DHQ": 0,
+    "DLQ": 0.002
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.995,
-    "HAT": 9.536,
-    "STND": 0,
-    "MHHW": 9.403,
-    "MHW": 9.404,
-    "DTL": 9.294,
-    "MTL": 9.295,
-    "MSL": 9.285,
-    "MLW": 9.186,
-    "MLLW": 9.184,
-    "GT": 0.219,
-    "MN": 0.218,
-    "DHQ": 0,
-    "DLQ": 0.002
-  },
-  "disclaimers": ""
+  ]
 }

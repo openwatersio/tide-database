@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-chinulna-point-cook-inlet",
+  "id": "us/ak/chinulna-point-cook-inlet",
   "name": "Chinulna Point, Cook Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.5033,
   "longitude": -151.283,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455735",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455735",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455735.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455735"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -3.6090002,
+    "HAT": 6.3,
+    "STND": 0,
+    "MHHW": 4.55,
+    "MHW": 4.322,
+    "DTL": 1.372,
+    "MTL": 1.581,
+    "MSL": 1.671,
+    "MLW": -1.159,
+    "MLLW": -1.804,
+    "GT": 6.355,
+    "MN": 5.482,
+    "DHQ": 0.228,
+    "DLQ": 0.645,
+    "HWI": 0.669,
+    "LWI": 7.227
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -3.6090002,
-    "HAT": 6.3,
-    "STND": 0,
-    "MHHW": 4.55,
-    "MHW": 4.322,
-    "DTL": 1.372,
-    "MTL": 1.581,
-    "MSL": 1.671,
-    "MLW": -1.159,
-    "MLLW": -1.804,
-    "GT": 6.355,
-    "MN": 5.482,
-    "DHQ": 0.228,
-    "DLQ": 0.645,
-    "HWI": 0.669,
-    "LWI": 7.227
-  },
-  "disclaimers": ""
+  ]
 }

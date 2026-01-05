@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-sandy-hook-fort-hancock",
+  "id": "us/nj/sandy-hook-fort-hancock",
   "name": "Sandy Hook, Fort Hancock",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.46689987182617,
   "longitude": -74.0093994140625,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8531680",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531680",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8531680.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8531680"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.29539502,
+    "HAT": 2.786395,
+    "STND": 0,
+    "MHHW": 2.359,
+    "MHW": 2.258,
+    "DTL": 1.562,
+    "MTL": 1.541,
+    "MSL": 1.551,
+    "MLW": 0.825,
+    "MLLW": 0.766,
+    "GT": 1.593,
+    "MN": 1.433,
+    "DHQ": 0.101,
+    "DLQ": 0.058,
+    "HWI": 0.288,
+    "LWI": 6.641,
+    "NAVD88": 1.624
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 296.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.29539502,
-    "HAT": 2.786395,
-    "STND": 0,
-    "MHHW": 2.359,
-    "MHW": 2.258,
-    "DTL": 1.562,
-    "MTL": 1.541,
-    "MSL": 1.551,
-    "MLW": 0.825,
-    "MLLW": 0.766,
-    "GT": 1.593,
-    "MN": 1.433,
-    "DHQ": 0.101,
-    "DLQ": 0.058,
-    "HWI": 0.288,
-    "LWI": 6.641,
-    "NAVD88": 1.624
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-steinhatchee-river-ent-deadman-bay",
+  "id": "us/fl/steinhatchee-river-ent-deadman-bay",
   "name": "Steinhatchee River ent., Deadman Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.6717,
   "longitude": -83.39,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727695",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727695",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727695.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727695"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-cedar-key",
+    "reference": "us/fl/cedar-key",
     "height": {
       "type": "ratio",
       "high": 1.03,

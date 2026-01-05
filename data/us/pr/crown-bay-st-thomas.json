@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-crown-bay-st-thomas",
+  "id": "us/pr/crown-bay-st-thomas",
   "name": "Crown Bay, St. Thomas",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.33289909362793,
   "longitude": -64.95169830322266,
   "timezone": "America/St_Thomas",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9751749",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751749",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9751749.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9751749"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.9579997,
+    "HAT": 8.485,
+    "STND": 0,
+    "MHHW": 8.35,
+    "MHW": 8.344,
+    "DTL": 8.231,
+    "MTL": 8.234,
+    "MSL": 8.228,
+    "MLW": 8.123,
+    "MLLW": 8.112,
+    "GT": 0.237,
+    "MN": 0.22,
+    "DHQ": 0.006,
+    "DLQ": 0.011,
+    "VIVD09": 8.235
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.9579997,
-    "HAT": 8.485,
-    "STND": 0,
-    "MHHW": 8.35,
-    "MHW": 8.344,
-    "DTL": 8.231,
-    "MTL": 8.234,
-    "MSL": 8.228,
-    "MLW": 8.123,
-    "MLLW": 8.112,
-    "GT": 0.237,
-    "MN": 0.22,
-    "DHQ": 0.006,
-    "DLQ": 0.011,
-    "VIVD09": 8.235
-  },
-  "disclaimers": ""
+  ]
 }

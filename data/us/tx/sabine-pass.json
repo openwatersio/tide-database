@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-sabine-pass",
+  "id": "us/tx/sabine-pass",
   "name": "Sabine Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.7284,
   "longitude": -93.8701,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770570",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770570",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770570.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770570"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.63400006,
+    "HAT": 1.74,
+    "STND": 0,
+    "MHHW": 1.538,
+    "MHW": 1.507,
+    "DTL": 1.294,
+    "MTL": 1.341,
+    "MSL": 1.343,
+    "MLW": 1.174,
+    "MLLW": 1.05,
+    "GT": 0.488,
+    "MN": 0.333,
+    "DHQ": 0.03,
+    "DLQ": 0.124
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.63400006,
-    "HAT": 1.74,
-    "STND": 0,
-    "MHHW": 1.538,
-    "MHW": 1.507,
-    "DTL": 1.294,
-    "MTL": 1.341,
-    "MSL": 1.343,
-    "MLW": 1.174,
-    "MLLW": 1.05,
-    "GT": 0.488,
-    "MN": 0.333,
-    "DHQ": 0.03,
-    "DLQ": 0.124
-  },
-  "disclaimers": ""
+  ]
 }

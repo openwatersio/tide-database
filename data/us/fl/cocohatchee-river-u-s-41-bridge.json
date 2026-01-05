@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-cocohatchee-river-u-s-41-bridge",
+  "id": "us/fl/cocohatchee-river-u-s-41-bridge",
   "name": "Cocohatchee River, U.S. 41 bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.2817,
   "longitude": -81.8017,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8725228",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725228",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8725228.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725228"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-naples-outer-coast",
+    "reference": "us/fl/naples-outer-coast",
     "height": {
       "type": "ratio",
       "high": 0.74,

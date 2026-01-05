@@ -1,10 +1,9 @@
 {
-  "id": "us-va-windmill-point",
+  "id": "us/va/windmill-point",
   "name": "Windmill Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.6155,
   "longitude": -76.28977777777777,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8636580",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636580",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8636580.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636580"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.49500003,
+    "HAT": 1.283,
+    "STND": 0,
+    "MHHW": 1.098,
+    "MHW": 1.058,
+    "DTL": 0.886,
+    "MTL": 0.881,
+    "MSL": 0.887,
+    "MLW": 0.705,
+    "MLLW": 0.675,
+    "GT": 0.424,
+    "MN": 0.354,
+    "DHQ": 0.04,
+    "DLQ": 0.03,
+    "HWI": 3.483,
+    "LWI": 10.068,
+    "NAVD88": 1.033
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 217,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.49500003,
-    "HAT": 1.283,
-    "STND": 0,
-    "MHHW": 1.098,
-    "MHW": 1.058,
-    "DTL": 0.886,
-    "MTL": 0.881,
-    "MSL": 0.887,
-    "MLW": 0.705,
-    "MLLW": 0.675,
-    "GT": 0.424,
-    "MN": 0.354,
-    "DHQ": 0.04,
-    "DLQ": 0.03,
-    "HWI": 3.483,
-    "LWI": 10.068,
-    "NAVD88": 1.033
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-bear-river-entrance",
+  "id": "us/ga/bear-river-entrance",
   "name": "Bear River Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 31.72302777777778,
   "longitude": -81.1417,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8673171",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8673171",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8673171.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8673171"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.44227207,
+    "HAT": 3.9792721,
+    "STND": 0,
+    "MHHW": 3.28,
+    "MHW": 3.172,
+    "DTL": 2.135,
+    "MTL": 2.11,
+    "MSL": 2.157,
+    "MLW": 1.048,
+    "MLLW": 0.991,
+    "GT": 2.288,
+    "MN": 2.124,
+    "DHQ": 0.108,
+    "DLQ": 0.057,
+    "HWI": 0.69,
+    "LWI": 7.11
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.44227207,
-    "HAT": 3.9792721,
-    "STND": 0,
-    "MHHW": 3.28,
-    "MHW": 3.172,
-    "DTL": 2.135,
-    "MTL": 2.11,
-    "MSL": 2.157,
-    "MLW": 1.048,
-    "MLLW": 0.991,
-    "GT": 2.288,
-    "MN": 2.124,
-    "DHQ": 0.108,
-    "DLQ": 0.057,
-    "HWI": 0.69,
-    "LWI": 7.11
-  },
-  "disclaimers": ""
+  ]
 }

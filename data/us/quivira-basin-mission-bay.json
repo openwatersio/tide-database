@@ -1,10 +1,9 @@
 {
-  "id": "us-quivira-basin-mission-bay",
+  "id": "us/quivira-basin-mission-bay",
   "name": "Quivira Basin, Mission Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.76666666666701,
   "longitude": -117.23333333333005,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC0413",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0413",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC0413.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0413"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-san-diego-broadway",
+    "reference": "us/ca/san-diego-broadway",
     "height": {
       "type": "ratio",
       "high": 0.95,

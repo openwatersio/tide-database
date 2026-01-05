@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-new-york-the-battery",
+  "id": "us/ny/new-york-the-battery",
   "name": "NEW YORK (The Battery)",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.70055389404297,
   "longitude": -74.01416778564453,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518750",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518750",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518750.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518750"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.53699994,
+    "HAT": 2.978,
+    "STND": 0,
+    "MHHW": 2.543,
+    "MHW": 2.445,
+    "DTL": 1.773,
+    "MTL": 1.755,
+    "MSL": 1.785,
+    "MLW": 1.065,
+    "MLLW": 1.002,
+    "GT": 1.542,
+    "MN": 1.38,
+    "DHQ": 0.099,
+    "DLQ": 0.063,
+    "HWI": 0.84,
+    "LWI": 7.21,
+    "NAVD88": 1.848
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 324,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.53699994,
-    "HAT": 2.978,
-    "STND": 0,
-    "MHHW": 2.543,
-    "MHW": 2.445,
-    "DTL": 1.773,
-    "MTL": 1.755,
-    "MSL": 1.785,
-    "MLW": 1.065,
-    "MLLW": 1.002,
-    "GT": 1.542,
-    "MN": 1.38,
-    "DHQ": 0.099,
-    "DLQ": 0.063,
-    "HWI": 0.84,
-    "LWI": 7.21,
-    "NAVD88": 1.848
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-richardson-lopez-island",
+  "id": "us/wa/richardson-lopez-island",
   "name": "Richardson, Lopez Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.4467,
   "longitude": -122.9,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9449982",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449982",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9449982.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9449982"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.20699978,
+    "HAT": 3.601,
+    "STND": 0,
+    "MHHW": 3.15,
+    "MHW": 2.988,
+    "DTL": 2.057,
+    "MTL": 2.295,
+    "MSL": 2.278,
+    "MLW": 1.602,
+    "MLLW": 0.965,
+    "GT": 2.185,
+    "MN": 1.386,
+    "DHQ": 0.161,
+    "DLQ": 0.637,
+    "HWI": 11.888,
+    "LWI": 5.457
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 6.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.20699978,
-    "HAT": 3.601,
-    "STND": 0,
-    "MHHW": 3.15,
-    "MHW": 2.988,
-    "DTL": 2.057,
-    "MTL": 2.295,
-    "MSL": 2.278,
-    "MLW": 1.602,
-    "MLLW": 0.965,
-    "GT": 2.185,
-    "MN": 1.386,
-    "DHQ": 0.161,
-    "DLQ": 0.637,
-    "HWI": 11.888,
-    "LWI": 5.457
-  },
-  "disclaimers": ""
+  ]
 }

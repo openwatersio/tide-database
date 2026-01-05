@@ -1,10 +1,9 @@
 {
-  "id": "us-salina-cruz",
+  "id": "us/salina-cruz",
   "name": "Salina Cruz",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 16.16,
   "longitude": -95.20333333333333,
   "timezone": "America/Mexico_City",
@@ -12,14 +11,20 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9504651",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9504651",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9504651.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9504651"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MSL": 0,
+    "MLLW": -0.588
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,11 +322,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MSL": 0,
-    "MLLW": -0.588
-  },
-  "disclaimers": ""
+  ]
 }

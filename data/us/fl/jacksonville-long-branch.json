@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-jacksonville-long-branch",
+  "id": "us/fl/jacksonville-long-branch",
   "name": "Jacksonville, Long Branch",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.360000610351562,
   "longitude": -81.62000274658203,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720242",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720242",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720242.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720242"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.6999999,
+    "HAT": 2.115,
+    "STND": 0,
+    "MHHW": 1.784,
+    "MHW": 1.755,
+    "DTL": 1.37,
+    "MTL": 1.372,
+    "MSL": 1.374,
+    "MLW": 0.989,
+    "MLLW": 0.956,
+    "GT": 0.828,
+    "MN": 0.766,
+    "DHQ": 0.028,
+    "DLQ": 0.034,
+    "HWI": 2.387,
+    "LWI": 8.913,
+    "NAVD88": 1.459
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 139.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.6999999,
-    "HAT": 2.115,
-    "STND": 0,
-    "MHHW": 1.784,
-    "MHW": 1.755,
-    "DTL": 1.37,
-    "MTL": 1.372,
-    "MSL": 1.374,
-    "MLW": 0.989,
-    "MLLW": 0.956,
-    "GT": 0.828,
-    "MN": 0.766,
-    "DHQ": 0.028,
-    "DLQ": 0.034,
-    "HWI": 2.387,
-    "LWI": 8.913,
-    "NAVD88": 1.459
-  },
-  "disclaimers": ""
+  ]
 }

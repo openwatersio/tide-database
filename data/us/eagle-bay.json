@@ -1,10 +1,9 @@
 {
-  "id": "us-eagle-bay",
+  "id": "us/eagle-bay",
   "name": "Eagle Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 53.48333333333299,
   "longitude": -166.93333333332993,
   "timezone": "America/Nome",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TWC2193",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2193",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TWC2193.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC2193"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-unalaska",
+    "reference": "us/ak/unalaska",
     "height": {
       "type": "ratio",
       "high": 1.46,

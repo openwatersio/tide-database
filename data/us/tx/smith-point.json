@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-smith-point",
+  "id": "us/tx/smith-point",
   "name": "Smith Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.535,
   "longitude": -94.7817,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8770931",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770931",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8770931.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8770931"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.401,
+    "HAT": 9.421,
+    "STND": 0,
+    "MHHW": 9.181,
+    "MHW": 9.16,
+    "DTL": 8.987,
+    "MTL": 8.992,
+    "MSL": 9.004,
+    "MLW": 8.824,
+    "MLLW": 8.793,
+    "GT": 0.387,
+    "MN": 0.336,
+    "DHQ": 0.021,
+    "DLQ": 0.03,
+    "NAVD88": 8.831
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 58.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.401,
-    "HAT": 9.421,
-    "STND": 0,
-    "MHHW": 9.181,
-    "MHW": 9.16,
-    "DTL": 8.987,
-    "MTL": 8.992,
-    "MSL": 9.004,
-    "MLW": 8.824,
-    "MLLW": 8.793,
-    "GT": 0.387,
-    "MN": 0.336,
-    "DHQ": 0.021,
-    "DLQ": 0.03,
-    "NAVD88": 8.831
-  },
-  "disclaimers": ""
+  ]
 }

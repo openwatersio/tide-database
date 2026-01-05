@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-port-bolivar",
+  "id": "us/tx/port-bolivar",
   "name": "Port Bolivar",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.365,
   "longitude": -94.78,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8771328",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771328",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8771328.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8771328"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.78200006,
+    "HAT": 1.942,
+    "STND": 0,
+    "MHHW": 1.651,
+    "MHW": 1.627,
+    "DTL": 1.438,
+    "MTL": 1.455,
+    "MSL": 1.483,
+    "MLW": 1.284,
+    "MLLW": 1.225,
+    "GT": 0.426,
+    "MN": 0.343,
+    "DHQ": 0.024,
+    "DLQ": 0.059
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.78200006,
-    "HAT": 1.942,
-    "STND": 0,
-    "MHHW": 1.651,
-    "MHW": 1.627,
-    "DTL": 1.438,
-    "MTL": 1.455,
-    "MSL": 1.483,
-    "MLW": 1.284,
-    "MLLW": 1.225,
-    "GT": 0.426,
-    "MN": 0.343,
-    "DHQ": 0.024,
-    "DLQ": 0.059
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-chappaquoit-point-west-falmouth-harbor",
+  "id": "us/ma/chappaquoit-point-west-falmouth-harbor",
   "name": "Chappaquoit Point, West Falmouth Harbor",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.605,
   "longitude": -70.6517,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447685",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447685",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447685.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447685"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.856,
+    "HAT": 2.839,
+    "STND": 0,
+    "MHHW": 2.472,
+    "MHW": 2.392,
+    "DTL": 1.825,
+    "MTL": 1.809,
+    "MSL": 1.74,
+    "MLW": 1.226,
+    "MLLW": 1.177,
+    "GT": 1.295,
+    "MN": 1.165,
+    "DHQ": 0.081,
+    "DLQ": 0.049,
+    "HWI": 0.369,
+    "LWI": 6.049
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.856,
-    "HAT": 2.839,
-    "STND": 0,
-    "MHHW": 2.472,
-    "MHW": 2.392,
-    "DTL": 1.825,
-    "MTL": 1.809,
-    "MSL": 1.74,
-    "MLW": 1.226,
-    "MLLW": 1.177,
-    "GT": 1.295,
-    "MN": 1.165,
-    "DHQ": 0.081,
-    "DLQ": 0.049,
-    "HWI": 0.369,
-    "LWI": 6.049
-  },
-  "disclaimers": ""
+  ]
 }

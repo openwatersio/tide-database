@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-engelhard",
+  "id": "us/nc/engelhard",
   "name": "Engelhard",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.5093994140625,
   "longitude": -75.98889923095703,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8653471",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8653471",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8653471.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8653471"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 9.213,
+    "HAT": 9.583,
+    "STND": 0,
+    "MHHW": 9.472,
+    "MHW": 9.449,
+    "DTL": 9.385,
+    "MTL": 9.383,
+    "MSL": 9.382,
+    "MLW": 9.318,
+    "MLLW": 9.299,
+    "GT": 0.173,
+    "MN": 0.131,
+    "DHQ": 0.023,
+    "DLQ": 0.019,
+    "NAVD88": 9.503
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 210.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 9.213,
-    "HAT": 9.583,
-    "STND": 0,
-    "MHHW": 9.472,
-    "MHW": 9.449,
-    "DTL": 9.385,
-    "MTL": 9.383,
-    "MSL": 9.382,
-    "MLW": 9.318,
-    "MLLW": 9.299,
-    "GT": 0.173,
-    "MN": 0.131,
-    "DHQ": 0.023,
-    "DLQ": 0.019,
-    "NAVD88": 9.503
-  },
-  "disclaimers": ""
+  ]
 }

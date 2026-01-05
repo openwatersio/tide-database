@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-crater-bay-harris-bay",
+  "id": "us/ak/crater-bay-harris-bay",
   "name": "Crater Bay, Harris Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.7133,
   "longitude": -149.787,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455159",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455159",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455159.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455159"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.91499996,
+    "HAT": 6.283,
+    "STND": 0,
+    "MHHW": 5.276,
+    "MHW": 4.998,
+    "DTL": 3.643,
+    "MTL": 3.704,
+    "MSL": 3.708,
+    "MLW": 2.41,
+    "MLLW": 2.01,
+    "GT": 3.267,
+    "MN": 2.588,
+    "DHQ": 0.278,
+    "DLQ": 0.401,
+    "HWI": 10.007,
+    "LWI": 3.737
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.91499996,
-    "HAT": 6.283,
-    "STND": 0,
-    "MHHW": 5.276,
-    "MHW": 4.998,
-    "DTL": 3.643,
-    "MTL": 3.704,
-    "MSL": 3.708,
-    "MLW": 2.41,
-    "MLLW": 2.01,
-    "GT": 3.267,
-    "MN": 2.588,
-    "DHQ": 0.278,
-    "DLQ": 0.401,
-    "HWI": 10.007,
-    "LWI": 3.737
-  },
-  "disclaimers": ""
+  ]
 }

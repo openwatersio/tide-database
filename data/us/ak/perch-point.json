@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-perch-point",
+  "id": "us/ak/perch-point",
   "name": "Perch Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.1267,
   "longitude": -147.395,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454561",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454561",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454561.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454561"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.294262,
+    "HAT": 3.5107381,
+    "STND": 0,
+    "MHHW": 2.465,
+    "MHW": 2.165,
+    "DTL": 0.68,
+    "MTL": 0.747,
+    "MSL": 0.771,
+    "MLW": -0.672,
+    "MLLW": -1.106,
+    "GT": 3.571,
+    "MN": 2.836,
+    "DHQ": 0.3,
+    "DLQ": 0.434,
+    "HWI": 9.94,
+    "LWI": 3.66
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.294262,
-    "HAT": 3.5107381,
-    "STND": 0,
-    "MHHW": 2.465,
-    "MHW": 2.165,
-    "DTL": 0.68,
-    "MTL": 0.747,
-    "MSL": 0.771,
-    "MLW": -0.672,
-    "MLLW": -1.106,
-    "GT": 3.571,
-    "MN": 2.836,
-    "DHQ": 0.3,
-    "DLQ": 0.434,
-    "HWI": 9.94,
-    "LWI": 3.66
-  },
-  "disclaimers": ""
+  ]
 }

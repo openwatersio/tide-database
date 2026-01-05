@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-ivanof-bay",
+  "id": "us/ak/ivanof-bay",
   "name": "Ivanof Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.90011215209961,
   "longitude": -159.4912567138672,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459181",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459181",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459181.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459181"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.502,
+    "HAT": 10.457,
+    "STND": 0,
+    "MHHW": 9.717,
+    "MHW": 9.478,
+    "DTL": 8.556,
+    "MTL": 8.637,
+    "MSL": 8.624,
+    "MLW": 7.796,
+    "MLLW": 7.395,
+    "GT": 2.322,
+    "MN": 1.682,
+    "DHQ": 0.239,
+    "DLQ": 0.4,
+    "HWI": 11.237,
+    "LWI": 4.966,
+    "NAVD88": 7.782
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.502,
-    "HAT": 10.457,
-    "STND": 0,
-    "MHHW": 9.717,
-    "MHW": 9.478,
-    "DTL": 8.556,
-    "MTL": 8.637,
-    "MSL": 8.624,
-    "MLW": 7.796,
-    "MLLW": 7.395,
-    "GT": 2.322,
-    "MN": 1.682,
-    "DHQ": 0.239,
-    "DLQ": 0.4,
-    "HWI": 11.237,
-    "LWI": 4.966,
-    "NAVD88": 7.782
-  },
-  "disclaimers": ""
+  ]
 }

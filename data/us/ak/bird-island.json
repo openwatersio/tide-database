@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-bird-island",
+  "id": "us/ak/bird-island",
   "name": "Bird Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 54.83522222222222,
   "longitude": -159.7595555555556,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459251",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459251",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459251.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459251"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.4860319,
+    "HAT": 3.223968,
+    "STND": 0,
+    "MHHW": 2.541,
+    "MHW": 2.321,
+    "DTL": 1.467,
+    "MTL": 1.566,
+    "MSL": 1.551,
+    "MLW": 0.81,
+    "MLLW": 0.393,
+    "GT": 2.148,
+    "MN": 1.511,
+    "DHQ": 0.22,
+    "DLQ": 0.417,
+    "HWI": 11.11,
+    "LWI": 4.78
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.4860319,
-    "HAT": 3.223968,
-    "STND": 0,
-    "MHHW": 2.541,
-    "MHW": 2.321,
-    "DTL": 1.467,
-    "MTL": 1.566,
-    "MSL": 1.551,
-    "MLW": 0.81,
-    "MLLW": 0.393,
-    "GT": 2.148,
-    "MN": 1.511,
-    "DHQ": 0.22,
-    "DLQ": 0.417,
-    "HWI": 11.11,
-    "LWI": 4.78
-  },
-  "disclaimers": ""
+  ]
 }

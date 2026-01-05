@@ -1,10 +1,9 @@
 {
-  "id": "us-cristobal-colon-panama-canal-panama",
+  "id": "us/cristobal-colon-panama-canal-panama",
   "name": "Cristobal (Colon), Panama Canal, Panama",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 9.35,
   "longitude": -79.91666666666667,
   "timezone": "America/Panama",
@@ -12,14 +11,20 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9817583",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9817583",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9817583.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9817583"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MSL": 0,
+    "MLLW": -0.116
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,11 +322,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MSL": 0,
-    "MLLW": -0.116
-  },
-  "disclaimers": ""
+  ]
 }

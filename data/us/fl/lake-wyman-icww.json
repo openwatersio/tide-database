@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-lake-wyman-icww",
+  "id": "us/fl/lake-wyman-icww",
   "name": "Lake Wyman, ICWW",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.37,
   "longitude": -80.07,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722802",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722802",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722802.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722802"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.49699992,
+    "HAT": 1.589,
+    "STND": 0,
+    "MHHW": 1.415,
+    "MHW": 1.377,
+    "DTL": 1.047,
+    "MTL": 1.051,
+    "MSL": 1.032,
+    "MLW": 0.725,
+    "MLLW": 0.679,
+    "GT": 0.736,
+    "MN": 0.653,
+    "DHQ": 0.038,
+    "DLQ": 0.046,
+    "HWI": 2.549,
+    "LWI": 8.859,
+    "NAVD88": 1.394
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.49699992,
-    "HAT": 1.589,
-    "STND": 0,
-    "MHHW": 1.415,
-    "MHW": 1.377,
-    "DTL": 1.047,
-    "MTL": 1.051,
-    "MSL": 1.032,
-    "MLW": 0.725,
-    "MLLW": 0.679,
-    "GT": 0.736,
-    "MN": 0.653,
-    "DHQ": 0.038,
-    "DLQ": 0.046,
-    "HWI": 2.549,
-    "LWI": 8.859,
-    "NAVD88": 1.394
-  },
-  "disclaimers": ""
+  ]
 }

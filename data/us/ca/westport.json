@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-westport",
+  "id": "us/ca/westport",
   "name": "Westport",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.6333,
   "longitude": -123.783,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9417624",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9417624",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9417624.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9417624"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-arena-cove",
+    "reference": "us/ca/arena-cove",
     "height": {
       "type": "ratio",
       "high": 0.98,

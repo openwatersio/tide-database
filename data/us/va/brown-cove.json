@@ -1,10 +1,9 @@
 {
-  "id": "us-va-brown-cove",
+  "id": "us/va/brown-cove",
   "name": "Brown Cove",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 36.875,
   "longitude": -76.0617,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8638922",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638922",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8638922.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8638922"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-va-chesapeake-bay-bridge-tunnel",
+    "reference": "us/va/chesapeake-bay-bridge-tunnel",
     "height": {
       "type": "ratio",
       "high": 0.65,

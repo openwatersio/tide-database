@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-entrance-island",
+  "id": "us/ak/entrance-island",
   "name": "Entrance Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.8117,
   "longitude": -133.787,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451438",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451438",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451438.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451438"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.239,
+    "HAT": 4.432,
+    "STND": 0,
+    "MHHW": 3.416,
+    "MHW": 3.155,
+    "DTL": 1.197,
+    "MTL": 1.301,
+    "MSL": 1.31,
+    "MLW": -0.552,
+    "MLLW": -1.022,
+    "GT": 4.439,
+    "MN": 3.708,
+    "DHQ": 0.261,
+    "DLQ": 0.47,
+    "HWI": 9.709,
+    "LWI": 3.435
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.239,
-    "HAT": 4.432,
-    "STND": 0,
-    "MHHW": 3.416,
-    "MHW": 3.155,
-    "DTL": 1.197,
-    "MTL": 1.301,
-    "MSL": 1.31,
-    "MLW": -0.552,
-    "MLLW": -1.022,
-    "GT": 4.439,
-    "MN": 3.708,
-    "DHQ": 0.261,
-    "DLQ": 0.47,
-    "HWI": 9.709,
-    "LWI": 3.435
-  },
-  "disclaimers": ""
+  ]
 }

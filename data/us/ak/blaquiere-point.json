@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-blaquiere-point",
+  "id": "us/ak/blaquiere-point",
   "name": "Blaquiere Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.584693908691406,
   "longitude": -132.5421905517578,
   "timezone": "America/Sitka",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451281",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451281",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451281.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451281"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.7840002,
+    "HAT": 9.962,
+    "STND": 0,
+    "MHHW": 8.741,
+    "MHW": 8.466,
+    "DTL": 6.43,
+    "MTL": 6.471,
+    "MSL": 6.42,
+    "MLW": 4.477,
+    "MLLW": 4.12,
+    "GT": 4.621,
+    "MN": 3.989,
+    "DHQ": 0.275,
+    "DLQ": 0.357,
+    "HWI": 9.732,
+    "LWI": 3.615,
+    "NAVD88": 4.968
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.7840002,
-    "HAT": 9.962,
-    "STND": 0,
-    "MHHW": 8.741,
-    "MHW": 8.466,
-    "DTL": 6.43,
-    "MTL": 6.471,
-    "MSL": 6.42,
-    "MLW": 4.477,
-    "MLLW": 4.12,
-    "GT": 4.621,
-    "MN": 3.989,
-    "DHQ": 0.275,
-    "DLQ": 0.357,
-    "HWI": 9.732,
-    "LWI": 3.615,
-    "NAVD88": 4.968
-  },
-  "disclaimers": ""
+  ]
 }

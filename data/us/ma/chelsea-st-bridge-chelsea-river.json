@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-chelsea-st-bridge-chelsea-river",
+  "id": "us/ma/chelsea-st-bridge-chelsea-river",
   "name": "Chelsea St. Bridge, Chelsea River",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.3867,
   "longitude": -71.0233,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8443725",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8443725",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8443725.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8443725"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.5449998,
+    "HAT": 7.9729996,
+    "STND": 0,
+    "MHHW": 7.336,
+    "MHW": 7.2,
+    "DTL": 5.758,
+    "MTL": 5.743,
+    "MSL": 5.779,
+    "MLW": 4.285,
+    "MLLW": 4.181,
+    "GT": 3.155,
+    "MN": 2.915,
+    "DHQ": 0.136,
+    "DLQ": 0.104,
+    "HWI": 3.738,
+    "LWI": 9.932
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.5449998,
-    "HAT": 7.9729996,
-    "STND": 0,
-    "MHHW": 7.336,
-    "MHW": 7.2,
-    "DTL": 5.758,
-    "MTL": 5.743,
-    "MSL": 5.779,
-    "MLW": 4.285,
-    "MLLW": 4.181,
-    "GT": 3.155,
-    "MN": 2.915,
-    "DHQ": 0.136,
-    "DLQ": 0.104,
-    "HWI": 3.738,
-    "LWI": 9.932
-  },
-  "disclaimers": ""
+  ]
 }

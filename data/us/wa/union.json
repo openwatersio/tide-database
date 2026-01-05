@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-union",
+  "id": "us/wa/union",
   "name": "Union",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 47.3583,
   "longitude": -123.098,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9445478",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445478",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9445478.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9445478"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.901,
+    "HAT": 4.8339996,
+    "STND": 0,
+    "MHHW": 4.107,
+    "MHW": 3.806,
+    "DTL": 2.3,
+    "MTL": 2.609,
+    "MSL": 2.616,
+    "MLW": 1.411,
+    "MLLW": 0.494,
+    "GT": 3.613,
+    "MN": 2.394,
+    "DHQ": 0.301,
+    "DLQ": 0.918,
+    "HWI": 0.429,
+    "LWI": 6.821,
+    "NAVD88": 1.359
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.901,
-    "HAT": 4.8339996,
-    "STND": 0,
-    "MHHW": 4.107,
-    "MHW": 3.806,
-    "DTL": 2.3,
-    "MTL": 2.609,
-    "MSL": 2.616,
-    "MLW": 1.411,
-    "MLLW": 0.494,
-    "GT": 3.613,
-    "MN": 2.394,
-    "DHQ": 0.301,
-    "DLQ": 0.918,
-    "HWI": 0.429,
-    "LWI": 6.821,
-    "NAVD88": 1.359
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-eleven-mile-st-vincent-sound",
+  "id": "us/fl/eleven-mile-st-vincent-sound",
   "name": "Eleven Mile, St. Vincent Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.70669937133789,
   "longitude": -85.1532974243164,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728786",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728786",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728786.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728786"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.62100005,
+    "HAT": 1.561,
+    "STND": 0,
+    "MHHW": 1.46,
+    "MHW": 1.419,
+    "DTL": 1.206,
+    "MTL": 1.248,
+    "MSL": 1.225,
+    "MLW": 1.077,
+    "MLLW": 0.951,
+    "GT": 0.509,
+    "MN": 0.342,
+    "DHQ": 0.041,
+    "DLQ": 0.126,
+    "NAVD88": 1.23
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.62100005,
-    "HAT": 1.561,
-    "STND": 0,
-    "MHHW": 1.46,
-    "MHW": 1.419,
-    "DTL": 1.206,
-    "MTL": 1.248,
-    "MSL": 1.225,
-    "MLW": 1.077,
-    "MLLW": 0.951,
-    "GT": 0.509,
-    "MN": 0.342,
-    "DHQ": 0.041,
-    "DLQ": 0.126,
-    "NAVD88": 1.23
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-navarre-north-side-east-bay",
+  "id": "us/fl/navarre-north-side-east-bay",
   "name": "Navarre, North Side, East Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.443099975585938,
   "longitude": -86.95140075683594,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729717",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729717",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729717.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729717"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.335,
+    "HAT": 8.321,
+    "STND": 0,
+    "MHHW": 8.101,
+    "MHW": 8.082,
+    "DTL": 7.876,
+    "MTL": 7.879,
+    "MSL": 7.876,
+    "MLW": 7.676,
+    "MLLW": 7.651,
+    "GT": 0.451,
+    "MN": 0.406,
+    "DHQ": 0.019,
+    "DLQ": 0.026,
+    "NAVD88": 7.809
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 161.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.335,
-    "HAT": 8.321,
-    "STND": 0,
-    "MHHW": 8.101,
-    "MHW": 8.082,
-    "DTL": 7.876,
-    "MTL": 7.879,
-    "MSL": 7.876,
-    "MLW": 7.676,
-    "MLLW": 7.651,
-    "GT": 0.451,
-    "MN": 0.406,
-    "DHQ": 0.019,
-    "DLQ": 0.026,
-    "NAVD88": 7.809
-  },
-  "disclaimers": ""
+  ]
 }

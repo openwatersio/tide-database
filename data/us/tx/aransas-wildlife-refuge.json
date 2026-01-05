@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-aransas-wildlife-refuge",
+  "id": "us/tx/aransas-wildlife-refuge",
   "name": "Aransas Wildlife Refuge",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.228300094604492,
   "longitude": -96.79499816894531,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8774230",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8774230",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8774230.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8774230"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety.",
+  "datums": {
+    "LAT": 8.660001,
+    "HAT": 9.078,
+    "STND": 0,
+    "MHHW": 8.926,
+    "MHW": 8.925,
+    "DTL": 8.876,
+    "MTL": 8.875,
+    "MSL": 8.876,
+    "MLW": 8.825,
+    "MLLW": 8.825,
+    "GT": 0.101,
+    "MN": 0.1,
+    "DHQ": 0.001,
+    "DLQ": 0,
+    "NAVD88": 8.535
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.660001,
-    "HAT": 9.078,
-    "STND": 0,
-    "MHHW": 8.926,
-    "MHW": 8.925,
-    "DTL": 8.876,
-    "MTL": 8.875,
-    "MSL": 8.876,
-    "MLW": 8.825,
-    "MLLW": 8.825,
-    "GT": 0.101,
-    "MN": 0.1,
-    "DHQ": 0.001,
-    "DLQ": 0,
-    "NAVD88": 8.535
-  },
-  "disclaimers": "These data and associated tidal datums are derived from the Texas Coastal Ocean Observation Network (TCOON), a state-wide coastal observing system. Leveling information used to verify vertical positioning for navigational purposes may not meet NOS standards. Subsequent review of these data based upon field inspections may result in revisions. Data users are cautioned before using these data for critical decisions such as those that concern physical or public safety."
+  ]
 }

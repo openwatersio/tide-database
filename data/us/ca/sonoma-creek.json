@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-sonoma-creek",
+  "id": "us/ca/sonoma-creek",
   "name": "Sonoma Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.1567,
   "longitude": -122.407,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415338",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415338",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415338.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415338"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.15100002,
+    "HAT": 2.367,
+    "STND": 0,
+    "MHHW": 1.98,
+    "MHW": 1.8,
+    "DTL": 1.153,
+    "MTL": 1.164,
+    "MSL": 1.151,
+    "MLW": 0.528,
+    "MLLW": 0.325,
+    "GT": 1.655,
+    "MN": 1.272,
+    "DHQ": 0.181,
+    "DLQ": 0.203,
+    "HWI": 8.9,
+    "LWI": 3.62,
+    "NAVD88": 0.022
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.15100002,
-    "HAT": 2.367,
-    "STND": 0,
-    "MHHW": 1.98,
-    "MHW": 1.8,
-    "DTL": 1.153,
-    "MTL": 1.164,
-    "MSL": 1.151,
-    "MLW": 0.528,
-    "MLLW": 0.325,
-    "GT": 1.655,
-    "MN": 1.272,
-    "DHQ": 0.181,
-    "DLQ": 0.203,
-    "HWI": 8.9,
-    "LWI": 3.62,
-    "NAVD88": 0.022
-  },
-  "disclaimers": ""
+  ]
 }

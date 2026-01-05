@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-onset-beach-onset-bay",
+  "id": "us/ma/onset-beach-onset-bay",
   "name": "Onset Beach, Onset Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.7417,
   "longitude": -70.6583,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447277",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447277",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447277.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447277"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ri-newport",
+    "reference": "us/ri/newport",
     "height": {
       "type": "ratio",
       "high": 1.03,

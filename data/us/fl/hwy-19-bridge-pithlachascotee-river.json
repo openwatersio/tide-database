@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-hwy-19-bridge-pithlachascotee-river",
+  "id": "us/fl/hwy-19-bridge-pithlachascotee-river",
   "name": "Hwy. 19 bridge, Pithlachascotee River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.2683,
   "longitude": -82.7267,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727012",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727012",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727012.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727012"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-cedar-key",
+    "reference": "us/fl/cedar-key",
     "height": {
       "type": "ratio",
       "high": 0.85,

@@ -1,10 +1,9 @@
 {
-  "id": "us-la-e-isle-dernieres-lake-pelto",
+  "id": "us/la/e-isle-dernieres-lake-pelto",
   "name": "E. ISLE DERNIERES, LAKE PELTO",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.0717,
   "longitude": -90.64,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8762888",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762888",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8762888.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8762888"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.64300007,
+    "HAT": 1.623,
+    "STND": 0,
+    "MHHW": 1.355,
+    "MHW": 1.346,
+    "DTL": 1.156,
+    "MTL": 1.159,
+    "MSL": 1.167,
+    "MLW": 0.971,
+    "MLLW": 0.956,
+    "GT": 0.399,
+    "MN": 0.375,
+    "DHQ": 0.009,
+    "DLQ": 0.015
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.64300007,
-    "HAT": 1.623,
-    "STND": 0,
-    "MHHW": 1.355,
-    "MHW": 1.346,
-    "DTL": 1.156,
-    "MTL": 1.159,
-    "MSL": 1.167,
-    "MLW": 0.971,
-    "MLLW": 0.956,
-    "GT": 0.399,
-    "MN": 0.375,
-    "DHQ": 0.009,
-    "DLQ": 0.015
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-daytona-beach-shores-sunglow-pier",
+  "id": "us/fl/daytona-beach-shores-sunglow-pier",
   "name": "Daytona Beach Shores, Sunglow Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.1467,
   "longitude": -80.9633,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8721120",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721120",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8721120.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8721120"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-fernandina-beach-amelia-river",
+    "reference": "us/fl/fernandina-beach-amelia-river",
     "height": {
       "type": "ratio",
       "high": 0.65,

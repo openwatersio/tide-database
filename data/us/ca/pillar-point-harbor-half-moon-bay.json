@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-pillar-point-harbor-half-moon-bay",
+  "id": "us/ca/pillar-point-harbor-half-moon-bay",
   "name": "Pillar Point Harbor, Half Moon Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.5025,
   "longitude": -122.4821666666667,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414131",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414131",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414131.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414131"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.64100003,
+    "HAT": 2.2210002,
+    "STND": 0,
+    "MHHW": 1.72,
+    "MHW": 1.522,
+    "DTL": 0.866,
+    "MTL": 0.936,
+    "MSL": 0.924,
+    "MLW": 0.351,
+    "MLLW": 0.013,
+    "GT": 1.707,
+    "MN": 1.172,
+    "DHQ": 0.198,
+    "DLQ": 0.338,
+    "HWI": 6.47,
+    "LWI": 0.14,
+    "NAVD88": 0
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.64100003,
-    "HAT": 2.2210002,
-    "STND": 0,
-    "MHHW": 1.72,
-    "MHW": 1.522,
-    "DTL": 0.866,
-    "MTL": 0.936,
-    "MSL": 0.924,
-    "MLW": 0.351,
-    "MLLW": 0.013,
-    "GT": 1.707,
-    "MN": 1.172,
-    "DHQ": 0.198,
-    "DLQ": 0.338,
-    "HWI": 6.47,
-    "LWI": 0.14,
-    "NAVD88": 0
-  },
-  "disclaimers": ""
+  ]
 }

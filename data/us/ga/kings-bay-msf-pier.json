@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-kings-bay-msf-pier",
+  "id": "us/ga/kings-bay-msf-pier",
   "name": "Kings Bay, MSF Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.778099060058594,
   "longitude": -81.49140167236328,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8679598",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8679598",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8679598.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8679598"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.9940001,
+    "HAT": 5.093,
+    "STND": 0,
+    "MHHW": 4.583,
+    "MHW": 4.475,
+    "DTL": 3.529,
+    "MTL": 3.504,
+    "MSL": 3.539,
+    "MLW": 2.533,
+    "MLLW": 2.475,
+    "GT": 2.108,
+    "MN": 1.942,
+    "DHQ": 0.108,
+    "DLQ": 0.058,
+    "HWI": 1.553,
+    "LWI": 7.458
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 314.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.9940001,
-    "HAT": 5.093,
-    "STND": 0,
-    "MHHW": 4.583,
-    "MHW": 4.475,
-    "DTL": 3.529,
-    "MTL": 3.504,
-    "MSL": 3.539,
-    "MLW": 2.533,
-    "MLLW": 2.475,
-    "GT": 2.108,
-    "MN": 1.942,
-    "DHQ": 0.108,
-    "DLQ": 0.058,
-    "HWI": 1.553,
-    "LWI": 7.458
-  },
-  "disclaimers": ""
+  ]
 }

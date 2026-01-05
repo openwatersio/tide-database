@@ -1,10 +1,9 @@
 {
-  "id": "us-me-fore-river",
+  "id": "us/me/fore-river",
   "name": "Fore River",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.6417,
   "longitude": -70.285,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8418268",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418268",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8418268.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418268"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-me-portland",
+    "reference": "us/me/portland",
     "height": {
       "type": "ratio",
       "high": 1,

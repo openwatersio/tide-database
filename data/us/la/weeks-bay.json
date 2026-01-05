@@ -1,10 +1,9 @@
 {
-  "id": "us-la-weeks-bay",
+  "id": "us/la/weeks-bay",
   "name": "Weeks Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.83722222222222,
   "longitude": -91.8375,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8765148",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765148",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8765148.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8765148"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.24100003,
+    "HAT": 0.92499995,
+    "STND": 0,
+    "MHHW": 0.671,
+    "MHW": 0.644,
+    "DTL": 0.426,
+    "MTL": 0.45,
+    "MSL": 0.452,
+    "MLW": 0.257,
+    "MLLW": 0.181,
+    "GT": 0.49,
+    "MN": 0.387,
+    "DHQ": 0.027,
+    "DLQ": 0.076
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.24100003,
-    "HAT": 0.92499995,
-    "STND": 0,
-    "MHHW": 0.671,
-    "MHW": 0.644,
-    "DTL": 0.426,
-    "MTL": 0.45,
-    "MSL": 0.452,
-    "MLW": 0.257,
-    "MLLW": 0.181,
-    "GT": 0.49,
-    "MN": 0.387,
-    "DHQ": 0.027,
-    "DLQ": 0.076
-  },
-  "disclaimers": ""
+  ]
 }

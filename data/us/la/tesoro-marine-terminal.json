@@ -1,10 +1,9 @@
 {
-  "id": "us-la-tesoro-marine-terminal",
+  "id": "us/la/tesoro-marine-terminal",
   "name": "Tesoro Marine Terminal",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.6675,
   "longitude": -91.23761111111111,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8764044",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764044",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8764044.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8764044"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.6679997,
+    "HAT": 6.547,
+    "STND": 0,
+    "MHHW": 6.134,
+    "MHW": 6.122,
+    "DTL": 6.053,
+    "MTL": 6.053,
+    "MSL": 6.06,
+    "MLW": 5.985,
+    "MLLW": 5.972,
+    "GT": 0.162,
+    "MN": 0.137,
+    "DHQ": 0.013,
+    "DLQ": 0.013,
+    "NAVD88": 5.468
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 317.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.6679997,
-    "HAT": 6.547,
-    "STND": 0,
-    "MHHW": 6.134,
-    "MHW": 6.122,
-    "DTL": 6.053,
-    "MTL": 6.053,
-    "MSL": 6.06,
-    "MLW": 5.985,
-    "MLLW": 5.972,
-    "GT": 0.162,
-    "MN": 0.137,
-    "DHQ": 0.013,
-    "DLQ": 0.013,
-    "NAVD88": 5.468
-  },
-  "disclaimers": ""
+  ]
 }

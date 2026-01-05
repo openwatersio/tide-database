@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-st-george-island-12th-st-w-bayside",
+  "id": "us/fl/st-george-island-12th-st-w-bayside",
   "name": "St. George Island, 12th St. W (Bayside)",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.6533,
   "longitude": -84.8967,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728626",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728626",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728626.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728626"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-apalachicola",
+    "reference": "us/fl/apalachicola",
     "height": {
       "type": "ratio",
       "high": 1.26,

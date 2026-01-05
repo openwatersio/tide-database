@@ -1,10 +1,9 @@
 {
-  "id": "us-ga-fort-pulaski-savannah-river-entrance",
+  "id": "us/ga/fort-pulaski-savannah-river-entrance",
   "name": "Fort Pulaski, Savannah River Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "GA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 32.03469444444445,
   "longitude": -80.90302777777778,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8670870",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8670870",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8670870.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8670870"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.4632721,
+    "HAT": 3.924272,
+    "STND": 0,
+    "MHHW": 3.353,
+    "MHW": 3.239,
+    "DTL": 2.209,
+    "MTL": 2.185,
+    "MSL": 2.23,
+    "MLW": 1.131,
+    "MLLW": 1.066,
+    "GT": 2.287,
+    "MN": 2.108,
+    "DHQ": 0.114,
+    "DLQ": 0.065,
+    "HWI": 0.515,
+    "LWI": 6.895,
+    "NAVD88": 2.301
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 338,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.4632721,
-    "HAT": 3.924272,
-    "STND": 0,
-    "MHHW": 3.353,
-    "MHW": 3.239,
-    "DTL": 2.209,
-    "MTL": 2.185,
-    "MSL": 2.23,
-    "MLW": 1.131,
-    "MLLW": 1.066,
-    "GT": 2.287,
-    "MN": 2.108,
-    "DHQ": 0.114,
-    "DLQ": 0.065,
-    "HWI": 0.515,
-    "LWI": 6.895,
-    "NAVD88": 2.301
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-south-delray-beach-icww",
+  "id": "us/fl/south-delray-beach-icww",
   "name": "South Delray Beach, ICWW",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.4467,
   "longitude": -80.065,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722761",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722761",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722761.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722761"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.0059999824,
+    "HAT": 1.1730001,
+    "STND": 0,
+    "MHHW": 1,
+    "MHW": 0.961,
+    "DTL": 0.596,
+    "MTL": 0.6,
+    "MSL": 0.578,
+    "MLW": 0.239,
+    "MLLW": 0.192,
+    "GT": 0.808,
+    "MN": 0.722,
+    "DHQ": 0.039,
+    "DLQ": 0.047,
+    "HWI": 2.619,
+    "LWI": 9.019,
+    "NAVD88": 0.873
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.0059999824,
-    "HAT": 1.1730001,
-    "STND": 0,
-    "MHHW": 1,
-    "MHW": 0.961,
-    "DTL": 0.596,
-    "MTL": 0.6,
-    "MSL": 0.578,
-    "MLW": 0.239,
-    "MLLW": 0.192,
-    "GT": 0.808,
-    "MN": 0.722,
-    "DHQ": 0.039,
-    "DLQ": 0.047,
-    "HWI": 2.619,
-    "LWI": 9.019,
-    "NAVD88": 0.873
-  },
-  "disclaimers": ""
+  ]
 }

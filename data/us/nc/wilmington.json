@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-wilmington",
+  "id": "us/nc/wilmington",
   "name": "Wilmington",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.22669982910156,
   "longitude": -77.95330047607422,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8658120",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8658120",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8658120.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8658120"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.34099996,
+    "HAT": 2.495,
+    "STND": 0,
+    "MHHW": 2.174,
+    "MHW": 2.098,
+    "DTL": 1.461,
+    "MTL": 1.446,
+    "MSL": 1.49,
+    "MLW": 0.794,
+    "MLLW": 0.747,
+    "GT": 1.427,
+    "MN": 1.305,
+    "DHQ": 0.076,
+    "DLQ": 0.047,
+    "HWI": 2.38,
+    "LWI": 9.1,
+    "NAVD88": 1.539
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 82.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.34099996,
-    "HAT": 2.495,
-    "STND": 0,
-    "MHHW": 2.174,
-    "MHW": 2.098,
-    "DTL": 1.461,
-    "MTL": 1.446,
-    "MSL": 1.49,
-    "MLW": 0.794,
-    "MLLW": 0.747,
-    "GT": 1.427,
-    "MN": 1.305,
-    "DHQ": 0.076,
-    "DLQ": 0.047,
-    "HWI": 2.38,
-    "LWI": 9.1,
-    "NAVD88": 1.539
-  },
-  "disclaimers": ""
+  ]
 }

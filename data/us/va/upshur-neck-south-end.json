@@ -1,10 +1,9 @@
 {
-  "id": "us-va-upshur-neck-south-end",
+  "id": "us/va/upshur-neck-south-end",
   "name": "Upshur Neck, south end",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.4667,
   "longitude": -75.8,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8631287",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8631287",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8631287.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8631287"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-ocean-city-fishing-pier",
+    "reference": "us/md/ocean-city-fishing-pier",
     "height": {
       "type": "ratio",
       "high": 1.31,

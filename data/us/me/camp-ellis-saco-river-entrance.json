@@ -1,10 +1,9 @@
 {
-  "id": "us-me-camp-ellis-saco-river-entrance",
+  "id": "us/me/camp-ellis-saco-river-entrance",
   "name": "Camp Ellis, Saco River Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.4617,
   "longitude": -70.3817,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8418606",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418606",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8418606.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418606"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.6459999,
+    "HAT": 4.796,
+    "STND": 0,
+    "MHHW": 4.188,
+    "MHW": 4.057,
+    "DTL": 2.712,
+    "MTL": 2.698,
+    "MSL": 2.707,
+    "MLW": 1.339,
+    "MLLW": 1.237,
+    "GT": 2.952,
+    "MN": 2.719,
+    "DHQ": 0.131,
+    "DLQ": 0.102,
+    "HWI": 3.63,
+    "LWI": 9.908
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.6459999,
-    "HAT": 4.796,
-    "STND": 0,
-    "MHHW": 4.188,
-    "MHW": 4.057,
-    "DTL": 2.712,
-    "MTL": 2.698,
-    "MSL": 2.707,
-    "MLW": 1.339,
-    "MLLW": 1.237,
-    "GT": 2.952,
-    "MN": 2.719,
-    "DHQ": 0.131,
-    "DLQ": 0.102,
-    "HWI": 3.63,
-    "LWI": 9.908
-  },
-  "disclaimers": ""
+  ]
 }

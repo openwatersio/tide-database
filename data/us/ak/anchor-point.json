@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-anchor-point",
+  "id": "us/ak/anchor-point",
   "name": "Anchor Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 59.77197222222223,
   "longitude": -151.8670277777778,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9455606",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455606",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9455606.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455606"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.6719995,
+    "HAT": 14.466,
+    "STND": 0,
+    "MHHW": 13.032,
+    "MHW": 12.794,
+    "DTL": 10.23,
+    "MTL": 10.377,
+    "MSL": 10.388,
+    "MLW": 7.96,
+    "MLLW": 7.428,
+    "GT": 5.603,
+    "MN": 4.834,
+    "DHQ": 0.237,
+    "DLQ": 0.531,
+    "HWI": 11.65,
+    "LWI": 5.2
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.6719995,
-    "HAT": 14.466,
-    "STND": 0,
-    "MHHW": 13.032,
-    "MHW": 12.794,
-    "DTL": 10.23,
-    "MTL": 10.377,
-    "MSL": 10.388,
-    "MLW": 7.96,
-    "MLLW": 7.428,
-    "GT": 5.603,
-    "MN": 4.834,
-    "DHQ": 0.237,
-    "DLQ": 0.531,
-    "HWI": 11.65,
-    "LWI": 5.2
-  },
-  "disclaimers": ""
+  ]
 }

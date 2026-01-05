@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-comfort-cove-port-gravina",
+  "id": "us/ak/comfort-cove-port-gravina",
   "name": "Comfort Cove, Port Gravina",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.71,
   "longitude": -146.085,
   "timezone": "America/Anchorage",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454157",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454157",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454157.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454157"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ak-cordova",
+    "reference": "us/ak/cordova",
     "height": {
       "type": "fixed",
       "high": -0.21,

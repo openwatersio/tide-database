@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-mitrofania-island",
+  "id": "us/ak/mitrofania-island",
   "name": "Mitrofania Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.89,
   "longitude": -158.82,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459016",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459016",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459016.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459016"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.6449995,
+    "HAT": 9.503,
+    "STND": 0,
+    "MHHW": 8.86,
+    "MHW": 8.625,
+    "DTL": 7.682,
+    "MTL": 7.77,
+    "MSL": 7.752,
+    "MLW": 6.914,
+    "MLLW": 6.504,
+    "GT": 2.356,
+    "MN": 1.712,
+    "DHQ": 0.235,
+    "DLQ": 0.41,
+    "HWI": 11.209,
+    "LWI": 4.974
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.6449995,
-    "HAT": 9.503,
-    "STND": 0,
-    "MHHW": 8.86,
-    "MHW": 8.625,
-    "DTL": 7.682,
-    "MTL": 7.77,
-    "MSL": 7.752,
-    "MLW": 6.914,
-    "MLLW": 6.504,
-    "GT": 2.356,
-    "MN": 1.712,
-    "DHQ": 0.235,
-    "DLQ": 0.41,
-    "HWI": 11.209,
-    "LWI": 4.974
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-ship-john-shoal",
+  "id": "us/nj/ship-john-shoal",
   "name": "Ship John Shoal",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.30538888888889,
   "longitude": -75.37667777777777,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8537121",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537121",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8537121.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8537121"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.162,
+    "HAT": 7.803,
+    "STND": 0,
+    "MHHW": 7.451,
+    "MHW": 7.316,
+    "DTL": 6.505,
+    "MTL": 6.467,
+    "MSL": 6.486,
+    "MLW": 5.618,
+    "MLLW": 5.559,
+    "GT": 1.892,
+    "MN": 1.698,
+    "DHQ": 0.135,
+    "DLQ": 0.059,
+    "HWI": 2.385,
+    "LWI": 9.08
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 155.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.162,
-    "HAT": 7.803,
-    "STND": 0,
-    "MHHW": 7.451,
-    "MHW": 7.316,
-    "DTL": 6.505,
-    "MTL": 6.467,
-    "MSL": 6.486,
-    "MLW": 5.618,
-    "MLLW": 5.559,
-    "GT": 1.892,
-    "MN": 1.698,
-    "DHQ": 0.135,
-    "DLQ": 0.059,
-    "HWI": 2.385,
-    "LWI": 9.08
-  },
-  "disclaimers": ""
+  ]
 }

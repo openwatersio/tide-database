@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-westport-point-chehalis",
+  "id": "us/wa/westport-point-chehalis",
   "name": "Westport, Point Chehalis",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 46.90431,
   "longitude": -124.1050833331214,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9441102",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441102",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9441102.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9441102"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.065999985,
+    "HAT": 4.373,
+    "STND": 0,
+    "MHHW": 3.701,
+    "MHW": 3.475,
+    "DTL": 2.307,
+    "MTL": 2.407,
+    "MSL": 2.398,
+    "MLW": 1.34,
+    "MLLW": 0.914,
+    "GT": 2.786,
+    "MN": 2.136,
+    "DHQ": 0.225,
+    "DLQ": 0.425,
+    "HWI": 8.559,
+    "LWI": 2.08,
+    "NAVD88": 1.257
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 142.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.065999985,
-    "HAT": 4.373,
-    "STND": 0,
-    "MHHW": 3.701,
-    "MHW": 3.475,
-    "DTL": 2.307,
-    "MTL": 2.407,
-    "MSL": 2.398,
-    "MLW": 1.34,
-    "MLLW": 0.914,
-    "GT": 2.786,
-    "MN": 2.136,
-    "DHQ": 0.225,
-    "DLQ": 0.425,
-    "HWI": 8.559,
-    "LWI": 2.08,
-    "NAVD88": 1.257
-  },
-  "disclaimers": ""
+  ]
 }

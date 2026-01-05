@@ -1,10 +1,9 @@
 {
-  "id": "us-pr-san-juan",
+  "id": "us/pr/san-juan",
   "name": "SAN JUAN",
-  "continent": "North America",
-  "country": "United States",
   "region": "PR",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 18.45894444444445,
   "longitude": -66.11641666666667,
   "timezone": "America/Puerto_Rico",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9755371",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9755371",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9755371.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9755371"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.86100006,
+    "HAT": 1.71,
+    "STND": 0,
+    "MHHW": 1.512,
+    "MHW": 1.432,
+    "DTL": 1.272,
+    "MTL": 1.264,
+    "MSL": 1.266,
+    "MLW": 1.095,
+    "MLLW": 1.032,
+    "GT": 0.481,
+    "MN": 0.336,
+    "DHQ": 0.081,
+    "DLQ": 0.064,
+    "HWI": 0.64,
+    "LWI": 7.01,
+    "PRVD02": 1.266
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 112.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.86100006,
-    "HAT": 1.71,
-    "STND": 0,
-    "MHHW": 1.512,
-    "MHW": 1.432,
-    "DTL": 1.272,
-    "MTL": 1.264,
-    "MSL": 1.266,
-    "MLW": 1.095,
-    "MLLW": 1.032,
-    "GT": 0.481,
-    "MN": 0.336,
-    "DHQ": 0.081,
-    "DLQ": 0.064,
-    "HWI": 0.64,
-    "LWI": 7.01,
-    "PRVD02": 1.266
-  },
-  "disclaimers": ""
+  ]
 }

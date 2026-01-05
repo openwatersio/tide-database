@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-turkey-point-st-james-island",
+  "id": "us/fl/turkey-point-st-james-island",
   "name": "Turkey Point, St. James Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.915000915527344,
   "longitude": -84.5116958618164,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728360",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728360",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728360.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728360"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.315,
+    "HAT": 1.26,
+    "STND": 0,
+    "MHHW": 1.001,
+    "MHW": 0.937,
+    "DTL": 0.584,
+    "MTL": 0.644,
+    "MSL": 0.63,
+    "MLW": 0.352,
+    "MLLW": 0.167,
+    "GT": 0.834,
+    "MN": 0.585,
+    "DHQ": 0.064,
+    "DLQ": 0.185,
+    "HWI": 6.903,
+    "LWI": 0.62,
+    "NAVD88": 0.673
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.315,
-    "HAT": 1.26,
-    "STND": 0,
-    "MHHW": 1.001,
-    "MHW": 0.937,
-    "DTL": 0.584,
-    "MTL": 0.644,
-    "MSL": 0.63,
-    "MLW": 0.352,
-    "MLLW": 0.167,
-    "GT": 0.834,
-    "MN": 0.585,
-    "DHQ": 0.064,
-    "DLQ": 0.185,
-    "HWI": 6.903,
-    "LWI": 0.62,
-    "NAVD88": 0.673
-  },
-  "disclaimers": ""
+  ]
 }

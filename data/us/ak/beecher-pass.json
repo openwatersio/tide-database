@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-beecher-pass",
+  "id": "us/ak/beecher-pass",
   "name": "Beecher Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 56.595,
   "longitude": -132.987,
   "timezone": "America/Sitka",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9451287",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451287",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9451287.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451287"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.8327491,
+    "HAT": 4.453251,
+    "STND": 0,
+    "MHHW": 3.282,
+    "MHW": 3.011,
+    "DTL": 0.924,
+    "MTL": 1.023,
+    "MSL": 0.975,
+    "MLW": -0.966,
+    "MLLW": -1.434,
+    "GT": 4.716,
+    "MN": 3.977,
+    "DHQ": 0.271,
+    "DLQ": 0.468,
+    "HWI": 9.78,
+    "LWI": 3.34
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.8327491,
-    "HAT": 4.453251,
-    "STND": 0,
-    "MHHW": 3.282,
-    "MHW": 3.011,
-    "DTL": 0.924,
-    "MTL": 1.023,
-    "MSL": 0.975,
-    "MLW": -0.966,
-    "MLLW": -1.434,
-    "GT": 4.716,
-    "MN": 3.977,
-    "DHQ": 0.271,
-    "DLQ": 0.468,
-    "HWI": 9.78,
-    "LWI": 3.34
-  },
-  "disclaimers": ""
+  ]
 }

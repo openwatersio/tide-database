@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-jacksonville-navy-fuel-depot",
+  "id": "us/fl/jacksonville-navy-fuel-depot",
   "name": "Jacksonville, Navy Fuel Depot",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.4,
   "longitude": -81.6267,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720215",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720215",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720215.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720215"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-mayport-bar-pilot-dock",
+    "reference": "us/fl/mayport-bar-pilot-dock",
     "height": {
       "type": "ratio",
       "high": 0.56,

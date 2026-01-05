@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-peter-s-ditch",
+  "id": "us/nc/peter-s-ditch",
   "name": "Peter's Ditch",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 35.35013888888889,
   "longitude": -75.51202777777777,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8653951",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8653951",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8653951.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8653951"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.905999,
+    "HAT": 9.101,
+    "STND": 0,
+    "MHHW": 9.094,
+    "MHW": 9.066,
+    "DTL": 9.002,
+    "MTL": 9,
+    "MSL": 8.999,
+    "MLW": 8.934,
+    "MLLW": 8.909,
+    "GT": 0.185,
+    "MN": 0.132,
+    "DHQ": 0.028,
+    "DLQ": 0.025
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.905999,
-    "HAT": 9.101,
-    "STND": 0,
-    "MHHW": 9.094,
-    "MHW": 9.066,
-    "DTL": 9.002,
-    "MTL": 9,
-    "MSL": 8.999,
-    "MLW": 8.934,
-    "MLLW": 8.909,
-    "GT": 0.185,
-    "MN": 0.132,
-    "DHQ": 0.028,
-    "DLQ": 0.025
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-port-saint-joe-st-joseph-bay",
+  "id": "us/fl/port-saint-joe-st-joseph-bay",
   "name": "Port Saint Joe, St. Joseph Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.815,
   "longitude": -85.3133,
   "timezone": "America/New_York",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728912",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728912",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728912.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728912"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.607,
+    "HAT": 1.6589999,
+    "STND": 0,
+    "MHHW": 1.412,
+    "MHW": 1.321,
+    "DTL": 1.16,
+    "MTL": 1.145,
+    "MSL": 1.158,
+    "MLW": 0.97,
+    "MLLW": 0.908,
+    "GT": 0.504,
+    "MN": 0.351,
+    "DHQ": 0.091,
+    "DLQ": 0.062
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 113.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.607,
-    "HAT": 1.6589999,
-    "STND": 0,
-    "MHHW": 1.412,
-    "MHW": 1.321,
-    "DTL": 1.16,
-    "MTL": 1.145,
-    "MSL": 1.158,
-    "MLW": 0.97,
-    "MLLW": 0.908,
-    "GT": 0.504,
-    "MN": 0.351,
-    "DHQ": 0.091,
-    "DLQ": 0.062
-  },
-  "disclaimers": ""
+  ]
 }

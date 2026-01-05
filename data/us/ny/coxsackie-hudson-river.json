@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-coxsackie-hudson-river",
+  "id": "us/ny/coxsackie-hudson-river",
   "name": "Coxsackie, Hudson River",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.352638244628906,
   "longitude": -73.79486083984375,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518979",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518979",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518979.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518979"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.525,
+    "HAT": 8.794,
+    "STND": 0,
+    "MHHW": 8.418,
+    "MHW": 8.296,
+    "DTL": 7.631,
+    "MTL": 7.598,
+    "MSL": 7.625,
+    "MLW": 6.9,
+    "MLLW": 6.844,
+    "GT": 1.574,
+    "MN": 1.395,
+    "DHQ": 0.123,
+    "DLQ": 0.057,
+    "HWI": 8.51,
+    "LWI": 2.59
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.525,
-    "HAT": 8.794,
-    "STND": 0,
-    "MHHW": 8.418,
-    "MHW": 8.296,
-    "DTL": 7.631,
-    "MTL": 7.598,
-    "MSL": 7.625,
-    "MLW": 6.9,
-    "MLLW": 6.844,
-    "GT": 1.574,
-    "MN": 1.395,
-    "DHQ": 0.123,
-    "DLQ": 0.057,
-    "HWI": 8.51,
-    "LWI": 2.59
-  },
-  "disclaimers": ""
+  ]
 }

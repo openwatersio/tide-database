@@ -1,10 +1,9 @@
 {
-  "id": "us-me-biddeford-saco-river",
+  "id": "us/me/biddeford-saco-river",
   "name": "Biddeford, Saco River",
-  "continent": "North America",
-  "country": "United States",
   "region": "ME",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 43.4917,
   "longitude": -70.4467,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8418828",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418828",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8418828.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8418828"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.3840001,
+    "HAT": 3.937,
+    "STND": 0,
+    "MHHW": 2.976,
+    "MHW": 2.84,
+    "DTL": 1.476,
+    "MTL": 1.46,
+    "MSL": 1.496,
+    "MLW": 0.08,
+    "MLLW": -0.022,
+    "GT": 2.999,
+    "MN": 2.76,
+    "DHQ": 0.136,
+    "DLQ": 0.103,
+    "HWI": 3.78,
+    "LWI": 10.184
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 218.1,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.3840001,
-    "HAT": 3.937,
-    "STND": 0,
-    "MHHW": 2.976,
-    "MHW": 2.84,
-    "DTL": 1.476,
-    "MTL": 1.46,
-    "MSL": 1.496,
-    "MLW": 0.08,
-    "MLLW": -0.022,
-    "GT": 2.999,
-    "MN": 2.76,
-    "DHQ": 0.136,
-    "DLQ": 0.103,
-    "HWI": 3.78,
-    "LWI": 10.184
-  },
-  "disclaimers": ""
+  ]
 }

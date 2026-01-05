@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-tenakee-springs-tenakee-inlet",
+  "id": "us/ak/tenakee-springs-tenakee-inlet",
   "name": "Tenakee Springs, Tenakee Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.77930555555555,
   "longitude": -135.2194722222222,
   "timezone": "America/Juneau",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9452386",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452386",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9452386.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452386"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -2.832,
+    "HAT": 4.493,
+    "STND": 0,
+    "MHHW": 3.193,
+    "MHW": 2.907,
+    "DTL": 0.894,
+    "MTL": 0.991,
+    "MSL": 1.019,
+    "MLW": -0.925,
+    "MLLW": -1.405,
+    "GT": 4.6,
+    "MN": 3.833,
+    "DHQ": 0.286,
+    "DLQ": 0.481,
+    "HWI": 9.735,
+    "LWI": 3.5,
+    "NAVD88": -0.537
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -2.832,
-    "HAT": 4.493,
-    "STND": 0,
-    "MHHW": 3.193,
-    "MHW": 2.907,
-    "DTL": 0.894,
-    "MTL": 0.991,
-    "MSL": 1.019,
-    "MLW": -0.925,
-    "MLLW": -1.405,
-    "GT": 4.6,
-    "MN": 3.833,
-    "DHQ": 0.286,
-    "DLQ": 0.481,
-    "HWI": 9.735,
-    "LWI": 3.5,
-    "NAVD88": -0.537
-  },
-  "disclaimers": ""
+  ]
 }

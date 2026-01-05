@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-redwood-city-wharf-5",
+  "id": "us/ca/redwood-city-wharf-5",
   "name": "Redwood City, Wharf 5",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.50681388888889,
   "longitude": -122.2119055555556,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9414523",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414523",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414523.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9414523"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.41,
+    "HAT": 5.014,
+    "STND": 0,
+    "MHHW": 4.554,
+    "MHW": 4.361,
+    "DTL": 3.304,
+    "MTL": 3.39,
+    "MSL": 3.396,
+    "MLW": 2.419,
+    "MLLW": 2.054,
+    "GT": 2.499,
+    "MN": 1.941,
+    "DHQ": 0.193,
+    "DLQ": 0.365,
+    "HWI": 8.324,
+    "LWI": 2.1,
+    "NAVD88": 2.414
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 231.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.41,
-    "HAT": 5.014,
-    "STND": 0,
-    "MHHW": 4.554,
-    "MHW": 4.361,
-    "DTL": 3.304,
-    "MTL": 3.39,
-    "MSL": 3.396,
-    "MLW": 2.419,
-    "MLLW": 2.054,
-    "GT": 2.499,
-    "MN": 1.941,
-    "DHQ": 0.193,
-    "DLQ": 0.365,
-    "HWI": 8.324,
-    "LWI": 2.1,
-    "NAVD88": 2.414
-  },
-  "disclaimers": ""
+  ]
 }

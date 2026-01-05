@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-port-laudania-dania-cut-off-canal",
+  "id": "us/fl/port-laudania-dania-cut-off-canal",
   "name": "Port Laudania, Dania cut-off Canal",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.06,
   "longitude": -80.13,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722968",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722968",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722968.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722968"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-government-cut-miami-harbor-entrance",
+    "reference": "us/fl/government-cut-miami-harbor-entrance",
     "height": {
       "type": "ratio",
       "high": 1,

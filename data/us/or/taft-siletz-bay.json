@@ -1,10 +1,9 @@
 {
-  "id": "us-or-taft-siletz-bay",
+  "id": "us/or/taft-siletz-bay",
   "name": "Taft, Siletz Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "OR",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 44.9267,
   "longitude": -124.013,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9436101",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9436101",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9436101.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9436101"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-crescent-city",
+    "reference": "us/ca/crescent-city",
     "height": {
       "type": "ratio",
       "high": 0.94,

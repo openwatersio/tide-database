@@ -1,10 +1,9 @@
 {
-  "id": "us-va-richmond-deepwater-terminal-james-river",
+  "id": "us/va/richmond-deepwater-terminal-james-river",
   "name": "Richmond Deepwater Terminal, James River",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.45955555555555,
   "longitude": -77.42077777777777,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8636941",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636941",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8636941.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8636941"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.42299998,
+    "HAT": 1.787,
+    "STND": 0,
+    "MHHW": 1.574,
+    "MHW": 1.496,
+    "DTL": 1.051,
+    "MTL": 1.033,
+    "MSL": 1.073,
+    "MLW": 0.569,
+    "MLLW": 0.527,
+    "GT": 1.047,
+    "MN": 0.928,
+    "DHQ": 0.078,
+    "DLQ": 0.042,
+    "HWI": 8.831,
+    "LWI": 3.756
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.42299998,
-    "HAT": 1.787,
-    "STND": 0,
-    "MHHW": 1.574,
-    "MHW": 1.496,
-    "DTL": 1.051,
-    "MTL": 1.033,
-    "MSL": 1.073,
-    "MLW": 0.569,
-    "MLLW": 0.527,
-    "GT": 1.047,
-    "MN": 0.928,
-    "DHQ": 0.078,
-    "DLQ": 0.042,
-    "HWI": 8.831,
-    "LWI": 3.756
-  },
-  "disclaimers": ""
+  ]
 }

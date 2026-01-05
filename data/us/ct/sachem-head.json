@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-sachem-head",
+  "id": "us/ct/sachem-head",
   "name": "Sachem Head",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.245,
   "longitude": -72.7083,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8464687",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8464687",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8464687.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8464687"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ct-bridgeport",
+    "reference": "us/ct/bridgeport",
     "height": {
       "type": "ratio",
       "high": 0.8,

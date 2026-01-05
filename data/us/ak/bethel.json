@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-bethel",
+  "id": "us/ak/bethel",
   "name": "Bethel",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.8,
   "longitude": -161.75,
   "timezone": "America/Anchorage",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9466477",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466477",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9466477.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466477"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.909,
+    "HAT": 2.842,
+    "STND": 0,
+    "MHHW": 2.348,
+    "MHW": 2.074,
+    "DTL": 1.79,
+    "MTL": 1.705,
+    "MSL": 1.724,
+    "MLW": 1.336,
+    "MLLW": 1.231,
+    "GT": 1.117,
+    "MN": 0.738,
+    "DHQ": 0.274,
+    "DLQ": 0.105
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 70.3,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.909,
-    "HAT": 2.842,
-    "STND": 0,
-    "MHHW": 2.348,
-    "MHW": 2.074,
-    "DTL": 1.79,
-    "MTL": 1.705,
-    "MSL": 1.724,
-    "MLW": 1.336,
-    "MLLW": 1.231,
-    "GT": 1.117,
-    "MN": 0.738,
-    "DHQ": 0.274,
-    "DLQ": 0.105
-  },
-  "disclaimers": ""
+  ]
 }

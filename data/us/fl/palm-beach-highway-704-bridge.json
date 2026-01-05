@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-palm-beach-highway-704-bridge",
+  "id": "us/fl/palm-beach-highway-704-bridge",
   "name": "Palm Beach, Highway 704 bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.705,
   "longitude": -80.045,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722621",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722621",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722621.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722621"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-government-cut-miami-harbor-entrance",
+    "reference": "us/fl/government-cut-miami-harbor-entrance",
     "height": {
       "type": "ratio",
       "high": 1.1,

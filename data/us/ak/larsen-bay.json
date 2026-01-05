@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-larsen-bay",
+  "id": "us/ak/larsen-bay",
   "name": "Larsen Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 57.5333,
   "longitude": -153.99,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9457724",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457724",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9457724.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457724"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.682,
+    "HAT": 5.088,
+    "STND": 0,
+    "MHHW": 3.879,
+    "MHW": 3.596,
+    "DTL": 1.784,
+    "MTL": 1.889,
+    "MSL": 1.866,
+    "MLW": 0.182,
+    "MLLW": -0.31,
+    "GT": 4.189,
+    "MN": 3.415,
+    "DHQ": 0.282,
+    "DLQ": 0.492,
+    "HWI": 11.07,
+    "LWI": 4.98
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.682,
-    "HAT": 5.088,
-    "STND": 0,
-    "MHHW": 3.879,
-    "MHW": 3.596,
-    "DTL": 1.784,
-    "MTL": 1.889,
-    "MSL": 1.866,
-    "MLW": 0.182,
-    "MLLW": -0.31,
-    "GT": 4.189,
-    "MN": 3.415,
-    "DHQ": 0.282,
-    "DLQ": 0.492,
-    "HWI": 11.07,
-    "LWI": 4.98
-  },
-  "disclaimers": ""
+  ]
 }

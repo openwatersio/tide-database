@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-vaca-key-fat-deer-key-bridge",
+  "id": "us/fl/vaca-key-fat-deer-key-bridge",
   "name": "Vaca Key-Fat Deer Key bridge",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.73,
   "longitude": -81.03,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8723950",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723950",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8723950.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723950"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-fl-key-west",
+    "reference": "us/fl/key-west",
     "height": {
       "type": "ratio",
       "high": 0.95,

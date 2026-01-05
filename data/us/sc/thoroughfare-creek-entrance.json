@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-thoroughfare-creek-entrance",
+  "id": "us/sc/thoroughfare-creek-entrance",
   "name": "Thoroughfare Creek entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.5067,
   "longitude": -79.145,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8661703",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661703",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8661703.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8661703"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.82799995,
+    "HAT": 2.378,
+    "STND": 0,
+    "MHHW": 2.112,
+    "MHW": 2.06,
+    "DTL": 1.551,
+    "MTL": 1.551,
+    "MSL": 1.604,
+    "MLW": 1.042,
+    "MLLW": 0.99,
+    "GT": 1.122,
+    "MN": 1.018,
+    "DHQ": 0.052,
+    "DLQ": 0.052,
+    "HWI": 2.951,
+    "LWI": 9.89
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.82799995,
-    "HAT": 2.378,
-    "STND": 0,
-    "MHHW": 2.112,
-    "MHW": 2.06,
-    "DTL": 1.551,
-    "MTL": 1.551,
-    "MSL": 1.604,
-    "MLW": 1.042,
-    "MLLW": 0.99,
-    "GT": 1.122,
-    "MN": 1.018,
-    "DHQ": 0.052,
-    "DLQ": 0.052,
-    "HWI": 2.951,
-    "LWI": 9.89
-  },
-  "disclaimers": ""
+  ]
 }

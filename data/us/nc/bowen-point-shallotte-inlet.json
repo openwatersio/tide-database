@@ -1,10 +1,9 @@
 {
-  "id": "us-nc-bowen-point-shallotte-inlet",
+  "id": "us/nc/bowen-point-shallotte-inlet",
   "name": "Bowen Point, Shallotte Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "NC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.915000915527344,
   "longitude": -78.37329864501953,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8659665",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8659665",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8659665.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8659665"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.822,
+    "HAT": 9.162,
+    "STND": 0,
+    "MHHW": 8.737,
+    "MHW": 8.631,
+    "DTL": 8.011,
+    "MTL": 7.981,
+    "MSL": 7.975,
+    "MLW": 7.331,
+    "MLLW": 7.285,
+    "GT": 1.453,
+    "MN": 1.3,
+    "DHQ": 0.107,
+    "DLQ": 0.047,
+    "HWI": 0.516,
+    "LWI": 6.898,
+    "NAVD88": 8.159
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 327.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.822,
-    "HAT": 9.162,
-    "STND": 0,
-    "MHHW": 8.737,
-    "MHW": 8.631,
-    "DTL": 8.011,
-    "MTL": 7.981,
-    "MSL": 7.975,
-    "MLW": 7.331,
-    "MLLW": 7.285,
-    "GT": 1.453,
-    "MN": 1.3,
-    "DHQ": 0.107,
-    "DLQ": 0.047,
-    "HWI": 0.516,
-    "LWI": 6.898,
-    "NAVD88": 8.159
-  },
-  "disclaimers": ""
+  ]
 }

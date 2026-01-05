@@ -1,10 +1,9 @@
 {
-  "id": "us-wa-tulare-beach-port-susan",
+  "id": "us/wa/tulare-beach-port-susan",
   "name": "Tulare Beach, Port Susan",
-  "continent": "North America",
-  "country": "United States",
   "region": "WA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 48.10680555555555,
   "longitude": -122.3472777777778,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9448043",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9448043",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9448043.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9448043"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.915,
+    "HAT": 10.319,
+    "STND": 0,
+    "MHHW": 9.656,
+    "MHW": 9.396,
+    "DTL": 7.968,
+    "MTL": 8.255,
+    "MSL": 8.248,
+    "MLW": 7.115,
+    "MLLW": 6.28,
+    "GT": 3.376,
+    "MN": 2.28,
+    "DHQ": 0.26,
+    "DLQ": 0.835,
+    "HWI": 0.36,
+    "LWI": 6.58,
+    "NAVD88": 6.899
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.915,
-    "HAT": 10.319,
-    "STND": 0,
-    "MHHW": 9.656,
-    "MHW": 9.396,
-    "DTL": 7.968,
-    "MTL": 8.255,
-    "MSL": 8.248,
-    "MLW": 7.115,
-    "MLLW": 6.28,
-    "GT": 3.376,
-    "MN": 2.28,
-    "DHQ": 0.26,
-    "DLQ": 0.835,
-    "HWI": 0.36,
-    "LWI": 6.58,
-    "NAVD88": 6.899
-  },
-  "disclaimers": ""
+  ]
 }

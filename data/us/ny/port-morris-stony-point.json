@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-port-morris-stony-point",
+  "id": "us/ny/port-morris-stony-point",
   "name": "Port Morris (Stony Point)",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.8017,
   "longitude": -73.9067,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518639",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518639",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518639.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518639"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.03400004,
+    "HAT": 3.106,
+    "STND": 0,
+    "MHHW": 2.582,
+    "MHW": 2.475,
+    "DTL": 1.537,
+    "MTL": 1.525,
+    "MSL": 1.523,
+    "MLW": 0.574,
+    "MLLW": 0.493,
+    "GT": 2.089,
+    "MN": 1.901,
+    "DHQ": 0.107,
+    "DLQ": 0.082,
+    "HWI": 4.187,
+    "LWI": 10.934,
+    "NAVD88": 1.566
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 263.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.03400004,
-    "HAT": 3.106,
-    "STND": 0,
-    "MHHW": 2.582,
-    "MHW": 2.475,
-    "DTL": 1.537,
-    "MTL": 1.525,
-    "MSL": 1.523,
-    "MLW": 0.574,
-    "MLLW": 0.493,
-    "GT": 2.089,
-    "MN": 1.901,
-    "DHQ": 0.107,
-    "DLQ": 0.082,
-    "HWI": 4.187,
-    "LWI": 10.934,
-    "NAVD88": 1.566
-  },
-  "disclaimers": ""
+  ]
 }

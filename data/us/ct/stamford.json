@@ -1,10 +1,9 @@
 {
-  "id": "us-ct-stamford",
+  "id": "us/ct/stamford",
   "name": "Stamford",
-  "continent": "North America",
-  "country": "United States",
   "region": "CT",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.0383,
   "longitude": -73.5467,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8469198",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8469198",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8469198.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8469198"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.446,
+    "HAT": 4.949,
+    "STND": 0,
+    "MHHW": 4.372,
+    "MHW": 4.263,
+    "DTL": 3.188,
+    "MTL": 3.17,
+    "MSL": 3.175,
+    "MLW": 2.077,
+    "MLLW": 2.004,
+    "GT": 2.367,
+    "MN": 2.186,
+    "DHQ": 0.109,
+    "DLQ": 0.073,
+    "HWI": 3.77,
+    "LWI": 10.23,
+    "NAVD88": 3.234
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.446,
-    "HAT": 4.949,
-    "STND": 0,
-    "MHHW": 4.372,
-    "MHW": 4.263,
-    "DTL": 3.188,
-    "MTL": 3.17,
-    "MSL": 3.175,
-    "MLW": 2.077,
-    "MLLW": 2.004,
-    "GT": 2.367,
-    "MN": 2.186,
-    "DHQ": 0.109,
-    "DLQ": 0.073,
-    "HWI": 3.77,
-    "LWI": 10.23,
-    "NAVD88": 3.234
-  },
-  "disclaimers": ""
+  ]
 }

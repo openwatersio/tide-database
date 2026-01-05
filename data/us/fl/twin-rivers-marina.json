@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-twin-rivers-marina",
+  "id": "us/fl/twin-rivers-marina",
   "name": "Twin Rivers Marina",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.905,
   "longitude": -82.6383,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8727348",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727348",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8727348.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8727348"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.53400004,
+    "HAT": 1.7260001,
+    "STND": 0,
+    "MHHW": 1.514,
+    "MHW": 1.414,
+    "DTL": 1.128,
+    "MTL": 1.124,
+    "MSL": 1.118,
+    "MLW": 0.834,
+    "MLLW": 0.741,
+    "GT": 0.772,
+    "MN": 0.58,
+    "DHQ": 0.1,
+    "DLQ": 0.093,
+    "HWI": 8.251,
+    "LWI": 2.825,
+    "NAVD88": 1.145
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.53400004,
-    "HAT": 1.7260001,
-    "STND": 0,
-    "MHHW": 1.514,
-    "MHW": 1.414,
-    "DTL": 1.128,
-    "MTL": 1.124,
-    "MSL": 1.118,
-    "MLW": 0.834,
-    "MLLW": 0.741,
-    "GT": 0.772,
-    "MN": 0.58,
-    "DHQ": 0.1,
-    "DLQ": 0.093,
-    "HWI": 8.251,
-    "LWI": 2.825,
-    "NAVD88": 1.145
-  },
-  "disclaimers": ""
+  ]
 }

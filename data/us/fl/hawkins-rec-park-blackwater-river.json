@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-hawkins-rec-park-blackwater-river",
+  "id": "us/fl/hawkins-rec-park-blackwater-river",
   "name": "Hawkins Rec. Park, Blackwater River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.636699676513672,
   "longitude": -87.0282974243164,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729753",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729753",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729753.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729753"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.6769999,
+    "HAT": 1.7659999,
+    "STND": 0,
+    "MHHW": 1.529,
+    "MHW": 1.491,
+    "DTL": 1.277,
+    "MTL": 1.276,
+    "MSL": 1.277,
+    "MLW": 1.061,
+    "MLLW": 1.024,
+    "GT": 0.505,
+    "MN": 0.43,
+    "DHQ": 0.038,
+    "DLQ": 0.038,
+    "NAVD88": 1.168
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 169,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.6769999,
-    "HAT": 1.7659999,
-    "STND": 0,
-    "MHHW": 1.529,
-    "MHW": 1.491,
-    "DTL": 1.277,
-    "MTL": 1.276,
-    "MSL": 1.277,
-    "MLW": 1.061,
-    "MLLW": 1.024,
-    "GT": 0.505,
-    "MN": 0.43,
-    "DHQ": 0.038,
-    "DLQ": 0.038,
-    "NAVD88": 1.168
-  },
-  "disclaimers": ""
+  ]
 }

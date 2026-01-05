@@ -1,10 +1,9 @@
 {
-  "id": "us-md-old-frenchtown-wharf",
+  "id": "us/md/old-frenchtown-wharf",
   "name": "Old Frenchtown Wharf",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.575,
   "longitude": -75.8433,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8573969",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8573969",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8573969.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8573969"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-md-baltimore-fort-mchenry",
+    "reference": "us/md/baltimore-fort-mchenry",
     "height": {
       "type": "ratio",
       "high": 2.06,

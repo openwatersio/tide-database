@@ -1,10 +1,9 @@
 {
-  "id": "us-majuro-atoll",
+  "id": "us/majuro-atoll",
   "name": "Majuro Atoll",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 7.116666666666704,
   "longitude": 171.36666666667008,
   "timezone": "Pacific/Majuro",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2721",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2721",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2721.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2721"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-kwajalein-atoll-kwajalein-i",
+    "reference": "us/kwajalein-atoll-kwajalein-i",
     "height": {
       "type": "fixed",
       "high": 0.09,

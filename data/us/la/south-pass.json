@@ -1,10 +1,9 @@
 {
-  "id": "us-la-south-pass",
+  "id": "us/la/south-pass",
   "name": "SOUTH PASS",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.99,
   "longitude": -89.14,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8760551",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760551",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8760551.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8760551"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.94100004,
+    "HAT": 1.975,
+    "STND": 0,
+    "MHHW": 1.671,
+    "MHW": 1.667,
+    "DTL": 1.484,
+    "MTL": 1.485,
+    "MSL": 1.483,
+    "MLW": 1.303,
+    "MLLW": 1.297,
+    "GT": 0.374,
+    "MN": 0.364,
+    "DHQ": 0.005,
+    "DLQ": 0.006
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.94100004,
-    "HAT": 1.975,
-    "STND": 0,
-    "MHHW": 1.671,
-    "MHW": 1.667,
-    "DTL": 1.484,
-    "MTL": 1.485,
-    "MSL": 1.483,
-    "MLW": 1.303,
-    "MLLW": 1.297,
-    "GT": 0.374,
-    "MN": 0.364,
-    "DHQ": 0.005,
-    "DLQ": 0.006
-  },
-  "disclaimers": ""
+  ]
 }

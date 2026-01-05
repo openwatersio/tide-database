@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-newport",
+  "id": "us/ri/newport",
   "name": "NEWPORT",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.5043333,
   "longitude": -71.3261389,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8452660",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8452660",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8452660.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8452660"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.284163,
+    "HAT": 2.1571631,
+    "STND": 0,
+    "MHHW": 1.751,
+    "MHW": 1.676,
+    "DTL": 1.164,
+    "MTL": 1.148,
+    "MSL": 1.106,
+    "MLW": 0.619,
+    "MLLW": 0.577,
+    "GT": 1.174,
+    "MN": 1.056,
+    "DHQ": 0.075,
+    "DLQ": 0.042,
+    "HWI": 0.269,
+    "LWI": 5.924,
+    "NAVD88": 1.199
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 171.5,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.284163,
-    "HAT": 2.1571631,
-    "STND": 0,
-    "MHHW": 1.751,
-    "MHW": 1.676,
-    "DTL": 1.164,
-    "MTL": 1.148,
-    "MSL": 1.106,
-    "MLW": 0.619,
-    "MLLW": 0.577,
-    "GT": 1.174,
-    "MN": 1.056,
-    "DHQ": 0.075,
-    "DLQ": 0.042,
-    "HWI": 0.269,
-    "LWI": 5.924,
-    "NAVD88": 1.199
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-metlakatla-port-chester",
+  "id": "us/ak/metlakatla-port-chester",
   "name": "Metlakatla, Port Chester",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.1283,
   "longitude": -131.567,
   "timezone": "America/Metlakatla",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9450314",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450314",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9450314.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450314"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.612251,
+    "HAT": 8.73525,
+    "STND": 0,
+    "MHHW": 7.515,
+    "MHW": 7.244,
+    "DTL": 5.249,
+    "MTL": 5.35,
+    "MSL": 5.346,
+    "MLW": 3.456,
+    "MLLW": 2.983,
+    "GT": 4.531,
+    "MN": 3.788,
+    "DHQ": 0.271,
+    "DLQ": 0.472,
+    "HWI": 9.35,
+    "LWI": 3.07
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.612251,
-    "HAT": 8.73525,
-    "STND": 0,
-    "MHHW": 7.515,
-    "MHW": 7.244,
-    "DTL": 5.249,
-    "MTL": 5.35,
-    "MSL": 5.346,
-    "MLW": 3.456,
-    "MLLW": 2.983,
-    "GT": 4.531,
-    "MN": 3.788,
-    "DHQ": 0.271,
-    "DLQ": 0.472,
-    "HWI": 9.35,
-    "LWI": 3.07
-  },
-  "disclaimers": ""
+  ]
 }

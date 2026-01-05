@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-gaviota-state-park-pacific-ocean",
+  "id": "us/ca/gaviota-state-park-pacific-ocean",
   "name": "Gaviota State Park, Pacific Ocean",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.46938888888889,
   "longitude": -120.2283055555556,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9411399",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9411399",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9411399.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9411399"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 12.66,
+    "HAT": 15.474,
+    "STND": 0,
+    "MHHW": 14.901,
+    "MHW": 14.677,
+    "DTL": 14.096,
+    "MTL": 14.132,
+    "MSL": 14.127,
+    "MLW": 13.587,
+    "MLLW": 13.29,
+    "GT": 1.611,
+    "MN": 1.091,
+    "DHQ": 0.224,
+    "DLQ": 0.297,
+    "HWI": 5.59,
+    "LWI": 11.64,
+    "NAVD88": 13.318
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 12.66,
-    "HAT": 15.474,
-    "STND": 0,
-    "MHHW": 14.901,
-    "MHW": 14.677,
-    "DTL": 14.096,
-    "MTL": 14.132,
-    "MSL": 14.127,
-    "MLW": 13.587,
-    "MLLW": 13.29,
-    "GT": 1.611,
-    "MN": 1.091,
-    "DHQ": 0.224,
-    "DLQ": 0.297,
-    "HWI": 5.59,
-    "LWI": 11.64,
-    "NAVD88": 13.318
-  },
-  "disclaimers": ""
+  ]
 }

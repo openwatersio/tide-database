@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-rye-beach",
+  "id": "us/ny/rye-beach",
   "name": "Rye Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.9617,
   "longitude": -73.6717,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518091",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518091",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518091.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518091"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.6170001,
+    "HAT": 4.035,
+    "STND": 0,
+    "MHHW": 3.494,
+    "MHW": 3.384,
+    "DTL": 2.291,
+    "MTL": 2.273,
+    "MSL": 2.278,
+    "MLW": 1.162,
+    "MLLW": 1.089,
+    "GT": 2.405,
+    "MN": 2.223,
+    "DHQ": 0.11,
+    "DLQ": 0.073,
+    "HWI": 3.73,
+    "LWI": 10.31,
+    "NAVD88": 2.349
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 207.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.6170001,
-    "HAT": 4.035,
-    "STND": 0,
-    "MHHW": 3.494,
-    "MHW": 3.384,
-    "DTL": 2.291,
-    "MTL": 2.273,
-    "MSL": 2.278,
-    "MLW": 1.162,
-    "MLLW": 1.089,
-    "GT": 2.405,
-    "MN": 2.223,
-    "DHQ": 0.11,
-    "DLQ": 0.073,
-    "HWI": 3.73,
-    "LWI": 10.31,
-    "NAVD88": 2.349
-  },
-  "disclaimers": ""
+  ]
 }

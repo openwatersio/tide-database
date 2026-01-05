@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-phoenix-park",
+  "id": "us/fl/phoenix-park",
   "name": "Phoenix Park",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.3833,
   "longitude": -81.6367,
   "timezone": "America/New_York",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8720225",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720225",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8720225.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8720225"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "STND": 0,
+    "MHHW": 2.246,
+    "MHW": 2.206,
+    "DTL": 1.832,
+    "MTL": 1.824,
+    "MSL": 1.821,
+    "MLW": 1.442,
+    "MLLW": 1.418,
+    "GT": 0.828,
+    "MN": 0.764,
+    "DHQ": 0.04,
+    "DLQ": 0.024,
+    "HWI": 2.181,
+    "LWI": 8.773,
+    "NAVD88": 1.914
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "STND": 0,
-    "MHHW": 2.246,
-    "MHW": 2.206,
-    "DTL": 1.832,
-    "MTL": 1.824,
-    "MSL": 1.821,
-    "MLW": 1.442,
-    "MLLW": 1.418,
-    "GT": 0.828,
-    "MN": 0.764,
-    "DHQ": 0.04,
-    "DLQ": 0.024,
-    "HWI": 2.181,
-    "LWI": 8.773,
-    "NAVD88": 1.914
-  },
-  "disclaimers": ""
+  ]
 }

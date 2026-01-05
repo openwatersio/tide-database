@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-plum-island-merrimack-river-entrance",
+  "id": "us/ma/plum-island-merrimack-river-entrance",
   "name": "Plum Island, Merrimack River Entrance",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 42.8167,
   "longitude": -70.82,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8440452",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440452",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8440452.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8440452"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.8449999,
+    "HAT": 4.538,
+    "STND": 0,
+    "MHHW": 4.015,
+    "MHW": 3.89,
+    "DTL": 2.688,
+    "MTL": 2.671,
+    "MSL": 2.669,
+    "MLW": 1.452,
+    "MLLW": 1.361,
+    "GT": 2.653,
+    "MN": 2.438,
+    "DHQ": 0.125,
+    "DLQ": 0.091,
+    "HWI": 4.013,
+    "LWI": 10.234
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.8449999,
-    "HAT": 4.538,
-    "STND": 0,
-    "MHHW": 4.015,
-    "MHW": 3.89,
-    "DTL": 2.688,
-    "MTL": 2.671,
-    "MSL": 2.669,
-    "MLW": 1.452,
-    "MLLW": 1.361,
-    "GT": 2.653,
-    "MN": 2.438,
-    "DHQ": 0.125,
-    "DLQ": 0.091,
-    "HWI": 4.013,
-    "LWI": 10.234
-  },
-  "disclaimers": ""
+  ]
 }

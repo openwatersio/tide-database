@@ -1,10 +1,9 @@
 {
-  "id": "us-md-bladensburg-md",
+  "id": "us/md/bladensburg-md",
   "name": "Bladensburg, Md.",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.9333,
   "longitude": -76.9383,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8579997",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8579997",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8579997.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8579997"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -0.35399997,
+    "HAT": 1.006,
+    "STND": 0,
+    "MHHW": 0.834,
+    "MHW": 0.765,
+    "DTL": 0.324,
+    "MTL": 0.315,
+    "MSL": 0.31,
+    "MLW": -0.134,
+    "MLLW": -0.185,
+    "GT": 1.021,
+    "MN": 0.9,
+    "DHQ": 0.07,
+    "DLQ": 0.051,
+    "HWI": 0.58,
+    "LWI": 8.034
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -0.35399997,
-    "HAT": 1.006,
-    "STND": 0,
-    "MHHW": 0.834,
-    "MHW": 0.765,
-    "DTL": 0.324,
-    "MTL": 0.315,
-    "MSL": 0.31,
-    "MLW": -0.134,
-    "MLLW": -0.185,
-    "GT": 1.021,
-    "MN": 0.9,
-    "DHQ": 0.07,
-    "DLQ": 0.051,
-    "HWI": 0.58,
-    "LWI": 8.034
-  },
-  "disclaimers": ""
+  ]
 }

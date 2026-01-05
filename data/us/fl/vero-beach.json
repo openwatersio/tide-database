@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-vero-beach",
+  "id": "us/fl/vero-beach",
   "name": "Vero Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 27.6317,
   "longitude": -80.3717,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8722125",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722125",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8722125.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8722125"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.737,
+    "HAT": 1.092,
+    "STND": 0,
+    "MHHW": 1.049,
+    "MHW": 1.024,
+    "DTL": 0.913,
+    "MTL": 0.91,
+    "MSL": 0.908,
+    "MLW": 0.796,
+    "MLLW": 0.777,
+    "GT": 0.272,
+    "MN": 0.228,
+    "DHQ": 0.025,
+    "DLQ": 0.019,
+    "HWI": 4.066,
+    "LWI": 10.811,
+    "NAVD88": 1.186
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.737,
-    "HAT": 1.092,
-    "STND": 0,
-    "MHHW": 1.049,
-    "MHW": 1.024,
-    "DTL": 0.913,
-    "MTL": 0.91,
-    "MSL": 0.908,
-    "MLW": 0.796,
-    "MLLW": 0.777,
-    "GT": 0.272,
-    "MN": 0.228,
-    "DHQ": 0.025,
-    "DLQ": 0.019,
-    "HWI": 4.066,
-    "LWI": 10.811,
-    "NAVD88": 1.186
-  },
-  "disclaimers": ""
+  ]
 }

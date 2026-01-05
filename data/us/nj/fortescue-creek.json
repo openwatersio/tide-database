@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-fortescue-creek",
+  "id": "us/nj/fortescue-creek",
   "name": "Fortescue Creek",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.2383,
   "longitude": -75.175,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8536931",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536931",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8536931.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8536931"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.80499995,
+    "HAT": 3.6069999,
+    "STND": 0,
+    "MHHW": 3.135,
+    "MHW": 3.011,
+    "DTL": 2.155,
+    "MTL": 2.119,
+    "MSL": 2.149,
+    "MLW": 1.227,
+    "MLLW": 1.175,
+    "GT": 1.96,
+    "MN": 1.783,
+    "DHQ": 0.124,
+    "DLQ": 0.052,
+    "HWI": 1.784,
+    "LWI": 8.471,
+    "NAVD88": 2.157
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.80499995,
-    "HAT": 3.6069999,
-    "STND": 0,
-    "MHHW": 3.135,
-    "MHW": 3.011,
-    "DTL": 2.155,
-    "MTL": 2.119,
-    "MSL": 2.149,
-    "MLW": 1.227,
-    "MLLW": 1.175,
-    "GT": 1.96,
-    "MN": 1.783,
-    "DHQ": 0.124,
-    "DLQ": 0.052,
-    "HWI": 1.784,
-    "LWI": 8.471,
-    "NAVD88": 2.157
-  },
-  "disclaimers": ""
+  ]
 }

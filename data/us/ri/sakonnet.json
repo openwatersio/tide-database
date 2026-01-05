@@ -1,10 +1,9 @@
 {
-  "id": "us-ri-sakonnet",
+  "id": "us/ri/sakonnet",
   "name": "Sakonnet",
-  "continent": "North America",
-  "country": "United States",
   "region": "RI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.465,
   "longitude": -71.1933,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8450768",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8450768",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8450768.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8450768"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 2.224,
+    "HAT": 4.012,
+    "STND": 0,
+    "MHHW": 3.634,
+    "MHW": 3.555,
+    "DTL": 3.093,
+    "MTL": 3.071,
+    "MSL": 3.041,
+    "MLW": 2.588,
+    "MLLW": 2.552,
+    "GT": 1.082,
+    "MN": 0.967,
+    "DHQ": 0.079,
+    "DLQ": 0.035,
+    "HWI": 0.112,
+    "LWI": 6.127,
+    "NAVD88": 3.147
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 136.7,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 2.224,
-    "HAT": 4.012,
-    "STND": 0,
-    "MHHW": 3.634,
-    "MHW": 3.555,
-    "DTL": 3.093,
-    "MTL": 3.071,
-    "MSL": 3.041,
-    "MLW": 2.588,
-    "MLLW": 2.552,
-    "GT": 1.082,
-    "MN": 0.967,
-    "DHQ": 0.079,
-    "DLQ": 0.035,
-    "HWI": 0.112,
-    "LWI": 6.127,
-    "NAVD88": 3.147
-  },
-  "disclaimers": ""
+  ]
 }

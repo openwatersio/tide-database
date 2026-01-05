@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-ship-island-mississippi-sound",
+  "id": "us/ms/ship-island-mississippi-sound",
   "name": "Ship Island, Mississippi Sound",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.2133,
   "longitude": -88.9717,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8744756",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8744756",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8744756.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8744756"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.8069999,
+    "HAT": 1.901,
+    "STND": 0,
+    "MHHW": 1.649,
+    "MHW": 1.641,
+    "DTL": 1.404,
+    "MTL": 1.414,
+    "MSL": 1.402,
+    "MLW": 1.187,
+    "MLLW": 1.16,
+    "GT": 0.489,
+    "MN": 0.454,
+    "DHQ": 0.008,
+    "DLQ": 0.027
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.8069999,
-    "HAT": 1.901,
-    "STND": 0,
-    "MHHW": 1.649,
-    "MHW": 1.641,
-    "DTL": 1.404,
-    "MTL": 1.414,
-    "MSL": 1.402,
-    "MLW": 1.187,
-    "MLLW": 1.16,
-    "GT": 0.489,
-    "MN": 0.454,
-    "DHQ": 0.008,
-    "DLQ": 0.027
-  },
-  "disclaimers": ""
+  ]
 }

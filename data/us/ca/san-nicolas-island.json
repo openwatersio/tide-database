@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-san-nicolas-island",
+  "id": "us/ca/san-nicolas-island",
   "name": "San Nicolas Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.2667,
   "longitude": -119.497,
   "timezone": "America/Los_Angeles",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9410068",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410068",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410068.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9410068"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ca-los-angeles-outer-harbor",
+    "reference": "us/ca/los-angeles-outer-harbor",
     "height": {
       "type": "ratio",
       "high": 0.88,

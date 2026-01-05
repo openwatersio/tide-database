@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-hyde-park",
+  "id": "us/ny/hyde-park",
   "name": "Hyde Park",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.7833,
   "longitude": -73.95,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8518951",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518951",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8518951.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8518951"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.122001,
+    "HAT": 9.877001,
+    "STND": 0,
+    "MHHW": 9.559,
+    "MHW": 9.441,
+    "DTL": 8.934,
+    "MTL": 8.906,
+    "MSL": 8.923,
+    "MLW": 8.37,
+    "MLLW": 8.309,
+    "GT": 1.251,
+    "MN": 1.07,
+    "DHQ": 0.118,
+    "DLQ": 0.062,
+    "HWI": 5.59,
+    "LWI": 12.19,
+    "NAVD88": 8.852
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.122001,
-    "HAT": 9.877001,
-    "STND": 0,
-    "MHHW": 9.559,
-    "MHW": 9.441,
-    "DTL": 8.934,
-    "MTL": 8.906,
-    "MSL": 8.923,
-    "MLW": 8.37,
-    "MLLW": 8.309,
-    "GT": 1.251,
-    "MN": 1.07,
-    "DHQ": 0.118,
-    "DLQ": 0.062,
-    "HWI": 5.59,
-    "LWI": 12.19,
-    "NAVD88": 8.852
-  },
-  "disclaimers": ""
+  ]
 }

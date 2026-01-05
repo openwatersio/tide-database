@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-sand-point-popof-island",
+  "id": "us/ak/sand-point-popof-island",
   "name": "SAND POINT, POPOF ISLAND",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 55.33172222222223,
   "longitude": -160.5043333333333,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9459450",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459450",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9459450.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9459450"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.412968,
+    "HAT": 12.226968,
+    "STND": 0,
+    "MHHW": 11.506,
+    "MHW": 11.289,
+    "DTL": 10.403,
+    "MTL": 10.498,
+    "MSL": 10.482,
+    "MLW": 9.707,
+    "MLLW": 9.301,
+    "GT": 2.204,
+    "MN": 1.582,
+    "DHQ": 0.217,
+    "DLQ": 0.406,
+    "HWI": 11.224,
+    "LWI": 4.939
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 131,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.412968,
-    "HAT": 12.226968,
-    "STND": 0,
-    "MHHW": 11.506,
-    "MHW": 11.289,
-    "DTL": 10.403,
-    "MTL": 10.498,
-    "MSL": 10.482,
-    "MLW": 9.707,
-    "MLLW": 9.301,
-    "GT": 2.204,
-    "MN": 1.582,
-    "DHQ": 0.217,
-    "DLQ": 0.406,
-    "HWI": 11.224,
-    "LWI": 4.939
-  },
-  "disclaimers": ""
+  ]
 }

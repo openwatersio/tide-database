@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-valdez-port-valdez",
+  "id": "us/ak/valdez-port-valdez",
   "name": "VALDEZ, Port Valdez",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 61.125,
   "longitude": -146.36199951171875,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454240",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454240",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454240.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454240"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.85719395,
+    "HAT": 6.823194,
+    "STND": 0,
+    "MHHW": 5.758,
+    "MHW": 5.473,
+    "DTL": 3.907,
+    "MTL": 3.994,
+    "MSL": 4.035,
+    "MLW": 2.516,
+    "MLLW": 2.056,
+    "GT": 3.702,
+    "MN": 2.957,
+    "DHQ": 0.286,
+    "DLQ": 0.46,
+    "HWI": 10.028,
+    "LWI": 3.723
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 293.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.85719395,
-    "HAT": 6.823194,
-    "STND": 0,
-    "MHHW": 5.758,
-    "MHW": 5.473,
-    "DTL": 3.907,
-    "MTL": 3.994,
-    "MSL": 4.035,
-    "MLW": 2.516,
-    "MLLW": 2.056,
-    "GT": 3.702,
-    "MN": 2.957,
-    "DHQ": 0.286,
-    "DLQ": 0.46,
-    "HWI": 10.028,
-    "LWI": 3.723
-  },
-  "disclaimers": ""
+  ]
 }

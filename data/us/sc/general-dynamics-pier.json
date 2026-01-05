@@ -1,10 +1,9 @@
 {
-  "id": "us-sc-general-dynamics-pier",
+  "id": "us/sc/general-dynamics-pier",
   "name": "General Dynamics Pier",
-  "continent": "North America",
-  "country": "United States",
   "region": "SC",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 33.0083,
   "longitude": -79.9233,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8664022",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664022",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8664022.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8664022"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.65999997,
+    "HAT": 2.79,
+    "STND": 0,
+    "MHHW": 2.416,
+    "MHW": 2.329,
+    "DTL": 1.677,
+    "MTL": 1.666,
+    "MSL": 1.731,
+    "MLW": 1.002,
+    "MLLW": 0.939,
+    "GT": 1.477,
+    "MN": 1.327,
+    "DHQ": 0.087,
+    "DLQ": 0.063,
+    "HWI": 2.07,
+    "LWI": 8.025,
+    "NAVD88": 1.604
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 12.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.65999997,
-    "HAT": 2.79,
-    "STND": 0,
-    "MHHW": 2.416,
-    "MHW": 2.329,
-    "DTL": 1.677,
-    "MTL": 1.666,
-    "MSL": 1.731,
-    "MLW": 1.002,
-    "MLLW": 0.939,
-    "GT": 1.477,
-    "MN": 1.327,
-    "DHQ": 0.087,
-    "DLQ": 0.063,
-    "HWI": 2.07,
-    "LWI": 8.025,
-    "NAVD88": 1.604
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-south-carrabelle-beach",
+  "id": "us/fl/south-carrabelle-beach",
   "name": "South Carrabelle Beach",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.801700592041016,
   "longitude": -84.73670196533203,
   "timezone": "America/New_York",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8728488",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728488",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8728488.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8728488"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.17599994,
+    "HAT": 1.5539999,
+    "STND": 0,
+    "MHHW": 1.356,
+    "MHW": 1.299,
+    "DTL": 0.982,
+    "MTL": 1.046,
+    "MSL": 1.032,
+    "MLW": 0.793,
+    "MLLW": 0.607,
+    "GT": 0.749,
+    "MN": 0.506,
+    "DHQ": 0.057,
+    "DLQ": 0.186,
+    "HWI": 7.496,
+    "LWI": 1.455,
+    "NAVD88": 1.056
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.17599994,
-    "HAT": 1.5539999,
-    "STND": 0,
-    "MHHW": 1.356,
-    "MHW": 1.299,
-    "DTL": 0.982,
-    "MTL": 1.046,
-    "MSL": 1.032,
-    "MLW": 0.793,
-    "MLLW": 0.607,
-    "GT": 0.749,
-    "MN": 0.506,
-    "DHQ": 0.057,
-    "DLQ": 0.186,
-    "HWI": 7.496,
-    "LWI": 1.455,
-    "NAVD88": 1.056
-  },
-  "disclaimers": ""
+  ]
 }

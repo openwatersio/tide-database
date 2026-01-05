@@ -1,10 +1,9 @@
 {
-  "id": "us-va-rappahannock-light",
+  "id": "us/va/rappahannock-light",
   "name": "Rappahannock Light",
-  "continent": "North America",
-  "country": "United States",
   "region": "VA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 37.5383,
   "longitude": -76.015,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8632837",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8632837",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8632837.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8632837"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.699,
+    "HAT": 8.434999,
+    "STND": 0,
+    "MHHW": 8.331,
+    "MHW": 8.279,
+    "DTL": 8.046,
+    "MTL": 8.039,
+    "MSL": 8.047,
+    "MLW": 7.8,
+    "MLLW": 7.76,
+    "GT": 0.571,
+    "MN": 0.479,
+    "DHQ": 0.052,
+    "DLQ": 0.04,
+    "HWI": 2.88,
+    "LWI": 9.49
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.699,
-    "HAT": 8.434999,
-    "STND": 0,
-    "MHHW": 8.331,
-    "MHW": 8.279,
-    "DTL": 8.046,
-    "MTL": 8.039,
-    "MSL": 8.047,
-    "MLW": 7.8,
-    "MLLW": 7.76,
-    "GT": 0.571,
-    "MN": 0.479,
-    "DHQ": 0.052,
-    "DLQ": 0.04,
-    "HWI": 2.88,
-    "LWI": 9.49
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-rio-vista",
+  "id": "us/ca/rio-vista",
   "name": "Rio Vista",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.145,
   "longitude": -121.692,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415316",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415316",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415316.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415316"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 3.629,
+    "HAT": 5.322,
+    "STND": 0,
+    "MHHW": 5.127,
+    "MHW": 4.982,
+    "DTL": 4.506,
+    "MTL": 4.523,
+    "MSL": 4.533,
+    "MLW": 4.063,
+    "MLLW": 3.884,
+    "GT": 1.243,
+    "MN": 0.919,
+    "DHQ": 0.145,
+    "DLQ": 0.179,
+    "HWI": 11.793,
+    "LWI": 5.911
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 128.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 3.629,
-    "HAT": 5.322,
-    "STND": 0,
-    "MHHW": 5.127,
-    "MHW": 4.982,
-    "DTL": 4.506,
-    "MTL": 4.523,
-    "MSL": 4.533,
-    "MLW": 4.063,
-    "MLLW": 3.884,
-    "GT": 1.243,
-    "MN": 0.919,
-    "DHQ": 0.145,
-    "DLQ": 0.179,
-    "HWI": 11.793,
-    "LWI": 5.911
-  },
-  "disclaimers": ""
+  ]
 }

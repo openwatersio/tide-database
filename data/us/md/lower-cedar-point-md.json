@@ -1,10 +1,9 @@
 {
-  "id": "us-md-lower-cedar-point-md",
+  "id": "us/md/lower-cedar-point-md",
   "name": "Lower Cedar Point, Md.",
-  "continent": "North America",
-  "country": "United States",
   "region": "MD",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.3417,
   "longitude": -76.9767,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8578693",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578693",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8578693.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8578693"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-dc-washington-washington-channel-d-c",
+    "reference": "us/dc/washington-washington-channel-d-c",
     "height": {
       "type": "ratio",
       "high": 0.54,

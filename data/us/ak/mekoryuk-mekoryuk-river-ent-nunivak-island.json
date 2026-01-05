@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-mekoryuk-mekoryuk-river-ent-nunivak-island",
+  "id": "us/ak/mekoryuk-mekoryuk-river-ent-nunivak-island",
   "name": "Mekoryuk, Mekoryuk River Ent., Nunivak Island",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.4167,
   "longitude": -166.167,
   "timezone": "America/Nome",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9466217",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466217",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9466217.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9466217"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 15.723,
+    "HAT": 19.206,
+    "STND": 0,
+    "MHHW": 18.674,
+    "MHW": 18.5,
+    "DTL": 17.513,
+    "MTL": 17.524,
+    "MSL": 17.528,
+    "MLW": 16.547,
+    "MLLW": 16.351,
+    "GT": 2.323,
+    "MN": 1.953,
+    "DHQ": 0.174,
+    "DLQ": 0.196,
+    "HWI": 7.89,
+    "LWI": 1.79
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 15.723,
-    "HAT": 19.206,
-    "STND": 0,
-    "MHHW": 18.674,
-    "MHW": 18.5,
-    "DTL": 17.513,
-    "MTL": 17.524,
-    "MSL": 17.528,
-    "MLW": 16.547,
-    "MLLW": 16.351,
-    "GT": 2.323,
-    "MN": 1.953,
-    "DHQ": 0.174,
-    "DLQ": 0.196,
-    "HWI": 7.89,
-    "LWI": 1.79
-  },
-  "disclaimers": ""
+  ]
 }

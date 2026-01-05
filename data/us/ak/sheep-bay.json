@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-sheep-bay",
+  "id": "us/ak/sheep-bay",
   "name": "Sheep Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 60.67189025878906,
   "longitude": -145.99217224121094,
   "timezone": "America/Anchorage",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9454124",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454124",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9454124.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454124"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 4.7510004,
+    "HAT": 10.729,
+    "STND": 0,
+    "MHHW": 9.619,
+    "MHW": 9.338,
+    "DTL": 7.765,
+    "MTL": 7.854,
+    "MSL": 7.893,
+    "MLW": 6.37,
+    "MLLW": 5.911,
+    "GT": 3.708,
+    "MN": 2.969,
+    "DHQ": 0.281,
+    "DLQ": 0.459,
+    "HWI": 9.988,
+    "LWI": 3.691,
+    "NAVD88": 6.19
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 4.7510004,
-    "HAT": 10.729,
-    "STND": 0,
-    "MHHW": 9.619,
-    "MHW": 9.338,
-    "DTL": 7.765,
-    "MTL": 7.854,
-    "MSL": 7.893,
-    "MLW": 6.37,
-    "MLLW": 5.911,
-    "GT": 3.708,
-    "MN": 2.969,
-    "DHQ": 0.281,
-    "DLQ": 0.459,
-    "HWI": 9.988,
-    "LWI": 3.691,
-    "NAVD88": 6.19
-  },
-  "disclaimers": ""
+  ]
 }

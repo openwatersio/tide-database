@@ -1,10 +1,9 @@
 {
-  "id": "us-nj-steelmanville-patcong-ck-2-5-nm-above-ent",
+  "id": "us/nj/steelmanville-patcong-ck-2-5-nm-above-ent",
   "name": "Steelmanville, Patcong Ck., 2.5 nm above ent.",
-  "continent": "North America",
-  "country": "United States",
   "region": "NJ",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 39.334999084472656,
   "longitude": -74.5967025756836,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8534778",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534778",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8534778.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8534778"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.41400003,
+    "HAT": 2.19,
+    "STND": 0,
+    "MHHW": 1.861,
+    "MHW": 1.753,
+    "DTL": 1.219,
+    "MTL": 1.189,
+    "MSL": 1.213,
+    "MLW": 0.626,
+    "MLLW": 0.577,
+    "GT": 1.284,
+    "MN": 1.127,
+    "DHQ": 0.108,
+    "DLQ": 0.048,
+    "HWI": 1.366,
+    "LWI": 7.947
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.41400003,
-    "HAT": 2.19,
-    "STND": 0,
-    "MHHW": 1.861,
-    "MHW": 1.753,
-    "DTL": 1.219,
-    "MTL": 1.189,
-    "MSL": 1.213,
-    "MLW": 0.626,
-    "MLLW": 0.577,
-    "GT": 1.284,
-    "MN": 1.127,
-    "DHQ": 0.108,
-    "DLQ": 0.048,
-    "HWI": 1.366,
-    "LWI": 7.947
-  },
-  "disclaimers": ""
+  ]
 }

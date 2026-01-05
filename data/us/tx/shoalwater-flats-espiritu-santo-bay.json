@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-shoalwater-flats-espiritu-santo-bay",
+  "id": "us/tx/shoalwater-flats-espiritu-santo-bay",
   "name": "Shoalwater Flats, Espiritu Santo Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 28.364500045776367,
   "longitude": -96.5802993774414,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8773896",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8773896",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8773896.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8773896"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.755,
+    "HAT": 8.899,
+    "STND": 0,
+    "MHHW": 8.876,
+    "MHW": 8.876,
+    "DTL": 8.829,
+    "MTL": 8.83,
+    "MSL": 8.832,
+    "MLW": 8.784,
+    "MLLW": 8.782,
+    "GT": 0.094,
+    "MN": 0.093,
+    "DHQ": 0,
+    "DLQ": 0.002,
+    "NAVD88": 8.615
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 237.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.755,
-    "HAT": 8.899,
-    "STND": 0,
-    "MHHW": 8.876,
-    "MHW": 8.876,
-    "DTL": 8.829,
-    "MTL": 8.83,
-    "MSL": 8.832,
-    "MLW": 8.784,
-    "MLLW": 8.782,
-    "GT": 0.094,
-    "MN": 0.093,
-    "DHQ": 0,
-    "DLQ": 0.002,
-    "NAVD88": 8.615
-  },
-  "disclaimers": ""
+  ]
 }

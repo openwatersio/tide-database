@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-south-jamesport",
+  "id": "us/ny/south-jamesport",
   "name": "South Jamesport",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.935,
   "longitude": -72.5817,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8512735",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512735",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8512735.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8512735"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.277,
+    "HAT": 1.62,
+    "STND": 0,
+    "MHHW": 1.429,
+    "MHW": 1.339,
+    "DTL": 0.925,
+    "MTL": 0.907,
+    "MSL": 0.919,
+    "MLW": 0.475,
+    "MLLW": 0.422,
+    "GT": 1.007,
+    "MN": 0.864,
+    "DHQ": 0.09,
+    "DLQ": 0.053,
+    "HWI": 4.643,
+    "LWI": 11.17
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.277,
-    "HAT": 1.62,
-    "STND": 0,
-    "MHHW": 1.429,
-    "MHW": 1.339,
-    "DTL": 0.925,
-    "MTL": 0.907,
-    "MSL": 0.919,
-    "MLW": 0.475,
-    "MLLW": 0.422,
-    "GT": 1.007,
-    "MN": 0.864,
-    "DHQ": 0.09,
-    "DLQ": 0.053,
-    "HWI": 4.643,
-    "LWI": 11.17
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-shield-point-blackwater-river",
+  "id": "us/fl/shield-point-blackwater-river",
   "name": "Shield Point, Blackwater River",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.58169937133789,
   "longitude": -87.01499938964844,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8729747",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729747",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8729747.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8729747"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.564,
+    "HAT": 1.64,
+    "STND": 0,
+    "MHHW": 1.397,
+    "MHW": 1.366,
+    "DTL": 1.155,
+    "MTL": 1.154,
+    "MSL": 1.153,
+    "MLW": 0.942,
+    "MLLW": 0.913,
+    "GT": 0.484,
+    "MN": 0.424,
+    "DHQ": 0.031,
+    "DLQ": 0.029,
+    "NAVD88": 1.057
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 149.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.564,
-    "HAT": 1.64,
-    "STND": 0,
-    "MHHW": 1.397,
-    "MHW": 1.366,
-    "DTL": 1.155,
-    "MTL": 1.154,
-    "MSL": 1.153,
-    "MLW": 0.942,
-    "MLLW": 0.913,
-    "GT": 0.484,
-    "MN": 0.424,
-    "DHQ": 0.031,
-    "DLQ": 0.029,
-    "NAVD88": 1.057
-  },
-  "disclaimers": ""
+  ]
 }

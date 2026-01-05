@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-point-lookout-marina-jones-inlet",
+  "id": "us/ny/point-lookout-marina-jones-inlet",
   "name": "Point Lookout (marina), Jones Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.59388888888889,
   "longitude": -73.58397222222223,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8516402",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516402",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8516402.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8516402"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 6.912,
+    "HAT": 9.028,
+    "STND": 0,
+    "MHHW": 8.683,
+    "MHW": 8.584,
+    "DTL": 7.974,
+    "MTL": 7.953,
+    "MSL": 7.946,
+    "MLW": 7.321,
+    "MLLW": 7.265,
+    "GT": 1.419,
+    "MN": 1.263,
+    "DHQ": 0.099,
+    "DLQ": 0.056,
+    "HWI": 0.251,
+    "LWI": 6.388
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 6.912,
-    "HAT": 9.028,
-    "STND": 0,
-    "MHHW": 8.683,
-    "MHW": 8.584,
-    "DTL": 7.974,
-    "MTL": 7.953,
-    "MSL": 7.946,
-    "MLW": 7.321,
-    "MLLW": 7.265,
-    "GT": 1.419,
-    "MN": 1.263,
-    "DHQ": 0.099,
-    "DLQ": 0.056,
-    "HWI": 0.251,
-    "LWI": 6.388
-  },
-  "disclaimers": ""
+  ]
 }

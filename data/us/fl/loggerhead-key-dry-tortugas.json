@@ -1,10 +1,9 @@
 {
-  "id": "us-fl-loggerhead-key-dry-tortugas",
+  "id": "us/fl/loggerhead-key-dry-tortugas",
   "name": "Loggerhead Key, Dry Tortugas",
-  "continent": "North America",
-  "country": "United States",
   "region": "FL",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 24.6317,
   "longitude": -82.92,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8724698",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724698",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8724698.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724698"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.59499997,
+    "HAT": 1.604,
+    "STND": 0,
+    "MHHW": 1.356,
+    "MHW": 1.27,
+    "DTL": 1.101,
+    "MTL": 1.1,
+    "MSL": 1.099,
+    "MLW": 0.93,
+    "MLLW": 0.847,
+    "GT": 0.509,
+    "MN": 0.34,
+    "DHQ": 0.086,
+    "DLQ": 0.083,
+    "HWI": 3.086,
+    "LWI": 8.804
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -229,24 +247,5 @@
       "phase_local": 298.8,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.59499997,
-    "HAT": 1.604,
-    "STND": 0,
-    "MHHW": 1.356,
-    "MHW": 1.27,
-    "DTL": 1.101,
-    "MTL": 1.1,
-    "MSL": 1.099,
-    "MLW": 0.93,
-    "MLLW": 0.847,
-    "GT": 0.509,
-    "MN": 0.34,
-    "DHQ": 0.086,
-    "DLQ": 0.083,
-    "HWI": 3.086,
-    "LWI": 8.804
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-port-chicago-suisun-bay",
+  "id": "us/ca/port-chicago-suisun-bay",
   "name": "PORT CHICAGO, SUISUN BAY",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 38.056,
   "longitude": -122.0395,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,34 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9415144",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415144",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9415144.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9415144"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.0120559,
+    "HAT": 3.101056,
+    "STND": 0,
+    "MHHW": 2.713,
+    "MHW": 2.558,
+    "DTL": 1.964,
+    "MTL": 1.999,
+    "MSL": 1.996,
+    "MLW": 1.441,
+    "MLLW": 1.215,
+    "GT": 1.498,
+    "MN": 1.117,
+    "DHQ": 0.155,
+    "DLQ": 0.226,
+    "HWI": 10.009,
+    "LWI": 3.895,
+    "NAVD88": 0.88
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,25 +336,5 @@
       "phase_local": 38.9,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.0120559,
-    "HAT": 3.101056,
-    "STND": 0,
-    "MHHW": 2.713,
-    "MHW": 2.558,
-    "DTL": 1.964,
-    "MTL": 1.999,
-    "MSL": 1.996,
-    "MLW": 1.441,
-    "MLLW": 1.215,
-    "GT": 1.498,
-    "MN": 1.117,
-    "DHQ": 0.155,
-    "DLQ": 0.226,
-    "HWI": 10.009,
-    "LWI": 3.895,
-    "NAVD88": 0.88
-  },
-  "disclaimers": ""
+  ]
 }

@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-koyuk-koyuk-inlet",
+  "id": "us/ak/koyuk-koyuk-inlet",
   "name": "Koyuk, Koyuk Inlet",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 64.93119812011719,
   "longitude": -161.1508026123047,
   "timezone": "America/Anchorage",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9469031",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469031",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9469031.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9469031"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.893,
+    "HAT": 8.456,
+    "STND": 0,
+    "MHHW": 7.617,
+    "MHW": 7.546,
+    "DTL": 7.165,
+    "MTL": 7.165,
+    "MSL": 7.125,
+    "MLW": 6.784,
+    "MLLW": 6.712,
+    "GT": 0.905,
+    "MN": 0.762,
+    "DHQ": 0.071,
+    "DLQ": 0.072,
+    "NAVD88": 5.873
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.893,
-    "HAT": 8.456,
-    "STND": 0,
-    "MHHW": 7.617,
-    "MHW": 7.546,
-    "DTL": 7.165,
-    "MTL": 7.165,
-    "MSL": 7.125,
-    "MLW": 6.784,
-    "MLLW": 6.712,
-    "GT": 0.905,
-    "MN": 0.762,
-    "DHQ": 0.071,
-    "DLQ": 0.072,
-    "NAVD88": 5.873
-  },
-  "disclaimers": ""
+  ]
 }

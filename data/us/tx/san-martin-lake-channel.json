@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-san-martin-lake-channel",
+  "id": "us/tx/san-martin-lake-channel",
   "name": "San Martin Lake Channel",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.001800537109375,
   "longitude": -97.29859924316406,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8779911",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779911",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8779911.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779911"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 8.725,
+    "HAT": 9.709,
+    "STND": 0,
+    "MHHW": 9.443,
+    "MHW": 9.42,
+    "DTL": 9.235,
+    "MTL": 9.252,
+    "MSL": 9.271,
+    "MLW": 9.083,
+    "MLLW": 9.028,
+    "GT": 0.415,
+    "MN": 0.337,
+    "DHQ": 0.023,
+    "DLQ": 0.055,
+    "NAVD88": 9.303
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 168.4,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 8.725,
-    "HAT": 9.709,
-    "STND": 0,
-    "MHHW": 9.443,
-    "MHW": 9.42,
-    "DTL": 9.235,
-    "MTL": 9.252,
-    "MSL": 9.271,
-    "MLW": 9.083,
-    "MLLW": 9.028,
-    "GT": 0.415,
-    "MN": 0.337,
-    "DHQ": 0.023,
-    "DLQ": 0.055,
-    "NAVD88": 9.303
-  },
-  "disclaimers": ""
+  ]
 }

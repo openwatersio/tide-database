@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-cape-cod-canal-bournedale",
+  "id": "us/ma/cape-cod-canal-bournedale",
   "name": "Cape Cod Canal, Bournedale",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.77,
   "longitude": -70.5617,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8447191",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447191",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8447191.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8447191"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 0.222,
+    "HAT": 3.136,
+    "STND": 0,
+    "MHHW": 2.702,
+    "MHW": 2.591,
+    "DTL": 1.662,
+    "MTL": 1.649,
+    "MSL": 1.693,
+    "MLW": 0.706,
+    "MLLW": 0.623,
+    "GT": 2.079,
+    "MN": 1.885,
+    "DHQ": 0.11,
+    "DLQ": 0.084,
+    "HWI": 3.245,
+    "LWI": 9.592
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 0.222,
-    "HAT": 3.136,
-    "STND": 0,
-    "MHHW": 2.702,
-    "MHW": 2.591,
-    "DTL": 1.662,
-    "MTL": 1.649,
-    "MSL": 1.693,
-    "MLW": 0.706,
-    "MLLW": 0.623,
-    "GT": 2.079,
-    "MN": 1.885,
-    "DHQ": 0.11,
-    "DLQ": 0.084,
-    "HWI": 3.245,
-    "LWI": 9.592
-  },
-  "disclaimers": ""
+  ]
 }

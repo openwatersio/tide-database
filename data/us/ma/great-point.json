@@ -1,10 +1,9 @@
 {
-  "id": "us-ma-great-point",
+  "id": "us/ma/great-point",
   "name": "Great Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "MA",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 41.3867,
   "longitude": -70.0467,
   "timezone": "America/New_York",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8448566",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448566",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8448566.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8448566"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-ma-boston",
+    "reference": "us/ma/boston",
     "height": {
       "type": "ratio",
       "high": 0.32,

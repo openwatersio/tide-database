@@ -1,10 +1,9 @@
 {
-  "id": "us-ca-oil-platform-harvest",
+  "id": "us/ca/oil-platform-harvest",
   "name": "Oil Platform Harvest",
-  "continent": "North America",
-  "country": "United States",
   "region": "CA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 34.46916666666667,
   "longitude": -120.6819444444444,
   "timezone": "America/Los_Angeles",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9411406",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9411406",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9411406.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9411406"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 13.091,
+    "HAT": 15.792,
+    "STND": 0,
+    "MHHW": 15.266,
+    "MHW": 15.042,
+    "DTL": 14.469,
+    "MTL": 14.509,
+    "MSL": 14.502,
+    "MLW": 13.976,
+    "MLLW": 13.673,
+    "GT": 1.592,
+    "MN": 1.067,
+    "DHQ": 0.223,
+    "DLQ": 0.302,
+    "HWI": 5.768,
+    "LWI": 11.818
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 153.6,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 13.091,
-    "HAT": 15.792,
-    "STND": 0,
-    "MHHW": 15.266,
-    "MHW": 15.042,
-    "DTL": 14.469,
-    "MTL": 14.509,
-    "MSL": 14.502,
-    "MLW": 13.976,
-    "MLLW": 13.673,
-    "GT": 1.592,
-    "MN": 1.067,
-    "DHQ": 0.223,
-    "DLQ": 0.302,
-    "HWI": 5.768,
-    "LWI": 11.818
-  },
-  "disclaimers": ""
+  ]
 }

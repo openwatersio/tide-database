@@ -1,10 +1,9 @@
 {
-  "id": "us-hi-kaunakakai",
+  "id": "us/hi/kaunakakai",
   "name": "Kaunakakai",
-  "continent": "North America",
-  "country": "United States",
   "region": "HI",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 21.085,
   "longitude": -157.032,
   "timezone": "Pacific/Honolulu",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "1613198",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1613198",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1613198.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=1613198"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 1.359,
+    "HAT": 2.399,
+    "STND": 0,
+    "MHHW": 2.155,
+    "MHW": 1.997,
+    "DTL": 1.83,
+    "MTL": 1.781,
+    "MSL": 1.788,
+    "MLW": 1.564,
+    "MLLW": 1.504,
+    "GT": 0.651,
+    "MN": 0.433,
+    "DHQ": 0.158,
+    "DLQ": 0.06
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 1.359,
-    "HAT": 2.399,
-    "STND": 0,
-    "MHHW": 2.155,
-    "MHW": 1.997,
-    "DTL": 1.83,
-    "MTL": 1.781,
-    "MSL": 1.788,
-    "MLW": 1.564,
-    "MLLW": 1.504,
-    "GT": 0.651,
-    "MN": 0.433,
-    "DHQ": 0.158,
-    "DLQ": 0.06
-  },
-  "disclaimers": ""
+  ]
 }

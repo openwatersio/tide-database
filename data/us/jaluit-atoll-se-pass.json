@@ -1,10 +1,9 @@
 {
-  "id": "us-jaluit-atoll-se-pass",
+  "id": "us/jaluit-atoll-se-pass",
   "name": "Jaluit Atoll (SE Pass)",
-  "continent": "North America",
-  "country": "United States",
   "region": "",
-  "type": "subordinate",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 5.916666666666696,
   "longitude": 169.65,
   "timezone": "Pacific/Majuro",
@@ -12,16 +11,16 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "TPT2703",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2703",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/TPT2703.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TPT2703"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "type": "subordinate",
   "offsets": {
-    "reference": "us-kwajalein-atoll-kwajalein-i",
+    "reference": "us/kwajalein-atoll-kwajalein-i",
     "height": {
       "type": "fixed",
       "high": -0.03,

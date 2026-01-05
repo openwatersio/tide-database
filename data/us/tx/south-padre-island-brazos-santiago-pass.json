@@ -1,10 +1,9 @@
 {
-  "id": "us-tx-south-padre-island-brazos-santiago-pass",
+  "id": "us/tx/south-padre-island-brazos-santiago-pass",
   "name": "South Padre Island, Brazos Santiago Pass",
-  "continent": "North America",
-  "country": "United States",
   "region": "TX",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 26.0674991607666,
   "longitude": -97.15480041503906,
   "timezone": "America/Chicago",
@@ -12,14 +11,32 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8779749",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779749",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8779749.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8779749"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.0369997,
+    "HAT": 8.099,
+    "STND": 0,
+    "MHHW": 7.837,
+    "MHW": 7.817,
+    "DTL": 7.613,
+    "MTL": 7.628,
+    "MSL": 7.654,
+    "MLW": 7.439,
+    "MLLW": 7.388,
+    "GT": 0.449,
+    "MN": 0.379,
+    "DHQ": 0.02,
+    "DLQ": 0.051,
+    "NAVD88": 7.763
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,23 +334,5 @@
       "phase_local": 119.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.0369997,
-    "HAT": 8.099,
-    "STND": 0,
-    "MHHW": 7.837,
-    "MHW": 7.817,
-    "DTL": 7.613,
-    "MTL": 7.628,
-    "MSL": 7.654,
-    "MLW": 7.439,
-    "MLLW": 7.388,
-    "GT": 0.449,
-    "MN": 0.379,
-    "DHQ": 0.02,
-    "DLQ": 0.051,
-    "NAVD88": 7.763
-  },
-  "disclaimers": ""
+  ]
 }

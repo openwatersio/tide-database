@@ -1,10 +1,9 @@
 {
-  "id": "us-ny-eatons-neck-point",
+  "id": "us/ny/eatons-neck-point",
   "name": "Eatons Neck Point",
-  "continent": "North America",
-  "country": "United States",
   "region": "NY",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 40.9533,
   "longitude": -73.4,
   "timezone": "America/New_York",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8515786",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8515786",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8515786.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8515786"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 5.988,
+    "HAT": 9.355,
+    "STND": 0,
+    "MHHW": 8.832,
+    "MHW": 8.726,
+    "DTL": 7.653,
+    "MTL": 7.636,
+    "MSL": 7.639,
+    "MLW": 6.547,
+    "MLLW": 6.474,
+    "GT": 2.358,
+    "MN": 2.179,
+    "DHQ": 0.106,
+    "DLQ": 0.073,
+    "HWI": 3.806,
+    "LWI": 10.222
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 252.2,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 5.988,
-    "HAT": 9.355,
-    "STND": 0,
-    "MHHW": 8.832,
-    "MHW": 8.726,
-    "DTL": 7.653,
-    "MTL": 7.636,
-    "MSL": 7.639,
-    "MLW": 6.547,
-    "MLLW": 6.474,
-    "GT": 2.358,
-    "MN": 2.179,
-    "DHQ": 0.106,
-    "DLQ": 0.073,
-    "HWI": 3.806,
-    "LWI": 10.222
-  },
-  "disclaimers": ""
+  ]
 }

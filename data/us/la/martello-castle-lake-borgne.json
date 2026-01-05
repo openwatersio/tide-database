@@ -1,10 +1,9 @@
 {
-  "id": "us-la-martello-castle-lake-borgne",
+  "id": "us/la/martello-castle-lake-borgne",
   "name": "MARTELLO CASTLE, LAKE BORGNE",
-  "continent": "North America",
-  "country": "United States",
   "region": "LA",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 29.945,
   "longitude": -89.835,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8761529",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761529",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8761529.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8761529"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 19.131,
+    "HAT": 19.851,
+    "STND": 0,
+    "MHHW": 19.695,
+    "MHW": 19.658,
+    "DTL": 19.486,
+    "MTL": 19.474,
+    "MSL": 19.483,
+    "MLW": 19.291,
+    "MLLW": 19.276,
+    "GT": 0.419,
+    "MN": 0.366,
+    "DHQ": 0.038,
+    "DLQ": 0.015
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 19.131,
-    "HAT": 19.851,
-    "STND": 0,
-    "MHHW": 19.695,
-    "MHW": 19.658,
-    "DTL": 19.486,
-    "MTL": 19.474,
-    "MSL": 19.483,
-    "MLW": 19.291,
-    "MLLW": 19.276,
-    "GT": 0.419,
-    "MN": 0.366,
-    "DHQ": 0.038,
-    "DLQ": 0.015
-  },
-  "disclaimers": ""
+  ]
 }

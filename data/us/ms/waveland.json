@@ -1,10 +1,9 @@
 {
-  "id": "us-ms-waveland",
+  "id": "us/ms/waveland",
   "name": "Waveland",
-  "continent": "North America",
-  "country": "United States",
   "region": "MS",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 30.2817,
   "longitude": -89.3667,
   "timezone": "America/Chicago",
@@ -12,14 +11,31 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "8747766",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8747766",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8747766.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8747766"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": 7.9960003,
+    "HAT": 9.28,
+    "STND": 0,
+    "MHHW": 8.94,
+    "MHW": 8.917,
+    "DTL": 8.696,
+    "MTL": 8.698,
+    "MSL": 8.696,
+    "MLW": 8.479,
+    "MLLW": 8.452,
+    "GT": 0.488,
+    "MN": 0.438,
+    "DHQ": 0.023,
+    "DLQ": 0.027
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,22 +333,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": 7.9960003,
-    "HAT": 9.28,
-    "STND": 0,
-    "MHHW": 8.94,
-    "MHW": 8.917,
-    "DTL": 8.696,
-    "MTL": 8.698,
-    "MSL": 8.696,
-    "MLW": 8.479,
-    "MLLW": 8.452,
-    "GT": 0.488,
-    "MN": 0.438,
-    "DHQ": 0.023,
-    "DLQ": 0.027
-  },
-  "disclaimers": ""
+  ]
 }

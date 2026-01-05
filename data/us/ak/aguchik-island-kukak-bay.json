@@ -1,10 +1,9 @@
 {
-  "id": "us-ak-aguchik-island-kukak-bay",
+  "id": "us/ak/aguchik-island-kukak-bay",
   "name": "Aguchik Island, Kukak Bay",
-  "continent": "North America",
-  "country": "United States",
   "region": "AK",
-  "type": "reference",
+  "country": "United States",
+  "continent": "Americas",
   "latitude": 58.29,
   "longitude": -154.27,
   "timezone": "America/Anchorage",
@@ -12,14 +11,33 @@
     "name": "US National Oceanic and Atmospheric Administration",
     "id": "9456901",
     "published_harmonics": true,
-    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456901",
-    "source_url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9456901.json"
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9456901"
   },
   "license": {
     "type": "public domain",
     "commercial_use": true,
     "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
   },
+  "disclaimers": "",
+  "datums": {
+    "LAT": -1.7490321,
+    "HAT": 4.976968,
+    "STND": 0,
+    "MHHW": 3.771,
+    "MHW": 3.522,
+    "DTL": 1.674,
+    "MTL": 1.793,
+    "MSL": 1.779,
+    "MLW": 0.064,
+    "MLLW": -0.422,
+    "GT": 4.193,
+    "MN": 3.458,
+    "DHQ": 0.249,
+    "DLQ": 0.486,
+    "HWI": 11.16,
+    "LWI": 5.02
+  },
+  "type": "reference",
   "harmonic_constituents": [
     {
       "name": "M2",
@@ -317,24 +335,5 @@
       "phase_local": 0,
       "speed": 58.984104
     }
-  ],
-  "datums": {
-    "LAT": -1.7490321,
-    "HAT": 4.976968,
-    "STND": 0,
-    "MHHW": 3.771,
-    "MHW": 3.522,
-    "DTL": 1.674,
-    "MTL": 1.793,
-    "MSL": 1.779,
-    "MLW": 0.064,
-    "MLLW": -0.422,
-    "GT": 4.193,
-    "MN": 3.458,
-    "DHQ": 0.249,
-    "DLQ": 0.486,
-    "HWI": 11.16,
-    "LWI": 5.02
-  },
-  "disclaimers": ""
+  ]
 }
