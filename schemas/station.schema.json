@@ -199,8 +199,7 @@
         "required": [
           "name",
           "amplitude",
-          "phase_UTC",
-          "phase_local"
+          "phase"
         ],
         "additionalProperties": false,
         "properties": {
@@ -220,13 +219,9 @@
             "type": "number",
             "description": "Amplitude"
           },
-          "phase_UTC": {
+          "phase": {
             "type": "number",
             "description": "Phase in UTC"
-          },
-          "phase_local": {
-            "type": "number",
-            "description": "Phase for local timezone"
           },
           "speed": {
             "type": "number",

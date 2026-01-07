@@ -4,8 +4,7 @@ export interface HarmonicConstituent {
   name: string
   description?: string
   amplitude: number
-  phase_UTC: number
-  phase_local: number
+  phase: number
   speed?: number
 }
 

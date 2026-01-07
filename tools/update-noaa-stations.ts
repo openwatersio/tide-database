@@ -118,8 +118,7 @@ async function buildStation(meta: any): Promise<Station> {
           name: h.name,
           description: h.description,
           amplitude: h.amplitude,
-          phase_UTC: h.phase_GMT,
-          phase_local: h.phase_local,
+          phase: h.phase_GMT,
           speed: h.speed,
           // TODO: add comments
         })
