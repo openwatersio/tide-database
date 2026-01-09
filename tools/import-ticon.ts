@@ -40,7 +40,7 @@ async function main() {
   let created = 0;
 
   for (const rows of stations) {
-    await save(normalize(convertStation(rows)));
+    await save(convertStation(rows));
     created++;
     process.stdout.write(".");
   }
