@@ -4,6 +4,7 @@ import { join } from "path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { stations } from "../src/index.js";
+import tidePredictor from "@neaps/tide-predictor";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const SCHEMA_PATH = join(ROOT, "schemas", "station.schema.json");
@@ -29,6 +30,17 @@ stations.forEach((station) => {
         const id = station.offsets!.reference;
         const reference = stations.find((s) => s.id === id);
         expect(reference, `Unknown reference station: ${id}`).toBeDefined();
+      });
+    }
+
+    if (station.harmonic_constituents) {
+      test("uses constituents supported by neaps", () => {
+        station.harmonic_constituents.forEach((hc) => {
+          expect(
+            tidePredictor.constituents[hc.name],
+            `Unsupported constituent: ${hc.name}`,
+          ).toBeDefined();
+        });
       });
     }
   });
