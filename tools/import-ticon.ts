@@ -6,10 +6,7 @@ import { fileURLToPath } from "url";
 import { parseCSV, indexBy, groupBy } from "./util.ts";
 import { normalize, save } from "./station.ts";
 import { computeDatums } from "./datum.ts";
-import constituents from "../src/constituents.json" with { type: "json" };
-import type { Station, HarmonicConstituent } from "../src/index.ts";
-
-const constituents_by_name = indexBy(constituents, "name");
+import type { StationData, HarmonicConstituent } from "../src/index.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const metaPath = join(__dirname, "..", "tmp", "TICON-4", "meta.csv");
@@ -40,7 +37,7 @@ async function main() {
   let created = 0;
 
   for (const rows of stations) {
-    await save(convertStation(rows));
+    await save("ticon", convertStation(rows));
     created++;
     process.stdout.write(".");
   }
@@ -80,7 +77,7 @@ function dayMonthYearToDate(date: string) {
 /**
  * Convert a TICON-4 station to our JSON schema format
  */
-function convertStation(rows: TiconRow[]): Station {
+function convertStation(rows: TiconRow[]): StationData {
   if (!rows[0]) {
     throw new Error("No rows to convert");
   }
@@ -91,7 +88,6 @@ function convertStation(rows: TiconRow[]): Station {
     name: row.con,
     amplitude: parseFloat(row.amp) / 100, // convert cm to m
     phase: ((parseFloat(row.pha) % 360) + 360) % 360, // lag in degrees; normalize to [0, 360)
-    speed: constituents_by_name[row.con]?.speed,
   }));
 
   const start = dayMonthYearToDate(rows[0].start_date);
