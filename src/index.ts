@@ -14,9 +14,8 @@ export interface Constituent {
   speed: number;
 }
 
-export interface Station {
+export interface StationData {
   // Basic station information
-  id: string;
   name: string;
   continent: string;
   country: string;
@@ -56,8 +55,21 @@ export interface Station {
   datums: Record<string, number>;
 }
 
+export interface Station extends StationData {
+  id: string;
+}
+
 export const constituents: Constituent[] = _constituents;
 
-export const stations: Station[] = Object.values(
-  import.meta.glob("../data/**/*.json", { eager: true, import: "default" }),
+const modules = import.meta.glob<StationData>("./**/*.json", {
+  eager: true,
+  import: "default",
+  base: "../data",
+});
+
+export const stations: Station[] = Object.entries(modules).map(
+  ([path, data]) => {
+    const id = path.replace(/^\.\//, "").replace(/\.json$/, "");
+    return { id, ...data };
+  },
 );

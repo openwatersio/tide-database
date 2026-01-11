@@ -68,8 +68,8 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Unique station ID for this database only, in the format of `country/region/station-name`.",
-      "examples": ["us-ma-boston", "ar-u-puerto-madryn"],
+      "description": "Unique station ID for this database only, in the format of `source/id`.",
+      "examples": ["noaa/9414290"],
       "minLength": 4
     },
     "name": {

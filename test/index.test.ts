@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-
-import { describe, test } from "vitest";
+import { describe, test, expect } from "vitest";
 import { readFile } from "fs/promises";
 import { join } from "path";
 import Ajv2020 from "ajv/dist/2020.js";
@@ -15,9 +13,9 @@ const ajv = new (Ajv2020 as any)({ allErrors: true, strict: false });
 (addFormats as any)(ajv);
 const validate = ajv.compile(schema);
 
-describe("schema", () => {
-  stations.forEach((station) => {
-    test(`Station ${station.id}`, () => {
+stations.forEach((station) => {
+  describe(station.id, () => {
+    test("is valid", () => {
       const valid = validate(station);
       if (!valid)
         throw new Error(
@@ -25,6 +23,14 @@ describe("schema", () => {
             `\n${JSON.stringify(validate.errors, null, 2)}`,
         );
     });
+
+    if (station.type === "subordinate") {
+      test("has valid reference station", () => {
+        const id = station.offsets!.reference;
+        const reference = stations.find((s) => s.id === id);
+        expect(reference, `Unknown reference station: ${id}`).toBeDefined();
+      });
+    }
   });
 });
 

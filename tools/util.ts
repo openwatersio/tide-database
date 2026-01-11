@@ -1,13 +1,3 @@
-/**
- * Create a URL-safe slug from a station name
- */
-export function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
 export function indexBy<T>(data: T[], key: keyof T) {
   return Object.fromEntries(
     data.map((r) => {

@@ -2,7 +2,7 @@
 
 import createFetch from "make-fetch-happen";
 import { normalize, save } from "./station.ts";
-import type { Station } from "../src/index.ts";
+import type { StationData } from "../src/index.ts";
 
 const fetch = createFetch.defaults({
   cachePath: "node_modules/.cache",
@@ -14,8 +14,6 @@ const NOAA_SOURCE_NAME = "US National Oceanic and Atmospheric Administration";
 const STATIONS_URL =
   "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json";
 
-const idMap = new Map();
-
 async function main() {
   const { stations } = await fetch(
     `${STATIONS_URL}?type=tidepredictions&expand=details,tidepredoffsets&units=metric`,
@@ -23,43 +21,19 @@ async function main() {
 
   console.log(`Fetched metadata for ${stations.length} stations.`);
 
-  const referenceStations = stations.filter((s: any) => s.type === "R");
-  const subordinateStations = stations.filter((s: any) => s.type === "S");
-
-  console.log("Creating reference stations:");
-  for (const meta of referenceStations) {
-    idMap.set(meta.id, (await saveStation(await buildStation(meta))).id);
-    process.stdout.write(".");
-  }
-
-  console.log(
-    `\nDone. Created ${referenceStations.length} reference stations.`,
-  );
-
-  console.log("Creating subordinate stations:");
-
-  for (const meta of subordinateStations) {
-    // This should never happen, but just in case
-    if (idMap.has(meta.id))
-      throw new Error("Duplicate station ID found: " + meta.id);
-
+  for (const meta of stations) {
     // At least one station lists itself as its own reference, but doesn't have harmonic data
-    if (meta.id === meta.tidepredoffsets.refStationId) continue;
+    if (meta.id === meta.tidepredoffsets?.refStationId) continue;
 
-    idMap.set(meta.id, (await saveStation(await buildStation(meta))).id);
+    await save("noaa", await buildStation(meta));
     process.stdout.write(".");
   }
 
-  console.log(`\nDone. Created ${subordinateStations.length} stations.`);
+  console.log(`\nDone. Created ${stations.length} stations.`);
 }
 
-async function saveStation(data: Station) {
-  await save(data);
-  return data;
-}
-
-async function buildStation(meta: any): Promise<Station> {
-  const station = {
+async function buildStation(meta: any): Promise<StationData> {
+  const station: Partial<StationData> = {
     name: meta.name,
     continent: "North America",
     country: "United States",
@@ -82,16 +56,9 @@ async function buildStation(meta: any): Promise<Station> {
   };
 
   if (meta.type == "S") {
-    const refId = idMap.get(meta.tidepredoffsets.refStationId);
-    if (!refId) {
-      throw new Error(
-        `Reference station ID ${meta.tidepredoffsets.refStationId} not found for subordinate station ${meta.id}`,
-      );
-    }
-
     Object.assign(station, {
       offsets: {
-        reference: refId,
+        reference: `noaa/${meta.tidepredoffsets.refStationId}`,
         height: {
           type:
             meta.tidepredoffsets.heightAdjustedType === "R" ? "ratio" : "fixed",
@@ -141,7 +108,7 @@ async function buildStation(meta: any): Promise<Station> {
     });
   }
 
-  return normalize(station as Station);
+  return normalize(station as StationData);
 }
 
 main().catch(console.error);

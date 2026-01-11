@@ -1,6 +1,5 @@
-import type { Station } from "../src/index.js";
+import type { StationData } from "../src/index.js";
 import { find as findTz } from "geo-tz/all";
-import { slugify } from "./util.ts";
 import countryLookup from "country-code-lookup";
 import { join, dirname } from "path";
 import { mkdir, writeFile } from "fs/promises";
@@ -9,8 +8,7 @@ import sortObject from "sort-object-keys";
 const __dirname = new URL(".", import.meta.url).pathname;
 export const DATA_DIR = join(__dirname, "..", "data");
 
-const sortOrder: (keyof Station)[] = [
-  "id",
+const sortOrder: (keyof StationData)[] = [
   "name",
   "region",
   "country",
@@ -28,8 +26,8 @@ const sortOrder: (keyof Station)[] = [
 ];
 
 export function normalize(
-  station: Omit<Station, "id" | "timezone" | "continent">,
-): Station {
+  station: Omit<StationData, "timezone" | "continent">,
+): StationData {
   const { iso2, continent, country } =
     countryLookup.byCountry(station.country) ||
     countryLookup.byIso(station.country) ||
@@ -49,14 +47,9 @@ export function normalize(
     );
   }
 
-  // TODO: sort keys by order of JSON schema. Mutation for now to maintain key order
   return sortObject(
     {
       ...station,
-      id: [iso2, station.region, station.name]
-        .filter((v): v is string => typeof v === "string" && v.length > 0)
-        .map(slugify)
-        .join("/"),
       timezone,
       continent,
       country,
@@ -65,8 +58,8 @@ export function normalize(
   );
 }
 
-export async function save(data: Station) {
-  const filePath = join(DATA_DIR, `${data.id}.json`);
+export async function save(source: string, data: StationData) {
+  const filePath = join(DATA_DIR, source, `${data.source.id}.json`);
   const directory = dirname(filePath);
 
   // Create directory if it doesn't exist
