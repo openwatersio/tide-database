@@ -1,6 +1,6 @@
 ## NOAA Tide Station Data Overview
 
-This script fetches tide station metadata from NOAA CO-OPS and converts it into a local, normalized dataset. It classifies stations by prediction method, stores harmonic constituents or prediction offsets as appropriate, and records available tidal datums for reference.
+This database fetches tide station metadata from NOAA CO-OPS and converts it into a local, normalized dataset. It classifies stations by prediction method, stores harmonic constituents or prediction offsets as appropriate, and records available tidal datums for reference.
 
 The goal is to mirror how NOAA operationally produces tide predictions, not just what data exists in their metadata.
 
