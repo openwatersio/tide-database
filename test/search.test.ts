@@ -57,7 +57,7 @@ describe("nearest", () => {
       nearest({
         lon: -75,
         lat: 23,
-        filter: (s) => s.type === "reference",
+        filter: (s) => s.type === "reference" && s.id.startsWith("noaa"),
       }) || [];
     expect(station).toBeDefined();
     expect(station!.source.id).toBe("9710441");
