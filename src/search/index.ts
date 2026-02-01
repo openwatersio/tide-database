@@ -1,8 +1,10 @@
 import { around, distance } from "geokdbush";
-import { stations } from "./stations.js";
-import { createIndex } from "./search-index.js" with { type: "macro" };
-import { loadIndex } from "./search-index.js";
-import type { Station } from "./types.js";
+import { stations } from "../stations.js";
+import { createGeoIndex } from "./geo.js" with { type: "macro" };
+import { loadGeoIndex } from "./geo.js";
+import { createTextIndex } from "./text.js" with { type: "macro" };
+import { loadTextIndex } from "./text.js";
+import type { Station } from "../types.js";
 
 export type Position = Latitude & Longitude;
 type Latitude = { latitude: number } | { lat: number };
@@ -17,13 +19,19 @@ export type NearOptions = NearestOptions & {
   maxResults?: number;
 };
 
+export type TextSearchOptions = {
+  filter?: (station: Station) => boolean;
+  maxResults?: number;
+};
+
 /**
  * A tuple of a station and its distance from a given point, in kilometers.
  */
 export type StationWithDistance = [Station, number];
 
-// Load the index, which gets inlined at build time
-const index = loadIndex(await createIndex());
+// Load the indexes, which get inlined at build time
+const geoIndex = loadGeoIndex(await createGeoIndex());
+const textIndex = loadTextIndex(await createTextIndex());
 
 /**
  * Find stations near a given position.
@@ -37,7 +45,7 @@ export function near({
   const point = positionToPoint(position);
 
   const ids: number[] = around(
-    index,
+    geoIndex,
     ...point,
     maxResults,
     maxDistance,
@@ -67,4 +75,31 @@ export function positionToPoint(options: Position): [number, number] {
         : options.lng;
   const latitude = "latitude" in options ? options.latitude : options.lat;
   return [longitude, latitude];
+}
+
+const stationMap = new Map(stations.map((s) => [s.id, s]));
+
+/**
+ * Search for stations by text across name, region, country, and continent.
+ * Supports fuzzy matching and prefix search.
+ */
+export function search(
+  query: string,
+  { filter, maxResults = 20 }: TextSearchOptions = {},
+): Station[] {
+  const searchOptions: Parameters<typeof textIndex.search>[1] = {};
+
+  if (filter) {
+    searchOptions.filter = (result) => {
+      const station = stationMap.get(result.id);
+      return station ? filter(station) : false;
+    };
+  }
+
+  const results = textIndex.search(query, searchOptions);
+
+  return results
+    .slice(0, maxResults)
+    .map((result) => stationMap.get(result.id)!)
+    .filter(Boolean);
 }

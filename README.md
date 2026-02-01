@@ -42,6 +42,8 @@ console.log(stations[0]);
 
 #### Searching for stations
 
+##### Geographic search
+
 You can search for stations by proximity using the `near` and `nearest` functions:
 
 ```typescript
@@ -68,6 +70,41 @@ Both functions take the following parameters:
 - `filter`: A function that takes a station and returns `true` to include it in results, or `false` to exclude it.
 - `maxDistance`: Maximum distance in kilometers to search for stations (default: `50` km).
 - `maxResults`: Maximum number of results to return (default: `10`).
+
+##### Full-text search
+
+You can search for stations by name, region, country, or continent using the `search` function. It supports fuzzy matching and prefix search:
+
+```typescript
+import { search } from "@neaps/tide-database";
+
+// Search for stations by name with fuzzy matching
+const results = search("Boston");
+console.log("Found:", results.length, "stations");
+console.log(results[0].name);
+
+// Search with a filter function
+const usStations = search("harbor", {
+  filter: (station) => station.country === "United States",
+  maxResults: 10,
+});
+console.log("US harbor stations:", usStations);
+
+// Combine multiple filters
+const referenceStations = search("island", {
+  filter: (station) =>
+    station.type === "reference" && station.continent === "Americas",
+  maxResults: 20,
+});
+console.log("Reference stations:", referenceStations);
+```
+
+The `search` function takes the following parameters:
+
+- `query` (required): Search string. Supports fuzzy matching and prefix search.
+- `options` (optional):
+  - `filter`: Function that takes a station and returns `true` to include it in results, or `false` to exclude it.
+  - `maxResults`: Maximum number of results to return (default: `20`).
 
 ## Data Format
 

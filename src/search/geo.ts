@@ -4,10 +4,10 @@ import KDBush from "kdbush";
  * Create a search index for stations and return it as a base64 string, which can be
  * inlinted at build time by using the `macro` import type:
  *
- *   import { createIndex } from "./search-index.js" with { type: "macro" };
+ *   import { createGeoIndex } from "./search-index.js" with { type: "macro" };
  */
-export async function createIndex() {
-  const { stations } = await import("./stations.js");
+export async function createGeoIndex() {
+  const { stations } = await import("../stations.js");
 
   const index = new KDBush(stations.length);
 
@@ -20,7 +20,7 @@ export async function createIndex() {
   return Buffer.from(index.data).toString("base64");
 }
 
-export function loadIndex(data: string): KDBush {
+export function loadGeoIndex(data: string): KDBush {
   return KDBush.from(base64ToArrayBuffer(data));
 }
 

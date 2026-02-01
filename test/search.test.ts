@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { near, nearest } from "../src/index.js";
+import { near, nearest, search } from "../src/index.js";
 
 describe("near", () => {
   [
@@ -65,5 +65,79 @@ describe("nearest", () => {
 
   test("returns null if no stations found", () => {
     expect(nearest({ lon: 0, lat: 0, maxDistance: 1 })).toBe(null);
+  });
+});
+
+describe("search", () => {
+  test("searches by name", () => {
+    const results = search("Boston");
+    expect(results.length).toBeGreaterThan(0);
+    expect(results[0]!.name.toUpperCase()).toContain("BOSTON");
+  });
+
+  test("searches by source id", () => {
+    const results = search("9414290");
+    expect(results.length).toBeGreaterThan(0);
+    expect(results[0]!.source.id).toBe("9414290");
+  });
+
+  test("searches by region", () => {
+    const results = search("HI");
+    expect(results.length).toBeGreaterThan(0);
+    const hasHawaiiStation = results.some((s) => s.region === "HI");
+    expect(hasHawaiiStation).toBe(true);
+  });
+
+  test("searches by country", () => {
+    const results = search("Canada");
+    expect(results.length).toBeGreaterThan(0);
+    const hasCanadianStation = results.some((s) => s.country === "Canada");
+    expect(hasCanadianStation).toBe(true);
+  });
+
+  test("searches by continent", () => {
+    const results = search("Europe");
+    expect(results.length).toBeGreaterThan(0);
+    results.forEach((station) => {
+      expect(station.continent).toBe("Europe");
+    });
+  });
+
+  test("supports fuzzy matching", () => {
+    const results = search("Bosten"); // Misspelled Boston
+    expect(results.length).toBeGreaterThan(0);
+    expect(results[0]!.name.toUpperCase()).toContain("BOSTON");
+  });
+
+  test("supports prefix search", () => {
+    const results = search("San");
+    expect(results.length).toBeGreaterThan(0);
+    const hasSanFrancisco = results.some((s) => s.name.includes("San"));
+    expect(hasSanFrancisco).toBe(true);
+  });
+
+  test("combines query with filters", () => {
+    const results = search("Harbor", {
+      filter: (station) =>
+        station.type === "reference" &&
+        station.country === "United States" &&
+        station.continent === "Americas",
+    });
+    expect(results.length).toBeGreaterThan(0);
+    results.forEach((station) => {
+      expect(station.type).toBe("reference");
+      expect(station.country).toBe("United States");
+      expect(station.continent).toBe("Americas");
+    });
+  });
+
+  test("respects maxResults", () => {
+    const results = search("Harbor", { maxResults: 5 });
+    expect(results.length).toBeLessThanOrEqual(5);
+  });
+
+  test("defaults maxResults to 20", () => {
+    const results = search("Bay");
+    expect(results.length).toBeLessThanOrEqual(20);
   });
 });
