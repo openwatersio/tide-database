@@ -2,7 +2,7 @@
 
 > A public database of tide harmonics
 
-This database includes harmonic constituents for tide prediction from various sources around the world. These constants can be used with a tide harmonic calculator like [Neaps](https://github.com/neaps/neaps) to create astronomical tide predictions.
+This database includes harmonic constituents for tide prediction from various sources around the world. These constants can be used with a tide harmonic calculator like [Neaps](https://github.com/openwatersio/neaps) to create astronomical tide predictions.
 
 ## Sources
 
@@ -10,13 +10,13 @@ This database includes harmonic constituents for tide prediction from various so
   ~3400 stations, mostly in the United States and its territories. Updated monthly via [NOAA's API](https://api.tidesandcurrents.noaa.gov/mdapi/prod/).
 
 - ✅ [**TICON-4**](data/ticon/README.md): TIdal CONstants based on GESLA-4 sea-level records
-  ~4200+ global stations - ([#16](https://github.com/neaps/tide-database/pull/16))
+  ~4200+ global stations - ([#16](https://github.com/openwatersio/tide-database/pull/16))
 
-If you know of other public sources of harmonic constituents, please [open an issue](https://github.com/neaps/tide-database/issues/new) to discuss adding them.
+If you know of other public sources of harmonic constituents, please [open an issue](https://github.com/openwatersio/tide-database/issues/new) to discuss adding them.
 
 ## Usage
 
-The database is currently only available as an NPM package, but may be available in other formats like [sqlite](https://github.com/neaps/tide-database/issues/18) and [xtide's tcd format](https://github.com/neaps/tide-database/issues/19) in the future.
+The database is currently only available as an NPM package, but may be available in other formats like [sqlite](https://github.com/openwatersio/tide-database/issues/18) and [xtide's tcd format](https://github.com/openwatersio/tide-database/issues/19) in the future.
 
 ### JavaScript / TypeScript
 
@@ -153,7 +153,7 @@ Releases of this database use [Semantic Versioning](https://semver.org/), with t
 
 ## Releasing
 
-Releases are created by [running the Publish action](https://github.com/neaps/tide-database/actions/workflows/publish.yml) on GitHub Actions. This action will use the major and minor `version` defined in `package.json`, and set the patch version to the current date.
+Releases are created by [running the Publish action](https://github.com/openwatersio/tide-database/actions/workflows/publish.yml) on GitHub Actions. This action will use the major and minor `version` defined in `package.json`, and set the patch version to the current date.
 
 ## License
 
@@ -163,4 +163,4 @@ Releases are created by [running the Publish action](https://github.com/neaps/ti
 
 If using this project, please attribute it as:
 
-> Tide harmonic constituents from the Neaps tide database (https://github.com/neaps/tide-database)
+> Tide harmonic constituents from the Neaps tide database (https://github.com/openwatersio/tide-database)
