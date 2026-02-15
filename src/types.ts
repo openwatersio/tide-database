@@ -51,6 +51,12 @@ export interface StationData {
   };
 
   datums: Record<string, number>;
+
+  // Epoch - the time period over which the harmonic constituents were computed
+  epoch?: {
+    start: string; // Date in YYYY-MM-DD format
+    end: string; // Date in YYYY-MM-DD format
+  };
 }
 
 export interface Station extends StationData {

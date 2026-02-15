@@ -11,8 +11,8 @@ export interface EpochSpec {
 export type Datums = Record<string, number>;
 
 export interface TidalDatumsResult {
-  epochStart: Date;
-  epochEnd: Date;
+  start: Date;
+  end: Date;
   lengthYears: number;
 
   /** seconds between samples in the synthetic series */
@@ -209,8 +209,8 @@ export function computeDatums(
   const heights = timeline.map((pt) => pt.level);
 
   return {
-    epochStart: start,
-    epochEnd: end,
+    start,
+    end,
     lengthYears,
     timeFidelity,
     tidalDayHours,

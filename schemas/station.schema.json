@@ -201,6 +201,24 @@
         }
       },
       "additionalProperties": false
+    },
+    "epoch": {
+      "type": "object",
+      "description": "The time period over which the harmonic constituents were computed",
+      "required": ["start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date",
+          "description": "Start date of the observation period (YYYY-MM-DD format)"
+        },
+        "end": {
+          "type": "string",
+          "format": "date",
+          "description": "End date of the observation period (YYYY-MM-DD format)"
+        }
+      }
     }
   },
   "allOf": [

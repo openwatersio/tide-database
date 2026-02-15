@@ -81,6 +81,19 @@ async function buildStation(meta: any): Promise<StationData> {
     // This should never happen, but just in case
     if (!data) throw new Error(`No data found for station ID: ${meta.id}`);
 
+    // Parse epoch from datums (e.g., "1983-2001" -> start: 1983-01-01, end: 2001-12-31)
+    let epoch: { start: string; end: string } | undefined;
+    if (data.datums.epoch) {
+      const match = data.datums.epoch.match(/(\d{4})-(\d{4})/);
+      if (match) {
+        const [, startYear, endYear] = match;
+        epoch = {
+          start: `${startYear}-01-01`,
+          end: `${endYear}-12-31`,
+        };
+      }
+    }
+
     Object.assign(station, {
       harmonic_constituents: data.harmonicConstituents.HarmonicConstituents.map(
         (h: any) => ({
@@ -102,6 +115,7 @@ async function buildStation(meta: any): Promise<StationData> {
       disclaimers: (data.disclaimers.disclaimers ?? [])
         .map((d: any) => d.text)
         .join("\n"),
+      ...(epoch ? { epoch } : {}),
     });
   }
 

@@ -98,10 +98,10 @@ function convertStation(rows: TiconRow[]): StationData | void {
     phase: ((parseFloat(row.pha) % 360) + 360) % 360, // lag in degrees; normalize to [0, 360)
   }));
 
-  const start = dayMonthYearToDate(rows[0].start_date);
-  const end = dayMonthYearToDate(rows[0].end_date);
-
-  const { datums } = computeDatums(constituents, { start, end });
+  const { datums, start, end } = computeDatums(constituents, {
+    start: dayMonthYearToDate(rows[0].start_date),
+    end: dayMonthYearToDate(rows[0].end_date),
+  });
 
   // Create the station JSON
   return normalize({
@@ -124,6 +124,10 @@ function convertStation(rows: TiconRow[]): StationData | void {
     },
     harmonic_constituents: constituents,
     datums,
+    epoch: {
+      start: start.toISOString().split("T")[0]!,
+      end: end.toISOString().split("T")[0]!,
+    },
   });
 }
 

@@ -4,6 +4,7 @@ import { join } from "path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { stations } from "../src/index.js";
+import { near } from "../src/search/index.js";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const SCHEMA_PATH = join(ROOT, "schemas", "station.schema.json");
@@ -31,10 +32,73 @@ stations.forEach((station) => {
         expect(reference, `Unknown reference station: ${id}`).toBeDefined();
       });
     }
+
+    if (station.id.startsWith("ticon/")) {
+      test("has no exact duplicate coordinates with other TICON stations", () => {
+        const nearby = near({
+          latitude: station.latitude,
+          longitude: station.longitude,
+          maxDistance: 0.001, // 1 meter
+          maxResults: Infinity,
+          filter: (s) => s.id.startsWith("ticon/") && s.id !== station.id,
+        });
+
+        if (nearby.length > 0) {
+          const [other, dist] = nearby[0]!;
+          throw new Error(
+            `This TICON station has duplicate/very close coordinates with ${other.id}: ` +
+            `${(dist * 1000).toFixed(0)}m apart. ` +
+            `Run tools/deduplicate-stations.ts to remove duplicates.`
+          );
+        }
+      });
+
+      test("is not too close to NOAA stations", () => {
+        const MIN_DISTANCE = 0.1; // 100 meters (in km)
+
+        const nearby = near({
+          latitude: station.latitude,
+          longitude: station.longitude,
+          maxDistance: MIN_DISTANCE,
+          maxResults: Infinity,
+          filter: (s) => s.id.startsWith("noaa/"),
+        });
+
+        if (nearby.length > 0) {
+          const [noaa, dist] = nearby[0]!;
+          throw new Error(
+            `This TICON station is ${(dist * 1000).toFixed(0)}m from NOAA station ${noaa.id}. ` +
+            `Minimum distance is ${MIN_DISTANCE * 1000}m. ` +
+            `Run tools/deduplicate-stations.ts to remove duplicates.`
+          );
+        }
+      });
+
+      test("maintains minimum distance from other TICON stations", () => {
+        const MIN_DISTANCE = 0.05; // 50 meters (in km)
+
+        const nearby = near({
+          latitude: station.latitude,
+          longitude: station.longitude,
+          maxDistance: MIN_DISTANCE,
+          maxResults: Infinity,
+          filter: (s) => s.id.startsWith("ticon/") && s.id !== station.id,
+        });
+
+        if (nearby.length > 0) {
+          const [other, dist] = nearby[0]!;
+          throw new Error(
+            `This TICON station is only ${(dist * 1000).toFixed(0)}m from ${other.id} ` +
+            `(minimum: ${MIN_DISTANCE * 1000}m). ` +
+            `Run tools/deduplicate-stations.ts to remove duplicates.`
+          );
+        }
+      });
+    }
   });
 });
 
-test("Does not have duplicate stations", () => {
+test("Does not have duplicate source IDs", () => {
   const seen = new Map();
   stations.forEach((station) => {
     const dup = seen.get(station.source.id);
