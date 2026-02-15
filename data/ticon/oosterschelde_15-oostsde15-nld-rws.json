@@ -18,13 +18,13 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "MHHW": 1.519,
-    "MHW": 1.52,
-    "MSL": 0.095,
-    "MTL": 0.097,
-    "MLW": -1.326,
-    "MLLW": -1.327,
-    "LAT": -2.075
+    "MHHW": 1.542,
+    "MHW": 1.543,
+    "MSL": 0.099,
+    "MTL": 0.1,
+    "MLW": -1.343,
+    "MLLW": -1.343,
+    "LAT": -2.119
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00467948,
       "phase": 192.740273
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1982-05-26",
+    "end": "1992-09-30"
+  }
 }

@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.742,
-    "MHW": 0.716,
-    "MSL": -0.046,
-    "MTL": -0.045,
-    "MLW": -0.807,
-    "MLLW": -0.823,
-    "LAT": -1.403
+    "MHHW": 0.729,
+    "MHW": 0.701,
+    "MSL": -0.047,
+    "MTL": -0.056,
+    "MLW": -0.812,
+    "MLLW": -0.833,
+    "LAT": -1.402
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00428294,
       "phase": 16.008246999999983
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1943-01-05",
+    "end": "1944-11-30"
+  }
 }

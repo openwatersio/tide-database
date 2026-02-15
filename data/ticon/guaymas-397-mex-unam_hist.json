@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.261,
-    "MHW": 0.258,
-    "MSL": 0.017,
-    "MTL": 0.074,
+    "MHHW": 0.264,
+    "MHW": 0.26,
+    "MSL": 0.016,
+    "MTL": 0.075,
     "MLW": -0.11,
     "MLLW": -0.116,
-    "LAT": -1.087
+    "LAT": -1.079
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00043712,
       "phase": 357.015993
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1976-12-29",
+    "end": "1995-12-30"
+  }
 }

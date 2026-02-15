@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.386,
-    "MHW": 0.384,
-    "MSL": 0.002,
-    "MTL": 0.003,
-    "MLW": -0.378,
-    "MLLW": -0.378,
-    "LAT": -0.558
+    "MHHW": 0.39,
+    "MHW": 0.387,
+    "MSL": 0.001,
+    "MTL": 0.001,
+    "MLW": -0.385,
+    "MLLW": -0.385,
+    "LAT": -0.571
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00660653,
       "phase": 197.431587
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1908-01-01",
+    "end": "1912-02-13"
+  }
 }

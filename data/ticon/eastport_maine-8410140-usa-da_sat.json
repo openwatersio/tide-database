@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 2.718,
-    "MHW": 2.718,
-    "MSL": -0.027,
+    "MHHW": 2.754,
+    "MHW": 2.754,
+    "MSL": -0.028,
     "MTL": -0.032,
-    "MLW": -2.783,
-    "MLLW": -2.783,
-    "LAT": -3.945
+    "MLW": -2.817,
+    "MLLW": -2.819,
+    "LAT": -3.938
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00159,
       "phase": 28.747036999999978
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1862-01-01",
+    "end": "1863-01-18"
+  }
 }

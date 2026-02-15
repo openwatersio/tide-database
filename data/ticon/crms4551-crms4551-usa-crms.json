@@ -18,12 +18,12 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "MHHW": 0.021,
-    "MHW": 0.023,
-    "MSL": 0.01,
-    "MTL": 0.015,
-    "MLW": 0.006,
-    "MLLW": -0.015,
+    "MHHW": -0.004,
+    "MHW": 0.008,
+    "MSL": -0.001,
+    "MTL": -0.001,
+    "MLW": -0.01,
+    "MLLW": -0.024,
     "LAT": -0.172
   },
   "type": "reference",
@@ -278,5 +278,9 @@
       "amplitude": 0.00024571,
       "phase": 148.737907
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2008-02-01",
+    "end": "2025-04-08"
+  }
 }

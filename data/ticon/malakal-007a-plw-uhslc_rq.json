@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.57,
-    "MHW": 0.57,
+    "MHHW": 0.578,
+    "MHW": 0.578,
     "MSL": 0.012,
     "MTL": 0.019,
-    "MLW": -0.531,
-    "MLLW": -0.533,
-    "LAT": -1.331
+    "MLW": -0.54,
+    "MLLW": -0.542,
+    "LAT": -1.353
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.0022975499999999998,
       "phase": 196.77493
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1926-01-01",
+    "end": "1939-12-10"
+  }
 }

@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.556,
-    "MHW": 0.555,
+    "MHHW": 0.558,
+    "MHW": 0.558,
     "MSL": 0.015,
-    "MTL": 0.032,
-    "MLW": -0.49,
-    "MLLW": -0.495,
-    "LAT": -1.479
+    "MTL": 0.031,
+    "MLW": -0.496,
+    "MLLW": -0.5,
+    "LAT": -1.494
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00671388,
       "phase": 90.44037500000002
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1858-07-02",
+    "end": "1877-05-31"
+  }
 }

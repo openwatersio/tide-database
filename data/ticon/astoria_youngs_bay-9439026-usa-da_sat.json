@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.989,
-    "MHW": 0.987,
+    "MHHW": 0.994,
+    "MHW": 0.994,
     "MSL": 0.001,
-    "MTL": 0.012,
-    "MLW": -0.963,
-    "MLLW": -0.967,
-    "LAT": -1.943
+    "MTL": 0.013,
+    "MLW": -0.969,
+    "MLLW": -0.972,
+    "LAT": -1.968
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00725053,
       "phase": 184.756319
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1931-03-01",
+    "end": "1943-03-01"
+  }
 }

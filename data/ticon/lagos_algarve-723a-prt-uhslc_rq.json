@@ -18,12 +18,12 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 1.057,
-    "MHW": 1.059,
+    "MHHW": 1.072,
+    "MHW": 1.073,
     "MSL": 0.007,
-    "MTL": 0.006,
-    "MLW": -1.047,
-    "MLLW": -1.046,
+    "MTL": 0.008,
+    "MLW": -1.058,
+    "MLLW": -1.057,
     "LAT": -1.907
   },
   "type": "reference",
@@ -278,5 +278,9 @@
       "amplitude": 0.00062605,
       "phase": 284.336315
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1986-01-01",
+    "end": "2000-04-04"
+  }
 }

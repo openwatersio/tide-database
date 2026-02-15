@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.323,
-    "MHW": 0.322,
+    "MHHW": 0.327,
+    "MHW": 0.327,
     "MSL": 0.001,
-    "MTL": 0,
-    "MLW": -0.321,
-    "MLLW": -0.322,
-    "LAT": -0.658
+    "MTL": 0.001,
+    "MLW": -0.325,
+    "MLLW": -0.326,
+    "LAT": -0.647
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00124961,
       "phase": 77.35062700000003
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1977-01-01",
+    "end": "1985-12-31"
+  }
 }

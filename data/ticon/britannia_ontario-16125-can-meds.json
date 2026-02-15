@@ -18,12 +18,12 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.085,
-    "MHW": 0.131,
-    "MSL": 0.061,
-    "MTL": 0.124,
-    "MLW": 0.117,
-    "MLLW": 0.059,
+    "MHHW": 0.042,
+    "MHW": 0.044,
+    "MSL": 0.003,
+    "MTL": 0.033,
+    "MLW": 0.022,
+    "MLLW": 0.018,
     "LAT": -0.485
   },
   "type": "reference",
@@ -278,5 +278,9 @@
       "amplitude": 0.00005532,
       "phase": 17.805672000000015
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1963-06-01",
+    "end": "1982-06-01"
+  }
 }

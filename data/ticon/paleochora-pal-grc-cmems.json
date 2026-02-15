@@ -19,12 +19,12 @@
   "disclaimers": "Possible quality control issues",
   "datums": {
     "MHHW": 0.015,
-    "MHW": 0.008,
-    "MSL": -0.002,
-    "MTL": -0.004,
-    "MLW": -0.016,
-    "MLLW": -0.016,
-    "LAT": -0.162
+    "MHW": 0.013,
+    "MSL": 0,
+    "MTL": 0,
+    "MLW": -0.013,
+    "MLLW": -0.015,
+    "LAT": -0.159
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00008269000000000001,
       "phase": 263.283854
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2013-06-21",
+    "end": "2022-05-11"
+  }
 }

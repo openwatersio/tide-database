@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.305,
-    "MHW": 0.305,
+    "MHHW": 0.319,
+    "MHW": 0.32,
     "MSL": 0.005,
-    "MTL": -0.001,
-    "MLW": -0.306,
-    "MLLW": -0.307,
-    "LAT": -0.628
+    "MTL": 0.012,
+    "MLW": -0.296,
+    "MLLW": -0.296,
+    "LAT": -0.625
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00031023,
       "phase": 253.221073
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1947-05-31",
+    "end": "1949-11-12"
+  }
 }

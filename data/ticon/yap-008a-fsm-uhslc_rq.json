@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.412,
-    "MHW": 0.413,
-    "MSL": 0.016,
-    "MTL": 0.004,
-    "MLW": -0.406,
-    "MLLW": -0.406,
-    "LAT": -1.176
+    "MHHW": 0.427,
+    "MHW": 0.424,
+    "MSL": 0.017,
+    "MTL": 0.005,
+    "MLW": -0.413,
+    "MLLW": -0.416,
+    "LAT": -1.187
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00013183999999999998,
       "phase": 111.60798399999999
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1951-02-28",
+    "end": "1952-12-31"
+  }
 }

@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.124,
-    "MHW": 0.119,
+    "MHHW": 0.134,
+    "MHW": 0.128,
     "MSL": 0,
-    "MTL": -0.019,
-    "MLW": -0.157,
-    "MLLW": -0.161,
-    "LAT": -0.456
+    "MTL": -0.017,
+    "MLW": -0.161,
+    "MLLW": -0.163,
+    "LAT": -0.468
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00023685,
       "phase": 259.402604
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2022-01-01",
+    "end": "2025-06-30"
+  }
 }

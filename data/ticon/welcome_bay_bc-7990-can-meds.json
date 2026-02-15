@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 1.135,
-    "MHW": 1.135,
-    "MSL": 0.024,
-    "MTL": -0.006,
-    "MLW": -1.147,
-    "MLLW": -1.147,
-    "LAT": -3.087
+    "MHHW": 1.149,
+    "MHW": 1.144,
+    "MSL": 0.026,
+    "MTL": 0.032,
+    "MLW": -1.08,
+    "MLLW": -1.087,
+    "LAT": -3.027
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.0007154,
       "phase": 17.151978999999983
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1958-05-27",
+    "end": "1959-05-31"
+  }
 }

@@ -3,8 +3,8 @@
   "region": "FL",
   "country": "United States",
   "continent": "Americas",
-  "latitude": 29.915,
-  "longitude": -84.5117,
+  "latitude": 29.915000915527344,
+  "longitude": -84.5116958618164,
   "timezone": "America/New_York",
   "source": {
     "name": "US National Oceanic and Atmospheric Administration",
@@ -224,5 +224,9 @@
       "amplitude": 0,
       "phase": 0
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1983-01-01",
+    "end": "2001-12-31"
+  }
 }

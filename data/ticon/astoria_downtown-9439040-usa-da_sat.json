@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.958,
-    "MHW": 0.955,
+    "MHHW": 0.966,
+    "MHW": 0.965,
     "MSL": 0.021,
-    "MTL": 0.029,
-    "MLW": -0.897,
-    "MLLW": -0.901,
-    "LAT": -1.833
+    "MTL": 0.028,
+    "MLW": -0.909,
+    "MLLW": -0.911,
+    "LAT": -1.878
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00673557,
       "phase": 174.692719
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1857-10-31",
+    "end": "1876-10-31"
+  }
 }

@@ -18,13 +18,13 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "MHHW": 0.643,
-    "MHW": 0.643,
+    "MHHW": 0.651,
+    "MHW": 0.651,
     "MSL": -0.022,
-    "MTL": -0.023,
-    "MLW": -0.689,
-    "MLLW": -0.69,
-    "LAT": -0.99
+    "MTL": -0.022,
+    "MLW": -0.696,
+    "MLLW": -0.696,
+    "LAT": -1.02
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.0023880299999999998,
       "phase": 208.742177
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2015-01-12",
+    "end": "2025-06-30"
+  }
 }

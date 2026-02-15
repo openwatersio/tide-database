@@ -18,12 +18,12 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.008,
-    "MHW": 0.032,
+    "MHHW": 0,
+    "MHW": 0.043,
     "MSL": 0.022,
-    "MTL": 0.029,
-    "MLW": 0.026,
-    "MLLW": -0.005,
+    "MTL": 0.04,
+    "MLW": 0.037,
+    "MLLW": -0.008,
     "LAT": -0.228
   },
   "type": "reference",
@@ -278,5 +278,9 @@
       "amplitude": 0.0000403,
       "phase": 14.960293999999976
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2010-10-01",
+    "end": "2025-04-30"
+  }
 }

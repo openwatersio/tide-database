@@ -18,12 +18,12 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.376,
-    "MHW": 0.375,
+    "MHHW": 0.384,
+    "MHW": 0.383,
     "MSL": 0.003,
-    "MTL": 0.001,
-    "MLW": -0.373,
-    "MLLW": -0.374,
+    "MTL": 0.003,
+    "MLW": -0.378,
+    "MLLW": -0.378,
     "LAT": -0.66
   },
   "type": "reference",
@@ -278,5 +278,9 @@
       "amplitude": 0.00264855,
       "phase": 6.708197999999982
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2015-08-04",
+    "end": "2025-04-30"
+  }
 }

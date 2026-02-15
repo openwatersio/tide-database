@@ -19,7 +19,7 @@
   "disclaimers": "No obvious issues",
   "datums": {
     "MHHW": 0.001,
-    "MHW": 0.001,
+    "MHW": 0,
     "MSL": 0,
     "MTL": 0,
     "MLW": -0.001,
@@ -278,5 +278,9 @@
       "amplitude": 0.00002368,
       "phase": 327.49422400000003
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2007-02-28",
+    "end": "2025-02-26"
+  }
 }

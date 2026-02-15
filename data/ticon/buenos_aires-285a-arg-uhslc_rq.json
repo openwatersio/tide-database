@@ -18,13 +18,13 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "MHHW": 0.291,
-    "MHW": 0.288,
+    "MHHW": 0.293,
+    "MHW": 0.291,
     "MSL": -0.016,
-    "MTL": -0.018,
-    "MLW": -0.324,
-    "MLLW": -0.326,
-    "LAT": -0.634
+    "MTL": -0.02,
+    "MLW": -0.331,
+    "MLLW": -0.333,
+    "LAT": -0.631
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00602832,
       "phase": 316.647813
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1942-12-31",
+    "end": "1961-12-31"
+  }
 }

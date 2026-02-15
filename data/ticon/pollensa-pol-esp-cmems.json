@@ -18,11 +18,11 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "MHHW": 0.054,
-    "MHW": 0.054,
+    "MHHW": 0.051,
+    "MHW": 0.051,
     "MSL": 0.001,
-    "MTL": 0.003,
-    "MLW": -0.047,
+    "MTL": 0.001,
+    "MLW": -0.05,
     "MLLW": -0.05,
     "LAT": -0.187
   },
@@ -278,5 +278,9 @@
       "amplitude": 0.00016339,
       "phase": 289.225102
     }
-  ]
+  ],
+  "epoch": {
+    "start": "2015-01-01",
+    "end": "2016-11-27"
+  }
 }

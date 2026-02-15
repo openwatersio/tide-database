@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.151,
-    "MHW": 0.15,
+    "MHHW": 0.163,
+    "MHW": 0.162,
     "MSL": -0.001,
-    "MTL": -0.01,
-    "MLW": -0.169,
-    "MLLW": -0.169,
-    "LAT": -0.333
+    "MTL": -0.002,
+    "MLW": -0.167,
+    "MLLW": -0.167,
+    "LAT": -0.344
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.0004532,
       "phase": 332.422117
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1921-08-16",
+    "end": "1923-07-30"
+  }
 }

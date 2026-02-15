@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 1.068,
-    "MHW": 1.064,
-    "MSL": 0,
+    "MHHW": 1.08,
+    "MHW": 1.076,
+    "MSL": 0.001,
     "MTL": -0.008,
-    "MLW": -1.079,
-    "MLLW": -1.08,
-    "LAT": -1.914
+    "MLW": -1.092,
+    "MLLW": -1.094,
+    "LAT": -1.931
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00293172,
       "phase": 155.37329799999998
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1999-03-16",
+    "end": "2018-03-16"
+  }
 }

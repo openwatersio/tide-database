@@ -18,13 +18,13 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.202,
-    "MHW": 0.168,
-    "MSL": 0.011,
+    "MHHW": 0.201,
+    "MHW": 0.159,
+    "MSL": 0.012,
     "MTL": 0.017,
-    "MLW": -0.133,
-    "MLLW": -0.174,
-    "LAT": -0.628
+    "MLW": -0.126,
+    "MLLW": -0.179,
+    "LAT": -0.625
   },
   "type": "reference",
   "harmonic_constituents": [
@@ -278,5 +278,9 @@
       "amplitude": 0.00020369000000000002,
       "phase": 179.85634700000003
     }
-  ]
+  ],
+  "epoch": {
+    "start": "1938-03-02",
+    "end": "1940-03-20"
+  }
 }
