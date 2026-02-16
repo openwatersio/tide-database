@@ -3,6 +3,7 @@
 import createFetch from "make-fetch-happen";
 import { normalize, save } from "./station.ts";
 import type { StationData } from "../src/index.ts";
+import { loadGeocoder } from "./geocode.ts";
 
 const fetch = createFetch.defaults({
   cachePath: "node_modules/.cache",
@@ -13,6 +14,8 @@ const fetch = createFetch.defaults({
 const NOAA_SOURCE_NAME = "US National Oceanic and Atmospheric Administration";
 const STATIONS_URL =
   "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json";
+
+const geocoder = await loadGeocoder();
 
 async function main() {
   const { stations } = await fetch(
@@ -33,11 +36,17 @@ async function main() {
 }
 
 async function buildStation(meta: any): Promise<StationData> {
+  const {
+    country = "United States",
+    continent = "North America",
+    region = meta.state || undefined,
+  } = geocoder.nearest(meta.lat, meta.lng) || {};
+
   const station: Partial<StationData> = {
     name: meta.name,
-    continent: "North America",
-    country: "United States",
-    region: meta.state,
+    continent,
+    country,
+    region,
     type: meta.type == "S" ? "subordinate" : "reference",
     latitude: meta.lat,
     longitude: meta.lng,

@@ -210,6 +210,22 @@ function capitalize(word: string): string {
   if (/^[A-Z]+\d+[A-Z]?$/i.test(word) && word === word.toUpperCase()) {
     return word;
   }
+  // Handle hyphenated or apostrophe-separated words: capitalize each segment
+  if (word.includes("-") || word.includes("'")) {
+    return word
+      .split(/([-'])/)
+      .map((seg, i) => {
+        // Preserve separators
+        if (seg === "-" || seg === "'") return seg;
+        if (!seg) return seg;
+        // Lowercase small words in middle segments (after first separator)
+        if (i > 0 && SMALL_WORDS.has(seg.toLowerCase())) {
+          return seg.toLowerCase();
+        }
+        return seg.charAt(0).toUpperCase() + seg.slice(1).toLowerCase();
+      })
+      .join("");
+  }
   return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 }
 

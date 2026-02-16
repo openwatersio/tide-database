@@ -14,6 +14,7 @@ import {
   getSourceSuffix,
 } from "./filtering.ts";
 import { cleanName } from "./name-cleanup.ts";
+import { loadGeocoder } from "./geocode.ts";
 import { near } from "../dist/index.js";
 import type { StationData } from "../src/index.ts";
 
@@ -64,6 +65,9 @@ function candidateId(c: StationData) {
   return `ticon/${c.source.id}`;
 }
 
+// Load geocoder
+const geocoder = await loadGeocoder();
+
 /**
  * Imports TICON-4 stations with integrated filtering.
  *
@@ -90,14 +94,27 @@ async function main() {
     const epochEnd = dayMonthYearToDate(rows[0].end_date);
 
     const cleaned = cleanName(gesla["SITE NAME"], rows[0].country);
+    const lat = parseFloat(rows[0].lat);
+    const lon = parseFloat(rows[0].lon);
+
+    // Geocode: resolve opaque names and fill region
+    let name = cleaned.name;
+    let region = cleaned.region;
+    const geo = geocoder.nearest(lat, lon, 50);
+    if (cleaned.isOpaque && geo) {
+      name = geo.place.name;
+    }
+    if (!region && geo?.region) {
+      region = geo.region;
+    }
 
     candidates.push(
       normalize({
-        name: cleaned.name,
-        ...(cleaned.region ? { region: cleaned.region } : {}),
+        name,
+        ...(region ? { region } : {}),
         country: rows[0].country,
-        latitude: parseFloat(rows[0].lat),
-        longitude: parseFloat(rows[0].lon),
+        latitude: lat,
+        longitude: lon,
         type: "reference",
         disclaimers: rows[0].record_quality,
         source: {
