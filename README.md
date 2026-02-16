@@ -16,7 +16,11 @@ If you know of other public sources of harmonic constituents, please [open an is
 
 ## Usage
 
-The database is currently only available as an NPM package, but may be available in other formats like [sqlite](https://github.com/openwatersio/tide-database/issues/18) and [xtide's tcd format](https://github.com/openwatersio/tide-database/issues/19) in the future.
+The database is available as an NPM package and as an [XTide-compatible TCD file](./packages/tcd/).
+
+### XTide
+
+A pre-built `neaps-YYYYMMDD.tcd` file is attached to each [GitHub Release](https://github.com/openwatersio/tide-database/releases). This file is compatible with [XTide](https://flaterco.com/xtide/) and any software that reads the [libtcd](https://flaterco.com/xtide/libtcd.html) format. [See the TCD package for usage instructions.](./packages/tcd/README.md)
 
 ### JavaScript / TypeScript
 

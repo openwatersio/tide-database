@@ -7,6 +7,6 @@
     "types": ["node", "vite/client"],
     "allowImportingTsExtensions": true
   },
-  "include": ["vite.config.js", "test/**/*", "tools/**/*", "examples/**/*"],
+  "include": ["test/**/*", "tools/**/*", "examples/**/*", "packages/**/*"],
   "exclude": ["src/**/*.ts"]
 }

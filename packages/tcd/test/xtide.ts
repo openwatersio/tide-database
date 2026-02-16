@@ -1,0 +1,149 @@
+/**
+ * XTide Docker interface for running tide predictions from TCD files.
+ */
+
+import { execFileSync } from "child_process";
+
+export interface TideEvent {
+  time: Date;
+  type: "high" | "low";
+  height: number; // meters
+}
+
+/**
+ * Format a date for XTide command line (YYYY-MM-DD HH:MM)
+ */
+function formatXTideDate(date: Date): string {
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(date.getUTCDate()).padStart(2, "0");
+  const hour = String(date.getUTCHours()).padStart(2, "0");
+  const minute = String(date.getUTCMinutes()).padStart(2, "0");
+  return `${year}-${month}-${day} ${hour}:${minute}`;
+}
+
+/**
+ * Parse XTide CSV output format.
+ * Example line: "BOSTON, MA, United States",2026-01-01,8:35 AM EST,2.87 m,"High Tide"
+ * Format: Location,Date,Time,Value,Event
+ */
+function parseXTideCSV(output: string): TideEvent[] {
+  const events: TideEvent[] = [];
+  const lines = output.trim().split("\n");
+
+  for (const line of lines) {
+    if (!line.trim() || line.startsWith("#") || line.startsWith("Location,")) {
+      continue; // Skip comments and header
+    }
+
+    // Parse CSV with quoted fields
+    const parts = line.match(/("([^"]*)"|[^,]+)/g);
+    if (!parts || parts.length < 5) continue;
+
+    const dateStr = parts[1]?.replace(/"/g, "").trim();
+    const timeStr = parts[2]?.replace(/"/g, "").trim();
+    const valueStr = parts[3]?.replace(/"/g, "").trim();
+    const eventStr = parts[4]?.replace(/"/g, "").trim();
+
+    if (!dateStr || !timeStr || !eventStr) continue;
+
+    // Only process tide events
+    if (!eventStr.includes("Tide")) continue;
+
+    // Parse date and time
+    // Format: "2026-01-01" and "8:35 AM EST"
+    // We need to convert to UTC
+    const dateTimeStr = `${dateStr} ${timeStr}`;
+    const time = new Date(dateTimeStr);
+    if (isNaN(time.getTime())) {
+      console.warn(`Could not parse date: ${dateTimeStr}`);
+      continue;
+    }
+
+    // Parse height (format: "2.87 m" or "-0.42 m")
+    const heightMatch = valueStr?.match(/-?\d+\.?\d*/);
+    if (!heightMatch) continue;
+    const height = parseFloat(heightMatch[0]!);
+    if (isNaN(height)) continue;
+
+    // Determine type
+    const type = eventStr.toLowerCase().includes("high") ? "high" : "low";
+
+    events.push({ time, type, height });
+  }
+
+  return events;
+}
+
+/**
+ * Get tide predictions from XTide using the built TCD file.
+ *
+ * @param stationName - Full station name as it appears in the TCD (e.g., "Boston, MA, United States")
+ * @param startDate - Start date for predictions
+ * @param endDate - End date for predictions
+ * @returns Array of tide events (high/low)
+ */
+export function getXTidePredictions(
+  stationName: string,
+  startDate: Date,
+  endDate: Date,
+): TideEvent[] {
+  const startStr = formatXTideDate(startDate);
+  const endStr = formatXTideDate(endDate);
+
+  // Run XTide via Docker using execFileSync for safety
+  const args = [
+    "compose",
+    "run",
+    "--rm",
+    "xtide",
+    // -l: location
+    "-l",
+    stationName,
+    // -b: begin time
+    "-b",
+    startStr,
+    // -e: end time
+    "-e",
+    endStr,
+    // -f c: CSV format
+    "-f",
+    "c",
+    // -m p: mode=plain (no colors/formatting)
+    "-m",
+    "p",
+    // -u m: units=meters
+    "-u",
+    "m",
+  ];
+
+  try {
+    console.log("Running XTide command:", ["docker", ...args]);
+    const output = execFileSync("docker", args, {
+      encoding: "utf-8",
+      cwd: process.cwd(),
+      maxBuffer: 10 * 1024 * 1024, // 10MB buffer for large outputs
+    });
+
+    return parseXTideCSV(output);
+  } catch (error: any) {
+    throw new Error(
+      `XTide command failed for station "${stationName}": ${error.message}`,
+    );
+  }
+}
+
+/**
+ * Check if XTide Docker image is available.
+ */
+export function checkXTideAvailable(): boolean {
+  try {
+    execFileSync("docker", ["compose", "config", "xtide"], {
+      stdio: "ignore",
+      cwd: process.cwd(),
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}

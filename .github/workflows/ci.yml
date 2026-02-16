@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  npm:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -29,6 +29,29 @@ jobs:
 
       - name: Run tests
         run: npm run test
+
+  tcd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Build TCD harmonics files
+        run: npm run build -w tcd
+
+      - name: Run TCD validation tests
+        run: npm run test -w tcd
 
   lint:
     runs-on: ubuntu-latest

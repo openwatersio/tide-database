@@ -1,0 +1,15 @@
+services:
+  build-tcd:
+    image: openwatersio/xtide
+    volumes:
+      - ./dist:/data
+    command: >
+      build_tide_db /data/harmonics.tcd /data/harmonics.txt /data/offsets.xml
+
+  xtide:
+    image: openwatersio/xtide
+    volumes:
+      - ./dist:/data
+    environment:
+      - HFILE_PATH=/data/harmonics.tcd
+    entrypoint: ["tide"]

@@ -1,0 +1,15 @@
+{
+  "name": "tcd",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.ts && rm -f dist/harmonics.tcd && docker compose run --rm build-tcd",
+    "pretest": "npm run build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@neaps/tide-database": "*",
+    "@neaps/tide-predictor": "*",
+    "xmlbuilder2": "^4.0.3"
+  }
+}
