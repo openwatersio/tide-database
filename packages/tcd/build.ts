@@ -17,6 +17,22 @@ const constituents = tidePredictor.constituents;
 const outDir = join(dirname(fileURLToPath(import.meta.url)), "dist");
 
 // ---------------------------------------------------------------------------
+// Unit systems
+// ---------------------------------------------------------------------------
+
+type UnitSystem = "metric" | "imperial";
+
+const METERS_PER_FOOT = 0.3048;
+
+function convertLength(meters: number, units: UnitSystem): number {
+  return units === "imperial" ? meters / METERS_PER_FOOT : meters;
+}
+
+function unitLabel(units: UnitSystem): string {
+  return units === "imperial" ? "feet" : "meters";
+}
+
+// ---------------------------------------------------------------------------
 // Configuration
 // ---------------------------------------------------------------------------
 
@@ -196,6 +212,7 @@ const HARMONICS_HEADER = `# Tide Harmonics Database
 function generateHarmonicsTxt(
   stations: Station[],
   masterConstituents: string[],
+  units: UnitSystem,
 ): string {
   const lines: string[] = [];
   const masterSet = new Set(masterConstituents);
@@ -355,7 +372,7 @@ ${NUM_YEARS}`);
     lines.push(`# datum: Mean Lower Low Water`);
     lines.push(`# restriction: Public Domain`);
     lines.push(`# confidence: 10`);
-    lines.push(`# !units: meters`);
+    lines.push(`# !units: ${unitLabel(units)}`);
     lines.push(`# !longitude: ${station.longitude.toFixed(4)}`);
     lines.push(`# !latitude: ${station.latitude.toFixed(4)}`);
 
@@ -366,9 +383,11 @@ ${NUM_YEARS}`);
     // libtcd has a 30-byte tzfile limit (29 chars + null)
     lines.push(`0:00 ${tcdTimezone(station.timezone)}`);
 
-    // Datum offset (MLLW or 0) and units
-    const datumOffset = station.datums?.["MLLW"] ?? 0;
-    lines.push(`${datumOffset.toFixed(4)} meters`);
+    // Datum offset Z₀: mean sea level above MLLW
+    const msl = station.datums?.["MSL"] ?? 0;
+    const mllw = station.datums?.["MLLW"] ?? 0;
+    const datumOffset = convertLength(msl - mllw, units);
+    lines.push(`${datumOffset.toFixed(4)} ${unitLabel(units)}`);
 
     // Build constituent map for this station
     const stationConstituents = new Map<
@@ -389,8 +408,9 @@ ${NUM_YEARS}`);
     for (const name of masterConstituents) {
       const hc = stationConstituents.get(name);
       if (hc && (hc.amplitude !== 0 || hc.phase !== 0)) {
+        const amp = convertLength(hc.amplitude, units);
         lines.push(
-          `${name.padEnd(10)}     ${hc.amplitude.toFixed(4).padStart(7)}  ${hc.phase.toFixed(2).padStart(6)}`,
+          `${name.padEnd(10)}     ${amp.toFixed(4).padStart(7)}  ${hc.phase.toFixed(2).padStart(6)}`,
         );
       } else {
         lines.push("x 0 0");
@@ -410,6 +430,7 @@ function addOffsetElements(
   timeOffset: number,
   heightOffset: number,
   heightType: string,
+  units: UnitSystem,
 ) {
   if (timeOffset !== 0) {
     parent.ele("timeadd").att("value", formatTimeOffset(timeOffset)).up();
@@ -417,8 +438,8 @@ function addOffsetElements(
   if (heightType === "fixed" && heightOffset !== 0) {
     parent
       .ele("leveladd")
-      .att("value", heightOffset.toFixed(3))
-      .att("units", "meters")
+      .att("value", convertLength(heightOffset, units).toFixed(3))
+      .att("units", unitLabel(units))
       .up();
   }
   if (heightType === "ratio" && heightOffset !== 0 && heightOffset !== 1) {
@@ -429,6 +450,7 @@ function addOffsetElements(
 function generateOffsetsXml(
   stations: Station[],
   referenceStations: Station[],
+  units: UnitSystem,
 ): string {
   const doc = create({ version: "1.0", encoding: "ISO-8859-1" });
 
@@ -507,17 +529,17 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
     if (isSimple) {
       const simple = el.ele("simpleoffsets");
-      addOffsetElements(simple, timeHigh, heightHigh, heightType);
+      addOffsetElements(simple, timeHigh, heightHigh, heightType, units);
       simple.up();
     } else {
       const offsetsEl = el.ele("offsets");
 
       const max = offsetsEl.ele("max");
-      addOffsetElements(max, timeHigh, heightHigh, heightType);
+      addOffsetElements(max, timeHigh, heightHigh, heightType, units);
       max.up();
 
       const min = offsetsEl.ele("min");
-      addOffsetElements(min, timeLow, heightLow, heightType);
+      addOffsetElements(min, timeLow, heightLow, heightType, units);
       min.up();
 
       offsetsEl.up();
@@ -581,33 +603,41 @@ async function main() {
     );
   }
 
-  // Generate output files
-  console.error("\nGenerating harmonics.txt...");
-  const harmonicsTxt = generateHarmonicsTxt(stations, masterConstituents);
-
-  console.error("Generating offsets.xml...");
-  const offsetsXml = generateOffsetsXml(stations, referenceStations);
-
-  // Write files
+  // Generate output files for both unit systems
   await mkdir(outDir, { recursive: true });
-  const harmonicsPath = join(outDir, "harmonics.txt");
-  const offsetsPath = join(outDir, "offsets.xml");
 
-  await writeFile(harmonicsPath, harmonicsTxt, "utf-8");
-  await writeFile(offsetsPath, offsetsXml, "utf-8");
+  for (const units of ["metric", "imperial"] as UnitSystem[]) {
+    const suffix = units === "metric" ? "-metric" : "-imperial";
 
-  console.error(`\nWrote ${harmonicsPath}`);
-  console.error(`Wrote ${offsetsPath}`);
+    console.error(`\nGenerating harmonics${suffix}.txt...`);
+    const harmonicsTxt = generateHarmonicsTxt(
+      stations,
+      masterConstituents,
+      units,
+    );
 
-  // Summary
-  const harmonicsLines = harmonicsTxt.split("\n").length;
-  const offsetsLines = offsetsXml.split("\n").length;
-  console.error(
-    `\nharmonics.txt: ${harmonicsLines} lines (${(harmonicsTxt.length / 1024 / 1024).toFixed(1)} MB)`,
-  );
-  console.error(
-    `offsets.xml: ${offsetsLines} lines (${(offsetsXml.length / 1024).toFixed(1)} KB)`,
-  );
+    console.error(`Generating offsets${suffix}.xml...`);
+    const offsetsXml = generateOffsetsXml(stations, referenceStations, units);
+
+    const harmonicsPath = join(outDir, `harmonics${suffix}.txt`);
+    const offsetsPath = join(outDir, `offsets${suffix}.xml`);
+
+    await writeFile(harmonicsPath, harmonicsTxt, "utf-8");
+    await writeFile(offsetsPath, offsetsXml, "utf-8");
+
+    console.error(`Wrote ${harmonicsPath}`);
+    console.error(`Wrote ${offsetsPath}`);
+
+    const harmonicsLines = harmonicsTxt.split("\n").length;
+    const offsetsLines = offsetsXml.split("\n").length;
+    console.error(
+      `  harmonics${suffix}.txt: ${harmonicsLines} lines (${(harmonicsTxt.length / 1024 / 1024).toFixed(1)} MB)`,
+    );
+    console.error(
+      `  offsets${suffix}.xml: ${offsetsLines} lines (${(offsetsXml.length / 1024).toFixed(1)} KB)`,
+    );
+  }
+
   console.error(`\nReference stations: ${referenceStations.length}`);
   console.error(
     `Subordinate stations: ${subordinateStations.filter((s) => s.offsets).length}`,

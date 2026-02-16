@@ -42,9 +42,13 @@ export function getNeapsPredictions(
     phase: hc.phase,
   }));
 
-  // Create tide predictor
+  // Create tide predictor with Z₀ offset (MSL above MLLW)
+  const msl = station.datums?.["MSL"] ?? 0;
+  const mllw = station.datums?.["MLLW"] ?? 0;
+  const z0 = msl && mllw ? msl - mllw : false;
+
   const predictor = createTidePredictor(constituents, {
-    offset: station.datums?.["MLLW"] ?? false,
+    offset: z0,
   });
 
   // Get extreme predictions (high/low tides)

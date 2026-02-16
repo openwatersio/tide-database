@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.ts && rm -f dist/harmonics.tcd && docker compose run --rm build-tcd",
+    "build": "./build",
     "pretest": "npm run build",
     "test": "vitest"
   },
