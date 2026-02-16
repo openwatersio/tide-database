@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+# Remove any existing files to ensure a clean build
+rm -rf dist
+
+# Build the harmonics and offsets files
+node build.ts
+
+# Build the .tcd files
+for units in metric imperial; do
+  docker compose run --rm build-tcd dist/harmonics-${units}.tcd dist/harmonics-${units}.txt dist/offsets-${units}.xml
+done

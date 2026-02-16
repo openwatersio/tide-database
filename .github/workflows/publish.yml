@@ -30,11 +30,13 @@ jobs:
       - name: Publish to npm
         run: npm publish
 
-      - name: Build TCD harmonics file
+      - name: Build TCD harmonics files
         run: npm run build -w tcd
 
-      - name: Rename TCD file for release
-        run: mv packages/tcd/dist/harmonics.tcd "packages/tcd/dist/neaps-${RELEASE_VERSION##*.}.tcd"
+      - name: Rename TCD files for release
+        run: |
+          mv packages/tcd/dist/harmonics-metric.tcd "packages/tcd/dist/neaps-${RELEASE_VERSION##*.}-metric.tcd"
+          mv packages/tcd/dist/harmonics-imperial.tcd "packages/tcd/dist/neaps-${RELEASE_VERSION##*.}-imperial.tcd"
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1

@@ -120,36 +120,52 @@ describe("XTide TCD", () => {
   });
 
   describe("TCD file integrity", () => {
-    test("TCD file exists and is not empty", () => {
-      const tcdPath = join(process.cwd(), "dist", "harmonics.tcd");
-      expect(existsSync(tcdPath)).toBe(true);
+    for (const variant of ["metric", "imperial"] as const) {
+      describe(variant, () => {
+        test("TCD file exists and is not empty", () => {
+          const tcdPath = join(
+            process.cwd(),
+            "dist",
+            `harmonics-${variant}.tcd`,
+          );
+          expect(existsSync(tcdPath)).toBe(true);
 
-      const stats = statSync(tcdPath);
-      expect(stats.size).toBeGreaterThan(1000); // At least 1KB
-    });
+          const stats = statSync(tcdPath);
+          expect(stats.size).toBeGreaterThan(1000); // At least 1KB
+        });
 
-    test("harmonics.txt exists and is valid", () => {
-      const harmonicsPath = join(process.cwd(), "dist", "harmonics.txt");
-      expect(existsSync(harmonicsPath)).toBe(true);
+        test("harmonics.txt exists and is valid", () => {
+          const harmonicsPath = join(
+            process.cwd(),
+            "dist",
+            `harmonics-${variant}.txt`,
+          );
+          expect(existsSync(harmonicsPath)).toBe(true);
 
-      const content = readFileSync(harmonicsPath, "utf-8");
+          const content = readFileSync(harmonicsPath, "utf-8");
 
-      // Check for required header elements
-      expect(content).toContain("# Tide Harmonics Database");
-      expect(content).toContain("MERCHANTABILITY");
-      expect(content).toContain("Number of constituents");
-    });
+          // Check for required header elements
+          expect(content).toContain("# Tide Harmonics Database");
+          expect(content).toContain("MERCHANTABILITY");
+          expect(content).toContain("Number of constituents");
+        });
 
-    test("offsets.xml exists and is valid", () => {
-      const offsetsPath = join(process.cwd(), "dist", "offsets.xml");
-      expect(existsSync(offsetsPath)).toBe(true);
+        test("offsets.xml exists and is valid", () => {
+          const offsetsPath = join(
+            process.cwd(),
+            "dist",
+            `offsets-${variant}.xml`,
+          );
+          expect(existsSync(offsetsPath)).toBe(true);
 
-      const content = readFileSync(offsetsPath, "utf-8");
+          const content = readFileSync(offsetsPath, "utf-8");
 
-      // Check for required XML structure
-      expect(content).toContain('<?xml version="1.0"');
-      expect(content).toContain("<document>");
-      expect(content).toContain("</document>");
-    });
+          // Check for required XML structure
+          expect(content).toContain('<?xml version="1.0"');
+          expect(content).toContain("<document>");
+          expect(content).toContain("</document>");
+        });
+      });
+    }
   });
 });
