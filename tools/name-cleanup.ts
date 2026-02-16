@@ -1,6 +1,6 @@
 export interface CleanNameResult {
   name: string;
-  region?: string;
+  region?: string | undefined;
   isOpaque: boolean;
   original: string;
 }
@@ -145,7 +145,7 @@ export function cleanName(raw: string, country: string): CleanNameResult {
   // Step 2: Extract trailing region codes for US/Canada
   if (country === "United States" || country === "Canada") {
     const regionMatch = name.match(/_([A-Za-z]{2})$/);
-    if (regionMatch) {
+    if (regionMatch?.[1]) {
       const code = regionMatch[1].toUpperCase();
       const validCodes = country === "United States" ? US_STATES : CA_PROVINCES;
       if (validCodes.has(code)) {
@@ -251,22 +251,26 @@ function frenchHyphenation(name: string): string {
   const result: string[] = [];
   let i = 0;
   while (i < words.length) {
+    const word = words[i]!;
+    const prev = words[i - 1];
+    const next = words[i + 1];
     if (
       i > 0 &&
-      i < words.length - 1 &&
-      frenchPreps.has(words[i].toLowerCase()) &&
+      prev &&
+      next &&
+      frenchPreps.has(word.toLowerCase()) &&
       // Check that surrounding words are capitalized place name parts (not abbreviations)
-      words[i - 1].length >= 3 &&
-      words[i + 1].length >= 3 &&
-      words[i - 1][0] === words[i - 1][0].toUpperCase() &&
-      words[i + 1][0] === words[i + 1][0].toUpperCase()
+      prev.length >= 3 &&
+      next.length >= 3 &&
+      prev[0] === prev[0]?.toUpperCase() &&
+      next[0] === next[0]?.toUpperCase()
     ) {
       // Connect: previous-prep-next
-      const prev = result.pop()!;
-      result.push(`${prev}-${words[i].toLowerCase()}-${words[i + 1]}`);
+      const prevResult = result.pop()!;
+      result.push(`${prevResult}-${word.toLowerCase()}-${next}`);
       i += 2;
     } else {
-      result.push(words[i]);
+      result.push(word);
       i++;
     }
   }

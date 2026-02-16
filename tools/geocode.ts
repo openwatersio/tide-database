@@ -33,9 +33,9 @@ export interface Place {
 export interface GeocodeResult {
   place: Place;
   distance: number; // km
-  country?: string;
-  continent?: string;
-  region?: string;
+  country?: string | undefined;
+  continent?: string | undefined;
+  region?: string | undefined;
 }
 
 export interface Geocoder {
@@ -156,30 +156,31 @@ export async function loadGeocoder(): Promise<Geocoder> {
 
   console.log(`Loaded ${places.length} places into geocoder`);
 
+  function near(
+    lat: number,
+    lon: number,
+    maxResults = 5,
+    maxDistance = 100,
+  ): GeocodeResult[] {
+    const ids = around(index, lon, lat, maxResults, maxDistance) as number[];
+    return ids.map((id) => {
+      const place = places[id];
+      if (!place) throw new Error(`Invalid place index: ${id}`);
+      return {
+        place,
+        distance: distance(lon, lat, place.longitude, place.latitude),
+        country: countryFromPlace(place),
+        continent: continentFromPlace(place),
+        region: regionFromPlace(place),
+      };
+    });
+  }
+
   return {
     nearest(lat: number, lon: number, maxDistance = 100): GeocodeResult | null {
-      const results = this.near(lat, lon, 1, maxDistance);
-      return results[0] ?? null;
+      return near(lat, lon, 1, maxDistance)[0] ?? null;
     },
-
-    near(
-      lat: number,
-      lon: number,
-      maxResults = 5,
-      maxDistance = 100,
-    ): GeocodeResult[] {
-      const ids = around(index, lon, lat, maxResults, maxDistance);
-      return ids.map((id) => {
-        const place = places[id]!;
-        return {
-          place,
-          distance: distance(lon, lat, place.longitude, place.latitude),
-          country: countryFromPlace(place),
-          continent: continentFromPlace(place),
-          region: regionFromPlace(place),
-        };
-      });
-    },
+    near,
   };
 }
 
