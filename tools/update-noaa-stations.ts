@@ -62,6 +62,7 @@ async function buildStation(meta: any): Promise<StationData> {
       commercial_use: true,
       url: "https://tidesandcurrents.noaa.gov/disclaimers.html",
     },
+    chart_datum: "MLLW",
   };
 
   if (meta.type == "S") {
@@ -103,7 +104,19 @@ async function buildStation(meta: any): Promise<StationData> {
       }
     }
 
+    const datums = {
+      ...(data.datums.LAT ? { LAT: data.datums.LAT } : {}),
+      ...(data.datums.HAT ? { HAT: data.datums.HAT } : {}),
+      // Some stations don't have all datums
+      ...(data.datums.datums
+        ? Object.fromEntries(
+            data.datums.datums.map((d: any) => [d.name, d.value]),
+          )
+        : {}),
+    };
+
     Object.assign(station, {
+      chart_datum: "MLLW" in datums ? "MLLW" : "STND",
       harmonic_constituents: data.harmonicConstituents.HarmonicConstituents.map(
         (h: any) => ({
           name: h.name,
@@ -111,16 +124,7 @@ async function buildStation(meta: any): Promise<StationData> {
           phase: h.phase_GMT,
         }),
       ),
-      datums: {
-        ...(data.datums.LAT ? { LAT: data.datums.LAT } : {}),
-        ...(data.datums.HAT ? { HAT: data.datums.HAT } : {}),
-        // Some stations don't have all datums
-        ...(data.datums.datums
-          ? Object.fromEntries(
-              data.datums.datums.map((d: any) => [d.name, d.value]),
-            )
-          : {}),
-      },
+      datums,
       disclaimers: (data.disclaimers.disclaimers ?? [])
         .map((d: any) => d.text)
         .join("\n"),

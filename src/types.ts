@@ -52,6 +52,9 @@ export interface StationData {
 
   datums: Record<string, number>;
 
+  // The chart datum key used as the vertical reference (e.g., "MLLW", "LAT")
+  chart_datum: string;
+
   // Epoch - the time period over which the harmonic constituents were computed
   epoch?: {
     start: string; // Date in YYYY-MM-DD format

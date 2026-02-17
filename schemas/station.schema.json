@@ -13,7 +13,8 @@
     "longitude",
     "timezone",
     "source",
-    "license"
+    "license",
+    "chart_datum"
   ],
   "additionalProperties": false,
   "$defs": {
@@ -201,6 +202,10 @@
         }
       },
       "additionalProperties": false
+    },
+    "chart_datum": {
+      "type": "string",
+      "description": "The chart datum key used as the vertical reference for this station (e.g., MLLW, LAT). Must match a key in the datums object."
     },
     "epoch": {
       "type": "object",

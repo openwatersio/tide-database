@@ -369,7 +369,9 @@ ${NUM_YEARS}`);
         lines.push(currentLine);
       }
     }
-    lines.push(`# datum: Mean Lower Low Water`);
+    // Determine chart datum for this station
+    const chartDatum = station.chart_datum ?? "MLLW";
+    lines.push(`# datum: ${chartDatum}`);
     lines.push(`# restriction: Public Domain`);
     lines.push(`# confidence: 10`);
     lines.push(`# !units: ${unitLabel(units)}`);
@@ -383,10 +385,10 @@ ${NUM_YEARS}`);
     // libtcd has a 30-byte tzfile limit (29 chars + null)
     lines.push(`0:00 ${tcdTimezone(station.timezone)}`);
 
-    // Datum offset Z₀: mean sea level above MLLW
+    // Datum offset Z₀: mean sea level above the station's chart datum
     const msl = station.datums?.["MSL"] ?? 0;
-    const mllw = station.datums?.["MLLW"] ?? 0;
-    const datumOffset = convertLength(msl - mllw, units);
+    const datumValue = station.datums?.[chartDatum] ?? 0;
+    const datumOffset = convertLength(msl - datumValue, units);
     lines.push(`${datumOffset.toFixed(4)} ${unitLabel(units)}`);
 
     // Build constituent map for this station
