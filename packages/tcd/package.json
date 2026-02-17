@@ -8,7 +8,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@neaps/tide-database": "*",
+    "@neaps/tide-database": "file:../..",
     "@neaps/tide-predictor": "*",
     "xmlbuilder2": "^4.0.3"
   }
