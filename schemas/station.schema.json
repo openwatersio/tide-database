@@ -13,14 +13,19 @@
     "longitude",
     "timezone",
     "source",
-    "license"
+    "license",
+    "chart_datum"
   ],
   "additionalProperties": false,
   "$defs": {
     "offsets": {
       "type": "object",
       "description": "Offsets for subordinate stations relative to a reference station",
-      "required": ["reference", "height", "time"],
+      "required": [
+        "reference",
+        "height",
+        "time"
+      ],
       "additionalProperties": false,
       "properties": {
         "reference": {
@@ -30,7 +35,11 @@
         "height": {
           "type": "object",
           "description": "Defines the values to add or multiply with water levels (depending on type)",
-          "required": ["high", "low", "type"],
+          "required": [
+            "high",
+            "low",
+            "type"
+          ],
           "additionalProperties": false,
           "properties": {
             "high": {
@@ -42,14 +51,20 @@
               "description": "Height offset/multiplier for low tide - if type is 'ratio', this is a multiplier; if 'fixed', this is an offset to add (can be negative)"
             },
             "type": {
-              "enum": ["ratio", "fixed"]
+              "enum": [
+                "ratio",
+                "fixed"
+              ]
             }
           }
         },
         "time": {
           "type": "object",
           "description": "Defines the time to add to when a high or low tide will occur",
-          "required": ["high", "low"],
+          "required": [
+            "high",
+            "low"
+          ],
           "additionalProperties": false,
           "properties": {
             "high": {
@@ -69,7 +84,9 @@
     "id": {
       "type": "string",
       "description": "Unique station ID for this database only, in the format of `source/id`.",
-      "examples": ["noaa/9414290"],
+      "examples": [
+        "noaa/9414290"
+      ],
       "minLength": 4
     },
     "name": {
@@ -100,7 +117,10 @@
     },
     "type": {
       "type": "string",
-      "enum": ["reference", "subordinate"]
+      "enum": [
+        "reference",
+        "subordinate"
+      ]
     },
     "latitude": {
       "type": "number",
@@ -113,7 +133,12 @@
     "source": {
       "type": "object",
       "description": "",
-      "required": ["name", "id", "published_harmonics", "url"],
+      "required": [
+        "name",
+        "id",
+        "published_harmonics",
+        "url"
+      ],
       "additionalProperties": true,
       "properties": {
         "name": {
@@ -121,7 +146,10 @@
           "name": "Name of the source, i.e. `NOAA`"
         },
         "id": {
-          "type": ["string", "number"],
+          "type": [
+            "string",
+            "number"
+          ],
           "description": "The identifier used by the source for this station."
         },
         "published_harmonics": {
@@ -138,7 +166,11 @@
     "license": {
       "type": "object",
       "description": "Defines the license and whatever restrictions are placed on use of the data.",
-      "required": ["type", "commercial_use", "url"],
+      "required": [
+        "type",
+        "commercial_use",
+        "url"
+      ],
       "additionalProperties": true,
       "properties": {
         "type": {
@@ -164,7 +196,11 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "amplitude", "phase"],
+        "required": [
+          "name",
+          "amplitude",
+          "phase"
+        ],
         "additionalProperties": false,
         "properties": {
           "name": {
@@ -209,7 +245,10 @@
     "epoch": {
       "type": "object",
       "description": "The time period over which the harmonic constituents were computed",
-      "required": ["start", "end"],
+      "required": [
+        "start",
+        "end"
+      ],
       "additionalProperties": false,
       "properties": {
         "start": {

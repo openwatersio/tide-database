@@ -25,6 +25,26 @@ stations.forEach((station) => {
         );
     });
 
+    test("has chart_datum", () => {
+      expect(
+        station.chart_datum,
+        `Station ${station.id} is missing chart_datum`,
+      ).toBeDefined();
+
+      const { datums } =
+        (station.type === "reference"
+          ? station
+          : stations.find((s) => s.id === station.offsets!.reference)) || {};
+
+      // 3 NOAA stations have empty datums, so we skip the check for those
+      if (datums && Object.keys(datums).length > 0) {
+        expect(
+          datums[station.chart_datum],
+          `Station ${station.id} missing chart_datum ${station.chart_datum}`,
+        ).toBeDefined();
+      }
+    });
+
     if (station.type === "subordinate") {
       test("has valid reference station", () => {
         const id = station.offsets!.reference;
