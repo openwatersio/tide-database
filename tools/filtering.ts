@@ -14,8 +14,7 @@ import type { StationData } from "../src/index.ts";
 export const SOURCE_PRIORITY: Record<string, number> = {
   // Tier 1: Highest priority - most reliable and current
   uhslc_fd: 1, // University of Hawaii Sea Level Center - Fast Delivery
-  cmems: 2, // Copernicus Marine Environment Monitoring Service
-  bodc: 3, // British Oceanographic Data Centre
+  bodc: 2, // British Oceanographic Data Centre
 
   // Tier 2: High quality national/regional services
   meds: 4, // Canadian Marine Environmental Data Service
@@ -37,8 +36,6 @@ export const SOURCE_PRIORITY: Record<string, number> = {
   eseas: 27,
   bfg: 28,
   icg: 29,
-  cv: 30,
-  uz: 31,
 
   // Tier 4: US regional sources
   usgs: 40,
@@ -65,12 +62,20 @@ export const SOURCE_PRIORITY: Record<string, number> = {
   da_mm: 95,
   gloss: 96,
 
-  // Tier 6: Lowest priority - often duplicates
+  // Tier 6: Non-commercial GESLA sources (research use only per GESLA license)
+  cmems: 97, // Copernicus Marine Environment Monitoring Service
+  cv: 97, // City of Venice
+  uz: 97, // University of Zagreb
+
+  // Tier 7: Lowest priority - often duplicates
   da_sat: 99, // Satellite-derived, often duplicates NOAA
 };
 
 /** Default priority for unknown sources */
 export const DEFAULT_PRIORITY = 50;
+
+/** GESLA sources that restrict commercial/consultancy use */
+export const NON_COMMERCIAL_SOURCES = ["cmems", "cv", "uz"];
 
 /**
  * Extract the source suffix from a TICON source ID

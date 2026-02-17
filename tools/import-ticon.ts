@@ -12,6 +12,7 @@ import {
   MIN_DISTANCE_TO_NOAA,
   MIN_DISTANCE_TICON,
   getSourceSuffix,
+  NON_COMMERCIAL_SOURCES,
 } from "./filtering.ts";
 import { cleanName } from "./name-cleanup.ts";
 import { loadGeocoder } from "./geocode.ts";
@@ -123,11 +124,21 @@ async function main() {
           id: rows[0].tide_gauge_name,
           published_harmonics: true,
         },
-        license: {
-          type: "cc-by-4.0",
-          commercial_use: true,
-          url: "https://creativecommons.org/licenses/by/4.0/",
-        },
+        license: NON_COMMERCIAL_SOURCES.includes(
+          getSourceSuffix(rows[0].tide_gauge_name),
+        )
+          ? {
+              type: "cc-by-nc-4.0",
+              commercial_use: false,
+              url: "https://creativecommons.org/licenses/by-nc/4.0/",
+              notes:
+                "Upstream GESLA data provider restricts commercial use. See https://gesla787883612.wordpress.com/license/",
+            }
+          : {
+              type: "cc-by-4.0",
+              commercial_use: true,
+              url: "https://creativecommons.org/licenses/by/4.0/",
+            },
         harmonic_constituents: rows.map((row) => ({
           name: row.con,
           amplitude: parseFloat(row.amp) / 100, // cm to m
