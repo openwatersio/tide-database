@@ -33,11 +33,7 @@ $ npm install @neaps/tide-database
 The package exports an array of all tide stations in the database:
 
 ```typescript
-import { constituents, stations } from "@neaps/tide-database";
-
-// Constituents is an array of all harmonic constituents used in the database with a description and speed.
-console.log("Total constituents:", constituents.length);
-console.log(constituents[0]);
+import { stations } from "@neaps/tide-database";
 
 // Stations is an array of all the files in `data/`
 console.log("Total stations:", stations.length);
@@ -73,6 +69,9 @@ Both functions take the following parameters:
 - `longitude`, `lon`, or `lng`: Longitude in decimal degrees.
 - `filter`: A function that takes a station and returns `true` to include it in results, or `false` to exclude it.
 - `maxDistance`: Maximum distance in kilometers to search for stations (default: `50` km).
+
+`near` also takes:
+
 - `maxResults`: Maximum number of results to return (default: `10`).
 
 ##### Full-text search
