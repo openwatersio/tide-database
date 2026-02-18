@@ -30,6 +30,15 @@ jobs:
       - name: Run tests
         run: npm run test
 
+      - name: Pack npm module
+        run: npm pack
+
+      - name: Upload npm build artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: npm-dist
+          path: "*.tgz"
+
   tcd:
     runs-on: ubuntu-latest
     steps:
@@ -52,6 +61,12 @@ jobs:
 
       - name: Run TCD validation tests
         run: npm run test -w tcd
+
+      - name: Upload TCD artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: tcd
+          path: packages/tcd/dist/
 
   lint:
     runs-on: ubuntu-latest
