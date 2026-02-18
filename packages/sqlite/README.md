@@ -2,7 +2,7 @@
 
 This package generates a [TideBase](./spec.md) file — an SQLite database containing all stations from the Neaps Tide Database with harmonic constituents, tidal datums, subordinate station offsets, and precomputed equilibrium arguments and node factors for tide prediction.
 
-TideBase is a modern, portable, and queryable database containing everything needed for tide prediction in an sqlite database.
+TideBase is a modern, portable, and queryable database containing everything needed for tide prediction in an SQLite database.
 
 ## Usage
 
