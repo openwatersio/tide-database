@@ -4,7 +4,12 @@ import { readFile, unlink } from "fs/promises";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { parseCSV, indexBy, groupBy } from "./util.ts";
-import { normalize, save, DATA_DIR } from "./station.ts";
+import {
+  normalize,
+  save,
+  DATA_DIR,
+  type PartialStationData,
+} from "./station.ts";
 import { computeDatums } from "./datum.ts";
 import {
   distance,
@@ -17,7 +22,6 @@ import {
 import { cleanName } from "./name-cleanup.ts";
 import { loadGeocoder } from "./geocode.ts";
 import { near } from "../dist/index.js";
-import type { StationData } from "../src/index.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const metaPath = join(__dirname, "..", "tmp", "TICON-4", "meta.csv");
@@ -62,12 +66,14 @@ function dayMonthYearToDate(date: string) {
   return new Date(Date.UTC(year, month - 1, day, 0, 0, 0));
 }
 
-function candidateId(c: StationData) {
+function candidateId(c: Candidate) {
   return `ticon/${c.source.id}`;
 }
 
 // Load geocoder
 const geocoder = await loadGeocoder();
+
+type Candidate = Omit<PartialStationData, "datums">;
 
 /**
  * Imports TICON-4 stations with integrated filtering.
@@ -85,7 +91,7 @@ async function main() {
     groupBy(parseCSV<TiconRow>(data), (r) => r.tide_gauge_name),
   );
 
-  const candidates: StationData[] = [];
+  const candidates: Candidate[] = [];
 
   for (const rows of groups) {
     if (!rows[0]) continue;
@@ -109,48 +115,45 @@ async function main() {
       region = geo.region;
     }
 
-    candidates.push(
-      normalize({
-        name,
-        ...(region ? { region } : {}),
-        country: rows[0].country,
-        latitude: lat,
-        longitude: lon,
-        type: "reference",
-        disclaimers: rows[0].record_quality,
-        source: {
-          name: "TICON-4",
-          url: "https://www.seanoe.org/data/00980/109129/",
-          id: rows[0].tide_gauge_name,
-          published_harmonics: true,
-        },
-        license: NON_COMMERCIAL_SOURCES.includes(
-          getSourceSuffix(rows[0].tide_gauge_name),
-        )
-          ? {
-              type: "cc-by-nc-4.0",
-              commercial_use: false,
-              url: "https://creativecommons.org/licenses/by-nc/4.0/",
-              notes:
-                "Upstream GESLA data provider restricts commercial use. See https://gesla787883612.wordpress.com/license/",
-            }
-          : {
-              type: "cc-by-4.0",
-              commercial_use: true,
-              url: "https://creativecommons.org/licenses/by/4.0/",
-            },
-        harmonic_constituents: rows.map((row) => ({
-          name: row.con,
-          amplitude: parseFloat(row.amp) / 100, // cm to m
-          phase: ((parseFloat(row.pha) % 360) + 360) % 360,
-        })),
-        datums: {},
-        epoch: {
-          start: epochStart.toISOString().split("T")[0]!,
-          end: epochEnd.toISOString().split("T")[0]!,
-        },
-      }),
-    );
+    candidates.push({
+      name,
+      ...(region ? { region } : {}),
+      country: rows[0].country,
+      latitude: lat,
+      longitude: lon,
+      type: "reference",
+      disclaimers: rows[0].record_quality,
+      source: {
+        name: "TICON-4",
+        url: "https://www.seanoe.org/data/00980/109129/",
+        id: rows[0].tide_gauge_name,
+        published_harmonics: true,
+      },
+      license: NON_COMMERCIAL_SOURCES.includes(
+        getSourceSuffix(rows[0].tide_gauge_name),
+      )
+        ? {
+            type: "cc-by-nc-4.0",
+            commercial_use: false,
+            url: "https://creativecommons.org/licenses/by-nc/4.0/",
+            notes:
+              "Upstream GESLA data provider restricts commercial use. See https://gesla787883612.wordpress.com/license/",
+          }
+        : {
+            type: "cc-by-4.0",
+            commercial_use: true,
+            url: "https://creativecommons.org/licenses/by/4.0/",
+          },
+      harmonic_constituents: rows.map((row) => ({
+        name: row.con,
+        amplitude: parseFloat(row.amp) / 100, // cm to m
+        phase: ((parseFloat(row.pha) % 360) + 360) % 360,
+      })),
+      epoch: {
+        start: epochStart.toISOString().split("T")[0]!,
+        end: epochEnd.toISOString().split("T")[0]!,
+      },
+    });
   }
 
   console.log(`Total TICON groups: ${groups.length}`);
@@ -254,7 +257,7 @@ async function main() {
     const id = candidateId(c);
     if (removed.has(id) || processed.has(id)) continue;
 
-    const nearby: StationData[] = [];
+    const nearby: Candidate[] = [];
     for (const other of candidates) {
       const otherId = candidateId(other);
       if (otherId === id || removed.has(otherId) || processed.has(otherId))
@@ -330,6 +333,7 @@ async function main() {
 
   for (const c of surviving) {
     const id = candidateId(c);
+
     try {
       let datums: Record<string, number> | undefined;
       let epoch = c.epoch;
@@ -361,7 +365,7 @@ async function main() {
         };
       }
 
-      await save("ticon", { ...c, datums, epoch: epoch! });
+      await save("ticon", normalize({ ...c, datums, epoch: epoch! }));
       saved++;
       process.stdout.write(".");
       if (saved % 100 === 0) {

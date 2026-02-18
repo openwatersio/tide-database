@@ -52,9 +52,7 @@ export function getChartDatum(
   country: string,
   availableDatums: Record<string, number>,
 ): string {
-  const lookup =
-    countryLookup.byCountry(country) || countryLookup.byIso(country);
-  const preferred = CHART_DATUMS[lookup?.country ?? ""];
+  const preferred = CHART_DATUMS[country];
   return preferred && preferred in availableDatums ? preferred : "LAT";
 }
 

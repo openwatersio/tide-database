@@ -112,6 +112,8 @@ export function epochYears(epoch?: { start: string; end: string }): number {
   return (end.getTime() - start.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
 }
 
+type CompareCandidate = Pick<StationData, "source" | "disclaimers" | "epoch">;
+
 /**
  * Compare two stations for priority, considering source quality, data quality,
  * and observation period length.
@@ -125,8 +127,8 @@ export function epochYears(epoch?: { start: string; end: string }): number {
  * 4. Tie-breaker: alphabetically by source ID
  */
 export function compareStationPriority(
-  station1: StationData,
-  station2: StationData,
+  station1: CompareCandidate,
+  station2: CompareCandidate,
 ): number {
   // Rule 1: Quality issues - stations without issues have higher priority
   const issues1 = hasQualityIssues(station1.disclaimers);
