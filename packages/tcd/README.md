@@ -1,15 +1,25 @@
 # Neaps Tide Database - TCD (XTide Harmonics File)
 
-This package generates an [XTide](https://flaterco.com/xtide/)-compatible TCD (Tide Constituent Database) binary file of the Neaps Tide Database. The TCD file can be used with XTide and any software that reads the [libtcd](https://flaterco.com/xtide/libtcd.html) format.
+This package generates a TCD (Tide Constituent Database) binary file of the Neaps Tide Database. The TCD file can be used with [XTide](https://flaterco.com/xtide/), [OpenCPN](https://opencpn.org), and any software that reads the [libtcd](https://flaterco.com/xtide/libtcd.html) format.
 
 The TCD file includes all stations in the tide database, and all tidal constituents present in the station data, resolved through the constituent list from [@neaps/tide-predictor](https://github.com/openwatersio/neaps/tree/main/packages/tide-predictor#readme).
 
 ## Usage
 
-Download the latest `neaps-YYYYMMDD.tcd` from [GitHub Releases](https://github.com/openwatersio/tide-database/releases) and point XTide at it:
+Download the latest `neaps-YYYYMMDD.tcd` from [GitHub Releases](https://github.com/openwatersio/tide-database/releases).
+
+### OpenCPN
+
+Open the OpenCPN options, navigate to the "Charts" tab, and add the TCD file as a "Tides & Currents" data source. See the [OpenCPN manual](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn%3Amanual\_basic%3Aset\_options%3Acharts%3Atides-currents) for more details.
+
+![screenshot of tide stations in OpenCPN](https://github.com/user-attachments/assets/6e57f4fd-0dad-4aae-b1db-fe638915c225)
+
+### XTide
+
+To use the TCD file with XTide, set the `HFILE_PATH` environment variable to point to the downloaded TCD file:
 
 ```sh
-export HFILE_PATH=/path/to/neaps-20260215.tcd
+export HFILE_PATH=/path/to/neaps-*.tcd
 ```
 
 Launch the XTide graphical interface:
@@ -18,7 +28,7 @@ Launch the XTide graphical interface:
 xtide
 ```
 
-### Command-line usage
+#### Command-line usage
 
 List all stations:
 
@@ -46,21 +56,8 @@ tide -l "BOSTON, MA, United States" -b "2026-01-01 00:00" -e "2026-01-08 00:00" 
 
 ## Contributing
 
-Build the TCD file with:
-
-```shell
-npm run build
-```
-
-This runs [./build.ts](./build.ts) and produces `dist/harmonics.tcd`.
-
-### Testing
-
-The test suite compares XTide predictions from the built TCD against direct harmonic calculations from `@neaps/tide-predictor`, validating that high/low tide times match within 5 minutes (mean) and heights within 5 cm (mean) for a set of representative stations.
-
-```shell
-npm test
-```
+* Build the TCD file with: `npm run build`
+* Run tests with: `npm test`
 
 ## References
 
