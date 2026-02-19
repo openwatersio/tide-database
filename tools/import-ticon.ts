@@ -16,6 +16,7 @@ import {
   compareStationPriority,
   MIN_DISTANCE_TO_NOAA,
   MIN_DISTANCE_TICON,
+  MIN_TIDAL_RANGE,
   getSourceSuffix,
   NON_COMMERCIAL_SOURCES,
 } from "./filtering.ts";
@@ -330,6 +331,7 @@ async function main() {
   let saved = 0;
   let reused = 0;
   let errors = 0;
+  let lowRangeCount = 0;
 
   for (const c of surviving) {
     const id = candidateId(c);
@@ -365,6 +367,17 @@ async function main() {
         };
       }
 
+      const range = (datums["MHW"] ?? 0) - (datums["MLW"] ?? 0);
+      if (range < MIN_TIDAL_RANGE) {
+        lowRangeCount++;
+        try {
+          await unlink(join(DATA_DIR, `${id}.json`));
+        } catch {
+          // File may not exist
+        }
+        continue;
+      }
+
       await save("ticon", normalize({ ...c, datums, epoch: epoch! }));
       saved++;
       process.stdout.write(".");
@@ -378,6 +391,9 @@ async function main() {
   }
 
   console.log(`\n\nDone. Saved ${saved} stations.`);
+  console.log(
+    `Skipped ${lowRangeCount} stations with tidal range < ${MIN_TIDAL_RANGE * 100}cm (MHW-MLW).`,
+  );
   if (reused > 0) {
     console.log(`Reused existing datums: ${reused}`);
   }

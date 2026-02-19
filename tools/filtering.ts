@@ -186,3 +186,6 @@ export const MIN_DISTANCE_TO_NOAA = 0.1; // 100 meters
 
 /** Minimum distance between TICON stations (in km) */
 export const MIN_DISTANCE_TICON = 0.05; // 50 meters
+
+/** Minimum tidal range (MHW - MLW) to consider a station useful for tide prediction */
+export const MIN_TIDAL_RANGE = 0.02; // 2cm
