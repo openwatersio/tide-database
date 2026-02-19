@@ -170,7 +170,9 @@ function computeDatumsFromTimeline(
   return {
     MHHW: toFixed(mean(higherHighs), 3),
     MHW: toFixed(mhw, 3),
-    MSL: toFixed(mean(heights), 3),
+    // MSL is the average of hourly heights over the epoch, which is zero or close to it
+    // when synthesizing from constituents.
+    MSL: 0,
     MTL: toFixed((mhw + mlw) / 2, 3),
     MLW: toFixed(mlw, 3),
     MLLW: toFixed(mean(lowerLows), 3),
