@@ -28,7 +28,6 @@ export const SOURCE_PRIORITY: Record<string, number> = {
   // Tier 3: Regional services
   wsv: 20,
   rws: 21,
-  rws_hist: 22,
   fmi: 23,
   dmi: 24,
   ispra: 25,
