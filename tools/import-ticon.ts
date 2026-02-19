@@ -165,18 +165,26 @@ async function main() {
 
   const removed = new Set<string>();
 
-  // Step 1a: Remove NOAA-sourced TICON candidates (we have original NOAA data)
-  console.log("Step 1a: Removing NOAA-sourced TICON candidates...");
-  let noaaSourceCount = 0;
+  // Step 1a: Remove superseded source variants (we have better data elsewhere)
+  //   - noaa: we have the original NOAA dataset
+  //   - rws_hist: historical Dutch Rijkswaterstaat stations, many in areas now cut off
+  //     from the sea by Delta Works closures; active stations covered by rws/cmems
+  const REMOVED_SOURCES = ["noaa", "rws_hist"];
+  console.log(
+    `Step 1a: Removing superseded sources (${REMOVED_SOURCES.join(", ")})...`,
+  );
+  let removedSourceCount = 0;
 
   for (const c of candidates) {
-    if (getSourceSuffix(c.source.id) === "noaa") {
+    if (REMOVED_SOURCES.includes(getSourceSuffix(c.source.id))) {
       removed.add(candidateId(c));
-      noaaSourceCount++;
+      removedSourceCount++;
     }
   }
 
-  console.log(`  Removed ${noaaSourceCount} NOAA-sourced candidates\n`);
+  console.log(
+    `  Removed ${removedSourceCount} candidates from superseded sources\n`,
+  );
 
   // Step 1b: Remove candidates within 100m of NOAA stations
   console.log(
@@ -301,7 +309,7 @@ async function main() {
 
   console.log("=== Filter Summary ===\n");
   console.log(`Total removed: ${removed.size}`);
-  console.log(`  - NOAA-sourced: ${noaaSourceCount}`);
+  console.log(`  - Superseded sources: ${removedSourceCount}`);
   console.log(`  - Near NOAA: ${nearNoaaCount}`);
   console.log(`  - Quality issues: ${qualityRemovals}`);
   console.log(`  - Duplicates: ${duplicateCount}`);
