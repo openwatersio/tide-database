@@ -7,7 +7,7 @@ import KDBush from "kdbush";
  *   import { createGeoIndex } from "./search-index.js" with { type: "macro" };
  */
 export async function createGeoIndex() {
-  const { stations } = await import("../stations.js");
+  const { allStations: stations } = await import("../stations.js");
 
   const index = new KDBush(stations.length);
 

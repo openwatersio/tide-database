@@ -4,8 +4,8 @@ import tidePredictor, {
 } from "@neaps/tide-predictor";
 
 export interface EpochSpec {
-  start?: Date;
-  end?: Date;
+  start: Date;
+  end: Date;
 }
 
 export type Datums = Record<string, number>;
@@ -48,7 +48,7 @@ const NINETEEN_YEARS = 19 * YEAR_MS;
 export function resolveEpoch({
   end = new Date(),
   start = new Date(end.getTime() - NINETEEN_YEARS),
-}: EpochSpec): {
+}: Partial<EpochSpec>): {
   start: Date;
   end: Date;
   lengthYears: number;
@@ -186,7 +186,7 @@ function computeDatumsFromTimeline(
  */
 export function computeDatums(
   constituents: HarmonicConstituent[],
-  epochSpec: EpochSpec,
+  epochSpec: Partial<EpochSpec>,
   {
     stepHours = 1,
     tidalDayHours = 24.8333333,

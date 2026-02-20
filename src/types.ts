@@ -56,7 +56,7 @@ export interface StationData {
   chart_datum: string;
 
   // Epoch - the time period over which the harmonic constituents were computed
-  epoch?: {
+  epoch: {
     start: string; // Date in YYYY-MM-DD format
     end: string; // Date in YYYY-MM-DD format
   };

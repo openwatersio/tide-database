@@ -5,6 +5,7 @@ import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { stations } from "../src/index.js";
 import { near } from "../src/search/index.js";
+import { MIN_TIDAL_RANGE } from "../tools/filtering.js";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const SCHEMA_PATH = join(ROOT, "schemas", "station.schema.json");
@@ -45,7 +46,34 @@ stations.forEach((station) => {
       }
     });
 
-    if (station.type === "subordinate") {
+    if (station.type === "reference") {
+      test("has logically ordered datums", () => {
+        const datums = station.datums;
+        if (!datums || Object.keys(datums).length === 0) return;
+
+        // MHHW/MHW and MLW/MLLW are diurnal-pair averages that converge at weakly
+        // diurnal stations, so their relative ordering is not enforced here.
+        // MSL and MTL can appear in either order depending on tidal asymmetry,
+        // so they are checked independently against their shared bounds.
+        const CHAINS = [
+          ["MHW", "MSL", "MLW", "LAT"],
+          ["MHW", "MTL", "MLW"],
+        ] as const;
+        for (const chain of CHAINS) {
+          for (let i = 0; i < chain.length - 1; i++) {
+            const higher = chain[i]!;
+            const lower = chain[i + 1]!;
+            const h = datums[higher],
+              l = datums[lower];
+            if (h === undefined || l === undefined) continue;
+            expect(
+              h,
+              `Station ${station.id}: ${higher} (${h.toFixed(3)}m) should be >= ${lower} (${l.toFixed(3)}m)`,
+            ).toBeGreaterThanOrEqual(l);
+          }
+        }
+      });
+    } else if (station.type === "subordinate") {
       test("has valid reference station", () => {
         const id = station.offsets!.reference;
         const reference = stations.find((s) => s.id === id);
@@ -68,7 +96,7 @@ stations.forEach((station) => {
           throw new Error(
             `This TICON station has duplicate/very close coordinates with ${other.id}: ` +
               `${(dist * 1000).toFixed(0)}m apart. ` +
-              `Run tools/deduplicate-stations.ts to remove duplicates.`,
+              `Run tools/import-ticon.ts to re-filter.`,
           );
         }
       });
@@ -89,7 +117,7 @@ stations.forEach((station) => {
           throw new Error(
             `This TICON station is ${(dist * 1000).toFixed(0)}m from NOAA station ${noaa.id}. ` +
               `Minimum distance is ${MIN_DISTANCE * 1000}m. ` +
-              `Run tools/deduplicate-stations.ts to remove duplicates.`,
+              `Run tools/import-ticon.ts to re-filter.`,
           );
         }
       });
@@ -110,9 +138,22 @@ stations.forEach((station) => {
           throw new Error(
             `This TICON station is only ${(dist * 1000).toFixed(0)}m from ${other.id} ` +
               `(minimum: ${MIN_DISTANCE * 1000}m). ` +
-              `Run tools/deduplicate-stations.ts to remove duplicates.`,
+              `Run tools/import-ticon.ts to re-filter.`,
           );
         }
+      });
+
+      test("has tidal range >= 2cm (MHW - MLW)", () => {
+        if (!station.datums) return;
+        const mhw = station.datums["MHW"];
+        const mlw = station.datums["MLW"];
+        if (mhw === undefined || mlw === undefined) return;
+        const range = mhw - mlw;
+        expect(
+          range,
+          `Station ${station.id} has negligible tidal range: ${(range * 100).toFixed(1)}cm (MHW-MLW). ` +
+            `Run tools/import-ticon.ts to re-filter.`,
+        ).toBeGreaterThanOrEqual(MIN_TIDAL_RANGE);
       });
     }
   });

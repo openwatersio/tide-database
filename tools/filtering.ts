@@ -111,52 +111,6 @@ export function epochYears(epoch?: { start: string; end: string }): number {
   return (end.getTime() - start.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
 }
 
-type CompareCandidate = Pick<StationData, "source" | "disclaimers" | "epoch">;
-
-/**
- * Compare two stations for priority, considering source quality, data quality,
- * and observation period length.
- *
- * Returns negative if station1 has higher priority, positive if station2 has higher priority
- *
- * Priority rules (in order):
- * 1. Stations without quality issues are preferred over those with issues
- * 2. Prefer longer observation period (more years)
- * 3. Among stations with same record length, prefer higher priority source
- * 4. Tie-breaker: alphabetically by source ID
- */
-export function compareStationPriority(
-  station1: CompareCandidate,
-  station2: CompareCandidate,
-): number {
-  // Rule 1: Quality issues - stations without issues have higher priority
-  const issues1 = hasQualityIssues(station1.disclaimers);
-  const issues2 = hasQualityIssues(station2.disclaimers);
-
-  if (issues1 !== issues2) {
-    return issues1 ? 1 : -1; // Station without issues wins
-  }
-
-  // Rule 2: Longer observation period wins
-  const years1 = epochYears(station1.epoch);
-  const years2 = epochYears(station2.epoch);
-
-  if (years1 !== years2) {
-    return years2 - years1; // More years wins (reverse order)
-  }
-
-  // Rule 3: Source priority
-  const priority1 = getSourcePriority(station1.source.id);
-  const priority2 = getSourcePriority(station2.source.id);
-
-  if (priority1 !== priority2) {
-    return priority1 - priority2; // Lower priority number wins
-  }
-
-  // Rule 4: Alphabetical tie-breaker
-  return station1.source.id.localeCompare(station2.source.id);
-}
-
 /**
  * Calculate distance between two points using Haversine formula
  * @returns Distance in kilometers

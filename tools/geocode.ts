@@ -154,8 +154,6 @@ export async function loadGeocoder(): Promise<Geocoder> {
   }
   index.finish();
 
-  console.log(`Loaded ${places.length} places into geocoder`);
-
   function near(
     lat: number,
     lon: number,
