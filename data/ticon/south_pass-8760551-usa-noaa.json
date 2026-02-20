@@ -1,0 +1,288 @@
+{
+  "name": "South Pass",
+  "region": "LA",
+  "country": "United States",
+  "continent": "Americas",
+  "latitude": 28.99,
+  "longitude": -89.14,
+  "timezone": "America/Chicago",
+  "source": {
+    "name": "TICON-4",
+    "url": "https://www.seanoe.org/data/00980/109129/",
+    "id": "south_pass-8760551-usa-noaa",
+    "published_harmonics": true
+  },
+  "license": {
+    "type": "cc-by-4.0",
+    "commercial_use": true,
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "disclaimers": "No obvious issues",
+  "datums": {
+    "MHHW": 0.055,
+    "MHW": 0.053,
+    "MSL": 0,
+    "MTL": 0.021,
+    "MLW": -0.01,
+    "MLLW": -0.013,
+    "LAT": -0.487
+  },
+  "chart_datum": "MLLW",
+  "type": "reference",
+  "harmonic_constituents": [
+    {
+      "name": "M2",
+      "amplitude": 0.017468440000000002,
+      "phase": 113.60915299999999
+    },
+    {
+      "name": "N2",
+      "amplitude": 0.0045643,
+      "phase": 133.72103600000003
+    },
+    {
+      "name": "S2",
+      "amplitude": 0.01053913,
+      "phase": 106.60691700000001
+    },
+    {
+      "name": "K2",
+      "amplitude": 0.00238297,
+      "phase": 93.10799400000002
+    },
+    {
+      "name": "2N2",
+      "amplitude": 0.0008326799999999999,
+      "phase": 128.146483
+    },
+    {
+      "name": "S1",
+      "amplitude": 0.00514551,
+      "phase": 349.353371
+    },
+    {
+      "name": "K1",
+      "amplitude": 0.13745825,
+      "phase": 18.39120200000002
+    },
+    {
+      "name": "P1",
+      "amplitude": 0.04220736,
+      "phase": 20.421987
+    },
+    {
+      "name": "O1",
+      "amplitude": 0.13362005999999998,
+      "phase": 10.458117000000016
+    },
+    {
+      "name": "Q1",
+      "amplitude": 0.03104164,
+      "phase": 355.583438
+    },
+    {
+      "name": "M1",
+      "amplitude": 0.00569364,
+      "phase": 297.671497
+    },
+    {
+      "name": "M4",
+      "amplitude": 0.0027779,
+      "phase": 318.04328499999997
+    },
+    {
+      "name": "MM",
+      "amplitude": 0.00899782,
+      "phase": 341.917823
+    },
+    {
+      "name": "MF",
+      "amplitude": 0.006777490000000001,
+      "phase": 13.36947299999997
+    },
+    {
+      "name": "SA",
+      "amplitude": 0.06652987,
+      "phase": 169.690746
+    },
+    {
+      "name": "SSA",
+      "amplitude": 0.05843223,
+      "phase": 44.318352000000004
+    },
+    {
+      "name": "T2",
+      "amplitude": 0.00087667,
+      "phase": 99.86614900000001
+    },
+    {
+      "name": "J1",
+      "amplitude": 0.0070421,
+      "phase": 22.15396199999998
+    },
+    {
+      "name": "L2",
+      "amplitude": 0.0002986,
+      "phase": 42.39700800000003
+    },
+    {
+      "name": "R2",
+      "amplitude": 0.00021219999999999998,
+      "phase": 333.102372
+    },
+    {
+      "name": "2Q1",
+      "amplitude": 0.0040374799999999995,
+      "phase": 332.65608
+    },
+    {
+      "name": "MSF",
+      "amplitude": 0.00226357,
+      "phase": 302.03848
+    },
+    {
+      "name": "MSQM",
+      "amplitude": 0.0012569,
+      "phase": 241.148257
+    },
+    {
+      "name": "EP2",
+      "amplitude": 0.00034690999999999997,
+      "phase": 79.63356899999997
+    },
+    {
+      "name": "M3",
+      "amplitude": 0.00014493,
+      "phase": 131.26223400000003
+    },
+    {
+      "name": "MU2",
+      "amplitude": 0.00119646,
+      "phase": 85.41815600000001
+    },
+    {
+      "name": "MTM",
+      "amplitude": 0.00423597,
+      "phase": 26.85863999999998
+    },
+    {
+      "name": "NU2",
+      "amplitude": 0.00057185,
+      "phase": 147.72235799999999
+    },
+    {
+      "name": "LAMBDA2",
+      "amplitude": 0.00023935999999999999,
+      "phase": 334.897293
+    },
+    {
+      "name": "MN4",
+      "amplitude": 0.00131989,
+      "phase": 284.00717299999997
+    },
+    {
+      "name": "MS4",
+      "amplitude": 0.00126815,
+      "phase": 326.713729
+    },
+    {
+      "name": "MKS2",
+      "amplitude": 0.00011227,
+      "phase": 281.875504
+    },
+    {
+      "name": "N4",
+      "amplitude": 0.00036705,
+      "phase": 235.284332
+    },
+    {
+      "name": "M6",
+      "amplitude": 0.00039222,
+      "phase": 303.903676
+    },
+    {
+      "name": "M8",
+      "amplitude": 0.00003675,
+      "phase": 192.56189
+    },
+    {
+      "name": "S4",
+      "amplitude": 0.0008337700000000001,
+      "phase": 62.38546000000002
+    },
+    {
+      "name": "OO1",
+      "amplitude": 0.00467121,
+      "phase": 28.61945400000002
+    },
+    {
+      "name": "S3",
+      "amplitude": 0.00042539,
+      "phase": 290.496978
+    },
+    {
+      "name": "MA2",
+      "amplitude": 0.0009615100000000001,
+      "phase": 176.21315300000003
+    },
+    {
+      "name": "MB2",
+      "amplitude": 0.00030118,
+      "phase": 138.523412
+    },
+    {
+      "name": "T3",
+      "amplitude": 0.000057270000000000006,
+      "phase": 244.978849
+    },
+    {
+      "name": "R3",
+      "amplitude": 0.00027804,
+      "phase": 335.62987499999997
+    },
+    {
+      "name": "RHO1",
+      "amplitude": 0.00667286,
+      "phase": 2.6362780000000043
+    },
+    {
+      "name": "SGM",
+      "amplitude": 0.00456715,
+      "phase": 163.019411
+    },
+    {
+      "name": "3L2",
+      "amplitude": 0.00023831000000000001,
+      "phase": 157.65056300000003
+    },
+    {
+      "name": "3N2",
+      "amplitude": 0.00020054,
+      "phase": 158.24588399999993
+    },
+    {
+      "name": "2SM2",
+      "amplitude": 0.00006177,
+      "phase": 277.590866
+    },
+    {
+      "name": "2MS6",
+      "amplitude": 0.00017163,
+      "phase": 281.13374
+    },
+    {
+      "name": "2MK5",
+      "amplitude": 0.0001132,
+      "phase": 297.021612
+    },
+    {
+      "name": "2MO5",
+      "amplitude": 0.00009931000000000001,
+      "phase": 128.521436
+    }
+  ],
+  "epoch": {
+    "start": "1980-08-30",
+    "end": "1999-08-31"
+  }
+}
