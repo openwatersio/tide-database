@@ -10,9 +10,11 @@ export type Position = Latitude & Longitude;
 type Latitude = { latitude: number } | { lat: number };
 type Longitude = { longitude: number } | { lon: number } | { lng: number };
 
+export type Filter = (station: Station) => boolean;
+
 export type NearestOptions = Position & {
   maxDistance?: number;
-  filter?: (station: Station) => boolean;
+  filter?: Filter;
 };
 
 export type NearOptions = NearestOptions & {
@@ -20,7 +22,7 @@ export type NearOptions = NearestOptions & {
 };
 
 export type TextSearchOptions = {
-  filter?: (station: Station) => boolean;
+  filter?: Filter;
   maxResults?: number;
 };
 
@@ -64,6 +66,21 @@ export function near({
 export function nearest(options: NearestOptions): StationWithDistance | null {
   const results = near({ ...options, maxResults: 1 });
   return results[0] ?? null;
+}
+
+/**
+ * Find stations within a bounding box.
+ */
+export function bbox(
+  minLon: number,
+  minLat: number,
+  maxLon: number,
+  maxLat: number,
+  filter?: Filter,
+): Station[] {
+  const ids: number[] = geoIndex.range(minLon, minLat, maxLon, maxLat);
+  const results = ids.map((id) => stations[id]!);
+  return filter ? results.filter(filter) : results;
 }
 
 export function positionToPoint(options: Position): [number, number] {
