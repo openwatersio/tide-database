@@ -34,7 +34,7 @@ jobs:
         run: npm pack
 
       - name: Upload npm build artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: npm-dist
           path: "*.tgz"
@@ -63,7 +63,7 @@ jobs:
         run: npm run test -w tcd
 
       - name: Upload TCD artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: tcd
           path: packages/tcd/dist/
