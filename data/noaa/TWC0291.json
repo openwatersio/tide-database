@@ -1,0 +1,34 @@
+{
+  "name": "Caleta Aeolian, Isla Baltra",
+  "region": "Galapagos",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -0.43299999833106995,
+  "longitude": -90.28299713134766,
+  "timezone": "Pacific/Galapagos",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0291",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0291"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9992401",
+    "height": {
+      "type": "ratio",
+      "high": 1.02,
+      "low": 1
+    },
+    "time": {
+      "high": -2,
+      "low": 0
+    }
+  }
+}

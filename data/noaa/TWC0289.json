@@ -1,0 +1,34 @@
+{
+  "name": "Bahia de Perry, Isla Isabela",
+  "region": "Galapagos",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -0.5669999718666077,
+  "longitude": -90.96700286865234,
+  "timezone": "Pacific/Galapagos",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0289",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0289"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9992401",
+    "height": {
+      "type": "ratio",
+      "high": 0.96,
+      "low": 1
+    },
+    "time": {
+      "high": -6,
+      "low": -16
+    }
+  }
+}

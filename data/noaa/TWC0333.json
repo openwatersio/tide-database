@@ -1,0 +1,34 @@
+{
+  "name": "Bahia Honda",
+  "region": "Veraguas Province",
+  "country": "Panama",
+  "continent": "Americas",
+  "latitude": 7.767000198364258,
+  "longitude": -81.51699829101562,
+  "timezone": "America/Panama",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0333",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0333"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9812501",
+    "height": {
+      "type": "ratio",
+      "high": 0.65,
+      "low": 0.63
+    },
+    "time": {
+      "high": -4,
+      "low": -3
+    }
+  }
+}

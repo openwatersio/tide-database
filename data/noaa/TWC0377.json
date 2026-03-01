@@ -1,0 +1,34 @@
+{
+  "name": "Acapulco",
+  "region": "Guerrero",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 16.83300018310547,
+  "longitude": -99.91699981689453,
+  "timezone": "America/Mexico_City",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0377",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0377"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9504651",
+    "height": {
+      "type": "fixed",
+      "high": -0.58,
+      "low": 0.03
+    },
+    "time": {
+      "high": -25,
+      "low": -24
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Progreso",
+  "region": "Yucatan",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 21.299999237060547,
+  "longitude": -89.66670227050781,
+  "timezone": "America/Merida",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "9503151",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9503151"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9500966",
+    "height": {
+      "type": "ratio",
+      "high": 1.29,
+      "low": 1.29
+    },
+    "time": {
+      "high": 79,
+      "low": 23
+    }
+  }
+}

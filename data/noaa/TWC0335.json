@@ -1,0 +1,34 @@
+{
+  "name": "Isla Parida",
+  "region": "Chiriqui Province",
+  "country": "Panama",
+  "continent": "Americas",
+  "latitude": 8.133000373840332,
+  "longitude": -82.31700134277344,
+  "timezone": "America/Panama",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0335",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0335"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9812501",
+    "height": {
+      "type": "ratio",
+      "high": 0.63,
+      "low": 0.47
+    },
+    "time": {
+      "high": 0,
+      "low": -9
+    }
+  }
+}

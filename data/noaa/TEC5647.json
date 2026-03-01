@@ -1,0 +1,34 @@
+{
+  "name": "Belize City",
+  "region": "Belize District",
+  "country": "Belize",
+  "continent": "Americas",
+  "latitude": 17.5,
+  "longitude": -88.18299865722656,
+  "timezone": "America/Belize",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TEC5647",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC5647"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8724580",
+    "height": {
+      "type": "ratio",
+      "high": 0.46,
+      "low": 0.46
+    },
+    "time": {
+      "high": 14,
+      "low": 47
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Punta Gorda",
+  "region": "Toledo District",
+  "country": "Belize",
+  "continent": "Americas",
+  "latitude": 16.100000381469727,
+  "longitude": -88.81670379638672,
+  "timezone": "America/Belize",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TEC5649",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC5649"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8724580",
+    "height": {
+      "type": "ratio",
+      "high": 0.46,
+      "low": 0.46
+    },
+    "time": {
+      "high": -27,
+      "low": 30
+    }
+  }
+}

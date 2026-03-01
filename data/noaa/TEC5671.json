@@ -1,0 +1,34 @@
+{
+  "name": "Bluefields Lagoon Entrance",
+  "region": "South Caribbean Coast",
+  "country": "Nicaragua",
+  "continent": "Americas",
+  "latitude": 12,
+  "longitude": -83.69999694824219,
+  "timezone": "America/Managua",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TEC5671",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC5671"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8638610",
+    "height": {
+      "type": "ratio",
+      "high": 0.28,
+      "low": 0.28
+    },
+    "time": {
+      "high": 234,
+      "low": 207
+    }
+  }
+}

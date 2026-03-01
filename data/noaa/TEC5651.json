@@ -1,0 +1,34 @@
+{
+  "name": "Rio Dulce entrance",
+  "region": "Izabal Department",
+  "country": "Guatemala",
+  "continent": "Americas",
+  "latitude": 15.83329963684082,
+  "longitude": -88.81670379638672,
+  "timezone": "America/Guatemala",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TEC5651",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC5651"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8724580",
+    "height": {
+      "type": "ratio",
+      "high": 0.92,
+      "low": 0.92
+    },
+    "time": {
+      "high": -85,
+      "low": -95
+    }
+  }
+}

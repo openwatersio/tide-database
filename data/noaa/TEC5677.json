@@ -1,0 +1,34 @@
+{
+  "name": "Boca del Toro, Almirante Bay",
+  "region": "Bocas del Toro Province",
+  "country": "Panama",
+  "continent": "Americas",
+  "latitude": 9.350000381469727,
+  "longitude": -82.25,
+  "timezone": "America/Panama",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TEC5677",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC5677"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9817583",
+    "height": {
+      "type": "ratio",
+      "high": 1.14,
+      "low": 1.14
+    },
+    "time": {
+      "high": 21,
+      "low": 24
+    }
+  }
+}

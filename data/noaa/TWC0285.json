@@ -1,0 +1,34 @@
+{
+  "name": "Bahia Isabela, Isla Isabela",
+  "region": "Galapagos",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -0.6000000238418579,
+  "longitude": -91.08300018310547,
+  "timezone": "Pacific/Galapagos",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0285",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0285"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9992401",
+    "height": {
+      "type": "ratio",
+      "high": 0.8,
+      "low": 0.83
+    },
+    "time": {
+      "high": -6,
+      "low": -6
+    }
+  }
+}

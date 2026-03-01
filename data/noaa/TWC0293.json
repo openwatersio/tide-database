@@ -1,0 +1,33 @@
+{
+  "name": "Bahia de Darwin, Isla Genovesa",
+  "country": "United States",
+  "continent": "Americas",
+  "latitude": 0.31700000166893005,
+  "longitude": -89.94999694824219,
+  "timezone": "Pacific/Galapagos",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0293",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0293"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9992401",
+    "height": {
+      "type": "ratio",
+      "high": 1.06,
+      "low": 1
+    },
+    "time": {
+      "high": -7,
+      "low": -5
+    }
+  }
+}

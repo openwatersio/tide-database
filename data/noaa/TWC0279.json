@@ -1,0 +1,33 @@
+{
+  "name": "San Lorenzo",
+  "country": "United States",
+  "continent": "Americas",
+  "latitude": 1.25,
+  "longitude": 78.83300018310547,
+  "timezone": "Etc/GMT-5",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0279",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0279"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9991474",
+    "height": {
+      "type": "ratio",
+      "high": 1.6,
+      "low": 1.25
+    },
+    "time": {
+      "high": 17,
+      "low": 9
+    }
+  }
+}

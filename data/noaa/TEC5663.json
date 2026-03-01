@@ -1,0 +1,34 @@
+{
+  "name": "Cabo Gracias a Dios",
+  "region": "Gracias a Dios Department",
+  "country": "Honduras",
+  "continent": "Americas",
+  "latitude": 15,
+  "longitude": -83.16699981689453,
+  "timezone": "America/Tegucigalpa",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TEC5663",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC5663"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8638610",
+    "height": {
+      "type": "ratio",
+      "high": 0.57,
+      "low": 0.57
+    },
+    "time": {
+      "high": 23,
+      "low": -32
+    }
+  }
+}

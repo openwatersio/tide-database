@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Vallarta",
+  "region": "Jalisco",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 20.617000579833984,
+  "longitude": -105.25,
+  "timezone": "America/Mexico_City",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0381",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0381"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9410170",
+    "height": {
+      "type": "ratio",
+      "high": 0.62,
+      "low": 0.56
+    },
+    "time": {
+      "high": 22,
+      "low": 31
+    }
+  }
+}
