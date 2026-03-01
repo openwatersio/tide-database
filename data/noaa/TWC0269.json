@@ -1,0 +1,34 @@
+{
+  "name": "Puerto de Cayo",
+  "region": "Manabi",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -1.350000023841858,
+  "longitude": -80.75,
+  "timezone": "America/Guayaquil",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0269",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0269"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9991474",
+    "height": {
+      "type": "ratio",
+      "high": 1.11,
+      "low": 1.11
+    },
+    "time": {
+      "high": -11,
+      "low": -9
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Bolivar",
+  "region": "El Oro",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -3.2669999599456787,
+  "longitude": -80.01699829101562,
+  "timezone": "America/Guayaquil",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0261",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0261"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9991474",
+    "height": {
+      "type": "ratio",
+      "high": 1.34,
+      "low": 1.25
+    },
+    "time": {
+      "high": 61,
+      "low": 43
+    }
+  }
+}

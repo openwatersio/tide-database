@@ -1,0 +1,34 @@
+{
+  "name": "Champerico",
+  "region": "Retalhuleu",
+  "country": "Guatemala",
+  "continent": "Americas",
+  "latitude": 14.300000190734863,
+  "longitude": -91.93299865722656,
+  "timezone": "America/Guatemala",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0371",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0371"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9640507",
+    "height": {
+      "type": "ratio",
+      "high": 0.61,
+      "low": 0.61
+    },
+    "time": {
+      "high": -27,
+      "low": -3
+    }
+  }
+}

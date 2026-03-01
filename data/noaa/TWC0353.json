@@ -1,0 +1,33 @@
+{
+  "name": "Cocos Island",
+  "country": "United States",
+  "continent": "Americas",
+  "latitude": 5.550000190734863,
+  "longitude": -86.98300170898438,
+  "timezone": "Etc/GMT+6",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0353",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0353"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9684403",
+    "height": {
+      "type": "fixed",
+      "high": -0.15,
+      "low": 0
+    },
+    "time": {
+      "high": -25,
+      "low": -25
+    }
+  }
+}

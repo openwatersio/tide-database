@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Penasco",
+  "region": "Sonora",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 31.299999237060547,
+  "longitude": -113.55000305175781,
+  "timezone": "America/Hermosillo",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0389",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0389"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9410170",
+    "height": {
+      "type": "ratio",
+      "high": 2.58,
+      "low": 1.33
+    },
+    "time": {
+      "high": 299,
+      "low": 308
+    }
+  }
+}

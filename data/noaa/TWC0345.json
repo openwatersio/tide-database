@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Herradura",
+  "region": "Puntarenas Province",
+  "country": "Costa Rica",
+  "continent": "Americas",
+  "latitude": 9.649999618530273,
+  "longitude": -84.66699981689453,
+  "timezone": "America/Costa_Rica",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0345",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0345"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9684403",
+    "height": {
+      "type": "fixed",
+      "high": 0,
+      "low": 0
+    },
+    "time": {
+      "high": -6,
+      "low": -1
+    }
+  }
+}

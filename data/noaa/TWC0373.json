@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Angel",
+  "region": "Oaxaca",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 15.649999618530273,
+  "longitude": -96.5,
+  "timezone": "America/Mexico_City",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0373",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0373"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9504651",
+    "height": {
+      "type": "fixed",
+      "high": -0.21,
+      "low": 0
+    },
+    "time": {
+      "high": -4,
+      "low": -4
+    }
+  }
+}

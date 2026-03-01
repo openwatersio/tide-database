@@ -1,0 +1,34 @@
+{
+  "name": "Mazatlan",
+  "region": "Sinaloa",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 23.200000762939453,
+  "longitude": -106.41699981689453,
+  "timezone": "America/Mazatlan",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0385",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0385"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9410170",
+    "height": {
+      "type": "ratio",
+      "high": 0.7,
+      "low": 0.56
+    },
+    "time": {
+      "high": -38,
+      "low": -29
+    }
+  }
+}

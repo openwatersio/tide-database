@@ -1,0 +1,34 @@
+{
+  "name": "La Paz",
+  "region": "Baja California Sur",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 24.16699981689453,
+  "longitude": -110.3499984741211,
+  "timezone": "America/Mazatlan",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0397",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0397"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9507601",
+    "height": {
+      "type": "fixed",
+      "high": 0.24,
+      "low": 0
+    },
+    "time": {
+      "high": -56,
+      "low": -47
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Caleta Tagus, Isla Isabel",
+  "region": "Galapagos",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -0.25,
+  "longitude": -91.36699676513672,
+  "timezone": "Pacific/Galapagos",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0287",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0287"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9992401",
+    "height": {
+      "type": "ratio",
+      "high": 0.85,
+      "low": 0.83
+    },
+    "time": {
+      "high": -11,
+      "low": -12
+    }
+  }
+}

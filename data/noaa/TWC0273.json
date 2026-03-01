@@ -1,0 +1,34 @@
+{
+  "name": "Rio Chone",
+  "region": "Manabi",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -0.5830000042915344,
+  "longitude": -80.43299865722656,
+  "timezone": "America/Guayaquil",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0273",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0273"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9991474",
+    "height": {
+      "type": "ratio",
+      "high": 1.24,
+      "low": 1.13
+    },
+    "time": {
+      "high": 8,
+      "low": 11
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Cortes",
+  "region": "Cortes Department",
+  "country": "Honduras",
+  "continent": "Americas",
+  "latitude": 15.835000038146973,
+  "longitude": -87.87000274658203,
+  "timezone": "America/Tegucigalpa",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "9650593",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9650593"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8724580",
+    "height": {
+      "type": "ratio",
+      "high": 0.38,
+      "low": 0.38
+    },
+    "time": {
+      "high": -43,
+      "low": -2
+    }
+  }
+}

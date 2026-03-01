@@ -1,0 +1,34 @@
+{
+  "name": "Veracruz",
+  "region": "Veracruz",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 19.200000762939453,
+  "longitude": -96.13330078125,
+  "timezone": "America/Mexico_City",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "9501701",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9501701"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9500966",
+    "height": {
+      "type": "ratio",
+      "high": 1.21,
+      "low": 1.21
+    },
+    "time": {
+      "high": -19,
+      "low": -12
+    }
+  }
+}

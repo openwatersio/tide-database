@@ -1,0 +1,34 @@
+{
+  "name": "Topolobampo",
+  "region": "Sinaloa",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 25.600000381469727,
+  "longitude": -109.05000305175781,
+  "timezone": "America/Mazatlan",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0387",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0387"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9410170",
+    "height": {
+      "type": "ratio",
+      "high": 0.68,
+      "low": 0.78
+    },
+    "time": {
+      "high": 49,
+      "low": 57
+    }
+  }
+}

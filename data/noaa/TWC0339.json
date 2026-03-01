@@ -1,0 +1,34 @@
+{
+  "name": "Golfito, Golfo Dulce",
+  "region": "Puntarenas Province",
+  "country": "Costa Rica",
+  "continent": "Americas",
+  "latitude": 8.649999618530273,
+  "longitude": -83.18299865722656,
+  "timezone": "America/Costa_Rica",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0339",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0339"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9684403",
+    "height": {
+      "type": "fixed",
+      "high": 0.4,
+      "low": 0.34
+    },
+    "time": {
+      "high": -13,
+      "low": 2
+    }
+  }
+}

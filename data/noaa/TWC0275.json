@@ -1,0 +1,34 @@
+{
+  "name": "Cabo Pasado",
+  "region": "Manabi",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -0.3499999940395355,
+  "longitude": -80.51699829101562,
+  "timezone": "America/Guayaquil",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0275",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0275"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9991474",
+    "height": {
+      "type": "ratio",
+      "high": 1.19,
+      "low": 1
+    },
+    "time": {
+      "high": 4,
+      "low": 5
+    }
+  }
+}

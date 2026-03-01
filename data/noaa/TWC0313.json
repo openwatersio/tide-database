@@ -1,0 +1,34 @@
+{
+  "name": "Bahia Pina",
+  "region": "Darien",
+  "country": "Panama",
+  "continent": "Americas",
+  "latitude": 7.566999912261963,
+  "longitude": -78.18299865722656,
+  "timezone": "America/Panama",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0313",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0313"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9812501",
+    "height": {
+      "type": "fixed",
+      "high": -0.73,
+      "low": -0.09
+    },
+    "time": {
+      "high": 0,
+      "low": -11
+    }
+  }
+}

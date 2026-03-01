@@ -1,0 +1,34 @@
+{
+  "name": "Puna",
+  "region": "Guayas",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -2.7330000400543213,
+  "longitude": -79.91699981689453,
+  "timezone": "America/Guayaquil",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0263",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0263"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9991474",
+    "height": {
+      "type": "ratio",
+      "high": 1.76,
+      "low": 1.75
+    },
+    "time": {
+      "high": 97,
+      "low": 109
+    }
+  }
+}

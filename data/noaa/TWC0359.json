@@ -1,0 +1,34 @@
+{
+  "name": "Corinto (Isla Cardon)",
+  "region": "Chinandega Department",
+  "country": "Nicaragua",
+  "continent": "Americas",
+  "latitude": 12.482999801635742,
+  "longitude": -87.16699981689453,
+  "timezone": "America/Managua",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0359",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0359"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9640507",
+    "height": {
+      "type": "fixed",
+      "high": -0.64,
+      "low": -0.03
+    },
+    "time": {
+      "high": -18,
+      "low": 0
+    }
+  }
+}

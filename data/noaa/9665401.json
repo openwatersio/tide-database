@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Cabezas",
+  "region": "North Caribbean Coast",
+  "country": "Nicaragua",
+  "continent": "Americas",
+  "latitude": 14.042200088500977,
+  "longitude": -83.38189697265625,
+  "timezone": "America/Managua",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "9665401",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9665401"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8638610",
+    "height": {
+      "type": "ratio",
+      "high": 0.56,
+      "low": 0.56
+    },
+    "time": {
+      "high": 185,
+      "low": 191
+    }
+  }
+}

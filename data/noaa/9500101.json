@@ -1,0 +1,34 @@
+{
+  "name": "Matamoros",
+  "region": "Tamaulipas",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 25.88330078125,
+  "longitude": -97.5167007446289,
+  "timezone": "America/Matamoros",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "9500101",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9500101"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9500966",
+    "height": {
+      "type": "ratio",
+      "high": 1,
+      "low": 1
+    },
+    "time": {
+      "high": 55,
+      "low": 40
+    }
+  }
+}

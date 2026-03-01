@@ -1,0 +1,34 @@
+{
+  "name": "Isla del Maiz Grande",
+  "region": "South Caribbean Coast",
+  "country": "Nicaragua",
+  "continent": "Americas",
+  "latitude": 12.166999816894531,
+  "longitude": -83.05000305175781,
+  "timezone": "America/Managua",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TEC5669",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TEC5669"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/8638610",
+    "height": {
+      "type": "ratio",
+      "high": 0.46,
+      "low": 0.46
+    },
+    "time": {
+      "high": 278,
+      "low": 253
+    }
+  }
+}

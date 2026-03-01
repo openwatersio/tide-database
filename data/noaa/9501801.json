@@ -1,0 +1,34 @@
+{
+  "name": "Alvarado",
+  "region": "Veracruz",
+  "country": "Mexico",
+  "continent": "Americas",
+  "latitude": 18.766700744628906,
+  "longitude": -95.7667007446289,
+  "timezone": "America/Mexico_City",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "9501801",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9501801"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9500966",
+    "height": {
+      "type": "ratio",
+      "high": 0.93,
+      "low": 0.93
+    },
+    "time": {
+      "high": 51,
+      "low": 27
+    }
+  }
+}

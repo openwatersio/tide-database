@@ -1,0 +1,34 @@
+{
+  "name": "Bahia de Culebra",
+  "region": "Guanacaste Province",
+  "country": "Costa Rica",
+  "continent": "Americas",
+  "latitude": 10.633000373840332,
+  "longitude": -85.66699981689453,
+  "timezone": "America/Costa_Rica",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0349",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0349"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9684403",
+    "height": {
+      "type": "fixed",
+      "high": 0,
+      "low": 0
+    },
+    "time": {
+      "high": -2,
+      "low": -2
+    }
+  }
+}

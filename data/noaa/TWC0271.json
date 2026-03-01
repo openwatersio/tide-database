@@ -1,0 +1,34 @@
+{
+  "name": "Bahia Manta",
+  "region": "Manabi",
+  "country": "Ecuador",
+  "continent": "Americas",
+  "latitude": -0.949999988079071,
+  "longitude": -80.73300170898438,
+  "timezone": "America/Guayaquil",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0271",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0271"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9991474",
+    "height": {
+      "type": "ratio",
+      "high": 1.15,
+      "low": 1
+    },
+    "time": {
+      "high": -16,
+      "low": -11
+    }
+  }
+}

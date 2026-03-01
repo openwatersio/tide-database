@@ -1,0 +1,34 @@
+{
+  "name": "Puerto de San Jose",
+  "region": "Escuintla",
+  "country": "Guatemala",
+  "continent": "Americas",
+  "latitude": 13.916999816894531,
+  "longitude": -90.83300018310547,
+  "timezone": "America/Guatemala",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0369",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0369"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9640507",
+    "height": {
+      "type": "ratio",
+      "high": 0.61,
+      "low": 0.61
+    },
+    "time": {
+      "high": -27,
+      "low": -3
+    }
+  }
+}

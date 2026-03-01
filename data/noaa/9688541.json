@@ -1,0 +1,34 @@
+{
+  "name": "Puerto Limon",
+  "region": "Limon Province",
+  "country": "Costa Rica",
+  "continent": "Americas",
+  "latitude": 9.993300437927246,
+  "longitude": -83.02670288085938,
+  "timezone": "America/Costa_Rica",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "9688541",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=9688541"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9817583",
+    "height": {
+      "type": "ratio",
+      "high": 1,
+      "low": 1
+    },
+    "time": {
+      "high": -32,
+      "low": -29
+    }
+  }
+}

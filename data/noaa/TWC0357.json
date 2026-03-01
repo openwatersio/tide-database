@@ -1,0 +1,34 @@
+{
+  "name": "San Juan del Sur",
+  "region": "Rivas Department",
+  "country": "Nicaragua",
+  "continent": "Americas",
+  "latitude": 11.25,
+  "longitude": -85.88300323486328,
+  "timezone": "America/Managua",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0357",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0357"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9640507",
+    "height": {
+      "type": "ratio",
+      "high": 0.77,
+      "low": 0.77
+    },
+    "time": {
+      "high": -27,
+      "low": -5
+    }
+  }
+}

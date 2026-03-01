@@ -1,0 +1,34 @@
+{
+  "name": "Punta Mala",
+  "region": "Los Santos Province",
+  "country": "Panama",
+  "continent": "Americas",
+  "latitude": 7.4670000076293945,
+  "longitude": -80,
+  "timezone": "America/Panama",
+  "source": {
+    "name": "US National Oceanic and Atmospheric Administration",
+    "id": "TWC0329",
+    "published_harmonics": true,
+    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=TWC0329"
+  },
+  "license": {
+    "type": "public domain",
+    "commercial_use": true,
+    "url": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+  },
+  "chart_datum": "MLLW",
+  "type": "subordinate",
+  "offsets": {
+    "reference": "noaa/9812501",
+    "height": {
+      "type": "ratio",
+      "high": 0.64,
+      "low": 0.63
+    },
+    "time": {
+      "high": 3,
+      "low": -12
+    }
+  }
+}
