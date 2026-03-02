@@ -74,6 +74,35 @@ Both functions take the following parameters:
 
 - `maxResults`: Maximum number of results to return (default: `10`).
 
+##### Bounding box search
+
+You can find all stations within a geographic bounding box using the `bbox` function:
+
+```typescript
+import { bbox } from "@neaps/tide-database";
+
+// Find stations in the Boston area
+const stations = bbox(-71.5, 42, -70.5, 42.8);
+console.log("Stations in bounds:", stations.length);
+
+// With a filter
+const referenceOnly = bbox(
+  -72,
+  41,
+  -70,
+  43,
+  (station) => station.type === "reference",
+);
+```
+
+Parameters:
+
+- `minLon`: Minimum longitude (west edge of the bounding box).
+- `minLat`: Minimum latitude (south edge of the bounding box).
+- `maxLon`: Maximum longitude (east edge of the bounding box).
+- `maxLat`: Maximum latitude (north edge of the bounding box).
+- `filter`: Optional function that takes a station and returns `true` to include it in results, or `false` to exclude it.
+
 ##### Full-text search
 
 You can search for stations by name, region, country, or continent using the `search` function. It supports fuzzy matching and prefix search:
