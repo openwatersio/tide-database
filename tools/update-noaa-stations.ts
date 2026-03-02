@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
 import createFetch from "make-fetch-happen";
-import { normalize, save } from "./station.ts";
+import { normalize, save, DATA_DIR } from "./station.ts";
 import type { StationData } from "../src/index.ts";
 import { loadGeocoder } from "./geocode.ts";
+import { readFile } from "fs/promises";
+import { join } from "path";
 
 const fetch = createFetch.defaults({
   cachePath: "node_modules/.cache",
@@ -17,6 +19,14 @@ const STATIONS_URL =
 
 const geocoder = await loadGeocoder();
 
+async function readExisting(id: string): Promise<string | null> {
+  try {
+    return await readFile(join(DATA_DIR, "noaa", `${id}.json`), "utf-8");
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   const { stations } = await fetch(
     `${STATIONS_URL}?type=tidepredictions&expand=details,tidepredoffsets&units=metric`,
@@ -24,15 +34,60 @@ async function main() {
 
   console.log(`Fetched metadata for ${stations.length} stations.`);
 
+  const added: string[] = [];
+  const updated: string[] = [];
+  let unchanged = 0;
+  let skipped = 0;
+
   for (const meta of stations) {
     // At least one station lists itself as its own reference, but doesn't have harmonic data
-    if (meta.id === meta.tidepredoffsets?.refStationId) continue;
+    if (meta.id === meta.tidepredoffsets?.refStationId) {
+      skipped++;
+      continue;
+    }
 
-    await save("noaa", await buildStation(meta));
+    const station = await buildStation(meta);
+    const newContent = JSON.stringify(station, null, 2) + "\n";
+    const existing = await readExisting(meta.id);
+
+    await save("noaa", station);
+
+    if (existing === null) {
+      added.push(`${meta.id} (${station.name})`);
+    } else if (existing !== newContent) {
+      updated.push(`${meta.id} (${station.name})`);
+    } else {
+      unchanged++;
+    }
+
     process.stdout.write(".");
   }
 
-  console.log(`\nDone. Created ${stations.length} stations.`);
+  console.log("\n");
+  console.log("## Summary\n");
+  console.log(`Processed ${stations.length} stations (${skipped} skipped)\n`);
+
+  if (added.length > 0) {
+    console.log(`### ${added.length} stations added\n`);
+    for (const s of added) console.log(`- ${s}`);
+    console.log();
+  }
+
+  if (updated.length > 0) {
+    console.log(`### ${updated.length} stations updated\n`);
+    for (const s of updated) console.log(`- ${s}`);
+    console.log();
+  }
+
+  console.log(`${unchanged} stations unchanged\n`);
+
+  console.log("### Source\n");
+  console.log(
+    `- Stations list: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=tidepredictions`,
+  );
+  console.log(
+    `- Harmonic constituents: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/{id}/harcon.json`,
+  );
 }
 
 async function buildStation(meta: any): Promise<StationData> {
