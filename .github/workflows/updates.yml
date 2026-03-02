@@ -27,7 +27,13 @@ jobs:
         run: npm install
 
       - name: Run NOAA stations update
-        run: tools/update-noaa-stations.ts
+        env:
+          WORKFLOW_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          tools/update-noaa-stations.ts 2>&1 | tee /tmp/noaa-update.log
+          # Extract the markdown summary (everything after "## Summary")
+          sed -n '/^## Summary$/,$p' /tmp/noaa-update.log > /tmp/noaa-summary.md
+          printf '\n### Workflow\n\n            This PR was automatically created by the monthly NOAA station update workflow.Run: %s\n' "$WORKFLOW_URL" >> /tmp/noaa-summary.md
 
       - name: Check for changes
         id: changes
@@ -46,19 +52,5 @@ jobs:
         with:
           commit-message: "chore: update NOAA tide station data"
           title: "Update NOAA Stations"
-          body: |
-            This PR contains updates to NOAA tide station data from the official NOAA API.
-
-            ### Changes
-            - Updated harmonic constituents for existing stations
-            - Added any new stations discovered
-
-            ### Source
-            - Stations list: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=tidepredictions
-            - Harmonic constituents: https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/{id}/harcon.json
-
-            ### Workflow
-            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-
-            This PR was automatically created by the monthly NOAA station update workflow.
+          body-path: /tmp/noaa-summary.md
           branch: update-noaa-stations-${{ github.run_number }}
