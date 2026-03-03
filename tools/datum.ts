@@ -1,10 +1,11 @@
-import tidePredictor, {
+import {
+  createTidePredictor,
   type TidePredictionOptions,
   type HarmonicConstituent,
+  type Extreme,
 } from "@neaps/tide-predictor";
 
 export interface EpochSpec {
-  start?: Date;
   end?: Date;
 }
 
@@ -13,72 +14,45 @@ export type Datums = Record<string, number>;
 export interface TidalDatumsResult {
   start: Date;
   end: Date;
-  lengthYears: number;
-
-  /** seconds between samples in the synthetic series */
-  timeFidelity: number;
-  /** tidal-day length used (hours) */
-  tidalDayHours: number;
-
   datums: Datums;
 }
 
-export interface DatumsOptions extends TidePredictionOptions {
-  /**
-   * Time step in hours for the synthetic series.
-   * Converted to `timeFidelity` in seconds for neaps.
-   * Default: 1 hour.
-   */
-  stepHours?: number;
-
-  /**
-   * Length of a "tidal day" in hours.
-   * Typical: 24.8333 (24h 50m).
-   * Default: 24.8333333.
-   */
-  tidalDayHours?: number;
-}
-
-const YEAR_MS = 365.2425 * 24 * 60 * 60 * 1000;
-const NINETEEN_YEARS = 19 * YEAR_MS;
+const DAY_MS = 24 * 60 * 60 * 1000;
+/** One full lunar nodal cycle (6798.383 days = 18.6130 years) */
+const NODAL_CYCLE_MS = 6798.383 * DAY_MS;
+/** M2 angular speed (°/hr) — principal lunar semi-diurnal constituent */
+const M2_SPEED = 28.9841042;
+/** Mean tidal day: two M2 cycles (hours) */
+const M2_TIDAL_DAY_HOURS = (360 / M2_SPEED) * 2;
 
 /**
  * Resolve an EpochSpec to explicit start/end Dates.
+ *
+ * Always uses exactly one 18.6-year nodal cycle ending at `end`, regardless
+ * of the actual observation period. Datums computed over less than a full
+ * nodal cycle are inaccurate because they don't capture the full range of
+ * lunar node variation.
  */
-export function resolveEpoch({
-  end = new Date(),
-  start = new Date(end.getTime() - NINETEEN_YEARS),
-}: EpochSpec): {
+export function resolveEpoch({ end = new Date() }: EpochSpec): {
   start: Date;
   end: Date;
-  lengthYears: number;
 } {
-  let lengthYears = (end.getTime() - start.getTime()) / YEAR_MS;
-  if (lengthYears > 19) {
-    start = new Date(end.getTime() - NINETEEN_YEARS);
-    lengthYears = 19;
-  }
-  return { start, end, lengthYears };
+  const start = new Date(end.getTime() - NODAL_CYCLE_MS);
+  return { start, end };
 }
 
 /**
  * Core helper: given a regular timeline of {time, level}, compute datums
  */
-function computeDatumsFromTimeline(
-  times: Date[],
-  heights: number[],
-  tidalDayHours: number,
-): Datums {
-  if (!times.length || times.length !== heights.length) {
-    throw new Error("times and heights must be non-empty and of equal length");
-  }
-
+function computeDatumsFromExtremes(extremes: Extreme[]): Datums {
   const allHighs: number[] = [];
   const allLows: number[] = [];
   const higherHighs: number[] = [];
   const lowerLows: number[] = [];
 
-  const tidalDayMs = tidalDayHours * 60 * 60 * 1000;
+  const tidalDayMs = M2_TIDAL_DAY_HOURS * 60 * 60 * 1000;
+  const times = extremes.map((pt) => pt.time);
+  const heights = extremes.map((pt) => pt.level);
 
   if (times.length === 0) {
     throw new Error("times array is empty");
@@ -168,6 +142,7 @@ function computeDatumsFromTimeline(
   const mlw = mean(allLows);
 
   return {
+    HAT: toFixed(Math.max(...heights), 3),
     MHHW: toFixed(mean(higherHighs), 3),
     MHW: toFixed(mhw, 3),
     // MSL is the average of hourly heights over the epoch, which is zero or close to it
@@ -187,36 +162,23 @@ function computeDatumsFromTimeline(
 export function computeDatums(
   constituents: HarmonicConstituent[],
   epochSpec: EpochSpec,
-  {
-    stepHours = 1,
-    tidalDayHours = 24.8333333,
-    ...tidePredictorOptions
-  }: DatumsOptions = {},
+  tidePredictorOptions: TidePredictionOptions = {},
 ): TidalDatumsResult {
-  const { start, end, lengthYears } = resolveEpoch(epochSpec);
-
-  const timeFidelity = stepHours * 60 * 60;
+  const { start, end } = resolveEpoch(epochSpec);
 
   // Build predictor from @neaps/tide-predictor
-  const predictor = tidePredictor(constituents, tidePredictorOptions);
+  const predictor = createTidePredictor(constituents, tidePredictorOptions);
 
-  // Ask it for a synthetic timeline over the epoch
-  const timeline = predictor.getExtremesPrediction({
+  // Get extremes over the epoch
+  const extremes = predictor.getExtremesPrediction({
     start,
     end,
-    timeFidelity,
   });
-
-  const times = timeline.map((pt) => pt.time);
-  const heights = timeline.map((pt) => pt.level);
 
   return {
     start,
     end,
-    lengthYears,
-    timeFidelity,
-    tidalDayHours,
-    datums: computeDatumsFromTimeline(times, heights, tidalDayHours),
+    datums: computeDatumsFromExtremes(extremes),
   };
 }
 

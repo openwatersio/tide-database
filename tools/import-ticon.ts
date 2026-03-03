@@ -142,14 +142,16 @@ async function main() {
       };
 
       await save("ticon", normalize(candidate));
+      process.stdout.write(`.`);
       saved++;
     } catch (err: any) {
       console.error(`\nError processing ${id}: ${err.message}`);
       errors++;
+      process.stdout.write(`x`);
     }
 
     if ((saved + errors) % 100 === 0) {
-      process.stdout.write(`.${saved + errors}/${groups.length} `);
+      process.stdout.write(`.${saved + errors}/${groups.length}\n`);
     }
   }
 
@@ -172,8 +174,7 @@ async function getDatums(
       ...(existing.epoch ? { epoch: existing.epoch } : {}),
     };
   } catch {
-    const { start, end, datums } = computeDatums(harmonic_constituents, {
-      start: epoch.start,
+    const { datums, start, end } = computeDatums(harmonic_constituents, {
       end: epoch.end,
     });
     return {
