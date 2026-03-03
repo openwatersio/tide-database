@@ -5,7 +5,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { parseCSV, indexBy, groupBy } from "./util.ts";
 import { normalize, save, load, type PartialStationData } from "./station.ts";
-import { computeDatums, type EpochSpec } from "./datum.ts";
+import { computeDatums } from "./datum.ts";
 import { getSourceSuffix, NON_COMMERCIAL_SOURCES } from "./filtering.ts";
 import { cleanName } from "./name-cleanup.ts";
 import { loadGeocoder } from "./geocode.ts";
@@ -160,18 +160,21 @@ async function main() {
 
 async function getDatums(
   id: string,
-  epoch: EpochSpec,
+  epoch: { start: Date; end: Date },
   harmonic_constituents: PartialStationData["harmonic_constituents"],
 ) {
   try {
     if (forceDatums) throw new Error("Forcing datum recalculation");
 
     const existing = await load("ticon", id);
-    return { datums: existing.datums, epoch: existing.epoch };
+    return {
+      datums: existing.datums,
+      ...(existing.epoch ? { epoch: existing.epoch } : {}),
+    };
   } catch {
     const { start, end, datums } = computeDatums(harmonic_constituents, {
-      start: new Date(epoch.start),
-      end: new Date(epoch.end),
+      start: epoch.start,
+      end: epoch.end,
     });
     return {
       datums,
