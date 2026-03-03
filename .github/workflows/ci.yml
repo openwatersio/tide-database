@@ -27,9 +27,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm run test
-
       - name: Pack npm module
         run: npm pack
 
@@ -41,6 +38,9 @@ jobs:
         with:
           name: npm-dist
           path: "*.tgz"
+
+      - name: Run tests
+        run: npm run test
 
   tcd:
     runs-on: ubuntu-latest
