@@ -1,5 +1,5 @@
 import { around, distance } from "geokdbush";
-import { stations } from "../stations.js";
+import { allStations, qualityFilter } from "../stations.js";
 import { createGeoIndex } from "./geo.js" with { type: "macro" };
 import { loadGeoIndex } from "./geo.js";
 import { createTextIndex } from "./text.js" with { type: "macro" };
@@ -14,6 +14,8 @@ export type Filter = (station: Station) => boolean;
 
 export type NearestOptions = Position & {
   maxDistance?: number;
+  /** Include all stations, not just quality-filtered ones. */
+  includeAll?: boolean;
   filter?: Filter;
 };
 
@@ -21,7 +23,15 @@ export type NearOptions = NearestOptions & {
   maxResults?: number;
 };
 
+export type BboxOptions = {
+  /** Include all stations, not just quality-filtered ones. */
+  includeAll?: boolean;
+  filter?: Filter;
+};
+
 export type TextSearchOptions = {
+  /** Include all stations, not just quality-filtered ones. */
+  includeAll?: boolean;
   filter?: Filter;
   maxResults?: number;
 };
@@ -35,26 +45,37 @@ export type StationWithDistance = [Station, number];
 const geoIndex = loadGeoIndex(await createGeoIndex());
 const textIndex = loadTextIndex(await createTextIndex());
 
+function createFilter(
+  includeAll?: boolean,
+  filter?: Filter,
+): Filter | undefined {
+  const qf = includeAll ? undefined : qualityFilter;
+  if (qf && filter) return (s) => qf(s) && filter(s);
+  return qf ?? filter;
+}
+
 /**
  * Find stations near a given position.
  */
 export function near({
   maxDistance = Infinity,
   maxResults = 10,
+  includeAll,
   filter,
   ...position
 }: NearOptions): StationWithDistance[] {
   const point = positionToPoint(position);
+  const combined = createFilter(includeAll, filter);
 
   const ids: number[] = around(
     geoIndex,
     ...point,
     maxResults,
     maxDistance,
-    filter ? (id: number) => filter(stations[id]!) : undefined,
+    combined ? (id: number) => combined(allStations[id]!) : undefined,
   );
   return ids.map((id) => {
-    const station = stations[id]!;
+    const station = allStations[id]!;
 
     return [station, distance(...point, ...positionToPoint(station))] as const;
   });
@@ -72,15 +93,13 @@ export function nearest(options: NearestOptions): StationWithDistance | null {
  * Find stations within a bounding box.
  */
 export function bbox(
-  minLon: number,
-  minLat: number,
-  maxLon: number,
-  maxLat: number,
-  filter?: Filter,
+  [minLon, minLat, maxLon, maxLat]: [number, number, number, number],
+  { includeAll = false, filter }: BboxOptions = {},
 ): Station[] {
+  const combined = createFilter(includeAll, filter);
   const ids: number[] = geoIndex.range(minLon, minLat, maxLon, maxLat);
-  const results = ids.map((id) => stations[id]!);
-  return filter ? results.filter(filter) : results;
+  const results = ids.map((id) => allStations[id]!);
+  return combined ? results.filter(combined) : results;
 }
 
 export function positionToPoint(options: Position): [number, number] {
@@ -94,7 +113,7 @@ export function positionToPoint(options: Position): [number, number] {
   return [longitude, latitude];
 }
 
-const stationMap = new Map(stations.map((s) => [s.id, s]));
+const stationMap = new Map(allStations.map((s) => [s.id, s]));
 
 /**
  * Search for stations by text across name, region, country, and continent.
@@ -102,14 +121,16 @@ const stationMap = new Map(stations.map((s) => [s.id, s]));
  */
 export function search(
   query: string,
-  { filter, maxResults = 20 }: TextSearchOptions = {},
+  { includeAll, filter, maxResults = 20 }: TextSearchOptions = {},
 ): Station[] {
+  const combined = createFilter(includeAll, filter);
+
   const searchOptions: Parameters<typeof textIndex.search>[1] = {};
 
-  if (filter) {
+  if (combined) {
     searchOptions.filter = (result) => {
       const station = stationMap.get(result.id);
-      return station ? filter(station) : false;
+      return station ? combined(station) : false;
     };
   }
 
