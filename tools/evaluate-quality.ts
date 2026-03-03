@@ -339,7 +339,7 @@ function scoreCoverage(station: Station, allStations: Station[]): number {
       if (d < 0.001) break; // essentially co-located, no need to keep searching
     }
   }
-  return round3(Math.min(1, minDist / 200));
+  return round3(Math.min(1, minDist / 50));
 }
 
 // ── Composite Score ──────────────────────────────────────────────────────
