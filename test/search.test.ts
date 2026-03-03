@@ -71,7 +71,7 @@ describe("nearest", () => {
 describe("bbox", () => {
   test("returns stations within bounding box", () => {
     // Boston area: roughly -71.5 to -70.5 lon, 42 to 42.8 lat
-    const results = bbox(-71.5, 42, -70.5, 42.8);
+    const results = bbox([-71.5, 42, -70.5, 42.8]);
     expect(results.length).toBeGreaterThan(0);
     results.forEach((station) => {
       expect(station.longitude).toBeGreaterThanOrEqual(-71.5);
@@ -83,18 +83,14 @@ describe("bbox", () => {
 
   test("returns empty array for bbox with no stations", () => {
     // Middle of the Pacific
-    const results = bbox(-170, -50, -169, -49);
+    const results = bbox([-170, -50, -169, -49]);
     expect(results).toEqual([]);
   });
 
   test("can filter results", () => {
-    const results = bbox(
-      -72,
-      41,
-      -70,
-      43,
-      (station) => station.type === "reference",
-    );
+    const results = bbox([-72, 41, -70, 43], {
+      filter: (station) => station.type === "reference",
+    });
     expect(results.length).toBeGreaterThan(0);
     results.forEach((station) => {
       expect(station.type).toBe("reference");

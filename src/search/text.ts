@@ -26,7 +26,7 @@ const textSearchIndexOptions: Options<Station> = {
  *   import { createTextIndex } from "./text-search-index.js" with { type: "macro" };
  */
 export async function createTextIndex() {
-  const { stations } = await import("../stations.js");
+  const { allStations: stations } = await import("../stations.js");
 
   const index = new MiniSearch<Station>(textSearchIndexOptions);
   index.addAll(stations);

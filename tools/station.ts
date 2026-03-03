@@ -2,7 +2,7 @@ import type { StationData } from "../src/index.js";
 import { find as findTz } from "geo-tz/all";
 import countryLookup from "country-code-lookup";
 import { join, dirname } from "path";
-import { mkdir, writeFile } from "fs/promises";
+import { mkdir, writeFile, readFile } from "fs/promises";
 import sortObject from "sort-object-keys";
 
 const __dirname = new URL(".", import.meta.url).pathname;
@@ -102,4 +102,9 @@ export async function save(source: string, data: StationData) {
 
   // Write the JSON file
   return writeFile(filePath, JSON.stringify(data, null, 2) + "\n");
+}
+
+export async function load(source: string, id: string): Promise<StationData> {
+  const filePath = join(DATA_DIR, source, `${id}.json`);
+  return JSON.parse(await readFile(filePath, "utf-8"));
 }

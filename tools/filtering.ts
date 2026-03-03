@@ -1,5 +1,3 @@
-import type { StationData } from "../src/index.ts";
-
 /**
  * Shared utilities for station filtering and deduplication
  */
@@ -12,6 +10,9 @@ import type { StationData } from "../src/index.ts";
  * or more authoritative.
  */
 export const SOURCE_PRIORITY: Record<string, number> = {
+  // Tier 0: Authoritative national source (included directly)
+  noaa: 0, // NOAA CO-OPS
+
   // Tier 1: Highest priority - most reliable and current
   uhslc_fd: 1, // University of Hawaii Sea Level Center - Fast Delivery
   bodc: 2, // British Oceanographic Data Centre
@@ -111,52 +112,6 @@ export function epochYears(epoch?: { start: string; end: string }): number {
   return (end.getTime() - start.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
 }
 
-type CompareCandidate = Pick<StationData, "source" | "disclaimers" | "epoch">;
-
-/**
- * Compare two stations for priority, considering source quality, data quality,
- * and observation period length.
- *
- * Returns negative if station1 has higher priority, positive if station2 has higher priority
- *
- * Priority rules (in order):
- * 1. Stations without quality issues are preferred over those with issues
- * 2. Prefer longer observation period (more years)
- * 3. Among stations with same record length, prefer higher priority source
- * 4. Tie-breaker: alphabetically by source ID
- */
-export function compareStationPriority(
-  station1: CompareCandidate,
-  station2: CompareCandidate,
-): number {
-  // Rule 1: Quality issues - stations without issues have higher priority
-  const issues1 = hasQualityIssues(station1.disclaimers);
-  const issues2 = hasQualityIssues(station2.disclaimers);
-
-  if (issues1 !== issues2) {
-    return issues1 ? 1 : -1; // Station without issues wins
-  }
-
-  // Rule 2: Longer observation period wins
-  const years1 = epochYears(station1.epoch);
-  const years2 = epochYears(station2.epoch);
-
-  if (years1 !== years2) {
-    return years2 - years1; // More years wins (reverse order)
-  }
-
-  // Rule 3: Source priority
-  const priority1 = getSourcePriority(station1.source.id);
-  const priority2 = getSourcePriority(station2.source.id);
-
-  if (priority1 !== priority2) {
-    return priority1 - priority2; // Lower priority number wins
-  }
-
-  // Rule 4: Alphabetical tie-breaker
-  return station1.source.id.localeCompare(station2.source.id);
-}
-
 /**
  * Calculate distance between two points using Haversine formula
  * @returns Distance in kilometers
@@ -180,11 +135,20 @@ export function distance(
   return R * c;
 }
 
-/** Minimum distance between TICON stations and NOAA stations (in km) */
-export const MIN_DISTANCE_TO_NOAA = 0.1; // 100 meters
+/** Maximum distance to consider two stations as potential duplicates (in km) */
+export const MAX_DEDUP_DISTANCE = 0.5; // 500 meters
 
-/** Minimum distance between TICON stations (in km) */
-export const MIN_DISTANCE_TICON = 0.05; // 50 meters
+/** Distance below which stations are always considered duplicates (in km) */
+export const MIN_DEDUP_DISTANCE = 0.05; // 50 meters
+
+/** Minimum M2 amplitude ratio to consider two reference stations as duplicates.
+ *  Pairs within MAX_DEDUP_DISTANCE but above MIN_DEDUP_DISTANCE are only
+ *  deduplicated if their M2 amplitudes are similar (ratio >= this threshold). */
+export const MIN_AMPLITUDE_RATIO = 0.9;
+
+/** Distance fallback for subordinate stations and reference stations where one has
+ *  accepted subordinates. Used when harmonic comparison is unavailable or inapplicable. */
+export const FALLBACK_DEDUP_DISTANCE = 0.1; // 100 meters
 
 /** Minimum tidal range (MHW - MLW) to consider a station useful for tide prediction */
 export const MIN_TIDAL_RANGE = 0.02; // 2cm
