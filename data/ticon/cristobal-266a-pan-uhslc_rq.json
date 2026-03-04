@@ -19,13 +19,14 @@
   },
   "disclaimers": "Possible datum issues",
   "datums": {
-    "MHHW": 0.062,
-    "MHW": 0.059,
+    "HAT": 0.32,
+    "MHHW": 0.03,
+    "MHW": 0.028,
     "MSL": 0,
-    "MTL": -0.017,
-    "MLW": -0.093,
-    "MLLW": -0.095,
-    "LAT": -0.294
+    "MTL": -0.037,
+    "MLW": -0.101,
+    "MLLW": -0.102,
+    "LAT": -0.295
   },
   "chart_datum": "LAT",
   "type": "reference",
@@ -282,7 +283,7 @@
     }
   ],
   "epoch": {
-    "start": "1998-12-31",
+    "start": "1999-05-21",
     "end": "2017-12-31"
   }
 }

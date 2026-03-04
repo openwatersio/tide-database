@@ -21,6 +21,7 @@ import { readdir, readFile, writeFile } from "fs/promises";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { DATA_DIR } from "./station.ts";
+import { NODAL_CYCLE_DAYS } from "./datum.ts";
 import {
   distance,
   getSourceSuffix,
@@ -91,8 +92,9 @@ function getAmplitude(station: Station, name: string): number {
   return c?.amplitude ?? 0;
 }
 
-function round3(n: number): number {
-  return Math.round(n * 1000) / 1000;
+function toFixed(n: number, precision = 3): number {
+  const factor = 10 ** precision;
+  return Math.round(n * factor) / factor;
 }
 
 /** Detect placeholder epoch dates like 0000-01-01. */
@@ -229,7 +231,7 @@ function scoreEpoch(
     station.epoch ?? stationMap.get(station.offsets?.reference ?? "")?.epoch;
   if (epoch && !hasValidEpoch(epoch)) return 1;
   const years = epochYears(epoch);
-  return round3(Math.min(1, years / 19));
+  return toFixed(Math.min(1, years / (NODAL_CYCLE_DAYS / 365.2425)));
 }
 
 /** Recency: how recent is the epoch end date? Stations with data from the
@@ -251,7 +253,7 @@ function scoreRecency(
   const age = currentYear - endYear;
 
   // Linear decay: 0 years old = 1.0, 100+ years old = 0.0
-  return round3(Math.max(0, Math.min(1, 1 - age / 100)));
+  return toFixed(Math.max(0, Math.min(1, 1 - age / 100)));
 }
 
 /** Source confidence: mapped from SOURCE_PRIORITY. */
@@ -259,7 +261,7 @@ function scoreSource(station: Station): number {
   const priority = station.id.startsWith("noaa/")
     ? 0
     : getSourcePriority(station.source.id);
-  return round3(Math.max(0, 1 - priority / 99));
+  return toFixed(Math.max(0, 1 - priority / 99));
 }
 
 /** Quality flags: 1.0 if no issues, 0.0 if flagged. */
@@ -320,7 +322,7 @@ function scoreAmplitude(station: Station): { score: number; issues: string[] } {
     score -= 0.25;
   }
 
-  return { score: round3(Math.max(0, score)), issues };
+  return { score: toFixed(Math.max(0, score)), issues };
 }
 
 /** Coverage: nearest-neighbor distance. Computed separately (needs all stations). */
@@ -339,7 +341,7 @@ function scoreCoverage(station: Station, allStations: Station[]): number {
       if (d < 0.001) break; // essentially co-located, no need to keep searching
     }
   }
-  return round3(Math.min(1, minDist / 50));
+  return toFixed(Math.min(1, minDist / 50));
 }
 
 // ── Composite Score ──────────────────────────────────────────────────────

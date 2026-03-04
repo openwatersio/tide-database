@@ -5,7 +5,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { parseCSV, indexBy, groupBy } from "./util.ts";
 import { normalize, save, load, type PartialStationData } from "./station.ts";
-import { computeDatums } from "./datum.ts";
+import { computeDatums, resolveEpoch } from "./datum.ts";
 import { getSourceSuffix, NON_COMMERCIAL_SOURCES } from "./filtering.ts";
 import { cleanName } from "./name-cleanup.ts";
 import { loadGeocoder } from "./geocode.ts";
@@ -142,14 +142,16 @@ async function main() {
       };
 
       await save("ticon", normalize(candidate));
+      process.stdout.write(`.`);
       saved++;
     } catch (err: any) {
       console.error(`\nError processing ${id}: ${err.message}`);
       errors++;
+      process.stdout.write(`x`);
     }
 
     if ((saved + errors) % 100 === 0) {
-      process.stdout.write(`.${saved + errors}/${groups.length} `);
+      process.stdout.write(`.${saved + errors}/${groups.length}\n`);
     }
   }
 
@@ -160,30 +162,43 @@ async function main() {
 
 async function getDatums(
   id: string,
-  epoch: { start: Date; end: Date },
+  obsEpoch: { start: Date; end: Date },
   harmonic_constituents: PartialStationData["harmonic_constituents"],
 ) {
+  // Datum synthesis will always use 18.6-year nodal cycle, but for reporting and quality scoring we want to use
+  // the actual observation period (which may be shorter). There should probably be separate records for observation
+  // epoch vs datum epoch, but for now we'll use the smaller of the two.
+  const datumEpoch = resolveEpoch(obsEpoch);
+
+  const start = new Date(
+    Math.max(datumEpoch.start.getTime(), obsEpoch.start.getTime()),
+  );
+
   try {
     if (forceDatums) throw new Error("Forcing datum recalculation");
 
     const existing = await load("ticon", id);
     return {
       datums: existing.datums,
-      ...(existing.epoch ? { epoch: existing.epoch } : {}),
+      epoch: {
+        start: toISODate(start),
+        end: toISODate(obsEpoch.end),
+      },
     };
   } catch {
-    const { start, end, datums } = computeDatums(harmonic_constituents, {
-      start: epoch.start,
-      end: epoch.end,
-    });
+    const { datums, end } = computeDatums(harmonic_constituents, obsEpoch);
     return {
       datums,
       epoch: {
-        start: start.toISOString().split("T")[0]!,
-        end: end.toISOString().split("T")[0]!,
+        start: toISODate(start),
+        end: toISODate(end),
       },
     };
   }
+}
+
+function toISODate(date: Date) {
+  return date.toISOString().split("T")[0]!;
 }
 
 main();
