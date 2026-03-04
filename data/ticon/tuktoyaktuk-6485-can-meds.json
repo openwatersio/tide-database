@@ -19,13 +19,14 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "MHHW": 0.133,
-    "MHW": 0.133,
+    "HAT": 0.433,
+    "MHHW": 0.135,
+    "MHW": 0.135,
     "MSL": 0,
-    "MTL": 0,
-    "MLW": -0.134,
-    "MLLW": -0.134,
-    "LAT": -0.288
+    "MTL": 0.001,
+    "MLW": -0.133,
+    "MLLW": -0.131,
+    "LAT": -0.287
   },
   "chart_datum": "LAT",
   "type": "reference",
@@ -282,7 +283,7 @@
     }
   ],
   "epoch": {
-    "start": "2006-01-01",
+    "start": "2006-05-22",
     "end": "2025-01-01"
   }
 }
