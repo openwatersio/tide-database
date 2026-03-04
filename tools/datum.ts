@@ -19,7 +19,8 @@ export interface TidalDatumsResult {
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 /** One full lunar nodal cycle (6798.383 days = 18.6130 years) */
-const NODAL_CYCLE_MS = 6798.383 * DAY_MS;
+export const NODAL_CYCLE_DAYS = 6798.383;
+const NODAL_CYCLE_MS = NODAL_CYCLE_DAYS * DAY_MS;
 /** M2 angular speed (°/hr) — principal lunar semi-diurnal constituent */
 const M2_SPEED = 28.9841042;
 /** Mean tidal day: two M2 cycles (hours) */
