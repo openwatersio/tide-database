@@ -1,0 +1,12 @@
+services:
+  tippecanoe:
+    image: ghcr.io/openwatersio/tippecanoe:2.79.0
+    volumes:
+      - ./dist:/dist
+    entrypoint: ["tippecanoe"]
+
+  tile-join:
+    image: ghcr.io/openwatersio/tippecanoe:2.79.0
+    volumes:
+      - ./dist:/dist
+    entrypoint: ["tile-join"]
