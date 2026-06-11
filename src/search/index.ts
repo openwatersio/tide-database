@@ -1,5 +1,5 @@
 import { around, distance } from "geokdbush";
-import { allStations, qualityFilter } from "../stations.js";
+import { allStations, qualityFilter, stationsById } from "../stations.js";
 import { createGeoIndex } from "./geo.js" with { type: "macro" };
 import { loadGeoIndex } from "./geo.js";
 import { createTextIndex } from "./text.js" with { type: "macro" };
@@ -113,8 +113,6 @@ export function positionToPoint(options: Position): [number, number] {
   return [longitude, latitude];
 }
 
-const stationMap = new Map(allStations.map((s) => [s.id, s]));
-
 /**
  * Search for stations by text across name, region, country, and continent.
  * Supports fuzzy matching and prefix search.
@@ -129,7 +127,7 @@ export function search(
 
   if (combined) {
     searchOptions.filter = (result) => {
-      const station = stationMap.get(result.id);
+      const station = stationsById.get(result.id);
       return station ? combined(station) : false;
     };
   }
@@ -138,6 +136,6 @@ export function search(
 
   return results
     .slice(0, maxResults)
-    .map((result) => stationMap.get(result.id)!)
+    .map((result) => stationsById.get(result.id)!)
     .filter(Boolean);
 }

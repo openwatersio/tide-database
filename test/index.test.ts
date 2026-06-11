@@ -17,8 +17,14 @@ const validate = ajv.compile(schema);
 
 stations.forEach((station) => {
   describe(station.id, () => {
-    test("is valid", () => {
-      const valid = validate(station);
+    test("is valid", async () => {
+      // Validate against the on-disk JSON, not the in-memory station. Subordinate
+      // stations are enriched at runtime with datums/harmonic_constituents from
+      // their reference station, but the schema describes the source file format.
+      const raw = JSON.parse(
+        await readFile(join(ROOT, "data", `${station.id}.json`), "utf-8"),
+      );
+      const valid = validate({ id: station.id, ...raw });
       if (!valid)
         throw new Error(
           ajv.errorsText(validate.errors) +
@@ -46,34 +52,34 @@ stations.forEach((station) => {
       }
     });
 
-    if (station.type === "reference") {
-      test("has logically ordered datums", () => {
-        const datums = station.datums;
-        if (!datums || Object.keys(datums).length === 0) return;
+    test("has logically ordered datums", () => {
+      const datums = station.datums;
+      if (!datums || Object.keys(datums).length === 0) return;
 
-        // MHHW/MHW and MLW/MLLW are diurnal-pair averages that converge at weakly
-        // diurnal stations, so their relative ordering is not enforced here.
-        // MSL and MTL can appear in either order depending on tidal asymmetry,
-        // so they are checked independently against their shared bounds.
-        const CHAINS = [
-          ["MHW", "MSL", "MLW", "LAT"],
-          ["MHW", "MTL", "MLW"],
-        ] as const;
-        for (const chain of CHAINS) {
-          for (let i = 0; i < chain.length - 1; i++) {
-            const higher = chain[i]!;
-            const lower = chain[i + 1]!;
-            const h = datums[higher],
-              l = datums[lower];
-            if (h === undefined || l === undefined) continue;
-            expect(
-              h,
-              `Station ${station.id}: ${higher} (${h.toFixed(3)}m) should be >= ${lower} (${l.toFixed(3)}m)`,
-            ).toBeGreaterThanOrEqual(l);
-          }
+      // MHHW/MHW and MLW/MLLW are diurnal-pair averages that converge at weakly
+      // diurnal stations, so their relative ordering is not enforced here.
+      // MSL and MTL can appear in either order depending on tidal asymmetry,
+      // so they are checked independently against their shared bounds.
+      const CHAINS = [
+        ["MHW", "MSL", "MLW", "LAT"],
+        ["MHW", "MTL", "MLW"],
+      ] as const;
+      for (const chain of CHAINS) {
+        for (let i = 0; i < chain.length - 1; i++) {
+          const higher = chain[i]!;
+          const lower = chain[i + 1]!;
+          const h = datums[higher],
+            l = datums[lower];
+          if (h === undefined || l === undefined) continue;
+          expect(
+            h,
+            `Station ${station.id}: ${higher} (${h.toFixed(3)}m) should be >= ${lower} (${l.toFixed(3)}m)`,
+          ).toBeGreaterThanOrEqual(l);
         }
-      });
-    } else if (station.type === "subordinate") {
+      }
+    });
+
+    if (station.type === "subordinate") {
       test("has valid reference station", () => {
         const id = station.offsets!.reference;
         const reference = stations.find((s) => s.id === id);

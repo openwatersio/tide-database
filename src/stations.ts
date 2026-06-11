@@ -20,4 +20,20 @@ export const allStations: Station[] = Object.entries(modules).map(
   },
 );
 
+export const stationsById = new Map(allStations.map((s) => [s.id, s]));
+
 export const stations: Station[] = allStations.filter(qualityFilter);
+
+// Populate subordinate stations with datums and harmonic constituents from their reference stations.
+allStations.forEach((station) => {
+  if (station.type === "subordinate") {
+    const reference = stationsById.get(station.offsets!.reference);
+    if (!reference)
+      throw new Error(
+        `Reference station ${station.offsets!.reference} not found for station ${station.id}`,
+      );
+
+    const { datums, harmonic_constituents } = reference;
+    Object.assign(station, { datums, harmonic_constituents });
+  }
+});
