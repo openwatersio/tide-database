@@ -48,4 +48,4 @@ jobs:
         with:
           tag: v${{ env.RELEASE_VERSION }}
           generateReleaseNotes: true
-          artifacts: "packages/tcd/dist/*.tcd,packages/tiles/dist/*.pmtiles"
+          artifacts: "packages/tcd/dist/*.tcd,packages/tiles/dist/*.pmtiles,packages/tiles/dist/*.mbtiles"

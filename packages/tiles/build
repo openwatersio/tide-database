@@ -31,14 +31,17 @@ docker compose run --rm tippecanoe \
   --force \
   /dist/stations-full.ndjson
 
-# Merge into a single tileset with one "stations" layer spanning z0-10
-docker compose run --rm tile-join \
-  --output=/dist/neaps.pmtiles \
-  --no-tile-size-limit \
-  --force \
-  --name="Neaps Tide Stations" \
-  --description="Tide stations from @neaps/tide-database v${VERSION}. NOT FOR NAVIGATION." \
-  --attribution="<a href=\"https://tidesandcurrents.noaa.gov\">NOAA</a>; <a href=\"https://www.seanoe.org/data/00980/109129/\">TICON-4</a>" \
-  /dist/tmp/stations-lean.pmtiles /dist/tmp/stations-full.pmtiles
+# Merge into a single tileset with one "stations" layer spanning z0-10.
+# tile-join picks the format from the output extension.
+for ext in pmtiles mbtiles; do
+  docker compose run --rm tile-join \
+    --output=/dist/neaps.${ext} \
+    --no-tile-size-limit \
+    --force \
+    --name="Neaps Tide Stations" \
+    --description="Tide stations from @neaps/tide-database v${VERSION}. NOT FOR NAVIGATION." \
+    --attribution="<a href=\"https://tidesandcurrents.noaa.gov\">NOAA</a>; <a href=\"https://www.seanoe.org/data/00980/109129/\">TICON-4</a>" \
+    /dist/tmp/stations-lean.pmtiles /dist/tmp/stations-full.pmtiles
+done
 
 rm -rf dist/tmp
