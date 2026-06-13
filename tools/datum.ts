@@ -2,11 +2,16 @@ import {
   createTidePredictor,
   type TidePredictionOptions,
   type HarmonicConstituent,
-  type Extreme,
 } from "@neaps/tide-predictor";
 
 export interface EpochSpec {
   end?: Date;
+}
+
+/** A single water-level point. `Extreme` from the predictor is assignable to this. */
+export interface Sample {
+  time: Date;
+  level: number;
 }
 
 export type Datums = Record<string, number>;
@@ -43,9 +48,14 @@ export function resolveEpoch({ end = new Date() }: EpochSpec): {
 }
 
 /**
- * Core helper: given a regular timeline of {time, level}, compute datums
+ * Core helper: given a regular timeline of {time, level}, compute datums.
+ *
+ * `msl` is the mean sea level to report (mean of all hourly heights, per NOAA
+ * CO-OPS handbook §3.1). It only sets the returned MSL field; every other datum
+ * stays in the input series' native frame. Synthetic (constituent) callers leave
+ * it 0; observed callers pass the mean of the hourly series.
  */
-function computeDatumsFromExtremes(extremes: Extreme[]): Datums {
+function computeDatumsFromExtremes(extremes: Sample[], msl = 0): Datums {
   const allHighs: number[] = [];
   const allLows: number[] = [];
   const higherHighs: number[] = [];
@@ -143,16 +153,18 @@ function computeDatumsFromExtremes(extremes: Extreme[]): Datums {
   const mlw = mean(allLows);
 
   return {
-    HAT: toFixed(Math.max(...heights), 3),
+    // max/min loop instead of Math.max(...heights): observed series have 100k+
+    // points and the spread overflows the call stack.
+    HAT: toFixed(max(heights), 3),
     MHHW: toFixed(mean(higherHighs), 3),
     MHW: toFixed(mhw, 3),
-    // MSL is the average of hourly heights over the epoch, which is zero or close to it
-    // when synthesizing from constituents.
-    MSL: 0,
+    // MSL = mean of hourly heights (NOAA CO-OPS handbook §3.1). 0 for synthetic
+    // constituent series; the observed mean for real water-level series.
+    MSL: toFixed(msl, 3),
     MTL: toFixed((mhw + mlw) / 2, 3),
     MLW: toFixed(mlw, 3),
     MLLW: toFixed(mean(lowerLows), 3),
-    LAT: toFixed(Math.min(...heights), 3),
+    LAT: toFixed(min(heights), 3),
   };
 }
 
@@ -183,6 +195,102 @@ export function computeDatums(
   };
 }
 
+/** Minimum record span (days) and hourly-point count to derive datums from observations. */
+const MIN_DATUM_DAYS = 365;
+const MIN_HOURLY_POINTS = 4000;
+const HOUR_MS = 60 * 60 * 1000;
+
+/**
+ * Parse a GESLA-4 station file into UTC water-level samples.
+ *
+ * Keeps only rows flagged use-in-analysis (`use_flag === 1`, which already
+ * excludes QC spikes/doubtful/missing) and drops the -99.9999 null. Times are
+ * converted to UTC using the header's `TIME ZONE HOURS` (expected 0 for GESLA-4,
+ * honored defensively).
+ */
+export function parseGeslaSamples(text: string): Sample[] {
+  const lines = text.split(/\r?\n/);
+
+  let tzHours = 0;
+  let nullValue = -99.9999; // GESLA-4 default; overridden by the header below
+  for (const line of lines) {
+    if (!line.startsWith("#")) break;
+    const tz = line.match(/^#\s*TIME ZONE HOURS\s+(-?\d+(?:\.\d+)?)/);
+    if (tz) tzHours = parseFloat(tz[1]!);
+    const nv = line.match(/^#\s*NULL VALUE\s+(-?\d+(?:\.\d+)?)/);
+    if (nv) nullValue = parseFloat(nv[1]!);
+  }
+  const tzMs = tzHours * HOUR_MS;
+
+  const samples: Sample[] = [];
+  for (const line of lines) {
+    if (!line || line.startsWith("#")) continue;
+    const f = line.trim().split(/\s+/);
+    if (f.length < 5 || f[4] !== "1") continue;
+    const level = parseFloat(f[2]!);
+    if (!Number.isFinite(level) || Math.abs(level - nullValue) < 1e-3) continue;
+    const t = Date.parse(`${f[0]!.replaceAll("/", "-")}T${f[1]}Z`);
+    if (!Number.isFinite(t)) continue;
+    samples.push({ time: new Date(t - tzMs), level });
+  }
+  return samples;
+}
+
+/** Bin samples to mean level per UTC hour, sorted ascending. */
+function binHourly(samples: Sample[]): Sample[] {
+  const buckets = new Map<number, { sum: number; n: number }>();
+  for (const s of samples) {
+    const key = Math.floor(s.time.getTime() / HOUR_MS);
+    const e = buckets.get(key);
+    if (e) {
+      e.sum += s.level;
+      e.n += 1;
+    } else {
+      buckets.set(key, { sum: s.level, n: 1 });
+    }
+  }
+  return [...buckets.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([key, { sum, n }]) => ({
+      time: new Date(key * HOUR_MS),
+      level: sum / n,
+    }));
+}
+
+/**
+ * Derive tidal datums directly from observed water-level samples (NOAA CO-OPS
+ * "first reduction", Computational Techniques for Tidal Datums Handbook §3.1).
+ *
+ * Bins to hourly heights, takes the most recent ≤18.6-year window, and computes
+ * mean datums in the gauge's native frame with real MSL = mean of hourly heights.
+ * No control-station correction (acceptable: short-record bias is cm-level per
+ * Swanson 1974, vs the 0.3–0.5 m datum errors this replaces). HAT/LAT returned
+ * here are observed extremes and should be discarded in favor of harmonic values.
+ *
+ * Returns null when the windowed record is too short/sparse to be meaningful.
+ */
+export function computeDatumsFromObservations(
+  samples: Sample[],
+): TidalDatumsResult | null {
+  if (samples.length === 0) return null;
+
+  const hourlyAll = binHourly(samples);
+  const end = hourlyAll[hourlyAll.length - 1]!.time;
+  const { start } = resolveEpoch({ end });
+  const hourly = hourlyAll.filter((s) => s.time >= start);
+
+  const spanDays = (end.getTime() - hourly[0]!.time.getTime()) / DAY_MS;
+  if (spanDays < MIN_DATUM_DAYS || hourly.length < MIN_HOURLY_POINTS)
+    return null;
+
+  const observedMSL = mean(hourly.map((s) => s.level));
+  const datums = computeDatumsFromExtremes(hourly, observedMSL);
+  if (!Number.isFinite(datums["MHW"]) || !Number.isFinite(datums["MLW"]))
+    return null;
+
+  return { start: hourly[0]!.time, end, datums };
+}
+
 export function toFixed(num: number, digits: number) {
   if (typeof num !== "number") return num;
 
@@ -192,4 +300,17 @@ export function toFixed(num: number, digits: number) {
 
 export function mean(arr: number[]): number {
   return arr.length ? arr.reduce((s, v) => s + v, 0) / arr.length : NaN;
+}
+
+/** Loop-based min/max — avoids the call-stack overflow of Math.min/max(...arr) on large arrays. */
+export function max(arr: number[]): number {
+  let m = -Infinity;
+  for (const v of arr) if (v > m) m = v;
+  return m;
+}
+
+export function min(arr: number[]): number {
+  let m = Infinity;
+  for (const v of arr) if (v < m) m = v;
+  return m;
 }
