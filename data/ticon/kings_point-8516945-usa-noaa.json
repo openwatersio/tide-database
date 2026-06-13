@@ -19,15 +19,16 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "HAT": 1.754,
-    "MHHW": 1.117,
-    "MHW": 1.114,
-    "MSL": 0,
-    "MTL": -0.011,
-    "MLW": -1.136,
-    "MLLW": -1.136,
-    "LAT": -1.693
+    "HAT": 6.963,
+    "MHHW": 6.344,
+    "MHW": 6.28,
+    "MSL": 5.209,
+    "MTL": 5.198,
+    "MLW": 4.116,
+    "MLLW": 4.021,
+    "LAT": 3.516
   },
+  "datums_source": "observed",
   "chart_datum": "MLLW",
   "type": "reference",
   "harmonic_constituents": [
@@ -283,7 +284,7 @@
     }
   ],
   "epoch": {
-    "start": "2006-11-18",
+    "start": "2006-11-19",
     "end": "2025-06-30"
   }
 }

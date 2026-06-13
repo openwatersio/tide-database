@@ -19,15 +19,16 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "HAT": 0.826,
-    "MHHW": 0.252,
-    "MHW": 0.248,
-    "MSL": 0,
-    "MTL": -0.045,
-    "MLW": -0.337,
-    "MLLW": -0.338,
-    "LAT": -0.632
+    "HAT": 1.633,
+    "MHHW": 1.321,
+    "MHW": 1.154,
+    "MSL": 0.807,
+    "MTL": 0.792,
+    "MLW": 0.429,
+    "MLLW": 0.219,
+    "LAT": 0.175
   },
+  "datums_source": "observed",
   "chart_datum": "LAT",
   "type": "reference",
   "harmonic_constituents": [
@@ -283,7 +284,7 @@
     }
   ],
   "epoch": {
-    "start": "1943-05-21",
+    "start": "1943-05-22",
     "end": "1961-12-31"
   }
 }
