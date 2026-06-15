@@ -5,7 +5,13 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { parseCSV, indexBy, groupBy } from "./util.ts";
 import { normalize, save, load, type PartialStationData } from "./station.ts";
-import { computeDatums, resolveEpoch } from "./datum.ts";
+import {
+  computeDatums,
+  computeDatumsFromObservations,
+  parseGeslaSamples,
+  toFixed,
+} from "./datum.ts";
+import { ensureGeslaData, GESLA_DIR } from "./download-gesla.ts";
 import { getSourceSuffix, NON_COMMERCIAL_SOURCES } from "./filtering.ts";
 import { cleanName } from "./name-cleanup.ts";
 import { loadGeocoder } from "./geocode.ts";
@@ -56,6 +62,11 @@ function dayMonthYearToDate(date: string) {
 
 // Load geocoder
 const geocoder = await loadGeocoder();
+
+// Ensure GESLA-4 data is available, but only the first time a station actually
+// needs it (cache-reuse runs without FORCE_DATUMS never touch GESLA).
+let geslaReady: Promise<string> | undefined;
+const ensureGesla = () => (geslaReady ??= ensureGeslaData());
 
 /**
  * Imports all TICON-4 stations as clean source data.
@@ -160,41 +171,68 @@ async function main() {
   if (errors > 0) console.log(`Errors: ${errors}.`);
 }
 
+/**
+ * Resolve a station's tidal datums.
+ *
+ * Prefers empirical mean datums derived from GESLA-4 water-level measurements
+ * (NOAA CO-OPS first-reduction), keeping the astronomical HAT/LAT from harmonic
+ * synthesis (observed extremes conflate storm surge) shifted into the observed
+ * MSL frame. Falls back to fully synthetic datums when no usable observations
+ * exist. Reuses cached datums unless FORCE_DATUMS=1.
+ */
 async function getDatums(
   id: string,
   obsEpoch: { start: Date; end: Date },
   harmonic_constituents: PartialStationData["harmonic_constituents"],
 ) {
-  // Datum synthesis will always use 18.6-year nodal cycle, but for reporting and quality scoring we want to use
-  // the actual observation period (which may be shorter). There should probably be separate records for observation
-  // epoch vs datum epoch, but for now we'll use the smaller of the two.
-  const datumEpoch = resolveEpoch(obsEpoch);
+  if (!forceDatums) {
+    try {
+      const existing = await load("ticon", id);
+      return {
+        datums: existing.datums,
+        ...(existing.datums_source
+          ? { datums_source: existing.datums_source }
+          : {}),
+        epoch: existing.epoch ?? {
+          start: toISODate(obsEpoch.start),
+          end: toISODate(obsEpoch.end),
+        },
+      };
+    } catch {
+      // no cached record; compute below
+    }
+  }
 
-  const start = new Date(
-    Math.max(datumEpoch.start.getTime(), obsEpoch.start.getTime()),
+  // Harmonic baseline: supplies astronomical HAT/LAT and the short-record fallback.
+  const harmonic = computeDatums(harmonic_constituents, obsEpoch);
+
+  // Every TICON station has a GESLA-4 file (100% join), so read it directly — a
+  // missing file is a data-prep error and should throw, not silently degrade.
+  await ensureGesla();
+  const samples = parseGeslaSamples(
+    await readFile(join(GESLA_DIR, id), "utf-8"),
   );
-
-  try {
-    if (forceDatums) throw new Error("Forcing datum recalculation");
-
-    const existing = await load("ticon", id);
+  const obs = computeDatumsFromObservations(samples);
+  if (obs) {
+    // Shift harmonic HAT/LAT (relative to MSL=0) into the observed gauge frame.
+    const shift = obs.datums["MSL"] ?? 0;
     return {
-      datums: existing.datums,
-      epoch: {
-        start: toISODate(start),
-        end: toISODate(obsEpoch.end),
+      datums: {
+        ...obs.datums,
+        HAT: toFixed((harmonic.datums["HAT"] ?? 0) + shift, 3),
+        LAT: toFixed((harmonic.datums["LAT"] ?? 0) + shift, 3),
       },
-    };
-  } catch {
-    const { datums, end } = computeDatums(harmonic_constituents, obsEpoch);
-    return {
-      datums,
-      epoch: {
-        start: toISODate(start),
-        end: toISODate(end),
-      },
+      datums_source: "observed" as const,
+      epoch: { start: toISODate(obs.start), end: toISODate(obs.end) },
     };
   }
+
+  // GESLA record too short/sparse for empirical datums → synthetic fallback.
+  return {
+    datums: harmonic.datums,
+    datums_source: "harmonic" as const,
+    epoch: { start: toISODate(harmonic.start), end: toISODate(harmonic.end) },
+  };
 }
 
 function toISODate(date: Date) {

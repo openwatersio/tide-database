@@ -52,6 +52,10 @@ export interface StationData {
 
   datums: Record<string, number>;
 
+  // How datums were derived: "observed" (from GESLA water-level measurements)
+  // or "harmonic" (synthesized from harmonic constituents).
+  datums_source?: "observed" | "harmonic";
+
   // The chart datum key used as the vertical reference (e.g., "MLLW", "LAT")
   chart_datum: string;
 

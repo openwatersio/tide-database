@@ -203,6 +203,11 @@
       },
       "additionalProperties": false
     },
+    "datums_source": {
+      "type": "string",
+      "enum": ["observed", "harmonic"],
+      "description": "How datums were derived: 'observed' from water-level measurements, or 'harmonic' synthesized from constituents."
+    },
     "chart_datum": {
       "type": "string",
       "description": "The chart datum key used as the vertical reference for this station (e.g., MLLW, LAT). Must match a key in the datums object."
