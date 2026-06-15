@@ -12,6 +12,11 @@ import {
   toFixed,
 } from "./datum.ts";
 import { ensureGeslaData, GESLA_DIR } from "./download-gesla.ts";
+import {
+  parseGeslaSamplesInZone,
+  fitHarmonics,
+  isAnalyzable,
+} from "./harmonic-analysis.ts";
 import { getSourceSuffix, NON_COMMERCIAL_SOURCES } from "./filtering.ts";
 import { cleanName } from "./name-cleanup.ts";
 import { loadGeocoder } from "./geocode.ts";
@@ -107,18 +112,22 @@ async function main() {
       region = geo.region;
     }
 
-    const harmonic_constituents = rows.map((row) => ({
+    const id = rows[0].tide_gauge_name;
+
+    const csvHarmonics = rows.map((row) => ({
       name: row.con,
       amplitude: parseFloat(row.amp) / 100, // cm to m
       phase: ((parseFloat(row.pha) % 360) + 360) % 360,
     }));
 
+    // WSV (and other local-time-mislabeled GESLA sources) publish phases that
+    // are not UTC-referenced; re-fit them from the raw water levels. See #96.
+    const harmonic_constituents = await getHarmonics(id, csvHarmonics);
+
     const epoch = {
       start: dayMonthYearToDate(rows[0].start_date),
       end: dayMonthYearToDate(rows[0].end_date),
     };
-
-    const id = rows[0].tide_gauge_name;
 
     try {
       const candidate: PartialStationData = {
@@ -233,6 +242,48 @@ async function getDatums(
     datums_source: "harmonic" as const,
     epoch: { start: toISODate(harmonic.start), end: toISODate(harmonic.end) },
   };
+}
+
+// GESLA sources whose files are timestamped in local legal time but mislabeled
+// "TIME ZONE HOURS 0" (UTC). Their harmonics are re-fit in the correct zone so
+// phases are UTC-referenced like the rest of the database. See issue #96.
+const LOCAL_TIME_SOURCES: Record<string, string> = { wsv: "Europe/Berlin" };
+
+/**
+ * Resolve a station's harmonic constituents. For most sources these come
+ * straight from TICON's published amplitude/phase. For local-time-mislabeled
+ * sources (see LOCAL_TIME_SOURCES) the published phases are not UTC-referenced,
+ * so re-fit amplitude + UTC phase from the raw GESLA water levels. Throws when a
+ * mislabeled source can't be re-analyzed, so the station is skipped rather than
+ * saved with wrong phases. Cached like datums (reused unless FORCE_DATUMS=1; the
+ * fit is ~6s/station).
+ */
+async function getHarmonics(
+  id: string,
+  csvHarmonics: PartialStationData["harmonic_constituents"],
+): Promise<PartialStationData["harmonic_constituents"]> {
+  const tz = LOCAL_TIME_SOURCES[getSourceSuffix(id)];
+  if (!tz) return csvHarmonics;
+
+  if (!forceDatums) {
+    try {
+      const { harmonic_constituents } = await load("ticon", id);
+      if (harmonic_constituents?.length) return harmonic_constituents;
+    } catch {
+      // no cached record; compute below
+    }
+  }
+
+  await ensureGesla();
+  const samples = parseGeslaSamplesInZone(
+    await readFile(join(GESLA_DIR, id), "utf-8"),
+    tz,
+  );
+  const names = csvHarmonics.map((h) => h.name);
+  if (!isAnalyzable(samples, names.length)) {
+    throw new Error(`record too short to re-analyze ${tz} phases`);
+  }
+  return fitHarmonics(samples, names);
 }
 
 function toISODate(date: Date) {

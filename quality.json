@@ -50446,7 +50446,7 @@
       "coverage": 0.207
     },
     "issues": [
-      "P1 amplitude (0.0014) exceeds K1 (0.0013): physically impossible"
+      "P1 amplitude (0.0013) exceeds K1 (0.0011): physically impossible"
     ],
     "reason": "constituents"
   },
@@ -52002,12 +52002,13 @@
       "recency": 0.99,
       "source": 0.798,
       "quality": 1,
-      "amplitude": 1,
+      "amplitude": 0.75,
       "coverage": 0.065
     },
     "issues": [
-      "MLW (3.603) < LAT (4.538)",
-      "HAT (5.626) < MHHW (6.499)"
+      "MLW (3.603) < LAT (4.559)",
+      "HAT (5.605) < MHHW (6.499)",
+      "K2 amplitude (0.0365) exceeds S2 (0.0300)"
     ],
     "reason": "datum"
   },
@@ -68103,7 +68104,7 @@
       "coverage": 0.273
     },
     "issues": [
-      "P1 amplitude (0.0133) exceeds K1 (0.0051): physically impossible"
+      "P1 amplitude (0.0115) exceeds K1 (0.0076): physically impossible"
     ],
     "reason": "constituents"
   },
@@ -70944,8 +70945,8 @@
   },
   {
     "id": "ticon/flensburg-9610010-deu-wsv",
-    "accepted": false,
-    "score": 0,
+    "accepted": true,
+    "score": 81,
     "factors": {
       "epoch": 1,
       "recency": 0.99,
@@ -70954,14 +70955,11 @@
       "amplitude": 1,
       "coverage": 0.002
     },
-    "issues": [
-      "HAT (5.231) < MHHW (5.238)"
-    ],
-    "reason": "datum"
+    "issues": []
   },
   {
     "id": "ticon/flensburgtg-fle-deu-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 43,
     "factors": {
       "epoch": 0.615,
@@ -70971,7 +70969,9 @@
       "amplitude": 1,
       "coverage": 0.002
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/flensburg-9610010-deu-wsv"
   },
   {
     "id": "ticon/flinten16_sjov-35136-swe-smhi",
@@ -78080,7 +78080,7 @@
       "coverage": 0.107
     },
     "issues": [
-      "HAT (5.045) < MHHW (5.052)"
+      "HAT (5.041) < MHHW (5.052)"
     ],
     "reason": "datum"
   },
@@ -80903,7 +80903,7 @@
       "coverage": 0.207
     },
     "issues": [
-      "P1 amplitude (0.0021) exceeds K1 (0.0015): physically impossible"
+      "P1 amplitude (0.0019) exceeds K1 (0.0013): physically impossible"
     ],
     "reason": "constituents"
   },
@@ -94255,9 +94255,9 @@
       "coverage": 0.024
     },
     "issues": [
-      "HAT (5.036) < MHHW (5.039)"
+      "P1 amplitude (0.0014) exceeds K1 (0.0012): physically impossible"
     ],
-    "reason": "datum"
+    "reason": "constituents"
   },
   {
     "id": "ticon/nokkielaussen-5650068-deu-wsv",
@@ -116947,7 +116947,7 @@
       "coverage": 0.343
     },
     "issues": [
-      "P1 amplitude (0.0016) exceeds K1 (0.0010): physically impossible"
+      "P1 amplitude (0.0014) exceeds K1 (0.0007): physically impossible"
     ],
     "reason": "constituents"
   },
