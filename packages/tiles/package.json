@@ -1,0 +1,16 @@
+{
+  "name": "tiles",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "./build",
+    "pretest": "npm run build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@mapbox/vector-tile": "^2.0.3",
+    "@neaps/tide-database": "file:../..",
+    "pbf": "^4.0.1",
+    "pmtiles": "^4.3.0"
+  }
+}

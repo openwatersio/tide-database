@@ -38,9 +38,14 @@ jobs:
           mv packages/tcd/dist/harmonics-metric.tcd "packages/tcd/dist/neaps-${RELEASE_VERSION##*.}-metric.tcd"
           mv packages/tcd/dist/harmonics-imperial.tcd "packages/tcd/dist/neaps-${RELEASE_VERSION##*.}-imperial.tcd"
 
+      - name: Build PMTiles
+        run: npm run build -w tiles
+        env:
+          VERSION: ${{ env.RELEASE_VERSION }}
+
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
           tag: v${{ env.RELEASE_VERSION }}
           generateReleaseNotes: true
-          artifacts: "packages/tcd/dist/*.tcd"
+          artifacts: "packages/tcd/dist/*.tcd,packages/tiles/dist/*.pmtiles,packages/tiles/dist/*.mbtiles"

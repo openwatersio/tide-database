@@ -1,0 +1,47 @@
+#!/bin/bash
+
+set -e
+cd "$(dirname "$0")"
+
+VERSION="${VERSION:-$(node -p "require('../../package.json').version")}"
+
+# Remove any existing files to ensure a clean build
+rm -rf dist
+mkdir -p dist/tmp
+
+# Generate newline-delimited GeoJSON for each variant
+node build.ts
+
+# Lean tiles (z0-7): id/name/type only. Drop flags ensure no station is ever
+# dropped from a tile, regardless of density.
+docker compose run --rm tippecanoe \
+  --output=/dist/tmp/stations-lean.pmtiles \
+  --layer=stations \
+  --minimum-zoom=0 --maximum-zoom=7 \
+  --drop-rate=1 --no-feature-limit --no-tile-size-limit \
+  --force \
+  /dist/stations-lean.ndjson
+
+# Full tiles (z8-10): all station data, nested objects as JSON strings
+docker compose run --rm tippecanoe \
+  --output=/dist/tmp/stations-full.pmtiles \
+  --layer=stations \
+  --minimum-zoom=8 --maximum-zoom=10 \
+  --drop-rate=1 --no-feature-limit --no-tile-size-limit \
+  --force \
+  /dist/stations-full.ndjson
+
+# Merge into a single tileset with one "stations" layer spanning z0-10.
+# tile-join picks the format from the output extension.
+for ext in pmtiles mbtiles; do
+  docker compose run --rm tile-join \
+    --output=/dist/neaps.${ext} \
+    --no-tile-size-limit \
+    --force \
+    --name="Neaps Tide Stations" \
+    --description="Tide stations from @neaps/tide-database v${VERSION}. NOT FOR NAVIGATION." \
+    --attribution="<a href=\"https://tidesandcurrents.noaa.gov\">NOAA</a>; <a href=\"https://www.seanoe.org/data/00980/109129/\">TICON-4</a>" \
+    /dist/tmp/stations-lean.pmtiles /dist/tmp/stations-full.pmtiles
+done
+
+rm -rf dist/tmp
