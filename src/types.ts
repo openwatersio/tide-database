@@ -70,9 +70,10 @@ export interface Station extends StationData {
   id: string;
 }
 
-// The light fields, bundled eagerly for all stations (~1.5 MB). Everything the
-// search/geo/list paths need. The heavy fields (harmonic_constituents, datums,
-// epoch) are loaded lazily per station — see station-bundle.ts.
+// The light fields, bundled eagerly for all stations (~1.5 MB serialized;
+// ~15 MB as live objects on the heap). Everything the search/geo/list paths
+// need. The prediction data (harmonic_constituents, datums, epoch) is loaded
+// per station from the pack — see station-data.ts.
 export type StationMetaKey =
   | "name"
   | "latitude"
@@ -90,3 +91,11 @@ export type StationMetaKey =
   | "offsets";
 
 export type StationMeta = { id: string } & Pick<StationData, StationMetaKey>;
+
+// The lazily-loaded prediction data, resolved per station from the data source
+// (an off-heap pack file on Node, bundled JSON strings in the browser).
+export interface PredictionData {
+  harmonic_constituents: HarmonicConstituent[];
+  datums: Record<string, number>;
+  epoch?: StationData["epoch"];
+}

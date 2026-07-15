@@ -1,65 +1,45 @@
-import type {
-  HarmonicConstituent,
-  Station,
-  StationData,
-  StationMeta,
-} from "./types.js";
+import type { Station, StationMeta } from "./types.js";
 import { createStationMeta } from "./station-bundle.js" with { type: "macro" };
-import { createStationHeavy } from "./station-bundle.js" with { type: "macro" };
 import { createDatumEnum } from "./station-bundle.js" with { type: "macro" };
+import { getData } from "#station-data";
 import quality from "../quality.json" with { type: "json" };
 
 /** All datum keys present across the database (e.g. "MLLW", "MSL", "NAVD88"). */
 export const datums: string[] = createDatumEnum();
 
-// Metadata is inlined as object literals (~15 MB of live objects). Heavy fields
-// are inlined as an array of per-station JSON string literals and parsed on
-// demand, so importing this module no longer materializes all 6,000+ stations'
-// harmonics (which cost ~118 MB of heap / ~660 MB RSS eagerly).
+// Metadata (identity + offsets/source/etc) is inlined as object literals. The
+// prediction data (harmonic_constituents, datums, epoch) comes from a per-runtime
+// source (#station-data): an off-heap pack file on Node, bundled strings in the
+// browser. Either way, importing this module holds no station data on the heap —
+// a station's record is parsed only when its prediction fields are accessed.
 const meta: StationMeta[] = createStationMeta();
-const heavy: string[] = createStationHeavy();
 
-const indexById = new Map(meta.map((m, i) => [m.id, i] as const));
-
-interface HeavyFields {
-  harmonic_constituents: HarmonicConstituent[];
-  datums: Record<string, number>;
-  epoch?: StationData["epoch"];
-}
-
-function parseHeavy(index: number): HeavyFields {
-  return JSON.parse(heavy[index]!);
-}
-
-function makeStation(m: StationMeta, index: number): Station {
+function makeStation(m: StationMeta): Station {
   // Subordinate stations predict from their reference station's harmonics and
-  // datums (their own offsets still apply). Resolve to the reference's heavy
-  // data; fall back to self if the reference is somehow missing.
-  const dataIndex =
-    m.type === "subordinate" && m.offsets
-      ? (indexById.get(m.offsets.reference) ?? index)
-      : index;
+  // datums (their own offsets still apply); resolve to the reference's record.
+  const dataId =
+    m.type === "subordinate" && m.offsets ? m.offsets.reference : m.id;
 
   const station = { ...m } as Station;
 
-  // Getters keep the sync API: reading these fields parses one station's heavy
-  // blob. No caching — a persistent cache on these module-level objects would
-  // grow back toward the full 118 MB on a process that touches every station.
+  // Getters keep the sync API: reading these fields parses one station's record.
+  // No caching — a persistent cache on these module-level objects would pull the
+  // heavy data back onto the heap.
   Object.defineProperties(station, {
     harmonic_constituents: {
       enumerable: true,
       configurable: true,
-      get: () => parseHeavy(dataIndex).harmonic_constituents,
+      get: () => getData(dataId).harmonic_constituents,
     },
     datums: {
       enumerable: true,
       configurable: true,
-      get: () => parseHeavy(dataIndex).datums,
+      get: () => getData(dataId).datums,
     },
     epoch: {
       enumerable: true,
       configurable: true,
-      get: () => parseHeavy(index).epoch,
+      get: () => getData(m.id).epoch,
     },
   });
 

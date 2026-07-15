@@ -30,12 +30,14 @@ function readAll(): { id: string; data: StationData }[] {
     import: "default",
     base: "../data",
   });
-  // Object.entries preserves the glob's sorted key order, so the metadata array,
-  // the heavy array, and the geo/text indexes all share one station ordering.
-  return Object.entries(modules).map(([path, data]) => ({
-    id: path.replace(/^\.\//, "").replace(/\.json$/, ""),
-    data,
-  }));
+  // Sort explicitly so the metadata array and the geo/text indexes share one
+  // deterministic station order regardless of the bundler's glob implementation.
+  return Object.entries(modules)
+    .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+    .map(([path, data]) => ({
+      id: path.replace(/^\.\//, "").replace(/\.json$/, ""),
+      data,
+    }));
 }
 
 /**
@@ -49,7 +51,8 @@ export function createDatumEnum(): string[] {
     if (data.datums)
       for (const key of Object.keys(data.datums)) datums.add(key);
   }
-  return [...datums];
+  // Sorted for deterministic builds (downstream may embed this, e.g. OpenAPI enums).
+  return [...datums].sort();
 }
 
 /** Light metadata for every station, in bundle order. Used at build time. */
@@ -73,17 +76,19 @@ export function createStationMeta(): StationMeta[] {
 }
 
 /**
- * Heavy fields (harmonic_constituents, datums, epoch) as an array of per-station
- * JSON strings, inlined as an array of string literals. The strings are the live
- * data; each is JSON.parsed on demand, so importing the bundle never
- * materializes all stations' harmonics at once.
+ * Prediction data (harmonic_constituents, datums, epoch) keyed by station id,
+ * each a JSON string. Used by the browser build, which inlines this as an object
+ * of string literals and parses one record on demand. (The Node build reads the
+ * same records from an off-heap pack file instead — see station-data.ts.)
  */
-export function createStationHeavy(): string[] {
-  return readAll().map(({ data }) =>
-    JSON.stringify({
-      harmonic_constituents: data.harmonic_constituents ?? [],
-      datums: data.datums ?? {},
-      epoch: data.epoch,
-    }),
-  );
+export function createStationDataById(): Record<string, string> {
+  const data: Record<string, string> = {};
+  for (const { id, data: station } of readAll()) {
+    data[id] = JSON.stringify({
+      harmonic_constituents: station.harmonic_constituents ?? [],
+      datums: station.datums ?? {},
+      epoch: station.epoch,
+    });
+  }
+  return data;
 }

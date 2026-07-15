@@ -49,10 +49,14 @@ const geoIndex = loadGeoIndex(await createGeoIndex());
 // search(), so defer building it until the first text search. The serialized
 // index string (~1.5 MB) is still inlined at build time; only the expensive
 // loadTextIndex build is deferred.
-const textIndexData = await createTextIndex();
+let textIndexData: string | undefined = await createTextIndex();
 let textIndex: ReturnType<typeof loadTextIndex> | undefined;
 function getTextIndex() {
-  return (textIndex ??= loadTextIndex(textIndexData));
+  if (!textIndex) {
+    textIndex = loadTextIndex(textIndexData!);
+    textIndexData = undefined; // free the ~1.5 MB serialized string for GC
+  }
+  return textIndex;
 }
 
 function createFilter(
