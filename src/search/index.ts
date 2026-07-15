@@ -41,9 +41,19 @@ export type TextSearchOptions = {
  */
 export type StationWithDistance = [Station, number];
 
-// Load the indexes, which get inlined at build time
+// The geo index is small and used by near/nearest/bbox, so load it eagerly.
 const geoIndex = loadGeoIndex(await createGeoIndex());
-const textIndex = loadTextIndex(await createTextIndex());
+
+// The text index costs ~15 MB of heap to build. Consumers that only do geo/id
+// lookups (e.g. the signalk-tides plugin on constrained hardware) never call
+// search(), so defer building it until the first text search. The serialized
+// index string (~1.5 MB) is still inlined at build time; only the expensive
+// loadTextIndex build is deferred.
+const textIndexData = await createTextIndex();
+let textIndex: ReturnType<typeof loadTextIndex> | undefined;
+function getTextIndex() {
+  return (textIndex ??= loadTextIndex(textIndexData));
+}
 
 function createFilter(
   includeAll?: boolean,
@@ -122,8 +132,9 @@ export function search(
   { includeAll, filter, maxResults = 20 }: TextSearchOptions = {},
 ): Station[] {
   const combined = createFilter(includeAll, filter);
+  const index = getTextIndex();
 
-  const searchOptions: Parameters<typeof textIndex.search>[1] = {};
+  const searchOptions: Parameters<typeof index.search>[1] = {};
 
   if (combined) {
     searchOptions.filter = (result) => {
@@ -132,7 +143,7 @@ export function search(
     };
   }
 
-  const results = textIndex.search(query, searchOptions);
+  const results = index.search(query, searchOptions);
 
   return results
     .slice(0, maxResults)

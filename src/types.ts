@@ -69,3 +69,24 @@ export interface StationData {
 export interface Station extends StationData {
   id: string;
 }
+
+// The light fields, bundled eagerly for all stations (~1.5 MB). Everything the
+// search/geo/list paths need. The heavy fields (harmonic_constituents, datums,
+// epoch) are loaded lazily per station — see station-bundle.ts.
+export type StationMetaKey =
+  | "name"
+  | "latitude"
+  | "longitude"
+  | "region"
+  | "country"
+  | "continent"
+  | "timezone"
+  | "type"
+  | "disclaimers"
+  | "chart_datum"
+  | "datums_source"
+  | "source"
+  | "license"
+  | "offsets";
+
+export type StationMeta = { id: string } & Pick<StationData, StationMetaKey>;
