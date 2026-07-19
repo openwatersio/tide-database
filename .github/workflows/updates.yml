@@ -35,12 +35,18 @@ jobs:
           sed -n '/^## Summary$/,$p' /tmp/noaa-update.log > /tmp/noaa-summary.md
           printf '\n### Workflow\n\n            This PR was automatically created by the monthly NOAA station update workflow.Run: %s\n' "$WORKFLOW_URL" >> /tmp/noaa-summary.md
 
+      - name: Re-evaluate station quality
+        # New/moved NOAA stations shift proximity and can supersede TICON
+        # records, so quality.json must be regenerated in the same commit or it
+        # goes stale against the data it describes.
+        run: tools/evaluate-quality.ts
+
       - name: Check for changes
         id: changes
         run: |
-          if [[ -n $(git status --porcelain data/) ]]; then
+          if [[ -n $(git status --porcelain data/ quality.json) ]]; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "Changes detected in data directory"
+            echo "Changes detected in station data or quality.json"
           else
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected"
