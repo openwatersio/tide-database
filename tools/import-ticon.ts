@@ -30,6 +30,7 @@ const metadata = indexBy(
 );
 const data = await readFile(dataPath, "utf-8");
 const forceDatums = process.env["FORCE_DATUMS"] === "1";
+const forceHarmonics = process.env["FORCE_HARMONICS"] === "1";
 
 type TiconMetaRow = {
   "FILE NAME": string;
@@ -81,7 +82,7 @@ const ensureGesla = () => (geslaReady ??= ensureGeslaData());
  */
 async function main() {
   console.log(
-    `=== Importing TICON stations ===${forceDatums ? " (forcing datum recalculation)" : ""}\n`,
+    `=== Importing TICON stations ===${forceDatums ? " (forcing datum recalculation)" : ""}${forceHarmonics ? " (forcing harmonic re-analysis)" : ""}\n`,
   );
 
   const groups = Object.values(
@@ -274,8 +275,8 @@ const LOCAL_TIME_SOURCES: Record<string, LocalTimeSource> = {
  * sources (see LOCAL_TIME_SOURCES) the published phases are not UTC-referenced,
  * so re-fit amplitude + UTC phase from the raw GESLA water levels. Throws when a
  * mislabeled source can't be re-analyzed, so the station is skipped rather than
- * saved with wrong phases. Cached like datums (reused unless FORCE_DATUMS=1; the
- * fit is ~6s/station).
+ * saved with wrong phases. Cached like datums (reused unless FORCE_HARMONICS=1;
+ * the fit is ~6s/station).
  */
 async function getHarmonics(
   id: string,
@@ -284,7 +285,7 @@ async function getHarmonics(
   const src = LOCAL_TIME_SOURCES[getSourceSuffix(id)];
   if (!src) return csvHarmonics;
 
-  if (!forceDatums) {
+  if (!forceHarmonics) {
     try {
       const { harmonic_constituents } = await load("ticon", id);
       if (harmonic_constituents?.length) return harmonic_constituents;
