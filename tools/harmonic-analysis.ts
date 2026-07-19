@@ -202,10 +202,13 @@ export function fitHarmonics(
   return cons.map((co, k) => {
     const p = x[1 + 2 * k]!;
     const q = x[2 + 2 * k]!;
+    // Round to fit uncertainty: 1 mm amplitude, 0.01° phase (~1 s for M2).
     return {
       name: co.name,
-      amplitude: Math.hypot(p, q),
-      phase: (((Math.atan2(q, p) / DEG) % 360) + 360) % 360,
+      amplitude: Math.round(Math.hypot(p, q) * 1000) / 1000,
+      phase:
+        Math.round(((((Math.atan2(q, p) / DEG) % 360) + 360) % 360) * 100) /
+        100,
     };
   });
 }
