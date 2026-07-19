@@ -196,6 +196,11 @@ describe("seasonal-contamination gate", () => {
     expect(byId.get("ticon/mazatlan_flotador-16-mex-unam")?.accepted).toBe(
       false,
     );
+    // The seasonal gate runs before dedup, so this is the reason of record —
+    // assert it so a regression can't quietly downgrade it back to "duplicate".
+    expect(byId.get("ticon/mazatlan_flotador-16-mex-unam")?.reason).toBe(
+      "seasonal",
+    );
   });
 
   // Shipped-data invariant: no published TICON station has an SA amplitude that
@@ -216,7 +221,7 @@ describe("seasonal-contamination gate", () => {
       for (const other of refs) {
         if (other.id === station.id) continue;
         const osa = getAmp(other, "SA");
-        if (osa === undefined) continue;
+        if (osa === undefined || osa <= 0) continue;
         const om2 = getAmp(other, "M2");
         if (om2 === undefined || om2 <= 0) continue;
         if (Math.min(m2, om2) / Math.max(m2, om2) < MIN_AMPLITUDE_RATIO)

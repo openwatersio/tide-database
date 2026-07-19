@@ -265,9 +265,11 @@ function checkSeasonalContamination(
   for (const other of allStations) {
     if (other.id === station.id) continue;
     if (other.type === "subordinate") continue;
-    // Only neighbours that actually resolved an SA term can vouch either way.
+    // Only neighbours with a genuine (positive) SA term can vouch. Treating an
+    // SA=0 placeholder as a valid comparator would drag the median toward zero
+    // and silently disable the gate where such placeholders are common.
     const otherSA = other.harmonic_constituents.find((c) => c.name === "SA");
-    if (otherSA === undefined) continue;
+    if (otherSA === undefined || otherSA.amplitude <= 0) continue;
     if (!hasSimilarM2(station, other)) continue; // same tidal regime only
     const d = distance(
       station.latitude,
