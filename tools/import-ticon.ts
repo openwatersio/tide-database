@@ -245,9 +245,28 @@ async function getDatums(
 }
 
 // GESLA sources whose files are timestamped in local legal time but mislabeled
-// "TIME ZONE HOURS 0" (UTC). Their harmonics are re-fit in the correct zone so
-// phases are UTC-referenced like the rest of the database. See issue #96.
-const LOCAL_TIME_SOURCES: Record<string, string> = { wsv: "Europe/Berlin" };
+// "TIME ZONE HOURS 0" (UTC). Their harmonics are re-fit in the correct zone
+// (then optionally shifted, see `shiftHours`) so phases are UTC-referenced like
+// the rest of the database.
+//
+// - `wsv` (pegelonline.wsv.de): files are full German legal time (MEZ/MESZ)
+//   mislabeled UTC. Reinterpret in Europe/Berlin. See issue #96.
+// - `rws` (Rijkswaterstaat/waterinfo.rws.nl): files were converted from Dutch
+//   legal time to "UTC" by subtracting a FIXED 1 h (the standard CET offset)
+//   instead of a DST-aware conversion. So winter (CET) records are already true
+//   UTC, but summer (CEST) records are left 1 h fast. Season-split re-analysis
+//   confirms it: vs a UTC-correct CMEMS neighbour, winter Δphase ≈ 0 while
+//   summer ≈ +1 h across M2/S2/N2, plus a ~3% semidiurnal amplitude loss from
+//   blending the two halves in a single fit. Invert with Amsterdam's own DST
+//   calendar: reinterpret in Europe/Amsterdam (subtracts {1,2} h) then add back
+//   the 1 h that was wrongly removed (`shiftHours: 1`), netting a DST-only
+//   correction ({0,1} h). The sibling `rws_hist` source is already UTC-correct
+//   and is deliberately not listed here. See issue #98.
+type LocalTimeSource = { zone: string; shiftHours?: number };
+const LOCAL_TIME_SOURCES: Record<string, LocalTimeSource> = {
+  wsv: { zone: "Europe/Berlin" },
+  rws: { zone: "Europe/Amsterdam", shiftHours: 1 },
+};
 
 /**
  * Resolve a station's harmonic constituents. For most sources these come
@@ -262,8 +281,8 @@ async function getHarmonics(
   id: string,
   csvHarmonics: PartialStationData["harmonic_constituents"],
 ): Promise<PartialStationData["harmonic_constituents"]> {
-  const tz = LOCAL_TIME_SOURCES[getSourceSuffix(id)];
-  if (!tz) return csvHarmonics;
+  const src = LOCAL_TIME_SOURCES[getSourceSuffix(id)];
+  if (!src) return csvHarmonics;
 
   if (!forceDatums) {
     try {
@@ -275,13 +294,19 @@ async function getHarmonics(
   }
 
   await ensureGesla();
-  const samples = parseGeslaSamplesInZone(
+  let samples = parseGeslaSamplesInZone(
     await readFile(join(GESLA_DIR, id), "utf-8"),
-    tz,
+    src.zone,
   );
+  // Undo any fixed offset baked into the source before it was mislabeled UTC
+  // (e.g. rws had a flat 1 h removed, so re-add it after the DST-aware parse).
+  if (src.shiftHours) {
+    const ms = src.shiftHours * 3_600_000;
+    samples = samples.map((s) => ({ t: s.t + ms, level: s.level }));
+  }
   const names = csvHarmonics.map((h) => h.name);
   if (!isAnalyzable(samples, names.length)) {
-    throw new Error(`record too short to re-analyze ${tz} phases`);
+    throw new Error(`record too short to re-analyze ${src.zone} phases`);
   }
   return fitHarmonics(samples, names);
 }

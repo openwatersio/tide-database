@@ -60,4 +60,29 @@ describe("parseGeslaSamplesInZone", () => {
       "2020-07-01T10:00:00.000Z",
     );
   });
+
+  test("rws convention (fixed-1h-removed) recovers true UTC via Amsterdam + 1h", () => {
+    // rws files had a flat 1 h subtracted from Dutch legal time and were then
+    // mislabeled UTC, so stored = true_UTC + Amsterdam-DST-flag: winter rows are
+    // already true UTC, summer rows are 1 h fast. The import re-references them
+    // by parsing in Europe/Amsterdam then re-adding the 1 h. See issue #98.
+    const HOUR = 3_600_000;
+    const text = [
+      "# NULL VALUE -99.9999",
+      "#",
+      "2020/01/01 12:00:00 1.0 1 1", // winter: stored == true UTC 12:00
+      "2020/07/01 11:00:00 2.0 1 1", // summer: stored is 1 h fast of true UTC 10:00
+    ].join("\n");
+
+    const corrected = parseGeslaSamplesInZone(text, "Europe/Amsterdam").map(
+      (s) => ({ t: s.t + HOUR, level: s.level }),
+    );
+    expect(corrected).toHaveLength(2);
+    expect(new Date(corrected[0]!.t).toISOString()).toBe(
+      "2020-01-01T12:00:00.000Z",
+    );
+    expect(new Date(corrected[1]!.t).toISOString()).toBe(
+      "2020-07-01T10:00:00.000Z",
+    );
+  });
 });
