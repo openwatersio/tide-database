@@ -152,3 +152,24 @@ export const FALLBACK_DEDUP_DISTANCE = 0.1; // 100 meters
 
 /** Minimum tidal range (MHW - MLW) to consider a station useful for tide prediction */
 export const MIN_TIDAL_RANGE = 0.02; // 2cm
+
+// ── Seasonal-contamination gate ──────────────────────────────────────────
+// A harmonic analysis of a short, gappy, or datum-shifted sea-level record can
+// absorb spurious energy into the seasonal band (SA and its M2 satellites),
+// inflating the predicted extreme range. SA is a meteorological/steric signal
+// that varies smoothly along a coast, so a station whose SA amplitude wildly
+// exceeds that of a hydraulically-connected neighbour in the same tidal regime
+// is almost certainly contaminated rather than physically distinct.
+
+/** Radius within which a same-regime neighbour can vouch for a station's
+ *  seasonal amplitude (in km). Kept tight so comparisons stay within one
+ *  local regime rather than across an estuary gradient. */
+export const SEASONAL_OUTLIER_RADIUS = 25;
+
+/** Only stations whose SA amplitude exceeds this (in metres) are checked. Below
+ *  it, seasonal energy is too small to meaningfully distort the range. */
+export const SEASONAL_OUTLIER_MIN_SA = 0.5;
+
+/** A station's SA must exceed the median SA of its same-regime neighbours by at
+ *  least this factor to be gated as contaminated. */
+export const SEASONAL_OUTLIER_RATIO = 5;

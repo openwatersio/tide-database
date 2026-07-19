@@ -2519,7 +2519,7 @@
       "source": 1,
       "quality": 1,
       "amplitude": 1,
-      "coverage": 0.023
+      "coverage": 0.002
     },
     "issues": []
   },
@@ -57103,8 +57103,8 @@
   },
   {
     "id": "ticon/cape_dor-240-can-meds",
-    "accepted": true,
-    "score": 62,
+    "accepted": false,
+    "score": 0,
     "factors": {
       "epoch": 0.782,
       "recency": 0.53,
@@ -57113,7 +57113,10 @@
       "amplitude": 1,
       "coverage": 0.142
     },
-    "issues": []
+    "issues": [
+      "SA amplitude (2.077m) is 23.2x the median SA of 1 same-regime neighbour(s) within 25km (0.090m): seasonal contamination"
+    ],
+    "reason": "seasonal"
   },
   {
     "id": "ticon/cape_ferguson-343a-aus-uhslc_rq",
@@ -89469,7 +89472,7 @@
   {
     "id": "ticon/mazatlan_flotador-16-mex-unam",
     "accepted": false,
-    "score": 34,
+    "score": 0,
     "factors": {
       "epoch": 0.072,
       "recency": 0.96,
@@ -89478,9 +89481,10 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/mazatlan-673-mex-unam_hist"
+    "issues": [
+      "SA amplitude (0.935m) is 6.8x the median SA of 3 same-regime neighbour(s) within 25km (0.138m): seasonal contamination"
+    ],
+    "reason": "seasonal"
   },
   {
     "id": "ticon/mazatlan_radar-16-mex-unam",
@@ -89811,28 +89815,28 @@
   {
     "id": "ticon/merrimack_r_03_miles_usrt_125_at_haverhillma-1100693-usa-usgs",
     "accepted": true,
-    "score": 77,
+    "score": 78,
     "factors": {
       "epoch": 0.992,
       "recency": 0.98,
       "source": 0.596,
       "quality": 1,
       "amplitude": 1,
-      "coverage": 0.023
+      "coverage": 0.082
     },
     "issues": []
   },
   {
     "id": "ticon/merrimack_river_at_bates_bridge_near_haverhill_ma-11006988-usa-usgs",
     "accepted": true,
-    "score": 62,
+    "score": 61,
     "factors": {
       "epoch": 0.198,
       "recency": 0.99,
       "source": 0.596,
       "quality": 1,
       "amplitude": 1,
-      "coverage": 0.071
+      "coverage": 0.002
     },
     "issues": []
   },
@@ -89846,7 +89850,7 @@
       "source": 0.596,
       "quality": 1,
       "amplitude": 1,
-      "coverage": 0.18
+      "coverage": 0.19
     },
     "issues": []
   },
