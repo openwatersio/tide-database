@@ -6,7 +6,8 @@
  * Pipeline:
  *   1. Load all stations (NOAA + TICON)
  *   2. Compute quality factors for each station
- *   3. Apply hard gates (datum ordering, tidal range, superseded source)
+ *   3. Apply hard gates (datum ordering, tidal range, superseded source,
+ *      missing constituents, seasonal contamination)
  *   4. Deduplicate TICON stations by proximity
  *   5. Compute composite score and write results
  *
@@ -33,6 +34,9 @@ import {
   FALLBACK_DEDUP_DISTANCE,
   MIN_AMPLITUDE_RATIO,
   MIN_TIDAL_RANGE,
+  SEASONAL_OUTLIER_RADIUS,
+  SEASONAL_OUTLIER_MIN_SA,
+  SEASONAL_OUTLIER_RATIO,
 } from "./filtering.ts";
 import type { StationData } from "../src/types.js";
 
@@ -217,6 +221,74 @@ function checkConstituents(station: Station): string | null {
   }
 
   return null;
+}
+
+/** Median of a numeric array. Returns 0 for empty input. */
+function median(values: number[]): number {
+  if (values.length === 0) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = sorted.length >> 1;
+  return sorted.length % 2
+    ? sorted[mid]!
+    : (sorted[mid - 1]! + sorted[mid]!) / 2;
+}
+
+/**
+ * Seasonal-contamination gate.
+ *
+ * A harmonic analysis of a short, gappy, or datum-shifted record can absorb
+ * spurious energy into the seasonal band (the annual SA constituent), inflating
+ * the predicted extreme range without any physical basis. SA is a
+ * meteorological/steric signal that varies smoothly along a coast, so a station
+ * whose SA amplitude grossly exceeds that of a hydraulically-connected
+ * neighbour is almost certainly contaminated rather than physically distinct.
+ *
+ * Comparison is restricted to neighbours in the same tidal regime (similar M2)
+ * so a genuine river-freshet station — large, real SA atop a small tide — is
+ * only ever compared against other such stations, not the open coast. This
+ * keeps the gate targeted at the failure mode the CHS range benchmark surfaces:
+ * strongly tidal stations whose charted range is overstated.
+ */
+function checkSeasonalContamination(
+  station: Station,
+  allStations: Station[],
+): string | null {
+  // Authoritative sources (NOAA) are trusted; this targets TICON harmonic fits.
+  if (!station.id.startsWith("ticon/")) return null;
+  if (station.type === "subordinate") return null;
+
+  const sa = getAmplitude(station, "SA");
+  if (sa < SEASONAL_OUTLIER_MIN_SA) return null;
+  if (getAmplitude(station, "M2") <= 0) return null; // no tidal regime to compare
+
+  const neighbourSA: number[] = [];
+  for (const other of allStations) {
+    if (other.id === station.id) continue;
+    if (other.type === "subordinate") continue;
+    // Only neighbours that actually resolved an SA term can vouch either way.
+    const otherSA = other.harmonic_constituents.find((c) => c.name === "SA");
+    if (otherSA === undefined) continue;
+    if (!hasSimilarM2(station, other)) continue; // same tidal regime only
+    const d = distance(
+      station.latitude,
+      station.longitude,
+      other.latitude,
+      other.longitude,
+    );
+    if (d <= SEASONAL_OUTLIER_RADIUS) neighbourSA.push(otherSA.amplitude);
+  }
+
+  if (neighbourSA.length === 0) return null; // no same-regime neighbour to check
+  const med = median(neighbourSA);
+  if (med <= 0) return null;
+  const ratio = sa / med;
+  if (ratio < SEASONAL_OUTLIER_RATIO) return null;
+
+  return (
+    `SA amplitude (${sa.toFixed(3)}m) is ${ratio.toFixed(1)}x the median SA ` +
+    `of ${neighbourSA.length} same-regime neighbour(s) within ` +
+    `${SEASONAL_OUTLIER_RADIUS}km (${med.toFixed(3)}m): seasonal contamination`
+  );
 }
 
 // ── Scored Factors (each returns 0.0–1.0) ────────────────────────────────
@@ -524,6 +596,7 @@ async function main() {
     const rangeIssue = checkTidalRange(station, stationMap);
     const supersededIssue = checkSuperseded(station);
     const constituentIssue = checkConstituents(station);
+    const seasonalIssue = checkSeasonalContamination(station, stations);
 
     // Diurnal pair warnings are non-fatal
     issues.push(...datumIssues.warnings);
@@ -541,6 +614,9 @@ async function main() {
     } else if (constituentIssue) {
       issues.push(constituentIssue);
       gateReason = "constituents";
+    } else if (seasonalIssue) {
+      issues.push(seasonalIssue);
+      gateReason = "seasonal";
     }
 
     // Scored factors

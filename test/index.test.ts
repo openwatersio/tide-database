@@ -3,9 +3,18 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
-import { stations } from "../src/index.js";
+import { stations, allStations } from "../src/index.js";
 import { near } from "../src/search/index.js";
-import { MIN_TIDAL_RANGE, MIN_DEDUP_DISTANCE } from "../tools/filtering.js";
+import {
+  MIN_TIDAL_RANGE,
+  MIN_DEDUP_DISTANCE,
+  MIN_AMPLITUDE_RATIO,
+  SEASONAL_OUTLIER_RADIUS,
+  SEASONAL_OUTLIER_MIN_SA,
+  SEASONAL_OUTLIER_RATIO,
+  distance,
+} from "../tools/filtering.js";
+import quality from "../quality.json" with { type: "json" };
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const SCHEMA_PATH = join(ROOT, "schemas", "station.schema.json");
@@ -161,6 +170,76 @@ stations.forEach((station) => {
             `Run tools/evaluate-quality.ts to re-filter.`,
         ).toBeGreaterThanOrEqual(MIN_TIDAL_RANGE);
       });
+    }
+  });
+});
+
+describe("seasonal-contamination gate", () => {
+  const getAmp = (
+    s: { harmonic_constituents?: { name: string; amplitude: number }[] },
+    name: string,
+  ) => s.harmonic_constituents?.find((c) => c.name === name)?.amplitude;
+  const median = (v: number[]): number => {
+    const a = [...v].sort((x, y) => x - y);
+    const m = a.length >> 1;
+    return a.length % 2 ? a[m]! : (a[m - 1]! + a[m]!) / 2;
+  };
+
+  // A short/gappy/datum-shifted record whose harmonic fit dumps spurious energy
+  // into the annual (SA) band inflates the predicted extreme range. Cape Dor is
+  // the canonical case (openwatersio/tide-database#93): SA 2.077m vs 0.090m at
+  // Spencers Island 7km away in the same tidal regime.
+  test("rejects known contaminated records", () => {
+    const byId = new Map(quality.map((r) => [r.id, r]));
+    expect(byId.get("ticon/cape_dor-240-can-meds")?.accepted).toBe(false);
+    expect(byId.get("ticon/cape_dor-240-can-meds")?.reason).toBe("seasonal");
+    expect(byId.get("ticon/mazatlan_flotador-16-mex-unam")?.accepted).toBe(
+      false,
+    );
+  });
+
+  // Shipped-data invariant: no published TICON station has an SA amplitude that
+  // grossly outstrips same-regime (similar-M2) neighbours within the radius.
+  test("no published station is a same-regime SA outlier", () => {
+    const refs = allStations.filter(
+      (s) => (s.type ?? "reference") === "reference",
+    );
+    for (const station of stations) {
+      if (!station.id.startsWith("ticon/")) continue;
+      if ((station.type ?? "reference") !== "reference") continue;
+      const sa = getAmp(station, "SA");
+      if (sa === undefined || sa < SEASONAL_OUTLIER_MIN_SA) continue;
+      const m2 = getAmp(station, "M2");
+      if (m2 === undefined || m2 <= 0) continue;
+
+      const neighbourSA: number[] = [];
+      for (const other of refs) {
+        if (other.id === station.id) continue;
+        const osa = getAmp(other, "SA");
+        if (osa === undefined) continue;
+        const om2 = getAmp(other, "M2");
+        if (om2 === undefined || om2 <= 0) continue;
+        if (Math.min(m2, om2) / Math.max(m2, om2) < MIN_AMPLITUDE_RATIO)
+          continue;
+        if (
+          distance(
+            station.latitude,
+            station.longitude,
+            other.latitude,
+            other.longitude,
+          ) <= SEASONAL_OUTLIER_RADIUS
+        )
+          neighbourSA.push(osa);
+      }
+      if (neighbourSA.length === 0) continue;
+      const med = median(neighbourSA);
+      if (med <= 0) continue;
+      expect(
+        sa / med,
+        `Station ${station.id}: SA ${sa.toFixed(3)}m is ${(sa / med).toFixed(1)}x the ` +
+          `median SA of its same-regime neighbours (${med.toFixed(3)}m). ` +
+          `Run tools/evaluate-quality.ts to re-filter.`,
+      ).toBeLessThan(SEASONAL_OUTLIER_RATIO);
     }
   });
 });
