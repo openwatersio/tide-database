@@ -17,16 +17,18 @@
     "commercial_use": true,
     "url": "https://creativecommons.org/licenses/by/4.0/"
   },
-  "disclaimers": "No obvious issues",
+  "disclaimers": "No obvious issues Datums derived from harmonic prediction; the observation record is too short for an empirical reduction, so datum values carry higher uncertainty.",
   "datums": {
-    "HAT": 0.688,
-    "MHHW": 0.304,
-    "MHW": 0.302,
+    "HAT": 0.689,
+    "MHHW": 0.296,
+    "MHW": 0.295,
     "MSL": 0,
-    "MTL": -0.002,
+    "MTL": -0.005,
     "MLW": -0.305,
     "MLLW": -0.305,
-    "LAT": -0.467
+    "LAT": -0.469,
+    "MHWS": 0.344,
+    "MLWS": -0.344
   },
   "datums_source": "harmonic",
   "chart_datum": "MLLW",
@@ -284,7 +286,7 @@
     }
   ],
   "epoch": {
-    "start": "1995-06-12",
+    "start": "1989-07-18",
     "end": "2014-01-22"
   }
 }

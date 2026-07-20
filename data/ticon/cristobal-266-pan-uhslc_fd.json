@@ -20,13 +20,15 @@
   "disclaimers": "Possible datum issues",
   "datums": {
     "HAT": 1.035,
-    "MHHW": 0.904,
+    "MHHW": 0.9,
     "MHW": 0.769,
-    "MSL": 0.715,
+    "MSL": 0.716,
     "MTL": 0.704,
     "MLW": 0.638,
-    "MLLW": 0.571,
-    "LAT": 0.421
+    "MLLW": 0.564,
+    "LAT": 0.426,
+    "MHWS": 0.81,
+    "MLWS": 0.622
   },
   "datums_source": "observed",
   "chart_datum": "LAT",
@@ -284,7 +286,7 @@
     }
   ],
   "epoch": {
-    "start": "1996-05-21",
+    "start": "1995-12-31",
     "end": "2014-12-31"
   }
 }

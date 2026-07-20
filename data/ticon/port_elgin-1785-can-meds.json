@@ -1,6 +1,6 @@
 {
   "name": "Port Elgin",
-  "region": "07",
+  "region": "04",
   "country": "Canada",
   "continent": "Americas",
   "latitude": 46.05,
@@ -19,17 +19,20 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "HAT": 2.96,
+    "HAT": 2.976,
     "MHHW": 2.539,
     "MHW": 2.412,
     "MSL": 1.708,
     "MTL": 1.71,
     "MLW": 1.008,
     "MLLW": 0.701,
-    "LAT": 0.102
+    "LLWLT": 0.263,
+    "LAT": 0.061,
+    "MHWS": 2.543,
+    "MLWS": 0.873
   },
   "datums_source": "observed",
-  "chart_datum": "LAT",
+  "chart_datum": "LLWLT",
   "type": "reference",
   "harmonic_constituents": [
     {

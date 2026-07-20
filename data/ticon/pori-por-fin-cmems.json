@@ -25,12 +25,14 @@
     "MHW": 0.025,
     "MSL": 0.025,
     "MTL": 0.014,
-    "MLW": 0.002,
+    "MLW": 0.003,
     "MLLW": -0.02,
-    "LAT": -0.159
+    "LAT": -0.159,
+    "MHWS": 0.033,
+    "MLWS": 0.017
   },
   "datums_source": "observed",
-  "chart_datum": "LAT",
+  "chart_datum": "MSL",
   "type": "reference",
   "harmonic_constituents": [
     {
@@ -285,7 +287,7 @@
     }
   ],
   "epoch": {
-    "start": "2006-11-19",
+    "start": "2006-07-01",
     "end": "2025-07-01"
   }
 }

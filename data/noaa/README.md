@@ -33,3 +33,5 @@ NOAA’s predictions are produced by offsetting tidal predictions from MSL (mean
 
 - Reference stations can return predictions in any supported datums
 - Subordinate stations return predictions in **MLLW only**, even if other datums are listed
+
+Unlike TICON stations, datum values here are **published by NOAA** (computed on the National Tidal Datum Epoch), not derived by this library, and `chart_datum` is set directly to `MLLW` (`STND` for non-tidal stations) rather than going through the country-based selection. Subordinate station files carry no `datums` key; the `stations` export copies datums from each subordinate's reference station at load time. See [docs/datums.md](../../docs/datums.md) for the library-wide datum overview.

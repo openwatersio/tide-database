@@ -1,6 +1,6 @@
 {
   "name": "Saint Jean-de-Luz Socoa",
-  "region": "Nouvelle-Aquitaine",
+  "region": "New Aquitaine",
   "country": "France",
   "continent": "Europe",
   "latitude": 43.39524,
@@ -19,14 +19,16 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "HAT": 5.014,
-    "MHHW": 3.94,
-    "MHW": 3.907,
-    "MSL": 2.593,
-    "MTL": 2.574,
-    "MLW": 1.241,
-    "MLLW": 1.175,
-    "LAT": 0.149
+    "HAT": 5.002,
+    "MHHW": 3.981,
+    "MHW": 3.9,
+    "MSL": 2.589,
+    "MTL": 2.559,
+    "MLW": 1.217,
+    "MLLW": 1.213,
+    "LAT": 0.15,
+    "MHWS": 4.38,
+    "MLWS": 0.798
   },
   "datums_source": "observed",
   "chart_datum": "LAT",
@@ -284,7 +286,7 @@
     }
   ],
   "epoch": {
-    "start": "2006-08-20",
+    "start": "2006-03-31",
     "end": "2025-03-31"
   }
 }

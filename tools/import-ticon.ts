@@ -131,6 +131,19 @@ async function main() {
     };
 
     try {
+      const datumResult = await getDatums(id, epoch, harmonic_constituents);
+      // Fully-synthetic datums mean the observed record was too short/sparse for
+      // an empirical reduction, so the datums (and the chart-datum reference)
+      // carry higher uncertainty.
+      const disclaimers = [
+        rows[0].record_quality,
+        datumResult.datums_source === "harmonic"
+          ? "Datums derived from harmonic prediction; the observation record is too short for an empirical reduction, so datum values carry higher uncertainty."
+          : "",
+      ]
+        .filter(Boolean)
+        .join(" ");
+
       const candidate: PartialStationData = {
         name,
         ...(region ? { region } : {}),
@@ -138,7 +151,7 @@ async function main() {
         latitude: lat,
         longitude: lon,
         type: "reference",
-        disclaimers: rows[0].record_quality,
+        disclaimers,
         source: {
           name: "TICON-4",
           url: "https://www.seanoe.org/data/00980/109129/",
@@ -159,7 +172,7 @@ async function main() {
               url: "https://creativecommons.org/licenses/by/4.0/",
             },
         harmonic_constituents,
-        ...(await getDatums(id, epoch, harmonic_constituents)),
+        ...datumResult,
       };
 
       await save("ticon", normalize(candidate));
@@ -213,8 +226,10 @@ async function getDatums(
     }
   }
 
-  // Harmonic baseline: supplies astronomical HAT/LAT and the short-record fallback.
-  const harmonic = computeDatums(harmonic_constituents, obsEpoch);
+  // Harmonic baseline: supplies astronomical HAT/LAT and the short-record
+  // fallback. Predicted over the pinned DATUM_EPOCH, not the record period, so
+  // regeneration is deterministic and annual statistics see only full years.
+  const harmonic = computeDatums(harmonic_constituents, {});
 
   // Every TICON station has a GESLA-4 file (100% join), so read it directly — a
   // missing file is a data-prep error and should throw, not silently degrade.
@@ -224,24 +239,39 @@ async function getDatums(
   );
   const obs = computeDatumsFromObservations(samples);
   if (obs) {
-    // Shift harmonic HAT/LAT (relative to MSL=0) into the observed gauge frame.
+    // Means (MHHW…MLLW) come from observations. The astronomical extremes and
+    // amplitude-derived chart datums live on the harmonic side (computed over a
+    // full nodal cycle, MSL=0 frame); shift them into the observed gauge frame.
     const shift = obs.datums["MSL"] ?? 0;
+    const HARMONIC_KEYS = [
+      "HAT",
+      "LAT",
+      "LLWLT",
+      "MHWS",
+      "MLWS",
+      "NLLW",
+      "ALLW",
+      "TLT",
+    ];
+    const shifted: Record<string, number> = {};
+    for (const k of HARMONIC_KEYS) {
+      const v = harmonic.datums[k];
+      if (v !== undefined) shifted[k] = toFixed(v + shift, 3);
+    }
     return {
-      datums: {
-        ...obs.datums,
-        HAT: toFixed((harmonic.datums["HAT"] ?? 0) + shift, 3),
-        LAT: toFixed((harmonic.datums["LAT"] ?? 0) + shift, 3),
-      },
+      datums: { ...obs.datums, ...shifted },
       datums_source: "observed" as const,
       epoch: { start: toISODate(obs.start), end: toISODate(obs.end) },
     };
   }
 
   // GESLA record too short/sparse for empirical datums → synthetic fallback.
+  // `epoch` records the constituent-fit period (the TICON record), not the
+  // pinned prediction window.
   return {
     datums: harmonic.datums,
     datums_source: "harmonic" as const,
-    epoch: { start: toISODate(harmonic.start), end: toISODate(harmonic.end) },
+    epoch: { start: toISODate(obsEpoch.start), end: toISODate(obsEpoch.end) },
   };
 }
 

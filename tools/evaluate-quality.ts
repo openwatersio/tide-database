@@ -160,6 +160,30 @@ function checkDatumOrdering(
     warnings.push(`MLW (${MLW}) < MLLW (${MLLW})`);
   }
 
+  // Extra chart datums — bounded/relational sanity checks (warnings only). These
+  // do not belong in the strict monotonic chain above: the low-water cluster
+  // (LAT / ISLW / LLWLT / TLT / MLWS) has no station-independent total order —
+  // e.g. the ISLW-family datums fall below LAT at ~3% of stations by design.
+  const { MLWS, MHWS, NLLW, ALLW, LLWLT, TLT } = datums;
+  if (MLWS !== undefined && MLW !== undefined && MLWS > MLW) {
+    warnings.push(`MLWS (${MLWS}) > MLW (${MLW})`);
+  }
+  if (MHWS !== undefined && MHW !== undefined && MHWS < MHW) {
+    warnings.push(`MHWS (${MHWS}) < MHW (${MHW})`);
+  }
+  // Low chart datums should sit in a sane band: not above mean low water, and
+  // not implausibly far below the lowest astronomical tide.
+  const EPSILON = 0.5;
+  for (const [name, value] of Object.entries({ NLLW, ALLW, LLWLT, TLT })) {
+    if (value === undefined) continue;
+    if (MLW !== undefined && value > MLW) {
+      warnings.push(`${name} (${value}) > MLW (${MLW})`);
+    }
+    if (LAT !== undefined && value < LAT - EPSILON) {
+      warnings.push(`${name} (${value}) < LAT (${LAT}) - ${EPSILON}`);
+    }
+  }
+
   return { fatal, warnings };
 }
 
