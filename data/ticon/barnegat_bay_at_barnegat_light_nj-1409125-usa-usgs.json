@@ -19,14 +19,16 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "HAT": 0.795,
-    "MHHW": 0.498,
-    "MHW": 0.424,
+    "HAT": 0.781,
+    "MHHW": 0.469,
+    "MHW": 0.426,
     "MSL": 0.089,
-    "MTL": 0.093,
-    "MLW": -0.239,
-    "MLLW": -0.254,
-    "LAT": -0.501
+    "MTL": 0.092,
+    "MLW": -0.241,
+    "MLLW": -0.286,
+    "LAT": -0.5,
+    "MHWS": 0.485,
+    "MLWS": -0.307
   },
   "datums_source": "observed",
   "chart_datum": "MLLW",
@@ -284,7 +286,7 @@
     }
   ],
   "epoch": {
-    "start": "2006-09-20",
+    "start": "2006-05-01",
     "end": "2025-05-01"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Bayonne Boucau",
-  "region": "Nouvelle-Aquitaine",
+  "region": "New Aquitaine",
   "country": "France",
   "continent": "Europe",
   "latitude": 43.52732,
@@ -19,14 +19,16 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "HAT": 4.887,
-    "MHHW": 3.965,
-    "MHW": 3.885,
-    "MSL": 2.616,
+    "HAT": 4.88,
+    "MHHW": 3.92,
+    "MHW": 3.882,
+    "MSL": 2.613,
     "MTL": 2.613,
-    "MLW": 1.341,
-    "MLLW": 1.326,
-    "LAT": 0.404
+    "MLW": 1.343,
+    "MLLW": 1.286,
+    "LAT": 0.392,
+    "MHWS": 4.272,
+    "MLWS": 0.954
   },
   "datums_source": "observed",
   "chart_datum": "LAT",
@@ -284,7 +286,7 @@
     }
   ],
   "epoch": {
-    "start": "2006-08-20",
+    "start": "2006-03-31",
     "end": "2025-03-31"
   }
 }

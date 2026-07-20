@@ -20,13 +20,15 @@
   "disclaimers": "No obvious issues",
   "datums": {
     "HAT": 1.439,
-    "MHHW": 1.153,
+    "MHHW": 1.154,
     "MHW": 1.081,
-    "MSL": 0.482,
-    "MTL": 0.543,
-    "MLW": 0.005,
-    "MLLW": -0.067,
-    "LAT": -0.341
+    "MSL": 0.484,
+    "MTL": 0.538,
+    "MLW": -0.005,
+    "MLLW": -0.05,
+    "LAT": -0.344,
+    "MHWS": 1.085,
+    "MLWS": -0.117
   },
   "datums_source": "observed",
   "chart_datum": "LAT",
@@ -284,7 +286,7 @@
     }
   ],
   "epoch": {
-    "start": "2000-01-27",
+    "start": "1999-09-07",
     "end": "2018-09-07"
   }
 }

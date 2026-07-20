@@ -1,6 +1,6 @@
 {
   "name": "Rikitea",
-  "region": "Iles Tuamotu-Gambier",
+  "region": "Tuamotu-Gambier Islands",
   "country": "France",
   "continent": "Europe",
   "latitude": -23.125,
@@ -19,14 +19,16 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "HAT": 1.456,
-    "MHHW": 1.235,
-    "MHW": 1.209,
-    "MSL": 0.936,
+    "HAT": 1.457,
+    "MHHW": 1.234,
+    "MHW": 1.207,
+    "MSL": 0.935,
     "MTL": 0.933,
-    "MLW": 0.658,
-    "MLLW": 0.648,
-    "LAT": 0.438
+    "MLW": 0.659,
+    "MLLW": 0.639,
+    "LAT": 0.437,
+    "MHWS": 1.29,
+    "MLWS": 0.58
   },
   "datums_source": "observed",
   "chart_datum": "LAT",
@@ -284,7 +286,7 @@
     }
   ],
   "epoch": {
-    "start": "2006-09-19",
+    "start": "2006-04-30",
     "end": "2025-04-30"
   }
 }

@@ -19,17 +19,19 @@
   },
   "disclaimers": "Possible quality control issues",
   "datums": {
-    "HAT": 0.287,
+    "HAT": 0.286,
     "MHHW": 0.152,
     "MHW": 0.138,
     "MSL": 0.036,
     "MTL": 0.035,
     "MLW": -0.068,
     "MLLW": -0.093,
-    "LAT": -0.232
+    "LAT": -0.23,
+    "MHWS": 0.179,
+    "MLWS": -0.107
   },
   "datums_source": "observed",
-  "chart_datum": "LAT",
+  "chart_datum": "MLWS",
   "type": "reference",
   "harmonic_constituents": [
     {

@@ -1,6 +1,5 @@
 {
   "name": "Apia",
-  "region": "Tuamasaga",
   "country": "Western Samoa",
   "continent": "Oceania",
   "latitude": -13.8268,
@@ -19,14 +18,16 @@
   },
   "disclaimers": "No obvious issues",
   "datums": {
-    "HAT": 1.62,
-    "MHHW": 1.335,
-    "MHW": 1.291,
-    "MSL": 0.89,
-    "MTL": 0.891,
-    "MLW": 0.491,
-    "MLLW": 0.482,
-    "LAT": 0.196
+    "HAT": 1.624,
+    "MHHW": 1.321,
+    "MHW": 1.292,
+    "MSL": 0.887,
+    "MTL": 0.89,
+    "MLW": 0.488,
+    "MLLW": 0.461,
+    "LAT": 0.189,
+    "MHWS": 1.372,
+    "MLWS": 0.402
   },
   "datums_source": "observed",
   "chart_datum": "LAT",
@@ -284,7 +285,7 @@
     }
   ],
   "epoch": {
-    "start": "2004-05-21",
+    "start": "2003-12-31",
     "end": "2022-12-31"
   }
 }

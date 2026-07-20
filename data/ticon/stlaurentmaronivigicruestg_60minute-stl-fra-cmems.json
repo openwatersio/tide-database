@@ -18,16 +18,18 @@
     "url": "https://creativecommons.org/licenses/by-nc/4.0/",
     "notes": "Upstream GESLA data provider restricts commercial use. See https://gesla787883612.wordpress.com/license/"
   },
-  "disclaimers": "Possible quality control issues",
+  "disclaimers": "Possible quality control issues Datums derived from harmonic prediction; the observation record is too short for an empirical reduction, so datum values carry higher uncertainty.",
   "datums": {
-    "HAT": 1.857,
-    "MHHW": 0.87,
-    "MHW": 0.472,
+    "HAT": 1.659,
+    "MHHW": 0.752,
+    "MHW": 0.707,
     "MSL": 0,
-    "MTL": 0.05,
-    "MLW": -0.371,
-    "MLLW": -0.898,
-    "LAT": -1.972
+    "MTL": -0.042,
+    "MLW": -0.79,
+    "MLLW": -0.817,
+    "LAT": -1.805,
+    "MHWS": 0.894,
+    "MLWS": -0.894
   },
   "datums_source": "harmonic",
   "chart_datum": "LAT",
@@ -285,7 +287,7 @@
     }
   ],
   "epoch": {
-    "start": "2004-02-24",
+    "start": "2018-12-07",
     "end": "2022-10-06"
   }
 }
