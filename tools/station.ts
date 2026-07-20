@@ -4,6 +4,7 @@ import countryLookup from "country-code-lookup";
 import { join, dirname } from "path";
 import { mkdir, writeFile, readFile } from "fs/promises";
 import sortObject from "sort-object-keys";
+import { isBaltic } from "./sea-regions.ts";
 
 const __dirname = new URL(".", import.meta.url).pathname;
 export const DATA_DIR = join(__dirname, "..", "data");
@@ -28,31 +29,81 @@ const sortOrder: (keyof StationData)[] = [
 ];
 
 // Preferred chart datum by country. Names must match country-code-lookup output.
-// Countries not listed default to LAT (IHO international standard).
+// Countries not listed default to LAT (the IHO international recommendation).
+// Sources: IHO Resolution (LAT, or a closely-equivalent datum, as chart datum)
+// and the IHO TWCWG "List of Vertical Datums used by IHO Member States to
+// describe Chart Datum" (2021):
+// https://iho.int/uploads/user/Services%20and%20Standards/TWCWG/MISC/TWCWG_Vertical_Datums_v1.0.pdf
 const CHART_DATUMS: Record<string, string> = {
-  // MLLW countries (US convention)
+  // Mean Lower Low Water (US low-water convention and Pacific territories)
   "United States": "MLLW",
   "The Bahamas": "MLLW",
   Philippines: "MLLW",
   "Marshall Islands": "MLLW",
   Palau: "MLLW",
   "Federated States of Micronesia": "MLLW",
-  // Other national datums (fall back to LAT if unavailable)
+  // Lower Low Water, Large Tide (Canadian Hydrographic Service)
   Canada: "LLWLT",
+  // Nearly / Approximate Lowest Low Water ≈ Indian Spring Low Water
   Japan: "NLLW",
-  China: "TLT",
   "South Korea": "ALLW",
+  // Theoretical Lowest Tide (China's theoretical depth datum)
+  China: "TLT",
+  // Mean Low Water Springs (per the IHO TWCWG list)
+  Brazil: "MLWS",
+  Italy: "MLWS",
+  Chile: "MLWS",
+  // Baltic Sea Chart Datum ≈ mean sea level (non-tidal Baltic). Sweden is
+  // whole-country BSCD2000 by national policy; other Baltic-basin stations are
+  // handled by the isBaltic() override in getChartDatum().
+  Sweden: "MSL",
+};
+
+// Datums that are specific to one country and shouldn't be persisted elsewhere.
+// (MLWS/MHWS are standard tidal levels and kept for all stations.)
+const COUNTRY_SPECIFIC_DATUMS: Record<string, string> = {
+  LLWLT: "Canada",
+  TLT: "China",
+  NLLW: "Japan",
+  ALLW: "South Korea",
 };
 
 /**
- * Determine the chart datum for a station based on its country and
- * available datums. Uses the country's preferred datum if it exists in
- * the station's datum values, otherwise falls back to LAT.
+ * Drop country-specific datums (LLWLT/TLT/NLLW/ALLW) from stations that don't
+ * use them as their chart datum, so a UK station never carries a stray TLT.
+ */
+export function pruneDatums(
+  country: string,
+  datums: Record<string, number>,
+): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const [name, value] of Object.entries(datums)) {
+    const owner = COUNTRY_SPECIFIC_DATUMS[name];
+    if (owner && owner !== country) continue;
+    out[name] = value;
+  }
+  return out;
+}
+
+/**
+ * Determine the chart datum for a station from its location and available
+ * datums. Baltic-basin stations use MSL (≈ BSCD2000); otherwise the country's
+ * preferred datum is used when present, falling back to LAT.
  */
 export function getChartDatum(
   country: string,
   availableDatums: Record<string, number>,
+  latitude?: number,
+  longitude?: number,
 ): string {
+  if (
+    latitude !== undefined &&
+    longitude !== undefined &&
+    isBaltic(latitude, longitude) &&
+    "MSL" in availableDatums
+  ) {
+    return "MSL";
+  }
   const preferred = CHART_DATUMS[country];
   return preferred && preferred in availableDatums ? preferred : "LAT";
 }
@@ -81,14 +132,18 @@ export function normalize(station: PartialStationData): StationData {
     );
   }
 
+  const datums = pruneDatums(country, station.datums);
+
   return sortObject(
     {
       ...station,
       timezone,
       continent,
       country,
+      datums,
       chart_datum:
-        station.chart_datum ?? getChartDatum(country, station.datums),
+        station.chart_datum ??
+        getChartDatum(country, datums, station.latitude, station.longitude),
     },
     sortOrder,
   );

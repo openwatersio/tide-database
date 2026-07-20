@@ -60,6 +60,10 @@ function computeDatumsFromExtremes(extremes: Sample[], msl = 0): Datums {
   const allLows: number[] = [];
   const higherHighs: number[] = [];
   const lowerLows: number[] = [];
+  // Lowest low water observed in each calendar year, keyed by UTC year. Averaged
+  // into LLWLT (Canada's Lower Low Water, Large Tide — the mean of the annual
+  // lowest low waters over the analysis period).
+  const lowestLowByYear = new Map<number, number>();
 
   const tidalDayMs = M2_TIDAL_DAY_HOURS * 60 * 60 * 1000;
   const times = extremes.map((pt) => pt.time);
@@ -115,6 +119,11 @@ function computeDatumsFromExtremes(extremes: Sample[], msl = 0): Datums {
           (hCurr < hPrev || hCurr < hNext)
         ) {
           lows.push(hCurr);
+          const yr = times[i]!.getUTCFullYear();
+          const prevMin = lowestLowByYear.get(yr);
+          if (prevMin === undefined || hCurr < prevMin) {
+            lowestLowByYear.set(yr, hCurr);
+          }
         }
       }
 
@@ -164,8 +173,83 @@ function computeDatumsFromExtremes(extremes: Sample[], msl = 0): Datums {
     MTL: toFixed((mhw + mlw) / 2, 3),
     MLW: toFixed(mlw, 3),
     MLLW: toFixed(mean(lowerLows), 3),
+    // LLWLT (Lower Low Water, Large Tide): mean of the annual lowest low waters.
+    // Meaningful only over a multi-year span; NaN for sub-annual series and
+    // dropped by the caller.
+    LLWLT: toFixed(mean([...lowestLowByYear.values()]), 3),
     LAT: toFixed(min(heights), 3),
   };
+}
+
+/**
+ * Amplitude-derived low/high datums, in the constituent frame (MSL = 0). These
+ * are functions of the constituent amplitudes rather than the extremes series,
+ * so the caller shifts them into the observed gauge frame the same way it does
+ * HAT/LAT.
+ *
+ * - MHWS/MLWS: Mean High/Low Water Springs, the classic Admiralty approximation
+ *   MSL ± (H_M2 + H_S2).
+ * - ISLW: Indian Spring Low Water, MSL − (H_M2 + H_S2 + H_K1 + H_O1). Stored
+ *   under the national labels NLLW (Japan, "Nearly Lowest Low Water") and ALLW
+ *   (South Korea, "Approximate Lowest Low Water"), which share this definition.
+ * - TLT: China's Theoretical Lowest Tide (理论最低潮面 / theoretical depth
+ *   datum). Implemented as the astronomical minimum from the 13 principal
+ *   constituents used by the Vladimirsky method, predicted over the epoch. This
+ *   is the theoretical-lowest intent of the official datum; see
+ *   Vladimirsky's method (adopted by China's MSA) — it differs from LAT only in
+ *   restricting the constituent set.
+ */
+const TLT_CONSTITUENTS = new Set([
+  "M2",
+  "S2",
+  "N2",
+  "K2",
+  "K1",
+  "O1",
+  "P1",
+  "Q1",
+  "M4",
+  "MS4",
+  "M6",
+  "Sa",
+  "Ssa",
+]);
+
+function amplitudeDatums(constituents: HarmonicConstituent[]): Datums {
+  const amp = new Map<string, number>();
+  for (const c of constituents) amp.set(c.name, c.amplitude);
+  const a = (name: string) => amp.get(name) ?? 0;
+
+  const springs = a("M2") + a("S2");
+  const islw = a("M2") + a("S2") + a("K1") + a("O1");
+
+  return {
+    MHWS: toFixed(springs, 3),
+    MLWS: toFixed(-springs, 3),
+    // ISLW value, exposed under both national labels (same construct).
+    NLLW: toFixed(-islw, 3),
+    ALLW: toFixed(-islw, 3),
+  };
+}
+
+/**
+ * China's Theoretical Lowest Tide, computed as the astronomical minimum of the
+ * tide synthesized from the Vladimirsky 13-constituent subset over the epoch, in
+ * the constituent frame (MSL = 0). Returns undefined when none of the subset
+ * constituents are present.
+ */
+function computeTLT(
+  constituents: HarmonicConstituent[],
+  start: Date,
+  end: Date,
+  tidePredictorOptions: TidePredictionOptions,
+): number | undefined {
+  const subset = constituents.filter((c) => TLT_CONSTITUENTS.has(c.name));
+  if (subset.length === 0) return undefined;
+  const predictor = createTidePredictor(subset, tidePredictorOptions);
+  const extremes = predictor.getExtremesPrediction({ start, end });
+  if (extremes.length === 0) return undefined;
+  return toFixed(min(extremes.map((e) => e.level)), 3);
 }
 
 /**
@@ -188,11 +272,20 @@ export function computeDatums(
     end,
   });
 
-  return {
-    start,
-    end,
-    datums: computeDatumsFromExtremes(extremes),
+  const datums: Datums = {
+    ...computeDatumsFromExtremes(extremes),
+    ...amplitudeDatums(constituents),
   };
+  const tlt = computeTLT(constituents, start, end, tidePredictorOptions);
+  if (tlt !== undefined) datums["TLT"] = tlt;
+
+  // Drop any datum that came out non-finite (e.g. LLWLT for a sub-annual
+  // synthetic series), so callers never persist NaN.
+  for (const [k, v] of Object.entries(datums)) {
+    if (!Number.isFinite(v)) delete datums[k];
+  }
+
+  return { start, end, datums };
 }
 
 /** Minimum record span (days) and hourly-point count to derive datums from observations. */
