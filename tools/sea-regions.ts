@@ -1,62 +1,69 @@
 /**
  * Sea-basin classification for tide stations.
  *
- * The only basin we need to distinguish for chart-datum purposes is the Baltic
- * Sea: its riparian states reference charts to a mean-sea-level datum
- * (BSCD2000) rather than a low-water datum, because the Baltic is effectively
- * non-tidal. This lets us split Germany's North Sea coast (Seekartennull ≈ LAT)
- * from its Baltic coast (MSL), which administrative region can't do — the state
- * of Schleswig-Holstein straddles both seas — and a longitude line can't do
- * either, since the lower Elbe (North Sea drainage) reaches inland past the
- * longitude of the Baltic fjords.
+ * The only basin we need to distinguish for chart-datum purposes is the
+ * Baltic/Kattegat MSL region: the Baltic's riparian states chart to a
+ * mean-sea-level datum (BSCD2000) rather than a low-water datum, and Denmark
+ * charts all inner Danish waters — the whole Kattegat included — to DVR90 ≈
+ * MSL. The LAT regime starts in the Skagerrak/North Sea. This splits Germany's
+ * North Sea coast (Seekartennull ≈ LAT) from its Baltic coast (MSL), and
+ * Denmark's North Sea coast from its inner waters, which neither administrative
+ * region nor a longitude line can do.
  *
- * The polygon is a coarse hand-traced outline of the IHO "Limits of Oceans and
- * Seas" (S-23) Baltic Sea — the Baltic proper, the Gulfs of Bothnia, Finland
- * and Riga, and the Belts/Øresund/Kattegat entrance — with the western edge
- * drawn down the east coast of Jutland so the North Sea and Skagerrak are
- * excluded. It is intentionally generous offshore; precision only matters along
- * the German/Danish coast, which is validated in the tests.
+ * Geometry: authoritative IHO Sea Areas (S-23) polygons from Marine Regions
+ * (Flanders Marine Institute, CC-BY 4.0) — the Baltic Sea, Gulfs of Bothnia /
+ * Finland / Riga, and the Kattegat; the Skagerrak is excluded. Outer rings
+ * only (island gauges classify by basin) at ~1 km simplification; regenerate
+ * with `node tools/fetch-sea-regions.ts`.
+ *
+ * A small tolerance treats points within ~2 km of a basin boundary as inside:
+ * harbor gauges sit exactly on the (simplified) coastline, and it also closes
+ * any seam sliver where two basins abut (e.g. Kattegat/Baltic at Öresund).
  */
+import { readFileSync } from "fs";
+import { join } from "path";
 
-/** [longitude, latitude] vertices, tracing the Baltic Sea outline. */
-export const BALTIC_POLYGON: readonly (readonly [number, number])[] = [
-  [9.4, 54.4], // Kiel Bight / Flensburg approaches (German Baltic SW)
-  [11.0, 53.9], // Mecklenburg Bight (Wismar/Warnemünde offshore)
-  [14.5, 53.85], // Pomerania (Szczecin / Świnoujście)
-  [19.7, 54.2], // Gdańsk Bay
-  [21.2, 55.4], // Lithuania (Klaipėda)
-  [24.6, 56.2], // Latvia / Gulf of Riga entrance
-  [28.7, 59.3], // Gulf of Finland east (Narva)
-  [30.7, 59.9], // St Petersburg
-  [25.0, 60.3], // Helsinki
-  [21.3, 63.1], // Gulf of Bothnia (Vaasa)
-  [24.8, 66.0], // head of the Gulf of Bothnia (Kemi)
-  [17.0, 62.5], // Swedish Bothnian coast (Sundsvall)
-  [17.6, 59.4], // Stockholm archipelago
-  [16.7, 56.4], // Öland / Kalmar
-  [14.0, 55.2], // Skåne SE (Ystad)
-  [12.5, 56.2], // Øresund (Malmö / Helsingborg)
-  [12.9, 57.8], // Kattegat, Swedish west coast (Gothenburg)
-  [10.6, 57.6], // Kattegat north (below Skagen, so the Skagerrak stays out)
-  [10.7, 56.0], // Danish Great Belt
-  [9.9, 55.4], // Danish Little Belt
-  [9.4, 54.9], // Flensburg Fjord (close back to start)
-];
+const __dirname = new URL(".", import.meta.url).pathname;
+
+type Ring = readonly (readonly [number, number])[];
+
+const geo = JSON.parse(
+  readFileSync(join(__dirname, "..", "data", "baltic-sea.geo.json"), "utf-8"),
+) as { features: { geometry: { coordinates: Ring[] } }[] };
 
 /**
- * Ray-casting point-in-polygon test. `polygon` is a list of [lon, lat] vertices
- * (open ring; the closing edge is implied). Longitude/latitude are treated as
- * planar x/y, which is fine at this scale for a coarse basin mask.
+ * The Limfjord is inner Danish waters (charted to DVR90 ≈ MSL) but is not an
+ * S-23 sea area, so the IHO polygons miss it. Coarse box over central/eastern
+ * Limfjord (Struer/Nykøbing Mors/Løgstør/Aalborg/Hals); the far-western
+ * North-Sea entrance (Thyborøn, Lemvig) stays LAT.
  */
-export function pointInPolygon(
-  lon: number,
-  lat: number,
-  polygon: readonly (readonly [number, number])[] = BALTIC_POLYGON,
-): boolean {
+// Box edges stay clear of the North Sea coast (Thyborøn/Lemvig west of 8.55,
+// Hanstholm north of 57.08); the east edge overlaps the Kattegat harmlessly.
+const LIMFJORD_RING: Ring = [
+  [8.55, 56.45],
+  [10.45, 56.45],
+  [10.45, 57.08],
+  [8.55, 57.08],
+];
+
+const MSL_REGION_RINGS: Ring[] = [
+  ...geo.features.map((f) => f.geometry.coordinates[0]!),
+  LIMFJORD_RING,
+];
+
+/** ~2 km at these latitudes. */
+const NEAR_DEG = 0.02;
+
+/**
+ * Ray-casting point-in-polygon test. `ring` is a list of [lon, lat] vertices
+ * (open or closed; the closing edge is implied). Longitude/latitude are treated
+ * as planar x/y, which is fine at this scale for a basin mask.
+ */
+export function pointInPolygon(lon: number, lat: number, ring: Ring): boolean {
   let inside = false;
-  for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
-    const [xi, yi] = polygon[i]!;
-    const [xj, yj] = polygon[j]!;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i]!;
+    const [xj, yj] = ring[j]!;
     const intersects =
       yi > lat !== yj > lat && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi;
     if (intersects) inside = !inside;
@@ -64,7 +71,30 @@ export function pointInPolygon(
   return inside;
 }
 
-/** True when the coordinate falls within the Baltic Sea basin. */
+/** Minimum distance (degrees, lon scaled by cos lat) from a point to the ring. */
+function distanceToRing(lon: number, lat: number, ring: Ring): number {
+  const kx = Math.cos((lat * Math.PI) / 180);
+  let best = Infinity;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i]!;
+    const [xj, yj] = ring[j]!;
+    const dx = (xj - xi) * kx;
+    const dy = yj - yi;
+    const px = (lon - xi) * kx;
+    const py = lat - yi;
+    const lenSq = dx * dx + dy * dy;
+    const t =
+      lenSq === 0 ? 0 : Math.max(0, Math.min(1, (px * dx + py * dy) / lenSq));
+    best = Math.min(best, Math.hypot(px - t * dx, py - t * dy));
+  }
+  return best;
+}
+
+/** True when the coordinate falls within (or hugs the shore of) the Baltic/Kattegat MSL region. */
 export function isBaltic(lat: number, lon: number): boolean {
-  return pointInPolygon(lon, lat, BALTIC_POLYGON);
+  return MSL_REGION_RINGS.some(
+    (ring) =>
+      pointInPolygon(lon, lat, ring) ||
+      distanceToRing(lon, lat, ring) < NEAR_DEG,
+  );
 }

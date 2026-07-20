@@ -1,7 +1,12 @@
 import { describe, test, expect } from "vitest";
 import { computeDatums } from "../tools/datum.js";
 import { isBaltic } from "../tools/sea-regions.js";
-import { getChartDatum, pruneDatums } from "../tools/station.js";
+import {
+  getChartDatum,
+  pruneDatums,
+  normalize,
+  type PartialStationData,
+} from "../tools/station.js";
 
 const CONSTITUENTS = [
   { name: "M2", amplitude: 1.0, phase: 0 },
@@ -41,6 +46,15 @@ describe("computeDatums — extra chart datums", () => {
     for (const v of Object.values(datums))
       expect(Number.isFinite(v)).toBe(true);
   });
+
+  test("TLT includes the uppercase SA/SSA long-period constituents", () => {
+    // Data files store names uppercase; SA must lower the theoretical minimum.
+    const withSa = computeDatums(
+      [...CONSTITUENTS, { name: "SA", amplitude: 0.2, phase: 0 }],
+      {},
+    ).datums;
+    expect(withSa["TLT"]!).toBeLessThan(datums["TLT"]! - 0.05);
+  });
 });
 
 describe("isBaltic", () => {
@@ -51,9 +65,26 @@ describe("isBaltic", () => {
     ["Flensburg (Baltic)", 54.8, 9.43, true],
     ["Kiel (Baltic)", 54.32, 10.14, true],
     ["Warnemünde (Baltic)", 54.18, 12.08, true],
-    ["Gothenburg (Kattegat)", 57.68, 11.95, true],
+    // Torshamnen gauge at the harbor mouth; upriver Göta älv gauges fall
+    // outside the water polygon but Sweden's whole-country MSL default applies.
+    ["Gothenburg Torshamnen (Kattegat)", 57.6847, 11.7906, true],
     ["Stockholm (Baltic)", 59.32, 18.08, true],
     ["Esbjerg DK (North Sea)", 55.47, 8.44, false],
+    // Danish inner waters (whole Kattegat) chart to DVR90 ≈ MSL; the LAT
+    // regime starts in the Skagerrak. Skagen harbor sits on the Kattegat side
+    // of the IHO Skagen–Paternoster line → MSL.
+    ["Aarhus DK (Kattegat)", 56.15, 10.22, true],
+    ["Frederikshavn DK (Kattegat)", 57.44, 10.55, true],
+    ["Skagen DK (Kattegat side)", 57.72, 10.59, true],
+    ["Hirtshals DK (Skagerrak)", 57.6, 9.96, false],
+    ["Oslo (Skagerrak)", 59.91, 10.75, false],
+    // Limfjord: inner Danish waters, not an S-23 sea area (hand carve-out).
+    ["Aalborg DK (Limfjord)", 57.05, 9.92, true],
+    ["Thyborøn DK (Limfjord N. Sea entrance)", 56.7, 8.22, false],
+    ["Hanstholm DK (North Sea)", 57.12, 8.6, false],
+    // Estuary gauges within the shore tolerance of the water polygons.
+    ["Lübeck DE (up the Trave)", 53.893, 10.703, true],
+    ["Hamburg St. Pauli DE (Elbe)", 53.547, 9.972, false],
   ];
   for (const [name, lat, lon, expected] of cases) {
     test(`${name} → ${expected ? "Baltic" : "not Baltic"}`, () => {
@@ -113,5 +144,42 @@ describe("pruneDatums", () => {
     expect(uk["LLWLT"]).toBeUndefined();
     expect(uk["TLT"]).toBeUndefined();
     expect(uk["NLLW"]).toBeUndefined();
+  });
+});
+
+describe("normalize — subordinate stations without datums", () => {
+  // Mirrors real NOAA subordinate files (e.g. data/noaa/8218361.json), which
+  // omit the datums key entirely.
+  const subordinate: PartialStationData = {
+    name: "Test Subordinate",
+    country: "Canada",
+    latitude: 45.25,
+    longitude: -66.06,
+    disclaimers: "",
+    type: "subordinate",
+    source: {
+      name: "NOAA",
+      id: "0000000",
+      published_harmonics: false,
+      url: "https://example.com",
+    },
+    license: { type: "public domain", commercial_use: true, url: "" },
+    harmonic_constituents: [],
+    offsets: {
+      reference: "noaa/8410140",
+      height: { high: 1, low: 1, type: "ratio" },
+      time: { high: 0, low: 0 },
+    },
+  };
+
+  test("does not throw and does not invent a datums key", () => {
+    const out = normalize(subordinate);
+    expect("datums" in out).toBe(false);
+    expect(out.chart_datum).toBe("LAT"); // no datums available → fallback
+  });
+
+  test("preserves a preset chart_datum", () => {
+    const out = normalize({ ...subordinate, chart_datum: "MLLW" });
+    expect(out.chart_datum).toBe("MLLW");
   });
 });

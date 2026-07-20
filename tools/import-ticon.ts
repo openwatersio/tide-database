@@ -226,8 +226,10 @@ async function getDatums(
     }
   }
 
-  // Harmonic baseline: supplies astronomical HAT/LAT and the short-record fallback.
-  const harmonic = computeDatums(harmonic_constituents, obsEpoch);
+  // Harmonic baseline: supplies astronomical HAT/LAT and the short-record
+  // fallback. Predicted over the pinned DATUM_EPOCH, not the record period, so
+  // regeneration is deterministic and annual statistics see only full years.
+  const harmonic = computeDatums(harmonic_constituents, {});
 
   // Every TICON station has a GESLA-4 file (100% join), so read it directly — a
   // missing file is a data-prep error and should throw, not silently degrade.
@@ -264,10 +266,12 @@ async function getDatums(
   }
 
   // GESLA record too short/sparse for empirical datums → synthetic fallback.
+  // `epoch` records the constituent-fit period (the TICON record), not the
+  // pinned prediction window.
   return {
     datums: harmonic.datums,
     datums_source: "harmonic" as const,
-    epoch: { start: toISODate(harmonic.start), end: toISODate(harmonic.end) },
+    epoch: { start: toISODate(obsEpoch.start), end: toISODate(obsEpoch.end) },
   };
 }
 

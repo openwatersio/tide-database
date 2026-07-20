@@ -54,7 +54,8 @@ const CHART_DATUMS: Record<string, string> = {
   Italy: "MLWS",
   Chile: "MLWS",
   // Baltic Sea Chart Datum ≈ mean sea level (non-tidal Baltic). Sweden is
-  // whole-country BSCD2000 by national policy; other Baltic-basin stations are
+  // whole-country BSCD2000 by national policy; other Baltic-basin stations
+  // (incl. Denmark's inner waters/Kattegat and Germany's Baltic coast) are
   // handled by the isBaltic() override in getChartDatum().
   Sweden: "MSL",
 };
@@ -108,7 +109,9 @@ export function getChartDatum(
   return preferred && preferred in availableDatums ? preferred : "LAT";
 }
 
-type OptionalProperties = "timezone" | "continent" | "chart_datum";
+// `datums` is optional here because subordinate stations carry none (their
+// committed JSON omits the key, despite StationData declaring it required).
+type OptionalProperties = "timezone" | "continent" | "chart_datum" | "datums";
 export type PartialStationData = Omit<StationData, OptionalProperties> &
   Partial<Pick<StationData, OptionalProperties>>;
 
@@ -132,7 +135,8 @@ export function normalize(station: PartialStationData): StationData {
     );
   }
 
-  const datums = pruneDatums(country, station.datums);
+  // Subordinate stations carry no datums of their own; leave the key absent.
+  const datums = station.datums && pruneDatums(country, station.datums);
 
   return sortObject(
     {
@@ -140,11 +144,17 @@ export function normalize(station: PartialStationData): StationData {
       timezone,
       continent,
       country,
-      datums,
+      ...(datums ? { datums } : {}),
       chart_datum:
         station.chart_datum ??
-        getChartDatum(country, datums, station.latitude, station.longitude),
-    },
+        getChartDatum(
+          country,
+          datums ?? {},
+          station.latitude,
+          station.longitude,
+        ),
+      // Cast: subordinates legitimately omit `datums` (see OptionalProperties).
+    } as StationData,
     sortOrder,
   );
 }
