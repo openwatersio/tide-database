@@ -10537,7 +10537,7 @@
   },
   {
     "id": "noaa/8573777",
-    "accepted": true,
+    "accepted": false,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -10547,7 +10547,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/8633777"
   },
   {
     "id": "noaa/8573903",
@@ -11685,7 +11687,7 @@
   },
   {
     "id": "noaa/8633777",
-    "accepted": false,
+    "accepted": true,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -11695,9 +11697,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "noaa/8573777"
+    "issues": []
   },
   {
     "id": "noaa/8634214",
@@ -25679,20 +25679,6 @@
   },
   {
     "id": "noaa/8729108",
-    "accepted": true,
-    "score": 83,
-    "factors": {
-      "epoch": 1,
-      "recency": 0.75,
-      "source": 1,
-      "quality": 1,
-      "amplitude": 1,
-      "coverage": 0.006
-    },
-    "issues": []
-  },
-  {
-    "id": "noaa/8729132",
     "accepted": false,
     "score": 83,
     "factors": {
@@ -25705,7 +25691,21 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8729108"
+    "redundant": "noaa/8729132"
+  },
+  {
+    "id": "noaa/8729132",
+    "accepted": true,
+    "score": 83,
+    "factors": {
+      "epoch": 1,
+      "recency": 0.75,
+      "source": 1,
+      "quality": 1,
+      "amplitude": 1,
+      "coverage": 0.006
+    },
+    "issues": []
   },
   {
     "id": "noaa/8729136",
@@ -26341,20 +26341,6 @@
   },
   {
     "id": "noaa/8735180",
-    "accepted": true,
-    "score": 83,
-    "factors": {
-      "epoch": 1,
-      "recency": 0.75,
-      "source": 1,
-      "quality": 1,
-      "amplitude": 1,
-      "coverage": 0
-    },
-    "issues": []
-  },
-  {
-    "id": "noaa/8735181",
     "accepted": false,
     "score": 83,
     "factors": {
@@ -26367,7 +26353,21 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8735180"
+    "redundant": "noaa/8735181"
+  },
+  {
+    "id": "noaa/8735181",
+    "accepted": true,
+    "score": 83,
+    "factors": {
+      "epoch": 1,
+      "recency": 0.75,
+      "source": 1,
+      "quality": 1,
+      "amplitude": 1,
+      "coverage": 0
+    },
+    "issues": []
   },
   {
     "id": "noaa/8735391",
@@ -30363,7 +30363,7 @@
   },
   {
     "id": "noaa/9414763",
-    "accepted": true,
+    "accepted": false,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -30373,11 +30373,13 @@
       "amplitude": 1,
       "coverage": 0.002
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/9414764"
   },
   {
     "id": "noaa/9414764",
-    "accepted": false,
+    "accepted": true,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -30387,9 +30389,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "noaa/9414763"
+    "issues": []
   },
   {
     "id": "noaa/9414765",
@@ -45860,7 +45860,7 @@
   },
   {
     "id": "noaa/TPT2829",
-    "accepted": true,
+    "accepted": false,
     "score": 85,
     "factors": {
       "epoch": 1,
@@ -45870,7 +45870,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/TPT2837"
   },
   {
     "id": "noaa/TPT2831",
@@ -45916,7 +45918,7 @@
   },
   {
     "id": "noaa/TPT2837",
-    "accepted": false,
+    "accepted": true,
     "score": 85,
     "factors": {
       "epoch": 1,
@@ -45926,9 +45928,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "noaa/TPT2829"
+    "issues": []
   },
   {
     "id": "noaa/TPT2839",
@@ -51313,7 +51313,7 @@
   },
   {
     "id": "ticon/arun_platform-arn-gbr-cco",
-    "accepted": true,
+    "accepted": false,
     "score": 62,
     "factors": {
       "epoch": 0.813,
@@ -51323,11 +51323,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/arunplatformtg-aru-gbr-cmems"
   },
   {
     "id": "ticon/arunplatformtg-aru-gbr-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 62,
     "factors": {
       "epoch": 0.834,
@@ -51337,9 +51339,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/arun_platform-arn-gbr-cco"
+    "issues": []
   },
   {
     "id": "ticon/asamushi-gs06-jpn-jodc_giaj",
@@ -71490,7 +71490,7 @@
   },
   {
     "id": "ticon/exmouth-exm-gbr-cco",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.517,
@@ -71500,11 +71500,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/exmouthtg-exm-gbr-cmems"
   },
   {
     "id": "ticon/exmouthtg-exm-gbr-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 56,
     "factors": {
       "epoch": 0.521,
@@ -71514,9 +71516,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/exmouth-exm-gbr-cco"
+    "issues": []
   },
   {
     "id": "ticon/exuma_cays-256a-bhs-uhslc_rq",
@@ -74219,7 +74219,7 @@
   },
   {
     "id": "ticon/georgiana_slough_nr_sacramento_r-11447903-usa-usgs",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 0.944,
@@ -74231,7 +74231,9 @@
     },
     "issues": [
       "MHWS (1.903) < MHW (1.921)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/sacramento_river_at_walnut_grove_stage-b91651-usa-cdwr"
   },
   {
     "id": "ticon/geraldton-62290-aus-bom",
@@ -78428,7 +78430,7 @@
   },
   {
     "id": "ticon/holland_cut_near_bethel_island-hol-usa-cdwr",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 1,
@@ -78440,11 +78442,13 @@
     },
     "issues": [
       "MLWS (3.681) > MLW (3.669)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/holland_cut_nr_bethel_island_ca-11313431-usa-usgs"
   },
   {
     "id": "ticon/holland_cut_nr_bethel_island_ca-11313431-usa-usgs",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 0.945,
@@ -78457,9 +78461,7 @@
     "issues": [
       "MLWS (3.684) > MLW (3.668)",
       "MHWS (4.36) < MHW (4.365)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/holland_cut_near_bethel_island-hol-usa-cdwr"
+    ]
   },
   {
     "id": "ticon/holland_mi-9087031-usa-noaa",
@@ -89210,7 +89212,7 @@
   },
   {
     "id": "ticon/lymington-lym-gbr-cco",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 0.958,
@@ -89220,11 +89222,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/lymingtontg-lym-gbr-cmems"
   },
   {
     "id": "ticon/lymingtontg-lym-gbr-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 65,
     "factors": {
       "epoch": 0.962,
@@ -89234,9 +89238,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/lymington-lym-gbr-cco"
+    "issues": []
   },
   {
     "id": "ticon/lynchburg_landing-8770733-usa-noaa",
@@ -99273,7 +99275,7 @@
   },
   {
     "id": "ticon/otranto-otr-ita-ispra",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -99283,7 +99285,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/rmn_otranto-rmn-ita-cmems"
   },
   {
     "id": "ticon/otterndorfmpm-5990011-deu-wsv",
@@ -101423,7 +101427,7 @@
   },
   {
     "id": "ticon/pinnausperrwerkap-5970019-deu-wsv",
-    "accepted": true,
+    "accepted": false,
     "score": 81,
     "factors": {
       "epoch": 1,
@@ -101435,11 +101439,13 @@
     },
     "issues": [
       "MLWS (3.894) > MLW (3.836)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/pinnausperrwerkbp-5970018-deu-wsv"
   },
   {
     "id": "ticon/pinnausperrwerkbp-5970018-deu-wsv",
-    "accepted": false,
+    "accepted": true,
     "score": 81,
     "factors": {
       "epoch": 1,
@@ -101449,9 +101455,7 @@
       "amplitude": 1,
       "coverage": 0.001
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/pinnausperrwerkap-5970019-deu-wsv"
+    "issues": []
   },
   {
     "id": "ticon/pisco-683a-per-uhslc_rq",
@@ -107480,7 +107484,7 @@
   },
   {
     "id": "ticon/rmn_otranto-rmn-ita-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -107490,9 +107494,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/otranto-otr-ita-ispra"
+    "issues": []
   },
   {
     "id": "ticon/rmn_palermo-rmn-ita-cmems",
@@ -107608,7 +107610,7 @@
   },
   {
     "id": "ticon/rmn_salerno-rmn-ita-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -107618,11 +107620,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/salerno-sal-ita-ispra"
   },
   {
     "id": "ticon/rmn_sbenedettodeltronto-rmn-ita-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 61,
     "factors": {
       "epoch": 0.799,
@@ -107632,7 +107636,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/san_benedetto_del_tronto-san-ita-ispra"
   },
   {
     "id": "ticon/rmn_sciacca-rmn-ita-cmems",
@@ -109244,7 +109250,7 @@
   },
   {
     "id": "ticon/sacramento_r_bl_georgiana_slough_ca-11447905-usa-usgs",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 0.944,
@@ -109256,9 +109262,7 @@
     },
     "issues": [
       "MHWS (1.912) < MHW (1.932)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/georgiana_slough_nr_sacramento_r-11447903-usa-usgs"
+    ]
   },
   {
     "id": "ticon/sacramento_r_bl_walnut_grove_br_a_walnut_grove_ca-381427121305401-usa-usgs",
@@ -109509,7 +109513,7 @@
   },
   {
     "id": "ticon/sacramento_river_at_walnut_grove_stage-b91651-usa-cdwr",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 1,
@@ -109521,13 +109525,11 @@
     },
     "issues": [
       "MHWS (1.898) < MHW (1.918)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/georgiana_slough_nr_sacramento_r-11447903-usa-usgs"
+    ]
   },
   {
     "id": "ticon/sacramento_river_below_georgiana_slough-ges-usa-cdwr",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 1,
@@ -109539,7 +109541,9 @@
     },
     "issues": [
       "MHWS (1.907) < MHW (1.926)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/sacramento_r_bl_georgiana_slough_ca-11447905-usa-usgs"
   },
   {
     "id": "ticon/sacramento_river_bl_toland_landing-m13-usa-cdwr",
@@ -110224,7 +110228,7 @@
   },
   {
     "id": "ticon/salerno-sal-ita-ispra",
-    "accepted": false,
+    "accepted": true,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -110234,9 +110238,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/rmn_salerno-rmn-ita-cmems"
+    "issues": []
   },
   {
     "id": "ticon/salina_cruz-394-mex-unam_hist",
@@ -110438,7 +110440,7 @@
   },
   {
     "id": "ticon/san_benedetto_del_tronto-san-ita-ispra",
-    "accepted": false,
+    "accepted": true,
     "score": 61,
     "factors": {
       "epoch": 0.809,
@@ -110448,9 +110450,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/rmn_sbenedettodeltronto-rmn-ita-cmems"
+    "issues": []
   },
   {
     "id": "ticon/san_bernard_rv_at_fm_521_nr_cedar_lane_tx-8117720-usa-usgs",
@@ -115578,7 +115578,7 @@
   },
   {
     "id": "ticon/starling_creek_at_port_of_saxis_at_saxis_va-1484938-usa-usgs",
-    "accepted": true,
+    "accepted": false,
     "score": 67,
     "factors": {
       "epoch": 0.52,
@@ -115588,7 +115588,9 @@
       "amplitude": 1,
       "coverage": 0.006
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/8633777"
   },
   {
     "id": "ticon/stavanger-svg-nor-nhs",
@@ -118430,7 +118432,7 @@
   },
   {
     "id": "ticon/threemile_slough_at_san_joaquin_river-tsl-usa-cdwr",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 0.975,
@@ -118442,11 +118444,13 @@
     },
     "issues": [
       "MLWS (0.979) > MLW (0.975)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/threemile_slough_nr_rio_vista_ca-11337080-usa-usgs"
   },
   {
     "id": "ticon/threemile_slough_nr_rio_vista_ca-11337080-usa-usgs",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 0.945,
@@ -118458,9 +118462,7 @@
     },
     "issues": [
       "MLWS (0.975) > MLW (0.936)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/threemile_slough_at_san_joaquin_river-tsl-usa-cdwr"
+    ]
   },
   {
     "id": "ticon/thule_pituffik-808-dnk-uhslc_fd",

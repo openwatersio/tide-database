@@ -14,6 +14,7 @@ import {
   SEASONAL_OUTLIER_RATIO,
   NULL_ISLAND_RADIUS,
   gaugeKey,
+  coordinatePrecision,
   distance,
 } from "../tools/filtering.js";
 import quality from "../quality.json" with { type: "json" };
@@ -292,6 +293,38 @@ describe("gauge deduplication", () => {
     // Non-numeric codes keep any trailing letters (they are not segment markers).
     expect(gaugeKey("cape_ferguson-h033007a-aus-bom")).toBe(
       "cape_ferguson-h033007a-aus",
+    );
+  });
+});
+
+describe("coordinate-precision tiebreak", () => {
+  test("coordinatePrecision counts the limiting decimal places", () => {
+    expect(coordinatePrecision(28.148, -15.407)).toBe(3);
+    expect(coordinatePrecision(28.1, -15.4)).toBe(1);
+    // Limited by the coarser of the two coordinates.
+    expect(coordinatePrecision(38.016389, -121.5)).toBe(1);
+  });
+
+  // When duplicate records tie on score, the survivor should be the one with the
+  // more precise coordinates, so the kept station carries the better location.
+  test("keeps the more precisely located record of a tied duplicate pair", () => {
+    const byId = new Map(quality.map((r) => [r.id, r]));
+    const kept = byId.get("ticon/lymingtontg-lym-gbr-cmems");
+    const dropped = byId.get("ticon/lymington-lym-gbr-cco");
+    expect(kept?.accepted).toBe(true);
+    expect(dropped?.accepted).toBe(false);
+    expect(dropped?.redundant).toBe("ticon/lymingtontg-lym-gbr-cmems");
+
+    const keptStation = stations.find(
+      (s) => s.id === "ticon/lymingtontg-lym-gbr-cmems",
+    )!;
+    const droppedStation = allStations.find(
+      (s) => s.id === "ticon/lymington-lym-gbr-cco",
+    )!;
+    expect(
+      coordinatePrecision(keptStation.latitude, keptStation.longitude),
+    ).toBeGreaterThanOrEqual(
+      coordinatePrecision(droppedStation.latitude, droppedStation.longitude),
     );
   });
 });

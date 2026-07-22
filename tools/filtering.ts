@@ -128,6 +128,25 @@ export function gaugeKey(sourceId: string): string {
  *  the Gulf of Guinea and cannot be deduplicated against the real gauge. */
 export const NULL_ISLAND_RADIUS = 0.05;
 
+/** Count the decimal places in a coordinate value (e.g. 28.148 -> 3, 28.1 -> 1). */
+function decimalPlaces(n: number): number {
+  const s = n.toString();
+  const dot = s.indexOf(".");
+  return dot === -1 ? 0 : s.length - dot - 1;
+}
+
+/** Coordinate precision of a station, as the limiting (minimum) number of decimal
+ *  places across latitude and longitude. Coarsely-rounded 0.1° records score 1;
+ *  precisely surveyed positions score higher. Used only to break ties between
+ *  otherwise equal-quality duplicate records so the survivor keeps the better
+ *  location. */
+export function coordinatePrecision(
+  latitude: number,
+  longitude: number,
+): number {
+  return Math.min(decimalPlaces(latitude), decimalPlaces(longitude));
+}
+
 /**
  * Check if a station has quality control issues based on its disclaimers
  */

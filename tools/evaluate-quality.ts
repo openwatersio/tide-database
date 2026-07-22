@@ -28,6 +28,7 @@ import {
   getSourceSuffix,
   getSourcePriority,
   gaugeKey,
+  coordinatePrecision,
   hasQualityIssues,
   epochYears,
   NULL_ISLAND_RADIUS,
@@ -586,20 +587,13 @@ function deduplicate(
         stationB.longitude,
       );
 
-      const scoreA = resultsMap.get(idA)!.score;
-      const scoreB = resultsMap.get(idB)!.score;
-      const subsA = subordinateCounts.get(idA) ?? 0;
-      const subsB = subordinateCounts.get(idB) ?? 0;
-
-      // A reference station with accepted subordinates beats one without
-      let winner: string, loser: string;
-      if (subsA > 0 && subsB === 0) {
-        [winner, loser] = [idA, idB];
-      } else if (subsB > 0 && subsA === 0) {
-        [winner, loser] = [idB, idA];
-      } else {
-        [winner, loser] = scoreA >= scoreB ? [idA, idB] : [idB, idA];
-      }
+      const [winner, loser] = pickWinner(
+        idA,
+        idB,
+        stationMap,
+        resultsMap,
+        subordinateCounts,
+      );
 
       const winnerHasSubs = (subordinateCounts.get(winner) ?? 0) > 0;
       if (!areDuplicates(stationA, stationB, dist, winnerHasSubs)) continue;
@@ -614,10 +608,13 @@ function deduplicate(
 }
 
 /** Pick the winner between two stations: a reference with accepted subordinates
- *  beats one without; otherwise the higher composite score wins. */
+ *  beats one without; otherwise the higher composite score wins. Ties on score
+ *  fall to the more precisely located record, so the survivor keeps the better
+ *  coordinates rather than an older coarsely-rounded fix. */
 function pickWinner(
   idA: string,
   idB: string,
+  stationMap: Map<string, Station>,
   resultsMap: Map<string, QualityResult>,
   subordinateCounts: Map<string, number>,
 ): [winner: string, loser: string] {
@@ -627,7 +624,12 @@ function pickWinner(
   if (subsB > 0 && subsA === 0) return [idB, idA];
   const scoreA = resultsMap.get(idA)!.score;
   const scoreB = resultsMap.get(idB)!.score;
-  return scoreA >= scoreB ? [idA, idB] : [idB, idA];
+  if (scoreA !== scoreB) return scoreA > scoreB ? [idA, idB] : [idB, idA];
+  const a = stationMap.get(idA)!;
+  const b = stationMap.get(idB)!;
+  const precA = coordinatePrecision(a.latitude, a.longitude);
+  const precB = coordinatePrecision(b.latitude, b.longitude);
+  return precA >= precB ? [idA, idB] : [idB, idA];
 }
 
 /** Deduplicate TICON records that share a physical-gauge key (same station code,
@@ -657,7 +659,13 @@ function deduplicateByGauge(
     // pointer references the final winner rather than an intermediate one.
     let winner = ids[0]!;
     for (let i = 1; i < ids.length; i++) {
-      [winner] = pickWinner(winner, ids[i]!, resultsMap, subordinateCounts);
+      [winner] = pickWinner(
+        winner,
+        ids[i]!,
+        stationMap,
+        resultsMap,
+        subordinateCounts,
+      );
     }
     for (const id of ids) {
       if (id === winner) continue;
