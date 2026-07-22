@@ -202,6 +202,16 @@ export const MIN_AMPLITUDE_RATIO = 0.9;
  *  accepted subordinates. Used when harmonic comparison is unavailable or inapplicable. */
 export const FALLBACK_DEDUP_DISTANCE = 0.1; // 100 meters
 
+/** Maximum offset difference for two subordinate stations to be treated as the
+ *  same station. Subordinate records predict from a reference plus height/time
+ *  offsets, so two subordinates sharing (often coarse or placeholder) coordinates
+ *  are only true duplicates when they'd produce the same prediction — same
+ *  reference, height offsets within MAX_OFFSET_HEIGHT_DELTA, and time offsets
+ *  within MAX_OFFSET_TIME_DELTA. Suwarrow Island, mislocated on Hao Island's exact
+ *  coordinates but with a +64 min vs −315 min offset, is the case this separates. */
+export const MAX_OFFSET_HEIGHT_DELTA = 0.1; // ratio (or metres for fixed offsets)
+export const MAX_OFFSET_TIME_DELTA = 10; // minutes
+
 /** Minimum tidal range (MHW - MLW) to consider a station useful for tide prediction */
 export const MIN_TIDAL_RANGE = 0.02; // 2cm
 
