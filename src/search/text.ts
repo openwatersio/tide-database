@@ -1,7 +1,9 @@
 import MiniSearch, { type Options } from "minisearch";
-import type { Station } from "../types.js";
+import type { StationMeta } from "../types.js";
 
-const textSearchIndexOptions: Options<Station> = {
+// Only metadata fields are indexed, so this operates on StationMeta and never
+// touches the lazily-loaded harmonics/datums.
+const textSearchIndexOptions: Options<StationMeta> = {
   fields: ["name", "region", "country", "continent", "source.id"],
   extractField: (station, fieldName) => {
     if (fieldName in station) {
@@ -26,14 +28,15 @@ const textSearchIndexOptions: Options<Station> = {
  *   import { createTextIndex } from "./text-search-index.js" with { type: "macro" };
  */
 export async function createTextIndex() {
-  const { allStations: stations } = await import("../stations.js");
+  const { loadStationMeta } = await import("../station-bundle.js");
+  const stations = loadStationMeta();
 
-  const index = new MiniSearch<Station>(textSearchIndexOptions);
+  const index = new MiniSearch<StationMeta>(textSearchIndexOptions);
   index.addAll(stations);
 
   return JSON.stringify(index.toJSON());
 }
 
-export function loadTextIndex(data: string): MiniSearch<Station> {
-  return MiniSearch.loadJSON<Station>(data, textSearchIndexOptions);
+export function loadTextIndex(data: string): MiniSearch<StationMeta> {
+  return MiniSearch.loadJSON<StationMeta>(data, textSearchIndexOptions);
 }
