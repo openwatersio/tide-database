@@ -12,6 +12,8 @@ import {
   SEASONAL_OUTLIER_RADIUS,
   SEASONAL_OUTLIER_MIN_SA,
   SEASONAL_OUTLIER_RATIO,
+  NULL_ISLAND_RADIUS,
+  gaugeKey,
   distance,
 } from "../tools/filtering.js";
 import quality from "../quality.json" with { type: "json" };
@@ -245,6 +247,69 @@ describe("seasonal-contamination gate", () => {
           `median SA of its same-regime neighbours (${med.toFixed(3)}m). ` +
           `Run tools/evaluate-quality.ts to re-filter.`,
       ).toBeLessThan(SEASONAL_OUTLIER_RATIO);
+    }
+  });
+});
+
+describe("gauge deduplication", () => {
+  // A single physical gauge is often split across TICON records that share a
+  // station code but differ by segment letter or provider (fast-delivery vs
+  // research-quality, or two data centres). Coordinate drift pushes them past
+  // the spatial dedup radius, so they used to survive as duplicates
+  // (openwatersio/tide-database#112). No two published TICON stations should now
+  // share a gauge key.
+  test("no two published TICON stations share a gauge key", () => {
+    const seen = new Map<string, string>();
+    for (const station of stations) {
+      if (!station.id.startsWith("ticon/")) continue;
+      const key = gaugeKey(station.source.id);
+      const prior = seen.get(key);
+      expect(
+        prior,
+        `Stations ${prior} and ${station.id} share gauge key "${key}". ` +
+          `Run tools/evaluate-quality.ts to re-filter.`,
+      ).toBeUndefined();
+      seen.set(key, station.id);
+    }
+  });
+
+  test("collapses Las Palmas UHSLC segments to one record", () => {
+    const byId = new Map(quality.map((r) => [r.id, r]));
+    // The fast-delivery record is kept; the research-quality segments are dropped.
+    expect(byId.get("ticon/las_palmas-217-esp-uhslc_fd")?.accepted).toBe(true);
+    for (const seg of ["a", "b", "c", "d"]) {
+      const r = byId.get(`ticon/las_palmas-217${seg}-esp-uhslc_rq`);
+      expect(r?.accepted, `217${seg} should be a duplicate`).toBe(false);
+      expect(r?.reason).toBe("duplicate");
+      expect(r?.redundant).toBe("ticon/las_palmas-217-esp-uhslc_fd");
+    }
+  });
+
+  test("gaugeKey strips segment letters and source suffixes", () => {
+    expect(gaugeKey("las_palmas-217-esp-uhslc_fd")).toBe("las_palmas-217-esp");
+    expect(gaugeKey("las_palmas-217a-esp-uhslc_rq")).toBe("las_palmas-217-esp");
+    expect(gaugeKey("aberdeen-abe-gbr-cmems")).toBe("aberdeen-abe-gbr");
+    // Non-numeric codes keep any trailing letters (they are not segment markers).
+    expect(gaugeKey("cape_ferguson-h033007a-aus-bom")).toBe(
+      "cape_ferguson-h033007a-aus",
+    );
+  });
+});
+
+describe("coordinate gate", () => {
+  // Records that fail to geolocate upstream default to (0, 0) — Null Island in
+  // the Gulf of Guinea — where they cannot be deduplicated against the real
+  // gauge (openwatersio/tide-database#112, the Nonopapa case).
+  test("no published station sits on Null Island", () => {
+    for (const station of stations) {
+      const onNullIsland =
+        Math.abs(station.latitude) < NULL_ISLAND_RADIUS &&
+        Math.abs(station.longitude) < NULL_ISLAND_RADIUS;
+      expect(
+        onNullIsland,
+        `Station ${station.id} is on Null Island (${station.latitude}, ${station.longitude}). ` +
+          `Run tools/evaluate-quality.ts to re-filter.`,
+      ).toBe(false);
     }
   });
 });
