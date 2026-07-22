@@ -673,7 +673,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/diego_garcia-104d-gbr-uhslc_rq"
+    "redundant": "ticon/diego_garcia-104-gbr-uhslc_fd"
   },
   {
     "id": "noaa/2695535",
@@ -10537,7 +10537,7 @@
   },
   {
     "id": "noaa/8573777",
-    "accepted": true,
+    "accepted": false,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -10547,7 +10547,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/8633777"
   },
   {
     "id": "noaa/8573903",
@@ -11685,7 +11687,7 @@
   },
   {
     "id": "noaa/8633777",
-    "accepted": false,
+    "accepted": true,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -11695,9 +11697,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "noaa/8573777"
+    "issues": []
   },
   {
     "id": "noaa/8634214",
@@ -25679,20 +25679,6 @@
   },
   {
     "id": "noaa/8729108",
-    "accepted": true,
-    "score": 83,
-    "factors": {
-      "epoch": 1,
-      "recency": 0.75,
-      "source": 1,
-      "quality": 1,
-      "amplitude": 1,
-      "coverage": 0.006
-    },
-    "issues": []
-  },
-  {
-    "id": "noaa/8729132",
     "accepted": false,
     "score": 83,
     "factors": {
@@ -25705,7 +25691,21 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8729108"
+    "redundant": "noaa/8729132"
+  },
+  {
+    "id": "noaa/8729132",
+    "accepted": true,
+    "score": 83,
+    "factors": {
+      "epoch": 1,
+      "recency": 0.75,
+      "source": 1,
+      "quality": 1,
+      "amplitude": 1,
+      "coverage": 0.006
+    },
+    "issues": []
   },
   {
     "id": "noaa/8729136",
@@ -26341,20 +26341,6 @@
   },
   {
     "id": "noaa/8735180",
-    "accepted": true,
-    "score": 83,
-    "factors": {
-      "epoch": 1,
-      "recency": 0.75,
-      "source": 1,
-      "quality": 1,
-      "amplitude": 1,
-      "coverage": 0
-    },
-    "issues": []
-  },
-  {
-    "id": "noaa/8735181",
     "accepted": false,
     "score": 83,
     "factors": {
@@ -26367,7 +26353,21 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8735180"
+    "redundant": "noaa/8735181"
+  },
+  {
+    "id": "noaa/8735181",
+    "accepted": true,
+    "score": 83,
+    "factors": {
+      "epoch": 1,
+      "recency": 0.75,
+      "source": 1,
+      "quality": 1,
+      "amplitude": 1,
+      "coverage": 0
+    },
+    "issues": []
   },
   {
     "id": "noaa/8735391",
@@ -30363,7 +30363,7 @@
   },
   {
     "id": "noaa/9414763",
-    "accepted": true,
+    "accepted": false,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -30373,11 +30373,13 @@
       "amplitude": 1,
       "coverage": 0.002
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/9414764"
   },
   {
     "id": "noaa/9414764",
-    "accepted": false,
+    "accepted": true,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -30387,9 +30389,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "noaa/9414763"
+    "issues": []
   },
   {
     "id": "noaa/9414765",
@@ -45860,7 +45860,7 @@
   },
   {
     "id": "noaa/TPT2829",
-    "accepted": true,
+    "accepted": false,
     "score": 85,
     "factors": {
       "epoch": 1,
@@ -45870,7 +45870,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/TPT2837"
   },
   {
     "id": "noaa/TPT2831",
@@ -45916,7 +45918,7 @@
   },
   {
     "id": "noaa/TPT2837",
-    "accepted": false,
+    "accepted": true,
     "score": 85,
     "factors": {
       "epoch": 1,
@@ -45926,9 +45928,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "noaa/TPT2829"
+    "issues": []
   },
   {
     "id": "noaa/TPT2839",
@@ -46686,7 +46686,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/quepos-087a-cri-uhslc_rq"
+    "redundant": "ticon/quepos-087-cri-uhslc_fd"
   },
   {
     "id": "noaa/TWC0345",
@@ -46814,7 +46814,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/la_union-086b-slv-uhslc_rq"
+    "redundant": "ticon/la_union-086a-slv-uhslc_rq"
   },
   {
     "id": "noaa/TWC0367",
@@ -48653,7 +48653,7 @@
   },
   {
     "id": "ticon/aberdeen-abe-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 51,
     "factors": {
       "epoch": 1,
@@ -48663,7 +48663,9 @@
       "amplitude": 1,
       "coverage": 0.014
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/aberdeen-abe-gbr-bodc"
   },
   {
     "id": "ticon/abidjanridi-230a-civ-uhslc_rq",
@@ -48725,7 +48727,7 @@
   },
   {
     "id": "ticon/aburatsu-354a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -48735,7 +48737,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/aburatsu-354-jpn-uhslc_fd"
   },
   {
     "id": "ticon/aburatsu-ma41-jpn-jodc_jma",
@@ -48827,7 +48831,7 @@
   },
   {
     "id": "ticon/acajutla-082c-slv-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 57,
     "factors": {
       "epoch": 0.45,
@@ -48837,7 +48841,9 @@
       "amplitude": 1,
       "coverage": 0.025
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/acajutla-082-slv-uhslc_fd"
   },
   {
     "id": "ticon/acapulco_gro-316-mex-uhslc_fd",
@@ -48887,7 +48893,7 @@
   },
   {
     "id": "ticon/acapulco_gro-316c-mex-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 53,
     "factors": {
       "epoch": 0.211,
@@ -48897,7 +48903,9 @@
       "amplitude": 1,
       "coverage": 0.11
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/acapulco_gro-316-mex-uhslc_fd"
   },
   {
     "id": "ticon/acapulco-316-mex-unam_hist",
@@ -48997,7 +49005,7 @@
       "MHWS (1.708) < MHW (1.847)"
     ],
     "reason": "duplicate",
-    "redundant": "noaa/9461380"
+    "redundant": "ticon/adak_alaska-040-usa-uhslc_fd"
   },
   {
     "id": "ticon/adak_island-9461380-usa-noaa",
@@ -49067,7 +49075,7 @@
   },
   {
     "id": "ticon/aden-172a-yem-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.388,
@@ -49077,7 +49085,9 @@
       "amplitude": 1,
       "coverage": 0.021
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/aden-172-yem-uhslc_fd"
   },
   {
     "id": "ticon/aero_trading-9338-can-meds",
@@ -49290,7 +49300,7 @@
   },
   {
     "id": "ticon/akyab_sittwe-907a-mmr-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 62,
     "factors": {
       "epoch": 0.662,
@@ -49300,7 +49310,9 @@
       "amplitude": 1,
       "coverage": 0.023
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/akyab_sittwe-907-mmr-uhslc_fd"
   },
   {
     "id": "ticon/alafia_river_at_bell_shoals_near_riverview_fl-2301638-usa-usgs",
@@ -49573,7 +49585,7 @@
   },
   {
     "id": "ticon/alexandria-807a-egy-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 55,
     "factors": {
       "epoch": 0.333,
@@ -49583,7 +49595,9 @@
       "amplitude": 1,
       "coverage": 0.016
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/alexandria-807-egy-uhslc_fd"
   },
   {
     "id": "ticon/alexandria-ale-egy-noc",
@@ -49839,7 +49853,7 @@
   },
   {
     "id": "ticon/alofi-598a-niu-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 54,
     "factors": {
       "epoch": 0.239,
@@ -49849,7 +49863,9 @@
       "amplitude": 1,
       "coverage": 0.038
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/alofi-598-niu-uhslc_fd"
   },
   {
     "id": "ticon/alotau-069a-png-uhslc_rq",
@@ -50118,7 +50134,7 @@
   },
   {
     "id": "ticon/ambon-133a-idn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 60,
     "factors": {
       "epoch": 0.643,
@@ -50128,11 +50144,13 @@
       "amplitude": 1,
       "coverage": 0.053
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/ambon-133-idn-uhslc_fd"
   },
   {
     "id": "ticon/ambon-133b-idn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 61,
     "factors": {
       "epoch": 0.551,
@@ -50142,7 +50160,9 @@
       "amplitude": 1,
       "coverage": 0.107
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/ambon-133-idn-uhslc_fd"
   },
   {
     "id": "ticon/amelander_westgat_platform-awgpfm-nld-rws",
@@ -50537,7 +50557,7 @@
   },
   {
     "id": "ticon/antalya-ant-tur-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 47,
     "factors": {
       "epoch": 0.108,
@@ -50547,7 +50567,9 @@
       "amplitude": 1,
       "coverage": 0.009
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/antalya-ant-tur-eseas"
   },
   {
     "id": "ticon/antalya-ant-tur-eseas",
@@ -50579,7 +50601,7 @@
   },
   {
     "id": "ticon/antofagasta-080a-chl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -50589,7 +50611,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/antofagasta-080-chl-uhslc_fd"
   },
   {
     "id": "ticon/antwerpen_prosperpolder-antwppppdr-nld-rws",
@@ -50766,7 +50790,7 @@
   },
   {
     "id": "ticon/apia-401b-wsm-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -50776,7 +50800,9 @@
       "amplitude": 1,
       "coverage": 0.017
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/apia-401-wsm-uhslc_fd"
   },
   {
     "id": "ticon/apia-66840-wsm-bom",
@@ -51287,7 +51313,7 @@
   },
   {
     "id": "ticon/arun_platform-arn-gbr-cco",
-    "accepted": true,
+    "accepted": false,
     "score": 62,
     "factors": {
       "epoch": 0.813,
@@ -51297,11 +51323,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/arunplatformtg-aru-gbr-cmems"
   },
   {
     "id": "ticon/arunplatformtg-aru-gbr-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 62,
     "factors": {
       "epoch": 0.834,
@@ -51311,9 +51339,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/arun_platform-arn-gbr-cco"
+    "issues": []
   },
   {
     "id": "ticon/asamushi-gs06-jpn-jodc_giaj",
@@ -52957,7 +52983,7 @@
   },
   {
     "id": "ticon/base_prat-730a-chl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 67,
     "factors": {
       "epoch": 1,
@@ -52967,11 +52993,13 @@
       "amplitude": 1,
       "coverage": 0.035
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/base_prat-730-chl-uhslc_fd"
   },
   {
     "id": "ticon/base_prat-730b-chl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 59,
     "factors": {
       "epoch": 0.531,
@@ -52981,7 +53009,9 @@
       "amplitude": 1,
       "coverage": 0.011
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/base_prat-730-chl-uhslc_fd"
   },
   {
     "id": "ticon/bassens-6119-fra-refmar",
@@ -53919,7 +53949,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/2695540"
+    "redundant": "ticon/bermuda-259-gbr-uhslc_fd"
   },
   {
     "id": "ticon/bermuda-259b-gbr-uhslc_rq",
@@ -53935,7 +53965,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/2695540"
+    "redundant": "ticon/bermuda-259-gbr-uhslc_fd"
   },
   {
     "id": "ticon/bermuda-2695540-usa-noaa",
@@ -54605,7 +54635,7 @@
   },
   {
     "id": "ticon/bluff-072a-nzl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -54615,7 +54645,9 @@
       "amplitude": 1,
       "coverage": 0.026
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/bluff-072-nzl-uhslc_fd"
   },
   {
     "id": "ticon/boat_cove-rbct-nzl-ttw",
@@ -54878,7 +54910,7 @@
       "MHWS (3.325) < MHW (3.364)"
     ],
     "reason": "duplicate",
-    "redundant": "ticon/booby_island-58230-aus-bom"
+    "redundant": "ticon/booby_island-336-aus-uhslc_fd"
   },
   {
     "id": "ticon/booby_island-58230-aus-bom",
@@ -55540,7 +55572,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/brest-3-fra-refmar"
+    "redundant": "ticon/brest-822-fra-uhslc_fd"
   },
   {
     "id": "ticon/bresttg_60minute-bre-fra-cmems",
@@ -56354,7 +56386,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/bundaberg_burnett_heads-59820-aus-bom"
+    "redundant": "ticon/bundaberg-332-aus-uhslc_fd"
   },
   {
     "id": "ticon/buntings_bridge-8570691-usa-noaa",
@@ -57106,7 +57138,7 @@
   },
   {
     "id": "ticon/callao-093b-per-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -57116,7 +57148,9 @@
       "amplitude": 1,
       "coverage": 0.054
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/callao-093-per-uhslc_fd"
   },
   {
     "id": "ticon/caloosahatchee_river_at_fort_myers_fl-2293202-usa-usgs",
@@ -57615,7 +57649,7 @@
   },
   {
     "id": "ticon/cape_town-704a-zaf-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -57625,7 +57659,9 @@
       "amplitude": 1,
       "coverage": 0.03
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/cape_town-704-zaf-uhslc_fd"
   },
   {
     "id": "ticon/cape_vincent_ny-9052000-usa-noaa",
@@ -57812,7 +57848,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/carnarvon-62370-aus-bom"
+    "redundant": "ticon/carnarvon-167-aus-uhslc_fd"
   },
   {
     "id": "ticon/carnarvon-62370-aus-bom",
@@ -57896,7 +57932,7 @@
   },
   {
     "id": "ticon/cartagena-265b-col-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 53,
     "factors": {
       "epoch": 1,
@@ -57906,7 +57942,9 @@
       "amplitude": 1,
       "coverage": 0.016
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/cartagena-265a-col-uhslc_rq"
   },
   {
     "id": "ticon/cartagenatg-car-esp-cmems",
@@ -58617,7 +58655,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8665530"
+    "redundant": "ticon/charleston_sc-261-usa-uhslc_fd"
   },
   {
     "id": "ticon/charleston_sc-261b-usa-uhslc_rq",
@@ -58633,7 +58671,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8665530"
+    "redundant": "ticon/charleston_sc-261-usa-uhslc_fd"
   },
   {
     "id": "ticon/charleston-8665530-usa-noaa",
@@ -59147,7 +59185,7 @@
   },
   {
     "id": "ticon/chittagong-124a-bgd-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 61,
     "factors": {
       "epoch": 0.614,
@@ -59157,7 +59195,9 @@
       "amplitude": 1,
       "coverage": 0.023
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/chittagong-124-bgd-uhslc_fd"
   },
   {
     "id": "ticon/chofu-9004-jpn-jodc_pahb",
@@ -59327,7 +59367,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/churchill-5010-can-meds"
+    "redundant": "ticon/churchill-274-can-uhslc_fd"
   },
   {
     "id": "ticon/churchill-5010-can-meds",
@@ -59374,7 +59414,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/1840000"
+    "redundant": "ticon/chuuk-054-fsm-uhslc_fd"
   },
   {
     "id": "ticon/chuuk-1840000-usa-noaa",
@@ -59451,7 +59491,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/cilacap-162a-idn-uhslc_rq"
+    "redundant": "ticon/cilicap-162b-idn-uhslc_rq"
   },
   {
     "id": "ticon/cilicap-162b-idn-uhslc_rq",
@@ -59997,7 +60037,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/home_island-46280-aus-bom"
+    "redundant": "ticon/cocos-171-aus-uhslc_fd"
   },
   {
     "id": "ticon/coffs_harbour-205470-aus-bom",
@@ -60090,7 +60130,7 @@
   },
   {
     "id": "ticon/colombo-115a-lka-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 57,
     "factors": {
       "epoch": 0.698,
@@ -60100,11 +60140,13 @@
       "amplitude": 1,
       "coverage": 0.018
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/colombo-115-lka-uhslc_fd"
   },
   {
     "id": "ticon/colombo-115b-lka-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 49,
     "factors": {
       "epoch": 0.168,
@@ -60114,11 +60156,13 @@
       "amplitude": 1,
       "coverage": 0.031
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/colombo-115-lka-uhslc_fd"
   },
   {
     "id": "ticon/colombo-115c-lka-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 59,
     "factors": {
       "epoch": 0.562,
@@ -60128,7 +60172,9 @@
       "amplitude": 1,
       "coverage": 0.018
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/colombo-115-lka-uhslc_fd"
   },
   {
     "id": "ticon/colonia_sant_pere-col-esp-cmems",
@@ -60753,7 +60799,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9454050"
+    "redundant": "ticon/cordova_alaska-583b-usa-uhslc_rq"
   },
   {
     "id": "ticon/cordova_alaska-583b-usa-uhslc_rq",
@@ -61154,7 +61200,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9419750"
+    "redundant": "ticon/crescent_city_ca-556-usa-uhslc_fd"
   },
   {
     "id": "ticon/crescent_city-9419750-usa-noaa",
@@ -61205,7 +61251,7 @@
   },
   {
     "id": "ticon/cristobal-266a-pan-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 0.859,
@@ -61215,7 +61261,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/cristobal-266-pan-uhslc_fd"
   },
   {
     "id": "ticon/crms0002-crms0002-usa-crms",
@@ -67523,7 +67571,7 @@
   },
   {
     "id": "ticon/currimao-654a-phl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 59,
     "factors": {
       "epoch": 0.496,
@@ -67536,7 +67584,9 @@
     "issues": [
       "MLWS (0.802) > MLW (0.731)",
       "MHWS (1.022) < MHW (1.071)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/currimao-654-phl-uhslc_fd"
   },
   {
     "id": "ticon/currituck_sound_on_east_bank_at_corolla_nc-2043433-usa-usgs",
@@ -67822,11 +67872,11 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/dakar-223d-sen-uhslc_rq"
+    "redundant": "ticon/dakar-223-sen-uhslc_fd"
   },
   {
     "id": "ticon/dakar-223d-sen-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 48,
     "factors": {
       "epoch": 0.131,
@@ -67836,7 +67886,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/dakar-223-sen-uhslc_fd"
   },
   {
     "id": "ticon/dakar-223e-sen-uhslc_rq",
@@ -68003,7 +68055,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/darwin-63230-aus-bom"
+    "redundant": "ticon/darwin-168-aus-uhslc_fd"
   },
   {
     "id": "ticon/darwin-63230-aus-bom",
@@ -68125,7 +68177,7 @@
   },
   {
     "id": "ticon/davao-372b-phl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.999,
@@ -68135,7 +68187,9 @@
       "amplitude": 1,
       "coverage": 0.169
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/davao-372-phl-uhslc_fd"
   },
   {
     "id": "ticon/davis-173-aus-uhslc_fd",
@@ -68999,7 +69053,7 @@
   },
   {
     "id": "ticon/djibouti-119a-dji-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 58,
     "factors": {
       "epoch": 0.496,
@@ -69009,7 +69063,9 @@
       "amplitude": 1,
       "coverage": 0.028
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/djibouti-119-dji-uhslc_fd"
   },
   {
     "id": "ticon/dock_e-8741041-usa-noaa",
@@ -69365,7 +69421,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8651370"
+    "redundant": "ticon/duck_pier_nc-260-usa-uhslc_fd"
   },
   {
     "id": "ticon/duck-8651370-usa-noaa",
@@ -69684,7 +69740,7 @@
   },
   {
     "id": "ticon/durban-181a-zaf-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 70,
     "factors": {
       "epoch": 1,
@@ -69694,7 +69750,9 @@
       "amplitude": 1,
       "coverage": 0.103
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/durban-181-zaf-uhslc_fd"
   },
   {
     "id": "ticon/durbin_creek_near_fruit_cove_fl-22462002-usa-usgs",
@@ -69764,7 +69822,7 @@
       "MHWS (1.946) < MHW (2.005)"
     ],
     "reason": "duplicate",
-    "redundant": "noaa/9462620"
+    "redundant": "ticon/dutch_harbor_ak-041-usa-uhslc_fd"
   },
   {
     "id": "ticon/dutch_harbor_ak-041b-usa-uhslc_rq",
@@ -69782,7 +69840,7 @@
       "MHWS (1.705) < MHW (1.756)"
     ],
     "reason": "duplicate",
-    "redundant": "noaa/9462620"
+    "redundant": "ticon/dutch_harbor_ak-041-usa-uhslc_fd"
   },
   {
     "id": "ticon/dutch_slough_at_jersey_island-dsj-usa-cdwr",
@@ -70065,7 +70123,7 @@
   },
   {
     "id": "ticon/east_london-187a-zaf-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -70075,7 +70133,9 @@
       "amplitude": 1,
       "coverage": 0.038
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/east_london-187-zaf-uhslc_fd"
   },
   {
     "id": "ticon/east_pearl_river_at_csx_railroad_nr_claiborne_ms-301141089320300-usa-usgs",
@@ -70231,7 +70291,7 @@
   },
   {
     "id": "ticon/easter-022c-chl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -70241,7 +70301,9 @@
       "amplitude": 1,
       "coverage": 0.051
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/easter-022-chl-uhslc_fd"
   },
   {
     "id": "ticon/eastern_bay_at_claiborne_md-1492600-usa-usgs",
@@ -70876,7 +70938,7 @@
   },
   {
     "id": "ticon/ensenada-317-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 64,
     "factors": {
       "epoch": 1,
@@ -70886,7 +70948,9 @@
       "amplitude": 1,
       "coverage": 0.011
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/ensenada-317-mex-uhslc_fd"
   },
   {
     "id": "ticon/ensenada-317a-mex-uhslc_rq",
@@ -70902,7 +70966,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/TWC0403"
+    "redundant": "ticon/ensenada-317-mex-uhslc_fd"
   },
   {
     "id": "ticon/erie_lake_erie_pa-9063038-usa-noaa",
@@ -71426,7 +71490,7 @@
   },
   {
     "id": "ticon/exmouth-exm-gbr-cco",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.517,
@@ -71436,11 +71500,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/exmouthtg-exm-gbr-cmems"
   },
   {
     "id": "ticon/exmouthtg-exm-gbr-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 56,
     "factors": {
       "epoch": 0.521,
@@ -71450,9 +71516,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/exmouth-exm-gbr-cco"
+    "issues": []
   },
   {
     "id": "ticon/exuma_cays-256a-bhs-uhslc_rq",
@@ -71562,7 +71626,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9753216"
+    "redundant": "ticon/fajardo_pr-783b-pri-uhslc_rq"
   },
   {
     "id": "ticon/fajardo_pr-783b-pri-uhslc_rq",
@@ -71754,7 +71818,7 @@
   },
   {
     "id": "ticon/fanning-012c-kir-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 48,
     "factors": {
       "epoch": 0.12,
@@ -71764,7 +71828,9 @@
       "amplitude": 1,
       "coverage": 0.016
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/fanning-012b-kir-uhslc_rq"
   },
   {
     "id": "ticon/faraday-700-ata-uhslc_fd",
@@ -71857,7 +71923,7 @@
   },
   {
     "id": "ticon/felixstowe-fel-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 64,
     "factors": {
       "epoch": 1,
@@ -71867,7 +71933,9 @@
       "amplitude": 1,
       "coverage": 0.021
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/felixstowe-fel-gbr-bodc"
   },
   {
     "id": "ticon/fenholloway_river_near_hampton_springs_fl-2325543-usa-usgs",
@@ -72488,7 +72556,7 @@
       "MHWS (0.76) < MHW (0.767)"
     ],
     "reason": "duplicate",
-    "redundant": "ticon/fort_de_france-126-fra-refmar"
+    "redundant": "ticon/fort_de_france-271-fra-uhslc_fd"
   },
   {
     "id": "ticon/fort_denison-333-aus-uhslc_fd",
@@ -72518,7 +72586,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/sydney_fort_denison-60370-aus-bom"
+    "redundant": "ticon/fort_denison-333-aus-uhslc_fd"
   },
   {
     "id": "ticon/fort_gratiot_mi-9014098-usa-noaa",
@@ -72649,7 +72717,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8670870"
+    "redundant": "ticon/fort_pulaski_ga-752-usa-uhslc_fd"
   },
   {
     "id": "ticon/fort_pulaski-8670870-usa-noaa",
@@ -72750,7 +72818,7 @@
   },
   {
     "id": "ticon/fortaleza-283c-bra-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 60,
     "factors": {
       "epoch": 0.576,
@@ -72760,7 +72828,9 @@
       "amplitude": 1,
       "coverage": 0.014
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/fortaleza-283-bra-uhslc_fd"
   },
   {
     "id": "ticon/fortdefrancetg_60minute-for-fra-cmems",
@@ -73341,7 +73411,7 @@
   },
   {
     "id": "ticon/funafuti-025b-tuv-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -73351,7 +73421,9 @@
       "amplitude": 1,
       "coverage": 0.033
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/funafuti-025-tuv-uhslc_fd"
   },
   {
     "id": "ticon/funafuti-67440-tuv-bom",
@@ -73383,7 +73455,7 @@
   },
   {
     "id": "ticon/funchal-218b-prt-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -73393,7 +73465,9 @@
       "amplitude": 1,
       "coverage": 0.013
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/funchal-218-prt-uhslc_fd"
   },
   {
     "id": "ticon/furuogrund-2055-swe-smhi",
@@ -73680,7 +73754,7 @@
       "MHWS (1.796) < MHW (1.818)"
     ],
     "reason": "duplicate",
-    "redundant": "noaa/8771450"
+    "redundant": "ticon/galveston_pier_21-775-usa-uhslc_fd"
   },
   {
     "id": "ticon/galveston_pier_21-8771450-usa-noaa",
@@ -73747,7 +73821,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8771510"
+    "redundant": "ticon/galveston_ppier-767-usa-uhslc_fd"
   },
   {
     "id": "ticon/galveston_railroad_bridge-8771486-usa-noaa",
@@ -74018,7 +74092,7 @@
       "MHWS (0.182) < MHW (0.185)"
     ],
     "reason": "duplicate",
-    "redundant": "ticon/gedser-837a-dnk-uhslc_rq"
+    "redundant": "ticon/gedser-ged-dnk-dmi"
   },
   {
     "id": "ticon/gedser-ged-dnk-dmi",
@@ -74145,7 +74219,7 @@
   },
   {
     "id": "ticon/georgiana_slough_nr_sacramento_r-11447903-usa-usgs",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 0.944,
@@ -74157,7 +74231,9 @@
     },
     "issues": [
       "MHWS (1.903) < MHW (1.921)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/sacramento_river_at_walnut_grove_stage-b91651-usa-cdwr"
   },
   {
     "id": "ticon/geraldton-62290-aus-bom",
@@ -74283,7 +74359,7 @@
   },
   {
     "id": "ticon/gibraltar-289a-gbr-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.41,
@@ -74293,7 +74369,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/gibraltar-289-gbr-uhslc_fd"
   },
   {
     "id": "ticon/gibraltar-289b-gbr-uhslc_rq",
@@ -74309,7 +74387,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/gibraltar-289a-gbr-uhslc_rq"
+    "redundant": "ticon/gibraltar-289-gbr-uhslc_fd"
   },
   {
     "id": "ticon/gibsons_bc-7820-can-meds",
@@ -75093,7 +75171,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/goteborg_torshamnen-2109-swe-smhi"
+    "redundant": "ticon/goteborgorsh-819-swe-uhslc_fd"
   },
   {
     "id": "ticon/goteborgtingstadstunneln-got-swe-cmems",
@@ -75992,7 +76070,7 @@
   },
   {
     "id": "ticon/guaymas-397-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 63,
     "factors": {
       "epoch": 0.895,
@@ -76004,7 +76082,9 @@
     },
     "issues": [
       "MHWS (2.771) < MHW (2.797)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/guaymas-397a-mex-uhslc_rq"
   },
   {
     "id": "ticon/guaymas-397a-mex-uhslc_rq",
@@ -76259,7 +76339,7 @@
   },
   {
     "id": "ticon/hakodate-364a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -76269,7 +76349,9 @@
       "amplitude": 1,
       "coverage": 0.013
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/hakodate-364-jpn-uhslc_fd"
   },
   {
     "id": "ticon/hakodate-ma06-jpn-jodc_jma",
@@ -76709,7 +76791,7 @@
   },
   {
     "id": "ticon/hanimaadhoo-117b-mdv-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 66,
     "factors": {
       "epoch": 0.875,
@@ -76719,7 +76801,9 @@
       "amplitude": 1,
       "coverage": 0.013
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/hanimaadhoo-117-mdv-uhslc_fd"
   },
   {
     "id": "ticon/hanko_pikku_kolalahti-134253-fin-fmi",
@@ -78139,7 +78223,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/hivaoatg_60minute-hiv-fra-cmems"
+    "redundant": "ticon/hiva_oa-017-fra-uhslc_fd"
   },
   {
     "id": "ticon/hiva_oa-495-fra-refmar",
@@ -78346,7 +78430,7 @@
   },
   {
     "id": "ticon/holland_cut_near_bethel_island-hol-usa-cdwr",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 1,
@@ -78358,11 +78442,13 @@
     },
     "issues": [
       "MLWS (3.681) > MLW (3.669)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/holland_cut_nr_bethel_island_ca-11313431-usa-usgs"
   },
   {
     "id": "ticon/holland_cut_nr_bethel_island_ca-11313431-usa-usgs",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 0.945,
@@ -78375,9 +78461,7 @@
     "issues": [
       "MLWS (3.684) > MLW (3.668)",
       "MHWS (4.36) < MHW (4.365)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/holland_cut_near_bethel_island-hol-usa-cdwr"
+    ]
   },
   {
     "id": "ticon/holland_mi-9087031-usa-noaa",
@@ -78638,7 +78722,7 @@
   },
   {
     "id": "ticon/hong_kong-329a-hkg-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -78648,7 +78732,9 @@
       "amplitude": 1,
       "coverage": 0.035
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/hong_kong-329-hkg-uhslc_fd"
   },
   {
     "id": "ticon/hong_kong-329b-hkg-uhslc_rq",
@@ -78846,7 +78932,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/1612340"
+    "redundant": "ticon/honolulu_hawaii-057-usa-uhslc_fd"
   },
   {
     "id": "ticon/honolulu_hawaii-057b-usa-uhslc_rq",
@@ -78862,7 +78948,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/1612340"
+    "redundant": "ticon/honolulu_hawaii-057-usa-uhslc_fd"
   },
   {
     "id": "ticon/honolulu_kewalo-026a-usa-uhslc_rq",
@@ -79001,7 +79087,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/hornbaek-838a-dnk-uhslc_rq"
+    "redundant": "ticon/hornbaek-hor-dnk-dmi"
   },
   {
     "id": "ticon/hornbaek-hor-dnk-dmi",
@@ -80280,7 +80366,7 @@
   },
   {
     "id": "ticon/ilfracombe-ilf-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 66,
     "factors": {
       "epoch": 1,
@@ -80290,7 +80376,9 @@
       "amplitude": 1,
       "coverage": 0.014
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/ilfracombe-ilf-gbr-bodc"
   },
   {
     "id": "ticon/ilha_fiscal_rj-280-bra-uhslc_fd",
@@ -80547,7 +80635,7 @@
   },
   {
     "id": "ticon/inhambane-900a-moz-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 60,
     "factors": {
       "epoch": 0.394,
@@ -80559,11 +80647,13 @@
     },
     "issues": [
       "MLW (5.039) < MLLW (5.074)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/inhambane-900-moz-uhslc_fd"
   },
   {
     "id": "ticon/inishmore-ini-irl-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 0.98,
@@ -80573,7 +80663,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/inishmore-ini-irl-mi_c"
   },
   {
     "id": "ticon/inishmore-ini-irl-mi_c",
@@ -81655,7 +81747,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/1619000"
+    "redundant": "ticon/johnston-052-usa-uhslc_fd"
   },
   {
     "id": "ticon/johor_baharu-321a-mys-uhslc_rq",
@@ -81769,7 +81861,7 @@
   },
   {
     "id": "ticon/juan_fernandez-021b-chl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -81779,7 +81871,9 @@
       "amplitude": 1,
       "coverage": 0.034
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/juan_fernandez-021-chl-uhslc_fd"
   },
   {
     "id": "ticon/juelsminde-jue-dnk-cmems",
@@ -82464,7 +82558,7 @@
   },
   {
     "id": "ticon/karachi-147b-pak-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 59,
     "factors": {
       "epoch": 0.53,
@@ -82474,7 +82568,9 @@
       "amplitude": 1,
       "coverage": 0.031
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/karachi-147-pak-uhslc_fd"
   },
   {
     "id": "ticon/karatsu-9023-jpn-jodc_pahb",
@@ -82798,7 +82894,7 @@
   },
   {
     "id": "ticon/kaumalapau_hi-548a-usa-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 57,
     "factors": {
       "epoch": 0.413,
@@ -82808,7 +82904,9 @@
       "amplitude": 1,
       "coverage": 0.088
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/kaumalapau_hi-548-usa-uhslc_fd"
   },
   {
     "id": "ticon/kavieng-068a-png-uhslc_rq",
@@ -83293,7 +83391,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9450460"
+    "redundant": "ticon/ketchikan_ak-571-usa-uhslc_fd"
   },
   {
     "id": "ticon/ketchikan-9450460-usa-noaa",
@@ -83417,7 +83515,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8724580"
+    "redundant": "ticon/key_west_fl-242-usa-uhslc_fd"
   },
   {
     "id": "ticon/key_west-8724580-usa-noaa",
@@ -83939,7 +84037,7 @@
   },
   {
     "id": "ticon/knysna-186a-zaf-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -83949,7 +84047,9 @@
       "amplitude": 1,
       "coverage": 0.074
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/knysna-186-zaf-uhslc_fd"
   },
   {
     "id": "ticon/ko_lak-328-tha-uhslc_fd",
@@ -84089,7 +84189,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9457292"
+    "redundant": "ticon/kodiak_isl_alaska-039-usa-uhslc_fd"
   },
   {
     "id": "ticon/kodiak_island-9457292-usa-noaa",
@@ -84926,7 +85026,7 @@
   },
   {
     "id": "ticon/kushimoto-353a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -84936,7 +85036,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/kushimoto-353-jpn-uhslc_fd"
   },
   {
     "id": "ticon/kushimoto-ma26-jpn-jodc_jma",
@@ -84968,7 +85070,7 @@
   },
   {
     "id": "ticon/kushiro-350a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -84978,7 +85080,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/kushiro-350-jpn-uhslc_fd"
   },
   {
     "id": "ticon/kushiro-ma04-jpn-jodc_jma",
@@ -85038,7 +85142,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/1820000"
+    "redundant": "ticon/kwajalein-055-mhl-uhslc_fd"
   },
   {
     "id": "ticon/kwajalein-1820000-usa-noaa",
@@ -85182,7 +85286,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/coruna-coru-esp-ieo"
+    "redundant": "ticon/la_coruna-830-esp-uhslc_fd"
   },
   {
     "id": "ticon/la_cotiniere-736-fra-refmar",
@@ -85282,7 +85386,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9410230"
+    "redundant": "ticon/la_jolla_ca-554-usa-uhslc_fd"
   },
   {
     "id": "ticon/la_jolla-9410230-usa-noaa",
@@ -85351,7 +85455,7 @@
   },
   {
     "id": "ticon/la_paz-671-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 63,
     "factors": {
       "epoch": 1,
@@ -85361,7 +85465,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/la_paz-671a-mex-uhslc_rq"
   },
   {
     "id": "ticon/la_paz-671a-mex-uhslc_rq",
@@ -85655,7 +85761,7 @@
   },
   {
     "id": "ticon/lagos-233c-nga-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 50,
     "factors": {
       "epoch": 0.224,
@@ -85665,7 +85771,9 @@
       "amplitude": 1,
       "coverage": 0.001
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/lagos-233a-nga-uhslc_rq"
   },
   {
     "id": "ticon/lagos-7641400-usa-noaa",
@@ -86104,7 +86212,7 @@
   },
   {
     "id": "ticon/langkawi-142a-mys-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 83,
     "factors": {
       "epoch": 1,
@@ -86114,7 +86222,9 @@
       "amplitude": 1,
       "coverage": 0.974
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/langkawi-142-mys-uhslc_fd"
   },
   {
     "id": "ticon/langosteiratg-lan-esp-cmems",
@@ -86192,7 +86302,7 @@
   },
   {
     "id": "ticon/lapaz_flotador-14-mex-unam",
-    "accepted": false,
+    "accepted": true,
     "score": 51,
     "factors": {
       "epoch": 0.161,
@@ -86202,9 +86312,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/la_paz-671-mex-unam_hist"
+    "issues": []
   },
   {
     "id": "ticon/lapaz_radar-14-mex-unam",
@@ -86220,7 +86328,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/la_paz-671-mex-unam_hist"
+    "redundant": "ticon/lapaz_flotador-14-mex-unam"
   },
   {
     "id": "ticon/lark_harbour-2685-can-meds",
@@ -86278,11 +86386,11 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/las_palmas-217c-esp-uhslc_rq"
+    "redundant": "ticon/las_palmas-217-esp-uhslc_fd"
   },
   {
     "id": "ticon/las_palmas-217b-esp-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 58,
     "factors": {
       "epoch": 0.665,
@@ -86292,7 +86400,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/las_palmas-217-esp-uhslc_fd"
   },
   {
     "id": "ticon/las_palmas-217c-esp-uhslc_rq",
@@ -86308,11 +86418,11 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/las_palmas-217b-esp-uhslc_rq"
+    "redundant": "ticon/las_palmas-217-esp-uhslc_fd"
   },
   {
     "id": "ticon/las_palmas-217d-esp-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -86322,7 +86432,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/las_palmas-217-esp-uhslc_fd"
   },
   {
     "id": "ticon/laspalmastg-las-esp-cmems",
@@ -86414,7 +86526,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/lautoka-67070-fji-bom"
+    "redundant": "ticon/lautoka-402-fji-uhslc_fd"
   },
   {
     "id": "ticon/lautoka-67070-fji-bom",
@@ -86890,7 +87002,7 @@
   },
   {
     "id": "ticon/legaspi-371a-phl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -86900,7 +87012,9 @@
       "amplitude": 1,
       "coverage": 0.021
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/legaspi-371-phl-uhslc_fd"
   },
   {
     "id": "ticon/lehavretg_60minute-leh-fra-cmems",
@@ -87166,7 +87280,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/lerwick-293-gbr-uhslc_fd"
+    "redundant": "ticon/lerwick-ler-gbr-bodc"
   },
   {
     "id": "ticon/les_sables_d_olonne-62-fra-refmar",
@@ -87540,7 +87654,7 @@
   },
   {
     "id": "ticon/limon-268b-cri-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 58,
     "factors": {
       "epoch": 0.495,
@@ -87553,7 +87667,9 @@
     "issues": [
       "MLWS (0.414) > MLW (0.407)",
       "MHWS (0.608) < MHW (0.61)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/limon-268-cri-uhslc_fd"
   },
   {
     "id": "ticon/linnville_bayou_at_fm_521_nr_cedar_lane_tx-8117858-usa-usgs",
@@ -88008,7 +88124,7 @@
   },
   {
     "id": "ticon/llandudno-lla-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 51,
     "factors": {
       "epoch": 1,
@@ -88018,7 +88134,9 @@
       "amplitude": 1,
       "coverage": 0.038
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/llandudno-lla-gbr-bodc"
   },
   {
     "id": "ticon/lobito-237a-ago-uhslc_rq",
@@ -88396,11 +88514,11 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/lord_howe-399b-aus-uhslc_rq"
+    "redundant": "ticon/lord_howe-399-aus-uhslc_fd"
   },
   {
     "id": "ticon/lord_howe-399b-aus-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -88410,11 +88528,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/lord_howe-399-aus-uhslc_fd"
   },
   {
     "id": "ticon/loreto-319-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 59,
     "factors": {
       "epoch": 0.712,
@@ -88424,7 +88544,9 @@
       "amplitude": 1,
       "coverage": 0.054
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/loreto-319a-mex-uhslc_rq"
   },
   {
     "id": "ticon/loreto-319a-mex-uhslc_rq",
@@ -88695,7 +88817,7 @@
   },
   {
     "id": "ticon/lowestoft-low-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 66,
     "factors": {
       "epoch": 1,
@@ -88705,7 +88827,9 @@
       "amplitude": 1,
       "coverage": 0.014
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/lowestoft-low-gbr-bodc"
   },
   {
     "id": "ticon/lox_river_at_boy_scout_camp_nr_hobe_sound_fl-265912080082900-usa-usgs",
@@ -89088,7 +89212,7 @@
   },
   {
     "id": "ticon/lymington-lym-gbr-cco",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 0.958,
@@ -89098,11 +89222,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/lymingtontg-lym-gbr-cmems"
   },
   {
     "id": "ticon/lymingtontg-lym-gbr-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 65,
     "factors": {
       "epoch": 0.962,
@@ -89112,9 +89238,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/lymington-lym-gbr-cco"
+    "issues": []
   },
   {
     "id": "ticon/lynchburg_landing-8770733-usa-noaa",
@@ -89749,7 +89873,7 @@
   },
   {
     "id": "ticon/malakal-007a-plw-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.749,
@@ -89759,7 +89883,9 @@
       "amplitude": 1,
       "coverage": 0.036
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/malakal-007-plw-uhslc_fd"
   },
   {
     "id": "ticon/malakal-007b-plw-uhslc_rq",
@@ -89807,7 +89933,7 @@
   },
   {
     "id": "ticon/male-108a-mdv-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 47,
     "factors": {
       "epoch": 0.067,
@@ -89817,7 +89943,9 @@
       "amplitude": 1,
       "coverage": 0.027
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/male-108-mdv-uhslc_fd"
   },
   {
     "id": "ticon/malin_head_portmore_pier-mal-irl-mi_c",
@@ -90280,7 +90408,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/TWC0271"
+    "redundant": "ticon/manta-089b-ecu-uhslc_rq"
   },
   {
     "id": "ticon/manta-089b-ecu-uhslc_rq",
@@ -90348,7 +90476,7 @@
   },
   {
     "id": "ticon/manzanillo_nivelcbs-31-mex-unam",
-    "accepted": false,
+    "accepted": true,
     "score": 36,
     "factors": {
       "epoch": 0.169,
@@ -90358,9 +90486,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/manzanillo-395-mex-unam_hist"
+    "issues": []
   },
   {
     "id": "ticon/manzanillo_radar-31-mex-unam",
@@ -90376,7 +90502,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/manzanillo-395-mex-unam_hist"
+    "redundant": "ticon/manzanillo_nivelcbs-31-mex-unam"
   },
   {
     "id": "ticon/manzanillo-395-mex-uhslc_fd",
@@ -90394,7 +90520,7 @@
   },
   {
     "id": "ticon/manzanillo-395-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 63,
     "factors": {
       "epoch": 1,
@@ -90404,7 +90530,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/manzanillo-395-mex-uhslc_fd"
   },
   {
     "id": "ticon/manzanillo-395a-mex-uhslc_rq",
@@ -90424,7 +90552,7 @@
   },
   {
     "id": "ticon/manzanillo-395b-mex-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -90434,7 +90562,9 @@
       "amplitude": 1,
       "coverage": 0.045
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/manzanillo-395-mex-uhslc_fd"
   },
   {
     "id": "ticon/maple_bay_bc-7315-can-meds",
@@ -90482,7 +90612,7 @@
   },
   {
     "id": "ticon/mar_del_plata-729a-arg-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 52,
     "factors": {
       "epoch": 0.226,
@@ -90492,11 +90622,13 @@
       "amplitude": 1,
       "coverage": 0.039
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/mar_del_plata-729-arg-uhslc_fd"
   },
   {
     "id": "ticon/mar_del_plata-729b-arg-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 58,
     "factors": {
       "epoch": 0.471,
@@ -90506,7 +90638,9 @@
       "amplitude": 1,
       "coverage": 0.014
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/mar_del_plata-729-arg-uhslc_fd"
   },
   {
     "id": "ticon/marblehead_oh-9063079-usa-noaa",
@@ -90789,7 +90923,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/marseille-524-fra-refmar"
+    "redundant": "ticon/marseille-824-fra-uhslc_fd"
   },
   {
     "id": "ticon/marseilletg_60minute-mar-fra-cmems",
@@ -91103,7 +91237,7 @@
   },
   {
     "id": "ticon/matarani-094a-per-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 55,
     "factors": {
       "epoch": 0.579,
@@ -91113,7 +91247,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/matarani-094-per-uhslc_fd"
   },
   {
     "id": "ticon/matarani-094b-per-uhslc_rq",
@@ -91490,7 +91626,7 @@
   },
   {
     "id": "ticon/mazatlan_radar-16-mex-unam",
-    "accepted": false,
+    "accepted": true,
     "score": 36,
     "factors": {
       "epoch": 0.17,
@@ -91500,13 +91636,11 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/mazatlan-673-mex-unam_hist"
+    "issues": []
   },
   {
     "id": "ticon/mazatlan-673-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 57,
     "factors": {
       "epoch": 0.501,
@@ -91516,7 +91650,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/mazatlan-673a-mex-uhslc_rq"
   },
   {
     "id": "ticon/mazatlan-673a-mex-uhslc_rq",
@@ -91773,7 +91909,7 @@
   },
   {
     "id": "ticon/mera-352a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -91783,7 +91919,9 @@
       "amplitude": 1,
       "coverage": 0.015
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/mera-352-jpn-uhslc_fd"
   },
   {
     "id": "ticon/mera-ma14-jpn-jodc_jma",
@@ -93888,7 +94026,7 @@
   },
   {
     "id": "ticon/mossel_bay-185a-zaf-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 75,
     "factors": {
       "epoch": 1,
@@ -93898,7 +94036,9 @@
       "amplitude": 1,
       "coverage": 0.45
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/mossel_bay-185-zaf-uhslc_fd"
   },
   {
     "id": "ticon/motriltg-mot-esp-cmems",
@@ -93930,7 +94070,7 @@
   },
   {
     "id": "ticon/moulmein-906a-mmr-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 47,
     "factors": {
       "epoch": 0.649,
@@ -93940,7 +94080,9 @@
       "amplitude": 1,
       "coverage": 0.041
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/moulmein-906-mmr-uhslc_fd"
   },
   {
     "id": "ticon/mourilyan_harbour-59140-aus-bom",
@@ -94588,7 +94730,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/nain-1430-can-meds"
+    "redundant": "ticon/nain-833-can-uhslc_fd"
   },
   {
     "id": "ticon/nakano_shima-345-jpn-uhslc_fd",
@@ -94606,7 +94748,7 @@
   },
   {
     "id": "ticon/nakano_shima-345a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -94616,7 +94758,9 @@
       "amplitude": 1,
       "coverage": 0.011
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/nakano_shima-345-jpn-uhslc_fd"
   },
   {
     "id": "ticon/nakanoshima-hd28-jpn-jodc_jcg",
@@ -94860,7 +95004,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/TWC0323"
+    "redundant": "ticon/naos-300b-pan-uhslc_rq"
   },
   {
     "id": "ticon/naos-300b-pan-uhslc_rq",
@@ -95150,7 +95294,7 @@
   },
   {
     "id": "ticon/nauru-004a-nru-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 66,
     "factors": {
       "epoch": 1,
@@ -95160,7 +95304,9 @@
       "amplitude": 1,
       "coverage": 0.014
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/nauru-004-nru-uhslc_fd"
   },
   {
     "id": "ticon/nauru-004b-nru-uhslc_rq",
@@ -95290,7 +95436,7 @@
   },
   {
     "id": "ticon/naze-359a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -95300,11 +95446,13 @@
       "amplitude": 1,
       "coverage": 0.002
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/naze-359-jpn-uhslc_fd"
   },
   {
     "id": "ticon/naze-hd22-jpn-jodc_jcg",
-    "accepted": false,
+    "accepted": true,
     "score": 67,
     "factors": {
       "epoch": 1,
@@ -95314,9 +95462,7 @@
       "amplitude": 1,
       "coverage": 0.002
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/naze-359a-jpn-uhslc_rq"
+    "issues": []
   },
   {
     "id": "ticon/neah_bay_wa-558-usa-uhslc_fd",
@@ -95920,7 +96066,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/newlyn-new-gbr-bodc"
+    "redundant": "ticon/newlyn_cornwall-294-gbr-uhslc_fd"
   },
   {
     "id": "ticon/newlyn-new-gbr-bodc",
@@ -95938,7 +96084,7 @@
   },
   {
     "id": "ticon/newlyn-new-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 50,
     "factors": {
       "epoch": 1,
@@ -95948,7 +96094,9 @@
       "amplitude": 1,
       "coverage": 0.013
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/newlyn-new-gbr-bodc"
   },
   {
     "id": "ticon/newmarket_creek_at_mercury_blvd_at_hampton_va-167892964-usa-usgs",
@@ -96108,7 +96256,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8452660"
+    "redundant": "ticon/newport_ri-253-usa-uhslc_fd"
   },
   {
     "id": "ticon/newport_river-new-usa-ncdem",
@@ -96694,7 +96842,7 @@
   },
   {
     "id": "ticon/norfolk_island-062a-aus-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 48,
     "factors": {
       "epoch": 0.114,
@@ -96704,7 +96852,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/norfolk_island-062b-aus-uhslc_rq"
   },
   {
     "id": "ticon/norfolk_island-062b-aus-uhslc_rq",
@@ -97180,7 +97330,7 @@
   },
   {
     "id": "ticon/nouakchott-806a-mrt-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 61,
     "factors": {
       "epoch": 0.435,
@@ -97190,7 +97340,9 @@
       "amplitude": 1,
       "coverage": 0.306
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/nouakchott-806-mrt-uhslc_fd"
   },
   {
     "id": "ticon/noumea-019-fra-uhslc_fd",
@@ -97220,7 +97372,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/numbo_noumea-659-fra-refmar"
+    "redundant": "ticon/noumea-019-fra-uhslc_fd"
   },
   {
     "id": "ticon/noumeanumbotg_60minute-nou-fra-cmems",
@@ -97236,7 +97388,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/noumea-019a-fra-uhslc_rq"
+    "redundant": "ticon/numbo_noumea-659-fra-refmar"
   },
   {
     "id": "ticon/nueces_bay-8775244-usa-noaa",
@@ -97490,7 +97642,7 @@
   },
   {
     "id": "ticon/nylesund-823a-nor-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -97500,7 +97652,9 @@
       "amplitude": 1,
       "coverage": 0.011
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/nylesund-823-nor-uhslc_fd"
   },
   {
     "id": "ticon/nynas_fiskehamn-35112-swe-smhi",
@@ -97777,7 +97931,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/ofunato-ma10-jpn-jodc_jma"
+    "redundant": "ticon/ofunato-351-jpn-uhslc_fd"
   },
   {
     "id": "ticon/ofunato-ma10-jpn-jodc_jma",
@@ -99121,7 +99275,7 @@
   },
   {
     "id": "ticon/otranto-otr-ita-ispra",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -99131,7 +99285,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/rmn_otranto-rmn-ita-cmems"
   },
   {
     "id": "ticon/otterndorfmpm-5990011-deu-wsv",
@@ -99543,7 +99699,7 @@
   },
   {
     "id": "ticon/padang-107a-idn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 67,
     "factors": {
       "epoch": 0.936,
@@ -99553,11 +99709,13 @@
       "amplitude": 1,
       "coverage": 0.106
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/padang-107-idn-uhslc_fd"
   },
   {
     "id": "ticon/padang-107b-idn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 62,
     "factors": {
       "epoch": 0.702,
@@ -99567,7 +99725,9 @@
       "amplitude": 1,
       "coverage": 0.019
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/padang-107-idn-uhslc_fd"
   },
   {
     "id": "ticon/pago_bay_guam-037a-usa-uhslc_rq",
@@ -99859,7 +100019,7 @@
   },
   {
     "id": "ticon/palmeira-235a-cpv-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -99869,7 +100029,9 @@
       "amplitude": 1,
       "coverage": 0.011
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/palmeira-235-cpv-uhslc_fd"
   },
   {
     "id": "ticon/palmyra_island-043-usa-uhslc_fd",
@@ -99887,7 +100049,7 @@
   },
   {
     "id": "ticon/palmyra_island-043a-usa-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 44,
     "factors": {
       "epoch": 0.132,
@@ -99897,11 +100059,13 @@
       "amplitude": 1,
       "coverage": 0.01
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/palmyra_island-043-usa-uhslc_fd"
   },
   {
     "id": "ticon/palmyra_island-043b-usa-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 55,
     "factors": {
       "epoch": 0.327,
@@ -99911,7 +100075,9 @@
       "amplitude": 1,
       "coverage": 0.01
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/palmyra_island-043-usa-uhslc_fd"
   },
   {
     "id": "ticon/pamlico_river_at_washington_nc-2084472-usa-usgs",
@@ -100002,7 +100168,7 @@
   },
   {
     "id": "ticon/papeete-015a-fra-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 50,
     "factors": {
       "epoch": 0.327,
@@ -100012,7 +100178,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/papeete-015-fra-uhslc_fd"
   },
   {
     "id": "ticon/papeete-015b-fra-uhslc_rq",
@@ -100880,7 +101048,7 @@
       "MHWS (2.877) < MHW (2.982)"
     ],
     "reason": "duplicate",
-    "redundant": "noaa/8729840"
+    "redundant": "ticon/pensacola_fl-762-usa-uhslc_fd"
   },
   {
     "id": "ticon/pensacola-8729840-usa-noaa",
@@ -101259,7 +101427,7 @@
   },
   {
     "id": "ticon/pinnausperrwerkap-5970019-deu-wsv",
-    "accepted": true,
+    "accepted": false,
     "score": 81,
     "factors": {
       "epoch": 1,
@@ -101271,11 +101439,13 @@
     },
     "issues": [
       "MLWS (3.894) > MLW (3.836)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/pinnausperrwerkbp-5970018-deu-wsv"
   },
   {
     "id": "ticon/pinnausperrwerkbp-5970018-deu-wsv",
-    "accepted": false,
+    "accepted": true,
     "score": 81,
     "factors": {
       "epoch": 1,
@@ -101285,9 +101455,7 @@
       "amplitude": 1,
       "coverage": 0.001
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/pinnausperrwerkap-5970019-deu-wsv"
+    "issues": []
   },
   {
     "id": "ticon/pisco-683a-per-uhslc_rq",
@@ -101503,7 +101671,7 @@
   },
   {
     "id": "ticon/pohnpei-001a-fsm-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 46,
     "factors": {
       "epoch": 0.097,
@@ -101513,7 +101681,9 @@
       "amplitude": 1,
       "coverage": 0.024
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/pohnpei-001-fsm-uhslc_fd"
   },
   {
     "id": "ticon/pohnpei-001b-fsm-uhslc_rq",
@@ -101529,7 +101699,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/pohnpei-67950-fsm-bom"
+    "redundant": "ticon/pohnpei-001-fsm-uhslc_fd"
   },
   {
     "id": "ticon/pohnpei-001c-fsm-uhslc_rq",
@@ -101896,7 +102066,7 @@
   },
   {
     "id": "ticon/pointe_noire-234b-cog-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.355,
@@ -101906,7 +102076,9 @@
       "amplitude": 1,
       "coverage": 0.053
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/pointe_noire-234-cog-uhslc_fd"
   },
   {
     "id": "ticon/pointe_pitre-272a-fra-uhslc_rq",
@@ -102863,7 +103035,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/port_hedland-62590-aus-bom"
+    "redundant": "ticon/port_hedland-169-aus-uhslc_fd"
   },
   {
     "id": "ticon/port_hedland-62590-aus-bom",
@@ -103077,7 +103249,7 @@
   },
   {
     "id": "ticon/port_louis-103a-mus-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 47,
     "factors": {
       "epoch": 0.322,
@@ -103087,7 +103259,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/port_louis-103-mus-uhslc_fd"
   },
   {
     "id": "ticon/port_louis-103b-mus-uhslc_rq",
@@ -103103,7 +103277,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/port_louis-103a-mus-uhslc_rq"
+    "redundant": "ticon/port_louis-103-mus-uhslc_fd"
   },
   {
     "id": "ticon/port_louis-103c-mus-uhslc_rq",
@@ -103268,7 +103442,7 @@
   },
   {
     "id": "ticon/port_nolloth-701a-zaf-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 67,
     "factors": {
       "epoch": 0.878,
@@ -103278,7 +103452,9 @@
       "amplitude": 1,
       "coverage": 0.08
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/port_nolloth-701-zaf-uhslc_fd"
   },
   {
     "id": "ticon/port_o_aoconnor-8773701-usa-noaa",
@@ -103510,7 +103686,7 @@
   },
   {
     "id": "ticon/port_sonara-816a-cmr-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 58,
     "factors": {
       "epoch": 0.161,
@@ -103520,7 +103696,9 @@
       "amplitude": 1,
       "coverage": 0.467
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/port_sonara-816-cmr-uhslc_fd"
   },
   {
     "id": "ticon/port_st_joe-8728912-usa-noaa",
@@ -103576,7 +103754,7 @@
   },
   {
     "id": "ticon/port_stanley-290a-gbr-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 0.541,
@@ -103586,7 +103764,9 @@
       "amplitude": 1,
       "coverage": 1
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/port_stanley-290-gbr-uhslc_fd"
   },
   {
     "id": "ticon/port_stanley-290b-gbr-uhslc_rq",
@@ -103726,7 +103906,7 @@
   },
   {
     "id": "ticon/port_vila-046a-vut-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 52,
     "factors": {
       "epoch": 0.322,
@@ -103736,7 +103916,9 @@
       "amplitude": 1,
       "coverage": 0.081
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/port_vila-046-vut-uhslc_fd"
   },
   {
     "id": "ticon/port_vila-046b-vut-uhslc_rq",
@@ -103752,7 +103934,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/port_vila-57320-vut-bom"
+    "redundant": "ticon/port_vila-046-vut-uhslc_fd"
   },
   {
     "id": "ticon/port_vila-57320-vut-bom",
@@ -104238,7 +104420,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/portsmouth-ptm-gbr-da_idh"
+    "redundant": "ticon/portsmouth-ptm-gbr-bodc"
   },
   {
     "id": "ticon/portsmouth-ptm-gbr-bodc",
@@ -104517,7 +104699,7 @@
   },
   {
     "id": "ticon/prickley_bay-789a-grd-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 56,
     "factors": {
       "epoch": 0.411,
@@ -104527,7 +104709,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/prickley_bay-789-grd-uhslc_fd"
   },
   {
     "id": "ticon/prigi-125-idn-uhslc_fd",
@@ -104601,7 +104785,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/prince_rupert_bc-9354-can-meds"
+    "redundant": "ticon/prince_rupert-540-can-uhslc_fd"
   },
   {
     "id": "ticon/progreso_radar-8-mex-unam",
@@ -104828,7 +105012,7 @@
   },
   {
     "id": "ticon/puerto_angel-672-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 50,
     "factors": {
       "epoch": 0.152,
@@ -104838,7 +105022,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/puerto_angel-672a-mex-uhslc_rq"
   },
   {
     "id": "ticon/puerto_angel-672a-mex-uhslc_rq",
@@ -105197,11 +105383,11 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/puerto_angel-672-mex-unam_hist"
+    "redundant": "ticon/puertoangel_radar-17-mex-unam"
   },
   {
     "id": "ticon/puertoangel_radar-17-mex-unam",
-    "accepted": false,
+    "accepted": true,
     "score": 36,
     "factors": {
       "epoch": 0.148,
@@ -105211,9 +105397,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/puerto_angel-672-mex-unam_hist"
+    "issues": []
   },
   {
     "id": "ticon/puertochiapas_flotador-18-mex-unam",
@@ -105405,7 +105589,7 @@
   },
   {
     "id": "ticon/punta_cana-776a-dom-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 57,
     "factors": {
       "epoch": 0.459,
@@ -105417,7 +105601,9 @@
     },
     "issues": [
       "MLWS (0.519) > MLW (0.503)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/punta_cana-776-dom-uhslc_fd"
   },
   {
     "id": "ticon/punta_rassa-8725391-usa-noaa",
@@ -105617,7 +105803,7 @@
   },
   {
     "id": "ticon/quepos-087b-cri-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 57,
     "factors": {
       "epoch": 0.425,
@@ -105627,7 +105813,9 @@
       "amplitude": 1,
       "coverage": 0.057
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/quepos-087-cri-uhslc_fd"
   },
   {
     "id": "ticon/qui_nhon-381-vnm-uhslc_fd",
@@ -105667,7 +105855,7 @@
   },
   {
     "id": "ticon/qui_nhon-381b-vnm-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 60,
     "factors": {
       "epoch": 0.602,
@@ -105680,7 +105868,9 @@
     "issues": [
       "MLWS (1.188) > MLW (1.07)",
       "MHWS (1.674) < MHW (1.816)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/qui_nhon-381-vnm-uhslc_fd"
   },
   {
     "id": "ticon/quonset_point-8454049-usa-noaa",
@@ -106025,7 +106215,7 @@
   },
   {
     "id": "ticon/rarotonga-023b-cok-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -106035,7 +106225,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/rarotonga-023-cok-uhslc_fd"
   },
   {
     "id": "ticon/ratan-2056-swe-smhi",
@@ -106439,7 +106631,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/pointe_des_galets-110-fra-refmar"
+    "redundant": "ticon/reunion-164-fra-uhslc_fd"
   },
   {
     "id": "ticon/reykjavik-288-isl-uhslc_fd",
@@ -107292,7 +107484,7 @@
   },
   {
     "id": "ticon/rmn_otranto-rmn-ita-cmems",
-    "accepted": false,
+    "accepted": true,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -107302,9 +107494,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/otranto-otr-ita-ispra"
+    "issues": []
   },
   {
     "id": "ticon/rmn_palermo-rmn-ita-cmems",
@@ -107420,7 +107610,7 @@
   },
   {
     "id": "ticon/rmn_salerno-rmn-ita-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -107430,11 +107620,13 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/salerno-sal-ita-ispra"
   },
   {
     "id": "ticon/rmn_sbenedettodeltronto-rmn-ita-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 61,
     "factors": {
       "epoch": 0.799,
@@ -107444,7 +107636,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/san_benedetto_del_tronto-san-ita-ispra"
   },
   {
     "id": "ticon/rmn_sciacca-rmn-ita-cmems",
@@ -108247,7 +108441,7 @@
   },
   {
     "id": "ticon/rosslare-ros-irl-mi_c",
-    "accepted": true,
+    "accepted": false,
     "score": 42,
     "factors": {
       "epoch": 0.356,
@@ -108257,7 +108451,9 @@
       "amplitude": 1,
       "coverage": 0.252
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/rosslare-ros-irl-cmems"
   },
   {
     "id": "ticon/rosslyn_bay-330a-aus-uhslc_rq",
@@ -108802,7 +108998,7 @@
   },
   {
     "id": "ticon/sabang-123a-idn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 64,
     "factors": {
       "epoch": 0.7,
@@ -108812,7 +109008,9 @@
       "amplitude": 1,
       "coverage": 0.127
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/sabang-123-idn-uhslc_fd"
   },
   {
     "id": "ticon/sabine_offshore-8771081-usa-noaa",
@@ -109052,7 +109250,7 @@
   },
   {
     "id": "ticon/sacramento_r_bl_georgiana_slough_ca-11447905-usa-usgs",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 0.944,
@@ -109064,9 +109262,7 @@
     },
     "issues": [
       "MHWS (1.912) < MHW (1.932)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/georgiana_slough_nr_sacramento_r-11447903-usa-usgs"
+    ]
   },
   {
     "id": "ticon/sacramento_r_bl_walnut_grove_br_a_walnut_grove_ca-381427121305401-usa-usgs",
@@ -109317,7 +109513,7 @@
   },
   {
     "id": "ticon/sacramento_river_at_walnut_grove_stage-b91651-usa-cdwr",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 1,
@@ -109329,13 +109525,11 @@
     },
     "issues": [
       "MHWS (1.898) < MHW (1.918)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/georgiana_slough_nr_sacramento_r-11447903-usa-usgs"
+    ]
   },
   {
     "id": "ticon/sacramento_river_below_georgiana_slough-ges-usa-cdwr",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 1,
@@ -109347,7 +109541,9 @@
     },
     "issues": [
       "MHWS (1.907) < MHW (1.926)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/sacramento_r_bl_georgiana_slough_ca-11447905-usa-usgs"
   },
   {
     "id": "ticon/sacramento_river_bl_toland_landing-m13-usa-cdwr",
@@ -109878,7 +110074,7 @@
   },
   {
     "id": "ticon/saipan-028a-usa-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 43,
     "factors": {
       "epoch": 0.11,
@@ -109888,7 +110084,9 @@
       "amplitude": 1,
       "coverage": 0.023
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/saipan-028-usa-uhslc_fd"
   },
   {
     "id": "ticon/saipan-028b-usa-uhslc_rq",
@@ -110030,7 +110228,7 @@
   },
   {
     "id": "ticon/salerno-sal-ita-ispra",
-    "accepted": false,
+    "accepted": true,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -110040,9 +110238,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/rmn_salerno-rmn-ita-cmems"
+    "issues": []
   },
   {
     "id": "ticon/salina_cruz-394-mex-unam_hist",
@@ -110072,7 +110268,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9504651"
+    "redundant": "ticon/salina_cruz-394-mex-unam_hist"
   },
   {
     "id": "ticon/salinacruz_flotador-20-mex-unam",
@@ -110244,7 +110440,7 @@
   },
   {
     "id": "ticon/san_benedetto_del_tronto-san-ita-ispra",
-    "accepted": false,
+    "accepted": true,
     "score": 61,
     "factors": {
       "epoch": 0.809,
@@ -110254,9 +110450,7 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": [],
-    "reason": "duplicate",
-    "redundant": "ticon/rmn_sbenedettodeltronto-rmn-ita-cmems"
+    "issues": []
   },
   {
     "id": "ticon/san_bernard_rv_at_fm_521_nr_cedar_lane_tx-8117720-usa-usgs",
@@ -110400,7 +110594,7 @@
   },
   {
     "id": "ticon/san_felix-035a-chl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -110410,7 +110604,9 @@
       "amplitude": 1,
       "coverage": 0.054
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/san_felix-035-chl-uhslc_fd"
   },
   {
     "id": "ticon/san_francisco_bay_a_old_dumbarton_br_nr_newark_ca-373025122065901-usa-usgs",
@@ -110458,7 +110654,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9414290"
+    "redundant": "ticon/san_francisco_ca-551-usa-uhslc_fd"
   },
   {
     "id": "ticon/san_francisco-9414290-usa-noaa",
@@ -110822,7 +111018,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9755371"
+    "redundant": "ticon/san_juan_pr-245-usa-uhslc_fd"
   },
   {
     "id": "ticon/san_juan-096a-per-uhslc_rq",
@@ -110905,7 +111101,7 @@
   },
   {
     "id": "ticon/san_quintin-308-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 59,
     "factors": {
       "epoch": 0.73,
@@ -110915,7 +111111,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/san_quintin-308a-mex-uhslc_rq"
   },
   {
     "id": "ticon/san_quintin-308a-mex-uhslc_rq",
@@ -111388,11 +111586,11 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/santana-716c-bra-uhslc_rq"
+    "redundant": "ticon/santana-716e-bra-uhslc_rq"
   },
   {
     "id": "ticon/santana-716b-bra-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 46,
     "factors": {
       "epoch": 0.107,
@@ -111402,7 +111600,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/santana-716e-bra-uhslc_rq"
   },
   {
     "id": "ticon/santana-716c-bra-uhslc_rq",
@@ -111418,7 +111618,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/santana-716b-bra-uhslc_rq"
+    "redundant": "ticon/santana-716e-bra-uhslc_rq"
   },
   {
     "id": "ticon/santana-716e-bra-uhslc_rq",
@@ -111501,7 +111701,7 @@
   },
   {
     "id": "ticon/sao_tome-225a-stp-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 62,
     "factors": {
       "epoch": 0.161,
@@ -111511,7 +111711,9 @@
       "amplitude": 1,
       "coverage": 0.889
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/sao_tome-225-stp-uhslc_fd"
   },
   {
     "id": "ticon/saragassa_canal_at_crystal_river_fl-2310740-usa-usgs",
@@ -112251,7 +112453,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/scruz_d_palma-206a-esp-uhslc_rq"
+    "redundant": "ticon/scruz_d_palma-206b-esp-uhslc_rq"
   },
   {
     "id": "ticon/seadrift-8773037-usa-noaa",
@@ -112532,7 +112734,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9710441"
+    "redundant": "ticon/settlement_point-257-bhs-uhslc_fd"
   },
   {
     "id": "ticon/settlement_point-257b-bhs-uhslc_rq",
@@ -112639,7 +112841,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9455090"
+    "redundant": "ticon/seward_ak-560-usa-uhslc_fd"
   },
   {
     "id": "ticon/seward_ak-560b-usa-uhslc_rq",
@@ -112655,7 +112857,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9455090"
+    "redundant": "ticon/seward_ak-560-usa-uhslc_fd"
   },
   {
     "id": "ticon/seward_ak-560c-usa-uhslc_rq",
@@ -112671,7 +112873,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9455090"
+    "redundant": "ticon/seward_ak-560-usa-uhslc_fd"
   },
   {
     "id": "ticon/seward-9455090-usa-noaa",
@@ -113494,7 +113696,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9451600"
+    "redundant": "ticon/sitka_ak-559-usa-uhslc_fd"
   },
   {
     "id": "ticon/sitka-9451600-usa-noaa",
@@ -113802,7 +114004,7 @@
   },
   {
     "id": "ticon/sligo-sli-irl-mi_c",
-    "accepted": true,
+    "accepted": false,
     "score": 50,
     "factors": {
       "epoch": 0.912,
@@ -113812,7 +114014,9 @@
       "amplitude": 1,
       "coverage": 0.021
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/sligo-sli-irl-cmems"
   },
   {
     "id": "ticon/slipshavn-sli-dnk-cmems",
@@ -113978,7 +114182,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/TWC0383"
+    "redundant": "ticon/socorro-090-mex-uhslc_fd"
   },
   {
     "id": "ticon/solenzara-710-fra-refmar",
@@ -114150,7 +114354,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9435380"
+    "redundant": "ticon/south_beach_or-592-usa-uhslc_fd"
   },
   {
     "id": "ticon/south_beach-9435380-usa-noaa",
@@ -114856,7 +115060,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/st_helena-sth-gbr-noc"
+    "redundant": "ticon/st_helena-292-shn-uhslc_fd"
   },
   {
     "id": "ticon/st_helena-292b-shn-uhslc_rq",
@@ -114872,7 +115076,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/st_helena-292a-shn-uhslc_rq"
+    "redundant": "ticon/st_helena-292-shn-uhslc_fd"
   },
   {
     "id": "ticon/st_helena-sth-gbr-noc",
@@ -115046,11 +115250,11 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/st_johns-276b-can-uhslc_rq"
+    "redundant": "ticon/st_johns-276-can-uhslc_fd"
   },
   {
     "id": "ticon/st_johns-276b-can-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -115060,7 +115264,9 @@
       "amplitude": 1,
       "coverage": 0
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/st_johns-276-can-uhslc_fd"
   },
   {
     "id": "ticon/st_johns-905-can-meds",
@@ -115372,7 +115578,7 @@
   },
   {
     "id": "ticon/starling_creek_at_port_of_saxis_at_saxis_va-1484938-usa-usgs",
-    "accepted": true,
+    "accepted": false,
     "score": 67,
     "factors": {
       "epoch": 0.52,
@@ -115382,7 +115588,9 @@
       "amplitude": 1,
       "coverage": 0.006
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "noaa/8633777"
   },
   {
     "id": "ticon/stavanger-svg-nor-nhs",
@@ -115777,7 +115985,7 @@
       "MLWS (6.919) > MLW (6.912)"
     ],
     "reason": "duplicate",
-    "redundant": "ticon/stockholm-2069-swe-smhi"
+    "redundant": "ticon/stockholm-826-swe-uhslc_fd"
   },
   {
     "id": "ticon/stockholm-sto-swe-cmems",
@@ -115910,7 +116118,7 @@
   },
   {
     "id": "ticon/stornoway-sto-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 66,
     "factors": {
       "epoch": 1,
@@ -115920,7 +116128,9 @@
       "amplitude": 1,
       "coverage": 0.02
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/stornoway-sto-gbr-bodc"
   },
   {
     "id": "ticon/stortemelk-stortmk-nld-rws_hist",
@@ -116469,7 +116679,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/1910000"
+    "redundant": "ticon/suva-018-fji-uhslc_fd"
   },
   {
     "id": "ticon/suva-018b-fji-uhslc_rq",
@@ -116485,7 +116695,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/1910000"
+    "redundant": "ticon/suva-018-fji-uhslc_fd"
   },
   {
     "id": "ticon/suva-1910000-usa-noaa",
@@ -116897,7 +117107,7 @@
   },
   {
     "id": "ticon/takoradi-231c-gha-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 54,
     "factors": {
       "epoch": 0.305,
@@ -116907,7 +117117,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/takoradi-231-gha-uhslc_fd"
   },
   {
     "id": "ticon/talara-092-per-uhslc_fd",
@@ -117244,7 +117456,7 @@
   },
   {
     "id": "ticon/tarawa_bairiki-002b-kir-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 53,
     "factors": {
       "epoch": 0.268,
@@ -117254,11 +117466,13 @@
       "amplitude": 1,
       "coverage": 0.183
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/tarawa_bairiki-002-kir-uhslc_fd"
   },
   {
     "id": "ticon/tarawa_betio-002a-kir-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 55,
     "factors": {
       "epoch": 0.519,
@@ -117268,7 +117482,9 @@
       "amplitude": 1,
       "coverage": 0.014
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/tarawa_betio-002d-kir-uhslc_rq"
   },
   {
     "id": "ticon/tarawa_betio-002c-kir-uhslc_rq",
@@ -117284,7 +117500,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "ticon/tarawa_bairiki-002-kir-uhslc_fd"
+    "redundant": "ticon/tarawa_betio-002d-kir-uhslc_rq"
   },
   {
     "id": "ticon/tarawa_betio-002d-kir-uhslc_rq",
@@ -118216,7 +118432,7 @@
   },
   {
     "id": "ticon/threemile_slough_at_san_joaquin_river-tsl-usa-cdwr",
-    "accepted": true,
+    "accepted": false,
     "score": 76,
     "factors": {
       "epoch": 0.975,
@@ -118228,11 +118444,13 @@
     },
     "issues": [
       "MLWS (0.979) > MLW (0.975)"
-    ]
+    ],
+    "reason": "duplicate",
+    "redundant": "ticon/threemile_slough_nr_rio_vista_ca-11337080-usa-usgs"
   },
   {
     "id": "ticon/threemile_slough_nr_rio_vista_ca-11337080-usa-usgs",
-    "accepted": false,
+    "accepted": true,
     "score": 76,
     "factors": {
       "epoch": 0.945,
@@ -118244,9 +118462,7 @@
     },
     "issues": [
       "MLWS (0.975) > MLW (0.936)"
-    ],
-    "reason": "duplicate",
-    "redundant": "ticon/threemile_slough_at_san_joaquin_river-tsl-usa-cdwr"
+    ]
   },
   {
     "id": "ticon/thule_pituffik-808-dnk-uhslc_fd",
@@ -118847,7 +119063,7 @@
   },
   {
     "id": "ticon/topolobampo-676-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 47,
     "factors": {
       "epoch": 0.112,
@@ -118857,7 +119073,9 @@
       "amplitude": 1,
       "coverage": 0.033
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/topolobampo-676a-mex-uhslc_rq"
   },
   {
     "id": "ticon/topolobampo-676a-mex-uhslc_rq",
@@ -119071,7 +119289,7 @@
   },
   {
     "id": "ticon/toyama-349a-jpn-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 69,
     "factors": {
       "epoch": 1,
@@ -119081,7 +119299,9 @@
       "amplitude": 1,
       "coverage": 0.018
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/toyama-349-jpn-uhslc_fd"
   },
   {
     "id": "ticon/toyama-ma56-jpn-jodc_jma",
@@ -120672,7 +120892,7 @@
   },
   {
     "id": "ticon/valparaiso-081a-chl-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 68,
     "factors": {
       "epoch": 1,
@@ -120682,7 +120902,9 @@
       "amplitude": 1,
       "coverage": 0.004
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/valparaiso-081-chl-uhslc_fd"
   },
   {
     "id": "ticon/valparaiso-8729501-usa-noaa",
@@ -121185,7 +121407,7 @@
       "MHWS (0.183) < MHW (0.199)"
     ],
     "reason": "duplicate",
-    "redundant": "noaa/9501701"
+    "redundant": "ticon/veracruz_ver-250a-mex-uhslc_rq"
   },
   {
     "id": "ticon/veracruz-250-mex-unam_hist",
@@ -121709,7 +121931,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/8723214"
+    "redundant": "ticon/virginia_key_fl-755-usa-uhslc_fd"
   },
   {
     "id": "ticon/virginia_key-8723214-usa-noaa",
@@ -123678,7 +123900,7 @@
   },
   {
     "id": "ticon/whitby-whi-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 65,
     "factors": {
       "epoch": 1,
@@ -123688,7 +123910,9 @@
       "amplitude": 1,
       "coverage": 0.012
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/whitby-whi-gbr-bodc"
   },
   {
     "id": "ticon/whitbyharbourtg-whi-gbr-cmems",
@@ -123846,7 +124070,7 @@
   },
   {
     "id": "ticon/wick-wic-gbr-cmems",
-    "accepted": true,
+    "accepted": false,
     "score": 51,
     "factors": {
       "epoch": 1,
@@ -123856,7 +124080,9 @@
       "amplitude": 1,
       "coverage": 0.017
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/wick-wic-gbr-bodc"
   },
   {
     "id": "ticon/wickford_tide_gage_north_kingstown_ri-413413071270400-usa-usgs",
@@ -124702,7 +124928,7 @@
     },
     "issues": [],
     "reason": "duplicate",
-    "redundant": "noaa/9453220"
+    "redundant": "ticon/yakutat_ak-570-usa-uhslc_fd"
   },
   {
     "id": "ticon/yakutat-9453220-usa-noaa",
@@ -124751,7 +124977,7 @@
   },
   {
     "id": "ticon/yap-008a-fsm-uhslc_rq",
-    "accepted": true,
+    "accepted": false,
     "score": 44,
     "factors": {
       "epoch": 0.099,
@@ -124761,7 +124987,9 @@
       "amplitude": 1,
       "coverage": 0.023
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/yap-008-fsm-uhslc_fd"
   },
   {
     "id": "ticon/yap-008b-fsm-uhslc_rq",
@@ -124809,7 +125037,7 @@
   },
   {
     "id": "ticon/yavaros-677-mex-unam_hist",
-    "accepted": true,
+    "accepted": false,
     "score": 47,
     "factors": {
       "epoch": 0.215,
@@ -124819,7 +125047,9 @@
       "amplitude": 1,
       "coverage": 0.01
     },
-    "issues": []
+    "issues": [],
+    "reason": "duplicate",
+    "redundant": "ticon/yavaros-677a-mex-uhslc_rq"
   },
   {
     "id": "ticon/yavaros-677a-mex-uhslc_rq",

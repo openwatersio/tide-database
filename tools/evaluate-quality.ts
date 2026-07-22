@@ -27,8 +27,11 @@ import {
   distance,
   getSourceSuffix,
   getSourcePriority,
+  gaugeKey,
+  coordinatePrecision,
   hasQualityIssues,
   epochYears,
+  NULL_ISLAND_RADIUS,
   MAX_DEDUP_DISTANCE,
   MIN_DEDUP_DISTANCE,
   FALLBACK_DEDUP_DISTANCE,
@@ -199,6 +202,20 @@ function checkTidalRange(
   const range = high - low;
   if (range < MIN_TIDAL_RANGE) {
     return `Tidal range ${(range * 100).toFixed(1)}cm < ${MIN_TIDAL_RANGE * 100}cm threshold`;
+  }
+  return null;
+}
+
+/** Reject stations whose coordinates sit on Null Island (0°, 0°). A record that
+ *  fails to geolocate upstream commonly defaults to (0, 0), which places a gauge
+ *  in the Gulf of Guinea far from its true location — where it can neither be
+ *  deduplicated against the real station nor used for prediction. */
+function checkCoordinates(station: Station): string | null {
+  if (
+    Math.abs(station.latitude) < NULL_ISLAND_RADIUS &&
+    Math.abs(station.longitude) < NULL_ISLAND_RADIUS
+  ) {
+    return `Invalid coordinates near Null Island (${station.latitude}, ${station.longitude})`;
   }
   return null;
 }
@@ -570,20 +587,13 @@ function deduplicate(
         stationB.longitude,
       );
 
-      const scoreA = resultsMap.get(idA)!.score;
-      const scoreB = resultsMap.get(idB)!.score;
-      const subsA = subordinateCounts.get(idA) ?? 0;
-      const subsB = subordinateCounts.get(idB) ?? 0;
-
-      // A reference station with accepted subordinates beats one without
-      let winner: string, loser: string;
-      if (subsA > 0 && subsB === 0) {
-        [winner, loser] = [idA, idB];
-      } else if (subsB > 0 && subsA === 0) {
-        [winner, loser] = [idB, idA];
-      } else {
-        [winner, loser] = scoreA >= scoreB ? [idA, idB] : [idB, idA];
-      }
+      const [winner, loser] = pickWinner(
+        idA,
+        idB,
+        stationMap,
+        resultsMap,
+        subordinateCounts,
+      );
 
       const winnerHasSubs = (subordinateCounts.get(winner) ?? 0) > 0;
       if (!areDuplicates(stationA, stationB, dist, winnerHasSubs)) continue;
@@ -593,6 +603,76 @@ function deduplicate(
       result.reason = "duplicate";
       result.redundant = winner;
       rejected.add(loser);
+    }
+  }
+}
+
+/** Pick the winner between two stations: a reference with accepted subordinates
+ *  beats one without; otherwise the higher composite score wins. Ties on score
+ *  fall to the more precisely located record, so the survivor keeps the better
+ *  coordinates rather than an older coarsely-rounded fix. */
+function pickWinner(
+  idA: string,
+  idB: string,
+  stationMap: Map<string, Station>,
+  resultsMap: Map<string, QualityResult>,
+  subordinateCounts: Map<string, number>,
+): [winner: string, loser: string] {
+  const subsA = subordinateCounts.get(idA) ?? 0;
+  const subsB = subordinateCounts.get(idB) ?? 0;
+  if (subsA > 0 && subsB === 0) return [idA, idB];
+  if (subsB > 0 && subsA === 0) return [idB, idA];
+  const scoreA = resultsMap.get(idA)!.score;
+  const scoreB = resultsMap.get(idB)!.score;
+  if (scoreA !== scoreB) return scoreA > scoreB ? [idA, idB] : [idB, idA];
+  const a = stationMap.get(idA)!;
+  const b = stationMap.get(idB)!;
+  const precA = coordinatePrecision(a.latitude, a.longitude);
+  const precB = coordinatePrecision(b.latitude, b.longitude);
+  return precA >= precB ? [idA, idB] : [idB, idA];
+}
+
+/** Deduplicate TICON records that share a physical-gauge key (same station code,
+ *  differing only by record segment or provider). Coordinate drift — coarse
+ *  rounding in older sources, or slightly different survey points between
+ *  providers — pushes these same-gauge records beyond the spatial dedup radius,
+ *  so proximity alone never catches them (openwatersio/tide-database#112). The
+ *  shared code is a deterministic same-gauge signal, so we merge them regardless
+ *  of distance and keep the single best record per gauge. */
+function deduplicateByGauge(
+  stationIds: string[],
+  stationMap: Map<string, Station>,
+  resultsMap: Map<string, QualityResult>,
+  subordinateCounts: Map<string, number>,
+): void {
+  const groups = new Map<string, string[]>();
+  for (const id of stationIds) {
+    const station = stationMap.get(id)!;
+    if (!id.startsWith("ticon/")) continue;
+    const key = gaugeKey(station.source.id);
+    (groups.get(key) ?? groups.set(key, []).get(key)!).push(id);
+  }
+
+  for (const ids of groups.values()) {
+    if (ids.length < 2) continue;
+    // Resolve the single survivor first so every rejected record's `redundant`
+    // pointer references the final winner rather than an intermediate one.
+    let winner = ids[0]!;
+    for (let i = 1; i < ids.length; i++) {
+      [winner] = pickWinner(
+        winner,
+        ids[i]!,
+        stationMap,
+        resultsMap,
+        subordinateCounts,
+      );
+    }
+    for (const id of ids) {
+      if (id === winner) continue;
+      const result = resultsMap.get(id)!;
+      result.accepted = false;
+      result.reason = "duplicate";
+      result.redundant = winner;
     }
   }
 }
@@ -618,6 +698,7 @@ async function main() {
     const issues: string[] = [];
 
     // Gates
+    const coordinateIssue = checkCoordinates(station);
     const datumIssues = checkDatumOrdering(station, stationMap);
     const rangeIssue = checkTidalRange(station, stationMap);
     const supersededIssue = checkSuperseded(station);
@@ -628,7 +709,10 @@ async function main() {
     issues.push(...datumIssues.warnings);
 
     let gateReason: string | undefined;
-    if (datumIssues.fatal.length > 0) {
+    if (coordinateIssue) {
+      issues.push(coordinateIssue);
+      gateReason = "coordinates";
+    } else if (datumIssues.fatal.length > 0) {
       issues.push(...datumIssues.fatal);
       gateReason = "datum";
     } else if (rangeIssue) {
@@ -685,13 +769,18 @@ async function main() {
     // Gate failures keep score = 0
   }
 
-  // Step 4: Deduplicate by proximity and harmonic similarity
+  // Step 4: Deduplicate
   console.log("Deduplicating...");
-  const survivingIds = stations
+  const subordinateCounts = countSubordinates(stations, resultsMap);
+
+  // 4a: Collapse same-gauge records (shared station code) regardless of distance.
+  const acceptedIds = stations
     .filter((s) => resultsMap.get(s.id)!.accepted)
     .map((s) => s.id);
+  deduplicateByGauge(acceptedIds, stationMap, resultsMap, subordinateCounts);
 
-  const subordinateCounts = countSubordinates(stations, resultsMap);
+  // 4b: Deduplicate the survivors by proximity and harmonic similarity.
+  const survivingIds = acceptedIds.filter((id) => resultsMap.get(id)!.accepted);
   deduplicate(survivingIds, stationMap, resultsMap, subordinateCounts);
 
   // Collect and sort results

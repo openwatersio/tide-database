@@ -96,6 +96,58 @@ export function getSourcePriority(sourceId: string): number {
 }
 
 /**
+ * Derive a physical-gauge key from a TICON source ID by dropping the source
+ * suffix and stripping any trailing record-segment letter from the station code.
+ *
+ * TICON IDs are structured `<name>-<code>-<country>-<source>`, where a single
+ * physical gauge is often split across several records that share the same
+ * station code but differ by segment letter and/or source:
+ *   "las_palmas-217-esp-uhslc_fd"  -> "las_palmas-217-esp"
+ *   "las_palmas-217a-esp-uhslc_rq" -> "las_palmas-217-esp"
+ *   "aberdeen-abe-gbr-bodc"        -> "aberdeen-abe-gbr"
+ *   "aberdeen-abe-gbr-cmems"       -> "aberdeen-abe-gbr"
+ *
+ * Records sharing this key are the same physical gauge measured over different
+ * periods (fast-delivery vs research-quality segments) or delivered by different
+ * providers — so they should be deduplicated regardless of coordinate drift.
+ */
+export function gaugeKey(sourceId: string): string {
+  const parts = sourceId.toString().split("-");
+  if (parts.length < 3) return sourceId.toString();
+  parts.pop(); // drop the source suffix (e.g. uhslc_fd)
+  const codeIdx = parts.length - 2; // code sits just before the country code
+  // Strip a single trailing letter from a numeric code: 217a -> 217, 082c -> 082.
+  // Non-numeric codes (e.g. "abe", "h033007a") are left untouched.
+  parts[codeIdx] = parts[codeIdx]!.replace(/^(\d+)[a-z]$/i, "$1");
+  return parts.join("-");
+}
+
+/** Radius around Null Island (0°, 0°) within which a station's coordinates are
+ *  treated as a missing/placeholder fix rather than a real position (in degrees).
+ *  Records that fail to geolocate frequently default to (0, 0), which lands in
+ *  the Gulf of Guinea and cannot be deduplicated against the real gauge. */
+export const NULL_ISLAND_RADIUS = 0.05;
+
+/** Count the decimal places in a coordinate value (e.g. 28.148 -> 3, 28.1 -> 1). */
+function decimalPlaces(n: number): number {
+  const s = n.toString();
+  const dot = s.indexOf(".");
+  return dot === -1 ? 0 : s.length - dot - 1;
+}
+
+/** Coordinate precision of a station, as the limiting (minimum) number of decimal
+ *  places across latitude and longitude. Coarsely-rounded 0.1° records score 1;
+ *  precisely surveyed positions score higher. Used only to break ties between
+ *  otherwise equal-quality duplicate records so the survivor keeps the better
+ *  location. */
+export function coordinatePrecision(
+  latitude: number,
+  longitude: number,
+): number {
+  return Math.min(decimalPlaces(latitude), decimalPlaces(longitude));
+}
+
+/**
  * Check if a station has quality control issues based on its disclaimers
  */
 export function hasQualityIssues(disclaimers?: string): boolean {
