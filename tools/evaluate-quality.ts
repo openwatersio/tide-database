@@ -537,10 +537,10 @@ function hasSimilarOffsets(stationA: Station, stationB: Station): boolean {
 
 /** Check if two stations are duplicates based on distance and harmonic similarity.
  *
- *  - Two subordinate stations: duplicates only if within MAX_DEDUP_DISTANCE and
+ *  - Two subordinate stations: duplicates only if within FALLBACK_DEDUP_DISTANCE and
  *    predicting the same tide (same reference + equivalent offsets), since
  *    distinct subordinates can share placeholder coordinates
- *  - Within MIN_DEDUP_DISTANCE (reference-involving pairs): always duplicates
+ *    (proximity alone is insufficient for subordinates)
  *  - Between MIN_DEDUP_DISTANCE and MAX_DEDUP_DISTANCE: duplicates only if
  *    both are reference stations with similar M2 amplitudes (ratio >= 0.9)
  *  - Beyond MAX_DEDUP_DISTANCE: never duplicates
