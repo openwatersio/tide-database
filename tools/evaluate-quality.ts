@@ -35,6 +35,8 @@ import {
   MAX_DEDUP_DISTANCE,
   MIN_DEDUP_DISTANCE,
   FALLBACK_DEDUP_DISTANCE,
+  MAX_OFFSET_HEIGHT_DELTA,
+  MAX_OFFSET_TIME_DELTA,
   MIN_AMPLITUDE_RATIO,
   MIN_TIDAL_RANGE,
   SEASONAL_OUTLIER_RADIUS,
@@ -515,9 +517,30 @@ function hasSimilarM2(stationA: Station, stationB: Station): boolean {
   return ratio >= MIN_AMPLITUDE_RATIO;
 }
 
+/** Check if two subordinate stations would produce the same tide prediction:
+ *  same reference station and matching height/time offsets within tolerance.
+ *  Two subordinates can share (coarse or placeholder) coordinates while
+ *  predicting entirely differently, so proximity alone must not merge them. */
+function hasSimilarOffsets(stationA: Station, stationB: Station): boolean {
+  const a = stationA.offsets;
+  const b = stationB.offsets;
+  if (!a || !b) return false;
+  if (a.reference !== b.reference) return false;
+  if (a.height.type !== b.height.type) return false;
+  return (
+    Math.abs(a.height.high - b.height.high) <= MAX_OFFSET_HEIGHT_DELTA &&
+    Math.abs(a.height.low - b.height.low) <= MAX_OFFSET_HEIGHT_DELTA &&
+    Math.abs(a.time.high - b.time.high) <= MAX_OFFSET_TIME_DELTA &&
+    Math.abs(a.time.low - b.time.low) <= MAX_OFFSET_TIME_DELTA
+  );
+}
+
 /** Check if two stations are duplicates based on distance and harmonic similarity.
  *
- *  - Within MIN_DEDUP_DISTANCE: always duplicates
+ *  - Two subordinate stations: duplicates only if within FALLBACK_DEDUP_DISTANCE and
+ *    predicting the same tide (same reference + equivalent offsets), since
+ *    distinct subordinates can share placeholder coordinates
+ *    (proximity alone is insufficient for subordinates)
  *  - Between MIN_DEDUP_DISTANCE and MAX_DEDUP_DISTANCE: duplicates only if
  *    both are reference stations with similar M2 amplitudes (ratio >= 0.9)
  *  - Beyond MAX_DEDUP_DISTANCE: never duplicates
@@ -529,6 +552,17 @@ function areDuplicates(
   winnerHasSubordinates = false,
 ): boolean {
   if (dist > MAX_DEDUP_DISTANCE) return false;
+
+  // Two subordinate stations at (near-)identical coordinates can still be
+  // different places — a mislocated record inherits another station's fix while
+  // keeping its own offsets. Keep the existing proximity threshold, but only
+  // merge them when they'd also predict the same tide.
+  if (stationA.type === "subordinate" && stationB.type === "subordinate") {
+    return (
+      dist <= FALLBACK_DEDUP_DISTANCE && hasSimilarOffsets(stationA, stationB)
+    );
+  }
+
   if (dist <= MIN_DEDUP_DISTANCE) return true;
 
   // For the middle range, require harmonic similarity between reference stations.

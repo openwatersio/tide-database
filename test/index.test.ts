@@ -347,6 +347,37 @@ describe("coordinate gate", () => {
   });
 });
 
+describe("subordinate offset dedup", () => {
+  const byId = new Map(quality.map((r) => [r.id, r]));
+
+  // Two subordinate stations can share (coarse or placeholder) coordinates yet
+  // predict different tides through different offsets. Suwarrow Island is
+  // mislocated on Hao Island's exact coordinates but carries a +64 min vs
+  // −315 min offset, so proximity alone must not merge them
+  // (openwatersio/tide-database#112 follow-up).
+  test("keeps distinct subordinate stations that share coordinates", () => {
+    for (const id of [
+      "noaa/TPT2829", // Suwarrow vs Hao (TPT2837)
+      "noaa/TPT2837",
+      "noaa/8724370", // Sawyer Key outside vs inside (8724369)
+      "noaa/8724369",
+      "noaa/TEC3447", // South Newport Cut vs North Newport River (TEC3445)
+      "noaa/TEC3445",
+    ]) {
+      expect(byId.get(id)?.accepted, `${id} should be kept`).toBe(true);
+    }
+  });
+
+  // A genuine subordinate duplicate — same name, same reference, offsets within
+  // tolerance — must still be merged.
+  test("still merges near-identical subordinate duplicates", () => {
+    const dup = byId.get("noaa/8724224"); // Little Torch Key (dup of 8724223)
+    expect(dup?.accepted).toBe(false);
+    expect(dup?.reason).toBe("duplicate");
+    expect(dup?.redundant).toBe("noaa/8724223");
+  });
+});
+
 test("Does not have duplicate source IDs", () => {
   const seen = new Map();
   stations.forEach((station) => {
